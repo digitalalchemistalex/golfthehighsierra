@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 /* ─── Types ─── */
 interface CourseAddress { streetAddress?: string; addressLocality?: string; addressRegion?: string; postalCode?: string; }
@@ -40,62 +40,36 @@ function parseDistances(bodyText: string[]): string[] {
   for (const b of bodyText) for (const l of b.split("\n")) { const t = l.trim(); if (/^\d+\s*(minutes?|mins?)\s/i.test(t)) d.push(t); }
   return d;
 }
-function cleanFacilities(f: string[]) {
-  const junk = ["trips caddie", "all lake tahoe", "all hotels", "all golf", "all food", "all experiences", "all carson", "all cedar", "all eldorado", "old greenwood", "all atlantis"];
-  return f.filter(x => !junk.some(j => x.toLowerCase().includes(j)) && x.trim().length > 3);
-}
 
-/* ─── Scroll Reveal ─── */
-function Reveal({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
+/* ─── Reveal ─── */
+function R({ children, className = "", delay = 0, style }: { children: React.ReactNode; className?: string; delay?: number; style?: React.CSSProperties }) {
   const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
+  const [v, setV] = useState(false);
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setVisible(true); obs.unobserve(el); } }, { threshold: 0.1, rootMargin: "-20px" });
+    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setV(true); obs.unobserve(el); } }, { threshold: 0.08, rootMargin: "-20px" });
     obs.observe(el);
     return () => obs.disconnect();
   }, []);
   return (
-    <div ref={ref} className={className} style={{ opacity: visible ? 1 : 0, transform: visible ? "translateY(0)" : "translateY(28px)", transition: `opacity .8s ease ${delay}s, transform .8s ease ${delay}s` }}>
+    <div ref={ref} className={className} style={{ ...style, opacity: v ? 1 : 0, transform: v ? "translateY(0)" : "translateY(30px)", transition: `opacity .9s ease ${delay}s, transform .9s ease ${delay}s` }}>
       {children}
     </div>
   );
-}
-
-/* ─── Animated Counter ─── */
-function Counter({ target, comma = false }: { target: number; comma?: boolean }) {
-  const ref = useRef<HTMLSpanElement>(null);
-  const [val, setVal] = useState(0);
-  const started = useRef(false);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting && !started.current) {
-        started.current = true;
-        const dur = 1600, start = performance.now();
-        const tick = (now: number) => { const p = Math.min((now - start) / dur, 1); setVal(Math.round((1 - Math.pow(1 - p, 3)) * target)); if (p < 1) requestAnimationFrame(tick); };
-        requestAnimationFrame(tick);
-      }
-    }, { threshold: 0.3 });
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, [target]);
-  return <span ref={ref}>{comma ? val.toLocaleString() : val}</span>;
 }
 
 /* ─── FAQ ─── */
 function FAQ({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
   return (
-    <div style={{ borderBottom: "1px solid #e8e4de" }}>
-      <button onClick={() => setOpen(!open)} className="euro-faq-q" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", padding: "22px 0", background: "none", border: "none", fontFamily: "var(--euro-sans)", fontSize: "15px", color: "#2c2c2c", cursor: "pointer", textAlign: "left" as const, gap: "16px", fontWeight: 400, transition: "color .3s" }}>
+    <div style={{ borderBottom: "1px solid var(--bone)" }}>
+      <button onClick={() => setOpen(!open)} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", padding: "18px 0", background: "none", border: "none", fontFamily: "var(--sans)", fontSize: 13, color: "var(--charcoal)", cursor: "pointer", textAlign: "left" as const, gap: 12, fontWeight: 400, transition: "color .3s" }}>
         {q}
-        <span style={{ width: 28, height: 28, borderRadius: "50%", border: "1px solid #e8e4de", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, color: "#b0b0b0", transition: "all .4s", flexShrink: 0, ...(open ? { background: "#8b7355", color: "#fff", borderColor: "#8b7355", transform: "rotate(45deg)" } : {}) }}>+</span>
+        <span style={{ width: 24, height: 24, borderRadius: "50%", border: "1px solid var(--bone)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14, color: "var(--stone)", transition: "all .4s", flexShrink: 0, fontWeight: 300, ...(open ? { background: "var(--gold)", color: "#fff", borderColor: "var(--gold)", transform: "rotate(45deg)" } : {}) }}>+</span>
       </button>
-      <div style={{ maxHeight: open ? 200 : 0, overflow: "hidden", transition: "max-height .5s ease" }}>
-        <p style={{ paddingBottom: 22, fontSize: 14, color: "#8c8c8c", lineHeight: 1.8, fontWeight: 300 }}>{a}</p>
+      <div style={{ maxHeight: open ? 250 : 0, overflow: "hidden", transition: "max-height .5s ease" }}>
+        <p style={{ paddingBottom: 18, fontSize: 12, color: "var(--stone)", lineHeight: 1.8, fontWeight: 300 }}>{a}</p>
       </div>
     </div>
   );
@@ -123,385 +97,253 @@ function Lightbox({ images, startIndex, onClose, name }: { images: string[]; sta
   );
 }
 
-/* ═══════════════════════════════════════════════════════
-   MAIN — EUROPEAN WHITE LUXURY
-   ═══════════════════════════════════════════════════════ */
+/* ═══════════════════════════════════════
+   MAIN COMPONENT
+   ═══════════════════════════════════════ */
 export default function CoursePageContent({ course, relatedCourses = [] }: { course: CourseProps; relatedCourses?: RelatedCourse[] }) {
   const [lbIndex, setLbIndex] = useState<number | null>(null);
 
-  const galleryImages = course.images.filter(u => !isScorecard(u) && !isLogo(u));
+  const gallery = course.images.filter(u => !isScorecard(u) && !isLogo(u));
   const distances = course.distances?.length ? course.distances : parseDistances(course.bodyText || []);
-  const facilities = cleanFacilities(course.facilities || []);
   const addr = course.address;
   const nameParts = course.name.split(" ");
   const firstName = nameParts[0];
-  const para1 = course.contentParagraphs?.[0] || course.description.substring(0, 300);
-  const para2 = course.contentParagraphs?.[1] || (course.bodyText?.[2] || course.description);
+  const para1 = course.contentParagraphs?.[0] || course.description.substring(0, 350);
+  const quoteText = course.pointOfView || course.featuredHole?.description || course.description.substring(0, 200);
 
-  const stats = [
-    course.holes ? { val: course.holes, label: "Holes" } : null,
-    course.par ? { val: course.par, label: "Par" } : null,
-    course.yardage ? { val: course.yardage, label: "Yards", comma: true } : null,
-    course.slope ? { val: course.slope, label: "Slope" } : null,
-    course.yearBuilt ? { val: course.yearBuilt, label: "Established" } : null,
-  ].filter(Boolean) as { val: number; label: string; comma?: boolean }[];
-
-  const bigNums = [
-    course.holes ? { val: course.holes, label: "Holes" } : null,
-    course.yardage ? { val: course.yardage, label: "Yards", comma: true } : null,
-    course.yearBuilt ? { val: course.yearBuilt, label: "Established" } : null,
-    course.rating ? { val: course.rating.count, label: "Reviews", comma: true } : null,
-  ].filter(Boolean) as { val: number; label: string; comma?: boolean }[];
-
-  /* ─── CSS Variables ─── */
   const cssVars = {
-    "--euro-white": "#ffffff",
-    "--euro-ivory": "#faf9f7",
-    "--euro-stone": "#f2f0ec",
-    "--euro-sand": "#e8e4de",
-    "--euro-text": "#2c2c2c",
-    "--euro-muted": "#8c8c8c",
-    "--euro-light": "#b0b0b0",
-    "--euro-accent": "#8b7355",
-    "--euro-accent-light": "#a89070",
-    "--euro-serif": "'EB Garamond', Georgia, serif",
-    "--euro-sans": "'Inter', system-ui, sans-serif",
+    "--white": "#fff", "--cream": "#faf8f5", "--bone": "#eee9e2", "--sand": "#d4cfc6",
+    "--stone": "#8a857c", "--charcoal": "#3a3832", "--ink": "#1a1917",
+    "--gold": "#b49a6a", "--gold-glow": "#c8ad7e",
+    "--serif": "'Cormorant', Georgia, serif",
+    "--sans": "'Manrope', system-ui, sans-serif",
   } as React.CSSProperties;
 
-  const sectionPad = "clamp(64px,10vh,120px) clamp(32px,6vw,100px)";
-  const sectionSmPad = "clamp(48px,7vh,80px) clamp(32px,6vw,100px)";
-  const labelStyle: React.CSSProperties = { fontSize: 11, letterSpacing: 3, textTransform: "uppercase", color: "var(--euro-muted)", fontWeight: 500, marginBottom: 12 };
-  const titleStyle: React.CSSProperties = { fontFamily: "var(--euro-serif)", fontWeight: 400, fontSize: "clamp(30px,4vw,52px)", lineHeight: 1.15, letterSpacing: "-.01em", color: "var(--euro-text)" };
-  const textStyle: React.CSSProperties = { fontSize: 15, lineHeight: 1.85, color: "var(--euro-muted)", fontWeight: 300, maxWidth: 600, marginTop: 16 };
-  const divider = <div style={{ height: 1, background: "var(--euro-sand)" }} />;
-
   return (
-    <div style={{ ...cssVars, fontFamily: "var(--euro-sans)", background: "var(--euro-white)", color: "var(--euro-text)", overflowX: "hidden" }}>
+    <div style={{ ...cssVars, fontFamily: "var(--sans)", background: "var(--white)", color: "var(--ink)", overflowX: "hidden" }}>
 
-      {/* ═══ HERO ═══ */}
-      <section style={{ position: "relative", height: "85vh", minHeight: 600, overflow: "hidden" }}>
+      {/* ═══ 1. HERO ═══ */}
+      <section style={{ position: "relative", height: "100vh", minHeight: 650, overflow: "hidden", background: "#0a0a08" }}>
         <div style={{ position: "absolute", inset: 0 }}>
-          {course.heroImage ? (
-            <Image src={course.heroImage} alt={course.name} fill priority className="object-cover" sizes="100vw" />
-          ) : (
-            <div style={{ width: "100%", height: "100%", background: "#2c2c2c" }} />
-          )}
+          {course.heroImage && <Image src={course.heroImage} alt={course.name} fill priority className="object-cover" sizes="100vw" style={{ opacity: .5, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
         </div>
-        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(0,0,0,.08) 0%,rgba(0,0,0,.02) 40%,rgba(0,0,0,.45) 100%)" }} />
-        <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: `0 clamp(32px,6vw,100px) clamp(48px,8vh,80px)` }}>
-          <Reveal>
-            <div style={{ fontSize: 11, color: "rgba(255,255,255,.45)", letterSpacing: ".5px", marginBottom: 16 }}>
-              <Link href="/" style={{ transition: "color .3s" }} className="hover:!text-white/80">Home</Link>
-              {" / "}
-              <Link href="/best-golf-courses-reno/" className="hover:!text-white/80">Golf Courses</Link>
-              {" / "}
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(0,0,0,.25) 0%,transparent 35%,transparent 55%,rgba(0,0,0,.65) 100%)" }} />
+
+        {/* Top bar */}
+        <div style={{ position: "absolute", top: "clamp(24px,4vh,48px)", left: "clamp(32px,7vw,120px)", right: "clamp(32px,7vw,120px)", display: "flex", justifyContent: "space-between", zIndex: 3 }}>
+          <div style={{ fontFamily: "var(--serif)", fontSize: 13, color: "rgba(255,255,255,.35)", letterSpacing: 3, textTransform: "uppercase" }}>Golf the High Sierra</div>
+          <div style={{ display: "flex", gap: 24 }}>
+            <Link href="/best-golf-courses-reno/" style={{ fontSize: 10, color: "rgba(255,255,255,.3)", letterSpacing: 2, textTransform: "uppercase" }}>Courses</Link>
+            <Link href="/contact-custom-golf-package/" style={{ fontSize: 10, color: "rgba(255,255,255,.3)", letterSpacing: 2, textTransform: "uppercase" }}>Book</Link>
+          </div>
+        </div>
+
+        {/* Hero content */}
+        <div style={{ position: "absolute", inset: 0, zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 clamp(32px,7vw,120px) clamp(48px,8vh,100px)" }}>
+          <R>
+            <h1 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(52px,9vw,120px)", lineHeight: .92, color: "#fff", letterSpacing: "-.03em" }}>
+              {nameParts.slice(0, -2).join(" ") || firstName}<br />
+              <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.55)" }}>{nameParts.slice(-2).join(" ")}</em>
+            </h1>
+          </R>
+          <R delay={0.12}>
+            <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 16, fontSize: 12, color: "rgba(255,255,255,.3)", fontWeight: 300 }}>
+              {course.designer && <><span>{course.designer}</span><span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.2)" }} /></>}
+              {course.yearBuilt && <><span>Est. {course.yearBuilt}</span><span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.2)" }} /></>}
               <span>{course.regionLabel}</span>
             </div>
-          </Reveal>
-          <Reveal delay={0.08}>
-            <h1 style={{ fontFamily: "var(--euro-serif)", fontWeight: 400, fontSize: "clamp(42px,7vw,80px)", lineHeight: 1.05, color: "#fff", letterSpacing: "-.02em" }}>
-              {nameParts.slice(0, -2).join(" ") || firstName}<br />
-              <em style={{ fontStyle: "italic" }}>{nameParts.slice(-2).join(" ")}</em>
-            </h1>
-          </Reveal>
-          <Reveal delay={0.16}>
-            <div style={{ fontSize: 13, color: "rgba(255,255,255,.5)", letterSpacing: ".3px", marginTop: 12, fontWeight: 300 }}>
-              {course.regionLabel}{course.yearBuilt ? ` · Est. ${course.yearBuilt}` : ""}{course.designer ? ` · ${course.designer}` : ""}
+          </R>
+          <R delay={0.24}>
+            <div style={{ display: "flex", gap: "clamp(20px,3.5vw,48px)", marginTop: "clamp(20px,3.5vh,40px)", paddingTop: "clamp(14px,2.5vh,24px)", borderTop: "1px solid rgba(255,255,255,.07)" }}>
+              {[
+                course.holes && { v: course.holes, l: "Holes" },
+                course.par && { v: course.par, l: "Par" },
+                course.yardage && { v: course.yardage.toLocaleString(), l: "Yards" },
+                course.slope && { v: course.slope, l: "Slope" },
+                course.rating && { v: course.rating.value, l: "Rating" },
+              ].filter(Boolean).map((s, i) => (
+                <div key={i}>
+                  <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(24px,3vw,40px)", fontWeight: 300, color: "#fff", lineHeight: 1 }}>{(s as {v:string|number}).v}</div>
+                  <div style={{ fontSize: 8, color: "rgba(255,255,255,.2)", letterSpacing: 2.5, textTransform: "uppercase", marginTop: 5 }}>{(s as {l:string}).l}</div>
+                </div>
+              ))}
             </div>
-          </Reveal>
-          <Reveal delay={0.24}>
-            <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 20 }}>
-              {course.holes && <span style={{ fontSize: 11, color: "rgba(255,255,255,.55)", border: "1px solid rgba(255,255,255,.12)", padding: "7px 16px", borderRadius: 100, fontWeight: 400, letterSpacing: ".3px" }}>{course.holes} Holes</span>}
-              {course.par && <span style={{ fontSize: 11, color: "rgba(255,255,255,.55)", border: "1px solid rgba(255,255,255,.12)", padding: "7px 16px", borderRadius: 100, fontWeight: 400, letterSpacing: ".3px" }}>Par {course.par}</span>}
-              {course.yardage && <span style={{ fontSize: 11, color: "rgba(255,255,255,.55)", border: "1px solid rgba(255,255,255,.12)", padding: "7px 16px", borderRadius: 100, fontWeight: 400, letterSpacing: ".3px" }}>{course.yardage.toLocaleString()} Yards</span>}
-              {course.slope && <span style={{ fontSize: 11, color: "rgba(255,255,255,.55)", border: "1px solid rgba(255,255,255,.12)", padding: "7px 16px", borderRadius: 100, fontWeight: 400, letterSpacing: ".3px" }}>Slope {course.slope}</span>}
-              {course.rating && <span style={{ fontSize: 11, color: "rgba(255,255,255,.55)", border: "1px solid rgba(255,255,255,.12)", padding: "7px 16px", borderRadius: 100, fontWeight: 400, letterSpacing: ".3px" }}>★ {course.rating.value}</span>}
-            </div>
-          </Reveal>
+          </R>
+        </div>
+
+        {/* Scroll indicator */}
+        <div style={{ position: "absolute", bottom: 20, left: "50%", transform: "translateX(-50%)", zIndex: 3, display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
+          <span style={{ fontSize: 7, color: "rgba(255,255,255,.15)", letterSpacing: 3, textTransform: "uppercase" }}>Scroll</span>
+          <div style={{ width: 1, height: 32, background: "linear-gradient(rgba(255,255,255,.25),transparent)", animation: "sdrop 2s ease infinite" }} />
         </div>
       </section>
 
-      {/* ═══ STAT BAR ═══ */}
-      {stats.length > 0 && (
-        <Reveal>
-          <div style={{ display: "grid", gridTemplateColumns: `repeat(${stats.length},1fr)`, borderTop: "1px solid var(--euro-sand)", borderBottom: "1px solid var(--euro-sand)" }}>
-            {stats.map((s, i) => (
-              <div key={i} style={{ padding: "clamp(24px,3vh,40px) 16px", textAlign: "center", borderRight: i < stats.length - 1 ? "1px solid var(--euro-sand)" : "none" }}>
-                <div style={{ fontFamily: "var(--euro-serif)", fontSize: "clamp(28px,3vw,42px)", fontWeight: 400, color: "var(--euro-text)" }}>
-                  <Counter target={s.val} comma={!!s.comma} />
-                </div>
-                <div style={{ fontSize: 10, letterSpacing: 2, textTransform: "uppercase", color: "var(--euro-light)", marginTop: 4 }}>{s.label}</div>
-              </div>
-            ))}
-          </div>
-        </Reveal>
-      )}
-
-      {/* ═══ QUOTE ═══ */}
-      {course.pointOfView && (
-        <section style={{ background: "var(--euro-ivory)", textAlign: "center", padding: "clamp(80px,12vh,140px) clamp(32px,6vw,100px)" }}>
-          <Reveal><div style={{ fontFamily: "var(--euro-serif)", fontSize: 80, color: "var(--euro-sand)", lineHeight: 1, marginBottom: -20 }}>&ldquo;</div></Reveal>
-          <Reveal delay={0.08}>
-            <p style={{ fontFamily: "var(--euro-serif)", fontSize: "clamp(22px,3vw,34px)", fontWeight: 400, fontStyle: "italic", lineHeight: 1.55, color: "var(--euro-text)", maxWidth: 750, margin: "0 auto" }}>
-              {course.pointOfView}
-            </p>
-          </Reveal>
-          <Reveal delay={0.16}><div style={{ fontSize: 12, letterSpacing: 2, textTransform: "uppercase", color: "var(--euro-muted)", marginTop: 24, fontWeight: 500 }}>— Golf the High Sierra</div></Reveal>
-        </section>
-      )}
-
-      {/* ═══ TWO-COL: Signature / Featured Hole ═══ */}
-      {galleryImages[0] && (
-        <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }} className="max-md:!grid-cols-1">
-          <div style={{ position: "relative", overflow: "hidden", minHeight: 500 }} className="max-md:!min-h-[350px]">
-            <Image src={galleryImages[0]} alt={course.featuredHole?.title || "Course feature"} fill className="object-cover hover:scale-[1.03] transition-transform duration-[6s]" sizes="(max-width:900px) 100vw, 50vw" />
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", padding: "clamp(40px,6vw,100px)" }}>
-            <Reveal><div style={labelStyle}>{course.featuredHole ? "Signature Hole" : "The Course"}</div></Reveal>
-            <Reveal delay={0.08}>
-              <h2 style={titleStyle}>
-                {course.featuredHole?.title ? (
-                  <>The <em style={{ fontStyle: "italic" }}>{course.featuredHole.title.replace(/^The\s*/i, "")}</em></>
-                ) : (
-                  <>An Exceptional <em style={{ fontStyle: "italic" }}>Experience</em></>
-                )}
-              </h2>
-            </Reveal>
-            <Reveal delay={0.16}><p style={textStyle}>{course.featuredHole?.description || para1}</p></Reveal>
-            {course.yardage && (
-              <Reveal delay={0.24}>
-                <div style={{ display: "inline-block", marginTop: 24, padding: "16px 24px", border: "1px solid var(--euro-sand)", borderRadius: 12 }}>
-                  <div style={{ fontFamily: "var(--euro-serif)", fontSize: 26, color: "var(--euro-accent)" }}>{course.yardage.toLocaleString()} yards</div>
-                  <div style={{ fontSize: 11, color: "var(--euro-light)", letterSpacing: 1, textTransform: "uppercase", marginTop: 2 }}>From championship tees</div>
-                </div>
-              </Reveal>
-            )}
-          </div>
-        </section>
-      )}
-
-      {/* ═══ TWO-COL: Experience (reversed) ═══ */}
-      {galleryImages[1] && (
-        <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", direction: "rtl" }} className="max-md:!grid-cols-1">
-          <div style={{ position: "relative", overflow: "hidden", minHeight: 500, direction: "ltr" }} className="max-md:!min-h-[350px]">
-            <Image src={galleryImages[1]} alt="Course view" fill className="object-cover hover:scale-[1.03] transition-transform duration-[6s]" sizes="(max-width:900px) 100vw, 50vw" />
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", padding: "clamp(40px,6vw,100px)", direction: "ltr" }}>
-            <Reveal><div style={labelStyle}>The Experience</div></Reveal>
-            <Reveal delay={0.08}>
-              <h2 style={titleStyle}>Championship Golf<br /><em style={{ fontStyle: "italic" }}>&amp; Natural Beauty</em></h2>
-            </Reveal>
-            <Reveal delay={0.16}><p style={textStyle}>{para2}</p></Reveal>
-            <Reveal delay={0.24}>
-              <div style={{ display: "inline-block", marginTop: 24, padding: "16px 24px", border: "1px solid var(--euro-sand)", borderRadius: 12 }}>
-                <div style={{ fontFamily: "var(--euro-serif)", fontSize: 26, color: "var(--euro-accent)" }}>20+ years</div>
-                <div style={{ fontSize: 11, color: "var(--euro-light)", letterSpacing: 1, textTransform: "uppercase", marginTop: 2 }}>Golf the High Sierra · Expert Group Planning</div>
-              </div>
-            </Reveal>
-          </div>
-        </section>
-      )}
-
-      {divider}
-
-      {/* ═══ GALLERY GRID ═══ */}
-      {galleryImages.length > 0 && (
-        <section style={{ padding: sectionSmPad }}>
-          <Reveal><div style={labelStyle}>Gallery</div></Reveal>
-          <Reveal delay={0.08}><h2 style={{ ...titleStyle, marginBottom: 32 }}>See <em style={{ fontStyle: "italic" }}>{firstName}</em></h2></Reveal>
-          <div style={{ display: "grid", gridTemplateColumns: `repeat(${Math.min(galleryImages.length, 3)},1fr)`, gap: 4 }} className="max-md:!grid-cols-2">
-            {galleryImages.slice(0, 6).map((img, i) => (
-              <Reveal key={i} delay={i * 0.06}>
-                <div
-                  style={{ position: "relative", aspectRatio: "4/3", overflow: "hidden", cursor: "pointer" }}
-                  onClick={() => setLbIndex(i)}
-                >
-                  <Image src={img} alt={`${course.name} ${i + 1}`} fill className="object-cover brightness-[.92] hover:brightness-100 hover:scale-[1.04] transition-all duration-700" sizes="(max-width:768px) 50vw, 33vw" />
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {divider}
-
-      {/* ═══ BIG NUMBERS ═══ */}
-      {bigNums.length > 0 && (
-        <div style={{ display: "grid", gridTemplateColumns: `repeat(${bigNums.length},1fr)`, gap: 0, borderTop: "1px solid var(--euro-sand)", borderBottom: "1px solid var(--euro-sand)" }} className="max-md:!grid-cols-2">
-          {bigNums.map((s, i) => (
-            <Reveal key={i} delay={i * 0.08}>
-              <div style={{ padding: "clamp(40px,6vh,80px) 24px", textAlign: "center", borderRight: i < bigNums.length - 1 ? "1px solid var(--euro-sand)" : "none" }}>
-                <div style={{ fontFamily: "var(--euro-serif)", fontSize: "clamp(44px,6vw,72px)", fontWeight: 400, color: "var(--euro-text)" }}>
-                  <Counter target={s.val} comma={!!s.comma} />
-                </div>
-                <div style={{ fontSize: 10, letterSpacing: 2.5, textTransform: "uppercase", color: "var(--euro-light)", marginTop: 8 }}>{s.label}</div>
-              </div>
-            </Reveal>
+      {/* ═══ 2. CONTENT — text + gallery ═══ */}
+      <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 600 }} className="max-md:!grid-cols-1">
+        <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+          <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>The Course</div></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em" }}>
+            {course.featuredHole?.title ? <>The <em style={{ fontStyle: "italic" }}>{course.featuredHole.title.replace(/^The\s*/i, "")}</em></> : <>Where Mountains Meet <em style={{ fontStyle: "italic" }}>Mastery</em></>}
+          </h2></R>
+          <R delay={0.16}><p style={{ fontSize: 13, lineHeight: 1.9, color: "var(--stone)", fontWeight: 300, maxWidth: 440, marginTop: 16 }}>{para1}</p></R>
+          <R delay={0.2}><div style={{ width: 40, height: 1, background: "var(--bone)", margin: "20px 0" }} /></R>
+          <R delay={0.24}><p style={{ fontSize: 13, lineHeight: 1.9, color: "var(--stone)", fontWeight: 300, maxWidth: 440 }}>From 8 to 100 players — consecutive tee times, rooming lists, comps for organizers. Buddy trip, corporate outing, or charity tournament. 20+ years of expert group planning.</p></R>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: 4 }} className="max-md:!min-h-[400px]">
+          {gallery.slice(0, 3).map((img, i) => (
+            <div key={i} style={{ overflow: "hidden", position: "relative", cursor: "pointer", ...(i === 2 ? { gridColumn: "span 2" } : {}) }} onClick={() => setLbIndex(i)}>
+              <Image src={img} alt={`${course.name} ${i + 1}`} fill className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.06] transition-all duration-700" sizes="(max-width:900px) 100vw, 50vw" />
+            </div>
           ))}
         </div>
-      )}
+      </section>
 
-      {/* ═══ FULLBLEED: Group Golf ═══ */}
-      {course.heroImage && (
-        <section style={{ position: "relative", height: "70vh", minHeight: 450, overflow: "hidden", display: "flex", alignItems: "center" }}>
-          <div style={{ position: "absolute", inset: 0 }}>
-            <Image src={course.heroImage} alt={course.name} fill className="object-cover brightness-[.4]" sizes="100vw" />
-          </div>
-          <div style={{ position: "relative", zIndex: 2, padding: "0 clamp(32px,6vw,100px)", maxWidth: 620 }}>
-            <Reveal><div style={{ ...labelStyle, color: "rgba(255,255,255,.45)" }}>Group Golf</div></Reveal>
-            <Reveal delay={0.08}><h2 style={{ ...titleStyle, color: "#fff" }}>Built for <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.7)" }}>Groups</em></h2></Reveal>
-            <Reveal delay={0.16}><p style={{ ...textStyle, color: "rgba(255,255,255,.5)" }}>From 8 to 100 players. Consecutive tee times, rooming lists, comps for organizers. Whether it&apos;s a buddy trip, corporate outing, or charity tournament — our team handles every detail so you can focus on the game.</p></Reveal>
-          </div>
-        </section>
-      )}
+      {/* ═══ 3. DARK FEATURE ═══ */}
+      <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", background: "var(--ink)" }} className="max-md:!grid-cols-1">
+        <div style={{ position: "relative", overflow: "hidden", minHeight: 400 }} className="max-md:!min-h-[300px]">
+          {gallery[1] && <Image src={gallery[1]} alt="Feature" fill className="object-cover opacity-60 hover:opacity-75 hover:scale-[1.04] transition-all duration-[8s]" sizes="(max-width:900px) 100vw, 50vw" />}
+        </div>
+        <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+          <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14 }}>
+            {course.featuredHole ? "Signature Hole" : "The Experience"}
+          </div></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em", color: "#fff" }}>
+            {course.featuredHole?.title ? <>{course.featuredHole.title.split(" ").slice(0, -1).join(" ")} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.4)" }}>{course.featuredHole.title.split(" ").slice(-1)}</em></> : <>Championship <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.4)" }}>Golf</em></>}
+          </h2></R>
+          <R delay={0.16}>
+            <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(20px,2.5vw,30px)", fontWeight: 300, fontStyle: "italic", lineHeight: 1.5, color: "rgba(255,255,255,.6)", marginTop: 16, maxWidth: 440, position: "relative", paddingTop: 28 }}>
+              <span style={{ fontFamily: "var(--serif)", fontSize: 60, color: "rgba(180,154,106,.2)", lineHeight: ".5", position: "absolute", top: 0, left: 0 }}>&ldquo;</span>
+              {quoteText}
+            </div>
+          </R>
+          <R delay={0.24}><div style={{ fontSize: 9, color: "rgba(255,255,255,.2)", letterSpacing: 2, textTransform: "uppercase", marginTop: 16 }}>— Golf the High Sierra</div></R>
+        </div>
+      </section>
 
-      {divider}
+      {/* ═══ 4. INFO STRIP ═══ */}
+      <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 0 }} className="max-md:!grid-cols-1">
+        {/* Left: stats + distances */}
+        <div style={{ padding: "clamp(48px,8vh,80px) clamp(32px,5vw,80px)", background: "var(--cream)" }}>
+          <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>At a Glance</div></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1 }}><em style={{ fontStyle: "italic" }}>{firstName}</em> Details</h2></R>
 
-      {/* ═══ FACILITIES ═══ */}
-      {facilities.length > 0 && (
-        <section style={{ padding: sectionPad }}>
-          <Reveal><div style={labelStyle}>Amenities</div></Reveal>
-          <Reveal delay={0.08}><h2 style={{ ...titleStyle, marginBottom: 28 }}>On <em style={{ fontStyle: "italic" }}>Course</em></h2></Reveal>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 12, maxWidth: 720 }} className="max-md:!grid-cols-2 max-sm:!grid-cols-1">
-            {facilities.map((f, i) => (
-              <Reveal key={i} delay={0.04 * i}>
-                <div style={{ padding: "14px 18px", border: "1px solid var(--euro-sand)", borderRadius: 10, fontSize: 14, fontWeight: 300, color: "var(--euro-text)", transition: "border-color .3s" }} className="hover:!border-[#a89070]">{f}</div>
-              </Reveal>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {divider}
-
-      {/* ═══ LOCATION ═══ */}
-      {addr?.streetAddress && (
-        <section style={{ padding: sectionPad }}>
-          <Reveal><div style={labelStyle}>Location</div></Reveal>
-          <Reveal delay={0.08}><h2 style={titleStyle}>Getting to <em style={{ fontStyle: "italic" }}>{firstName}</em></h2></Reveal>
-          <Reveal delay={0.16}>
-            <p style={{ fontSize: 14, color: "var(--euro-muted)", marginTop: 8, fontWeight: 300 }}>
-              {addr.streetAddress}, {addr.addressLocality}, {addr.addressRegion} {addr.postalCode}
-              {course.phone && <> · <a href={`tel:${course.phone}`} style={{ color: "var(--euro-accent)" }}>{course.phone}</a></>}
-            </p>
-          </Reveal>
-
-          {distances.length > 0 && (
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0 clamp(32px,5vw,80px)", maxWidth: 720, marginTop: 32 }} className="max-sm:!grid-cols-1">
-              {distances.map((d, i) => (
-                <Reveal key={i} delay={0.04 * i}>
-                  <div style={{ display: "flex", justifyContent: "space-between", padding: "16px 0", borderBottom: "1px solid var(--euro-sand)", fontSize: 14, transition: "padding-left .3s" }} className="hover:!pl-2">
-                    <span style={{ color: "var(--euro-text)", fontWeight: 400 }}>{d.replace(/^\d+\s*(minutes?|mins?)\s*(from\s*)?/i, "")}</span>
-                    <span style={{ color: "var(--euro-accent)", fontWeight: 500 }}>{d.match(/^\d+/)?.[0]} min</span>
-                  </div>
-                </Reveal>
+          {/* Mini stats */}
+          <R delay={0.16}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 12, margin: "24px 0" }}>
+              {[
+                course.holes && { v: course.holes, l: "Holes" },
+                course.par && { v: course.par, l: "Par" },
+                course.yardage && { v: course.yardage.toLocaleString(), l: "Yards" },
+              ].filter(Boolean).map((s, i) => (
+                <div key={i} style={{ textAlign: "center", padding: "16px 8px", border: "1px solid var(--bone)", borderRadius: 8, background: "var(--white)" }}>
+                  <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(22px,2.5vw,30px)", fontWeight: 300 }}>{(s as {v:string|number}).v}</div>
+                  <div style={{ fontSize: 8, letterSpacing: 2, textTransform: "uppercase", color: "var(--stone)", marginTop: 3 }}>{(s as {l:string}).l}</div>
+                </div>
               ))}
             </div>
+          </R>
+
+          {/* Distances */}
+          {distances.length > 0 && (
+            <R delay={0.24}>
+              <div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginTop: 24, marginBottom: 8 }}>Distances</div>
+              {distances.slice(0, 4).map((d, i) => (
+                <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "10px 0", borderBottom: "1px solid var(--bone)", fontSize: 12, fontWeight: 300 }}>
+                  <span style={{ color: "var(--charcoal)" }}>{d.replace(/^\d+\s*(minutes?|mins?)\s*(from\s*)?/i, "")}</span>
+                  <span style={{ color: "var(--gold)", fontWeight: 500 }}>{d.match(/^\d+/)?.[0]} min</span>
+                </div>
+              ))}
+            </R>
           )}
 
-          {course.geo && (course.geo as CourseGeo).latitude && (
-            <Reveal delay={0.2}>
-              <div style={{ marginTop: 40, borderRadius: 12, overflow: "hidden", aspectRatio: "2/1", maxWidth: 720 }}>
-                <iframe
-                  src={`https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12000!2d${(course.geo as CourseGeo).longitude}!3d${(course.geo as CourseGeo).latitude}!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s!2s!5e0!3m2!1sen!2sus`}
-                  className="w-full h-full border-0" style={{ filter: "saturate(.5) contrast(1.1)" }} loading="lazy"
-                />
-              </div>
-            </Reveal>
+          {/* Address */}
+          {addr?.streetAddress && (
+            <R delay={0.28}>
+              <p style={{ fontSize: 11, color: "var(--stone)", marginTop: 20, fontWeight: 300 }}>
+                {addr.streetAddress}, {addr.addressLocality}, {addr.addressRegion} {addr.postalCode}
+                {course.phone && <><br /><a href={`tel:${course.phone}`} style={{ color: "var(--gold)" }}>{course.phone}</a></>}
+              </p>
+            </R>
           )}
-        </section>
-      )}
+        </div>
 
-      {divider}
+        {/* Right: FAQ */}
+        <div style={{ padding: "clamp(48px,8vh,80px) clamp(32px,5vw,80px)", background: "var(--white)" }}>
+          <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>FAQ</div></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, marginBottom: 20 }}>Common <em style={{ fontStyle: "italic" }}>Questions</em></h2></R>
+          {course.faqs.slice(0, 5).map((f, i) => (
+            <R key={i} delay={0.12 + i * 0.04}><FAQ q={f.question} a={f.answer} /></R>
+          ))}
+        </div>
+      </section>
 
-      {/* ═══ FAQ ═══ */}
-      {course.faqs.length > 0 && (
-        <section style={{ padding: sectionPad }}>
-          <Reveal><div style={labelStyle}>FAQ</div></Reveal>
-          <Reveal delay={0.08}><h2 style={{ ...titleStyle, marginBottom: 32 }}>Common <em style={{ fontStyle: "italic" }}>Questions</em></h2></Reveal>
-          <div style={{ maxWidth: 680 }}>
-            {course.faqs.map((f, i) => (
-              <Reveal key={i} delay={0.06 * i}>
-                <FAQ q={f.question} a={f.answer} />
-              </Reveal>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {divider}
-
-      {/* ═══ RELATED COURSES ═══ */}
+      {/* ═══ RELATED ═══ */}
       {relatedCourses.length > 0 && (
-        <section style={{ padding: sectionPad, background: "var(--euro-ivory)" }}>
-          <Reveal><div style={labelStyle}>Nearby Courses</div></Reveal>
-          <Reveal delay={0.08}><h2 style={{ ...titleStyle, marginBottom: 32 }}>More in <em style={{ fontStyle: "italic" }}>{course.regionLabel}</em></h2></Reveal>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }} className="max-md:!grid-cols-1">
+        <section style={{ padding: "clamp(48px,7vh,80px) clamp(32px,7vw,120px)", background: "var(--cream)" }}>
+          <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>Nearby</div></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1 }}>More in <em style={{ fontStyle: "italic" }}>{course.regionLabel}</em></h2></R>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16, marginTop: 24 }} className="max-md:!grid-cols-1">
             {relatedCourses.map((rc, i) => (
-              <Reveal key={rc.slug} delay={0.08 + i * 0.06}>
+              <R key={rc.slug} delay={0.12 + i * 0.06}>
                 <Link href={`/portfolio/${rc.slug}/`}>
-                  <div style={{ borderRadius: 12, overflow: "hidden", border: "1px solid var(--euro-sand)", transition: "all .5s", background: "var(--euro-white)" }} className="hover:!border-transparent hover:!shadow-[0_12px_40px_rgba(0,0,0,.06)] hover:-translate-y-1">
-                    <div style={{ aspectRatio: "16/10", overflow: "hidden", position: "relative" }}>
-                      {rc.heroImage ? (
-                        <Image src={rc.heroImage} alt={rc.name} fill className="object-cover group-hover:scale-[1.04] transition-transform duration-700" sizes="(max-width:768px) 100vw, 33vw" />
-                      ) : (
-                        <div style={{ width: "100%", height: "100%", background: "var(--euro-stone)" }} />
-                      )}
-                      {rc.priceRange && <span style={{ position: "absolute", top: 12, right: 12, background: "#2c2c2c", color: "#fff", padding: "4px 12px", borderRadius: 100, fontSize: 10, fontWeight: 600 }}>{rc.priceRange}</span>}
+                  <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--white)", transition: "all .5s" }} className="hover:!border-transparent hover:!shadow-[0_16px_48px_rgba(0,0,0,.06)] hover:-translate-y-1">
+                    <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
+                      {rc.heroImage ? <Image src={rc.heroImage} alt={rc.name} fill className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
+                      {rc.priceRange && <span style={{ position: "absolute", top: 10, right: 10, background: "var(--ink)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 9, fontWeight: 600 }}>{rc.priceRange}</span>}
                     </div>
-                    <div style={{ padding: 20 }}>
-                      <div style={{ fontFamily: "var(--euro-serif)", fontSize: 18, color: "var(--euro-text)", marginBottom: 4 }}>{rc.name}</div>
-                      <div style={{ fontSize: 10, textTransform: "uppercase", letterSpacing: 1.5, color: "var(--euro-light)", marginBottom: 12 }}>{rc.regionLabel}</div>
-                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: 12, borderTop: "1px solid var(--euro-sand)" }}>
-                        {rc.rating && <span style={{ fontSize: 12, color: "var(--euro-muted)" }}>★ {rc.rating.value}</span>}
-                        <span style={{ fontSize: 11, color: "var(--euro-accent)", fontWeight: 500, display: "flex", alignItems: "center", gap: 4 }}>View Course <ArrowRight className="w-3 h-3" /></span>
+                    <div style={{ padding: 16 }}>
+                      <div style={{ fontFamily: "var(--serif)", fontSize: 18, fontWeight: 400, color: "var(--ink)" }}>{rc.name}</div>
+                      <div style={{ fontSize: 8, textTransform: "uppercase", letterSpacing: 2, color: "var(--stone)", margin: "4px 0 12px" }}>{rc.regionLabel}</div>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: 10, borderTop: "1px solid var(--bone)" }}>
+                        {rc.rating && <span style={{ fontSize: 10, color: "var(--stone)" }}>★ {rc.rating.value}</span>}
+                        <span style={{ fontSize: 9, color: "var(--gold)", fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>View →</span>
                       </div>
                     </div>
                   </div>
                 </Link>
-              </Reveal>
+              </R>
             ))}
           </div>
         </section>
       )}
 
-      {divider}
-
-      {/* ═══ CTA ═══ */}
-      <section style={{ textAlign: "center", background: "var(--euro-ivory)", padding: "clamp(80px,14vh,160px) clamp(32px,6vw,100px)" }}>
-        <Reveal><div style={labelStyle}>Book {firstName}</div></Reveal>
-        <Reveal delay={0.08}><h2 style={{ ...titleStyle, margin: "0 auto 16px" }}>Play <em style={{ fontStyle: "italic" }}>{firstName}</em><br />With Your Group</h2></Reveal>
-        <Reveal delay={0.16}>
-          <p style={{ ...textStyle, textAlign: "center", margin: "0 auto 0", maxWidth: 500 }}>
-            {course.priceRange ? `Stay-and-play packages from ${course.priceRange.split("–")[0]}/golfer. ` : ""}Tee times, lodging, dining — one call does it all.
-          </p>
-        </Reveal>
-        <Reveal delay={0.24}>
-          <div style={{ marginTop: 28 }}>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", borderRadius: 100, background: "rgba(139,115,85,.06)", border: "1px solid rgba(139,115,85,.1)", fontSize: 11, color: "var(--euro-accent)", fontWeight: 500, marginBottom: 28 }}>
-              <span style={{ width: 5, height: 5, borderRadius: "50%", background: "var(--euro-accent)", animation: "euroFade 2s infinite" }} />
-              Weekend tee times limited in peak season
+      {/* ═══ 5. CTA ═══ */}
+      <section style={{ background: "var(--ink)", textAlign: "center", padding: "clamp(64px,10vh,120px) clamp(32px,7vw,120px)", position: "relative", overflow: "hidden" }}>
+        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 60%,rgba(180,154,106,.05),transparent 70%)" }} />
+        <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14, position: "relative", zIndex: 1 }}>Book {firstName}</div></R>
+        <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, color: "#fff", marginBottom: 12, position: "relative", zIndex: 1 }}>Play {firstName} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.35)" }}>With Your Group</em></h2></R>
+        <R delay={0.16}><p style={{ fontSize: 13, color: "rgba(255,255,255,.25)", fontWeight: 300, maxWidth: 380, margin: "0 auto 28px", lineHeight: 1.8, position: "relative", zIndex: 1 }}>
+          {course.priceRange ? `Stay-and-play from ${course.priceRange.split("–")[0]}/golfer. ` : ""}Tee times, lodging, dining — one call.
+        </p></R>
+        <R delay={0.2}>
+          <div style={{ position: "relative", zIndex: 1 }}>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "8px 16px", borderRadius: 100, border: "1px solid rgba(180,154,106,.12)", fontSize: 9, color: "var(--gold)", fontWeight: 500, marginBottom: 24, letterSpacing: ".5px" }}>
+              <span style={{ width: 4, height: 4, borderRadius: "50%", background: "var(--gold)", animation: "euroP 2s infinite" }} />
+              Peak season tee times limited
             </div>
           </div>
-        </Reveal>
-        <Reveal delay={0.32}>
-          <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/contact-custom-golf-package/" style={{ display: "inline-block", padding: "16px 40px", background: "var(--euro-accent)", color: "#fff", borderRadius: 100, fontSize: 12, fontWeight: 500, letterSpacing: 1.5, textTransform: "uppercase", transition: "all .4s" }} className="hover:!bg-[#a89070] hover:-translate-y-0.5 hover:shadow-[0_12px_36px_rgba(139,115,85,.15)]">
-              Plan My {firstName} Trip
+        </R>
+        <R delay={0.28}>
+          <div style={{ display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap", position: "relative", zIndex: 1 }}>
+            <Link href="/contact-custom-golf-package/" style={{ display: "inline-block", padding: "15px 36px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 10, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase", transition: "all .4s" }} className="hover:!bg-[#c8ad7e] hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(180,154,106,.2)]">
+              Plan My Trip
             </Link>
-            <a href="tel:+18885848232" style={{ display: "inline-block", padding: "16px 40px", border: "1px solid var(--euro-sand)", color: "var(--euro-muted)", borderRadius: 100, fontSize: 12, fontWeight: 400, letterSpacing: 1.5, textTransform: "uppercase", transition: "all .4s" }} className="hover:!border-[#2c2c2c] hover:!text-[#2c2c2c]">
+            <a href="tel:+18885848232" style={{ display: "inline-block", padding: "15px 36px", border: "1px solid rgba(255,255,255,.1)", color: "rgba(255,255,255,.35)", borderRadius: 100, fontSize: 10, fontWeight: 400, letterSpacing: 2, textTransform: "uppercase", transition: "all .4s" }} className="hover:!border-white/35 hover:!text-white">
               Call 888-584-8232
             </a>
           </div>
-        </Reveal>
+        </R>
       </section>
 
-      {/* ═══ Lightbox ═══ */}
-      {lbIndex !== null && <Lightbox images={galleryImages} startIndex={lbIndex} onClose={() => setLbIndex(null)} name={course.name} />}
+      {/* Lightbox */}
+      {lbIndex !== null && <Lightbox images={gallery} startIndex={lbIndex} onClose={() => setLbIndex(null)} name={course.name} />}
 
-      {/* ═══ Keyframe for badge pulse ═══ */}
-      <style jsx global>{`@keyframes euroFade{0%,100%{opacity:1}50%{opacity:.3}}`}</style>
+      {/* Keyframes */}
+      <style jsx global>{`
+        @keyframes heroZoom{to{transform:scale(1)}}
+        @keyframes sdrop{0%{opacity:0;transform:translateY(-8px)}50%{opacity:1}100%{opacity:0;transform:translateY(8px)}}
+        @keyframes euroP{0%,100%{opacity:1}50%{opacity:.2}}
+      `}</style>
     </div>
   );
 }
