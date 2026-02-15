@@ -1,498 +1,375 @@
 "use client";
 
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import {
-  Phone,
-  MapPin,
-  Star,
-  ArrowRight,
-  DollarSign,
-  ChevronRight,
-  ChevronDown,
-  Globe,
-  BedDouble,
-  UtensilsCrossed,
-  Wine,
-  Sparkles,
-  CheckCircle2,
-  Navigation,
-  Building2,
-  Car,
-  Users,
-} from "lucide-react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
-// ===== Hotel Types =====
-interface HotelAddress {
-  streetAddress: string;
-  addressLocality: string;
-  addressRegion: string;
-  postalCode: string;
-  addressCountry: string;
-}
-
-interface HotelGeo {
-  latitude: number;
-  longitude: number;
-}
-
-interface HotelRating {
-  value: number;
-  count: number;
-  sources: string;
-}
-
-interface HotelRoomType {
-  name: string;
-  description: string;
-  priceFrom?: string;
-  image?: string;
-}
-
-interface HotelDining {
-  name: string;
-  slug?: string;
-  type: string;
-  description: string;
-}
-
-interface HotelFAQ {
-  question: string;
-  answer: string;
-}
+/* ─── Types ─── */
+interface HotelAddress { streetAddress: string; addressLocality: string; addressRegion: string; postalCode: string; addressCountry: string; }
+interface HotelGeo { latitude: number; longitude: number; }
+interface HotelRating { value: number; count: number; sources: string; }
+interface HotelRoomType { name: string; description: string; priceFrom?: string; image?: string; }
+interface HotelDining { name: string; slug?: string; type: string; description: string; }
+interface HotelFAQ { question: string; answer: string; }
 
 export interface HotelProps {
-  slug: string;
-  name: string;
-  region: string;
-  regionLabel: string;
-  type: string;
-  address: HotelAddress;
-  geo: HotelGeo;
-  phone?: string;
-  website?: string;
-  priceRange: string;
-  priceFrom?: string;
-  starRating?: number;
-  aaaRating?: string;
-  rating?: HotelRating;
-  description: string;
-  shortDescription: string;
-  highlights: string[];
-  amenities: string[];
-  roomTypes: HotelRoomType[];
-  dining: HotelDining[];
-  spaBars: string[];
-  totalRooms?: number | null;
-  parking: string;
-  images: string[];
-  heroImage: string;
-  faqs: HotelFAQ[];
-  relatedCourses: string[];
-  relatedHotels: string[];
+  slug: string; name: string; region: string; regionLabel: string; type: string;
+  address: HotelAddress; geo: HotelGeo; phone?: string; website?: string;
+  priceRange: string; priceFrom?: string; starRating?: number; aaaRating?: string;
+  rating?: HotelRating; description: string; shortDescription: string;
+  highlights: string[]; amenities: string[]; roomTypes: HotelRoomType[];
+  dining: HotelDining[]; spaBars: string[]; totalRooms?: number | null;
+  parking: string; images: string[]; heroImage: string; faqs: HotelFAQ[];
+  relatedCourses: string[]; relatedHotels: string[];
   meta: { title: string; description: string };
 }
 
-interface HotelPageContentProps {
-  hotel: HotelProps;
-  relatedHotels: HotelProps[];
-}
+interface HotelPageContentProps { hotel: HotelProps; relatedHotels: HotelProps[]; }
 
-function FAQAccordion({ question, answer }: { question: string; answer: string }) {
-  const [open, setOpen] = useState(false);
+/* ─── Reveal ─── */
+function R({ children, className = "", delay = 0, style }: { children: React.ReactNode; className?: string; delay?: number; style?: React.CSSProperties }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [v, setV] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setV(true); obs.unobserve(el); } }, { threshold: 0.08, rootMargin: "-20px" });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
   return (
-    <div className="border border-pine-400/20 rounded-lg overflow-hidden">
-      <button
-        onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between p-4 text-left bg-pine-800/50 hover:bg-pine-800 transition-colors"
-      >
-        <span className="font-semibold text-cream-200 pr-4">{question}</span>
-        <ChevronDown className={`w-5 h-5 text-gold-400 flex-shrink-0 transition-transform ${open ? "rotate-180" : ""}`} />
-      </button>
-      {open && (
-        <div className="p-4 bg-pine-900/50 text-cream-300/80 text-sm leading-relaxed">{answer}</div>
-      )}
+    <div ref={ref} className={className} style={{ ...style, opacity: v ? 1 : 0, transform: v ? "translateY(0)" : "translateY(30px)", transition: `opacity .9s ease ${delay}s, transform .9s ease ${delay}s` }}>
+      {children}
     </div>
   );
 }
 
-export default function HotelPageContent({ hotel, relatedHotels }: HotelPageContentProps) {
-  const typeLabel: Record<string, string> = {
-    "casino-resort": "Casino Resort",
-    hotel: "Hotel",
-    resort: "Resort",
-    inn: "Inn & Casino",
-    "private-residence": "Private Residences",
-    lodge: "Boutique Lodge",
-  };
+/* ─── FAQ ─── */
+function FAQ({ q, a }: { q: string; a: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{ borderBottom: "1px solid var(--bone)" }}>
+      <button onClick={() => setOpen(!open)} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", padding: "18px 0", background: "none", border: "none", fontFamily: "var(--sans)", fontSize: 13, color: "var(--charcoal)", cursor: "pointer", textAlign: "left" as const, gap: 12, fontWeight: 400, transition: "color .3s" }}>
+        {q}
+        <span style={{ width: 24, height: 24, borderRadius: "50%", border: "1px solid var(--bone)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14, color: "var(--stone)", transition: "all .4s", flexShrink: 0, fontWeight: 300, ...(open ? { background: "var(--gold)", color: "#fff", borderColor: "var(--gold)", transform: "rotate(45deg)" } : {}) }}>+</span>
+      </button>
+      <div style={{ maxHeight: open ? 250 : 0, overflow: "hidden", transition: "max-height .5s ease" }}>
+        <p style={{ paddingBottom: 18, fontSize: 12, color: "var(--stone)", lineHeight: 1.8, fontWeight: 300 }}>{a}</p>
+      </div>
+    </div>
+  );
+}
+
+/* ─── Lightbox ─── */
+function Lightbox({ images, startIndex, onClose, name }: { images: string[]; startIndex: number; onClose: () => void; name: string }) {
+  const [idx, setIdx] = useState(startIndex);
+  useEffect(() => {
+    const h = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); if (e.key === "ArrowRight") setIdx(i => (i + 1) % images.length); if (e.key === "ArrowLeft") setIdx(i => (i - 1 + images.length) % images.length); };
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", h);
+    return () => { document.body.style.overflow = ""; window.removeEventListener("keydown", h); };
+  }, [images.length, onClose]);
+  return (
+    <div className="fixed inset-0 z-[9999] bg-black/95 flex items-center justify-center" onClick={onClose}>
+      <button onClick={onClose} className="absolute top-4 right-4 text-white/60 hover:text-white z-10 p-2"><X className="w-8 h-8" /></button>
+      <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i - 1 + images.length) % images.length); }} className="absolute left-4 text-white/60 hover:text-white z-10 p-2"><ChevronLeft className="w-10 h-10" /></button>
+      <div className="relative w-[90vw] h-[80vh]" onClick={e => e.stopPropagation()}>
+        <Image src={images[idx]} alt={`${name} ${idx + 1}`} fill className="object-contain" sizes="90vw" />
+      </div>
+      <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i + 1) % images.length); }} className="absolute right-4 text-white/60 hover:text-white z-10 p-2"><ChevronRight className="w-10 h-10" /></button>
+      <div className="absolute bottom-4 text-white/40 text-xs tracking-widest">{idx + 1} / {images.length}</div>
+    </div>
+  );
+}
+
+/* ═══════════════════════════════════════
+   MAIN COMPONENT
+   ═══════════════════════════════════════ */
+export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPageContentProps) {
+  const [lbIndex, setLbIndex] = useState<number | null>(null);
+
+  const gallery = hotel.images?.length ? hotel.images : [];
+  const addr = hotel.address;
+  const nameParts = hotel.name.split(" ");
+  const firstName = nameParts[0];
+  const quoteText = hotel.shortDescription || hotel.description.substring(0, 200);
+
+  const cssVars = {
+    "--white": "#fff", "--cream": "#faf8f5", "--bone": "#eee9e2", "--sand": "#d4cfc6",
+    "--stone": "#8a857c", "--charcoal": "#3a3832", "--ink": "#1a1917",
+    "--gold": "#b49a6a", "--gold-glow": "#c8ad7e",
+    "--serif": "'Cormorant', Georgia, serif",
+    "--sans": "'Manrope', system-ui, sans-serif",
+  } as React.CSSProperties;
+
+  /* Compute type label */
+  const typeLabel = hotel.type?.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase()) || "Resort";
 
   return (
-    <>
-      {/* ===== HERO ===== */}
-      <section className="relative h-[55vh] min-h-[420px] flex items-end bg-pine-800">
-        {hotel.heroImage && (
-          <Image src={hotel.heroImage} alt={hotel.name} fill className="object-cover" priority />
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-pine-900/95 via-pine-900/50 to-pine-900/20" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 pb-10 w-full">
-          <nav className="flex items-center gap-2 text-sm text-cream-300/70 mb-4">
-            <Link href="/" className="hover:text-gold-400 transition-colors">Home</Link>
-            <ChevronRight className="w-3 h-3" />
-            <Link href="/accommodations-in-reno-tahoe/" className="hover:text-gold-400 transition-colors">Accommodations</Link>
-            <ChevronRight className="w-3 h-3" />
-            <span className="text-cream-200">{hotel.name}</span>
-          </nav>
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-            <div>
-              <span className="inline-block bg-gold-500 text-pine-900 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-sm mb-3">
-                {hotel.regionLabel}
-              </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight">
-                {hotel.name}
-              </h1>
-              {hotel.address?.addressLocality && (
-                <p className="flex items-center gap-2 text-cream-300/80 mt-3 text-lg">
-                  <MapPin className="w-4 h-4 text-gold-400" />
-                  {hotel.address.addressLocality}, {hotel.address.addressRegion}
-                </p>
-              )}
-            </div>
-            <div className="flex flex-wrap gap-3">
-              {hotel.rating && (
-                <div className="flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-2 rounded-lg">
-                  <Star className="w-4 h-4 text-gold-400 fill-gold-400" />
-                  <span className="font-bold text-white">{hotel.rating.value}</span>
-                  <span className="text-cream-300/60 text-sm">({hotel.rating.count.toLocaleString()})</span>
-                </div>
-              )}
-              {hotel.priceFrom && (
-                <div className="flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-2 rounded-lg">
-                  <DollarSign className="w-4 h-4 text-gold-400" />
-                  <span className="text-white font-semibold">From {hotel.priceFrom}/night</span>
-                </div>
-              )}
-            </div>
+    <div style={{ ...cssVars, fontFamily: "var(--sans)", background: "var(--white)", color: "var(--ink)", overflowX: "hidden" }}>
+
+      {/* ═══ 1. HERO ═══ */}
+      <section style={{ position: "relative", height: "100vh", minHeight: 650, overflow: "hidden", background: "#0a0a08" }}>
+        <div style={{ position: "absolute", inset: 0 }}>
+          {hotel.heroImage && <Image src={hotel.heroImage} alt={hotel.name} fill priority className="object-cover" sizes="100vw" style={{ opacity: .5, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
+        </div>
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(0,0,0,.25) 0%,transparent 35%,transparent 55%,rgba(0,0,0,.65) 100%)" }} />
+
+        {/* Top bar */}
+        <div style={{ position: "absolute", top: "clamp(24px,4vh,48px)", left: "clamp(32px,7vw,120px)", right: "clamp(32px,7vw,120px)", display: "flex", justifyContent: "space-between", zIndex: 3 }}>
+          <div style={{ fontFamily: "var(--serif)", fontSize: 13, color: "rgba(255,255,255,.35)", letterSpacing: 3, textTransform: "uppercase" }}>Golf the High Sierra</div>
+          <div style={{ display: "flex", gap: 24 }}>
+            <Link href="/accommodations-in-reno-tahoe/" style={{ fontSize: 10, color: "rgba(255,255,255,.3)", letterSpacing: 2, textTransform: "uppercase" }}>Hotels</Link>
+            <Link href="/contact-custom-golf-package/" style={{ fontSize: 10, color: "rgba(255,255,255,.3)", letterSpacing: 2, textTransform: "uppercase" }}>Book</Link>
           </div>
         </div>
-      </section>
 
-      {/* ===== QUICK STATS BAR ===== */}
-      <section className="bg-pine-800 border-t border-pine-400/10">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 py-5">
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-cream-300/70">
-            <div className="flex items-center gap-2">
-              <Building2 className="w-4 h-4 text-gold-400" />
-              <span>{typeLabel[hotel.type] || hotel.type}</span>
+        {/* Hero content */}
+        <div style={{ position: "absolute", inset: 0, zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 clamp(32px,7vw,120px) clamp(48px,8vh,100px)" }}>
+          <R>
+            <h1 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(48px,8vw,110px)", lineHeight: .92, color: "#fff", letterSpacing: "-.03em" }}>
+              {nameParts.length > 3 ? <>{nameParts.slice(0, -2).join(" ")}<br /><em style={{ fontStyle: "italic", color: "rgba(255,255,255,.55)" }}>{nameParts.slice(-2).join(" ")}</em></> : <>{firstName}<br /><em style={{ fontStyle: "italic", color: "rgba(255,255,255,.55)" }}>{nameParts.slice(1).join(" ")}</em></>}
+            </h1>
+          </R>
+          <R delay={0.12}>
+            <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 16, fontSize: 12, color: "rgba(255,255,255,.3)", fontWeight: 300 }}>
+              <span>{typeLabel}</span>
+              <span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.2)" }} />
+              <span>{hotel.regionLabel}</span>
+              {hotel.starRating && <><span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.2)" }} /><span>{"★".repeat(hotel.starRating)} Star</span></>}
             </div>
-            {hotel.aaaRating && (
-              <div className="flex items-center gap-2">
-                <Star className="w-4 h-4 text-gold-400" />
-                <span>AAA {hotel.aaaRating}</span>
-              </div>
-            )}
-            {hotel.totalRooms && (
-              <div className="flex items-center gap-2">
-                <BedDouble className="w-4 h-4 text-gold-400" />
-                <span>{hotel.totalRooms.toLocaleString()} rooms</span>
-              </div>
-            )}
-            {hotel.parking && (
-              <div className="flex items-center gap-2">
-                <Car className="w-4 h-4 text-gold-400" />
-                <span>{hotel.parking}</span>
-              </div>
-            )}
-            {hotel.website && (
-              <a href={hotel.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-gold-400 transition-colors">
-                <Globe className="w-4 h-4 text-gold-400" />
-                <span>Official Site</span>
-              </a>
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* ===== MAIN CONTENT ===== */}
-      <section className="bg-cream-200">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {/* LEFT: Content */}
-            <div className="lg:col-span-2 space-y-12">
-              {/* Description */}
-              <div>
-                <h2 className="text-2xl md:text-3xl font-heading font-bold text-pine-800 mb-4">About {hotel.name}</h2>
-                <p className="text-pine-700 leading-relaxed text-lg">{hotel.description}</p>
-              </div>
-
-              {/* Highlights */}
-              {hotel.highlights.length > 0 && (
-                <div>
-                  <h2 className="text-2xl font-heading font-bold text-pine-800 mb-4 flex items-center gap-2">
-                    <Sparkles className="w-6 h-6 text-gold-500" /> Highlights
-                  </h2>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    {hotel.highlights.map((h, i) => (
-                      <div key={i} className="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm">
-                        <CheckCircle2 className="w-5 h-5 text-gold-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-pine-700 text-sm">{h}</span>
-                      </div>
-                    ))}
-                  </div>
+          </R>
+          <R delay={0.24}>
+            <div style={{ display: "flex", gap: "clamp(20px,3.5vw,48px)", marginTop: "clamp(20px,3.5vh,40px)", paddingTop: "clamp(14px,2.5vh,24px)", borderTop: "1px solid rgba(255,255,255,.07)" }}>
+              {[
+                hotel.priceFrom && { v: hotel.priceFrom, l: "From / Night" },
+                hotel.rating && { v: hotel.rating.value, l: "Rating" },
+                hotel.totalRooms && { v: hotel.totalRooms.toLocaleString(), l: "Rooms" },
+                hotel.roomTypes?.length > 0 && { v: hotel.roomTypes.length, l: "Room Types" },
+              ].filter(Boolean).map((s, i) => (
+                <div key={i}>
+                  <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(24px,3vw,40px)", fontWeight: 300, color: "#fff", lineHeight: 1 }}>{(s as {v:string|number}).v}</div>
+                  <div style={{ fontSize: 8, color: "rgba(255,255,255,.2)", letterSpacing: 2.5, textTransform: "uppercase", marginTop: 5 }}>{(s as {l:string}).l}</div>
                 </div>
-              )}
-
-              {/* Room Types */}
-              {hotel.roomTypes.length > 0 && (
-                <div>
-                  <h2 className="text-2xl font-heading font-bold text-pine-800 mb-4 flex items-center gap-2">
-                    <BedDouble className="w-6 h-6 text-gold-500" /> Accommodations
-                  </h2>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {hotel.roomTypes.map((room, i) => (
-                      <div key={i} className="bg-white rounded-lg shadow-sm overflow-hidden">
-                        {room.image && (
-                          <div className="relative h-40 bg-pine-200">
-                            <Image src={room.image} alt={room.name} fill className="object-cover" />
-                          </div>
-                        )}
-                        <div className="p-4">
-                          <h3 className="font-semibold text-pine-800">{room.name}</h3>
-                          <p className="text-sm text-pine-600 mt-1">{room.description}</p>
-                          {room.priceFrom && (
-                            <p className="text-sm text-gold-600 font-semibold mt-2">From {room.priceFrom}/night</p>
-                          )}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Dining */}
-              {hotel.dining.length > 0 && (
-                <div>
-                  <h2 className="text-2xl font-heading font-bold text-pine-800 mb-4 flex items-center gap-2">
-                    <UtensilsCrossed className="w-6 h-6 text-gold-500" /> Dining
-                  </h2>
-                  <div className="space-y-3">
-                    {hotel.dining.map((d, i) => (
-                      <div key={i} className="bg-white p-4 rounded-lg shadow-sm flex items-start gap-4">
-                        <div className="w-10 h-10 bg-gold-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <UtensilsCrossed className="w-5 h-5 text-gold-600" />
-                        </div>
-                        <div>
-                          <h3 className="font-semibold text-pine-800">{d.name}</h3>
-                          <p className="text-sm text-pine-500 capitalize">{d.type}</p>
-                          <p className="text-sm text-pine-600 mt-1">{d.description}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Bars, Lounges & Wellness */}
-              {hotel.spaBars.length > 0 && (
-                <div>
-                  <h2 className="text-2xl font-heading font-bold text-pine-800 mb-4 flex items-center gap-2">
-                    <Wine className="w-6 h-6 text-gold-500" /> Bars, Lounges & Wellness
-                  </h2>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    {hotel.spaBars.map((name, i) => (
-                      <div key={i} className="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm">
-                        <Wine className="w-4 h-4 text-gold-500 flex-shrink-0" />
-                        <span className="text-pine-700 text-sm">{name}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Amenities */}
-              {hotel.amenities.length > 0 && (
-                <div>
-                  <h2 className="text-2xl font-heading font-bold text-pine-800 mb-4">Amenities</h2>
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-                    {hotel.amenities.map((a, i) => (
-                      <div key={i} className="flex items-center gap-2 text-pine-700 text-sm">
-                        <CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0" />
-                        <span>{a}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* FAQs */}
-              {hotel.faqs.length > 0 && (
-                <div>
-                  <h2 className="text-2xl font-heading font-bold text-pine-800 mb-4">Frequently Asked Questions</h2>
-                  <div className="space-y-3">
-                    {hotel.faqs.map((faq, i) => (
-                      <FAQAccordion key={i} question={faq.question} answer={faq.answer} />
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* ===== SIDEBAR ===== */}
-            <div className="lg:col-span-1">
-              <div className="sticky top-24 space-y-6">
-                {/* CTA Card */}
-                <div className="bg-pine-800 rounded-xl p-6 shadow-lg text-center">
-                  <h3 className="text-xl font-heading font-bold text-white mb-2">
-                    Build Your Golf Package
-                  </h3>
-                  <p className="text-cream-300/80 text-sm mb-5">
-                    Stay at {hotel.name} with tee times at nearby courses. Custom packages for groups of any size.
-                  </p>
-                  <a
-                    href="https://golfthehighsierra.com/contact-custom-golf-package/"
-                    className="block bg-gold-500 hover:bg-gold-400 text-pine-900 font-bold py-3 px-6 rounded-lg transition-colors mb-3"
-                  >
-                    Request A Quote
-                  </a>
-                  <a
-                    href="tel:+1-888-584-8232"
-                    className="flex items-center justify-center gap-2 text-cream-300 hover:text-gold-400 transition-colors py-2"
-                  >
-                    <Phone className="w-4 h-4" />
-                    <span className="font-semibold">1-888-584-8232</span>
-                  </a>
-                </div>
-
-                {/* Quick Facts */}
-                <div className="bg-white rounded-xl p-6 shadow-sm">
-                  <h3 className="font-heading font-bold text-pine-800 mb-4">Quick Facts</h3>
-                  <div className="space-y-3 text-sm">
-                    {hotel.priceRange && (
-                      <div className="flex justify-between">
-                        <span className="text-pine-500">Price Range</span>
-                        <span className="font-semibold text-pine-800">{hotel.priceRange}</span>
-                      </div>
-                    )}
-                    {hotel.totalRooms && (
-                      <div className="flex justify-between">
-                        <span className="text-pine-500">Total Rooms</span>
-                        <span className="font-semibold text-pine-800">{hotel.totalRooms.toLocaleString()}</span>
-                      </div>
-                    )}
-                    {hotel.aaaRating && (
-                      <div className="flex justify-between">
-                        <span className="text-pine-500">AAA Rating</span>
-                        <span className="font-semibold text-pine-800">{hotel.aaaRating}</span>
-                      </div>
-                    )}
-                    {hotel.parking && (
-                      <div className="flex justify-between">
-                        <span className="text-pine-500">Parking</span>
-                        <span className="font-semibold text-pine-800">{hotel.parking}</span>
-                      </div>
-                    )}
-                    <div className="flex justify-between">
-                      <span className="text-pine-500">Region</span>
-                      <span className="font-semibold text-pine-800">{hotel.regionLabel}</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Location */}
-                {hotel.address && (
-                  <div className="bg-white rounded-xl p-6 shadow-sm">
-                    <h3 className="font-heading font-bold text-pine-800 mb-3 flex items-center gap-2">
-                      <Navigation className="w-5 h-5 text-gold-500" /> Location
-                    </h3>
-                    <p className="text-sm text-pine-600 mb-3">
-                      {hotel.address.streetAddress}<br />
-                      {hotel.address.addressLocality}, {hotel.address.addressRegion} {hotel.address.postalCode}
-                    </p>
-                    {hotel.geo?.latitude && (
-                      <a
-                        href={`https://www.google.com/maps/dir/?api=1&destination=${hotel.geo.latitude},${hotel.geo.longitude}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 font-semibold transition-colors"
-                      >
-                        <MapPin className="w-4 h-4" />
-                        Get Directions
-                      </a>
-                    )}
-                  </div>
-                )}
-
-                {/* Why Book With Us */}
-                <div className="bg-gold-50 border border-gold-200 rounded-xl p-6">
-                  <h3 className="font-heading font-bold text-pine-800 mb-3 flex items-center gap-2">
-                    <Users className="w-5 h-5 text-gold-600" /> Why Book With Us?
-                  </h3>
-                  <ul className="space-y-2 text-sm text-pine-700">
-                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" /><span>20+ years of group golf planning</span></li>
-                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" /><span>Custom packages — lodging, tee times, dining</span></li>
-                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" /><span>Group discounts up to 30%</span></li>
-                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" /><span>Concierge service from booking to tee time</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== RELATED HOTELS ===== */}
-      {relatedHotels.length > 0 && (
-        <section className="bg-pine-800">
-          <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-8">
-              More Hotels in {hotel.regionLabel}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {relatedHotels.map((rh) => (
-                <Link key={rh.slug} href={`/portfolio/${rh.slug}/`} className="group bg-pine-900/50 rounded-xl overflow-hidden hover:ring-2 hover:ring-gold-400/50 transition-all">
-                  <div className="relative h-44 bg-pine-700">
-                    {rh.heroImage && <Image src={rh.heroImage} alt={rh.name} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />}
-                    <div className="absolute inset-0 bg-gradient-to-t from-pine-900/80 to-transparent" />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="font-heading font-bold text-white group-hover:text-gold-400 transition-colors">{rh.name}</h3>
-                    <p className="text-cream-300/60 text-sm mt-1 flex items-center gap-1">
-                      <MapPin className="w-3 h-3" /> {rh.regionLabel}
-                    </p>
-                    {rh.priceFrom && (
-                      <p className="text-gold-400 text-sm font-semibold mt-2">From {rh.priceFrom}/night</p>
-                    )}
-                    <span className="inline-flex items-center gap-1 text-gold-400 text-sm font-semibold mt-3 group-hover:gap-2 transition-all">
-                      View Hotel <ArrowRight className="w-4 h-4" />
-                    </span>
-                  </div>
-                </Link>
               ))}
             </div>
+          </R>
+        </div>
+
+        {/* Scroll indicator */}
+        <div style={{ position: "absolute", bottom: 20, left: "50%", transform: "translateX(-50%)", zIndex: 3, display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
+          <span style={{ fontSize: 7, color: "rgba(255,255,255,.15)", letterSpacing: 3, textTransform: "uppercase" }}>Scroll</span>
+          <div style={{ width: 1, height: 32, background: "linear-gradient(rgba(255,255,255,.25),transparent)", animation: "sdrop 2s ease infinite" }} />
+        </div>
+      </section>
+
+      {/* ═══ 2. CONTENT — text + gallery ═══ */}
+      <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 600 }} className="max-md:!grid-cols-1">
+        <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+          <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>The Property</div></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em" }}>
+            {hotel.highlights?.[0] ? <em style={{ fontStyle: "italic" }}>{hotel.highlights[0]}</em> : <>Where Comfort Meets <em style={{ fontStyle: "italic" }}>Adventure</em></>}
+          </h2></R>
+          <R delay={0.16}><p style={{ fontSize: 13, lineHeight: 1.9, color: "var(--stone)", fontWeight: 300, maxWidth: 440, marginTop: 16 }}>{hotel.description.substring(0, 350)}</p></R>
+          <R delay={0.2}><div style={{ width: 40, height: 1, background: "var(--bone)", margin: "20px 0" }} /></R>
+
+          {/* Highlights as inline list */}
+          {hotel.highlights?.length > 1 && (
+            <R delay={0.24}>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 4 }}>
+                {hotel.highlights.slice(1, 6).map((h, i) => (
+                  <span key={i} style={{ fontSize: 10, padding: "6px 14px", borderRadius: 100, border: "1px solid var(--bone)", color: "var(--stone)", fontWeight: 400 }}>{h}</span>
+                ))}
+              </div>
+            </R>
+          )}
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: 4 }} className="max-md:!min-h-[400px]">
+          {(gallery.length > 0 ? gallery : [hotel.heroImage]).slice(0, 3).map((img, i) => (
+            <div key={i} style={{ overflow: "hidden", position: "relative", cursor: gallery.length > 0 ? "pointer" : "default", ...(i === 2 ? { gridColumn: "span 2" } : {}) }} onClick={() => gallery.length > 0 && setLbIndex(i)}>
+              <Image src={img} alt={`${hotel.name} ${i + 1}`} fill className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.06] transition-all duration-700" sizes="(max-width:900px) 100vw, 50vw" />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══ 3. DARK FEATURE — dining + amenities ═══ */}
+      <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", background: "var(--ink)" }} className="max-md:!grid-cols-1">
+        <div style={{ position: "relative", overflow: "hidden", minHeight: 400 }} className="max-md:!min-h-[300px]">
+          {(gallery[1] || hotel.heroImage) && <Image src={gallery[1] || hotel.heroImage} alt="Feature" fill className="object-cover opacity-60 hover:opacity-75 hover:scale-[1.04] transition-all duration-[8s]" sizes="(max-width:900px) 100vw, 50vw" />}
+        </div>
+        <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+          <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14 }}>
+            {hotel.dining?.length > 0 ? "Dining & Nightlife" : "The Experience"}
+          </div></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em", color: "#fff" }}>
+            {hotel.dining?.length > 0 ? <>World-Class <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.4)" }}>Dining</em></> : <>Unmatched <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.4)" }}>Hospitality</em></>}
+          </h2></R>
+
+          {/* Dining list or quote */}
+          {hotel.dining?.length > 0 ? (
+            <R delay={0.16}>
+              <div style={{ marginTop: 20 }}>
+                {hotel.dining.slice(0, 4).map((d, i) => (
+                  <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", padding: "14px 0", borderBottom: "1px solid rgba(255,255,255,.06)" }}>
+                    <div>
+                      <div style={{ fontSize: 14, fontWeight: 400, color: "#fff" }}>{d.name}</div>
+                      <div style={{ fontSize: 11, color: "rgba(255,255,255,.3)", fontWeight: 300, marginTop: 3 }}>{d.description.substring(0, 60)}{d.description.length > 60 ? "…" : ""}</div>
+                    </div>
+                    <span style={{ fontSize: 8, color: "var(--gold)", letterSpacing: 2, textTransform: "uppercase", flexShrink: 0, marginLeft: 16 }}>{d.type}</span>
+                  </div>
+                ))}
+              </div>
+            </R>
+          ) : (
+            <R delay={0.16}>
+              <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(20px,2.5vw,30px)", fontWeight: 300, fontStyle: "italic", lineHeight: 1.5, color: "rgba(255,255,255,.6)", marginTop: 16, maxWidth: 440, position: "relative", paddingTop: 28 }}>
+                <span style={{ fontFamily: "var(--serif)", fontSize: 60, color: "rgba(180,154,106,.2)", lineHeight: ".5", position: "absolute", top: 0, left: 0 }}>&ldquo;</span>
+                {quoteText}
+              </div>
+              <div style={{ fontSize: 9, color: "rgba(255,255,255,.2)", letterSpacing: 2, textTransform: "uppercase", marginTop: 16 }}>— Golf the High Sierra</div>
+            </R>
+          )}
+        </div>
+      </section>
+
+      {/* ═══ 4. INFO STRIP — rooms/amenities + FAQ ═══ */}
+      <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 0 }} className="max-md:!grid-cols-1">
+        {/* Left: Room types + amenities */}
+        <div style={{ padding: "clamp(48px,8vh,80px) clamp(32px,5vw,80px)", background: "var(--cream)" }}>
+          <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>At a Glance</div></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1 }}><em style={{ fontStyle: "italic" }}>{firstName}</em> Details</h2></R>
+
+          {/* Mini stats */}
+          <R delay={0.16}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 12, margin: "24px 0" }}>
+              {[
+                hotel.priceFrom && { v: hotel.priceFrom, l: "From / Night" },
+                hotel.rating && { v: hotel.rating.value, l: "Rating" },
+                hotel.totalRooms && { v: hotel.totalRooms.toLocaleString(), l: "Rooms" },
+              ].filter(Boolean).map((s, i) => (
+                <div key={i} style={{ textAlign: "center", padding: "16px 8px", border: "1px solid var(--bone)", borderRadius: 8, background: "var(--white)" }}>
+                  <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(22px,2.5vw,30px)", fontWeight: 300 }}>{(s as {v:string|number}).v}</div>
+                  <div style={{ fontSize: 8, letterSpacing: 2, textTransform: "uppercase", color: "var(--stone)", marginTop: 3 }}>{(s as {l:string}).l}</div>
+                </div>
+              ))}
+            </div>
+          </R>
+
+          {/* Room types */}
+          {hotel.roomTypes?.length > 0 && (
+            <R delay={0.2}>
+              <div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginTop: 24, marginBottom: 8 }}>Accommodations</div>
+              {hotel.roomTypes.slice(0, 5).map((rm, i) => (
+                <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "10px 0", borderBottom: "1px solid var(--bone)", fontSize: 12, fontWeight: 300 }}>
+                  <span style={{ color: "var(--charcoal)" }}>{rm.name}</span>
+                  {rm.priceFrom && <span style={{ color: "var(--gold)", fontWeight: 500 }}>{rm.priceFrom}</span>}
+                </div>
+              ))}
+            </R>
+          )}
+
+          {/* Amenities compact */}
+          {hotel.amenities?.length > 0 && (
+            <R delay={0.28}>
+              <div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginTop: 24, marginBottom: 10 }}>Amenities</div>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                {hotel.amenities.slice(0, 8).map((a, i) => (
+                  <span key={i} style={{ fontSize: 10, padding: "5px 12px", borderRadius: 100, border: "1px solid var(--bone)", color: "var(--stone)", fontWeight: 300 }}>{a}</span>
+                ))}
+              </div>
+            </R>
+          )}
+
+          {/* Address */}
+          {addr?.streetAddress && (
+            <R delay={0.32}>
+              <p style={{ fontSize: 11, color: "var(--stone)", marginTop: 20, fontWeight: 300 }}>
+                {addr.streetAddress}, {addr.addressLocality}, {addr.addressRegion} {addr.postalCode}
+                {hotel.phone && <><br /><a href={`tel:${hotel.phone}`} style={{ color: "var(--gold)" }}>{hotel.phone}</a></>}
+              </p>
+            </R>
+          )}
+        </div>
+
+        {/* Right: FAQ */}
+        <div style={{ padding: "clamp(48px,8vh,80px) clamp(32px,5vw,80px)", background: "var(--white)" }}>
+          <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>FAQ</div></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, marginBottom: 20 }}>Common <em style={{ fontStyle: "italic" }}>Questions</em></h2></R>
+          {hotel.faqs?.slice(0, 5).map((f, i) => (
+            <R key={i} delay={0.12 + i * 0.04}><FAQ q={f.question} a={f.answer} /></R>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══ RELATED ═══ */}
+      {relatedHotels.length > 0 && (
+        <section style={{ padding: "clamp(48px,7vh,80px) clamp(32px,7vw,120px)", background: "var(--cream)" }}>
+          <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>Nearby</div></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1 }}>More in <em style={{ fontStyle: "italic" }}>{hotel.regionLabel}</em></h2></R>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16, marginTop: 24 }} className="max-md:!grid-cols-1">
+            {relatedHotels.map((rh, i) => (
+              <R key={rh.slug} delay={0.12 + i * 0.06}>
+                <Link href={`/portfolio/${rh.slug}/`}>
+                  <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--white)", transition: "all .5s" }} className="hover:!border-transparent hover:!shadow-[0_16px_48px_rgba(0,0,0,.06)] hover:-translate-y-1">
+                    <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
+                      {rh.heroImage ? <Image src={rh.heroImage} alt={rh.name} fill className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
+                      {rh.priceFrom && <span style={{ position: "absolute", top: 10, right: 10, background: "var(--ink)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 9, fontWeight: 600 }}>{rh.priceFrom}</span>}
+                    </div>
+                    <div style={{ padding: 16 }}>
+                      <div style={{ fontFamily: "var(--serif)", fontSize: 18, fontWeight: 400, color: "var(--ink)" }}>{rh.name}</div>
+                      <div style={{ fontSize: 8, textTransform: "uppercase", letterSpacing: 2, color: "var(--stone)", margin: "4px 0 12px" }}>{rh.regionLabel}</div>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: 10, borderTop: "1px solid var(--bone)" }}>
+                        {rh.rating && <span style={{ fontSize: 10, color: "var(--stone)" }}>★ {rh.rating.value}</span>}
+                        <span style={{ fontSize: 9, color: "var(--gold)", fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>View →</span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </R>
+            ))}
           </div>
         </section>
       )}
 
-      {/* ===== BOTTOM CTA ===== */}
-      <section className="bg-gradient-to-br from-pine-900 via-pine-800 to-pine-900 py-16 px-4 text-center text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")" }} />
-        <div className="relative z-10 max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-            Ready to Build Your<br />Golf Package?
-          </h2>
-          <p className="text-cream-300/80 mb-8 text-lg">
-            Stay at {hotel.name} with tee times at the best courses in {hotel.regionLabel}. We handle all the details.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://golfthehighsierra.com/contact-custom-golf-package/" className="bg-gold-500 hover:bg-gold-400 text-pine-900 font-bold py-3.5 px-8 rounded-lg transition-colors inline-flex items-center justify-center gap-2 shadow-lg">
-              Request A Quote <ArrowRight className="w-5 h-5" />
-            </a>
-            <a href="tel:+1-888-584-8232" className="border-2 border-cream-300/30 hover:border-gold-400 text-white hover:text-gold-400 font-bold py-3.5 px-8 rounded-lg transition-colors inline-flex items-center justify-center gap-2">
-              <Phone className="w-5 h-5" /> 1-888-584-8232
+      {/* ═══ 5. CTA ═══ */}
+      <section style={{ background: "var(--ink)", textAlign: "center", padding: "clamp(64px,10vh,120px) clamp(32px,7vw,120px)", position: "relative", overflow: "hidden" }}>
+        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 60%,rgba(180,154,106,.05),transparent 70%)" }} />
+        <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14, position: "relative", zIndex: 1 }}>Stay &amp; Play</div></R>
+        <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, color: "#fff", marginBottom: 12, position: "relative", zIndex: 1 }}>Book {firstName} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.35)" }}>Golf Package</em></h2></R>
+        <R delay={0.16}><p style={{ fontSize: 13, color: "rgba(255,255,255,.25)", fontWeight: 300, maxWidth: 380, margin: "0 auto 28px", lineHeight: 1.8, position: "relative", zIndex: 1 }}>
+          {hotel.priceRange ? `Stay-and-play from ${hotel.priceFrom || hotel.priceRange.split("–")[0]}/golfer. ` : ""}Lodging, tee times, dining — one call.
+        </p></R>
+        <R delay={0.2}>
+          <div style={{ position: "relative", zIndex: 1 }}>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "8px 16px", borderRadius: 100, border: "1px solid rgba(180,154,106,.12)", fontSize: 9, color: "var(--gold)", fontWeight: 500, marginBottom: 24, letterSpacing: ".5px" }}>
+              <span style={{ width: 4, height: 4, borderRadius: "50%", background: "var(--gold)", animation: "euroP 2s infinite" }} />
+              Custom packages available year-round
+            </div>
+          </div>
+        </R>
+        <R delay={0.28}>
+          <div style={{ display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap", position: "relative", zIndex: 1 }}>
+            <Link href="/contact-custom-golf-package/" style={{ display: "inline-block", padding: "15px 36px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 10, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase", transition: "all .4s" }} className="hover:!bg-[#c8ad7e] hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(180,154,106,.2)]">
+              Plan My Trip
+            </Link>
+            <a href="tel:+18885848232" style={{ display: "inline-block", padding: "15px 36px", border: "1px solid rgba(255,255,255,.1)", color: "rgba(255,255,255,.35)", borderRadius: 100, fontSize: 10, fontWeight: 400, letterSpacing: 2, textTransform: "uppercase", transition: "all .4s" }} className="hover:!border-white/35 hover:!text-white">
+              Call 888-584-8232
             </a>
           </div>
-        </div>
+        </R>
       </section>
-    </>
+
+      {/* Lightbox */}
+      {lbIndex !== null && gallery.length > 0 && <Lightbox images={gallery} startIndex={lbIndex} onClose={() => setLbIndex(null)} name={hotel.name} />}
+
+      {/* Keyframes */}
+      <style jsx global>{`
+        @keyframes heroZoom{to{transform:scale(1)}}
+        @keyframes sdrop{0%{opacity:0;transform:translateY(-8px)}50%{opacity:1}100%{opacity:0;transform:translateY(8px)}}
+        @keyframes euroP{0%,100%{opacity:1}50%{opacity:.2}}
+      `}</style>
+    </div>
   );
 }
