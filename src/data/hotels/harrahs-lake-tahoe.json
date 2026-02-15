@@ -1,0 +1,98 @@
+{
+  "slug": "harrahs-lake-tahoe",
+  "name": "Harrah's Lake Tahoe",
+  "region": "tahoe",
+  "regionLabel": "Lake Tahoe",
+  "type": "casino-resort",
+  "address": {
+    "streetAddress": "15 US-50",
+    "addressLocality": "Stateline",
+    "addressRegion": "NV",
+    "postalCode": "89449",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 38.9573,
+    "longitude": -119.9424
+  },
+  "website": "https://www.caesars.com/harrahs-tahoe",
+  "priceRange": "$129\u2013$499",
+  "priceFrom": "$129",
+  "rating": {
+    "value": 4.1,
+    "count": 3800,
+    "sources": "TripAdvisor, Google"
+  },
+  "description": "Harrah's Lake Tahoe is a landmark Stateline casino resort with mountain-view rooms, gaming, dining, and live entertainment. Minutes from Edgewood Tahoe Golf Course.",
+  "shortDescription": "Landmark Stateline casino minutes from Edgewood Tahoe with mountain views and live entertainment.",
+  "highlights": [
+    "Landmark Stateline location",
+    "Mountain-view rooms",
+    "Minutes from Edgewood Tahoe",
+    "Caesars Rewards",
+    "Live entertainment"
+  ],
+  "amenities": [
+    "Full-service casino",
+    "Pool & fitness",
+    "Live entertainment",
+    "Multiple restaurants",
+    "Caesars Rewards",
+    "Free parking"
+  ],
+  "roomTypes": [
+    {
+      "name": "Standard Room",
+      "description": "Mountain or city views."
+    },
+    {
+      "name": "Premium Room",
+      "description": "Upgraded amenities."
+    },
+    {
+      "name": "Suite",
+      "description": "Spacious with living area."
+    }
+  ],
+  "dining": [
+    {
+      "name": "Friday's Station Steak & Seafood",
+      "type": "steakhouse",
+      "description": "Fine dining steaks with lake views."
+    },
+    {
+      "name": "Harvest Buffet",
+      "type": "buffet",
+      "description": "International buffet."
+    }
+  ],
+  "spaBars": [
+    "Clich\u00e9 Lounge",
+    "Center Bar"
+  ],
+  "parking": "Free self-parking",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/harrahs-lake-tahoe.jpg",
+  "faqs": [
+    {
+      "question": "How close is Harrah's to Edgewood?",
+      "answer": "Less than 5 minutes \u2014 practically next door."
+    }
+  ],
+  "relatedCourses": [
+    "edgewood-tahoe-golf-course",
+    "lake-tahoe-golf-course",
+    "incline-village-golf-courses-nv"
+  ],
+  "relatedHotels": [
+    "harveys-lake-tahoe",
+    "golden-nugget-lake-tahoe",
+    "margaritaville-lake-tahoe"
+  ],
+  "meta": {
+    "title": "Harrah's Lake Tahoe | Casino Resort & Golf Packages",
+    "description": "Harrah's Lake Tahoe in Stateline. Minutes from Edgewood Tahoe with custom golf packages."
+  },
+  "phone": "+1-888-584-8232",
+  "totalRooms": null
+}

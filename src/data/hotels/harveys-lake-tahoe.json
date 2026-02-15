@@ -1,0 +1,95 @@
+{
+  "slug": "harveys-lake-tahoe",
+  "name": "Harvey's Lake Tahoe",
+  "region": "tahoe",
+  "regionLabel": "Lake Tahoe",
+  "type": "casino-resort",
+  "address": {
+    "streetAddress": "18 US-50",
+    "addressLocality": "Stateline",
+    "addressRegion": "NV",
+    "postalCode": "89449",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 38.9568,
+    "longitude": -119.9415
+  },
+  "website": "https://www.caesars.com/harveys-tahoe",
+  "priceRange": "$149\u2013$549",
+  "priceFrom": "$149",
+  "rating": {
+    "value": 4.2,
+    "count": 3200,
+    "sources": "TripAdvisor, Google"
+  },
+  "description": "Harvey's Lake Tahoe is a premier Stateline casino resort with outdoor heated pool and direct access to Edgewood Tahoe Golf Course. Connected to Harrah's.",
+  "shortDescription": "Premier Stateline casino with outdoor pool and Edgewood Tahoe golf access.",
+  "highlights": [
+    "Outdoor heated pool",
+    "Connected to Harrah's",
+    "Minutes from Edgewood",
+    "Live entertainment arena",
+    "Mountain-view rooms"
+  ],
+  "amenities": [
+    "Full-service casino",
+    "Outdoor heated pool & hot tub",
+    "Fitness center",
+    "Connected to Harrah's",
+    "Free parking"
+  ],
+  "roomTypes": [
+    {
+      "name": "Standard Room",
+      "description": "Mountain views."
+    },
+    {
+      "name": "Premium Room",
+      "description": "Enhanced finishes."
+    },
+    {
+      "name": "Suite",
+      "description": "Separate living area."
+    }
+  ],
+  "dining": [
+    {
+      "name": "Sage Room",
+      "type": "steakhouse",
+      "description": "Upscale steakhouse."
+    }
+  ],
+  "spaBars": [
+    "Outdoor Heated Pool"
+  ],
+  "parking": "Free self-parking",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/harveys-lake-tahoe.jpg",
+  "faqs": [
+    {
+      "question": "Is Harvey's connected to Harrah's?",
+      "answer": "Yes \u2014 connected with shared dining, gaming, and entertainment."
+    },
+    {
+      "question": "How close to Edgewood?",
+      "answer": "Less than 5 minutes \u2014 practically adjacent."
+    }
+  ],
+  "relatedCourses": [
+    "edgewood-tahoe-golf-course",
+    "lake-tahoe-golf-course",
+    "incline-village-golf-courses-nv"
+  ],
+  "relatedHotels": [
+    "harrahs-lake-tahoe",
+    "golden-nugget-lake-tahoe",
+    "lake-tahoe-resort-hotel"
+  ],
+  "meta": {
+    "title": "Harvey's Lake Tahoe | Casino Resort & Golf Packages",
+    "description": "Harvey's Lake Tahoe with outdoor pool, mountain views, and golf packages near Edgewood."
+  },
+  "phone": "+1-888-584-8232",
+  "totalRooms": null
+}

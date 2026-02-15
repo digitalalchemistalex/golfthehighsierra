@@ -1,0 +1,92 @@
+{
+  "slug": "margaritaville-lake-tahoe",
+  "name": "Margaritaville Resort Lake Tahoe",
+  "region": "tahoe",
+  "regionLabel": "Lake Tahoe",
+  "type": "resort",
+  "address": {
+    "streetAddress": "4000 Lake Tahoe Blvd",
+    "addressLocality": "South Lake Tahoe",
+    "addressRegion": "CA",
+    "postalCode": "96150",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 38.955,
+    "longitude": -119.948
+  },
+  "website": "https://www.margaritavilleresortlaketahoe.com",
+  "priceRange": "$179\u2013$599",
+  "priceFrom": "$179",
+  "rating": {
+    "value": 4.3,
+    "count": 1900,
+    "sources": "TripAdvisor, Google"
+  },
+  "description": "Margaritaville Resort Lake Tahoe brings island vibes to South Lake Tahoe. Indoor/outdoor pool, LandShark Bar & Grill, St. Somewhere Spa. Walking distance to Heavenly Village.",
+  "shortDescription": "Island-inspired resort with LandShark Bar, spa, and walking distance to Heavenly Village.",
+  "highlights": [
+    "Jimmy Buffett island atmosphere",
+    "Indoor/outdoor pool",
+    "LandShark Bar & Grill",
+    "Walking to Heavenly Village",
+    "St. Somewhere Spa"
+  ],
+  "amenities": [
+    "Indoor/outdoor heated pool",
+    "Hot tub",
+    "St. Somewhere Spa",
+    "Fitness center",
+    "LandShark Bar & Grill",
+    "Free parking"
+  ],
+  "roomTypes": [
+    {
+      "name": "Standard Room",
+      "description": "Island-inspired rooms."
+    },
+    {
+      "name": "Suite",
+      "description": "Mountain or pool views."
+    }
+  ],
+  "dining": [
+    {
+      "name": "LandShark Bar & Grill",
+      "type": "bar",
+      "description": "Burgers, seafood, and tropical cocktails."
+    }
+  ],
+  "spaBars": [
+    "St. Somewhere Spa",
+    "5 O'Clock Somewhere Bar"
+  ],
+  "parking": "Free self-parking",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/margaritaville-lake-tahoe.jpg",
+  "faqs": [
+    {
+      "question": "What's unique about Margaritaville?",
+      "answer": "Jimmy Buffett island vibes in the Sierra with LandShark Bar and St. Somewhere Spa."
+    },
+    {
+      "question": "How close to golf?",
+      "answer": "Edgewood Tahoe is about 5 minutes away."
+    }
+  ],
+  "relatedCourses": [
+    "edgewood-tahoe-golf-course",
+    "lake-tahoe-golf-course"
+  ],
+  "relatedHotels": [
+    "lake-tahoe-resort-hotel",
+    "harveys-lake-tahoe",
+    "golden-nugget-lake-tahoe"
+  ],
+  "meta": {
+    "title": "Margaritaville Resort Lake Tahoe | Golf Stay and Play",
+    "description": "Island vibes at Margaritaville Lake Tahoe. LandShark Bar, spa, and golf packages near Edgewood."
+  },
+  "phone": "+1-888-584-8232",
+  "totalRooms": null
+}

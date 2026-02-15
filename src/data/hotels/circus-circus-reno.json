@@ -1,0 +1,99 @@
+{
+  "slug": "circus-circus-reno",
+  "name": "Circus Circus Reno Hotel & Casino",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "type": "casino-resort",
+  "address": {
+    "streetAddress": "500 N Sierra St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89503",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8155
+  },
+  "website": "https://www.circusreno.com",
+  "priceRange": "$89\u2013$249",
+  "priceFrom": "$89",
+  "rating": {
+    "value": 3.8,
+    "count": 2200,
+    "sources": "TripAdvisor, Google"
+  },
+  "description": "Circus Circus Reno is Northern Nevada's only circus-themed casino resort. Free live circus acts, Carnival Midway arcade, and budget-friendly rooms. Part of THE ROW connected to Silver Legacy and Eldorado.",
+  "shortDescription": "Budget-friendly casino with free circus acts, family entertainment, and THE ROW complex access.",
+  "highlights": [
+    "Only circus-themed casino in Northern Nevada",
+    "Free daily live circus acts",
+    "Carnival Midway with 28+ games",
+    "Part of THE ROW",
+    "Pet-friendly rooms from $89/night"
+  ],
+  "amenities": [
+    "1,000+ slot machines",
+    "Carnival Midway & live acts",
+    "Arcade",
+    "Connected to Silver Legacy & Eldorado",
+    "Pet-friendly rooms",
+    "Free parking"
+  ],
+  "roomTypes": [
+    {
+      "name": "Standard Room",
+      "description": "Budget-friendly rooms with modern amenities."
+    },
+    {
+      "name": "Deluxe Room",
+      "description": "Upgraded rooms with Sierra or city views."
+    },
+    {
+      "name": "Suite",
+      "description": "Spacious suites with living area."
+    }
+  ],
+  "dining": [
+    {
+      "name": "Piezzetta",
+      "type": "restaurant",
+      "description": "Pizza and Italian favorites."
+    },
+    {
+      "name": "El Jefe's Cantina",
+      "type": "restaurant",
+      "description": "Mexican cuisine and margaritas."
+    }
+  ],
+  "spaBars": [],
+  "totalRooms": 572,
+  "parking": "Free parking in Silver Legacy garage",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/circus-circus-exterior.jpg",
+  "faqs": [
+    {
+      "question": "Is Circus Circus good for golf groups on a budget?",
+      "answer": "Yes \u2014 rooms from $89/night with full access to Silver Legacy and Eldorado via THE ROW."
+    },
+    {
+      "question": "Does Circus Circus have table games?",
+      "answer": "Slots and video poker. Walk to Silver Legacy or Eldorado for live table games."
+    }
+  ],
+  "relatedCourses": [
+    "lakeridge-golf-course",
+    "wolf-run-golf-club",
+    "washoe-county-golf-course"
+  ],
+  "relatedHotels": [
+    "silver-legacy-resort-casino",
+    "eldorado-resorts-reno-eldorado-at-the-row",
+    "j-resort-reno"
+  ],
+  "meta": {
+    "title": "Circus Circus Reno | Budget Hotel & Golf Packages",
+    "description": "Budget-friendly Circus Circus with free circus acts and THE ROW access. Golf packages from $89/night."
+  },
+  "phone": "+1-888-584-8232"
+}

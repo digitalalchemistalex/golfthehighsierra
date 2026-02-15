@@ -1,0 +1,106 @@
+{
+  "slug": "nugget-casino-resort-reno",
+  "name": "Nugget Casino Resort",
+  "region": "reno",
+  "regionLabel": "Reno / Sparks",
+  "type": "casino-resort",
+  "address": {
+    "streetAddress": "1100 Nugget Ave",
+    "addressLocality": "Sparks",
+    "addressRegion": "NV",
+    "postalCode": "89431",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 39.5349,
+    "longitude": -119.7527
+  },
+  "website": "https://www.nuggetcasinoresort.com",
+  "priceRange": "$79\u2013$349",
+  "priceFrom": "$79",
+  "rating": {
+    "value": 4.2,
+    "count": 3100,
+    "sources": "TripAdvisor, Google"
+  },
+  "description": "For more than 60 years the Nugget Casino Resort has been an iconic destination in Reno-Sparks. 1,380 guest rooms in twin 28-story towers, five restaurants, 110,000 sq ft of meeting space, year-round atrium pool, and three live entertainment venues.",
+  "shortDescription": "Iconic Reno-Sparks resort with 1,380 rooms in twin towers, 8,500-seat event center, and 5 restaurants.",
+  "highlights": [
+    "1,380 rooms in twin 28-story towers",
+    "5 restaurants including Anthony's Chophouse",
+    "8,500-seat Nugget Event Center",
+    "110,000 sq ft meeting space",
+    "Year-round atrium pool",
+    "60+ year legacy"
+  ],
+  "amenities": [
+    "Full-service casino",
+    "Year-round atrium pool",
+    "Fitness center",
+    "3 entertainment venues",
+    "110,000 sq ft meeting space",
+    "Free parking"
+  ],
+  "roomTypes": [
+    {
+      "name": "Standard Room",
+      "description": "Fully renovated rooms with modern amenities."
+    },
+    {
+      "name": "Deluxe Room",
+      "description": "Upgraded rooms in the twin towers."
+    },
+    {
+      "name": "Suite",
+      "description": "Spacious suites with separate living area."
+    }
+  ],
+  "dining": [
+    {
+      "name": "Anthony's Chophouse",
+      "type": "steakhouse",
+      "description": "Premium steaks and fine dining."
+    },
+    {
+      "name": "Oyster Bar",
+      "type": "restaurant",
+      "description": "Fresh seafood and raw bar."
+    },
+    {
+      "name": "Rosie's Caf\u00e9",
+      "type": "cafe",
+      "description": "24/7 casual dining."
+    }
+  ],
+  "spaBars": [],
+  "totalRooms": 1380,
+  "parking": "Free self-parking",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/nugget-exterior.jpg",
+  "faqs": [
+    {
+      "question": "Where is Nugget Casino Resort?",
+      "answer": "1100 Nugget Ave in Sparks, NV \u2014 minutes from downtown Reno."
+    },
+    {
+      "question": "Does Nugget offer golf packages?",
+      "answer": "Yes \u2014 Golf the High Sierra creates custom packages. Groups save up to 20%."
+    }
+  ],
+  "relatedCourses": [
+    "lakeridge-golf-course",
+    "red-hawk-golf-resort",
+    "washoe-county-golf-course",
+    "wolf-run-golf-club"
+  ],
+  "relatedHotels": [
+    "grand-sierra-resort-reno",
+    "peppermill-resort-spa-casino",
+    "atlantis-casino-resort-spa-reno"
+  ],
+  "meta": {
+    "title": "Nugget Casino Resort Reno-Sparks | Golf Stay Packages",
+    "description": "Iconic Nugget Casino Resort. 1,380 rooms, 5 restaurants, and custom golf packages with 20+ courses."
+  },
+  "phone": "+1-888-584-8232"
+}

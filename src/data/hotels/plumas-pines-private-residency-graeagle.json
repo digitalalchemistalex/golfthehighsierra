@@ -1,0 +1,87 @@
+{
+  "slug": "plumas-pines-private-residency-graeagle",
+  "name": "Plumas Pines Private Residences",
+  "region": "graeagle",
+  "regionLabel": "Graeagle",
+  "type": "private-residence",
+  "address": {
+    "streetAddress": "402 Poplar Valley Rd",
+    "addressLocality": "Graeagle",
+    "addressRegion": "CA",
+    "postalCode": "96103",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 39.748,
+    "longitude": -120.6175
+  },
+  "priceRange": "$199\u2013$599",
+  "priceFrom": "$199",
+  "rating": {
+    "value": 4.5,
+    "count": 320,
+    "sources": "Google"
+  },
+  "description": "Plumas Pines Private Residences offer vacation homes and cabins nestled in the Graeagle golf community. Walk-out access to Plumas Pines Golf Course with full kitchens, decks, and mountain serenity.",
+  "shortDescription": "Vacation homes and cabins in the Graeagle golf community with walk-out course access.",
+  "highlights": [
+    "Walk-out access to Plumas Pines Golf Course",
+    "Vacation homes with full kitchens",
+    "Mountain cabin serenity",
+    "Private decks & BBQ",
+    "Near Graeagle Meadows and Whitehawk Ranch",
+    "Perfect for golf buddy trips"
+  ],
+  "amenities": [
+    "Full kitchens",
+    "Private decks",
+    "BBQ grills",
+    "Fireplaces",
+    "Laundry",
+    "Free parking"
+  ],
+  "roomTypes": [
+    {
+      "name": "2-Bedroom Cabin",
+      "description": "Cozy cabin with full kitchen and mountain views."
+    },
+    {
+      "name": "3-Bedroom Home",
+      "description": "Spacious home for golf groups of 6."
+    },
+    {
+      "name": "4-Bedroom Estate",
+      "description": "Large estate perfect for big golf groups."
+    }
+  ],
+  "dining": [],
+  "spaBars": [],
+  "parking": "Free parking",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/plumas-pines-residences.jpg",
+  "faqs": [
+    {
+      "question": "Can you walk to the golf course?",
+      "answer": "Yes \u2014 residences are on or adjacent to Plumas Pines Golf Course."
+    },
+    {
+      "question": "What other courses are nearby?",
+      "answer": "Graeagle Meadows, Whitehawk Ranch, and Nakoma are all within 15-20 minutes."
+    }
+  ],
+  "relatedCourses": [
+    "plumas-pines-golf-resort",
+    "graeagle-meadows-golf-course",
+    "whitehawk-ranch-golf-club",
+    "nakoma-golf-resort"
+  ],
+  "relatedHotels": [
+    "river-pines-resort-graeagle-ca"
+  ],
+  "meta": {
+    "title": "Plumas Pines Private Residences Graeagle | Golf Lodging",
+    "description": "Vacation homes on Plumas Pines Golf Course in Graeagle. Full kitchens, mountain views, and custom golf packages."
+  },
+  "phone": "+1-888-584-8232",
+  "totalRooms": null
+}

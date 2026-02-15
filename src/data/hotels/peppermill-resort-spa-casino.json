@@ -1,0 +1,88 @@
+{
+  "slug": "peppermill-resort-spa-casino",
+  "name": "Peppermill Resort Spa Casino",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "type": "casino-resort",
+  "address": {
+    "streetAddress": "2707 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502",
+    "addressCountry": "US"
+  },
+  "geo": { "latitude": 39.4899, "longitude": -119.7855 },
+  "phone": "+1-888-584-8232",
+  "website": "https://www.peppermillreno.com",
+  "priceRange": "$149–$799",
+  "priceFrom": "$149",
+  "starRating": 4,
+  "aaaRating": "Four Diamond",
+  "rating": { "value": 4.5, "count": 4100, "sources": "TripAdvisor, Google" },
+  "description": "Experience the eco-conscious Peppermill Resort Spa Casino, Reno's Premier AAA Four Diamond resort, boasting 1,621 luxurious guest rooms including the 600-room all-suite Tuscany Tower. Embark on a pampered journey at the remarkable three-story, 33,000-square-foot Spa & Salon Toscana featuring 24 treatment rooms, Northern Nevada's only Caldarium with indoor pool, sun deck, and full-service salon.",
+  "shortDescription": "Reno's Premier AAA Four Diamond resort with 1,621 rooms, Tuscany Tower suites, and the 33,000 sq ft Spa & Salon Toscana.",
+  "highlights": [
+    "AAA Four Diamond Resort",
+    "1,621 luxurious guest rooms including 600-room Tuscany Tower",
+    "33,000 sq ft Spa & Salon Toscana with 24 treatment rooms",
+    "Northern Nevada's only Caldarium with indoor pool",
+    "One of the only geothermally powered resorts in the U.S.",
+    "Over 1,500 slot machines & 50+ table games",
+    "10+ restaurants including Bimini Steakhouse"
+  ],
+  "amenities": [
+    "Three-story Spa & Salon Toscana",
+    "Caldarium with indoor pool",
+    "Heated outdoor pools & cabanas",
+    "24-hour fitness center",
+    "Casino floor with 1,500+ slots",
+    "Free valet & self-parking",
+    "EV charging stations",
+    "Boutique shops & Chocolate Shoppe",
+    "Room service"
+  ],
+  "roomTypes": [
+    { "name": "Deluxe King Room", "description": "Spacious rooms voted one of the best Reno hotel rooms year after year.", "image": "https://golfthehighsierra.com/wp-content/uploads/2022/03/peppermill-deluxe-king.jpg" },
+    { "name": "Deluxe Remodeled King Room", "description": "Recently refreshed king rooms with modern finishes.", "image": "https://golfthehighsierra.com/wp-content/uploads/2022/03/peppermill-remodeled-king.jpg" },
+    { "name": "Deluxe Two Queens Room", "description": "Spacious dual queen rooms ideal for golf groups.", "image": "https://golfthehighsierra.com/wp-content/uploads/2022/03/peppermill-two-queens.jpg" },
+    { "name": "Deluxe Remodeled Double Queen Room", "description": "Refreshed double queen rooms with updated amenities.", "image": "https://golfthehighsierra.com/wp-content/uploads/2022/03/peppermill-remodeled-queen.jpg" },
+    { "name": "Spa Suite", "description": "390 sq ft rooms with relaxing jetted bathtub and sitting area for two.", "priceFrom": "$199", "image": "https://golfthehighsierra.com/wp-content/uploads/2022/03/peppermill-spa-suite.jpg" },
+    { "name": "Grand Suite", "description": "495 sq ft with in-room jetted hot tub, sitting area, and HD TV.", "priceFrom": "$249", "image": "https://golfthehighsierra.com/wp-content/uploads/2022/03/peppermill-grand-suite.jpg" },
+    { "name": "Imperial Suite", "description": "595 sq ft with in-room jetted hot tub, sofa, sitting area, and two TVs.", "priceFrom": "$299", "image": "https://golfthehighsierra.com/wp-content/uploads/2022/03/peppermill-imperial-suite.jpg" },
+    { "name": "Luxury Suite", "description": "785 sq ft with jetted hot tub, bar, and dining area with seating for four.", "priceFrom": "$349", "image": "https://golfthehighsierra.com/wp-content/uploads/2022/03/peppermill-luxury-suite.jpg" },
+    { "name": "Royal Suite", "description": "1,090 sq ft with dining area, bar, sitting area, separate bedroom, 1.5 baths, and three TVs.", "priceFrom": "$499", "image": "https://golfthehighsierra.com/wp-content/uploads/2022/03/peppermill-royal-suite.jpg" },
+    { "name": "Penthouse Suite", "description": "1,205 sq ft with jetted hot tub, steam shower, wet bar, separate bedroom, 1.5 baths, and four TVs.", "priceFrom": "$599", "image": "https://golfthehighsierra.com/wp-content/uploads/2022/03/peppermill-penthouse.jpg" }
+  ],
+  "dining": [
+    { "name": "Bimini Steakhouse", "type": "steakhouse", "description": "Award-winning steakhouse with premium cuts and an extensive wine list." },
+    { "name": "Romanza", "type": "restaurant", "description": "Authentic Italian cuisine in an elegant setting." },
+    { "name": "Chi", "type": "restaurant", "description": "Contemporary Asian fusion restaurant." },
+    { "name": "Oceano", "type": "restaurant", "description": "Fresh seafood and sushi." },
+    { "name": "Island Buffet", "type": "buffet", "description": "Expansive buffet with international stations." }
+  ],
+  "spaBars": [
+    "Fireside Lounge – classic Vegas-style cocktail bar (hidden gem)",
+    "Peppermill Sports Bar",
+    "Edge Nightclub",
+    "Spa & Salon Toscana – 33,000 sq ft, 24 treatment rooms"
+  ],
+  "totalRooms": 1621,
+  "parking": "Free valet & self-parking, EV charging stations available",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2021/10/peppermill-exterior.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2022/03/peppermill-pool.jpg"
+  ],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/peppermill-exterior.jpg",
+  "faqs": [
+    { "question": "What golf courses are near Peppermill Resort?", "answer": "LakeRidge Golf Course, Wolf Run Golf Club, ArrowCreek Country Club, and Somersett Golf & Country Club are all within 15-20 minutes." },
+    { "question": "Does Golf the High Sierra offer packages with Peppermill?", "answer": "Yes — custom stay-and-play packages include lodging at Peppermill, tee times, carts, and full concierge planning. Call 888-584-8232." },
+    { "question": "What's the best room type for golf groups?", "answer": "Deluxe Two Queens or Deluxe Remodeled Double Queens are great for buddies trips. For a special trip, upgrade to Spa Suites or Grand Suites with in-room jetted tubs." },
+    { "question": "Is parking free at Peppermill?", "answer": "Yes — both valet and self-parking are free, with EV charging stations available on-site." }
+  ],
+  "relatedCourses": ["lakeridge-golf-course", "wolf-run-golf-club", "arrowcreek-golf-club", "somersett-golf-country-club"],
+  "relatedHotels": ["atlantis-casino-resort-spa-reno", "grand-sierra-resort-reno", "silver-legacy-resort-casino"],
+  "meta": {
+    "title": "Peppermill Resort Spa Casino Reno | Golf Stay and Play Packages",
+    "description": "Stay at the AAA Four Diamond Peppermill Resort in Reno. 1,621 rooms, Tuscany Tower suites, 33,000 sq ft spa, and custom golf packages with 20+ courses."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "slug": "old-greenwood-lodging-truckee-ca",
+  "name": "Old Greenwood Lodging",
+  "region": "truckee",
+  "regionLabel": "Truckee",
+  "type": "private-residence",
+  "address": {
+    "streetAddress": "12915 Fairway Dr",
+    "addressLocality": "Truckee",
+    "addressRegion": "CA",
+    "postalCode": "96161",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 39.328,
+    "longitude": -120.16
+  },
+  "website": "https://www.oldgreenwood.com",
+  "priceRange": "$249\u2013$999",
+  "priceFrom": "$249",
+  "rating": {
+    "value": 4.6,
+    "count": 450,
+    "sources": "Google"
+  },
+  "description": "Old Greenwood offers luxury private residences on the golf course in Truckee. Walk out your door to the first tee. Full kitchens, fireplaces, and mountain lodge living.",
+  "shortDescription": "Luxury golf course residences with walk-out access to Old Greenwood Golf Course.",
+  "highlights": [
+    "Walk-out access to golf course",
+    "Full kitchens & fireplaces",
+    "Private hot tubs (select)",
+    "Mountain lodge living",
+    "Perfect for golf groups"
+  ],
+  "amenities": [
+    "Full kitchens",
+    "Fireplaces",
+    "Private decks",
+    "Hot tubs (select)",
+    "BBQ grills",
+    "Free parking"
+  ],
+  "roomTypes": [
+    {
+      "name": "2-Bedroom Townhome",
+      "description": "Full kitchen, fireplace, mountain views."
+    },
+    {
+      "name": "3-Bedroom Residence",
+      "description": "Large home for groups of 6."
+    },
+    {
+      "name": "4-Bedroom Estate",
+      "description": "Premium estate with hot tub and course views."
+    }
+  ],
+  "dining": [],
+  "spaBars": [],
+  "parking": "Free parking",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/old-greenwood-lodging.jpg",
+  "faqs": [
+    {
+      "question": "Walk to the course?",
+      "answer": "Yes \u2014 residences are on the course."
+    },
+    {
+      "question": "Full kitchens?",
+      "answer": "Yes \u2014 all residences have full kitchens."
+    }
+  ],
+  "relatedCourses": [
+    "old-greenwood-golf-course",
+    "northstar-golf-course",
+    "grays-crossing-golf-course",
+    "coyote-moon-golf-course"
+  ],
+  "relatedHotels": [
+    "hampton-inn-truckee-ca",
+    "cedar-house-sport-hotel"
+  ],
+  "meta": {
+    "title": "Old Greenwood Lodging Truckee | Golf Course Residences",
+    "description": "Luxury residences on Old Greenwood Golf Course. Walk-out access and custom golf packages."
+  },
+  "phone": "+1-888-584-8232",
+  "totalRooms": null
+}

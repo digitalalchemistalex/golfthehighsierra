@@ -1,0 +1,93 @@
+{
+  "slug": "cedar-house-sport-hotel",
+  "name": "Cedar House Sport Hotel",
+  "region": "truckee",
+  "regionLabel": "Truckee",
+  "type": "lodge",
+  "address": {
+    "streetAddress": "10918 Brockway Rd",
+    "addressLocality": "Truckee",
+    "addressRegion": "CA",
+    "postalCode": "96161",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 39.347,
+    "longitude": -120.1395
+  },
+  "website": "https://www.cedarhousesporthotel.com",
+  "priceRange": "$179\u2013$449",
+  "priceFrom": "$179",
+  "rating": {
+    "value": 4.7,
+    "count": 800,
+    "sources": "TripAdvisor, Google"
+  },
+  "description": "Cedar House Sport Hotel is a boutique eco-friendly lodge in Truckee with mountain-modern aesthetic, complimentary breakfast, apr\u00e8s bar, outdoor hot tub, and easy access to Truckee-Tahoe golf courses.",
+  "shortDescription": "Boutique eco-friendly mountain lodge with apr\u00e8s bar and hot tub near Truckee golf courses.",
+  "highlights": [
+    "Boutique eco-friendly lodge",
+    "Complimentary breakfast",
+    "Apr\u00e8s bar & fire pit",
+    "Outdoor hot tub",
+    "Near Old Greenwood & Northstar"
+  ],
+  "amenities": [
+    "Complimentary breakfast",
+    "Apr\u00e8s bar",
+    "Outdoor hot tub",
+    "Fire pit",
+    "Guest bikes",
+    "Free parking"
+  ],
+  "roomTypes": [
+    {
+      "name": "Sport Room",
+      "description": "Mountain lodge rooms."
+    },
+    {
+      "name": "Loft Suite",
+      "description": "Loft-style with extra space."
+    }
+  ],
+  "dining": [
+    {
+      "name": "Stella",
+      "type": "restaurant",
+      "description": "Seasonal farm-to-table cuisine."
+    }
+  ],
+  "spaBars": [
+    "Apr\u00e8s Bar",
+    "Outdoor Hot Tub & Fire Pit"
+  ],
+  "parking": "Free parking",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/cedar-house-sport-hotel.jpg",
+  "faqs": [
+    {
+      "question": "Breakfast included?",
+      "answer": "Yes \u2014 complimentary for all guests."
+    },
+    {
+      "question": "Nearby courses?",
+      "answer": "Old Greenwood, Northstar, Tahoe Donner, Gray's Crossing \u2014 all 10-20 minutes."
+    }
+  ],
+  "relatedCourses": [
+    "old-greenwood-golf-course",
+    "northstar-golf-course",
+    "tahoe-donner-golf-course-truckee-ca",
+    "grays-crossing-golf-course"
+  ],
+  "relatedHotels": [
+    "hampton-inn-truckee-ca",
+    "old-greenwood-lodging-truckee-ca"
+  ],
+  "meta": {
+    "title": "Cedar House Sport Hotel Truckee | Boutique Lodge & Golf",
+    "description": "Boutique mountain lodge in Truckee with breakfast, apr\u00e8s bar, and golf packages near Old Greenwood."
+  },
+  "phone": "+1-888-584-8232",
+  "totalRooms": null
+}

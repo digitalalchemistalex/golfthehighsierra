@@ -1,0 +1,107 @@
+{
+  "slug": "golden-nugget-lake-tahoe",
+  "name": "Golden Nugget Lake Tahoe",
+  "region": "tahoe",
+  "regionLabel": "Lake Tahoe",
+  "type": "casino-resort",
+  "address": {
+    "streetAddress": "50 US-50",
+    "addressLocality": "Stateline",
+    "addressRegion": "NV",
+    "postalCode": "89449",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 38.9563,
+    "longitude": -119.9408
+  },
+  "website": "https://www.goldennugget.com/lake-tahoe",
+  "priceRange": "$149\u2013$600",
+  "priceFrom": "$149",
+  "rating": {
+    "value": 4.1,
+    "count": 2100,
+    "sources": "TripAdvisor, Google"
+  },
+  "description": "Golden Nugget Lake Tahoe offers luxury rooms with lake and mountain views, 24/7 casino, resort pool, spa, and Saltgrass Steak House. Steps from Edgewood Tahoe Golf Course.",
+  "shortDescription": "Luxury Stateline casino with lake views, Saltgrass dining, and steps from Edgewood.",
+  "highlights": [
+    "Lake and mountain views",
+    "Resort pool with cabanas & fire pits",
+    "Saltgrass Steak House",
+    "600+ slots",
+    "Full-service spa",
+    "Pet-friendly"
+  ],
+  "amenities": [
+    "24/7 casino",
+    "Resort pool & cabanas",
+    "Spa",
+    "Fitness center",
+    "Arcade",
+    "Pet-friendly",
+    "Free valet"
+  ],
+  "roomTypes": [
+    {
+      "name": "Standard Room",
+      "description": "Lake or mountain views.",
+      "priceFrom": "$149"
+    },
+    {
+      "name": "Suite",
+      "description": "Spacious with living area.",
+      "priceFrom": "$280"
+    }
+  ],
+  "dining": [
+    {
+      "name": "Saltgrass Steak House",
+      "type": "steakhouse",
+      "description": "Sizzling steaks and seafood."
+    },
+    {
+      "name": "Claim Jumper",
+      "type": "restaurant",
+      "description": "American comfort food."
+    },
+    {
+      "name": "Lake Tahoe Bar & Grill",
+      "type": "restaurant",
+      "description": "Casual lakeside dining."
+    }
+  ],
+  "spaBars": [
+    "Full-Service Spa",
+    "Casino Lounges"
+  ],
+  "parking": "Free valet parking",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/golden-nugget-lake-tahoe.jpg",
+  "faqs": [
+    {
+      "question": "How close to Edgewood?",
+      "answer": "5 minutes from Edgewood Tahoe Golf Course."
+    },
+    {
+      "question": "Is it pet-friendly?",
+      "answer": "Yes \u2014 pet-friendly accommodations available."
+    }
+  ],
+  "relatedCourses": [
+    "edgewood-tahoe-golf-course",
+    "lake-tahoe-golf-course",
+    "incline-village-golf-courses-nv"
+  ],
+  "relatedHotels": [
+    "harveys-lake-tahoe",
+    "harrahs-lake-tahoe",
+    "margaritaville-lake-tahoe"
+  ],
+  "meta": {
+    "title": "Golden Nugget Lake Tahoe | Casino & Golf Packages",
+    "description": "Golden Nugget in Stateline with lake views, Saltgrass dining, and golf packages near Edgewood."
+  },
+  "phone": "+1-888-584-8232",
+  "totalRooms": null
+}

@@ -1,0 +1,142 @@
+{
+  "slug": "eldorado-resorts-reno-eldorado-at-the-row",
+  "name": "Eldorado Resort Casino \u2013 AT THE ROW",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "type": "casino-resort",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 39.5275,
+    "longitude": -119.814
+  },
+  "website": "https://www.eldoradoreno.com",
+  "priceRange": "$89\u2013$399",
+  "priceFrom": "$89",
+  "rating": {
+    "value": 4.1,
+    "count": 2900,
+    "sources": "TripAdvisor, Google"
+  },
+  "description": "The Eldorado Resort Casino Reno is a rare mix of upscale atmosphere with a relaxed vibe right in the heart of Reno. Boasting nine award-winning restaurants, unlimited nightlife, a showroom featuring Cirque-style productions, and luxurious accommodations across three towers.",
+  "shortDescription": "Upscale downtown Reno casino resort with 9 restaurants and 15 room types across 3 towers.",
+  "highlights": [
+    "9 award-winning restaurants",
+    "Part of THE ROW complex",
+    "15 room types across 3 towers",
+    "Cirque-style showroom productions",
+    "Connected to Silver Legacy & Circus Circus"
+  ],
+  "amenities": [
+    "Full-service casino",
+    "Spa & fitness center",
+    "Pool",
+    "9 restaurants",
+    "Bars & lounges",
+    "Meeting & event facilities",
+    "Free parking"
+  ],
+  "roomTypes": [
+    {
+      "name": "Virginia Petite Room (1 Queen)",
+      "description": "Compact room in the Virginia Tower."
+    },
+    {
+      "name": "Virginia Deluxe Room (2 Queens)",
+      "description": "Spacious dual queen room."
+    },
+    {
+      "name": "Skyline Superior Room (1 King)",
+      "description": "Standard king in the Skyline Tower."
+    },
+    {
+      "name": "Skyline Deluxe Room (1 King)",
+      "description": "Upgraded king room."
+    },
+    {
+      "name": "Sierra Luxury Room (1 King)",
+      "description": "Luxury king in the Sierra Tower."
+    },
+    {
+      "name": "Sierra Studio Suite (1 King)",
+      "description": "500 sq ft studio with living area, dining for four, wet bar."
+    },
+    {
+      "name": "Sierra Executive Suite (1 King)",
+      "description": "One-bedroom suite with separate living room and bar."
+    },
+    {
+      "name": "Corner Spa Suite (1 King)",
+      "description": "Corner suite with spa amenities."
+    },
+    {
+      "name": "Skyline Player Spa Suite",
+      "description": "Spa suite with in-room spa amenities."
+    },
+    {
+      "name": "Skyline VIP Hospitality Suite",
+      "description": "Premium VIP suite for hosting."
+    }
+  ],
+  "dining": [
+    {
+      "name": "Brew Brothers",
+      "type": "restaurant",
+      "description": "Craft brewery and restaurant."
+    },
+    {
+      "name": "Cin Cin Bar",
+      "type": "bar",
+      "description": "Upscale cocktail bar."
+    },
+    {
+      "name": "Millie's",
+      "type": "restaurant",
+      "description": "Classic comfort dining."
+    },
+    {
+      "name": "Ringside Bar",
+      "type": "bar",
+      "description": "Sports bar near the casino floor."
+    }
+  ],
+  "spaBars": [
+    "Ringside Bar",
+    "Cin Cin Bar",
+    "Brew Brothers Tap Room"
+  ],
+  "totalRooms": 814,
+  "parking": "Free parking in Silver Legacy garage",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/eldorado-exterior.jpg",
+  "faqs": [
+    {
+      "question": "How many room types does Eldorado have?",
+      "answer": "15 room types across three towers: Virginia, Skyline, and Sierra."
+    },
+    {
+      "question": "Is Eldorado connected to other casinos?",
+      "answer": "Yes \u2014 part of THE ROW, connected to Silver Legacy and Circus Circus."
+    }
+  ],
+  "relatedCourses": [
+    "lakeridge-golf-course",
+    "wolf-run-golf-club",
+    "washoe-county-golf-course"
+  ],
+  "relatedHotels": [
+    "silver-legacy-resort-casino",
+    "circus-circus-reno",
+    "grand-sierra-resort-reno"
+  ],
+  "meta": {
+    "title": "Eldorado Resort Casino Reno | AT THE ROW Golf Packages",
+    "description": "Stay at Eldorado in downtown Reno. 15 room types, 9 restaurants, and custom golf packages with 20+ courses."
+  },
+  "phone": "+1-888-584-8232"
+}

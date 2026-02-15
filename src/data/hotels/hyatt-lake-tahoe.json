@@ -1,0 +1,107 @@
+{
+  "slug": "hyatt-lake-tahoe",
+  "name": "Hyatt Regency Lake Tahoe",
+  "region": "tahoe",
+  "regionLabel": "Lake Tahoe",
+  "type": "resort",
+  "address": {
+    "streetAddress": "111 Country Club Dr",
+    "addressLocality": "Incline Village",
+    "addressRegion": "NV",
+    "postalCode": "89451",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 39.237,
+    "longitude": -119.9487
+  },
+  "website": "https://www.hyatt.com/en-US/hotel/nevada/hyatt-regency-lake-tahoe",
+  "priceRange": "$199\u2013$799",
+  "priceFrom": "$199",
+  "starRating": 4,
+  "rating": {
+    "value": 4.4,
+    "count": 2700,
+    "sources": "TripAdvisor, Google"
+  },
+  "description": "Hyatt Regency Lake Tahoe is a luxury lakefront resort in Incline Village with private beach, Stillwater Spa, casino, and direct access to Incline Village golf courses.",
+  "shortDescription": "Luxury lakefront resort at Incline Village with private beach, spa, and golf course access.",
+  "highlights": [
+    "Private beach on Lake Tahoe",
+    "Stillwater Spa",
+    "Lakefront casino",
+    "Steps from Incline Village golf",
+    "Lakeside Cottages with hot tubs",
+    "Lone Eagle Grille"
+  ],
+  "amenities": [
+    "Private lakefront beach",
+    "Stillwater Spa",
+    "Casino",
+    "Heated outdoor pool",
+    "Water sports",
+    "Ski shuttle",
+    "Concierge"
+  ],
+  "roomTypes": [
+    {
+      "name": "Standard Room",
+      "description": "Mountain or partial lake views."
+    },
+    {
+      "name": "Lake View Room",
+      "description": "Stunning Lake Tahoe views."
+    },
+    {
+      "name": "Lakeside Cottage",
+      "description": "Private cottage with hot tub.",
+      "priceFrom": "$499"
+    }
+  ],
+  "dining": [
+    {
+      "name": "Lone Eagle Grille",
+      "type": "steakhouse",
+      "description": "Award-winning lakefront dining."
+    },
+    {
+      "name": "Sierra Caf\u00e9",
+      "type": "cafe",
+      "description": "Casual all-day dining."
+    }
+  ],
+  "spaBars": [
+    "Stillwater Spa",
+    "Cutthroat's Saloon",
+    "Lakeside Beach Bar"
+  ],
+  "parking": "Valet and self-parking",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/hyatt-lake-tahoe.jpg",
+  "faqs": [
+    {
+      "question": "How close is Hyatt to golf courses?",
+      "answer": "Steps from Incline Village Championship and Mountain courses."
+    },
+    {
+      "question": "Does Hyatt have a private beach?",
+      "answer": "Yes \u2014 private lakefront beach exclusively for resort guests."
+    }
+  ],
+  "relatedCourses": [
+    "incline-village-golf-courses-nv",
+    "edgewood-tahoe-golf-course",
+    "northstar-golf-course"
+  ],
+  "relatedHotels": [
+    "harrahs-lake-tahoe",
+    "harveys-lake-tahoe",
+    "golden-nugget-lake-tahoe"
+  ],
+  "meta": {
+    "title": "Hyatt Regency Lake Tahoe | Luxury Resort & Golf Packages",
+    "description": "Luxury lakefront Hyatt with private beach, Stillwater Spa, and golf packages at Incline Village and Edgewood."
+  },
+  "phone": "+1-888-584-8232",
+  "totalRooms": null
+}

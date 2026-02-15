@@ -1,0 +1,98 @@
+{
+  "slug": "carson-valley-inn-casino",
+  "name": "Carson Valley Inn & Casino",
+  "region": "carson",
+  "regionLabel": "Carson Valley",
+  "type": "inn",
+  "address": {
+    "streetAddress": "1627 US-395",
+    "addressLocality": "Minden",
+    "addressRegion": "NV",
+    "postalCode": "89423",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 38.9541,
+    "longitude": -119.7656
+  },
+  "website": "https://www.cvinn.com",
+  "priceRange": "$89\u2013$249",
+  "priceFrom": "$89",
+  "rating": {
+    "value": 4.1,
+    "count": 1400,
+    "sources": "TripAdvisor, Google"
+  },
+  "description": "Carson Valley Inn & Casino is a welcoming inn and casino in Minden, NV, offering comfortable rooms, gaming, dining, and easy access to Carson Valley golf courses including Genoa Lakes and Dayton Valley.",
+  "shortDescription": "Welcoming inn in Minden with casino, dining, and easy access to Carson Valley golf courses.",
+  "highlights": [
+    "Affordable lodging in Carson Valley",
+    "Casino with slots & table games",
+    "Multiple dining options",
+    "Minutes from Genoa Lakes Golf Club",
+    "Cabaret Lounge entertainment",
+    "RV park available"
+  ],
+  "amenities": [
+    "Casino",
+    "Restaurant & buffet",
+    "Cabaret Lounge",
+    "Pool (seasonal)",
+    "Free parking",
+    "RV park"
+  ],
+  "roomTypes": [
+    {
+      "name": "Standard Room",
+      "description": "Comfortable rooms with mountain views."
+    },
+    {
+      "name": "Suite",
+      "description": "Spacious suites with sitting area."
+    }
+  ],
+  "dining": [
+    {
+      "name": "CV Steak",
+      "type": "steakhouse",
+      "description": "Prime steaks in a casual setting."
+    },
+    {
+      "name": "Katie's Country Kitchen",
+      "type": "restaurant",
+      "description": "Home-style comfort food."
+    }
+  ],
+  "spaBars": [
+    "Cabaret Lounge"
+  ],
+  "parking": "Free self-parking",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/carson-valley-inn.jpg",
+  "faqs": [
+    {
+      "question": "What golf courses are near Carson Valley Inn?",
+      "answer": "Genoa Lakes Golf Club, Dayton Valley Golf Club, and Toiyabe Golf Club are all within 15-25 minutes."
+    },
+    {
+      "question": "Is this a good base for Carson Valley golf?",
+      "answer": "Excellent \u2014 it's the primary lodging option in Carson Valley with affordable rooms and casino entertainment."
+    }
+  ],
+  "relatedCourses": [
+    "genoa-lakes-golf-club",
+    "dayton-valley-golf-club",
+    "toiyabe-golf-club",
+    "eagle-valley-golf-course"
+  ],
+  "relatedHotels": [
+    "peppermill-resort-spa-casino",
+    "atlantis-casino-resort-spa-reno"
+  ],
+  "meta": {
+    "title": "Carson Valley Inn & Casino | Golf Stay and Play Packages",
+    "description": "Stay at Carson Valley Inn in Minden. Casino, dining, and golf packages near Genoa Lakes and Dayton Valley."
+  },
+  "phone": "+1-888-584-8232",
+  "totalRooms": null
+}

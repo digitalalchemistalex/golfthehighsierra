@@ -1,0 +1,97 @@
+{
+  "slug": "portola-hotel-spa-monterey",
+  "name": "Portola Hotel & Spa",
+  "region": "northern-california",
+  "regionLabel": "Northern California",
+  "type": "resort",
+  "address": {
+    "streetAddress": "2 Portola Plaza",
+    "addressLocality": "Monterey",
+    "addressRegion": "CA",
+    "postalCode": "93940",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 36.6002,
+    "longitude": -121.8947
+  },
+  "website": "https://www.portolahotel.com",
+  "priceRange": "$249\u2013$699",
+  "priceFrom": "$249",
+  "starRating": 4,
+  "rating": {
+    "value": 4.4,
+    "count": 2200,
+    "sources": "TripAdvisor, Google"
+  },
+  "description": "Portola Hotel & Spa is a luxury waterfront hotel on Monterey's Old Fisherman's Wharf. Full-service spa, fine dining, and access to Monterey Peninsula golf courses including Pebble Beach and Spyglass Hill.",
+  "shortDescription": "Luxury waterfront hotel on Monterey's Old Fisherman's Wharf with access to Pebble Beach area golf.",
+  "highlights": [
+    "Waterfront location on Old Fisherman's Wharf",
+    "Full-service Vista Blue Spa",
+    "Peter B's Brewpub",
+    "Minutes from Pebble Beach and Spyglass Hill",
+    "Monterey Conference Center attached",
+    "Cannery Row walking distance"
+  ],
+  "amenities": [
+    "Vista Blue Spa",
+    "Fitness center",
+    "Peter B's Brewpub",
+    "Jacks Restaurant",
+    "Conference center",
+    "Free Wi-Fi",
+    "Valet parking"
+  ],
+  "roomTypes": [
+    {
+      "name": "Classic Room",
+      "description": "Comfortable rooms with garden or courtyard views."
+    },
+    {
+      "name": "Premium Room",
+      "description": "Upgraded rooms with partial water views."
+    },
+    {
+      "name": "Suite",
+      "description": "Spacious suites with separate living area."
+    }
+  ],
+  "dining": [
+    {
+      "name": "Jacks Restaurant",
+      "type": "restaurant",
+      "description": "Farm-to-table California cuisine."
+    },
+    {
+      "name": "Peter B's Brewpub",
+      "type": "bar",
+      "description": "Monterey's first craft brewpub."
+    }
+  ],
+  "spaBars": [
+    "Vista Blue Spa",
+    "Peter B's Brewpub"
+  ],
+  "parking": "Valet parking available",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/portola-hotel-monterey.jpg",
+  "faqs": [
+    {
+      "question": "How close is Portola to Pebble Beach?",
+      "answer": "About 15 minutes to Pebble Beach, Spyglass Hill, and the Links at Spanish Bay."
+    },
+    {
+      "question": "Is Portola good for golf groups?",
+      "answer": "Excellent \u2014 luxury waterfront lodging with great dining, plus easy access to the world-class Monterey Peninsula courses."
+    }
+  ],
+  "relatedCourses": [],
+  "relatedHotels": [],
+  "meta": {
+    "title": "Portola Hotel & Spa Monterey | Golf Stay and Play",
+    "description": "Luxury waterfront hotel in Monterey. Vista Blue Spa, fine dining, and golf packages near Pebble Beach."
+  },
+  "phone": "+1-888-584-8232",
+  "totalRooms": null
+}

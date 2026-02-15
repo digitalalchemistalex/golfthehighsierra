@@ -1,0 +1,89 @@
+{
+  "slug": "hampton-inn-truckee-ca",
+  "name": "Hampton Inn & Suites Truckee",
+  "region": "truckee",
+  "regionLabel": "Truckee",
+  "type": "hotel",
+  "address": {
+    "streetAddress": "11951 State Hwy 267",
+    "addressLocality": "Truckee",
+    "addressRegion": "CA",
+    "postalCode": "96161",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 39.3386,
+    "longitude": -120.1722
+  },
+  "website": "https://www.hilton.com/en/hotels/tkctruckee-hampton",
+  "priceRange": "$159\u2013$349",
+  "priceFrom": "$159",
+  "rating": {
+    "value": 4.4,
+    "count": 1200,
+    "sources": "TripAdvisor, Google"
+  },
+  "description": "Hampton Inn & Suites Truckee offers reliable lodging with complimentary breakfast, indoor pool, and minutes from Old Greenwood, Northstar, Tahoe Donner, and Coyote Moon golf courses.",
+  "shortDescription": "Reliable Truckee lodging with complimentary breakfast near 5+ championship golf courses.",
+  "highlights": [
+    "Complimentary hot breakfast",
+    "Indoor pool & hot tub",
+    "Minutes from 5+ courses",
+    "Downtown Truckee walking distance",
+    "Hilton Honors"
+  ],
+  "amenities": [
+    "Complimentary breakfast",
+    "Indoor pool & hot tub",
+    "Fitness center",
+    "Business center",
+    "Free Wi-Fi",
+    "Free parking"
+  ],
+  "roomTypes": [
+    {
+      "name": "Standard King",
+      "description": "Comfortable king with modern amenities."
+    },
+    {
+      "name": "Double Queen",
+      "description": "Two queens for golf groups."
+    },
+    {
+      "name": "Studio Suite",
+      "description": "Suite with living area."
+    }
+  ],
+  "dining": [],
+  "spaBars": [],
+  "parking": "Free self-parking",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/hampton-inn-truckee.jpg",
+  "faqs": [
+    {
+      "question": "What courses are nearby?",
+      "answer": "Old Greenwood, Northstar, Tahoe Donner, Coyote Moon, and Gray's Crossing are all 15-20 minutes."
+    },
+    {
+      "question": "Is breakfast included?",
+      "answer": "Yes \u2014 complimentary hot breakfast for all guests."
+    }
+  ],
+  "relatedCourses": [
+    "old-greenwood-golf-course",
+    "northstar-golf-course",
+    "tahoe-donner-golf-course-truckee-ca",
+    "coyote-moon-golf-course",
+    "grays-crossing-golf-course"
+  ],
+  "relatedHotels": [
+    "old-greenwood-lodging-truckee-ca",
+    "cedar-house-sport-hotel"
+  ],
+  "meta": {
+    "title": "Hampton Inn Truckee CA | Hotel & Golf Packages",
+    "description": "Hampton Inn Truckee with complimentary breakfast and golf packages near Old Greenwood and Northstar."
+  },
+  "phone": "+1-888-584-8232",
+  "totalRooms": null
+}

@@ -1,0 +1,83 @@
+{
+  "slug": "lake-tahoe-resort-hotel",
+  "name": "Lake Tahoe Resort Hotel",
+  "region": "tahoe",
+  "regionLabel": "Lake Tahoe",
+  "type": "resort",
+  "address": {
+    "streetAddress": "4130 Lake Tahoe Blvd",
+    "addressLocality": "South Lake Tahoe",
+    "addressRegion": "CA",
+    "postalCode": "96150",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 38.9548,
+    "longitude": -119.9456
+  },
+  "website": "https://www.laketahoeresorthotel.com",
+  "priceRange": "$149\u2013$399",
+  "priceFrom": "$149",
+  "rating": {
+    "value": 4.0,
+    "count": 1500,
+    "sources": "TripAdvisor, Google"
+  },
+  "description": "Lake Tahoe Resort Hotel offers all-suite accommodations in South Lake Tahoe, walking distance to Heavenly Village, beaches, and casinos. Every room is a suite.",
+  "shortDescription": "All-suite hotel walking distance to Heavenly Village, beaches, and Stateline casinos.",
+  "highlights": [
+    "All-suite accommodations",
+    "Walking to Heavenly Village",
+    "Near beaches & casinos",
+    "Complimentary shuttle",
+    "Indoor pool & hot tub"
+  ],
+  "amenities": [
+    "All-suite rooms",
+    "Indoor pool & hot tub",
+    "Fitness center",
+    "Shuttle",
+    "Dining",
+    "Free parking"
+  ],
+  "roomTypes": [
+    {
+      "name": "Studio Suite",
+      "description": "Open-layout with kitchenette."
+    },
+    {
+      "name": "One Bedroom Suite",
+      "description": "Separate bedroom with full living area."
+    }
+  ],
+  "dining": [],
+  "spaBars": [],
+  "parking": "Free self-parking",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/lake-tahoe-resort-hotel.jpg",
+  "faqs": [
+    {
+      "question": "Are all rooms suites?",
+      "answer": "Yes \u2014 every room is a suite with separate living area."
+    },
+    {
+      "question": "How close to golf?",
+      "answer": "Edgewood Tahoe is about 5 minutes away."
+    }
+  ],
+  "relatedCourses": [
+    "edgewood-tahoe-golf-course",
+    "lake-tahoe-golf-course"
+  ],
+  "relatedHotels": [
+    "harveys-lake-tahoe",
+    "harrahs-lake-tahoe",
+    "margaritaville-lake-tahoe"
+  ],
+  "meta": {
+    "title": "Lake Tahoe Resort Hotel | All-Suite & Golf Packages",
+    "description": "All-suite hotel in South Lake Tahoe near Heavenly Village with golf packages."
+  },
+  "phone": "+1-888-584-8232",
+  "totalRooms": null
+}

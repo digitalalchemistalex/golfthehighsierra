@@ -1,0 +1,99 @@
+{
+  "slug": "river-pines-resort-graeagle-ca",
+  "name": "River Pines Resort",
+  "region": "graeagle",
+  "regionLabel": "Graeagle",
+  "type": "resort",
+  "address": {
+    "streetAddress": "8296 Hwy 89",
+    "addressLocality": "Graeagle",
+    "addressRegion": "CA",
+    "postalCode": "96103",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 39.7485,
+    "longitude": -120.62
+  },
+  "priceRange": "$129\u2013$349",
+  "priceFrom": "$129",
+  "rating": {
+    "value": 4.3,
+    "count": 280,
+    "sources": "Google"
+  },
+  "description": "River Pines Resort in Graeagle offers charming cabins and lodge rooms along the Middle Fork of the Feather River. Walking distance to Graeagle Meadows Golf Course with on-site dining and a relaxed mountain atmosphere.",
+  "shortDescription": "Charming riverside cabins in Graeagle, walking distance to Graeagle Meadows Golf Course.",
+  "highlights": [
+    "Charming cabins on the Feather River",
+    "Walking distance to Graeagle Meadows Golf Course",
+    "On-site restaurant & bar",
+    "Relaxed mountain atmosphere",
+    "Near Plumas Pines & Whitehawk Ranch",
+    "Pool & outdoor recreation"
+  ],
+  "amenities": [
+    "On-site restaurant & bar",
+    "Pool (seasonal)",
+    "River access",
+    "BBQ areas",
+    "Free parking"
+  ],
+  "roomTypes": [
+    {
+      "name": "Lodge Room",
+      "description": "Comfortable lodge room with mountain decor."
+    },
+    {
+      "name": "Cabin",
+      "description": "Private cabin with kitchenette and deck."
+    },
+    {
+      "name": "Family Cabin",
+      "description": "Larger cabin for groups with full kitchen."
+    }
+  ],
+  "dining": [
+    {
+      "name": "River Pines Restaurant",
+      "type": "restaurant",
+      "description": "On-site dining with American comfort food."
+    },
+    {
+      "name": "River Pines Bar",
+      "type": "bar",
+      "description": "Casual bar with cocktails and beer."
+    }
+  ],
+  "spaBars": [
+    "River Pines Bar"
+  ],
+  "parking": "Free parking",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/river-pines-resort.jpg",
+  "faqs": [
+    {
+      "question": "What golf courses are near River Pines?",
+      "answer": "Graeagle Meadows is walking distance. Plumas Pines, Whitehawk Ranch, and Nakoma are 10-20 minutes."
+    },
+    {
+      "question": "Does River Pines have dining?",
+      "answer": "Yes \u2014 on-site restaurant and bar for post-round meals."
+    }
+  ],
+  "relatedCourses": [
+    "graeagle-meadows-golf-course",
+    "plumas-pines-golf-resort",
+    "whitehawk-ranch-golf-club",
+    "nakoma-golf-resort"
+  ],
+  "relatedHotels": [
+    "plumas-pines-private-residency-graeagle"
+  ],
+  "meta": {
+    "title": "River Pines Resort Graeagle | Cabins & Golf Packages",
+    "description": "Riverside cabins in Graeagle near Graeagle Meadows Golf Course. On-site dining and custom golf packages."
+  },
+  "phone": "+1-888-584-8232",
+  "totalRooms": null
+}

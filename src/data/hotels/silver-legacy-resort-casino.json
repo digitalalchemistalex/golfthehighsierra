@@ -1,0 +1,115 @@
+{
+  "slug": "silver-legacy-resort-casino",
+  "name": "Silver Legacy Resort Casino",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "type": "casino-resort",
+  "address": {
+    "streetAddress": "407 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 39.528,
+    "longitude": -119.8138
+  },
+  "website": "https://www.silverlegacyreno.com",
+  "priceRange": "$99\u2013$449",
+  "priceFrom": "$99",
+  "rating": {
+    "value": 4.2,
+    "count": 3400,
+    "sources": "TripAdvisor, Google"
+  },
+  "description": "Located in the heart of downtown Reno, Silver Legacy Resort Casino towers above the city as the newest and tallest casino hotel. Spacious guest rooms and suites offer grand views of the city skyline and mountains. Part of THE ROW complex with Eldorado and Circus Circus.",
+  "shortDescription": "Downtown Reno's tallest casino hotel with Ramsay's Kitchen, THE ROW complex access, and grand mountain views.",
+  "highlights": [
+    "Downtown Reno's tallest casino hotel",
+    "Part of THE ROW (Eldorado & Circus Circus)",
+    "Ramsay's Kitchen by Gordon Ramsay",
+    "Gordon Ramsay Fish & Chips",
+    "The Spa at Silver Legacy",
+    "Grand city & mountain views"
+  ],
+  "amenities": [
+    "Full-service casino",
+    "The Spa at Silver Legacy",
+    "Fitness center",
+    "Pool & hot tubs",
+    "Multiple restaurants & bars",
+    "Free parking in Silver Legacy garage",
+    "Meeting & event space"
+  ],
+  "roomTypes": [
+    {
+      "name": "Standard Room",
+      "description": "Comfortable rooms with city or mountain views."
+    },
+    {
+      "name": "Deluxe Room",
+      "description": "Upgraded rooms with enhanced amenities."
+    },
+    {
+      "name": "Suite",
+      "description": "Spacious suites with separate living area."
+    }
+  ],
+  "dining": [
+    {
+      "name": "Ramsay's Kitchen",
+      "slug": "ramsays-kitchen-reno",
+      "type": "restaurant",
+      "description": "Gordon Ramsay fine dining \u2014 Beef Wellington, Lobster Risotto."
+    },
+    {
+      "name": "Gordon Ramsay Fish & Chips",
+      "slug": "gordon-ramsay-fish-chips-reno",
+      "type": "restaurant",
+      "description": "Fast-casual hand-battered fish & chips."
+    },
+    {
+      "name": "Spa Caf\u00e9 & Bar",
+      "slug": "spa-cafe-bar-reno",
+      "type": "cafe",
+      "description": "Light, health-conscious meals near the spa."
+    }
+  ],
+  "spaBars": [
+    "Rum Bullions",
+    "Drinx Bar",
+    "Comedy Bar",
+    "Silver Baron Lounge",
+    "The Spa at Silver Legacy"
+  ],
+  "totalRooms": 1720,
+  "parking": "Free parking in Silver Legacy garage",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/silver-legacy-exterior.jpg",
+  "faqs": [
+    {
+      "question": "Is Silver Legacy connected to other casinos?",
+      "answer": "Yes \u2014 Silver Legacy is part of THE ROW, connected via skyway to Eldorado and Circus Circus."
+    },
+    {
+      "question": "Does Silver Legacy have a spa?",
+      "answer": "Yes \u2014 The Spa at Silver Legacy offers massages, facials, and body treatments."
+    }
+  ],
+  "relatedCourses": [
+    "lakeridge-golf-course",
+    "wolf-run-golf-club",
+    "arrowcreek-golf-club"
+  ],
+  "relatedHotels": [
+    "eldorado-resorts-reno-eldorado-at-the-row",
+    "circus-circus-reno",
+    "peppermill-resort-spa-casino"
+  ],
+  "meta": {
+    "title": "Silver Legacy Resort Casino Reno | Golf Stay and Play Packages",
+    "description": "Stay at Silver Legacy in downtown Reno. Ramsay's Kitchen, THE ROW access, and custom golf packages with 20+ courses."
+  },
+  "phone": "+1-888-584-8232"
+}

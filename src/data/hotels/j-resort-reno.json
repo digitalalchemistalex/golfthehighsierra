@@ -1,0 +1,82 @@
+{
+  "slug": "j-resort-reno",
+  "name": "J Resort",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "type": "casino-resort",
+  "address": {
+    "streetAddress": "345 N Arlington Ave",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 39.5275,
+    "longitude": -119.8193
+  },
+  "website": "https://www.jresortreno.com",
+  "priceRange": "$79\u2013$299",
+  "priceFrom": "$79",
+  "rating": {
+    "value": 3.9,
+    "count": 1800,
+    "sources": "TripAdvisor, Google"
+  },
+  "description": "J Resort is a refreshed downtown Reno casino hotel offering modern rooms, dining, and gaming. Formerly the Sands Regency, renovated with a contemporary vibe and affordable pricing for golf groups.",
+  "shortDescription": "Refreshed downtown Reno casino hotel with modern rooms and affordable pricing.",
+  "highlights": [
+    "Recently renovated downtown property",
+    "Affordable rooms from $79/night",
+    "Central downtown location",
+    "Casino with slots & table games"
+  ],
+  "amenities": [
+    "Casino floor",
+    "Fitness center",
+    "Restaurants",
+    "Free parking",
+    "Meeting space"
+  ],
+  "roomTypes": [
+    {
+      "name": "Standard Room",
+      "description": "Renovated rooms with modern finishes."
+    },
+    {
+      "name": "Deluxe Room",
+      "description": "Upgraded rooms with enhanced amenities."
+    },
+    {
+      "name": "Suite",
+      "description": "Spacious suites for golf groups."
+    }
+  ],
+  "dining": [],
+  "spaBars": [],
+  "totalRooms": 800,
+  "parking": "Free self-parking",
+  "images": [],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/j-resort-exterior.jpg",
+  "faqs": [
+    {
+      "question": "Is J Resort good for golf groups?",
+      "answer": "Yes \u2014 affordable downtown location with easy access to Reno's golf courses, dining, and nightlife."
+    }
+  ],
+  "relatedCourses": [
+    "lakeridge-golf-course",
+    "wolf-run-golf-club",
+    "washoe-county-golf-course"
+  ],
+  "relatedHotels": [
+    "silver-legacy-resort-casino",
+    "circus-circus-reno",
+    "grand-sierra-resort-reno"
+  ],
+  "meta": {
+    "title": "J Resort Reno | Downtown Hotel & Golf Packages",
+    "description": "Affordable J Resort in downtown Reno. Casino gaming and custom golf packages with 20+ courses."
+  },
+  "phone": "+1-888-584-8232"
+}

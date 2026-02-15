@@ -1,0 +1,83 @@
+{
+  "slug": "grand-sierra-resort-reno",
+  "name": "Grand Sierra Resort & Casino",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "type": "casino-resort",
+  "address": {
+    "streetAddress": "2500 E 2nd St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89595",
+    "addressCountry": "US"
+  },
+  "geo": { "latitude": 39.5218, "longitude": -119.7776 },
+  "phone": "+1-888-584-8232",
+  "website": "https://www.grandsierraresort.com",
+  "priceRange": "$109–$599",
+  "priceFrom": "$109",
+  "starRating": 4,
+  "rating": { "value": 4.3, "count": 5800, "sources": "TripAdvisor, Google" },
+  "description": "Grand Sierra Resort is Northern Nevada's largest casino resort, offering luxury rooms, 2,000+ slots, poker, nightlife, fine dining, and live concerts. Less than 15 minutes from multiple championship golf courses, it's the perfect hub for golfers visiting Reno and the High Sierra.",
+  "shortDescription": "Northern Nevada's largest casino resort with 2,000+ slots, live entertainment, and direct access to top Reno golf courses.",
+  "highlights": [
+    "Northern Nevada's largest casino resort",
+    "2,000+ slot machines & 50+ table games",
+    "The Grand Theatre – 2,700-seat concert venue",
+    "Lex Nightclub – Reno's premier nightclub",
+    "Charlie Palmer Steakhouse",
+    "5 minutes from Reno-Tahoe International Airport",
+    "Resort-style pool with cabanas & hot tubs"
+  ],
+  "amenities": [
+    "2,000+ slot machines",
+    "Poker room & sportsbook",
+    "Lex Nightclub",
+    "The Grand Theatre (2,700 seats)",
+    "Cinemark Century Theatre",
+    "Bowling alley & arcade",
+    "Grand Adventure Land (go-karts, mini-golf)",
+    "Resort-style outdoor pool with cabanas",
+    "Grand Sierra Spa",
+    "24-hour fitness center",
+    "Free valet & self-parking"
+  ],
+  "roomTypes": [
+    { "name": "Grand King Room", "description": "Spacious king rooms with mountain or city views.", "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/gsr-king-room.jpg" },
+    { "name": "Grand Double Queen", "description": "Comfortable rooms with two queen beds, ideal for golf groups.", "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/gsr-double-queen.jpg" },
+    { "name": "Summit Suite", "description": "Upgraded suites with separate living area and premium amenities.", "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/gsr-summit-suite.jpg" },
+    { "name": "Penthouse Suite", "description": "Luxurious top-floor suites with stunning Sierra Nevada views.", "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/gsr-penthouse.jpg" }
+  ],
+  "dining": [
+    { "name": "Charlie Palmer Steakhouse", "type": "steakhouse", "description": "Dry-aged steaks from celebrity chef Charlie Palmer." },
+    { "name": "Rim Asian Bistro", "type": "restaurant", "description": "Premium sushi and Asian-inspired cuisine." },
+    { "name": "Uno Más Street Tacos", "type": "restaurant", "description": "Authentic street-style Mexican cuisine." },
+    { "name": "Grand Buffet", "type": "buffet", "description": "Expansive buffet with diverse international options." },
+    { "name": "Grand Café", "type": "cafe", "description": "24/7 casual dining." }
+  ],
+  "spaBars": [
+    "Lex Nightclub",
+    "Crystal Lounge",
+    "Infinity Lounge (VIP)",
+    "Grand Sierra Spa",
+    "The Pool at GSR"
+  ],
+  "totalRooms": 1990,
+  "parking": "Free valet & self-parking",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2021/10/gsr-exterior.jpg"
+  ],
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/gsr-exterior.jpg",
+  "faqs": [
+    { "question": "How close is Grand Sierra Resort to golf courses?", "answer": "Less than 15 minutes from Red Hawk Golf & Resort, LakeRidge Golf Course, and Wolf Run Golf Club." },
+    { "question": "Does GSR offer golf packages?", "answer": "Yes — Golf the High Sierra offers custom packages combining lodging at GSR with tee times at top Reno-Tahoe courses. Call 888-584-8232." },
+    { "question": "What entertainment does GSR offer after golf?", "answer": "The Grand Theatre hosts concerts and comedy, Lex Nightclub features live DJs, plus bowling, arcade, go-karts, and a luxury cinema." },
+    { "question": "How far is GSR from the airport?", "answer": "Just 5 minutes from Reno-Tahoe International Airport." }
+  ],
+  "relatedCourses": ["red-hawk-golf-resort", "lakeridge-golf-course", "wolf-run-golf-club", "arrowcreek-golf-club"],
+  "relatedHotels": ["atlantis-casino-resort-spa-reno", "peppermill-resort-spa-casino", "silver-legacy-resort-casino"],
+  "meta": {
+    "title": "Grand Sierra Resort Reno | Casino, Dining & Golf Stay Packages",
+    "description": "Stay at Northern Nevada's largest casino resort. 2,000+ slots, live concerts, fine dining, and custom golf packages with 20+ courses."
+  }
+}
