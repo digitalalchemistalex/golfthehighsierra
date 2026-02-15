@@ -1,881 +1,481 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Phone,
-  MapPin,
-  Star,
-  ArrowRight,
-  ChevronRight,
-  Globe,
-  Flag,
-  Quote,
-  CheckCircle2,
-  Navigation,
-  Lightbulb,
-  X,
-  ChevronLeft,
-  Camera,
-  Play,
-  Zap,
-} from "lucide-react";
+import { motion, useScroll, useTransform, useInView, AnimatePresence } from "framer-motion";
+import { Star, ArrowRight, ChevronRight, X, ChevronLeft, Camera } from "lucide-react";
 
 /* ─── Types ─── */
-interface CourseAddress {
-  streetAddress?: string;
-  addressLocality?: string;
-  addressRegion?: string;
-  postalCode?: string;
-}
-
-interface CourseGeo {
-  latitude?: number;
-  longitude?: number;
-}
-
-interface CourseRating {
-  value: number;
-  count: number;
-}
-
-interface CourseFAQ {
-  question: string;
-  answer: string;
-}
-
-interface FeaturedHole {
-  title?: string;
-  description?: string;
-}
-
-interface CourseTip {
-  title?: string;
-  content?: string;
-}
+interface CourseAddress { streetAddress?: string; addressLocality?: string; addressRegion?: string; postalCode?: string; }
+interface CourseGeo { latitude?: number; longitude?: number; }
+interface CourseRating { value: number; count: number; }
+interface CourseFAQ { question: string; answer: string; }
+interface FeaturedHole { title?: string; description?: string; }
+interface CourseTip { title?: string; content?: string; }
 
 export interface CourseProps {
-  slug: string;
-  name: string;
-  region: string;
-  regionLabel: string;
-  address?: CourseAddress;
-  geo?: CourseGeo;
-  phone?: string;
-  website?: string;
-  priceRange?: string;
-  rating?: CourseRating;
-  description: string;
-  holes?: number;
-  par?: number | null;
-  designer?: string;
-  yardage?: number;
-  slope?: number;
-  courseRating?: number;
-  yearBuilt?: number;
-  heroImage?: string;
-  images: string[];
-  videoUrl?: string;
-  faqs: CourseFAQ[];
-  meta: { title: string; description: string };
-  bodyText?: string[];
-  distances?: string[];
-  facilities?: string[];
-  tips?: CourseTip[];
-  pointOfView?: string;
-  hack?: string;
-  contentParagraphs?: string[];
-  featuredHole?: FeaturedHole;
-  teeTimeInfo?: string;
-  teeTips?: string[];
+  slug: string; name: string; region: string; regionLabel: string;
+  address?: CourseAddress; geo?: CourseGeo; phone?: string; website?: string;
+  priceRange?: string; rating?: CourseRating; description: string;
+  holes?: number; par?: number | null; designer?: string;
+  yardage?: number; slope?: number; courseRating?: number; yearBuilt?: number;
+  heroImage?: string; images: string[]; videoUrl?: string;
+  faqs: CourseFAQ[]; meta: { title: string; description: string };
+  bodyText?: string[]; distances?: string[]; facilities?: string[];
+  tips?: CourseTip[]; pointOfView?: string; hack?: string;
+  contentParagraphs?: string[]; featuredHole?: FeaturedHole;
+  teeTimeInfo?: string; teeTips?: string[];
 }
 
 interface RelatedCourse {
-  slug: string;
-  name: string;
-  regionLabel: string;
-  heroImage?: string;
-  priceRange?: string;
-  rating?: CourseRating;
+  slug: string; name: string; regionLabel: string;
+  heroImage?: string; priceRange?: string; rating?: CourseRating;
 }
 
 /* ─── Helpers ─── */
-function isScorecard(url: string): boolean {
-  const lower = url.toLowerCase();
-  return lower.includes("scorecard") || lower.includes("score-card");
+function isScorecard(url: string) { return url.toLowerCase().includes("scorecard"); }
+function isLogo(url: string) { const l = url.toLowerCase(); return (l.includes("logo") || l.includes("golfball")) && (l.endsWith(".png") || l.endsWith(".webp") || l.endsWith(".svg")); }
+function parseDistances(bodyText: string[]): string[] {
+  const d: string[] = [];
+  for (const b of bodyText) for (const l of b.split("\n")) { const t = l.trim(); if (/^\d+\s*(minutes?|mins?)\s/i.test(t)) d.push(t); }
+  return d;
+}
+function cleanFacilities(f: string[]) {
+  const junk = ["trips caddie","all lake tahoe","all hotels","all golf","all food","all experiences","all carson","all cedar","all eldorado","old greenwood","all atlantis"];
+  return f.filter(x => !junk.some(j => x.toLowerCase().includes(j)) && x.trim().length > 3);
 }
 
-function isLogo(url: string): boolean {
-  const lower = url.toLowerCase();
-  return (
-    (lower.includes("logo") || lower.includes("golfball") || lower.includes("golf_ball")) &&
-    (lower.endsWith(".png") || lower.endsWith(".webp") || lower.endsWith(".svg"))
-  );
-}
-
-function parseDistancesFromBody(bodyText: string[]): string[] {
-  // Try to extract distance lines like "15 Minutes from Peppermill"
-  const distances: string[] = [];
-  for (const block of bodyText) {
-    const lines = block.split("\n");
-    for (const line of lines) {
-      const trimmed = line.trim();
-      if (/^\d+\s*(minutes?|mins?)\s/i.test(trimmed)) {
-        distances.push(trimmed);
-      }
-    }
-  }
-  return distances;
-}
-
-function cleanFacilities(facilities: string[]): string[] {
-  const junk = [
-    "trips caddie",
-    "all lake tahoe",
-    "all hotels",
-    "all golf",
-    "all food",
-    "all experiences",
-    "all carson",
-    "all cedar",
-    "all eldorado",
-    "old greenwood",
-    "all atlantis",
-  ];
-  return facilities.filter(
-    (f) => !junk.some((j) => f.toLowerCase().includes(j)) && f.trim().length > 3
-  );
-}
-
-/* ─── Lightbox Component ─── */
-function Lightbox({
-  images,
-  startIndex,
-  onClose,
-  courseName,
-}: {
-  images: string[];
-  startIndex: number;
-  onClose: () => void;
-  courseName: string;
-}) {
-  const [idx, setIdx] = useState(startIndex);
-
+/* ─── Animated Counter ─── */
+function Counter({ target, suffix = "", comma = false }: { target: number; suffix?: string; comma?: boolean }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true, margin: "-50px" });
+  const [val, setVal] = useState(0);
   useEffect(() => {
-    const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-      if (e.key === "ArrowRight") setIdx((i) => (i + 1) % images.length);
-      if (e.key === "ArrowLeft") setIdx((i) => (i - 1 + images.length) % images.length);
-    };
-    document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", handleKey);
-    return () => {
-      document.body.style.overflow = "";
-      window.removeEventListener("keydown", handleKey);
-    };
-  }, [images.length, onClose]);
+    if (!inView) return;
+    const dur = 1400;
+    const start = performance.now();
+    function tick(now: number) {
+      const p = Math.min((now - start) / dur, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      setVal(Math.round(ease * target));
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }, [inView, target]);
+  return <span ref={ref}>{comma ? val.toLocaleString() : val}{suffix}</span>;
+}
 
+/* ─── Section Reveal Wrapper ─── */
+function Reveal({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
   return (
-    <div
-      className="fixed inset-0 z-[9999] bg-black/95 flex items-center justify-center"
-      onClick={onClose}
+    <motion.div
+      initial={{ opacity: 0, y: 32 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.7, delay, ease: [0.16, 1, 0.3, 1] }}
+      className={className}
     >
-      <button
-        onClick={onClose}
-        className="absolute top-4 right-4 text-white/70 hover:text-white z-10 p-2"
-      >
-        <X className="w-8 h-8" />
-      </button>
-      <button
-        onClick={(e) => {
-          e.stopPropagation();
-          setIdx((i) => (i - 1 + images.length) % images.length);
-        }}
-        className="absolute left-4 text-white/70 hover:text-white z-10 p-2"
-      >
-        <ChevronLeft className="w-10 h-10" />
-      </button>
-      <button
-        onClick={(e) => {
-          e.stopPropagation();
-          setIdx((i) => (i + 1) % images.length);
-        }}
-        className="absolute right-4 text-white/70 hover:text-white z-10 p-2"
-      >
-        <ChevronRight className="w-10 h-10" />
-      </button>
-      <div
-        className="relative w-full max-w-5xl max-h-[85vh] mx-4"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <Image
-          src={images[idx]}
-          alt={`${courseName} photo ${idx + 1}`}
-          width={1200}
-          height={800}
-          className="object-contain w-full h-full max-h-[85vh]"
-        />
-        <p className="text-center text-white/50 text-sm mt-3">
-          {idx + 1} / {images.length}
-        </p>
+      {children}
+    </motion.div>
+  );
+}
+
+/* ─── Lightbox ─── */
+function Lightbox({ images, startIndex, onClose, name }: { images: string[]; startIndex: number; onClose: () => void; name: string }) {
+  const [idx, setIdx] = useState(startIndex);
+  useEffect(() => {
+    const h = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); if (e.key === "ArrowRight") setIdx(i => (i + 1) % images.length); if (e.key === "ArrowLeft") setIdx(i => (i - 1 + images.length) % images.length); };
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", h);
+    return () => { document.body.style.overflow = ""; window.removeEventListener("keydown", h); };
+  }, [images.length, onClose]);
+  return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-[9999] bg-black/95 flex items-center justify-center" onClick={onClose}>
+      <button onClick={onClose} className="absolute top-4 right-4 text-white/60 hover:text-white z-10 p-2"><X className="w-8 h-8" /></button>
+      <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i - 1 + images.length) % images.length); }} className="absolute left-4 text-white/60 hover:text-white z-10 p-2"><ChevronLeft className="w-10 h-10" /></button>
+      <div className="relative w-[90vw] h-[80vh]" onClick={e => e.stopPropagation()}>
+        <Image src={images[idx]} alt={`${name} ${idx + 1}`} fill className={`object-contain ${isLogo(images[idx]) ? "p-12" : ""}`} sizes="90vw" />
       </div>
+      <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i + 1) % images.length); }} className="absolute right-4 text-white/60 hover:text-white z-10 p-2"><ChevronRight className="w-10 h-10" /></button>
+      <div className="absolute bottom-4 text-white/40 text-xs tracking-widest">{idx + 1} / {images.length}</div>
+    </motion.div>
+  );
+}
+
+/* ─── FAQ Item ─── */
+function FAQ({ q, a }: { q: string; a: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border-b border-bone">
+      <button onClick={() => setOpen(!open)} className="w-full flex justify-between items-center py-5 text-left font-sans text-[15px] font-medium text-ink hover:text-accent transition-colors gap-4">
+        {q}
+        <span className={`w-7 h-7 rounded-full border border-linen flex items-center justify-center text-sm text-ink-4 transition-all duration-400 flex-shrink-0 ${open ? "bg-ink text-white border-ink rotate-45" : ""}`}>+</span>
+      </button>
+      <AnimatePresence>
+        {open && (
+          <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}>
+            <p className="pb-5 text-sm text-ink-3 leading-relaxed font-light">{a}</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
 
-/* ─── Main Component ─── */
-export default function CoursePageContent({
-  course,
-  relatedCourses,
-}: {
-  course: CourseProps;
-  relatedCourses: RelatedCourse[];
-}) {
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [lightboxIdx, setLightboxIdx] = useState(0);
+/* ═══════════════════════════════════════════════════════
+   MAIN COURSE PAGE COMPONENT
+   ═══════════════════════════════════════════════════════ */
+export default function CoursePageContent({ course, relatedCourses = [] }: { course: CourseProps; relatedCourses?: RelatedCourse[] }) {
+  const [lbIndex, setLbIndex] = useState<number | null>(null);
+  const heroRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll();
+  const { scrollYProgress: heroScroll } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
+  const heroY = useTransform(heroScroll, [0, 1], ["0%", "30%"]);
+  const progressWidth = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
-  // Separate images
-  const scorecardImages = course.images.filter(isScorecard);
-  const logoImages = course.images.filter(isLogo);
-  const galleryImages = course.images.filter((img) => !isScorecard(img) && !isLogo(img));
-
-  // Parse distances if empty
-  const distances =
-    course.distances && course.distances.length > 0
-      ? course.distances
-      : parseDistancesFromBody(course.bodyText || []);
-
-  // Clean facilities
+  // Parse data
+  const galleryImages = course.images.filter(u => !isScorecard(u));
+  const distances = course.distances?.length ? course.distances : parseDistances(course.bodyText || []);
   const facilities = cleanFacilities(course.facilities || []);
-
-  // Extract hack from tips
-  const hackTip = course.tips?.find(
-    (t) =>
-      t.title?.toLowerCase().includes("hack") &&
-      t.content &&
-      t.content.length > 10 &&
-      !t.content.includes("{")
-  );
-  const hackContent = course.hack || hackTip?.content || "";
-
-  // Clean content paragraphs
-  const contentParagraphs = (course.contentParagraphs || []).filter(
-    (p) => p.length > 20 && !p.includes("T: 1-888")
-  );
-
-  const teeTips = (course.teeTips || []).filter(
-    (t) => t.length > 20 && !t.includes("{") && !t.includes("golfthehighsierra")
-  );
-
-  const featuredHole = course.featuredHole;
-  const pointOfView = course.pointOfView || "";
-
-  const openLightbox = (idx: number) => {
-    setLightboxIdx(idx);
-    setLightboxOpen(true);
-  };
+  const addr = course.address;
 
   return (
-    <main className="min-h-screen">
-      {/* ===== HERO ===== */}
-      <section className="relative h-[55vh] min-h-[420px] flex items-end bg-pine-800">
-        {course.heroImage && (
-          <Image
-            src={course.heroImage}
-            alt={course.name}
-            fill
-            className="object-cover"
-            priority
-          />
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-pine-900/95 via-pine-900/50 to-pine-900/20" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 pb-10 w-full">
-          <nav className="flex items-center gap-2 text-sm text-cream-300/70 mb-4">
-            <Link href="/" className="hover:text-gold-400 transition-colors">
-              Home
-            </Link>
-            <ChevronRight className="w-3 h-3" />
-            <Link
-              href="/best-golf-courses-reno/"
-              className="hover:text-gold-400 transition-colors"
-            >
-              Golf Courses
-            </Link>
-            <ChevronRight className="w-3 h-3" />
-            <span className="text-cream-200">{course.name}</span>
-          </nav>
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-            <div className="flex items-end gap-5">
-              {/* Course Logo */}
-              {logoImages.length > 0 && (
-                <div className="hidden md:block w-20 h-20 bg-white/10 backdrop-blur-sm rounded-xl p-2 flex-shrink-0">
-                  <Image
-                    src={logoImages[0]}
-                    alt={`${course.name} logo`}
-                    width={80}
-                    height={80}
-                    className="object-contain w-full h-full"
-                  />
-                </div>
-              )}
-              <div>
-                <span className="inline-block bg-gold-500 text-pine-900 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-sm mb-3">
-                  {course.regionLabel}
-                </span>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight">
-                  {course.name}
-                </h1>
-                {course.address?.addressLocality && (
-                  <p className="flex items-center gap-2 text-cream-300/80 mt-3 text-lg">
-                    <MapPin className="w-4 h-4 text-gold-400" />
-                    {course.address.streetAddress &&
-                      `${course.address.streetAddress}, `}
-                    {course.address.addressLocality},{" "}
-                    {course.address.addressRegion}
-                  </p>
-                )}
-              </div>
-            </div>
-            <div className="flex items-center gap-3 flex-wrap">
-              {course.rating && (
-                <div className="flex items-center gap-2 bg-gold-500/20 border border-gold-500/30 px-4 py-2 rounded-lg backdrop-blur-sm">
-                  <Star className="w-5 h-5 text-gold-400 fill-gold-400" />
-                  <span className="text-white font-bold text-lg">
-                    {course.rating.value}
-                  </span>
-                  <span className="text-cream-300/60 text-sm">
-                    ({course.rating.count})
-                  </span>
-                </div>
-              )}
-            </div>
-          </div>
+    <div className="font-sans bg-silk text-ink overflow-x-hidden">
+      {/* ── Scroll Progress ── */}
+      <motion.div className="fixed top-0 left-0 h-[2px] bg-gradient-to-r from-warm to-accent z-[10001]" style={{ width: progressWidth }} />
+
+      {/* ── HERO ── */}
+      <section ref={heroRef} className="relative h-[80vh] min-h-[520px] overflow-hidden">
+        <motion.div className="absolute inset-0 -inset-y-10" style={{ y: heroY }}>
+          {course.heroImage ? (
+            <Image src={course.heroImage} alt={course.name} fill priority className="object-cover brightness-[0.38] contrast-[1.08] saturate-110 animate-hero-kb" sizes="100vw" />
+          ) : (
+            <div className="w-full h-full bg-ink" />
+          )}
+        </motion.div>
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/15 to-black/70" />
+        {/* Noise texture */}
+        <div className="absolute inset-0 opacity-[0.03] mix-blend-overlay pointer-events-none" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")` }} />
+
+        {/* Hero Content */}
+        <div className="absolute bottom-0 left-0 right-0 z-10 px-5 md:px-[clamp(20px,5vw,72px)] pb-[clamp(40px,7vh,88px)]">
+          <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.7 }} className="text-[10px] text-white/25 tracking-wide mb-3">
+            <Link href="/" className="hover:text-white/60 transition-colors">Home</Link>
+            {" / "}
+            <Link href="/best-golf-courses-reno/" className="hover:text-white/60 transition-colors">Golf Courses</Link>
+            {" / "}
+            <span>{course.regionLabel}</span>
+            {" / "}
+            <span className="text-white/40">{course.name}</span>
+          </motion.div>
+
+          <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+            className="font-serif font-light text-white leading-none tracking-tight text-[clamp(40px,7vw,82px)]">
+            {course.name.split(" ").slice(0, -2).join(" ")}{" "}
+            <em className="italic font-normal bg-gradient-to-r from-white to-warm bg-clip-text text-transparent">
+              {course.name.split(" ").slice(-2).join(" ")}
+            </em>
+          </motion.h1>
+
+          <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
+            className="text-xs text-white/25 tracking-[4px] uppercase font-light mt-2 mb-5">
+            {course.regionLabel}{course.yearBuilt ? ` · Est. ${course.yearBuilt}` : ""}{course.designer ? ` · ${course.designer}` : ""}
+          </motion.div>
+
+          <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.65 }} className="flex gap-2 flex-wrap">
+            {course.holes && <span className="bg-white/5 backdrop-blur-xl border border-white/[0.07] px-4 py-1.5 rounded-pill text-[10px] text-white/45 font-medium tracking-wider uppercase hover:bg-white/10 hover:text-white/70 transition-all cursor-default">{course.holes} Holes</span>}
+            {course.par && <span className="bg-white/5 backdrop-blur-xl border border-white/[0.07] px-4 py-1.5 rounded-pill text-[10px] text-white/45 font-medium tracking-wider uppercase hover:bg-white/10 hover:text-white/70 transition-all cursor-default">Par {course.par}</span>}
+            {course.yardage && <span className="bg-white/5 backdrop-blur-xl border border-white/[0.07] px-4 py-1.5 rounded-pill text-[10px] text-white/45 font-medium tracking-wider uppercase hover:bg-white/10 hover:text-white/70 transition-all cursor-default">{course.yardage.toLocaleString()} Yards</span>}
+            {course.slope && <span className="bg-white/5 backdrop-blur-xl border border-white/[0.07] px-4 py-1.5 rounded-pill text-[10px] text-white/45 font-medium tracking-wider uppercase hover:bg-white/10 hover:text-white/70 transition-all cursor-default">Slope {course.slope}</span>}
+            {course.rating && <span className="bg-white/5 backdrop-blur-xl border border-white/[0.07] px-4 py-1.5 rounded-pill text-[10px] text-white/45 font-medium tracking-wider uppercase hover:bg-white/10 hover:text-white/70 transition-all cursor-default">★ {course.rating.value}</span>}
+          </motion.div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1.5 opacity-30">
+          <span className="text-[8px] tracking-[3px] uppercase text-white font-medium">Scroll</span>
+          <div className="w-px h-8 bg-gradient-to-b from-white/60 to-transparent animate-scroll-line" />
         </div>
       </section>
 
-      {/* ===== QUICK STATS BAR ===== */}
-      <section className="bg-pine-800 border-t border-pine-400/10">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex flex-wrap items-center justify-between gap-4">
-          <div className="flex flex-wrap gap-6 text-sm">
-            {course.holes && (
-              <div className="flex items-center gap-2 text-cream-300">
-                <Flag className="w-4 h-4 text-gold-400" />
-                <span>{course.holes} Holes</span>
+      {/* ── STAT BAR ── */}
+      <Reveal>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 border-b border-linen">
+          {[
+            { val: course.holes || 18, label: "Championship Holes" },
+            { val: course.par || 72, label: "Par" },
+            { val: course.yardage || 0, label: "Yards from Tips", comma: true },
+            { val: course.slope || 0, label: "Slope Rating" },
+            { val: course.yearBuilt || 0, label: "Established" },
+          ].filter(s => s.val > 0).map((s, i) => (
+            <div key={i} className="py-8 px-4 text-center border-r border-linen last:border-r-0 hover:bg-pearl transition-colors">
+              <div className="font-serif text-[clamp(28px,3.5vw,48px)] font-light text-ink leading-none">
+                <Counter target={s.val} comma={s.comma} />
               </div>
-            )}
-            {course.par && (
-              <div className="flex items-center gap-2 text-cream-300">
-                <span className="text-gold-400 font-bold">Par</span>{" "}
-                <span>{course.par}</span>
+              <div className="text-[9px] tracking-[2px] uppercase text-ink-4 font-medium mt-1">{s.label}</div>
+            </div>
+          ))}
+        </div>
+      </Reveal>
+
+      {/* ── QUOTE ── */}
+      {course.pointOfView && (
+        <section className="relative py-20 md:py-28 px-5 md:px-[clamp(20px,5vw,72px)] bg-pearl overflow-hidden">
+          <div className="absolute top-[-60px] left-5 md:left-[clamp(20px,5vw,72px)] font-serif text-[clamp(200px,25vw,400px)] font-light text-black/[0.02] leading-none pointer-events-none select-none">&ldquo;</div>
+          <Reveal>
+            <p className="font-serif text-[clamp(20px,2.8vw,34px)] font-light italic text-ink-2 leading-[1.5] max-w-[740px] relative">
+              &ldquo;{course.pointOfView}&rdquo;
+            </p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="font-sans text-[11px] tracking-[2.5px] uppercase text-accent font-semibold mt-5 relative">— Golf the High Sierra</div>
+          </Reveal>
+        </section>
+      )}
+
+      {/* ── THE COURSE ── */}
+      <section className="py-20 md:py-28 px-5 md:px-[clamp(20px,5vw,72px)] bg-silk">
+        <Reveal><div className="text-[10px] tracking-[4.5px] uppercase text-accent font-semibold mb-3">The Course</div></Reveal>
+        <Reveal delay={0.05}><h2 className="font-serif font-light text-[clamp(30px,4.5vw,58px)] text-ink leading-[1.06] tracking-tight mb-3">
+          Championship Layout{course.featuredHole ? <> & the <em className="italic font-normal">Signature Hole</em></> : ""}
+        </h2></Reveal>
+        <Reveal delay={0.1}><p className="text-sm text-ink-3 leading-relaxed max-w-xl font-light mb-10">
+          {course.contentParagraphs?.[0] || course.description.substring(0, 200)}
+        </p></Reveal>
+
+        <div className="grid md:grid-cols-3 gap-4">
+          {/* Featured hole card */}
+          {course.featuredHole?.title && (
+            <Reveal delay={0.08}>
+              <div className="bg-silk border border-linen rounded-4xl p-8 relative overflow-hidden group hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(0,0,0,.06)] hover:border-warm/20 transition-all duration-500">
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-warm to-accent-light scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                <span className="text-3xl mb-4 block group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-400">🏝️</span>
+                <h5 className="font-sans text-[15px] font-semibold text-ink mb-2">{course.featuredHole.title}</h5>
+                <p className="text-sm text-ink-3 leading-relaxed font-light">{course.featuredHole.description}</p>
               </div>
-            )}
-            {course.yardage && (
-              <div className="flex items-center gap-2 text-cream-300">
-                <span className="text-gold-400 font-bold">Yards</span>{" "}
-                <span>{course.yardage.toLocaleString()}</span>
+            </Reveal>
+          )}
+          {/* Course description cards */}
+          {(course.contentParagraphs || []).slice(1, 3).map((p, i) => (
+            <Reveal key={i} delay={0.12 + i * 0.08}>
+              <div className="bg-silk border border-linen rounded-4xl p-8 relative overflow-hidden group hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(0,0,0,.06)] hover:border-warm/20 transition-all duration-500">
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-warm to-accent-light scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                <span className="text-3xl mb-4 block group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-400">{i === 0 ? "🌲" : "🍽️"}</span>
+                <h5 className="font-sans text-[15px] font-semibold text-ink mb-2">{i === 0 ? "Championship Layout" : "Facilities & Dining"}</h5>
+                <p className="text-sm text-ink-3 leading-relaxed font-light">{p.substring(0, 200)}</p>
               </div>
-            )}
-            {course.slope && (
-              <div className="flex items-center gap-2 text-cream-300">
-                <span className="text-gold-400 font-bold">Slope</span>{" "}
-                <span>{course.slope}</span>
+            </Reveal>
+          ))}
+          {/* Facilities card if not enough content paragraphs */}
+          {(course.contentParagraphs || []).length < 3 && facilities.length > 0 && (
+            <Reveal delay={0.2}>
+              <div className="bg-silk border border-linen rounded-4xl p-8 relative overflow-hidden group hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(0,0,0,.06)] hover:border-warm/20 transition-all duration-500">
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-warm to-accent-light scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                <span className="text-3xl mb-4 block group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-400">⛳</span>
+                <h5 className="font-sans text-[15px] font-semibold text-ink mb-2">Facilities</h5>
+                <p className="text-sm text-ink-3 leading-relaxed font-light">{facilities.join(" · ")}</p>
               </div>
-            )}
-            {course.designer && (
-              <div className="text-cream-300">
-                Designed by{" "}
-                <span className="text-gold-300">{course.designer}</span>
-              </div>
-            )}
-            {course.website && (
-              <a
-                href={course.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-cream-300 hover:text-gold-400 transition-colors"
-              >
-                <Globe className="w-4 h-4" />
-                <span>Official Website</span>
-              </a>
-            )}
-          </div>
-          <a
-            href="tel:1-888-584-8232"
-            className="flex items-center gap-2 text-gold-400 hover:text-gold-300 font-semibold text-sm transition-colors"
-          >
-            <Phone className="w-4 h-4" /> (888) 584-8232
-          </a>
+            </Reveal>
+          )}
         </div>
       </section>
 
-      {/* ===== MAIN CONTENT ===== */}
-      <section className="bg-cream-200">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16">
-          <div className="grid lg:grid-cols-3 gap-10">
-            <div className="lg:col-span-2 space-y-12">
-              {/* About */}
-              <div>
-                <h2 className="text-2xl md:text-3xl font-heading font-bold text-pine-800 mb-1">
-                  About {course.name}
-                </h2>
-                <div className="divider-gold mb-5" />
-                <p className="text-charcoal leading-relaxed text-lg">
-                  {course.description}
-                </p>
-                {contentParagraphs.length > 0 && (
-                  <div className="mt-4 space-y-3">
-                    {contentParagraphs.slice(0, 3).map((p, i) => (
-                      <p
-                        key={i}
-                        className="text-charcoal-lighter leading-relaxed"
-                      >
-                        {p}
-                      </p>
-                    ))}
+      {/* ── INSIDER'S TAKE — Two Column ── */}
+      {(course.tips?.length || 0) > 0 && (
+        <section className="py-20 md:py-28 px-5 md:px-[clamp(20px,5vw,72px)] bg-pearl">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-[clamp(40px,6vw,100px)] items-center">
+            {/* Image */}
+            <Reveal className="relative">
+              {galleryImages[1] ? (
+                <div className="rounded-4xl overflow-hidden aspect-[4/3] relative">
+                  <Image src={galleryImages[1]} alt={course.name} fill className="object-cover hover:scale-105 transition-transform duration-700" sizes="(max-width:768px) 100vw, 50vw" />
+                  <div className="absolute bottom-3.5 left-3.5 bg-white/90 backdrop-blur-xl px-4 py-1.5 rounded-pill text-[9px] font-semibold tracking-[1.2px] text-ink-2 uppercase">
+                    {course.name}
                   </div>
-                )}
+                </div>
+              ) : null}
+            </Reveal>
+            {/* Tips */}
+            <div>
+              <Reveal><div className="text-[10px] tracking-[4.5px] uppercase text-accent font-semibold mb-3">The Insider&apos;s Take</div></Reveal>
+              <Reveal delay={0.05}><h3 className="font-serif font-light text-[clamp(24px,3vw,40px)] text-ink leading-[1.06] tracking-tight mb-6">
+                Why Groups <em className="italic font-normal">Keep Coming Back</em>
+              </h3></Reveal>
+              <div className="flex flex-col mt-2">
+                {course.tips?.filter(t => t.title && !t.content?.includes("jtg-")).slice(0, 4).map((tip, i) => (
+                  <Reveal key={i} delay={0.08 + i * 0.06}>
+                    <div className="flex items-start gap-5 py-5 border-b border-bone first:border-t first:border-bone hover:pl-2 transition-all group">
+                      <div className="font-serif text-3xl font-light text-mist leading-none min-w-[30px] group-hover:text-warm transition-colors">{String(i + 1).padStart(2, "0")}</div>
+                      <div>
+                        <strong className="font-sans text-sm font-semibold text-ink block mb-1">{tip.title?.replace(/[""]/g, "")}</strong>
+                        <span className="text-sm text-ink-3 leading-relaxed font-light">{tip.content?.split("\n")[0].substring(0, 180)}</span>
+                      </div>
+                    </div>
+                  </Reveal>
+                ))}
               </div>
-
-              {/* Our Point of View */}
-              {pointOfView && (
-                <div className="bg-pine-800 rounded-2xl p-8 md:p-10 relative overflow-hidden">
-                  <div className="absolute top-4 right-6 opacity-10">
-                    <Quote className="w-24 h-24 text-gold-400" />
-                  </div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-gold-400 mb-4">
-                    Our Point of View
-                  </p>
-                  <blockquote className="text-cream-100 text-lg md:text-xl leading-relaxed italic relative z-10">
-                    &ldquo;{pointOfView}&rdquo;
-                  </blockquote>
-                  <p className="text-gold-400/70 text-sm mt-4 font-semibold">
-                    — Golf the High Sierra
-                  </p>
-                </div>
-              )}
-
-              {/* The Hack */}
-              {hackContent && (
-                <div className="bg-gold-50 border border-gold-200 rounded-2xl p-8 relative">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center">
-                      <Zap className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-xs font-bold uppercase tracking-widest text-gold-600">
-                        The Hack
-                      </p>
-                      <p className="text-pine-500 text-sm">
-                        Insider tip from our team
-                      </p>
-                    </div>
-                  </div>
-                  <p className="text-charcoal leading-relaxed">
-                    {hackContent}
-                  </p>
-                </div>
-              )}
-
-              {/* Featured Hole */}
-              {featuredHole?.title && featuredHole?.description && (
-                <div className="bg-white rounded-2xl border border-cream-400 p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center">
-                      <Flag className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-xs font-bold uppercase tracking-widest text-gold-600">
-                        Signature Hole
-                      </p>
-                      <h3 className="text-xl font-heading font-bold text-pine-800">
-                        {featuredHole.title}
-                      </h3>
-                    </div>
-                  </div>
-                  <p className="text-charcoal leading-relaxed">
-                    {featuredHole.description}
-                  </p>
-                </div>
-              )}
-
-              {/* Insider Tips */}
-              {teeTips.length > 0 && (
-                <div>
-                  <div className="flex items-center gap-3 mb-5">
-                    <Lightbulb className="w-6 h-6 text-gold-500" />
-                    <h3 className="text-xl font-heading font-bold text-pine-800">
-                      Insider Tips
-                    </h3>
-                  </div>
-                  <div className="space-y-4">
-                    {teeTips.map((tip, i) => (
-                      <div
-                        key={i}
-                        className="bg-gold-50 border-l-4 border-gold-500 rounded-r-xl p-5"
-                      >
-                        <p className="text-charcoal leading-relaxed">{tip}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Facilities */}
-              {facilities.length > 0 && (
-                <div>
-                  <h3 className="text-xl font-heading font-bold text-pine-800 mb-5">
-                    Facilities &amp; Amenities
-                  </h3>
-                  <div className="grid md:grid-cols-2 gap-3">
-                    {facilities.slice(0, 8).map((f, i) => (
-                      <div
-                        key={i}
-                        className="flex items-start gap-3 bg-white rounded-xl p-4 border border-cream-400"
-                      >
-                        <CheckCircle2 className="w-5 h-5 text-pine-400 mt-0.5 flex-shrink-0" />
-                        <span className="text-charcoal text-sm leading-relaxed">
-                          {f}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Video */}
-              {course.videoUrl && (
-                <div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <Play className="w-6 h-6 text-gold-500" />
-                    <h3 className="text-xl font-heading font-bold text-pine-800">
-                      Course Tour
-                    </h3>
-                  </div>
-                  <div className="aspect-video rounded-2xl overflow-hidden shadow-lg border border-cream-400">
-                    <iframe
-                      src={course.videoUrl.replace("watch?v=", "embed/")}
-                      title={`${course.name} video tour`}
-                      className="w-full h-full"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
-                  </div>
-                </div>
-              )}
-
-              {/* Scorecard */}
-              {scorecardImages.length > 0 && (
-                <div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <Flag className="w-6 h-6 text-gold-500" />
-                    <h3 className="text-xl font-heading font-bold text-pine-800">
-                      Course Scorecard
-                    </h3>
-                    {(course.holes || course.par) && (
-                      <span className="text-pine-500 text-sm">
-                        {course.holes && `${course.holes} Holes`}
-                        {course.holes && course.par && " | "}
-                        {course.par && `Par ${course.par}`}
-                      </span>
-                    )}
-                  </div>
-                  <div
-                    className="bg-white rounded-2xl border border-cream-400 p-4 cursor-pointer group"
-                    onClick={() => {
-                      const allImgs = [...galleryImages, ...scorecardImages];
-                      const scorecardIdx = allImgs.indexOf(scorecardImages[0]);
-                      openLightbox(scorecardIdx >= 0 ? scorecardIdx : 0);
-                    }}
-                  >
-                    <div className="relative overflow-hidden rounded-xl">
-                      <Image
-                        src={scorecardImages[0]}
-                        alt={`${course.name} scorecard`}
-                        width={900}
-                        height={400}
-                        className="w-full h-auto group-hover:scale-[1.02] transition-transform duration-300"
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                        <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 text-pine-800 text-sm font-semibold px-4 py-2 rounded-lg">
-                          Click to enlarge
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {/* Photo Gallery */}
-              {galleryImages.length > 0 && (
-                <div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <Camera className="w-6 h-6 text-gold-500" />
-                    <h3 className="text-xl font-heading font-bold text-pine-800">
-                      Photos of {course.name}
-                    </h3>
-                  </div>
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                    {galleryImages.slice(0, 6).map((img, i) => (
-                      <div
-                        key={i}
-                        className="relative aspect-[4/3] rounded-xl overflow-hidden group border border-cream-400 cursor-pointer"
-                        onClick={() => openLightbox(i)}
-                      >
-                        <Image
-                          src={img}
-                          alt={`${course.name} photo ${i + 1}`}
-                          fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Distance from Key Locations */}
-              {distances.length > 0 && (
-                <div className="bg-pine-800 rounded-2xl p-8">
-                  <div className="flex items-center gap-3 mb-5">
-                    <Navigation className="w-5 h-5 text-gold-400" />
-                    <h3 className="text-xl font-heading font-bold text-white">
-                      Distance from Key Locations
-                    </h3>
-                  </div>
-                  <div className="grid md:grid-cols-2 gap-3">
-                    {distances.map((d, i) => (
-                      <div
-                        key={i}
-                        className="flex items-center gap-3 text-cream-200 text-sm py-2 border-b border-pine-700/50 last:border-0"
-                      >
-                        <MapPin className="w-4 h-4 text-gold-400/60 flex-shrink-0" />
-                        <span>{d}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* FAQs */}
-              {course.faqs.length > 0 && (
-                <div>
-                  <h3 className="text-xl font-heading font-bold text-pine-800 mb-5">
-                    Frequently Asked Questions
-                  </h3>
-                  <div className="space-y-3">
-                    {course.faqs.map((faq, i) => (
-                      <details
-                        key={i}
-                        className="faq-item group"
-                        {...(i === 0 ? { open: true } : {})}
-                      >
-                        <summary className="faq-trigger">
-                          {faq.question}
-                          <ChevronRight className="w-4 h-4 text-gold-500 transition-transform group-open:rotate-90 flex-shrink-0" />
-                        </summary>
-                        <div className="faq-content">{faq.answer}</div>
-                      </details>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* ===== SIDEBAR ===== */}
-            <div className="space-y-6">
-              <div className="bg-pine-800 rounded-2xl p-6 text-white sticky top-24 shadow-lg">
-                <div className="w-12 h-1 bg-gold-500 rounded-full mb-4" />
-                <h3 className="text-xl font-heading font-bold mb-2">
-                  Plan Your Trip
-                </h3>
-                <p className="text-cream-300/80 text-sm mb-6 leading-relaxed">
-                  Custom {course.name} group golf packages with lodging, tee
-                  times, carts &amp; concierge planning included.
-                </p>
-                <div className="space-y-3">
-                  <Link
-                    href="/contact-custom-golf-package/"
-                    className="flex items-center justify-center gap-2 w-full bg-gold-500 text-pine-900 font-bold px-6 py-3.5 rounded-lg transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:-translate-y-0.5"
-                  >
-                    Get a Free Quote <ArrowRight className="w-4 h-4" />
-                  </Link>
-                  <a
-                    href="tel:1-888-584-8232"
-                    className="flex items-center justify-center gap-2 w-full border-2 border-cream-300/30 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:bg-white/10"
-                  >
-                    <Phone className="w-4 h-4" /> (888) 584-8232
-                  </a>
-                </div>
-                <div className="mt-5 pt-4 border-t border-cream-300/10 text-center space-y-1">
-                  <p className="text-cream-300/50 text-xs">
-                    Custom quotes in 24 hours
-                  </p>
-                  <p className="text-cream-300/50 text-xs">
-                    Groups of 4–400 · 20+ years experience
-                  </p>
-                </div>
-              </div>
-
-              <div className="fact-card">
-                <h4 className="font-heading font-bold text-pine-800 mb-1">
-                  Quick Facts
-                </h4>
-                <div className="divider-gold mb-4" />
-                <dl className="space-y-0">
-                  {course.holes && (
-                    <div className="fact-row">
-                      <dt className="fact-label">Holes</dt>
-                      <dd className="fact-value">{course.holes}</dd>
-                    </div>
-                  )}
-                  {course.par && (
-                    <div className="fact-row">
-                      <dt className="fact-label">Par</dt>
-                      <dd className="fact-value">{course.par}</dd>
-                    </div>
-                  )}
-                  {course.yardage && (
-                    <div className="fact-row">
-                      <dt className="fact-label">Yardage</dt>
-                      <dd className="fact-value">{course.yardage.toLocaleString()}</dd>
-                    </div>
-                  )}
-                  {course.slope && (
-                    <div className="fact-row">
-                      <dt className="fact-label">Slope</dt>
-                      <dd className="fact-value">{course.slope}</dd>
-                    </div>
-                  )}
-                  {course.courseRating && (
-                    <div className="fact-row">
-                      <dt className="fact-label">Course Rating</dt>
-                      <dd className="fact-value">{course.courseRating}</dd>
-                    </div>
-                  )}
-                  <div className="fact-row">
-                    <dt className="fact-label">Region</dt>
-                    <dd className="fact-value">{course.regionLabel}</dd>
-                  </div>
-                  {course.rating && (
-                    <div className="fact-row">
-                      <dt className="fact-label">Rating</dt>
-                      <dd className="fact-value flex items-center gap-1">
-                        <Star className="w-3.5 h-3.5 text-gold-500 fill-gold-500" />{" "}
-                        {course.rating.value}/5 ({course.rating.count})
-                      </dd>
-                    </div>
-                  )}
-                  {course.designer && (
-                    <div className="fact-row">
-                      <dt className="fact-label">Designer</dt>
-                      <dd className="fact-value">{course.designer}</dd>
-                    </div>
-                  )}
-                  {course.phone && (
-                    <div className="fact-row">
-                      <dt className="fact-label">Phone</dt>
-                      <dd className="fact-value">
-                        <a
-                          href={`tel:${course.phone}`}
-                          className="text-gold-600 hover:underline"
-                        >
-                          {course.phone}
-                        </a>
-                      </dd>
-                    </div>
-                  )}
-                </dl>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== RELATED COURSES ===== */}
-      {relatedCourses.length > 0 && (
-        <section className="bg-pine-800">
-          <div className="max-w-7xl mx-auto px-4 md:px-8 py-16">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-2">
-              More {course.regionLabel} Courses
-            </h2>
-            <div className="divider-gold mb-8" />
-            <div className="grid md:grid-cols-3 gap-6">
-              {relatedCourses.map((r) => (
-                <Link
-                  key={r.slug}
-                  href={`/portfolio/${r.slug}/`}
-                  className="group rounded-xl overflow-hidden bg-pine-700/50 border border-pine-600/30 hover:border-gold-500/40 transition-all duration-300 hover:-translate-y-1"
-                >
-                  {r.heroImage && (
-                    <div className="relative h-48 overflow-hidden">
-                      <Image
-                        src={r.heroImage}
-                        alt={r.name}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-pine-900/60 to-transparent" />
-                    </div>
-                  )}
-                  <div className="p-5">
-                    <h3 className="font-heading font-bold text-white group-hover:text-gold-400 transition-colors text-lg">
-                      {r.name}
-                    </h3>
-                    <div className="flex items-center justify-between mt-2">
-                      <span className="text-cream-300/60 text-sm">
-                        {r.regionLabel}
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              ))}
             </div>
           </div>
         </section>
       )}
 
-      {/* ===== BOTTOM CTA ===== */}
-      <section className="bg-gradient-to-br from-pine-900 via-pine-800 to-pine-900 py-16 px-4 text-center text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-gold-500 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gold-500 rounded-full blur-3xl" />
-        </div>
-        <div className="max-w-3xl mx-auto relative z-10">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-            Ready to Play {course.name}?
-          </h2>
-          <p className="text-xl text-cream-300/80 mb-8 leading-relaxed">
-            Tell us your dates, group size, and budget. We&apos;ll build a
-            custom package with {course.name} and handle every detail.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact-custom-golf-package/"
-              className="inline-flex items-center justify-center gap-2 bg-gold-500 text-pine-900 font-bold text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:-translate-y-0.5"
-            >
-              Get a Free Quote <ArrowRight className="w-5 h-5" />
-            </Link>
-            <a
-              href="tel:1-888-584-8232"
-              className="inline-flex items-center justify-center gap-2 border-2 border-cream-300/30 text-white font-semibold text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:bg-white/10"
-            >
-              <Phone className="w-5 h-5" /> (888) 584-8232
-            </a>
+      {/* ── GALLERY ── */}
+      {galleryImages.length > 0 && (
+        <section className="py-20 md:py-28 px-5 md:px-[clamp(20px,5vw,72px)] bg-silk">
+          <Reveal><div className="text-[10px] tracking-[4.5px] uppercase text-accent font-semibold mb-3">Gallery</div></Reveal>
+          <Reveal delay={0.05}><h2 className="font-serif font-light text-[clamp(30px,4.5vw,58px)] text-ink leading-[1.06] tracking-tight mb-10">
+            See <em className="italic font-normal">{course.name.split(" ")[0]}</em>
+          </h2></Reveal>
+          <Reveal delay={0.1}>
+            <div className={`grid gap-2 h-[360px] md:h-[480px] ${galleryImages.length >= 4 ? "grid-cols-[2fr_1fr_1fr] grid-rows-2" : galleryImages.length >= 2 ? "grid-cols-2 grid-rows-1" : "grid-cols-1"}`}>
+              {galleryImages.slice(0, 4).map((img, i) => (
+                <div key={i} onClick={() => setLbIndex(i)}
+                  className={`rounded-4xl overflow-hidden relative cursor-pointer group ${i === 0 && galleryImages.length >= 4 ? "row-span-2" : ""}`}>
+                  <Image src={img} alt={`${course.name} ${i + 1}`} fill
+                    className={`transition-transform duration-700 group-hover:scale-105 ${isLogo(img) ? "object-contain p-8 bg-pearl" : "object-cover"}`} sizes="(max-width:768px) 100vw, 33vw" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/50 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute bottom-3.5 left-3.5 flex items-center gap-1.5 text-white text-[11px] font-medium opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-400">
+                    <Camera className="w-3.5 h-3.5" /> View
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </section>
+      )}
+
+      {/* ── LOCATION ── */}
+      {addr?.streetAddress && (
+        <section className="py-20 md:py-28 px-5 md:px-[clamp(20px,5vw,72px)] bg-pearl">
+          <Reveal><div className="text-[10px] tracking-[4.5px] uppercase text-accent font-semibold mb-3">Location</div></Reveal>
+          <Reveal delay={0.05}><h2 className="font-serif font-light text-[clamp(30px,4.5vw,58px)] text-ink leading-[1.06] tracking-tight mb-10">
+            Getting to <em className="italic font-normal">{course.name.split(" ")[0]}</em>
+          </h2></Reveal>
+          <div className="grid md:grid-cols-2 gap-10 md:gap-[clamp(40px,5vw,72px)] items-start">
+            <Reveal>
+              <div className="text-sm text-ink-3 leading-relaxed font-light mb-6">
+                <strong className="text-ink font-semibold text-[15px] block">{addr.streetAddress}</strong>
+                {addr.addressLocality}, {addr.addressRegion} {addr.postalCode}
+                {course.phone && <><br /><a href={`tel:${course.phone}`} className="text-accent hover:text-accent-light transition-colors">{course.phone}</a></>}
+              </div>
+              {distances.length > 0 && (
+                <div className="flex flex-col">
+                  {distances.map((d, i) => (
+                    <Reveal key={i} delay={0.04 * i}>
+                      <div className="flex justify-between py-3.5 border-b border-bone text-sm hover:pl-1.5 transition-all">
+                        <span className="text-ink-2 font-normal">{d.replace(/^\d+\s*(minutes?|mins?)\s*(from\s*)?/i, "")}</span>
+                        <span className="text-ink-4 font-light">{d.match(/^\d+/)?.[0]} min</span>
+                      </div>
+                    </Reveal>
+                  ))}
+                </div>
+              )}
+            </Reveal>
+            <Reveal delay={0.1}>
+              {course.geo && (course.geo as CourseGeo).latitude ? (
+                <div className="rounded-4xl overflow-hidden aspect-[4/3]">
+                  <iframe
+                    src={`https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12000!2d${(course.geo as CourseGeo).longitude}!3d${(course.geo as CourseGeo).latitude}!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s!2s!5e0!3m2!1sen!2sus`}
+                    className="w-full h-full border-0 saturate-50 contrast-110" loading="lazy"
+                  />
+                </div>
+              ) : galleryImages[galleryImages.length - 1] ? (
+                <div className="rounded-4xl overflow-hidden aspect-[4/3] relative">
+                  <Image src={galleryImages[galleryImages.length - 1]} alt="Location" fill className="object-cover" sizes="(max-width:768px) 100vw, 50vw" />
+                </div>
+              ) : null}
+            </Reveal>
           </div>
+        </section>
+      )}
+
+      {/* ── FAQ ── */}
+      {course.faqs.length > 0 && (
+        <section className="py-20 md:py-28 px-5 md:px-[clamp(20px,5vw,72px)] bg-silk">
+          <Reveal><div className="text-[10px] tracking-[4.5px] uppercase text-accent font-semibold mb-3">FAQ</div></Reveal>
+          <Reveal delay={0.05}><h2 className="font-serif font-light text-[clamp(30px,4.5vw,58px)] text-ink leading-[1.06] tracking-tight mb-10">
+            Common <em className="italic font-normal">Questions</em>
+          </h2></Reveal>
+          <Reveal delay={0.1}>
+            <div className="max-w-[700px]">
+              {course.faqs.map((f, i) => <FAQ key={i} q={f.question} a={f.answer} />)}
+            </div>
+          </Reveal>
+        </section>
+      )}
+
+      {/* ── RELATED COURSES ── */}
+      {relatedCourses.length > 0 && (
+        <section className="py-20 md:py-28 px-5 md:px-[clamp(20px,5vw,72px)] bg-bone">
+          <Reveal><div className="text-[10px] tracking-[4.5px] uppercase text-accent font-semibold mb-3">Nearby Courses</div></Reveal>
+          <Reveal delay={0.05}><h2 className="font-serif font-light text-[clamp(28px,3.5vw,44px)] text-ink leading-[1.06] tracking-tight mb-10">
+            More in <em className="italic font-normal">{course.regionLabel}</em>
+          </h2></Reveal>
+          <div className="grid md:grid-cols-3 gap-4">
+            {relatedCourses.map((rc, i) => (
+              <Reveal key={rc.slug} delay={0.08 + i * 0.06}>
+                <Link href={`/portfolio/${rc.slug}/`}>
+                  <div className="bg-silk border border-linen rounded-4xl overflow-hidden group hover:-translate-y-2 hover:shadow-[0_16px_48px_rgba(0,0,0,.07)] hover:border-transparent transition-all duration-500">
+                    <div className="aspect-[16/10] relative overflow-hidden">
+                      {rc.heroImage ? (
+                        <Image src={rc.heroImage} alt={rc.name} fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width:768px) 100vw, 33vw" />
+                      ) : (
+                        <div className="w-full h-full bg-bone" />
+                      )}
+                      {rc.priceRange && <span className="absolute top-3 right-3 bg-ink text-white px-3 py-1 rounded-pill text-[10px] font-semibold">{rc.priceRange}</span>}
+                    </div>
+                    <div className="p-5">
+                      <h4 className="font-serif text-lg font-normal text-ink mb-1">{rc.name}</h4>
+                      <div className="text-[10px] text-ink-4 uppercase tracking-wider mb-3">{rc.regionLabel}</div>
+                      <div className="flex items-center justify-between pt-3 border-t border-bone">
+                        {rc.rating && <div className="flex items-center gap-1 text-xs text-ink-3"><Star className="w-3 h-3 text-warm fill-warm" /> {rc.rating.value}</div>}
+                        <span className="text-[11px] text-accent font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">View Course <ArrowRight className="w-3 h-3" /></span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ── CTA ── */}
+      <section className="py-20 md:py-28 px-5 md:px-[clamp(20px,5vw,72px)] text-center bg-pearl relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_120%,white,transparent_55%)]" />
+        <div className="relative">
+          <Reveal><div className="text-[10px] tracking-[4.5px] uppercase text-accent font-semibold mb-3">Book {course.name.split(" ")[0]}</div></Reveal>
+          <Reveal delay={0.05}><h2 className="font-serif font-light text-[clamp(30px,4.5vw,58px)] text-ink leading-[1.06] tracking-tight mb-3">
+            Play <em className="italic font-normal">{course.name.split(" ")[0]}</em> With Your Group
+          </h2></Reveal>
+          <Reveal delay={0.1}><p className="text-sm text-ink-3 font-light max-w-lg mx-auto mb-4">
+            {course.priceRange ? `Stay-and-play packages from ${course.priceRange.split("–")[0]}/golfer. ` : ""}Tee times, lodging, dining — one call does it all.
+          </p></Reveal>
+          <Reveal delay={0.15}>
+            <div className="inline-flex items-center gap-2 bg-accent-soft border border-accent/10 px-5 py-2 rounded-pill text-[11px] text-accent font-semibold mb-7">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse-dot" />
+              Weekend tee times limited in peak season
+            </div>
+          </Reveal>
+          <Reveal delay={0.2}>
+            <div className="flex gap-3 justify-center flex-wrap">
+              <Link href="/contact-custom-golf-package/" className="bg-ink text-white px-10 py-4 rounded-pill text-xs font-semibold tracking-wider uppercase hover:-translate-y-1 hover:shadow-[0_32px_80px_rgba(0,0,0,.08)] hover:bg-ink-2 transition-all duration-400">
+                Plan My {course.name.split(" ")[0]} Trip
+              </Link>
+              <a href="tel:+18885848232" className="border border-linen text-ink-3 px-10 py-4 rounded-pill text-xs font-medium tracking-wider uppercase hover:border-ink hover:text-ink transition-all duration-400">
+                Call 888-584-8232
+              </a>
+            </div>
+          </Reveal>
         </div>
       </section>
 
-      {/* ===== LIGHTBOX ===== */}
-      {lightboxOpen && (
-        <Lightbox
-          images={[...galleryImages, ...scorecardImages]}
-          startIndex={lightboxIdx}
-          onClose={() => setLightboxOpen(false)}
-          courseName={course.name}
-        />
-      )}
-    </main>
+      {/* ── Lightbox ── */}
+      <AnimatePresence>
+        {lbIndex !== null && <Lightbox images={galleryImages} startIndex={lbIndex} onClose={() => setLbIndex(null)} name={course.name} />}
+      </AnimatePresence>
+    </div>
   );
 }
