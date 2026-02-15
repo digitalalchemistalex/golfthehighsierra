@@ -23,9 +23,80 @@ import {
   Users,
 } from "lucide-react";
 
+// ===== Hotel Types =====
+interface HotelAddress {
+  streetAddress: string;
+  addressLocality: string;
+  addressRegion: string;
+  postalCode: string;
+  addressCountry: string;
+}
+
+interface HotelGeo {
+  latitude: number;
+  longitude: number;
+}
+
+interface HotelRating {
+  value: number;
+  count: number;
+  sources: string;
+}
+
+interface HotelRoomType {
+  name: string;
+  description: string;
+  priceFrom?: string;
+  image?: string;
+}
+
+interface HotelDining {
+  name: string;
+  slug?: string;
+  type: string;
+  description: string;
+}
+
+interface HotelFAQ {
+  question: string;
+  answer: string;
+}
+
+export interface HotelProps {
+  slug: string;
+  name: string;
+  region: string;
+  regionLabel: string;
+  type: string;
+  address: HotelAddress;
+  geo: HotelGeo;
+  phone?: string;
+  website?: string;
+  priceRange: string;
+  priceFrom?: string;
+  starRating?: number;
+  aaaRating?: string;
+  rating?: HotelRating;
+  description: string;
+  shortDescription: string;
+  highlights: string[];
+  amenities: string[];
+  roomTypes: HotelRoomType[];
+  dining: HotelDining[];
+  spaBars: string[];
+  totalRooms?: number | null;
+  parking: string;
+  images: string[];
+  heroImage: string;
+  faqs: HotelFAQ[];
+  relatedCourses: string[];
+  relatedHotels: string[];
+  meta: { title: string; description: string };
+}
+
 interface HotelPageContentProps {
-  hotel: any;
-  relatedHotels: any[];
+  hotel: HotelProps;
+  relatedHotels: HotelProps[];
 }
 
 function FAQAccordion({ question, answer }: { question: string; answer: string }) {
@@ -47,14 +118,6 @@ function FAQAccordion({ question, answer }: { question: string; answer: string }
 }
 
 export default function HotelPageContent({ hotel, relatedHotels }: HotelPageContentProps) {
-  const geo = hotel.geo as { latitude?: number; longitude?: number };
-  const roomTypes = (hotel.roomTypes || []) as any[];
-  const dining = (hotel.dining || []) as any[];
-  const spaBars = (hotel.spaBars || []) as string[];
-  const amenities = (hotel.amenities || []) as string[];
-  const highlights = (hotel.highlights || []) as string[];
-  const faqs = (hotel.faqs || []) as { question: string; answer: string }[];
-
   const typeLabel: Record<string, string> = {
     "casino-resort": "Casino Resort",
     hotel: "Hotel",
@@ -163,13 +226,13 @@ export default function HotelPageContent({ hotel, relatedHotels }: HotelPageCont
               </div>
 
               {/* Highlights */}
-              {highlights.length > 0 && (
+              {hotel.highlights.length > 0 && (
                 <div>
                   <h2 className="text-2xl font-heading font-bold text-pine-800 mb-4 flex items-center gap-2">
                     <Sparkles className="w-6 h-6 text-gold-500" /> Highlights
                   </h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    {highlights.map((h: string, i: number) => (
+                    {hotel.highlights.map((h, i) => (
                       <div key={i} className="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm">
                         <CheckCircle2 className="w-5 h-5 text-gold-500 flex-shrink-0 mt-0.5" />
                         <span className="text-pine-700 text-sm">{h}</span>
@@ -180,13 +243,13 @@ export default function HotelPageContent({ hotel, relatedHotels }: HotelPageCont
               )}
 
               {/* Room Types */}
-              {roomTypes.length > 0 && (
+              {hotel.roomTypes.length > 0 && (
                 <div>
                   <h2 className="text-2xl font-heading font-bold text-pine-800 mb-4 flex items-center gap-2">
                     <BedDouble className="w-6 h-6 text-gold-500" /> Accommodations
                   </h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {roomTypes.map((room: any, i: number) => (
+                    {hotel.roomTypes.map((room, i) => (
                       <div key={i} className="bg-white rounded-lg shadow-sm overflow-hidden">
                         {room.image && (
                           <div className="relative h-40 bg-pine-200">
@@ -207,13 +270,13 @@ export default function HotelPageContent({ hotel, relatedHotels }: HotelPageCont
               )}
 
               {/* Dining */}
-              {dining.length > 0 && (
+              {hotel.dining.length > 0 && (
                 <div>
                   <h2 className="text-2xl font-heading font-bold text-pine-800 mb-4 flex items-center gap-2">
                     <UtensilsCrossed className="w-6 h-6 text-gold-500" /> Dining
                   </h2>
                   <div className="space-y-3">
-                    {dining.map((d: any, i: number) => (
+                    {hotel.dining.map((d, i) => (
                       <div key={i} className="bg-white p-4 rounded-lg shadow-sm flex items-start gap-4">
                         <div className="w-10 h-10 bg-gold-100 rounded-lg flex items-center justify-center flex-shrink-0">
                           <UtensilsCrossed className="w-5 h-5 text-gold-600" />
@@ -230,13 +293,13 @@ export default function HotelPageContent({ hotel, relatedHotels }: HotelPageCont
               )}
 
               {/* Bars, Lounges & Wellness */}
-              {spaBars.length > 0 && (
+              {hotel.spaBars.length > 0 && (
                 <div>
                   <h2 className="text-2xl font-heading font-bold text-pine-800 mb-4 flex items-center gap-2">
                     <Wine className="w-6 h-6 text-gold-500" /> Bars, Lounges & Wellness
                   </h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    {spaBars.map((name: string, i: number) => (
+                    {hotel.spaBars.map((name, i) => (
                       <div key={i} className="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm">
                         <Wine className="w-4 h-4 text-gold-500 flex-shrink-0" />
                         <span className="text-pine-700 text-sm">{name}</span>
@@ -247,11 +310,11 @@ export default function HotelPageContent({ hotel, relatedHotels }: HotelPageCont
               )}
 
               {/* Amenities */}
-              {amenities.length > 0 && (
+              {hotel.amenities.length > 0 && (
                 <div>
                   <h2 className="text-2xl font-heading font-bold text-pine-800 mb-4">Amenities</h2>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-                    {amenities.map((a: string, i: number) => (
+                    {hotel.amenities.map((a, i) => (
                       <div key={i} className="flex items-center gap-2 text-pine-700 text-sm">
                         <CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0" />
                         <span>{a}</span>
@@ -262,11 +325,11 @@ export default function HotelPageContent({ hotel, relatedHotels }: HotelPageCont
               )}
 
               {/* FAQs */}
-              {faqs.length > 0 && (
+              {hotel.faqs.length > 0 && (
                 <div>
                   <h2 className="text-2xl font-heading font-bold text-pine-800 mb-4">Frequently Asked Questions</h2>
                   <div className="space-y-3">
-                    {faqs.map((faq, i) => (
+                    {hotel.faqs.map((faq, i) => (
                       <FAQAccordion key={i} question={faq.question} answer={faq.answer} />
                     ))}
                   </div>
@@ -345,9 +408,9 @@ export default function HotelPageContent({ hotel, relatedHotels }: HotelPageCont
                       {hotel.address.streetAddress}<br />
                       {hotel.address.addressLocality}, {hotel.address.addressRegion} {hotel.address.postalCode}
                     </p>
-                    {geo?.latitude && (
+                    {hotel.geo?.latitude && (
                       <a
-                        href={`https://www.google.com/maps/dir/?api=1&destination=${geo.latitude},${geo.longitude}`}
+                        href={`https://www.google.com/maps/dir/?api=1&destination=${hotel.geo.latitude},${hotel.geo.longitude}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 font-semibold transition-colors"
@@ -385,7 +448,7 @@ export default function HotelPageContent({ hotel, relatedHotels }: HotelPageCont
               More Hotels in {hotel.regionLabel}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {relatedHotels.map((rh: any) => (
+              {relatedHotels.map((rh) => (
                 <Link key={rh.slug} href={`/portfolio/${rh.slug}/`} className="group bg-pine-900/50 rounded-xl overflow-hidden hover:ring-2 hover:ring-gold-400/50 transition-all">
                   <div className="relative h-44 bg-pine-700">
                     {rh.heroImage && <Image src={rh.heroImage} alt={rh.name} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />}
