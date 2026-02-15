@@ -20,7 +20,7 @@
   "description": "Tahoe Donner Golf Course offers a truly unique mountain golfing experience, set amid the breathtaking scenery of the Sierra Nevada. Blending seamlessly with its natural surroundings, the course features tree-lined fairways, strategic elevation changes, and fast, well-maintained greens. The crisp mountain air and stunning vistas add to the enjoyment, while the peaceful, secluded setting almost golf a second thought of the day. With a reputation for excellent course conditions and a welcoming atmosphere, it’s a must-play destination for those who appreciate both the game and the beauty of high-altitude golf.",
   "holes": 18,
   "par": 72,
-  "designer": "",
+  "designer": "Roy Williams",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/Tahoe-Donner-Golf-Course.jpeg",
   "images": [
     "https://golfthehighsierra.com/wp-content/uploads/2025/03/download-1.png",
@@ -78,6 +78,14 @@
     {
       "title": "When should I book tee times at Tahoe Donner?",
       "content": "Summer tee times fill up quickly due to the strong membership base. We recommend booking early through Golf the High Sierra to secure preferred times.\nCheck availability »"
+    },
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
     }
   ],
   "pointOfView": "Tahoe Donner Golf Course is one of the oldest golf championship golf courses in the Lake Tahoe Basin. It is a true challenge for any golfer and a lovely introduction to the sport for those just starting. It is truly a walk, or ride, through the forest. Accurate shot-making is always the order of the day, especially off the tee. We wish it was open longer each year, but it's elevation brings snow early, and it stay late into spring, so play the course from mid-June to late-September for the best conditions.",
@@ -89,9 +97,16 @@
     "No better day can be spent that pairing a round at Tahoe Donner Golf Course with a round at Coyote Moon Golf Course, located just 5 minutes away. Grab a quick bite at The Lodge at Tahoe Donner in between rounds. The food is great!",
     "Book your tee times well in advance to play Tahoe Donner! With a robust membership, summer tee times go quickly!"
   ],
-  "featuredHole": {},
+  "featuredHole": {
+    "title": "Hole #14 — Par 4",
+    "description": "A narrow, tree-lined par 4 that demands a well-placed tee shot. The green is elevated and sloped — approaches that miss long are gone. One of Tahoe Donner's most demanding holes."
+  },
   "teeTimeInfo": "",
   "teeTips": [
     "Summer tee times fill up quickly due to the strong membership base. We recommend booking early through Golf the High Sierra to secure preferred times. Check availability »"
-  ]
+  ],
+  "yardage": 6927,
+  "slope": 139,
+  "courseRating": 72.9,
+  "yearBuilt": 1976
 }

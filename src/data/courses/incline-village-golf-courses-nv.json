@@ -23,7 +23,7 @@
   "description": "Incline Village Golf Courses, featuring the Championship Course and the Mountain Course, offer a uniquely stunning golf experience with breathtaking views of Lake Tahoe and the surrounding Sierra Nevada mountains. The Championship Course provides a classic, challenging layout with pristine conditions, while the Mountain Course delivers a fun and scenic test with dramatic elevation changes and tight, tree-lined fairways. With world-class practice facilities, a welcoming atmosphere, and the perfect blend of challenge and beauty, Incline Village Golf Courses are a must-play for golfers seeking an unforgettable alpine golf adventure..",
   "holes": 18,
   "par": 72,
-  "designer": "",
+  "designer": "Robert Trent Jones Sr.",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/champ14th-promo-669x472-1.jpg",
   "images": [
     "https://golfthehighsierra.com/wp-content/uploads/2025/03/images.png",
@@ -96,6 +96,14 @@
     {
       "title": "Are group golf trips available at Incline Village?",
       "content": "Yes. Groups of 8+ receive savings of up to 20%. Our concierge arranges tee times, accommodations, and dining for buddy trips, reunions, or corporate outings.\nStart your group booking »"
+    },
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
     }
   ],
   "pointOfView": "Incline Village Golf Courses provide a rare opportunity to experience the essence of Tahoe golf—where every shot feels like a deep breath of mountain air, and the game becomes less about score and more about embracing nature's perfect balance of tranquility and challenge.",
@@ -107,7 +115,14 @@
     "Following your round, absolutely do not miss a visit to Lake Tahoe AleWorX in the Village, where you can enjoy a craft beer and a delicious meal while soaking in the laid-back vibe and stunning lake views.",
     "The Mountain Course is a great track on a first day of a multi-day golf trip. It’s easier to get a tee time there as well, as the locals have a priority booking window that can limit availability on the Championship Course. If you work with us, we can book well in advance, even before the locals gobble up all the times!"
   ],
-  "featuredHole": {},
+  "featuredHole": {
+    "title": "Hole #8 — Par 3",
+    "description": "A stunning downhill par 3 with Lake Tahoe glimmering through the pines behind the green. The elevation change makes club selection tricky — play one less than the yardage calls for."
+  },
   "teeTimeInfo": "",
-  "teeTips": []
+  "teeTips": [],
+  "yardage": 7106,
+  "slope": 136,
+  "courseRating": 72.8,
+  "yearBuilt": 1964
 }

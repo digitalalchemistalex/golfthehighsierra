@@ -20,7 +20,7 @@
   "description": "Genoa Lakes offers two championship layouts: the Lakes Course , a links-style design with water on 14 holes, and the Ranch Course , a rugged high-desert course with over 300 feet of elevation changes.",
   "holes": 18,
   "par": 72,
-  "designer": "",
+  "designer": "Peter Jacobsen & Jim Hardy",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2024/04/genoa-lakes.jpg",
   "images": [],
   "videoUrl": "",
@@ -60,11 +60,21 @@
     {
       "title": "Can I book a stay-and-play package with Genoa Lakes?",
       "content": "Yes. Golf the High Sierra offers\ncustom stay-and-play packages\nthat include Genoa Lakes, nearby lodging, and optional add-ons like dining or spa experiences.\nRequest your package here »"
+    },
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
     }
   ],
   "facilities": [
     "The Ranch Course is built into the Sierra foothills with bunkers, elevation changes, and panoramic desert views.",
-    "Yes. Golf the High Sierra offers custom stay-and-play packages that include Genoa Lakes, nearby lodging, and optional add-ons like dining or spa experiences. Request your package here »"
+    "Yes. Golf the High Sierra offers custom stay-and-play packages that include Genoa Lakes, nearby lodging, and optional add-ons like dining or spa experiences. Request your package here »",
+    "Trips Caddie",
+    "All Lake Tahoe Resort"
   ],
   "pointOfView": "",
   "hack": "",
@@ -76,7 +86,14 @@
     "Over 300 feet of elevation changes, more than 100 bunkers, unpredictable mountain terrain, afternoon breezes and a waterfall challenge players to a crash course in championship golf.",
     "Luxury and performance are the name of the game on the Lakes Course. Co-designed by PGA Champion Peter Jacobsen and John Harbottle III, this links-style course with rolling fairways meets head-on with the eastern slopes of the breathtaking Sierra Nevada Mountains."
   ],
-  "featuredHole": {},
+  "featuredHole": {
+    "title": "Hole #5 — Par 3",
+    "description": "A beautiful par 3 with the Sierra Nevada range framing the background. Water guards the front and right of the green. Club selection is critical at this elevation."
+  },
   "teeTimeInfo": "",
-  "teeTips": []
+  "teeTips": [],
+  "yardage": 7263,
+  "slope": 135,
+  "courseRating": 74.0,
+  "yearBuilt": 1993
 }

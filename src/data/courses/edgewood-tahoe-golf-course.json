@@ -23,7 +23,7 @@
   "description": "Edgewood Tahoe Golf Course is a must-play destination because of its breathtaking setting along the shores of Lake Tahoe, offering stunning mountain and water views on every hole. As a championship course that hosts the annual American Century Celebrity Golf Tournament, it provides a challenging yet enjoyable experience for golfers of all skill levels. With its pristine fairways, world-class amenities, and a backdrop that seamlessly blends luxury with nature, Edgewood Tahoe delivers an unforgettable round of golf.",
   "holes": 18,
   "par": 72,
-  "designer": "",
+  "designer": "George Fazio",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/480305380_1022960253212508_1839293438816186105_n.jpg",
   "images": [
     "https://golfthehighsierra.com/wp-content/uploads/2025/03/Screenshot-2025-03-08-at-12.33.35.png",
@@ -82,6 +82,14 @@
     {
       "title": "The Hack!",
       "content": "The food in the clubhouse restaurant is very good and the setting couldn’t be better!  Make sure to take a dip into Lake Tahoe following your round.  There really is no better refreshment than that!"
+    },
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
     }
   ],
   "pointOfView": "It's true! Edgewood Tahoe Golf Course is indeed a memorable golf course. Your entire rounds offers the opportunity to gaze across the expansive waters of Lake Tahoe and awe at the steep mountain peaks of the surrounding Sierra Nevada Mountains. Playing Edgewood is a pricey proposition, but it's a bucket list golf course that needs to be played at least once!",
@@ -100,5 +108,9 @@
   "teeTips": [
     "For guests staying at the Lodge, you’re able to book your tee times at any point ahead of your arrival. The general public, however, can book only 30 days in advance for your desired day of play. Give us a call and we might be able to book the tee time you’re wanting ahead of the general public.",
     "The food in the clubhouse restaurant is very good and the setting couldn’t be better! Make sure to take a dip into Lake Tahoe following your round. There really is no better refreshment than that!"
-  ]
+  ],
+  "yardage": 7555,
+  "slope": 142,
+  "courseRating": 75.8,
+  "yearBuilt": 1968
 }

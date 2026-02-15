@@ -20,7 +20,7 @@
   "description": "At 6,300 feet above sea level, Coyote Moon is one of the finest mountain golf courses in the country. The course is a mountain masterpiece, carved out of 250 secluded acres of rolling hills, towering Ponderosa pines, wildflowers, and roaming wildlife, all without a single home or homesite to spoil the view. Coyote Moon combines a great design, meticulous maintenance standards, and attentive guest services to create a premier mountain golf experience.",
   "holes": 18,
   "par": 72,
-  "designer": "",
+  "designer": "Brad Bell",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/coyote-moon2s.jpg",
   "images": [
     "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_CoyoteMoon.png",
@@ -53,24 +53,27 @@
     "Plan Coyote Moon in Truckee with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
     "Truckee, CA\n10685 Northwoods Blvd.\nTruckee, CA 96161\n8 Minutes from Truckee, CA\n37 Minutes from Downtown Reno\n43 Minutes from Peppermill and Atlantis\n57 Minutes from Graeagle, CA\n67 Minutes from Stateline, NV\n68 Minutes from Carson City, NV\n79 Minutes from Minden, NV"
   ],
-  "tips": [],
+  "tips": [
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n#jtg-6531 .modula-item .jtg-social a, .lightbox-socials.jtg-social a{ fill: #ffffff; color: #ffffff }#jtg-6531 .modula-item .jtg-social-expandable a, #jtg-6531 .modula-item .jtg-social-expandable-icons a{ fill: #ffffff; color: #ffffff }#jtg-6531 .modula-item .jtg-social svg, .lightbox-socials.jtg-social svg { height: 16px; width: 16px }#jtg-6531 .modula-item .jtg-social-expandable svg { height: 16px; width: 16px }#jtg-6531 .modula-item .jtg-social-expandable-icons svg { height: 16px; width: 16px }#jtg-6531 .modula-item .jtg-social a:not(:last-child), .lightbox-socials.jtg-social a:not(:last-child) { margin-right: 10px }#jtg-6531 .modula-item .jtg-social-expandable-icons { gap: 10px }#jtg-6531 .modula-item .figc {color:#ffffff;}#jtg-6531 .modula-item .modula-item-content { transform: scale(1); }#jtg-6531 { width:100%;}#jtg-6531 .modula-items{height:800px;}@media screen and (max-width: 992px) {#jtg-6531 .modula-items{height:800px;}}@media screen and (max-width: 768px) {#jtg-6531 .modula-items{height:800px;}}#jtg-6531 .modula-items .figc p.description,#jtg-6531 .modula-items .figc .jtg-description { font-size:14px; }#jtg-6531 .modula-items .figc p.description,#jtg-6531 .modula-items .figc .jtg-description { color:#ffffff;}#jtg-6531.modula-gallery .modula-item > a, #jtg-6531.modula-gallery .modula-item a.modula-item-link, #jtg-6531.modula-gallery .modula-item-content > a:not(.modula-no-follow) { cursor:zoom-in; } #jtg-6531.modula-gallery .modula-item-content .modula-no-follow { cursor: default; } @media screen and (max-width:480px){#jtg-6531 .modula-item .figc .jtg-title {  font-size: 12px; }#jtg-6531 .modula-items .figc p.description,#jtg-6531 .modula-items .figc .jtg-description { color:#ffffff;font-size:10px; }}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
+    }
+  ],
   "facilities": [
     "Restaurant and bar",
     "Chipping Area",
     "Practice Bunkers",
-    "Putting Greens"
+    "Putting Greens",
+    "Trips Caddie",
+    "All Lake Tahoe Resort"
   ],
   "pointOfView": "Pure. Wilderness. Golf. Simply enough, there really is no better way to express just what a round at Coyote Moon offers. But nature isn't the only enticement; the course layout is, with a few exceptions, absolutely outstanding. Numerous up- and downhill dog legs and constant elevation changes have made the most of the varying topography available to the designer, Brad Bell. Club selection, while taking the 6,300 feet above sea level elevation into account, is paramount if you want to avoid the steep banks, bunkers, and native areas that surround most green complexes. A range finder with an elevation adjustment is your best friend at Coyote Moon when you're after a low score. It will come in really handy as you decide what club to hit on the par 3 13th, which features a 200 foot drop over Trout Creek to the green below the tee box. If you're more interested in enjoying the surrounding aesthetic, you will find no better course to appreciate. The afternoon's long shadows and ever-present wildlife will create one of the most zen-like, tranquil golf experiences you'll find on earth, and that is no overstatement. The peace of the forest comes through soft and lightly as you manage each challenging shot. Take your time for this one! There is no reason to rush this kind of quiet.",
   "hack": "",
-  "distances": [
-    "8 Minutes from Truckee, CA",
-    "37 Minutes from Downtown Reno",
-    "43 Minutes from Peppermill and Atlantis",
-    "57 Minutes from Graeagle, CA",
-    "67 Minutes from Stateline, NV",
-    "68 Minutes from Carson City, NV",
-    "79 Minutes from Minden, NV"
-  ],
+  "distances": [],
   "contentParagraphs": [
     "Plan Coyote Moon in Truckee with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
     "The 13th hole is a spectacular 227-yard par 3 where the tee shot falls more than 200 feet down to an oblong green fronted by Trout Creek and rugged native terrain. The hole plays two-to-three clubs less than normal, but pay attention to the pin location and adjust club selection accordingly. Take a deep breath, clear your mind and concentrate on the shot on this breathtaking and dangerous par 3.",
@@ -81,5 +84,9 @@
     "description": "The 13th hole is a spectacular 227-yard par 3 where the tee shot falls more than 200 feet down to an oblong green fronted by Trout Creek and rugged native terrain. The hole plays two-to-three clubs less than normal, but pay attention to the pin location and adjust club selection accordingly. Take a deep breath, clear your mind and concentrate on the shot on this breathtaking and dangerous par 3."
   },
   "teeTimeInfo": "",
-  "teeTips": []
+  "teeTips": [],
+  "yardage": 7177,
+  "slope": 140,
+  "courseRating": 74.1,
+  "yearBuilt": 2000
 }

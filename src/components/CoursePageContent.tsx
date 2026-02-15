@@ -70,6 +70,10 @@ export interface CourseProps {
   holes?: number;
   par?: number | null;
   designer?: string;
+  yardage?: number;
+  slope?: number;
+  courseRating?: number;
+  yearBuilt?: number;
   heroImage?: string;
   images: string[];
   videoUrl?: string;
@@ -364,6 +368,18 @@ export default function CoursePageContent({
               <div className="flex items-center gap-2 text-cream-300">
                 <span className="text-gold-400 font-bold">Par</span>{" "}
                 <span>{course.par}</span>
+              </div>
+            )}
+            {course.yardage && (
+              <div className="flex items-center gap-2 text-cream-300">
+                <span className="text-gold-400 font-bold">Yards</span>{" "}
+                <span>{course.yardage.toLocaleString()}</span>
+              </div>
+            )}
+            {course.slope && (
+              <div className="flex items-center gap-2 text-cream-300">
+                <span className="text-gold-400 font-bold">Slope</span>{" "}
+                <span>{course.slope}</span>
               </div>
             )}
             {course.designer && (
@@ -718,6 +734,24 @@ export default function CoursePageContent({
                     <div className="fact-row">
                       <dt className="fact-label">Par</dt>
                       <dd className="fact-value">{course.par}</dd>
+                    </div>
+                  )}
+                  {course.yardage && (
+                    <div className="fact-row">
+                      <dt className="fact-label">Yardage</dt>
+                      <dd className="fact-value">{course.yardage.toLocaleString()}</dd>
+                    </div>
+                  )}
+                  {course.slope && (
+                    <div className="fact-row">
+                      <dt className="fact-label">Slope</dt>
+                      <dd className="fact-value">{course.slope}</dd>
+                    </div>
+                  )}
+                  {course.courseRating && (
+                    <div className="fact-row">
+                      <dt className="fact-label">Course Rating</dt>
+                      <dd className="fact-value">{course.courseRating}</dd>
                     </div>
                   )}
                   <div className="fact-row">

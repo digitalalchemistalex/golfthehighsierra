@@ -20,7 +20,7 @@
   "description": "Nakoma offers an exceptional golf experience far from the crowded courses and wait times now the norm in Truckee-Tahoe. With picture-postcard views from every tee, Nakoma’s 18-hole championship course, the Dragon, never disappoints. Designed by Robin Nelson, creator of the famous Dunes at Mauna Lani, the Dragon debuted as one of America’s Top 75, according to Golf World.",
   "holes": 18,
   "par": 72,
-  "designer": "",
+  "designer": "Robin Nelson & Neil Haworth",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2024/04/Nakoma-Dragon-1.jpg",
   "images": [],
   "videoUrl": "",
@@ -64,9 +64,20 @@
     {
       "title": "Is lodging available at Nakoma?",
       "content": "Yes. Nakoma Resort offers on-site lodging, dining, and spa services, making it ideal for\nstay-and-play golf getaways\n."
+    },
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
     }
   ],
-  "facilities": [],
+  "facilities": [
+    "Trips Caddie",
+    "All Lake Tahoe Resort"
+  ],
   "pointOfView": "",
   "hack": "",
   "distances": [],
@@ -77,7 +88,14 @@
     "Nakoma’s clubhouse is the only Frank Lloyd Wright–designed golf clubhouse in the world, blending architectural history with modern golf amenities.",
     "Nakoma offers a less crowded, more secluded golf experience with panoramic Sierra views and challenging elevation changes—making it a premium alternative to busy Tahoe-area courses."
   ],
-  "featuredHole": {},
+  "featuredHole": {
+    "title": "Hole #14 — Par 4",
+    "description": "Known as 'Dragon's Breath,' this signature par 4 plays along a dramatic ridge with canyon views on both sides. The clubhouse — designed by Frank Lloyd Wright — is visible from the tee."
+  },
   "teeTimeInfo": "",
-  "teeTips": []
+  "teeTips": [],
+  "yardage": 7031,
+  "slope": 136,
+  "courseRating": 73.4,
+  "yearBuilt": 2005
 }

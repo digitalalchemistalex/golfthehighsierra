@@ -23,7 +23,7 @@
   "description": "Returning to the traditions of the world’s most revered golf treasures, the Golf Club at Gray’s Crossing promises an experience that explores each player’s unlimited capacity to enjoy the riches of the greatest game ever played. Fast greens and immaculate, tournament-like conditions provide a pristine golf theater, set in majestic pines with a spectacular mountain backdrop.",
   "holes": 18,
   "par": 72,
-  "designer": "",
+  "designer": "Peter Jacobsen",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grays-Crossing-Foto-4.jpg",
   "images": [
     "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_GarysCrossing.png",
@@ -56,28 +56,38 @@
     "Returning to the traditions of the world’s most revered golf treasures, the Golf Club at Gray’s Crossing promises an experience that explores each player’s unlimited capacity to enjoy the riches of the greatest game ever played. Fast greens and immaculate, tournament-like conditions provide a pristine golf theater, set in majestic pines with a spectacular mountain backdrop.",
     "Truckee, CA\n11406 Henness Road\nTruckee, CA 96161\n5 Minutes from Truckee, CA\n35 Minutes from Downtown Reno\n41 Minutes from Peppermill and Atlantis\n54 Minutes from Graeagle, CA\n64 Minutes from Stateline, NV\n64 Minutes from Carson City, NV\n75 Minutes from Minden, NV"
   ],
-  "tips": [],
+  "tips": [
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n#jtg-6573 .modula-item .jtg-social a, .lightbox-socials.jtg-social a{ fill: #ffffff; color: #ffffff }#jtg-6573 .modula-item .jtg-social-expandable a, #jtg-6573 .modula-item .jtg-social-expandable-icons a{ fill: #ffffff; color: #ffffff }#jtg-6573 .modula-item .jtg-social svg, .lightbox-socials.jtg-social svg { height: 16px; width: 16px }#jtg-6573 .modula-item .jtg-social-expandable svg { height: 16px; width: 16px }#jtg-6573 .modula-item .jtg-social-expandable-icons svg { height: 16px; width: 16px }#jtg-6573 .modula-item .jtg-social a:not(:last-child), .lightbox-socials.jtg-social a:not(:last-child) { margin-right: 10px }#jtg-6573 .modula-item .jtg-social-expandable-icons { gap: 10px }#jtg-6573 .modula-item .figc {color:#ffffff;}#jtg-6573 .modula-item .modula-item-content { transform: scale(1); }#jtg-6573 { width:100%;}#jtg-6573 .modula-items{height:800px;}@media screen and (max-width: 992px) {#jtg-6573 .modula-items{height:800px;}}@media screen and (max-width: 768px) {#jtg-6573 .modula-items{height:800px;}}#jtg-6573 .modula-items .figc p.description,#jtg-6573 .modula-items .figc .jtg-description { font-size:14px; }#jtg-6573 .modula-items .figc p.description,#jtg-6573 .modula-items .figc .jtg-description { color:#ffffff;}#jtg-6573.modula-gallery .modula-item > a, #jtg-6573.modula-gallery .modula-item a.modula-item-link, #jtg-6573.modula-gallery .modula-item-content > a:not(.modula-no-follow) { cursor:zoom-in; } #jtg-6573.modula-gallery .modula-item-content .modula-no-follow { cursor: default; } @media screen and (max-width:480px){#jtg-6573 .modula-item .figc .jtg-title {  font-size: 12px; }#jtg-6573 .modula-items .figc p.description,#jtg-6573 .modula-items .figc .jtg-description { color:#ffffff;font-size:10px; }}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
+    }
+  ],
   "facilities": [
     "Restaurant and bar",
-    "Full Grass Practice Facility"
+    "Full Grass Practice Facility",
+    "Trips Caddie",
+    "All Lake Tahoe Resort"
   ],
   "pointOfView": "An air of over-confidence has turned to intrepidation for many teeing off the 1st hole at Gray's Crossing. At first glance, it appears to be straight-forward, with wide fairways and large greens begging for hefty swings and fearlessly lashed at approach shots. You'll quickly understand why caution will win the day, however. Yes, the greens are big and generous access points reward accuracy, but you'll find that there are secrets to be known to make for a low round. Many greens are spined with unforgiving fall-aways over the back, and sloped landing zones off the tee can turn an apparent beauty into a sagebrush-laden nightmare of a recovery shot. Many tee shots are smartly played with less than driver, as landing zone runouts will find native areas unseen from tee boxes. Without doubt though, there are numerous opportunities for sub-par scores if played with caution. A reachable Par 4 on each side offers solace to the other beautiful, longer holes throughout the course. All Par 5s are reachable and are birdie opportunities, less hole 18, which takes two monster shots to clear the native beranka. In any case of success or struggle, you'll enjoy every minute of your round at Gray's Crossing, especially as you reflect on it while sipping a frosty draft on the deck at PJs, Gray's Crossing's lovely bar restaurant that overlooks the 18th hole and Mt. Rose beyond.",
   "hack": "",
-  "distances": [
-    "5 Minutes from Truckee, CA",
-    "35 Minutes from Downtown Reno",
-    "41 Minutes from Peppermill and Atlantis",
-    "54 Minutes from Graeagle, CA",
-    "64 Minutes from Stateline, NV",
-    "64 Minutes from Carson City, NV",
-    "75 Minutes from Minden, NV"
-  ],
+  "distances": [],
   "contentParagraphs": [
     "Book Gray’s Crossing in Truckee with golf groups, tee times, and stay and play packages. Custom trips for buddies, corporate, and leisure groups.",
     "Designed around soaring pines and undisturbed wetlands, the course has tight yet forgiving fairways, 83 bunkers, water on three holes and subtle elevation changes. Its natural, native beauty and expansive views of Mt. Rose and the Sierra Nevada Mountain ranges set the backdrop for an idyllic, walkable round.",
     "This Jim Hardy and Peter Jacobsen-designed masterpiece demands a combination of creative club choices and tactical strategies that call on golfers of all levels to expand their relationship with the game. Award-winning agronomists keep the course playing in tournament conditions all season long."
   ],
-  "featuredHole": {},
+  "featuredHole": {
+    "title": "Hole #13 — Par 4",
+    "description": "A beautiful par 4 with the Truckee River running along the left side. The approach demands precision with water lurking. The mountain views from this hole are quintessential Truckee."
+  },
   "teeTimeInfo": "",
-  "teeTips": []
+  "teeTips": [],
+  "yardage": 7243,
+  "slope": 139,
+  "courseRating": 74.6,
+  "yearBuilt": 2007
 }

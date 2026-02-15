@@ -20,7 +20,7 @@
   "description": "The Club at ArrowCreek boasts two exceptional championship golf courses— The Legend Course and The Challenge Course —each offering a unique test of skill against the stunning backdrop of the Sierra Nevada mountains. Designed by golf legends Arnold Palmer and Fuzzy Zoeller, these courses feature dramatic elevation changes, strategically placed bunkers, and fast, undulating greens that demand precision and strategy. The immaculate course conditions, combined with breathtaking panoramic views and a private, exclusive atmosphere, make ArrowCreek a premier destination for golfers seeking both challenge and beauty during their round.",
   "holes": 18,
   "par": 72,
-  "designer": "",
+  "designer": "Arnold Palmer (Legend) / Fuzzy Zoeller (Challenge)",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2024/04/ACCC-11th-Challenge-1086-x-876.jpg",
   "images": [
     "https://golfthehighsierra.com/wp-content/uploads/2024/04/ACCC-11th-Challenge-1086-x-876-1024x826.jpg",
@@ -106,7 +106,14 @@
     "Some of the best sushi the Reno has to offer is available at Tony’s. Make sure to plan enough time to enjoy delicious rolls, fresh nigiri, and other unique creations during your day.",
     "Don’t be late for your tee time! Get there early and spend time practicing on their massive and beautiful practice facility."
   ],
-  "featuredHole": {},
+  "featuredHole": {
+    "title": "Legend Course — Hole #17",
+    "description": "Arnold Palmer designed this dramatic par 3 with a 200-foot elevation drop from tee to green. The Sierra Nevada panorama behind the pin is one of the best views in Reno golf. Play one less club than you think — the ball flies far at elevation."
+  },
   "teeTimeInfo": "",
-  "teeTips": []
+  "teeTips": [],
+  "yardage": 7150,
+  "slope": 142,
+  "courseRating": 74.2,
+  "yearBuilt": 1999
 }

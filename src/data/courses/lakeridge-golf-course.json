@@ -19,8 +19,8 @@
   },
   "description": "Lakeridge Golf Course is truly Reno’s Must See; Must Play Golf Course. Number 15, a par 3, features a tee shot from a hillside tee box 140 feet above the water to a true island! From the championship tee, this shot is 239 yards but plays about 195 yards to the middle of the green without wind. In windy conditions care must be taken at both the tee and the green. Lower and closer tees also are available without sacrificing the outstanding view of the city.",
   "holes": 18,
-  "par": 71,
-  "designer": "",
+  "par": 72,
+  "designer": "Robert Trent Jones Jr.",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/LakeRidgeGolfCourse.jpg",
   "images": [
     "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_LakeRidge.png",
@@ -71,25 +71,27 @@
     {
       "title": "Does Lakeridge offer group or corporate packages?",
       "content": "Yes! Groups of 8+ save 20% on stay-and-play packages, making it a top choice for buddy trips, reunions, or corporate outings."
+    },
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n#jtg-6464 .modula-item .jtg-social a, .lightbox-socials.jtg-social a{ fill: #ffffff; color: #ffffff }#jtg-6464 .modula-item .jtg-social-expandable a, #jtg-6464 .modula-item .jtg-social-expandable-icons a{ fill: #ffffff; color: #ffffff }#jtg-6464 .modula-item .jtg-social svg, .lightbox-socials.jtg-social svg { height: 16px; width: 16px }#jtg-6464 .modula-item .jtg-social-expandable svg { height: 16px; width: 16px }#jtg-6464 .modula-item .jtg-social-expandable-icons svg { height: 16px; width: 16px }#jtg-6464 .modula-item .jtg-social a:not(:last-child), .lightbox-socials.jtg-social a:not(:last-child) { margin-right: 10px }#jtg-6464 .modula-item .jtg-social-expandable-icons { gap: 10px }#jtg-6464 .modula-item .figc {color:#ffffff;}#jtg-6464 .modula-item .modula-item-content { transform: scale(1); }#jtg-6464 { width:100%;}#jtg-6464 .modula-items{height:800px;}@media screen and (max-width: 992px) {#jtg-6464 .modula-items{height:800px;}}@media screen and (max-width: 768px) {#jtg-6464 .modula-items{height:800px;}}#jtg-6464 .modula-items .figc p.description,#jtg-6464 .modula-items .figc .jtg-description { font-size:14px; }#jtg-6464 .modula-items .figc p.description,#jtg-6464 .modula-items .figc .jtg-description { color:#ffffff;}#jtg-6464.modula-gallery .modula-item > a, #jtg-6464.modula-gallery .modula-item a.modula-item-link, #jtg-6464.modula-gallery .modula-item-content > a:not(.modula-no-follow) { cursor:zoom-in; } #jtg-6464.modula-gallery .modula-item-content .modula-no-follow { cursor: default; } @media screen and (max-width:480px){#jtg-6464 .modula-item .figc .jtg-title {  font-size: 12px; }#jtg-6464 .modula-items .figc p.description,#jtg-6464 .modula-items .figc .jtg-description { color:#ffffff;font-size:10px; }}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
     }
   ],
   "facilities": [
     "Putting Green",
     "Chipping Green",
     "Driving Range",
-    "Premier Restaurant"
+    "Premier Restaurant",
+    "Trips Caddie",
+    "All Lake Tahoe Resort"
   ],
   "pointOfView": "Lakeridge is a favorite and an absolute must play as part of your Reno golf getaway. It's playable for all skill levels, has a great restaurant and overall great service, and its maturity and views are unique to other area golf courses. It's minutes from all downtown and outlying Reno hotels and casinos. The 15 th hole is quite possibly one of the most awe-inspiring golf holes that you'll ever play!",
   "hack": "",
-  "distances": [
-    "7 Minutes from Peppermill and Atlantis",
-    "12 Minutes from Downtown Reno",
-    "32 Minutes from Carson City, NV",
-    "41 Minutes from Truckee, CA",
-    "48 Minutes from Minden, NV",
-    "61 Minutes from Stateline, NV",
-    "67 Minutes from Graeagle, CA"
-  ],
+  "distances": [],
   "contentParagraphs": [
     "Home to the famous 15th Island Hole overlooking Lake Stanley, plus a full 18-hole championship layout.",
     "Lakeridge Golf Course is built for groups — from 8 to 100 players. We arrange consecutive tee times, rooming lists, and comps for organizers. Whether it’s a buddies trip, corporate outing, or charity tournament, our team handles the details so you can focus on the game.",
@@ -97,7 +99,14 @@
     "At just a little over 6,700 yards from the championship tees, the course is set up to offer tremendous challenges to a shotmaker’s skill. From the regular tees, with a length of 6,141 yards, the challenges and fun still exist in a more attainable form.",
     "Lakeridge is home to the famous 15th “Island Hole,” a par 3 tee shot from 140 feet above Lake Stanley. It’s been featured among the top par 3s in the western U.S."
   ],
-  "featuredHole": {},
+  "featuredHole": {
+    "title": "Hole #15 — Par 3 (Island Green)",
+    "description": "Reno's most iconic hole. A floating island green surrounded by water on all sides. Pick your club, commit to your line, and swing. There's no bail-out — it's all carry. The most photographed hole in Northern Nevada."
+  },
   "teeTimeInfo": "",
-  "teeTips": []
+  "teeTips": [],
+  "yardage": 6717,
+  "slope": 130,
+  "courseRating": 71.6,
+  "yearBuilt": 1969
 }
