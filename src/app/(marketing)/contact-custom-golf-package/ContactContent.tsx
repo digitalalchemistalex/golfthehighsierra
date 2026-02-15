@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { Phone, Mail, MapPin, CheckCircle2, Clock, Shield, Users } from "lucide-react";
+import { Clock, Shield, Users } from "lucide-react";
 
 export default function ContactContent() {
   const iframeRef = useRef<HTMLIFrameElement>(null);
@@ -84,144 +84,21 @@ export default function ContactContent() {
 
       {/* ===== FORM SECTION ===== */}
       <section className="bg-cream-200">
-        <div className="max-w-5xl mx-auto px-4 py-8 md:py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-            {/* Form (iframe) — takes 3/4 width on desktop */}
-            <div className="lg:col-span-3">
-              <iframe
-                ref={iframeRef}
-                src="https://mesquitestgeorgegolftours.com/embed/gths"
-                style={{
-                  width: "100%",
-                  border: "none",
-                  overflow: "hidden",
-                  minHeight: "3000px",
-                }}
-                scrolling="no"
-                frameBorder="0"
-                id="gthsForm"
-                title="Golf the High Sierra Quote Request Form"
-              />
-            </div>
-
-            {/* Sidebar */}
-            <div className="lg:col-span-1">
-              <div className="sticky top-24 space-y-6">
-                {/* Contact Card */}
-                <div className="bg-white rounded-xl p-6 shadow-sm">
-                  <h3 className="font-heading font-bold text-pine-800 mb-4">
-                    Prefer to Talk?
-                  </h3>
-                  <div className="space-y-4">
-                    <a
-                      href="tel:+1-888-584-8232"
-                      className="flex items-center gap-3 text-pine-700 hover:text-gold-600 transition-colors"
-                    >
-                      <Phone className="w-5 h-5 text-gold-500" />
-                      <div>
-                        <span className="font-semibold block">
-                          (888) 584-8232
-                        </span>
-                        <span className="text-xs text-pine-400">
-                          Mon-Fri 8am-5pm PT
-                        </span>
-                      </div>
-                    </a>
-                    <a
-                      href="mailto:info@golfthehighsierra.com"
-                      className="flex items-center gap-3 text-pine-700 hover:text-gold-600 transition-colors"
-                    >
-                      <Mail className="w-5 h-5 text-gold-500" />
-                      <span className="text-sm">
-                        info@golfthehighsierra.com
-                      </span>
-                    </a>
-                    <div className="flex items-center gap-3 text-pine-500">
-                      <MapPin className="w-5 h-5 text-gold-500" />
-                      <span className="text-sm">Reno, Nevada</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* What Happens Next */}
-                <div className="bg-gold-50 border border-gold-200 rounded-xl p-6">
-                  <h3 className="font-heading font-bold text-pine-800 mb-3">
-                    What Happens Next?
-                  </h3>
-                  <ol className="space-y-4 text-sm text-pine-700">
-                    <li className="flex items-start gap-3">
-                      <span className="bg-gold-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
-                        1
-                      </span>
-                      <div>
-                        <span className="font-semibold block text-pine-800">
-                          We Review Your Request
-                        </span>
-                        Within 24 hours our team reviews your trip details.
-                      </div>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="bg-gold-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
-                        2
-                      </span>
-                      <div>
-                        <span className="font-semibold block text-pine-800">
-                          Custom Proposal
-                        </span>
-                        We build a detailed package with pricing — courses,
-                        hotels, dining, transport.
-                      </div>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="bg-gold-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
-                        3
-                      </span>
-                      <div>
-                        <span className="font-semibold block text-pine-800">
-                          Tweak &amp; Confirm
-                        </span>
-                        One contract, one payment. Adjust anything until
-                        it&apos;s perfect.
-                      </div>
-                    </li>
-                  </ol>
-                </div>
-
-                {/* Trust / Why Us */}
-                <div className="bg-white rounded-xl p-6 shadow-sm">
-                  <h3 className="font-heading font-bold text-pine-800 mb-3">
-                    Why Book With Us
-                  </h3>
-                  <ul className="space-y-2.5 text-sm text-pine-700">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
-                      <span>20+ years planning group golf trips</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
-                      <span>22+ courses across 5 regions</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
-                      <span>One contract — tee times, lodging, dining</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
-                      <span>Group discounts up to 30%</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
-                      <span>Concierge service from booking to tee time</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
-                      <span>4.8/5 rating across 672 reviews</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto px-4 py-8 md:py-12">
+          <iframe
+            ref={iframeRef}
+            src="https://mesquitestgeorgegolftours.com/embed/gths"
+            style={{
+              width: "100%",
+              border: "none",
+              overflow: "hidden",
+              minHeight: "3000px",
+            }}
+            scrolling="no"
+            frameBorder="0"
+            id="gthsForm"
+            title="Golf the High Sierra Quote Request Form"
+          />
         </div>
       </section>
     </main>
