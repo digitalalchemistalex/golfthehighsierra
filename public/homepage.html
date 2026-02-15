@@ -141,10 +141,10 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .exp-card:hover img{transform:scale(1.06)}
 .exp-card-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,33,24,.8) 0%,rgba(15,33,24,0) 50%);transition:background .3s}
 .exp-card:hover .exp-card-ov{background:linear-gradient(to top,rgba(15,33,24,.9) 0%,rgba(15,33,24,.1) 60%)}
-.exp-card-content{position:absolute;bottom:0;left:0;right:0;padding:18px;transform:translateY(4px);transition:transform .3s}
+.exp-card-content{position:absolute;bottom:0;left:0;right:0;padding:22px;transform:translateY(4px);transition:transform .3s}
 .exp-card:hover .exp-card-content{transform:translateY(0)}
 .exp-card-icon{font-size:22px;margin-bottom:6px;filter:drop-shadow(0 2px 4px rgba(0,0,0,.3))}
-.exp-card h4{font-family:'DM Serif Display',serif;font-size:18px;color:var(--white);margin-bottom:3px}
+.exp-card h4{font-family:'DM Serif Display',serif;font-size:20px;color:var(--white);margin-bottom:4px}
 .exp-card span{font-size:12px;color:rgba(255,255,255,.65);font-weight:500}
 
 /* â•â•â•â•â•â•â•â•â•â•â• REGION CARDS (ENRICHED) â•â•â•â•â•â•â•â•â•â•â• */
@@ -152,12 +152,12 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .sec-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;flex-wrap:wrap;gap:14px}
 .sec-head h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,40px);color:var(--pine);line-height:1.18}
 .sec-head p{font-size:15px;color:var(--text2);max-width:400px;line-height:1.5}
-.region-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.region-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
 
 /* ENRICHED CARD */
 .rc{background:var(--white);border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);transition:all .4s;position:relative}
 .rc:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--sage)}
-.rc-img{aspect-ratio:16/10;overflow:hidden;position:relative}
+.rc-img{aspect-ratio:16/11;overflow:hidden;position:relative}
 .rc-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
 .rc:hover .rc-img img{transform:scale(1.06)}
 /* Course count badge on image */
@@ -165,8 +165,8 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 .rc-badge::before{content:'⛳';font-size:11px}
 /* Price tag on image */
 .rc-price{position:absolute;top:12px;right:12px;background:var(--pine);color:var(--white);padding:5px 12px;border-radius:6px;font-size:12px;font-weight:700;box-shadow:var(--shadow-sm);z-index:1}
-.rc-body{padding:20px}
-.rc-body h3{font-family:'DM Serif Display',serif;font-size:22px;color:var(--pine);margin-bottom:4px;transition:color .3s}
+.rc-body{padding:24px 24px 20px}
+.rc-body h3{font-family:'DM Serif Display',serif;font-size:24px;color:var(--pine);margin-bottom:6px;transition:color .3s}
 .rc:hover h3{color:var(--pine-lt)}
 .rc-subtitle{font-size:12px;color:var(--gold);font-weight:600;letter-spacing:.5px;margin-bottom:12px;text-transform:uppercase}
 /* Course chips */
@@ -214,7 +214,55 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 /* â•â•â•â•â•â•â•â•â•â•â• PROCESS â•â•â•â•â•â•â•â•â•â•â• */
 .process{padding:var(--pad) clamp(24px,6vw,100px)}
 .process .sec-head{justify-content:center;text-align:center;flex-direction:column;align-items:center}
-.process-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px;position:relative}
+.process-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;position:relative}
+
+/* ═══════════ ANIMATED JOURNEY ═══════════ */
+.journey-section{padding:var(--pad) clamp(24px,6vw,100px);background:var(--pine-dk);color:var(--white);position:relative;overflow:hidden}
+.journey-section::before{content:'';position:absolute;top:-150px;right:-150px;width:500px;height:500px;border-radius:50%;background:rgba(184,150,62,.04)}
+.journey-section .sec-head h2{color:var(--white)}
+.journey-section .sec-head p{color:rgba(255,255,255,.6)}
+.journey{position:relative;margin-top:56px}
+
+/* Connector track */
+.journey-track{display:none}
+@media(min-width:900px){
+  .journey-track{display:block;position:absolute;top:52px;left:calc(12.5% + 28px);right:calc(12.5% + 28px);height:3px;background:rgba(255,255,255,.1);border-radius:2px;z-index:0}
+  .journey-progress{height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-h));border-radius:2px;transition:width 1.2s cubic-bezier(.4,0,.2,1)}
+  .journey-ball{position:absolute;top:50%;left:0;transform:translate(-50%,-50%);width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:0 0 16px rgba(184,150,62,.6),0 0 32px rgba(184,150,62,.3);transition:left 1.2s cubic-bezier(.4,0,.2,1);z-index:2}
+  .journey.active .journey-progress{width:100%}
+  .journey.active .journey-ball{left:100%}
+}
+
+.journey-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative;z-index:1}
+
+.j-step{opacity:0;transform:translateY(30px);transition:all .6s cubic-bezier(.4,0,.2,1)}
+.j-step.visible{opacity:1;transform:translateY(0)}
+.j-step[data-step="2"]{transition-delay:.15s}
+.j-step[data-step="3"]{transition-delay:.3s}
+.j-step[data-step="4"]{transition-delay:.45s}
+
+.j-icon-wrap{position:relative;width:56px;height:56px;margin:0 auto 20px;z-index:1}
+.j-pulse{position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--gold);opacity:0;animation:pulse-ring 2s ease-out infinite}
+.j-step[data-step="2"] .j-pulse{animation-delay:.4s}
+.j-step[data-step="3"] .j-pulse{animation-delay:.8s}
+.j-step[data-step="4"] .j-pulse{animation-delay:1.2s}
+.j-icon{width:56px;height:56px;border-radius:50%;background:var(--pine-lt);display:flex;align-items:center;justify-content:center;font-size:24px;position:relative;z-index:1;transition:all .4s;border:2px solid rgba(255,255,255,.1)}
+.j-step:hover .j-icon{transform:scale(1.12);background:var(--gold);border-color:var(--gold);box-shadow:0 0 24px rgba(184,150,62,.4)}
+.j-num{position:absolute;top:-4px;right:-4px;width:22px;height:22px;border-radius:50%;background:var(--gold);color:var(--pine-dk);font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+
+.j-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:28px 24px;text-align:center;transition:all .4s;backdrop-filter:blur(4px)}
+.j-step:hover .j-card{background:rgba(255,255,255,.1);border-color:rgba(184,150,62,.25);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.2)}
+.j-card h4{font-family:'DM Serif Display',serif;font-size:20px;color:var(--white);margin-bottom:8px}
+.j-card p{font-size:14px;color:rgba(255,255,255,.65);line-height:1.6;margin-bottom:14px}
+.j-tag{display:inline-block;background:rgba(184,150,62,.12);border:1px solid rgba(184,150,62,.2);color:var(--gold-h);font-size:12px;font-weight:600;padding:5px 14px;border-radius:20px}
+
+/* Mobile journey */
+@media(max-width:899px){
+  .journey-steps{grid-template-columns:1fr;gap:20px;max-width:480px;margin:0 auto}
+  .j-step{display:grid;grid-template-columns:56px 1fr;gap:16px;text-align:left}
+  .j-icon-wrap{margin:0}
+  .j-card{text-align:left}
+}
 /* Connecting line */
 .process-steps::before{content:'';position:absolute;top:44px;left:calc(16.6% + 10px);right:calc(16.6% + 10px);height:2px;background:repeating-linear-gradient(90deg,var(--border) 0,var(--border) 8px,transparent 8px,transparent 16px)}
 .ps{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:32px;transition:all .4s;position:relative;text-align:center}
@@ -966,29 +1014,50 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--
 </section>
 
 <!-- â•â•â•â•â•â•â•â•â•â•â• HOW IT WORKS â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="process">
-  <div class="sec-head anim"><h2>How It Works</h2><p>Three steps from first call to first tee.</p></div>
-  <div class="process-steps">
-    <div class="ps anim">
-      <div class="ps-icon">📋</div>
-      <div class="ps-num">1</div>
-      <h4>Tell Us What You Want</h4>
-      <p>Call or request a quote. Share your dates, group size, budget, and preferences. We recommend the ideal courses and lodging.</p>
-    </div>
-    <div class="ps anim" style="transition-delay:.1s">
-      <div class="ps-icon">🗓</div>
-      <div class="ps-num">2</div>
-      <h4>We Build Your Package</h4>
-      <p>Tee times, hotel blocks, dinner reservations, shuttle service — we book it all and send you one contract. Your group registers online.</p>
-    </div>
-    <div class="ps anim" style="transition-delay:.2s">
-      <div class="ps-icon">🏌</div>
-      <div class="ps-num">3</div>
-      <h4>Show Up and Play</h4>
-      <p>Everything's confirmed and coordinated. Your group arrives, plays world-class golf, and you take all the credit.</p>
+<section class="journey-section" id="simpleprocess">
+  <div class="sec-head anim" style="justify-content:center;text-align:center;flex-direction:column;align-items:center">
+    <h2>Your Trip, Our Playbook</h2>
+    <p>From first call to first tee — here’s how we make it happen.</p>
+  </div>
+
+  <div class="journey" id="journey">
+    <div class="journey-track"><div class="journey-progress" id="journeyProgress"></div><div class="journey-ball" id="journeyBall"></div></div>
+
+    <div class="journey-steps">
+      <div class="j-step" data-step="1">
+        <div class="j-icon-wrap"><div class="j-pulse"></div><div class="j-icon">📞</div><div class="j-num">1</div></div>
+        <div class="j-card">
+          <h4>You Call, We Listen</h4>
+          <p>Share your dates, group size, budget & wish list. Want Edgewood at sunset? A casino dinner for 40? We’ve heard it all.</p>
+          <div class="j-tag">⏱ Takes 10 minutes</div>
+        </div>
+      </div>
+      <div class="j-step" data-step="2">
+        <div class="j-icon-wrap"><div class="j-pulse"></div><div class="j-icon">🗺️</div><div class="j-num">2</div></div>
+        <div class="j-card">
+          <h4>We Design Your Trip</h4>
+          <p>Courses matched to your skill mix, hotels that fit the vibe, dinner spots, shuttles — one package, one contract, one deposit.</p>
+          <div class="j-tag">📋 Custom quote in 24 hrs</div>
+        </div>
+      </div>
+      <div class="j-step" data-step="3">
+        <div class="j-icon-wrap"><div class="j-pulse"></div><div class="j-icon">📱</div><div class="j-num">3</div></div>
+        <div class="j-card">
+          <h4>Your Group Registers</h4>
+          <p>Everyone gets a link to our TripsCaddie portal — they pick their options, pay their share, done. Zero chasing.</p>
+          <div class="j-tag">💸 No more Venmo chaos</div>
+        </div>
+      </div>
+      <div class="j-step" data-step="4">
+        <div class="j-icon-wrap"><div class="j-pulse"></div><div class="j-icon">⛳</div><div class="j-num">4</div></div>
+        <div class="j-card">
+          <h4>Show Up & Play</h4>
+          <p>Tee times confirmed, rooms ready, dinners booked. Your only job? Enjoy the round and take all the credit.</p>
+          <div class="j-tag">🏌️ You’re the hero</div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="slider-dots" data-for="process-steps"><span class="active"></span><span></span><span></span></div>
 </section>
 
 <!-- â•â•â•â•â•â•â•â•â•â•â• TESTIMONIALS â•â•â•â•â•â•â•â•â•â•â• -->
@@ -1108,6 +1177,23 @@ const obs=new IntersectionObserver(entries=>{
 },{threshold:.1});
 document.querySelectorAll('.anim,.anim-left,.anim-right,.anim-scale,.trust').forEach(el=>obs.observe(el));
 
+// ─── Journey timeline animation ───
+const journeyEl=document.getElementById('journey');
+if(journeyEl){
+  const jObs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        journeyEl.classList.add('active');
+        document.querySelectorAll('.j-step').forEach((step,i)=>{
+          setTimeout(()=>step.classList.add('visible'),i*200);
+        });
+        jObs.unobserve(e.target);
+      }
+    });
+  },{threshold:.2});
+  jObs.observe(journeyEl);
+}
+
 // ─── Count-up animation ───
 function countUpEl(el){
   if(el.dataset.counted) return;
@@ -1145,7 +1231,7 @@ document.querySelectorAll('.faq-q').forEach(btn=>{
   const sliderPairs=[
     {track:'.exp-grid',dots:'[data-for="exp-grid"]'},
     {track:'.region-cards',dots:'[data-for="region-cards"]'},
-    {track:'.process-steps',dots:'[data-for="process-steps"]'},
+    {track:'.journey-steps',dots:'[data-for="journey-steps"]'},
     {track:'.tg',dots:'[data-for="tg"]'},
     {track:'.trust',dots:'[data-for="trust"]'},
   ];
