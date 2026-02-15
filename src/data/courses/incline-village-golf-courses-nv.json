@@ -15,14 +15,14 @@
   },
   "phone": "+1-888-584-8232",
   "website": "https://golfthehighsierra.com/portfolio/incline-village-golf-courses-nv/",
-  "priceRange": "$189\u2013$449",
+  "priceRange": "$189–$449",
   "rating": {
     "value": 4.7,
     "count": 412
   },
   "description": "Incline Village Golf Courses, featuring the Championship Course and the Mountain Course, offer a uniquely stunning golf experience with breathtaking views of Lake Tahoe and the surrounding Sierra Nevada mountains. The Championship Course provides a classic, challenging layout with pristine conditions, while the Mountain Course delivers a fun and scenic test with dramatic elevation changes and tight, tree-lined fairways. With world-class practice facilities, a welcoming atmosphere, and the perfect blend of challenge and beauty, Incline Village Golf Courses are a must-play for golfers seeking an unforgettable alpine golf adventure..",
   "holes": 18,
-  "par": null,
+  "par": 72,
   "designer": "",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/champ14th-promo-669x472-1.jpg",
   "images": [
@@ -37,16 +37,16 @@
   "videoUrl": "https://www.youtube.com/watch?v=TIbq6lJ2XnQ",
   "faqs": [
     {
-      "question": "What\u2019s included in Incline Village golf group packages?",
+      "question": "What’s included in Incline Village golf group packages?",
       "answer": "Lodging, tee times at Championship and Mountain courses, carts, and concierge planning. Add-ons include dining and transportation."
     },
     {
       "question": "How much do Incline Village golf packages cost?",
-      "answer": "Packages typically range $189\u2013$449 depending on season, lodging, and group size."
+      "answer": "Packages typically range $189–$449 depending on season, lodging, and group size."
     },
     {
       "question": "Do you handle corporate or tournament groups?",
-      "answer": "Yes\u2014group tee sheets, lodging blocks, banquets, and tournament setup are available for corporate and leisure groups."
+      "answer": "Yes—group tee sheets, lodging blocks, banquets, and tournament setup are available for corporate and leisure groups."
     }
   ],
   "meta": {
@@ -57,63 +57,55 @@
     "World-Class Championship Course\nHost of the annual\nAmerican Century Championship\non the shores of Lake Tahoe.",
     "Book Incline Village golf courses in Lake Tahoe with stay and play packages, tee times, and expert group planning for buddies, tournaments, and corporate trips.",
     "Incline Village Golf Courses, featuring the Championship Course and the Mountain Course, offer a uniquely stunning golf experience with breathtaking views of Lake Tahoe and the surrounding Sierra Nevada mountains. The Championship Course provides a classic, challenging layout with pristine conditions, while the Mountain Course delivers a fun and scenic test with dramatic elevation changes and tight, tree-lined fairways. With world-class practice facilities, a welcoming atmosphere, and the perfect blend of challenge and beauty, Incline Village Golf Courses are a must-play for golfers seeking an unforgettable alpine golf adventure..",
-    "Incline Village Golf Courses \u2013 Incline Village, NV\nLocation:\nFairway Boulevard, Incline Village, NV\nDistance from Key Locations:\n5 Minutes \u2013 Incline Village, NV\n40 Minutes \u2013 Downtown Reno\n45 Minutes \u2013 Peppermill & Atlantis Casino Resorts (Reno)\n50 Minutes \u2013 Carson City, NV\n60 Minutes \u2013 Truckee, CA\n75 Minutes \u2013 Stateline, NV (Lake Tahoe Casinos)\n85 Minutes \u2013 Graeagle, CA\n90 Minutes \u2013 Minden, NV",
+    "Incline Village Golf Courses – Incline Village, NV\nLocation:\nFairway Boulevard, Incline Village, NV\nDistance from Key Locations:\n5 Minutes – Incline Village, NV\n40 Minutes – Downtown Reno\n45 Minutes – Peppermill & Atlantis Casino Resorts (Reno)\n50 Minutes – Carson City, NV\n60 Minutes – Truckee, CA\n75 Minutes – Stateline, NV (Lake Tahoe Casinos)\n85 Minutes – Graeagle, CA\n90 Minutes – Minden, NV",
     "Incline Village offers two distinct layouts: the\nChampionship Course\n, a full-length par-72 with Lake Tahoe views, and the\nMountain Course\n, a scenic par-58 executive track with dramatic elevation changes.",
     "Guests enjoy a driving range, short game area, golf shop, clubhouse dining, PGA professional instruction, club rentals, on-course refreshments, and event hosting.",
     "The courses are about 40 minutes from Downtown Reno, 60 minutes from Truckee, and 75 minutes from the Stateline, NV casinos at Lake Tahoe.",
-    "Yes. Golf the High Sierra offers packages including lodging, tee times, and group rates. We also secure advance tee times on the Championship Course, even during high-demand local booking windows.\nRequest your package here \u00bb",
-    "Yes. Groups of 8+ receive savings of up to 20%. Our concierge arranges tee times, accommodations, and dining for buddy trips, reunions, or corporate outings.\nStart your group booking \u00bb"
+    "Yes. Golf the High Sierra offers packages including lodging, tee times, and group rates. We also secure advance tee times on the Championship Course, even during high-demand local booking windows.\nRequest your package here »",
+    "Yes. Groups of 8+ receive savings of up to 20%. Our concierge arranges tee times, accommodations, and dining for buddy trips, reunions, or corporate outings.\nStart your group booking »"
   ],
   "distances": [
-    "5 Minutes \u2013 Incline Village, NV",
-    "40 Minutes \u2013 Downtown Reno",
-    "45 Minutes \u2013 Peppermill & Atlantis Casino Resorts (Reno)",
-    "50 Minutes \u2013 Carson City, NV",
-    "60 Minutes \u2013 Truckee, CA",
-    "75 Minutes \u2013 Stateline, NV (Lake Tahoe Casinos)",
-    "85 Minutes \u2013 Graeagle, CA",
-    "90 Minutes \u2013 Minden, NV"
+    "5 Minutes – Incline Village, NV",
+    "40 Minutes – Downtown Reno",
+    "45 Minutes – Peppermill & Atlantis Casino Resorts (Reno)",
+    "50 Minutes – Carson City, NV",
+    "60 Minutes – Truckee, CA",
+    "75 Minutes – Stateline, NV (Lake Tahoe Casinos)",
+    "85 Minutes – Graeagle, CA",
+    "90 Minutes – Minden, NV"
   ],
   "facilities": [
-    "Driving Range \u2013 Spacious practice area with multiple targets.",
-    "Short Game Practice Area \u2013 Includes chipping and putting greens for refining touch.",
-    "Golf Shop \u2013 Offers premium golf apparel, equipment, and accessories.",
-    "Clubhouse & Dining \u2013 Features a full-service restaurant with beautiful mountain views.",
-    "PGA Professional Instruction \u2013 Private lessons, group clinics, and junior programs available.",
-    "Golf Club Rentals \u2013 High-quality equipment for those traveling without clubs.",
-    "On-Course Refreshments \u2013 Beverage carts and snack bars for convenience.",
-    "Tournament & Event Hosting \u2013 Ideal for corporate outings, charity events, and private groups.."
+    "Driving Range – Spacious practice area with multiple targets.",
+    "Short Game Practice Area – Includes chipping and putting greens for refining touch.",
+    "Golf Shop – Offers premium golf apparel, equipment, and accessories.",
+    "Clubhouse & Dining – Features a full-service restaurant with beautiful mountain views.",
+    "PGA Professional Instruction – Private lessons, group clinics, and junior programs available.",
+    "Golf Club Rentals – High-quality equipment for those traveling without clubs.",
+    "On-Course Refreshments – Beverage carts and snack bars for convenience.",
+    "Tournament & Event Hosting – Ideal for corporate outings, charity events, and private groups.."
   ],
   "tips": [
     {
       "title": "The Hack!",
-      "content": "The Mountain Course is a great track on a first day of a multi-day golf trip.\u00a0 It\u2019s easier to get a tee time there as well, as the locals have a priority booking window that can limit availability on the Championship Course.\u00a0 If you work with us, we can book well in advance, even before the locals gobble up all the times!"
+      "content": "The Mountain Course is a great track on a first day of a multi-day golf trip.  It’s easier to get a tee time there as well, as the locals have a priority booking window that can limit availability on the Championship Course.  If you work with us, we can book well in advance, even before the locals gobble up all the times!"
     },
     {
       "title": "Can I book a stay-and-play package at Incline Village?",
-      "content": "Yes. Golf the High Sierra offers packages including lodging, tee times, and group rates. We also secure advance tee times on the Championship Course, even during high-demand local booking windows.\nRequest your package here \u00bb"
+      "content": "Yes. Golf the High Sierra offers packages including lodging, tee times, and group rates. We also secure advance tee times on the Championship Course, even during high-demand local booking windows.\nRequest your package here »"
     },
     {
       "title": "Are group golf trips available at Incline Village?",
-      "content": "Yes. Groups of 8+ receive savings of up to 20%. Our concierge arranges tee times, accommodations, and dining for buddy trips, reunions, or corporate outings.\nStart your group booking \u00bb"
-    },
-    {
-      "title": "Golf The High Sierra",
-      "content": "Book your next group golf trip with us!"
-    },
-    {
-      "title": "About Golf the High Sierra",
-      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
+      "content": "Yes. Groups of 8+ receive savings of up to 20%. Our concierge arranges tee times, accommodations, and dining for buddy trips, reunions, or corporate outings.\nStart your group booking »"
     }
   ],
-  "pointOfView": "Incline Village Golf Courses provide a rare opportunity to experience the essence of Tahoe golf\u2014where every shot feels like a deep breath of mountain air, and the game becomes less about score and more about embracing nature's perfect balance of tranquility and challenge.",
+  "pointOfView": "Incline Village Golf Courses provide a rare opportunity to experience the essence of Tahoe golf—where every shot feels like a deep breath of mountain air, and the game becomes less about score and more about embracing nature's perfect balance of tranquility and challenge.",
   "hack": "",
   "contentParagraphs": [
     "Host of the annual American Century Championship on the shores of Lake Tahoe.",
     "Book Incline Village golf courses in Lake Tahoe with stay and play packages, tee times, and expert group planning for buddies, tournaments, and corporate trips.",
-    "The 6th hole on the Championship Course can play drastically different depending on the wind off the lake, with the conditions often shifting in unexpected ways just as you\u2019re about to tee off.",
+    "The 6th hole on the Championship Course can play drastically different depending on the wind off the lake, with the conditions often shifting in unexpected ways just as you’re about to tee off.",
     "Following your round, absolutely do not miss a visit to Lake Tahoe AleWorX in the Village, where you can enjoy a craft beer and a delicious meal while soaking in the laid-back vibe and stunning lake views.",
-    "The Mountain Course is a great track on a first day of a multi-day golf trip. It\u2019s easier to get a tee time there as well, as the locals have a priority booking window that can limit availability on the Championship Course. If you work with us, we can book well in advance, even before the locals gobble up all the times!"
+    "The Mountain Course is a great track on a first day of a multi-day golf trip. It’s easier to get a tee time there as well, as the locals have a priority booking window that can limit availability on the Championship Course. If you work with us, we can book well in advance, even before the locals gobble up all the times!"
   ],
   "featuredHole": {},
   "teeTimeInfo": "",

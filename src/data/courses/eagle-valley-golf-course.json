@@ -12,14 +12,14 @@
   "geo": {},
   "phone": "+1-888-584-8232",
   "website": "https://golfthehighsierra.com/portfolio/eagle-valley-golf-course/",
-  "priceRange": "$199\u2013$499",
+  "priceRange": "$199–$499",
   "rating": {
     "value": 4.8,
     "count": 347
   },
-  "description": "Eagle Valley Golf Course, located in the foothills of spacious Carson City, NV, just minutes from scenic Lake Tahoe, Virginia City, Reno and the beautiful Carson Valley! Here at Eagle Valley, we offer two of the region\u2019s top 18-hole course for players to pick from. Our Eagle Valley East course features a user-friendly layout, great for both walking and riding. Meanwhile, our Eagle Valley West is a desert links-style course that challenges the best of golfers. Regardless of what course you play, you will find that Eagle Valley Golf provides a high quality golfing experience!",
+  "description": "Eagle Valley Golf Course, located in the foothills of spacious Carson City, NV, just minutes from scenic Lake Tahoe, Virginia City, Reno and the beautiful Carson Valley! Here at Eagle Valley, we offer two of the region’s top 18-hole course for players to pick from. Our Eagle Valley East course features a user-friendly layout, great for both walking and riding. Meanwhile, our Eagle Valley West is a desert links-style course that challenges the best of golfers. Regardless of what course you play, you will find that Eagle Valley Golf provides a high quality golfing experience!",
   "holes": 18,
-  "par": null,
+  "par": 72,
   "designer": "",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/08/EagleValleyWest2.jpg",
   "images": [
@@ -28,16 +28,16 @@
   "videoUrl": "",
   "faqs": [
     {
-      "question": "What\u2019s included in Eagle Valley golf group packages?",
+      "question": "What’s included in Eagle Valley golf group packages?",
       "answer": "Lodging, guaranteed tee times at Eagle Valley (East/West), carts, and concierge planning. Add transportation, dining, and multi-course options."
     },
     {
       "question": "How much do Eagle Valley group packages cost?",
-      "answer": "Typical range is $199\u2013$499 per golfer depending on season, lodging, and group size."
+      "answer": "Typical range is $199–$499 per golfer depending on season, lodging, and group size."
     },
     {
       "question": "Do you organize corporate or tournament groups?",
-      "answer": "Yes\u2014room blocks, tee-time blocks, tournament setup, and transportation for corporate and leisure groups."
+      "answer": "Yes—room blocks, tee-time blocks, tournament setup, and transportation for corporate and leisure groups."
     }
   ],
   "meta": {
@@ -46,31 +46,28 @@
   },
   "bodyText": [
     "Book Eagle Valley in Carson City with golf groups, tee times, and stay & play packages. Expert planning for buddies, corporate, and tournaments.",
-    "Eagle Valley Golf Course, located in the foothills of spacious Carson City, NV, just minutes from scenic Lake Tahoe, Virginia City, Reno and the beautiful Carson Valley! Here at Eagle Valley, we offer two of the region\u2019s top 18-hole course for players to pick from. Our\nEagle Valley East\ncourse features a user-friendly layout, great for both walking and riding. Meanwhile, our\nEagle Valley West\nis a desert links-style course that challenges the best of golfers.\nRegardless of what course you play, you will find that Eagle Valley Golf provides a high quality golfing experience!",
+    "Eagle Valley Golf Course, located in the foothills of spacious Carson City, NV, just minutes from scenic Lake Tahoe, Virginia City, Reno and the beautiful Carson Valley! Here at Eagle Valley, we offer two of the region’s top 18-hole course for players to pick from. Our\nEagle Valley East\ncourse features a user-friendly layout, great for both walking and riding. Meanwhile, our\nEagle Valley West\nis a desert links-style course that challenges the best of golfers.\nRegardless of what course you play, you will find that Eagle Valley Golf provides a high quality golfing experience!",
     "{\n\"@context\": \"http://schema.org\",\n\"@type\"   : \"ImageGallery\",\n\"id\"      : \"https://golfthehighsierra.com/portfolio/eagle-valley-golf-course/\",\n\"url\"     : \"https://golfthehighsierra.com/portfolio/eagle-valley-golf-course/\"\n}",
     "Carson City, NV\n3999 Centennial Park Dr\nCarson City, NV 89706\n11 Minutes from Carson City, NV\n27 Minutes from Minden, NV\n34 Minutes from Peppermill and Atlantis\n38 Minutes from Stateline, NV\n40 Minutes from Downtown Reno\n66 Minutes from Truckee, CA\n91 Minutes from Graeagle, CA"
   ],
   "tips": [
     {
       "title": "A high quality golfing experience!",
-      "content": "Eagle Valley Golf Course, located in the foothills of spacious Carson City, NV, just minutes from scenic Lake Tahoe, Virginia City, Reno and the beautiful Carson Valley! Here at Eagle Valley, we offer two of the region\u2019s top 18-hole course for players to pick from. Our\nEagle Valley East\ncourse features a user-friendly layout, great for both walking and riding. Meanwhile, our\nEagle Valley West\nis a desert links-style course that challenges the best of golfers.\nRegardless of what course you play, you will find that Eagle Valley Golf provides a high quality golfing experience!\nSee More"
-    },
-    {
-      "title": "Golf The High Sierra",
-      "content": "Book your next group golf trip with us!"
-    },
-    {
-      "title": "About Golf the High Sierra",
-      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n#jtg-7929 .modula-item .jtg-social a, .lightbox-socials.jtg-social a{ fill: #ffffff; color: #ffffff }#jtg-7929 .modula-item .jtg-social-expandable a, #jtg-7929 .modula-item .jtg-social-expandable-icons a{ fill: #ffffff; color: #ffffff }#jtg-7929 .modula-item .jtg-social svg, .lightbox-socials.jtg-social svg { height: 16px; width: 16px }#jtg-7929 .modula-item .jtg-social-expandable svg { height: 16px; width: 16px }#jtg-7929 .modula-item .jtg-social-expandable-icons svg { height: 16px; width: 16px }#jtg-7929 .modula-item .jtg-social a:not(:last-child), .lightbox-socials.jtg-social a:not(:last-child) { margin-right: 10px }#jtg-7929 .modula-item .jtg-social-expandable-icons { gap: 10px }#jtg-7929 .modula-item .figc {color:#ffffff;}#jtg-7929 .modula-item .modula-item-content { transform: scale(1); }#jtg-7929 { width:100%;}#jtg-7929 .modula-items{height:800px;}@media screen and (max-width: 992px) {#jtg-7929 .modula-items{height:800px;}}@media screen and (max-width: 768px) {#jtg-7929 .modula-items{height:800px;}}#jtg-7929 .modula-items .figc p.description,#jtg-7929 .modula-items .figc .jtg-description { font-size:14px; }#jtg-7929 .modula-items .figc p.description,#jtg-7929 .modula-items .figc .jtg-description { color:#ffffff;}#jtg-7929.modula-gallery .modula-item > a, #jtg-7929.modula-gallery .modula-item a.modula-item-link, #jtg-7929.modula-gallery .modula-item-content > a:not(.modula-no-follow) { cursor:zoom-in; } #jtg-7929.modula-gallery .modula-item-content .modula-no-follow { cursor: default; } @media screen and (max-width:480px){#jtg-7929 .modula-item .figc .jtg-title {  font-size: 12px; }#jtg-7929 .modula-items .figc p.description,#jtg-7929 .modula-items .figc .jtg-description { color:#ffffff;font-size:10px; }}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
+      "content": "Eagle Valley Golf Course, located in the foothills of spacious Carson City, NV, just minutes from scenic Lake Tahoe, Virginia City, Reno and the beautiful Carson Valley! Here at Eagle Valley, we offer two of the region’s top 18-hole course for players to pick from. Our\nEagle Valley East\ncourse features a user-friendly layout, great for both walking and riding. Meanwhile, our\nEagle Valley West\nis a desert links-style course that challenges the best of golfers.\nRegardless of what course you play, you will find that Eagle Valley Golf provides a high quality golfing experience!\nSee More"
     }
   ],
-  "facilities": [
-    "Trips Caddie",
-    "All Lake Tahoe Resort"
-  ],
+  "facilities": [],
   "pointOfView": "Great on the budget, and located a short 30 minutes from Reno, this facility has plenty to offer in two very distinct courses. This facility is one of the few in the area with 36 holes on the same property, and for this reason is a great choice to get in two rounds on the same day. We suggest starting with the East Course with its more traditional layout and fewer challenges. The West Course flashes a lot of personality with several holes up in the foothills, dog legs, canyons to carry and can be a good challenge for most golfers. Wedge this course into the middle of 3 or 4 days of golf and the price will help get your budget where you need it to be.",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "11 Minutes from Carson City, NV",
+    "27 Minutes from Minden, NV",
+    "34 Minutes from Peppermill and Atlantis",
+    "38 Minutes from Stateline, NV",
+    "40 Minutes from Downtown Reno",
+    "66 Minutes from Truckee, CA",
+    "91 Minutes from Graeagle, CA"
+  ],
   "contentParagraphs": [
     "Book Eagle Valley in Carson City with golf groups, tee times, and stay & play packages. Expert planning for buddies, corporate, and tournaments."
   ],
