@@ -1,0 +1,52 @@
+{
+  "slug": "northstar-golf-course",
+  "name": "Northstar Golf Course",
+  "region": "truckee",
+  "regionLabel": "Truckee, CA",
+  "address": {
+    "streetAddress": "168 Basque Dr",
+    "addressLocality": "Truckee",
+    "addressRegion": "CA",
+    "postalCode": "96161"
+  },
+  "geo": {
+    "latitude": 39.2933,
+    "longitude": -120.1342
+  },
+  "phone": "+1-888-584-8232",
+  "website": "https://golfthehighsierra.com/portfolio/northstar-golf-course/",
+  "priceRange": "$299\u2013$499",
+  "rating": {
+    "value": 4.5,
+    "count": 173
+  },
+  "description": "Scenic Truckee golf course nestled in the Sierras, known for its challenging layout and group-friendly atmosphere.",
+  "holes": 18,
+  "par": null,
+  "designer": "",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2023/02/4th-hole.jpg",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2023/02/Northstar-ball-300x198.png",
+    "https://golfthehighsierra.com/wp-content/uploads/2023/02/0-300x189.jpeg",
+    "https://golfthehighsierra.com/wp-content/uploads/2023/02/nstarscorecardfinal-scaled.jpg"
+  ],
+  "videoUrl": "",
+  "faqs": [
+    {
+      "question": "What\u2019s included in Northstar golf group packages?",
+      "answer": "Lodging, tee times, carts, and concierge planning. Transportation, dining, and add-ons available for groups."
+    },
+    {
+      "question": "How much do Northstar packages cost?",
+      "answer": "Typical packages range $299\u2013$499 per golfer depending on season, lodging, and group size."
+    },
+    {
+      "question": "Do you handle tournaments and corporate groups?",
+      "answer": "Yes\u2014tee sheets, room blocks, banquets, and full concierge planning for groups of all sizes."
+    }
+  ],
+  "meta": {
+    "title": "Northstar Golf Course | Truckee Golf Groups &amp; Stay and Play",
+    "description": "Play Northstar in Truckee with golf groups, tee times, and stay and play packages. Expert planning for buddies, corporate, and leisure trips."
+  }
+}

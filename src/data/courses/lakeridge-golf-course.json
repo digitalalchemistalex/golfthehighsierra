@@ -1,0 +1,51 @@
+{
+  "slug": "lakeridge-golf-course",
+  "name": "Lakeridge Golf Course",
+  "region": "reno",
+  "regionLabel": "Reno, NV",
+  "address": {
+    "streetAddress": "1218 Golf Club Dr",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89519"
+  },
+  "geo": {},
+  "phone": "+1-888-584-8232",
+  "website": "https://golfthehighsierra.com/portfolio/lakeridge-golf-course/",
+  "priceRange": "$219\u2013$429",
+  "rating": {
+    "value": 4.8,
+    "count": 642
+  },
+  "description": "Championship layout in Reno featuring the iconic par-3 island hole over Lake Stanley. Popular for golf groups, tournaments, and corporate outings.",
+  "holes": 18,
+  "par": null,
+  "designer": "",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/LakeRidgeGolfCourse.jpg",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_LakeRidge.png",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Lakeridge-Foto-1.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/LakeRidgeGolfCourse.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/LakeridgeGolf3.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Lakeridge-Scorecard.jpg"
+  ],
+  "videoUrl": "",
+  "faqs": [
+    {
+      "question": "What\u2019s included in Lakeridge golf group packages?",
+      "answer": "Lodging, guaranteed tee times at Lakeridge, carts, and concierge planning. Add transportation, dining, and multi-course options for groups."
+    },
+    {
+      "question": "How much do Lakeridge group packages cost?",
+      "answer": "Typical range is $219\u2013$429 per golfer depending on dates, lodging, and group size."
+    },
+    {
+      "question": "Do you handle corporate or large group outings?",
+      "answer": "Yes\u2014room blocks, tournaments, multi-course itineraries, and transportation for corporate and leisure golf groups."
+    }
+  ],
+  "meta": {
+    "title": "Lakeridge Golf Course | Reno Golf Groups &amp; Stay and Play",
+    "description": "Play Lakeridge in Reno with golf groups, tee times, and stay and play packages. Expert planning for buddies, corporate, and leisure trips."
+  }
+}

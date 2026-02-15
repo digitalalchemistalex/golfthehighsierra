@@ -1,0 +1,49 @@
+{
+  "slug": "arrowcreek-golf-club",
+  "name": "ArrowCreek Country Club",
+  "region": "reno",
+  "regionLabel": "Reno, NV",
+  "address": {
+    "streetAddress": "1218 Golf Club Dr",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89519"
+  },
+  "geo": {},
+  "phone": "+1-888-584-8232",
+  "website": "https://golfthehighsierra.com/portfolio/lakeridge-golf-course/",
+  "priceRange": "$219\u2013$429",
+  "rating": {
+    "value": 4.8,
+    "count": 512
+  },
+  "description": "Custom ArrowCreek golf packages in Reno with lodging, tee times, and concierge planning. Play The Legends and The Challenge. Trusted 20+ yrs.",
+  "holes": 18,
+  "par": null,
+  "designer": "",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2024/04/ACCC-11th-Challenge-1086-x-876.jpg",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2024/04/ACCC-11th-Challenge-1086-x-876-1024x826.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2024/04/ACCC-3rd-Challenge-1040-x-845-1024x832.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2024/04/the-club-at-arrowcreek-1-1024x576.jpg"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=UzK5Zs5fmoo",
+  "faqs": [
+    {
+      "question": "What\u2019s included in Lakeridge golf group packages?",
+      "answer": "Lodging, guaranteed tee times at Lakeridge, carts, and concierge planning. Add transportation, dining, and multi-course options for groups."
+    },
+    {
+      "question": "How much do Lakeridge group packages cost?",
+      "answer": "Typical range is $219\u2013$429 per golfer depending on dates, lodging, and group size."
+    },
+    {
+      "question": "Do you handle corporate or large group outings?",
+      "answer": "Yes\u2014room blocks, tournaments, multi-course itineraries, and transportation for corporate and leisure golf groups."
+    }
+  ],
+  "meta": {
+    "title": "ArrowCreek Country Club Reno NV | Stay and Play Packages",
+    "description": "Private ArrowCreek golf in Reno, NV with stay and play packages. Lodging, tee times, and concierge quotes for groups, executives, and tournaments."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "red-hawk-golf-resort",
+  "name": "Red Hawk Golf Resort",
+  "region": "reno",
+  "regionLabel": "Reno, NV",
+  "address": {
+    "streetAddress": "6600 N Wingfield Pkwy",
+    "addressLocality": "Sparks",
+    "addressRegion": "NV",
+    "postalCode": "89436"
+  },
+  "geo": {
+    "latitude": 39.621,
+    "longitude": -119.6756
+  },
+  "phone": "+1-888-584-8232",
+  "website": "https://golfthehighsierra.com/portfolio/red-hawk-golf-resort/",
+  "priceRange": "$219\u2013$429",
+  "rating": {
+    "value": 4.8,
+    "count": 876
+  },
+  "description": "Sparks, NV resort with two championship layouts\u2014The Lakes and The Hills\u2014popular for golf groups, tournaments, and corporate outings.",
+  "holes": 18,
+  "par": null,
+  "designer": "",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Red-Hawk-lakes-Foto-2.jpg",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_RedHawk.png",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Red-Hawk-lakes-Foto-1.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Red-Hawk-lakes-Foto-2.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Red-Hawk-Hills-Foto-1.png",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Lakes-Course-Scorecard.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Hills-Course-Scorecard.jpg"
+  ],
+  "videoUrl": "",
+  "faqs": [
+    {
+      "question": "What\u2019s included in Red Hawk golf group packages?",
+      "answer": "Lodging, guaranteed tee times, carts, and concierge planning. Optional transportation, dining, and multi-course itineraries are available."
+    },
+    {
+      "question": "How much do Red Hawk group packages cost?",
+      "answer": "Typical range is $219\u2013$429 per golfer depending on lodging, season, and group size."
+    },
+    {
+      "question": "Do you handle corporate or tournament groups?",
+      "answer": "Yes\u2014room blocks, tee-time blocks, tournament setup, and transportation for corporate and leisure groups."
+    }
+  ],
+  "meta": {
+    "title": "Red Hawk Golf | Reno Golf Groups &amp; Stay and Play",
+    "description": "Book Red Hawk stay and play packages in Reno NV. Play Lakes &amp; Hills with lodging, tee times, and expert group trip planning trusted for 20+ years."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "coyote-moon-golf-course",
+  "name": "Coyote Moon Golf Course",
+  "region": "truckee",
+  "regionLabel": "Truckee, CA",
+  "address": {
+    "streetAddress": "",
+    "addressLocality": "Truckee",
+    "addressRegion": "CA",
+    "postalCode": "96161"
+  },
+  "geo": {},
+  "phone": "+1-888-584-8232",
+  "website": "https://golfthehighsierra.com/portfolio/coyote-moon-golf-course/",
+  "priceRange": "$199\u2013$499",
+  "rating": {
+    "value": 4.8,
+    "count": 347
+  },
+  "description": "Premier Truckee mountain layout through towering pines\u2014popular for golf groups, outings, and corporate events.",
+  "holes": 18,
+  "par": null,
+  "designer": "",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/coyote-moon2s.jpg",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_CoyoteMoon.png",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Coyote_moon.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/coyote-moon2s.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Coyote-Moon-No.-12.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Coyote-Moon-Scorecard.jpg"
+  ],
+  "videoUrl": "",
+  "faqs": [
+    {
+      "question": "What\u2019s included in Coyote Moon golf group packages?",
+      "answer": "Lodging, guaranteed tee times at Coyote Moon, carts, and concierge planning. Optional transportation, dining, and multi-course itineraries."
+    },
+    {
+      "question": "How much do Coyote Moon packages cost?",
+      "answer": "Typical range is $199\u2013$499 per golfer depending on season, lodging selection, and group size."
+    },
+    {
+      "question": "Do you handle corporate or tournament groups?",
+      "answer": "Yes\u2014room blocks, tee-time blocks, tournament setup, and logistics for corporate and leisure groups."
+    }
+  ],
+  "meta": {
+    "title": "Coyote Moon Golf Course | Truckee Golf Groups &amp; Stay and Play",
+    "description": "Plan Coyote Moon in Truckee with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips. Rated 4.8/5 (347)."
+  }
+}

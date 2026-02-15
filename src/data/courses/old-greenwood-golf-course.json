@@ -1,0 +1,54 @@
+{
+  "slug": "old-greenwood-golf-course",
+  "name": "Old Greenwood Golf Course",
+  "region": "truckee",
+  "regionLabel": "Truckee, CA",
+  "address": {
+    "streetAddress": "12915 Fairway Dr",
+    "addressLocality": "Truckee",
+    "addressRegion": "CA",
+    "postalCode": "96161"
+  },
+  "geo": {
+    "latitude": 39.345,
+    "longitude": -120.158
+  },
+  "phone": "+1-888-584-8232",
+  "website": "https://golfthehighsierra.com/portfolio/old-greenwood-golf-course/",
+  "priceRange": "$179\u2013$399",
+  "rating": {
+    "value": 4.8,
+    "count": 198
+  },
+  "description": "Truckee, CA course designed by Jack Nicklaus, known for pristine fairways and a top choice for golf groups and corporate outings.",
+  "holes": 18,
+  "par": null,
+  "designer": "",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Old-Greenwood-Foto-3.jpg",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_OldGreenwood.png",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Old-Greenwood-Foto-4.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Old-Greenwood-Foto-2.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Old-Greenwood-Foto-3.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/OldGreenwood_Scorecard.jpg"
+  ],
+  "videoUrl": "",
+  "faqs": [
+    {
+      "question": "What\u2019s included in Old Greenwood golf group packages?",
+      "answer": "Lodging, guaranteed tee times, carts, and concierge planning. Optional transportation, dining, and multi-course itineraries."
+    },
+    {
+      "question": "What do Old Greenwood group packages cost?",
+      "answer": "Pricing varies by season, lodging, and group size. Typical ranges are $179\u2013$399 per golfer."
+    },
+    {
+      "question": "Do you handle corporate or tournament groups?",
+      "answer": "Yes\u2014room blocks, tee-time blocks, tournament setup, and transportation for corporate and leisure groups."
+    }
+  ],
+  "meta": {
+    "title": "Old Greenwood Golf | Truckee Golf Groups &amp; Stay and Play",
+    "description": "Play Old Greenwood in Truckee with golf groups, tee times, and stay and play packages. Expert planning for buddies, corporate, and leisure trips."
+  }
+}

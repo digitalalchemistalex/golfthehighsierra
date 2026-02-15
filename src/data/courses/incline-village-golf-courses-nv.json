@@ -1,0 +1,56 @@
+{
+  "slug": "incline-village-golf-courses-nv",
+  "name": "Incline Village Golf Courses",
+  "region": "tahoe",
+  "regionLabel": "Lake Tahoe",
+  "address": {
+    "streetAddress": "955 Fairway Blvd",
+    "addressLocality": "Incline Village",
+    "addressRegion": "NV",
+    "postalCode": "89451"
+  },
+  "geo": {
+    "latitude": 39.2512,
+    "longitude": -119.952
+  },
+  "phone": "+1-888-584-8232",
+  "website": "https://golfthehighsierra.com/portfolio/incline-village-golf-courses-nv/",
+  "priceRange": "$189\u2013$449",
+  "rating": {
+    "value": 4.7,
+    "count": 412
+  },
+  "description": "Lake Tahoe golf destination featuring Championship and Mountain courses. Popular with golf groups, outings, and corporate events.",
+  "holes": 18,
+  "par": null,
+  "designer": "",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/champ14th-promo-669x472-1.jpg",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/images.png",
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/champ14th-promo-669x472-1.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/InclineVillageChampionshipCourse_18thHoleView_350px.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/Golf_champ_hole7_dow_header_1996x892.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/champ14th-promo-669x472-2.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/champ-promo-669x472-1.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/scorecard-600x400.jpg"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=TIbq6lJ2XnQ",
+  "faqs": [
+    {
+      "question": "What\u2019s included in Incline Village golf group packages?",
+      "answer": "Lodging, tee times at Championship and Mountain courses, carts, and concierge planning. Add-ons include dining and transportation."
+    },
+    {
+      "question": "How much do Incline Village golf packages cost?",
+      "answer": "Packages typically range $189\u2013$449 depending on season, lodging, and group size."
+    },
+    {
+      "question": "Do you handle corporate or tournament groups?",
+      "answer": "Yes\u2014group tee sheets, lodging blocks, banquets, and tournament setup are available for corporate and leisure groups."
+    }
+  ],
+  "meta": {
+    "title": "Incline Village Golf Courses | Lake Tahoe Golf Groups &amp; Stay and Play",
+    "description": "Book Incline Village golf courses in Lake Tahoe with stay and play packages, tee times, and expert group planning for buddies, tournaments, and corporate trips."
+  }
+}

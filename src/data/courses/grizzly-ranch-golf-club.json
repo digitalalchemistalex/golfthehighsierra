@@ -1,0 +1,53 @@
+{
+  "slug": "grizzly-ranch-golf-club",
+  "name": "Grizzly Ranch Golf Club",
+  "region": "graeagle",
+  "regionLabel": "Graeagle, CA",
+  "address": {
+    "streetAddress": "250 Clubhouse Dr",
+    "addressLocality": "Portola",
+    "addressRegion": "CA",
+    "postalCode": "96122"
+  },
+  "geo": {
+    "latitude": 39.8106,
+    "longitude": -120.4697
+  },
+  "phone": "+1-888-584-8232",
+  "website": "https://golfthehighsierra.com/portfolio/grizzly-ranch-golf-club/",
+  "priceRange": "$179\u2013$599",
+  "rating": {
+    "value": 4.7,
+    "count": 241
+  },
+  "description": "Top-rated Graeagle course with mountain views and challenging fairways\u2014perfect for groups, buddies trips, and corporate events.",
+  "holes": 18,
+  "par": null,
+  "designer": "",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grizzly-Foto-1-scaled.jpg",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_GrizzlyRanch.png",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grizzly-Foto-2.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grizzly-Foto-1-scaled.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grizzly-Ranch-Scorecard.jpg"
+  ],
+  "videoUrl": "",
+  "faqs": [
+    {
+      "question": "What\u2019s included in Grizzly Ranch golf group packages?",
+      "answer": "Lodging, guaranteed tee times at Grizzly Ranch, carts, and concierge planning. Optional transportation and dining add-ons."
+    },
+    {
+      "question": "What do Grizzly Ranch group packages cost?",
+      "answer": "Typical range is $179\u2013$599 per golfer depending on season, lodging, and group size."
+    },
+    {
+      "question": "Do you handle corporate and tournament groups?",
+      "answer": "Yes\u2014room blocks, multi-course itineraries, and tournament services are available for corporate and leisure groups."
+    }
+  ],
+  "meta": {
+    "title": "Grizzly Ranch Golf Club | Graeagle Golf Groups &amp; Stay and Play",
+    "description": "Book Grizzly Ranch in Graeagle with golf groups, tee times, and stay and play packages. Premium trips for buddies, corporate, and leisure groups."
+  }
+}

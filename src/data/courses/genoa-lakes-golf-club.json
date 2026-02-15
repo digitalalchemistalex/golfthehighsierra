@@ -1,0 +1,45 @@
+{
+  "slug": "genoa-lakes-golf-club",
+  "name": "Genoa Lakes Golf Club",
+  "region": "carson",
+  "regionLabel": "Carson Valley, NV",
+  "address": {
+    "streetAddress": "",
+    "addressLocality": "Genoa",
+    "addressRegion": "NV",
+    "postalCode": ""
+  },
+  "geo": {},
+  "phone": "+1-888-584-8232",
+  "website": "https://golfthehighsierra.com/portfolio/genoa-lakes-golf-club/",
+  "priceRange": "$179\u2013$399",
+  "rating": {
+    "value": 4.8,
+    "count": 347
+  },
+  "description": "Carson Valley favorite with scenic Sierra views\u2014popular for golf groups, corporate outings, and tournaments.",
+  "holes": 18,
+  "par": null,
+  "designer": "",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2024/04/genoa-lakes.jpg",
+  "images": [],
+  "videoUrl": "",
+  "faqs": [
+    {
+      "question": "What\u2019s included in Genoa Lakes golf group packages?",
+      "answer": "Lodging, guaranteed tee times, carts, and concierge planning. Optional transportation, dining, and multi-course itineraries."
+    },
+    {
+      "question": "What do Genoa Lakes group packages cost?",
+      "answer": "Typical range is $179\u2013$399 per golfer depending on dates, lodging selection, and group size."
+    },
+    {
+      "question": "Do you handle corporate or tournament groups?",
+      "answer": "Yes\u2014room blocks, tee-time blocks, tournament setup, and transportation for corporate and leisure groups."
+    }
+  ],
+  "meta": {
+    "title": "Genoa Lakes Golf Club | Carson Valley Golf Groups &amp; Stay and Play",
+    "description": "Play Genoa Lakes in Carson Valley with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips."
+  }
+}

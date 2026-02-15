@@ -1,0 +1,53 @@
+{
+  "slug": "wolf-run-golf-club",
+  "name": "Wolf Run Golf Club",
+  "region": "reno",
+  "regionLabel": "Reno, NV",
+  "address": {
+    "streetAddress": "1400 Wolf Run Rd",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89511"
+  },
+  "geo": {
+    "latitude": 39.4130895672,
+    "longitude": -119.7756508095
+  },
+  "phone": "+1-888-584-8232",
+  "website": "https://golfthehighsierra.com/portfolio/wolf-run-golf-club/",
+  "priceRange": "$199\u2013$399",
+  "rating": {
+    "value": 4.8,
+    "count": 347
+  },
+  "description": "One of Reno\u2019s top courses\u2014blend of difficulty and playability\u2014ideal for golf groups, tournaments, and corporate outings.",
+  "holes": 18,
+  "par": null,
+  "designer": "",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Wolf-Run-Foto-1.jpg",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/WolfRun_GolfBall.png",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Wolf-Run-Foto-1.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/WolfRun3.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Wolf-Run-Scorecard.jpg"
+  ],
+  "videoUrl": "",
+  "faqs": [
+    {
+      "question": "What\u2019s included in a Wolf Run golf group package?",
+      "answer": "Lodging, pre-booked tee times at Wolf Run, carts, and concierge planning. Add transportation, dining, and multi-course options."
+    },
+    {
+      "question": "How much do Wolf Run group packages cost?",
+      "answer": "Typically $199\u2013$399 per golfer depending on season, lodging, and group size."
+    },
+    {
+      "question": "Do you handle corporate or tournament groups?",
+      "answer": "Yes\u2014tee sheets, lodging blocks, banquets, tournament setup, and transportation can be arranged."
+    }
+  ],
+  "meta": {
+    "title": "Wolf Run Golf | Reno Golf Groups &amp; Stay and Play Deals",
+    "description": "Play Wolf Run in Reno with golf groups, tee times, and stay and play packages. Trusted trip planning for buddies, corporate, and leisure groups."
+  }
+}

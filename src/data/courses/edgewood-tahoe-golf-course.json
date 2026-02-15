@@ -1,0 +1,56 @@
+{
+  "slug": "edgewood-tahoe-golf-course",
+  "name": "Edgewood Tahoe Golf Course",
+  "region": "tahoe",
+  "regionLabel": "Lake Tahoe",
+  "address": {
+    "streetAddress": "100 Lake Parkway",
+    "addressLocality": "Stateline",
+    "addressRegion": "NV",
+    "postalCode": "89449"
+  },
+  "geo": {
+    "latitude": 38.959,
+    "longitude": -119.942
+  },
+  "phone": "+1-888-584-8232",
+  "website": "https://golfthehighsierra.com/portfolio/edgewood-tahoe-golf-course/",
+  "priceRange": "$299\u2013$699",
+  "rating": {
+    "value": 4.8,
+    "count": 672
+  },
+  "description": "Lake Tahoe\u2019s signature championship course on the South Shore\u2014ideal for golf groups, corporate outings, and tournaments.",
+  "holes": 18,
+  "par": null,
+  "designer": "",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/480305380_1022960253212508_1839293438816186105_n.jpg",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/Screenshot-2025-03-08-at-12.33.35.png",
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/18th-Hole-Photo-1024x505.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/479927464_1020935736748293_5586665005775589573_n-1024x768.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/480305380_1022960253212508_1839293438816186105_n-1-1024x768.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/481087530_1028864229288777_426186479615591081_n-1024x1024.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/golf-hero-1024x500.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/Edgewood-Tahoe-Golf-Course-Scorecard-600x400.jpg"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=cuS2Nq2QSQM",
+  "faqs": [
+    {
+      "question": "What\u2019s included in Edgewood golf group packages?",
+      "answer": "Lodging, guaranteed tee times at Edgewood, carts, and concierge planning. Add transportation, dining, and multi-course itineraries."
+    },
+    {
+      "question": "How much do Edgewood packages cost?",
+      "answer": "Typical range is $299\u2013$699 per golfer depending on dates, lodging choice, and group size."
+    },
+    {
+      "question": "Do you handle corporate or tournament groups?",
+      "answer": "Yes\u2014room blocks, tee-sheet management, tournament setup, and logistics for executive and corporate events."
+    }
+  ],
+  "meta": {
+    "title": "Edgewood Tahoe Golf Course | Lake Tahoe Golf Groups &amp; Stay and Play",
+    "description": "Play Edgewood Tahoe with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips."
+  }
+}

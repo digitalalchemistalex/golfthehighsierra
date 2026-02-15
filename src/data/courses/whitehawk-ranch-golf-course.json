@@ -1,0 +1,51 @@
+{
+  "slug": "whitehawk-ranch-golf-course",
+  "name": "Whitehawk Ranch Golf Course",
+  "region": "graeagle",
+  "regionLabel": "Graeagle, CA",
+  "address": {
+    "streetAddress": "",
+    "addressLocality": "Clio",
+    "addressRegion": "CA",
+    "postalCode": ""
+  },
+  "geo": {},
+  "phone": "+1-888-584-8232",
+  "website": "https://golfthehighsierra.com/portfolio/whitehawk-ranch-golf-course/",
+  "priceRange": "$249\u2013$449",
+  "rating": {
+    "value": 4.6,
+    "count": 287
+  },
+  "description": "Premier Sierra layout near Graeagle\u2014pine-lined fairways and mountain views, ideal for golf groups and corporate outings.",
+  "holes": 18,
+  "par": null,
+  "designer": "",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/whitehawk2.jpg",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_Whitehawk.png",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/whitehawk2.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Whitehawk-Foto-3.jpeg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Whitehawk-Foto-1.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Whitehawk-Scorecard.jpg"
+  ],
+  "videoUrl": "",
+  "faqs": [
+    {
+      "question": "What\u2019s included in Whitehawk Ranch golf group packages?",
+      "answer": "Lodging, guaranteed tee times at Whitehawk Ranch, carts, and concierge planning. Optional transportation, dining, and multi-course itineraries."
+    },
+    {
+      "question": "How much do Whitehawk Ranch packages cost?",
+      "answer": "Typical range is $249\u2013$449 per golfer depending on season, lodging selection, and group size."
+    },
+    {
+      "question": "Do you handle corporate or tournament groups?",
+      "answer": "Yes\u2014tee-time blocks, room blocks, tournament setup, and logistics for corporate and leisure groups."
+    }
+  ],
+  "meta": {
+    "title": "Whitehawk Ranch Golf Course | Graeagle Golf Groups &amp; Stay and Play",
+    "description": "Plan Whitehawk Ranch near Graeagle with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips. Rated 4.6/5 (287)."
+  }
+}

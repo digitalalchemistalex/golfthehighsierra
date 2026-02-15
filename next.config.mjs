@@ -8,12 +8,8 @@ const nextConfig = {
       },
     ],
   },
-  async rewrites() {
-    return [
-      // Serve our custom HTML homepage at root
-      // Other routes handled by Next.js normally
-    ];
-  },
+  // Allow trailing slashes to match WordPress URL structure
+  trailingSlash: true,
 };
 
 export default nextConfig;

@@ -1,0 +1,49 @@
+{
+  "slug": "tahoe-donner-golf-course-truckee-ca",
+  "name": "Tahoe Donner Golf Course",
+  "region": "tahoe",
+  "regionLabel": "Lake Tahoe",
+  "address": {
+    "streetAddress": "12850 Northwoods Blvd",
+    "addressLocality": "Truckee",
+    "addressRegion": "CA",
+    "postalCode": "96161"
+  },
+  "geo": {},
+  "phone": "+1-888-584-8232",
+  "website": "https://golfthehighsierra.com/portfolio/tahoe-donner-golf-course-truckee-ca/",
+  "priceRange": "$139\u2013$329",
+  "rating": {
+    "value": 4.8,
+    "count": 347
+  },
+  "description": "Classic Truckee mountain golf\u2014popular for buddies trips, group outings, and corporate events.",
+  "holes": 18,
+  "par": null,
+  "designer": "",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/Tahoe-Donner-Golf-Course.jpeg",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/download-1.png",
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/31-1-1024x421.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/Hole_11.jpg"
+  ],
+  "videoUrl": "https://www.youtube.com/watch?v=alaPQz0mB04",
+  "faqs": [
+    {
+      "question": "What\u2019s included in Tahoe Donner golf group packages?",
+      "answer": "Lodging, pre-booked tee times at Tahoe Donner, carts, and concierge planning. Optional transportation and dining add-ons."
+    },
+    {
+      "question": "How much do Tahoe Donner packages cost?",
+      "answer": "Typical range is $139\u2013$329 per golfer depending on season, lodging selection, and group size."
+    },
+    {
+      "question": "Do you handle corporate or tournament groups?",
+      "answer": "Yes\u2014room blocks, tee-time blocks, tournament setup, and logistics for corporate and leisure groups."
+    }
+  ],
+  "meta": {
+    "title": "Tahoe Donner Golf Course | Truckee Golf Groups &amp; Stay and Play",
+    "description": "Play Tahoe Donner in Truckee with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "toiyabe-golf-club",
+  "name": "Toiyabe Golf Club",
+  "region": "reno",
+  "regionLabel": "Reno, NV",
+  "address": {
+    "streetAddress": "19 Lightning W Ranch Rd",
+    "addressLocality": "Washoe Valley",
+    "addressRegion": "NV",
+    "postalCode": "89704"
+  },
+  "geo": {
+    "latitude": 39.271,
+    "longitude": -119.826
+  },
+  "phone": "+1-888-584-8232",
+  "website": "https://golfthehighsierra.com/portfolio/toiyabe-golf-club/",
+  "priceRange": "$199\u2013$499",
+  "rating": {
+    "value": 4.8,
+    "count": 347
+  },
+  "description": "Toiyabe Golf Club offers a scenic championship course near Reno, popular for group trips, tournaments, and corporate outings.",
+  "holes": 18,
+  "par": null,
+  "designer": "",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Toiyabe-Foto-1.jpg",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_Toiyabe.png",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Toiyabe-Foto-2.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Toiyabe-Foto-1.jpg",
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Toiyabe-Scorecard.jpg"
+  ],
+  "videoUrl": "",
+  "faqs": [
+    {
+      "question": "What\u2019s included in Toiyabe golf group packages?",
+      "answer": "Lodging, pre-booked tee times at Toiyabe, carts, and concierge planning. Transportation and dining add-ons available."
+    },
+    {
+      "question": "How much do Toiyabe packages cost?",
+      "answer": "Typical range is $199\u2013$499 per golfer depending on season, lodging, and group size."
+    },
+    {
+      "question": "Do you handle corporate or tournament groups?",
+      "answer": "Yes\u2014tee time blocks, room blocks, tournament setup, and full concierge planning for buddies and corporate groups."
+    }
+  ],
+  "meta": {
+    "title": "Toiyabe Golf Club | Reno Golf Groups &amp; Stay and Play Deals",
+    "description": "Play Toiyabe Golf Club near Reno with group golf trips, tee times, and stay and play packages. Expert planning for buddies, corporate, and leisure golf getaways."
+  }
+}
