@@ -32,7 +32,7 @@ export async function generateMetadata({
   params: { slug: string };
 }): Promise<Metadata> {
   const course = getCourseBySlug(params.slug);
-  const hotel = !course ? getHotelBySlug(params.slug) : null;
+  const hotel = !course ? (getHotelBySlug(params.slug) as any) : null;
   const item = course || hotel;
   if (!item) return { title: "Not Found" };
   return {
@@ -52,7 +52,7 @@ export async function generateMetadata({
 
 export default function CoursePage({ params }: { params: { slug: string } }) {
   const course = getCourseBySlug(params.slug);
-  const hotel = !course ? getHotelBySlug(params.slug) : null;
+  const hotel = !course ? (getHotelBySlug(params.slug) as any) : null;
 
   // If it's a hotel, render hotel layout
   if (hotel) {
