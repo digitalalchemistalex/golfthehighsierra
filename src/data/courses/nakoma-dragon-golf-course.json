@@ -17,7 +17,7 @@
     "value": 4.8,
     "count": 347
   },
-  "description": "Mountain golf at The Dragon near Graeagle\u2014dramatic elevation changes and scenic Sierra views, ideal for golf groups and corporate outings.",
+  "description": "Nakoma offers an exceptional golf experience far from the crowded courses and wait times now the norm in Truckee-Tahoe. With picture-postcard views from every tee, Nakoma\u2019s 18-hole championship course, the Dragon, never disappoints. Designed by Robin Nelson, creator of the famous Dunes at Mauna Lani, the Dragon debuted as one of America\u2019s Top 75, according to Golf World.",
   "holes": 18,
   "par": null,
   "designer": "",
@@ -41,5 +41,54 @@
   "meta": {
     "title": "Nakoma Dragon Golf Course | Graeagle Golf Groups &amp; Stay and Play",
     "description": "Plan The Dragon at Nakoma near Graeagle with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips."
-  }
+  },
+  "bodyText": [
+    "Plan The Dragon at Nakoma near Graeagle with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
+    "THE DRAGON GOLF COURSE\nNakoma offers an exceptional golf experience far from the crowded courses and wait times now the norm in Truckee-Tahoe. With picture-postcard views from every tee, Nakoma\u2019s 18-hole championship course, the Dragon, never disappoints. Designed by Robin Nelson, creator of the famous Dunes at Mauna Lani, the Dragon debuted as one of America\u2019s Top 75, according to Golf World.",
+    "THE PROSHOP\nNakoma\u2019s Pro Shop is located in the only golf clubhouse designed by Frank Lloyd Wright. From clubs, shoes, shirts and more, the Golf Shop features an extensive array of popular brands and accessories. You\u2019ll find everything that suits your style, size and\ninterests.",
+    "The Dragon was designed by\nRobin Nelson\n, renowned for Hawaii\u2019s Dunes at Mauna Lani, and has been recognized as one of America\u2019s Top 75 courses by\nGolf World\n.",
+    "Nakoma\u2019s clubhouse is the only\nFrank Lloyd Wright\u2013designed golf clubhouse\nin the world, blending architectural history with modern golf amenities.",
+    "Nakoma offers a\nless crowded, more secluded golf experience\nwith panoramic Sierra views and challenging elevation changes\u2014making it a premium alternative to busy Tahoe-area courses.",
+    "Yes. Nakoma Resort offers on-site lodging, dining, and spa services, making it ideal for\nstay-and-play golf getaways\n.",
+    "Absolutely. Golf the High Sierra creates\ncustom stay-and-play packages\nfeaturing Nakoma Dragon, nearby courses, and resort accommodations.\nRequest your package here \u00bb"
+  ],
+  "tips": [
+    {
+      "title": "THE PROSHOP",
+      "content": "Nakoma\u2019s Pro Shop is located in the only golf clubhouse designed by Frank Lloyd Wright. From clubs, shoes, shirts and more, the Golf Shop features an extensive array of popular brands and accessories. You\u2019ll find everything that suits your style, size and\ninterests."
+    },
+    {
+      "title": "What makes Nakoma\u2019s clubhouse unique?",
+      "content": "Nakoma\u2019s clubhouse is the only\nFrank Lloyd Wright\u2013designed golf clubhouse\nin the world, blending architectural history with modern golf amenities."
+    },
+    {
+      "title": "Is lodging available at Nakoma?",
+      "content": "Yes. Nakoma Resort offers on-site lodging, dining, and spa services, making it ideal for\nstay-and-play golf getaways\n."
+    },
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
+    }
+  ],
+  "facilities": [
+    "Trips Caddie",
+    "All Lake Tahoe Resort"
+  ],
+  "pointOfView": "",
+  "hack": "",
+  "distances": [],
+  "contentParagraphs": [
+    "Plan The Dragon at Nakoma near Graeagle with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
+    "Nakoma\u2019s Pro Shop is located in the only golf clubhouse designed by Frank Lloyd Wright. From clubs, shoes, shirts and more, the Golf Shop features an extensive array of popular brands and accessories. You\u2019ll find everything that suits your style, size and interests.",
+    "The Dragon was designed by Robin Nelson , renowned for Hawaii\u2019s Dunes at Mauna Lani, and has been recognized as one of America\u2019s Top 75 courses by Golf World .",
+    "Nakoma\u2019s clubhouse is the only Frank Lloyd Wright\u2013designed golf clubhouse in the world, blending architectural history with modern golf amenities.",
+    "Nakoma offers a less crowded, more secluded golf experience with panoramic Sierra views and challenging elevation changes\u2014making it a premium alternative to busy Tahoe-area courses."
+  ],
+  "featuredHole": {},
+  "teeTimeInfo": "",
+  "teeTips": []
 }

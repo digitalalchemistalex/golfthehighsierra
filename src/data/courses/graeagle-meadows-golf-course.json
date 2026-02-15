@@ -17,7 +17,7 @@
     "value": 4.8,
     "count": 347
   },
-  "description": "Classic Sierra meadow golf with mountain views\u2014popular for golf groups, outings, and corporate events.",
+  "description": "Set amid stunning mountain scenery and the pastoral charm of the town of Graeagle, Graeagle Meadows Golf Course is a pioneer in the modern High Sierra golf experience. Since opening in 1968, the Ellis Van Gorder-designed course is known for the mountain views from each hole.",
   "holes": 18,
   "par": null,
   "designer": "",
@@ -43,5 +43,43 @@
   "meta": {
     "title": "Graeagle Meadows Golf Course | Graeagle Golf Groups &amp; Stay and Play",
     "description": "Plan Graeagle Meadows with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips."
-  }
+  },
+  "bodyText": [
+    "Plan Graeagle Meadows with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
+    "Set amid stunning mountain scenery and the pastoral charm of the town of Graeagle, Graeagle Meadows Golf Course is a pioneer in the modern High Sierra golf experience.\u00a0 Since opening in 1968, the Ellis Van Gorder-designed course is known for the mountain views from each hole.",
+    "{\n\"@context\": \"http://schema.org\",\n\"@type\"   : \"ImageGallery\",\n\"id\"      : \"https://golfthehighsierra.com/portfolio/graeagle-meadows-golf-course/\",\n\"url\"     : \"https://golfthehighsierra.com/portfolio/graeagle-meadows-golf-course/\"\n}",
+    "Reno, NV\n6934 CA-89\nGraeagle, CA 96103\n2 Minutes from Graeagle, CA\n54 Minutes from Truckee, CA\n68 Minutes from Downtown Reno\n70 Minutes from Peppermill and Atlantis\n91 Minutes from Carson City, NV\n109 Minutes from Minden, NV\n115 Minutes from Stateline, NV"
+  ],
+  "tips": [
+    {
+      "title": "A pioneer in the modern High Sierra golf experience.",
+      "content": "Set amid stunning mountain scenery and the pastoral charm of the town of Graeagle, Graeagle Meadows Golf Course is a pioneer in the modern High Sierra golf experience.\u00a0 Since opening in 1968, the Ellis Van Gorder-designed course is known for the mountain views from each hole.\nSee More"
+    },
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n#jtg-7934 .modula-item .jtg-social a, .lightbox-socials.jtg-social a{ fill: #ffffff; color: #ffffff }#jtg-7934 .modula-item .jtg-social-expandable a, #jtg-7934 .modula-item .jtg-social-expandable-icons a{ fill: #ffffff; color: #ffffff }#jtg-7934 .modula-item .jtg-social svg, .lightbox-socials.jtg-social svg { height: 16px; width: 16px }#jtg-7934 .modula-item .jtg-social-expandable svg { height: 16px; width: 16px }#jtg-7934 .modula-item .jtg-social-expandable-icons svg { height: 16px; width: 16px }#jtg-7934 .modula-item .jtg-social a:not(:last-child), .lightbox-socials.jtg-social a:not(:last-child) { margin-right: 10px }#jtg-7934 .modula-item .jtg-social-expandable-icons { gap: 10px }#jtg-7934 .modula-item .figc {color:#ffffff;}#jtg-7934 .modula-item .modula-item-content { transform: scale(1); }#jtg-7934 { width:100%;}#jtg-7934 .modula-items{height:800px;}@media screen and (max-width: 992px) {#jtg-7934 .modula-items{height:800px;}}@media screen and (max-width: 768px) {#jtg-7934 .modula-items{height:800px;}}#jtg-7934 .modula-items .figc p.description,#jtg-7934 .modula-items .figc .jtg-description { font-size:14px; }#jtg-7934 .modula-items .figc p.description,#jtg-7934 .modula-items .figc .jtg-description { color:#ffffff;}#jtg-7934.modula-gallery .modula-item > a, #jtg-7934.modula-gallery .modula-item a.modula-item-link, #jtg-7934.modula-gallery .modula-item-content > a:not(.modula-no-follow) { cursor:zoom-in; } #jtg-7934.modula-gallery .modula-item-content .modula-no-follow { cursor: default; } @media screen and (max-width:480px){#jtg-7934 .modula-item .figc .jtg-title {  font-size: 12px; }#jtg-7934 .modula-items .figc p.description,#jtg-7934 .modula-items .figc .jtg-description { color:#ffffff;font-size:10px; }}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
+    }
+  ],
+  "facilities": [
+    "Full Pro Shop",
+    "Driving Range",
+    "Putting Greens",
+    "Trips Caddie",
+    "All Lake Tahoe Resort"
+  ],
+  "pointOfView": "This course is an absolute blast! Not as well known as some of the others in the Graeagle area, this course offers wider fairways, and a ton of personality. Trees and streams come into play throughout and it's our opinion that you'll leave thinking wow, why have I not played this before. This course offers a great price value for mountain golf and couldn't be more central to a full 3 or 4 day outing in Graeagle. Located right in the middle of town, it's easy to get to and only about an hour from Reno.",
+  "hack": "",
+  "distances": [],
+  "contentParagraphs": [
+    "Plan Graeagle Meadows with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
+    "Built along the banks of the Feather River, one of the eight nationally designated \u201cWild and Scenic Rivers\u2019\u201d the design deftly blends lofty pines, water, and elevated tees with the breathtaking natural beauty of the setting.",
+    "The signature 6th hole, English Gold, provides views of the Mohawk Valley, the Feather River and the snowcapped Sierra from the lofty perch of the tee. Drive the ball left of the fairway bunker and play a mind-to-short iron second shot downhill to the small green."
+  ],
+  "featuredHole": {},
+  "teeTimeInfo": "",
+  "teeTips": []
 }

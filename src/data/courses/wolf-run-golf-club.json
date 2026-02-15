@@ -20,7 +20,7 @@
     "value": 4.8,
     "count": 347
   },
-  "description": "One of Reno\u2019s top courses\u2014blend of difficulty and playability\u2014ideal for golf groups, tournaments, and corporate outings.",
+  "description": "The Grill at Wolf Run offers impeccable service and outstanding food for golfers or anyone who enjoys a relaxed atmosphere in a convenient location. With a wide range of indoor and outdoor facility space that accommodates from 10-250 people, Wolf Run is the perfect location for monthly meetings, anniversaries, birthday parties, weddings and much more!",
   "holes": 18,
   "par": null,
   "designer": "",
@@ -49,5 +49,44 @@
   "meta": {
     "title": "Wolf Run Golf | Reno Golf Groups &amp; Stay and Play Deals",
     "description": "Play Wolf Run in Reno with golf groups, tee times, and stay and play packages. Trusted trip planning for buddies, corporate, and leisure groups."
-  }
+  },
+  "bodyText": [
+    "Distinctive Championship Course\nWolf Run\u2019s par-72 layout features elevation changes, water hazards, and signature finishing holes.",
+    "Play Wolf Run in Reno with golf groups, tee times, and stay and play packages. Trusted trip planning for buddies, corporate, and leisure groups.",
+    "Wolf Run Golf Club\u2019s championship layout course offers an enjoyable challenge for any golfer. The course exists harmoniously with the surrounding landscape of native flora; a unique combination that results in a memorable playing experience.",
+    "Reno, NV\n1400 Wolf Run Rd\nReno NV 89511\n15 Minutes from Peppermill and Atlantis\n20 Minutes from Downtown Reno\n27 Minutes from Carson City, NV\n44 Minutes from Minden, NV\n47 Minutes from Truckee, CA\n57 Minutes from Stateline, NV\n71 Minutes from Graeagle, CA"
+  ],
+  "tips": [
+    {
+      "title": "\u201cA true high desert golf experience not to be forgotten!\u201d",
+      "content": "Wolf Run Golf Club\u2019s championship layout course offers an enjoyable challenge for any golfer. The course exists harmoniously with the surrounding landscape of native flora; a unique combination that results in a memorable playing experience.\nSee More"
+    },
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n#jtg-6468 .modula-item .jtg-social a, .lightbox-socials.jtg-social a{ fill: #ffffff; color: #ffffff }#jtg-6468 .modula-item .jtg-social-expandable a, #jtg-6468 .modula-item .jtg-social-expandable-icons a{ fill: #ffffff; color: #ffffff }#jtg-6468 .modula-item .jtg-social svg, .lightbox-socials.jtg-social svg { height: 16px; width: 16px }#jtg-6468 .modula-item .jtg-social-expandable svg { height: 16px; width: 16px }#jtg-6468 .modula-item .jtg-social-expandable-icons svg { height: 16px; width: 16px }#jtg-6468 .modula-item .jtg-social a:not(:last-child), .lightbox-socials.jtg-social a:not(:last-child) { margin-right: 10px }#jtg-6468 .modula-item .jtg-social-expandable-icons { gap: 10px }#jtg-6468 .modula-item .figc {color:#ffffff;}#jtg-6468 .modula-item .modula-item-content { transform: scale(1); }#jtg-6468 { width:100%;}#jtg-6468 .modula-items{height:800px;}@media screen and (max-width: 992px) {#jtg-6468 .modula-items{height:800px;}}@media screen and (max-width: 768px) {#jtg-6468 .modula-items{height:800px;}}#jtg-6468 .modula-items .figc p.description,#jtg-6468 .modula-items .figc .jtg-description { font-size:14px; }#jtg-6468 .modula-items .figc p.description,#jtg-6468 .modula-items .figc .jtg-description { color:#ffffff;}#jtg-6468.modula-gallery .modula-item > a, #jtg-6468.modula-gallery .modula-item a.modula-item-link, #jtg-6468.modula-gallery .modula-item-content > a:not(.modula-no-follow) { cursor:zoom-in; } #jtg-6468.modula-gallery .modula-item-content .modula-no-follow { cursor: default; } @media screen and (max-width:480px){#jtg-6468 .modula-item .figc .jtg-title {  font-size: 12px; }#jtg-6468 .modula-items .figc p.description,#jtg-6468 .modula-items .figc .jtg-description { color:#ffffff;font-size:10px; }}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
+    }
+  ],
+  "facilities": [
+    "Practice Putting Green",
+    "Beautiful Chipping Green",
+    "Driving Range With a 100-yard Short Game Area",
+    "Trips Caddie",
+    "All Lake Tahoe Resort"
+  ],
+  "pointOfView": "No other Reno area golf course offers such a challenge, with rewarding beauty and serenity no matter how you score. You'll get lost in the views of the surrounding mountain tops and eastward across the Washoe Valley. Meandering streams and elevation changes make for some nervous shot-making, but forced carries are few from forward tee boxes if distance is not a strength of your game. There is always a ready beverage cart and a full-service bar and restaurant to help elevate your joy as well.",
+  "hack": "",
+  "distances": [],
+  "contentParagraphs": [
+    "Wolf Run\u2019s par-72 layout features elevation changes, water hazards, and signature finishing holes.",
+    "Play Wolf Run in Reno with golf groups, tee times, and stay and play packages. Trusted trip planning for buddies, corporate, and leisure groups.",
+    "Wolf Run Golf Club\u2019s championship layout course offers an enjoyable challenge for any golfer. The course exists harmoniously with the surrounding landscape of native flora; a unique combination that results in a memorable playing experience.",
+    "The facilities include a practice putting green, beautiful chipping green with patio seating and recently remodeled driving range with a 100-yard short game area, making Wolf Run the perfect location for a golf outing of any size. On and off the course Wolf Run offers the total experience to golfers and non- golfers."
+  ],
+  "featuredHole": {},
+  "teeTimeInfo": "",
+  "teeTips": []
 }

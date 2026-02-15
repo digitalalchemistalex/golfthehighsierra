@@ -17,7 +17,7 @@
     "value": 4.8,
     "count": 347
   },
-  "description": "Carson Valley favorite with scenic Sierra views\u2014popular for golf groups, corporate outings, and tournaments.",
+  "description": "Genoa Lakes offers two championship layouts: the Lakes Course , a links-style design with water on 14 holes, and the Ranch Course , a rugged high-desert course with over 300 feet of elevation changes.",
   "holes": 18,
   "par": null,
   "designer": "",
@@ -41,5 +41,52 @@
   "meta": {
     "title": "Genoa Lakes Golf Club | Carson Valley Golf Groups &amp; Stay and Play",
     "description": "Play Genoa Lakes in Carson Valley with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips."
-  }
+  },
+  "bodyText": [
+    "Play Genoa Lakes in Carson Valley with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
+    "The Ranch Golf Course at Genoa Lakes\nBuilt for power and distance, the Ranch Course cuts into the rugged Sierra Nevada foothills, just two miles from the Lakes Course.\nJohnny Miller and John Harbottle III were the driving force behind this course, which offers wide open spaces and spectacular high desert views.\nOver 300 feet of elevation changes, more than 100 bunkers, unpredictable mountain terrain, afternoon breezes and a waterfall challenge players to a crash course in championship golf.",
+    "The Lakes Golf Course at Genoa Lakes\nLuxury and performance are the name of the game on the Lakes Course. Co-designed by PGA Champion Peter Jacobsen and John Harbottle III, this links-style course with rolling fairways meets head-on with the eastern slopes of the breathtaking Sierra Nevada Mountains.\nLush wetlands and the winding Carson River bring water into 14 holes of play, making long, straight drives the order of the day.\nHome to the U.S. Open Qualifier.",
+    "Genoa Lakes offers two championship layouts: the\nLakes Course\n, a links-style design with water on 14 holes, and the\nRanch Course\n, a rugged high-desert course with over 300 feet of elevation changes.",
+    "The\nLakes Course\nwas co-designed by\nPeter Jacobsen and John Harbottle III\n, while the\nRanch Course\nwas designed by\nJohnny Miller and John Harbottle III\n.",
+    "The\nLakes Course\nis lush and scenic, with wetlands and the Carson River in play.\nThe\nRanch Course\nis built into the Sierra foothills with bunkers, elevation changes, and panoramic desert views.",
+    "Yes. Both courses are open to public play, with seasonal rates, twilight discounts, and group packages available.",
+    "Yes. Golf the High Sierra offers\ncustom stay-and-play packages\nthat include Genoa Lakes, nearby lodging, and optional add-ons like dining or spa experiences.\nRequest your package here \u00bb"
+  ],
+  "tips": [
+    {
+      "title": "Is Genoa Lakes Golf Club open to the public?",
+      "content": "Yes. Both courses are open to public play, with seasonal rates, twilight discounts, and group packages available."
+    },
+    {
+      "title": "Can I book a stay-and-play package with Genoa Lakes?",
+      "content": "Yes. Golf the High Sierra offers\ncustom stay-and-play packages\nthat include Genoa Lakes, nearby lodging, and optional add-ons like dining or spa experiences.\nRequest your package here \u00bb"
+    },
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
+    }
+  ],
+  "facilities": [
+    "The Ranch Course is built into the Sierra foothills with bunkers, elevation changes, and panoramic desert views.",
+    "Yes. Golf the High Sierra offers custom stay-and-play packages that include Genoa Lakes, nearby lodging, and optional add-ons like dining or spa experiences. Request your package here \u00bb",
+    "Trips Caddie",
+    "All Lake Tahoe Resort"
+  ],
+  "pointOfView": "",
+  "hack": "",
+  "distances": [],
+  "contentParagraphs": [
+    "Play Genoa Lakes in Carson Valley with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
+    "Built for power and distance, the Ranch Course cuts into the rugged Sierra Nevada foothills, just two miles from the Lakes Course.",
+    "Johnny Miller and John Harbottle III were the driving force behind this course, which offers wide open spaces and spectacular high desert views.",
+    "Over 300 feet of elevation changes, more than 100 bunkers, unpredictable mountain terrain, afternoon breezes and a waterfall challenge players to a crash course in championship golf.",
+    "Luxury and performance are the name of the game on the Lakes Course. Co-designed by PGA Champion Peter Jacobsen and John Harbottle III, this links-style course with rolling fairways meets head-on with the eastern slopes of the breathtaking Sierra Nevada Mountains."
+  ],
+  "featuredHole": {},
+  "teeTimeInfo": "",
+  "teeTips": []
 }

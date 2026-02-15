@@ -17,7 +17,7 @@
     "value": 4.8,
     "count": 347
   },
-  "description": "Reno, NV championship course with Sierra views\u2014popular for buddies trips, corporate outings, and tournaments.",
+  "description": "While looking up you may catch a glimpse of a hawk or golden eagle, at eye level you may see deer or a coyote but facing down our fairways you will surely take note of the 62 white sand bunkers and 7 lakes. This private country club has quickly become a jewel of Reno and is available for groups after 12pm if booked through Golf the High Sierra. Named one of Golfweek\u2019s top private residential courses, Somersett Country Club has found its distinction as a secret, must-play that should be included on any Reno/Tahoe golf trip itinerary.",
   "holes": 18,
   "par": null,
   "designer": "",
@@ -44,5 +44,36 @@
   "meta": {
     "title": "Somersett Golf | Reno Golf Groups &amp; Stay and Play Deals",
     "description": "Play Somersett in Reno with golf groups, tee times, and stay and play packages. Expert trip planning for buddies, corporate, and leisure groups."
-  }
+  },
+  "bodyText": [
+    "Play Somersett in Reno with golf groups, tee times, and stay and play packages. Expert trip planning for buddies, corporate, and leisure groups.",
+    "Somersett Golf and Country Club is nestled against Peavine Mountain opposite the eastern slopes of the Sierra Nevada in Northwest Reno.\u00a0 Elevated well above the valley floor, breathtaking vistas abound as you navigate 62 white sand bunkers, seven lakes, and dramatic elevation changes while playing this gorgeously-designed private golf course.",
+    "{\n\"@context\": \"http://schema.org\",\n\"@type\"   : \"ImageGallery\",\n\"id\"      : \"https://golfthehighsierra.com/portfolio/somersett-golf-country-club/\",\n\"url\"     : \"https://golfthehighsierra.com/portfolio/somersett-golf-country-club/\"\n}",
+    "Reno, NV\n2019 Championship Trail\nReno, Nevada 89523\n15 Minutes from Downtown Reno\n21 Minutes from Peppermill and Atlantis\n35 Minutes from Truckee, CA\n43 Minutes from Carson City, NV\n60 Minutes from Minden, NV\n71 Minutes from Graeagle, CA\n73 Minutes from Stateline, NV"
+  ],
+  "tips": [
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n#jtg-6497 .modula-item .jtg-social a, .lightbox-socials.jtg-social a{ fill: #ffffff; color: #ffffff }#jtg-6497 .modula-item .jtg-social-expandable a, #jtg-6497 .modula-item .jtg-social-expandable-icons a{ fill: #ffffff; color: #ffffff }#jtg-6497 .modula-item .jtg-social svg, .lightbox-socials.jtg-social svg { height: 16px; width: 16px }#jtg-6497 .modula-item .jtg-social-expandable svg { height: 16px; width: 16px }#jtg-6497 .modula-item .jtg-social-expandable-icons svg { height: 16px; width: 16px }#jtg-6497 .modula-item .jtg-social a:not(:last-child), .lightbox-socials.jtg-social a:not(:last-child) { margin-right: 10px }#jtg-6497 .modula-item .jtg-social-expandable-icons { gap: 10px }#jtg-6497 .modula-item .figc {color:#ffffff;}#jtg-6497 .modula-item .modula-item-content { transform: scale(1); }#jtg-6497 { width:100%;}#jtg-6497 .modula-items{height:800px;}@media screen and (max-width: 992px) {#jtg-6497 .modula-items{height:800px;}}@media screen and (max-width: 768px) {#jtg-6497 .modula-items{height:800px;}}#jtg-6497 .modula-items .figc p.description,#jtg-6497 .modula-items .figc .jtg-description { font-size:14px; }#jtg-6497 .modula-items .figc p.description,#jtg-6497 .modula-items .figc .jtg-description { color:#ffffff;}#jtg-6497.modula-gallery .modula-item > a, #jtg-6497.modula-gallery .modula-item a.modula-item-link, #jtg-6497.modula-gallery .modula-item-content > a:not(.modula-no-follow) { cursor:zoom-in; } #jtg-6497.modula-gallery .modula-item-content .modula-no-follow { cursor: default; } @media screen and (max-width:480px){#jtg-6497 .modula-item .figc .jtg-title {  font-size: 12px; }#jtg-6497 .modula-items .figc p.description,#jtg-6497 .modula-items .figc .jtg-description { color:#ffffff;font-size:10px; }}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
+    }
+  ],
+  "facilities": [
+    "Trips Caddie",
+    "All Lake Tahoe Resort"
+  ],
+  "pointOfView": "This private club is typically inaccessible to public play, but Golf the High Sierra is able to book groups of all sizes due to its relationship with the club, typically after 10am any day of the week. And you should take advantage of it! Somersett is a true championship golf course, with the level of difficulty being left up to you. Five sets of tee boxes and two combo tee layouts offer you the challenge you're after. Large, multi-tiered greens will create two-putt aspirations, but green trueness is always reliable with their exquisite course maintenance standards. The new clubhouse is the perfect venue for a post-round libation or group lunch or dinner.",
+  "hack": "",
+  "distances": [],
+  "contentParagraphs": [
+    "Play Somersett in Reno with golf groups, tee times, and stay and play packages. Expert trip planning for buddies, corporate, and leisure groups.",
+    "Somersett Golf and Country Club is nestled against Peavine Mountain opposite the eastern slopes of the Sierra Nevada in Northwest Reno. Elevated well above the valley floor, breathtaking vistas abound as you navigate 62 white sand bunkers, seven lakes, and dramatic elevation changes while playing this gorgeously-designed private golf course.",
+    "Options include a stretched out 7,252 yards when played from the Sierra Tees, or a shortened up 6,393 yards from the Truckee Tees. Shorter hitters may opt for 5,912 yards from the Peavine Tees or go at 5,216 yards from the Rose Tees. Wherever you decide to play from, you will enjoy the generous landing areas of perfectly groomed emerald bluegrass fairways. Somersett\u2019s many elevation changes allow for many spectacular panoramic views of the Nevada high desert."
+  ],
+  "featuredHole": {},
+  "teeTimeInfo": "",
+  "teeTips": []
 }

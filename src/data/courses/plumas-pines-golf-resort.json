@@ -17,7 +17,7 @@
     "value": 4.8,
     "count": 347
   },
-  "description": "A scenic Graeagle golf destination with pristine fairways, mountain views, and popular group packages.",
+  "description": "With green conditions considered among the top in the Graeagle area, Plumas Pines is a vacation dream, with condos on the course and the highly regarded Longboards Bar and Grill providing a fabulous dining experience well into the night. Enjoy dinner on the deck or through big bay windows that look out over incomparable views of the Sierra. Plumas Pines is the perfect location for stay-and-play tournament packages and golf schools. The all-grass practice facility with putting greens, and full-service snack bar, provides golfers everything needed to ensure a memorable golf experience in an environment that only nature can provide.",
   "holes": 18,
   "par": null,
   "designer": "",
@@ -47,5 +47,47 @@
   "meta": {
     "title": "Plumas Pines Golf Resort | Graeagle Golf Groups &amp; Stay and Pla",
     "description": "Book Plumas Pines in Graeagle with golf groups, tee times, and stay and play packages. Expert planning for buddies, corporate, and leisure trips."
-  }
+  },
+  "bodyText": [
+    "Plumas Pines Golf Resort offers more than a world-class mountain golf experience!\u00a0 With impeccable maintenance standards, a beautiful practice facility that seems to reach toward the surrounding mountain tops, and its perched deck overlooking the course, you will feel far from home and in a golfer\u2019s paradise.\u00a0 Natural wonder abounds as the course winds through rows of pines, around lakes, adjacent to rivers, and through bird-filled wetlands.\u00a0 It will become your golfing \u201chappy place\u201d",
+    "Book Plumas Pines in Graeagle with golf groups, tee times, and stay and play packages. Expert planning for buddies, corporate, and leisure trips.",
+    "Graeagle, CA\n402 Poplar Valley Road\nP.O. Box 1210\nGraeagle, CA 96103\n6 Minutes from Graeagle, CA\n60 Minutes from Truckee, CA\n61 Minutes from Carson City, NV\n69 Minutes from Downtown Reno\n71 Minutes from Peppermill and Atlantis\n110 Minutes from Minden, NV\n122 Minutes from Stateline, NV"
+  ],
+  "tips": [
+    {
+      "title": "Top 5 Best Values in the Sierra Nevada \u2013 California Golf + Travel Magazine",
+      "content": "Plumas Pines Golf Resort offers more than a world-class mountain golf experience!\u00a0 With impeccable maintenance standards, a beautiful practice facility that seems to reach toward the surrounding mountain tops, and its perched deck overlooking the course, you will feel far from home and in a golfer\u2019s paradise.\u00a0 Natural wonder abounds as the course winds through rows of pines, around lakes, adjacent to rivers, and through bird-filled wetlands.\u00a0 It will become your golfing \u201chappy place\u201d\nSee More"
+    },
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n#jtg-6552 .modula-item .jtg-social a, .lightbox-socials.jtg-social a{ fill: #ffffff; color: #ffffff }#jtg-6552 .modula-item .jtg-social-expandable a, #jtg-6552 .modula-item .jtg-social-expandable-icons a{ fill: #ffffff; color: #ffffff }#jtg-6552 .modula-item .jtg-social svg, .lightbox-socials.jtg-social svg { height: 16px; width: 16px }#jtg-6552 .modula-item .jtg-social-expandable svg { height: 16px; width: 16px }#jtg-6552 .modula-item .jtg-social-expandable-icons svg { height: 16px; width: 16px }#jtg-6552 .modula-item .jtg-social a:not(:last-child), .lightbox-socials.jtg-social a:not(:last-child) { margin-right: 10px }#jtg-6552 .modula-item .jtg-social-expandable-icons { gap: 10px }#jtg-6552 .modula-item .figc {color:#ffffff;}#jtg-6552 .modula-item .modula-item-content { transform: scale(1); }#jtg-6552 { width:100%;}#jtg-6552 .modula-items{height:800px;}@media screen and (max-width: 992px) {#jtg-6552 .modula-items{height:800px;}}@media screen and (max-width: 768px) {#jtg-6552 .modula-items{height:800px;}}#jtg-6552 .modula-items .figc p.description,#jtg-6552 .modula-items .figc .jtg-description { font-size:14px; }#jtg-6552 .modula-items .figc p.description,#jtg-6552 .modula-items .figc .jtg-description { color:#ffffff;}#jtg-6552.modula-gallery .modula-item > a, #jtg-6552.modula-gallery .modula-item a.modula-item-link, #jtg-6552.modula-gallery .modula-item-content > a:not(.modula-no-follow) { cursor:zoom-in; } #jtg-6552.modula-gallery .modula-item-content .modula-no-follow { cursor: default; } @media screen and (max-width:480px){#jtg-6552 .modula-item .figc .jtg-title {  font-size: 12px; }#jtg-6552 .modula-items .figc p.description,#jtg-6552 .modula-items .figc .jtg-description { color:#ffffff;font-size:10px; }}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
+    }
+  ],
+  "facilities": [
+    "Tournament Packages",
+    "Golf lessons & Schools",
+    "Practice Facility",
+    "Driving Range",
+    "Putting Green",
+    "Trips Caddie",
+    "All Lake Tahoe Resort"
+  ],
+  "pointOfView": "Plumas Pines is the focal point for any golf trip to the Graeagle area! Surrounded by massive pine trees, the beautiful Feather River to the north, and bordering vacation homes and condominiums through much of the course, Plumas Pines will test your nerves from start to finish. The course is beautiful and always extremely well maintained. The greens are generally small enough to make you nervous, but also extremely receptive to most approach shots to ease your fear. No matter the hole, giant pine trees and wispy cottonwoods will make for a puckered tee shot. Length is absolutely not a necessity at Plumas Pines, in fact it might just be discouraged. Straight play is best and you're better off getting a ball safely in play with an iron off the tee than trying to recover from a shortened drive after it rattles through the forest. The natural beauty that surrounds Plumas Pines is lovely, with waterfowl and forest critters abundant. It's great to play at any time of day, but an afternoon tee time will make for a tranquil experience amongst long shadows and late day sun beams piercing through the pines. Plumas Pines Golf Resort has numerous condominiums and stand-alone vacation homes that can accommodate groups of any size. With Grizzly Ranch and Whitehawk Ranch mere minutes away, a multi-day outing with your buddies is properly hubbed here. While here, do not miss a meal at Longboards or Gumba's; two highly regarded restaurants by locals and visitors alike. And under no circumstances should you miss a visit to The Mohawk Tavern, Graeagle's perfectly seedy dive bar that will surely make for some unforgettable moments, or moments you'd rather forget!",
+  "hack": "",
+  "distances": [],
+  "contentParagraphs": [
+    "Plumas Pines Golf Resort offers more than a world-class mountain golf experience! With impeccable maintenance standards, a beautiful practice facility that seems to reach toward the surrounding mountain tops, and its perched deck overlooking the course, you will feel far from home and in a golfer\u2019s paradise. Natural wonder abounds as the course winds through rows of pines, around lakes, adjacent to rivers, and through bird-filled wetlands. It will become your golfing \u201chappy place\u201d",
+    "Book Plumas Pines in Graeagle with golf groups, tee times, and stay and play packages. Expert planning for buddies, corporate, and leisure trips.",
+    "The par-4 393 yard 2nd hole with the Middle Fork of the Feather River meandering down the left side of the fairway and green, the tall pine trees guarding the right hand side of the fairway and the back of the green, and the smartly placed bunker in the front left hand side of the green represents all the wonderful elements that Plumas Pines Golf Resort has to offer. Accurately place your tee shot down the right center of the fairway leaving you a mid to short iron into this long and narrow green. Once on the green prepare yourself for subtle undulations and breaks that will test your putter throughout the round."
+  ],
+  "featuredHole": {
+    "title": "Signature Hole",
+    "description": "The par-4 393 yard 2nd hole with the Middle Fork of the Feather River meandering down the left side of the fairway and green, the tall pine trees guarding the right hand side of the fairway and the back of the green, and the smartly placed bunker in the front left hand side of the green represents all the wonderful elements that Plumas Pines Golf Resort has to offer. Accurately place your tee shot"
+  },
+  "teeTimeInfo": "",
+  "teeTips": []
 }

@@ -20,7 +20,7 @@
     "value": 4.8,
     "count": 672
   },
-  "description": "Lake Tahoe\u2019s signature championship course on the South Shore\u2014ideal for golf groups, corporate outings, and tournaments.",
+  "description": "Edgewood Tahoe Golf Course is a must-play destination because of its breathtaking setting along the shores of Lake Tahoe, offering stunning mountain and water views on every hole. As a championship course that hosts the annual American Century Celebrity Golf Tournament, it provides a challenging yet enjoyable experience for golfers of all skill levels. With its pristine fairways, world-class amenities, and a backdrop that seamlessly blends luxury with nature, Edgewood Tahoe delivers an unforgettable round of golf.",
   "holes": 18,
   "par": null,
   "designer": "",
@@ -52,5 +52,61 @@
   "meta": {
     "title": "Edgewood Tahoe Golf Course | Lake Tahoe Golf Groups &amp; Stay and Play",
     "description": "Play Edgewood Tahoe with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips."
-  }
+  },
+  "bodyText": [
+    "Play Edgewood Tahoe with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips. Rated 4.8/5 (672).",
+    "Edgewood Tahoe Golf Course is a must-play destination because of its breathtaking setting along the shores of Lake Tahoe, offering stunning mountain and water views on every hole. As a championship course that hosts the annual American Century Celebrity Golf Tournament, it provides a challenging yet enjoyable experience for golfers of all skill levels. With its pristine fairways, world-class amenities, and a backdrop that seamlessly blends luxury with nature, Edgewood Tahoe delivers an unforgettable round of golf.",
+    "Edgewood Tahoe Golf Course \u2013 Stateline, NV\nLocation:\n100 Lake Parkway, Stateline, NV 89449\nDistance from Key Locations:\n5 Minutes \u2013 Stateline, NV (Lake Tahoe Casinos)\n10 Minutes \u2013 South Lake Tahoe, CA\n30 Minutes \u2013 Carson City, NV\n55 Minutes \u2013 Downtown Reno\n60 Minutes \u2013 Peppermill & Atlantis Casino Resorts (Reno)\n75 Minutes \u2013 Truckee, CA\n85 Minutes \u2013 Graeagle, CA\n90 Minutes \u2013 Minden, NV"
+  ],
+  "distances": [
+    "5 Minutes \u2013 Stateline, NV (Lake Tahoe Casinos)",
+    "10 Minutes \u2013 South Lake Tahoe, CA",
+    "30 Minutes \u2013 Carson City, NV",
+    "55 Minutes \u2013 Downtown Reno",
+    "60 Minutes \u2013 Peppermill & Atlantis Casino Resorts (Reno)",
+    "75 Minutes \u2013 Truckee, CA",
+    "85 Minutes \u2013 Graeagle, CA",
+    "90 Minutes \u2013 Minden, NV"
+  ],
+  "facilities": [
+    "Good Practice Facilities \u2013 Driving range, chipping area, and putting greens.",
+    "Great Golf Shop \u2013 Offers premium apparel, equipment, and accessories.",
+    "Clubhouse \u2013 Features upscale dining, a bar, and panoramic views of Lake Tahoe. Great food too!",
+    "Caddie Services \u2013 Enhances the golfing experience with expert course knowledge.",
+    "Golf Instruction \u2013 Private lessons and clinics available from PGA professionals.",
+    "On-Course Refreshments \u2013 Beverage carts and halfway house for snacks and drinks.",
+    "Event & Tournament Hosting \u2013 Ideal for corporate outings, charity tournaments, and special events.",
+    "Good Practice Facilities"
+  ],
+  "tips": [
+    {
+      "title": "The Hack!",
+      "content": "The food in the clubhouse restaurant is very good and the setting couldn\u2019t be better!\u00a0 Make sure to take a dip into Lake Tahoe following your round.\u00a0 There really is no better refreshment than that!"
+    },
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
+    }
+  ],
+  "pointOfView": "It's true! Edgewood Tahoe Golf Course is indeed a memorable golf course. Your entire rounds offers the opportunity to gaze across the expansive waters of Lake Tahoe and awe at the steep mountain peaks of the surrounding Sierra Nevada Mountains. Playing Edgewood is a pricey proposition, but it's a bucket list golf course that needs to be played at least once!",
+  "hack": "",
+  "contentParagraphs": [
+    "Play Edgewood Tahoe with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips. Rated 4.8/5 (672).",
+    "This unforgettable gem on the immediate shore of Lake Tahoe is iconic! It not as easy as it might look! Take more club than you think to avoid the front bunker.",
+    "For guests staying at the Lodge, you\u2019re able to book your tee times at any point ahead of your arrival. The general public, however, can book only 30 days in advance for your desired day of play. Give us a call and we might be able to book the tee time you\u2019re wanting ahead of the general public.",
+    "The food in the clubhouse restaurant is very good and the setting couldn\u2019t be better! Make sure to take a dip into Lake Tahoe following your round. There really is no better refreshment than that!"
+  ],
+  "featuredHole": {
+    "title": "17th Hole",
+    "description": "This unforgettable gem on the immediate shore of Lake Tahoe is iconic! It not as easy as it might look! Take more club than you think to avoid the front bunker."
+  },
+  "teeTimeInfo": "",
+  "teeTips": [
+    "For guests staying at the Lodge, you\u2019re able to book your tee times at any point ahead of your arrival. The general public, however, can book only 30 days in advance for your desired day of play. Give us a call and we might be able to book the tee time you\u2019re wanting ahead of the general public.",
+    "The food in the clubhouse restaurant is very good and the setting couldn\u2019t be better! Make sure to take a dip into Lake Tahoe following your round. There really is no better refreshment than that!"
+  ]
 }

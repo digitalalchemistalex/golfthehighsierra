@@ -20,7 +20,7 @@
     "value": 4.8,
     "count": 347
   },
-  "description": "Toiyabe Golf Club offers a scenic championship course near Reno, popular for group trips, tournaments, and corporate outings.",
+  "description": "Toiyabe Golf Club is a semi-private golf club nestled in the foothills of the Toiyabe National Forest and the Sierra Nevada Mountains in Washoe Valley, Nevada. The club\u2019s signature 18-hole Robert Muir Graves-designed course is a natural blend of links-style and Alpine golf that will challenge low handicap players, as well as golfers of all abilities. Toiyabe Golf Club is open year-round and features a restaurant with indoor and outdoor dining, wedding and corporate meeting space, and special events throughout the year.",
   "holes": 18,
   "par": null,
   "designer": "",
@@ -49,5 +49,43 @@
   "meta": {
     "title": "Toiyabe Golf Club | Reno Golf Groups &amp; Stay and Play Deals",
     "description": "Play Toiyabe Golf Club near Reno with group golf trips, tee times, and stay and play packages. Expert planning for buddies, corporate, and leisure golf getaways."
-  }
+  },
+  "bodyText": [
+    "Play Toiyabe Golf Club near Reno with group golf trips, tee times, and stay and play packages. Expert planning for buddies, corporate, and leisure golf getaways.",
+    "Toiyabe Golf Club is a semi-private golf club nestled in the foothills of the Toiyabe National Forest and the Sierra Nevada Mountains in Washoe Valley, Nevada. The club\u2019s signature 18-hole Robert Muir Graves-designed course is a natural blend of links-style and Alpine golf that will challenge low handicap players, as well as golfers of all abilities. Toiyabe Golf Club is open year-round and features a restaurant with indoor and outdoor dining, wedding and corporate meeting space, and special events throughout the year.",
+    "Truckee, CA\n10685 Northwoods Blvd.\nTruckee, CA 96161\n15 Minutes from Carson City, NV\n25 Minutes from Peppermill and Atlantis\n29 Minutes from Downtown Reno\n30 Minutes from Minden, NV\n42 Minutes from Stateline, NV\n57 Minutes from Truckee, CA\n107 Minutes from Graeagle, CA"
+  ],
+  "tips": [
+    {
+      "title": "A classic design nestled halfway between Reno and Carson City.",
+      "content": "Toiyabe Golf Club is a semi-private golf club nestled in the foothills of the Toiyabe National Forest and the Sierra Nevada Mountains in Washoe Valley, Nevada. The club\u2019s signature 18-hole Robert Muir Graves-designed course is a natural blend of links-style and Alpine golf that will challenge low handicap players, as well as golfers of all abilities. Toiyabe Golf Club is open year-round and features a restaurant with indoor and outdoor dining, wedding and corporate meeting space, and special events throughout the year.\nSee More"
+    },
+    {
+      "title": "Golf The High Sierra",
+      "content": "Book your next group golf trip with us!"
+    },
+    {
+      "title": "About Golf the High Sierra",
+      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n#jtg-6540 .modula-item .jtg-social a, .lightbox-socials.jtg-social a{ fill: #ffffff; color: #ffffff }#jtg-6540 .modula-item .jtg-social-expandable a, #jtg-6540 .modula-item .jtg-social-expandable-icons a{ fill: #ffffff; color: #ffffff }#jtg-6540 .modula-item .jtg-social svg, .lightbox-socials.jtg-social svg { height: 16px; width: 16px }#jtg-6540 .modula-item .jtg-social-expandable svg { height: 16px; width: 16px }#jtg-6540 .modula-item .jtg-social-expandable-icons svg { height: 16px; width: 16px }#jtg-6540 .modula-item .jtg-social a:not(:last-child), .lightbox-socials.jtg-social a:not(:last-child) { margin-right: 10px }#jtg-6540 .modula-item .jtg-social-expandable-icons { gap: 10px }#jtg-6540 .modula-item .figc {color:#ffffff;}#jtg-6540 .modula-item .modula-item-content { transform: scale(1); }#jtg-6540 { width:100%;}#jtg-6540 .modula-items{height:800px;}@media screen and (max-width: 992px) {#jtg-6540 .modula-items{height:800px;}}@media screen and (max-width: 768px) {#jtg-6540 .modula-items{height:800px;}}#jtg-6540 .modula-items .figc p.description,#jtg-6540 .modula-items .figc .jtg-description { font-size:14px; }#jtg-6540 .modula-items .figc p.description,#jtg-6540 .modula-items .figc .jtg-description { color:#ffffff;}#jtg-6540.modula-gallery .modula-item > a, #jtg-6540.modula-gallery .modula-item a.modula-item-link, #jtg-6540.modula-gallery .modula-item-content > a:not(.modula-no-follow) { cursor:zoom-in; } #jtg-6540.modula-gallery .modula-item-content .modula-no-follow { cursor: default; } @media screen and (max-width:480px){#jtg-6540 .modula-item .figc .jtg-title {  font-size: 12px; }#jtg-6540 .modula-items .figc p.description,#jtg-6540 .modula-items .figc .jtg-description { color:#ffffff;font-size:10px; }}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
+    }
+  ],
+  "facilities": [
+    "Restaurant and bar",
+    "Chipping Area",
+    "Sand Practice Area",
+    "Expansive Putting Greens",
+    "Meeting Spaces",
+    "Trips Caddie",
+    "All Lake Tahoe Resort"
+  ],
+  "pointOfView": "This Robert Muir Graves design is old school good. Set at the base of the mountains, directly below Lake Tahoe, you'll get diversity on every hole. The entire course is surrounded by some of the most beautiful homes in the region, it's picturesque from every angle. The front 9 has plenty of water and distance to challenge every golfer, and the back nine incorporates some challenging elevation change and has several holes up in the pines. Originally built as a private country club, the facility spared no expense in providing comfort, and the restaurant is renown across the region as having a great menu. The course is located half way between Reno and Carson City, and with the new Freeway exchange, you can make it there in 20 minutes from South Reno.",
+  "hack": "",
+  "distances": [],
+  "contentParagraphs": [
+    "Play Toiyabe Golf Club near Reno with group golf trips, tee times, and stay and play packages. Expert planning for buddies, corporate, and leisure golf getaways.",
+    "Serving breakfast and lunch in an amazing setting overlooking the 18th hole at Toiyabe Golf Club and views of Slide Mountian. We offer a full bar and an traditional menu."
+  ],
+  "featuredHole": {},
+  "teeTimeInfo": "",
+  "teeTips": []
 }

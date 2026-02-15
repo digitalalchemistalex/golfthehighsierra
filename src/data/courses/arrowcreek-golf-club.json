@@ -17,7 +17,7 @@
     "value": 4.8,
     "count": 512
   },
-  "description": "Custom ArrowCreek golf packages in Reno with lodging, tee times, and concierge planning. Play The Legends and The Challenge. Trusted 20+ yrs.",
+  "description": "The Club at ArrowCreek boasts two exceptional championship golf courses\u2014 The Legend Course and The Challenge Course \u2014each offering a unique test of skill against the stunning backdrop of the Sierra Nevada mountains. Designed by golf legends Arnold Palmer and Fuzzy Zoeller, these courses feature dramatic elevation changes, strategically placed bunkers, and fast, undulating greens that demand precision and strategy. The immaculate course conditions, combined with breathtaking panoramic views and a private, exclusive atmosphere, make ArrowCreek a premier destination for golfers seeking both challenge and beauty during their round.",
   "holes": 18,
   "par": null,
   "designer": "",
@@ -45,5 +45,68 @@
   "meta": {
     "title": "ArrowCreek Country Club Reno NV | Stay and Play Packages",
     "description": "Private ArrowCreek golf in Reno, NV with stay and play packages. Lodging, tee times, and concierge quotes for groups, executives, and tournaments."
-  }
+  },
+  "bodyText": [
+    "Play ArrowCreek in Reno with golf groups, tee times, and stay and play packages. Expert trip planning for buddies, corporate, and leisure groups.",
+    "The Club at ArrowCreek boasts two exceptional championship golf courses\u2014\nThe Legend Course\nand\nThe Challenge Course\n\u2014each offering a unique test of skill against the stunning backdrop of the Sierra Nevada mountains. Designed by golf legends Arnold Palmer and Fuzzy Zoeller, these courses feature dramatic elevation changes, strategically placed bunkers, and fast, undulating greens that demand precision and strategy. The immaculate course conditions, combined with breathtaking panoramic views and a private, exclusive atmosphere, make ArrowCreek a premier destination for golfers seeking both challenge and beauty during their round.",
+    "The Club at ArrowCreek \u2013 Reno, NV\nLocation:\n2905 Arrowcreek Pkwy, Reno, NV 89511\nDistance from Key Locations:\n20 Minutes \u2013 Downtown Reno\n22 Minutes \u2013 Peppermill & Atlantis Casino Resorts (Reno)\n35 Minutes \u2013 Carson City, NV\n45 Minutes \u2013 Truckee, CA\n55 Minutes \u2013 Stateline, NV (Lake Tahoe Casinos)\n60 Minutes \u2013 Graeagle, CA\n70 Minutes \u2013 Minden, NV",
+    "ArrowCreek features\ntwo championship courses\n: The\nLegend Course\nby Arnold Palmer and The\nChallenge Course\nby Fuzzy Zoeller, both set against the Sierra Nevada backdrop.",
+    "While ArrowCreek is a\nprivate club\n, Golf the High Sierra provides\nexclusive stay-and-play packages\nthat grant access to both courses and club facilities.",
+    "Guests can enjoy a\ngrass driving range, short game practice area, large putting green\n, and professional instruction, perfect for sharpening skills before a round.",
+    "Yes. During stay-and-play access, golfers can enjoy\non-site restaurants\n, including popular options like Tony\u2019s sushi, along with full clubhouse amenities.",
+    "Absolutely. With two championship courses, practice areas, event spaces, and dining, ArrowCreek is ideal for\ncorporate outings, group trips, or tournament packages\n.\nPlan your package here \u00bb"
+  ],
+  "distances": [
+    "20 Minutes \u2013 Downtown Reno",
+    "22 Minutes \u2013 Peppermill & Atlantis Casino Resorts (Reno)",
+    "35 Minutes \u2013 Carson City, NV",
+    "45 Minutes \u2013 Truckee, CA",
+    "55 Minutes \u2013 Stateline, NV (Lake Tahoe Casinos)",
+    "60 Minutes \u2013 Graeagle, CA",
+    "70 Minutes \u2013 Minden, NV"
+  ],
+  "facilities": [
+    "Expansive Practice Range \u2013 A grass driving range with multiple target greens to fine-tune long and mid-range shots.",
+    "Short Game Practice Area \u2013 Dedicated spaces for chipping, pitching, and bunker play , allowing you to sharpen their short-game skills.",
+    "Large Putting Green \u2013 A spacious putting surface designed to mimic on-course conditions, ideal for perfecting putting strokes.",
+    "Fully Stocked Golf Shop \u2013 A pro shop featuring the latest in golf apparel, equipment, and accessories from top brands.",
+    "Great Clubhouse \u2013 Multiple restaurants are accessible to non-members during their day\u2019s play, and beautiful lockers rooms offer amenities not found at many Reno golf courses that the public can access.",
+    "Driving range and putting greens",
+    "Clubhouse with restaurant and bar",
+    "Event and banquet spaces"
+  ],
+  "tips": [
+    {
+      "title": "The Hack!",
+      "content": "Some of the best sushi the Reno has to offer is available at Tony\u2019s.\u00a0 Make sure to plan enough time to enjoy delicious rolls, fresh nigiri, and other unique creations during your day.\nDon\u2019t be late for your tee time!\u00a0 Get there early and spend time practicing on their massive and beautiful practice facility."
+    },
+    {
+      "title": "The Club at ArrowCreek \u2013 Reno, NV",
+      "content": "Location:\n2905 Arrowcreek Pkwy, Reno, NV 89511\nDistance from Key Locations:\n20 Minutes \u2013 Downtown Reno\n22 Minutes \u2013 Peppermill & Atlantis Casino Resorts (Reno)\n35 Minutes \u2013 Carson City, NV\n45 Minutes \u2013 Truckee, CA\n55 Minutes \u2013 Stateline, NV (Lake Tahoe Casinos)\n60 Minutes \u2013 Graeagle, CA\n70 Minutes \u2013 Minden, NV\nDirections"
+    },
+    {
+      "title": "Is The Club at ArrowCreek open to the public?",
+      "content": "While ArrowCreek is a\nprivate club\n, Golf the High Sierra provides\nexclusive stay-and-play packages\nthat grant access to both courses and club facilities."
+    },
+    {
+      "title": "Does ArrowCreek have dining options for non-members?",
+      "content": "Yes. During stay-and-play access, golfers can enjoy\non-site restaurants\n, including popular options like Tony\u2019s sushi, along with full clubhouse amenities."
+    },
+    {
+      "title": "Can ArrowCreek host group or corporate golf events?",
+      "content": "Absolutely. With two championship courses, practice areas, event spaces, and dining, ArrowCreek is ideal for\ncorporate outings, group trips, or tournament packages\n.\nPlan your package here \u00bb"
+    }
+  ],
+  "pointOfView": "Both the courses at The Club at Arrowcreek are great, but we like to play The Challenge Course a little bit more. It's routed at a slightly higher elevation than the Legend Course, making the views absolutely spectacular! The Challenge Course plays more in front of you, whereas a number of blind landing areas on the Legend Course can make shot lines unclear and daunting, especially off of the tee.",
+  "hack": "",
+  "contentParagraphs": [
+    "Play ArrowCreek in Reno with golf groups, tee times, and stay and play packages. Expert trip planning for buddies, corporate, and leisure groups.",
+    "While playing the Challenge Course at The Club at ArrowCreek, breathtaking panoramic views of the Sierra Nevada mountains, the sprawling Reno skyline, and the stunning desert landscapes offer a mesmerizing backdrop to the round. It is truly a spectacular panorama that is difficult to beat.",
+    "Although private, Golf the High Sierra customers can gain access to the golf courses and club facilities on their day of play. The staff treat every golfer as a member, and many of the club amenities are available to non-members throughout their visit.",
+    "Some of the best sushi the Reno has to offer is available at Tony\u2019s. Make sure to plan enough time to enjoy delicious rolls, fresh nigiri, and other unique creations during your day.",
+    "Don\u2019t be late for your tee time! Get there early and spend time practicing on their massive and beautiful practice facility."
+  ],
+  "featuredHole": {},
+  "teeTimeInfo": "",
+  "teeTips": []
 }
