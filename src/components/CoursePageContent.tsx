@@ -8,7 +8,6 @@ import {
   MapPin,
   Star,
   ArrowRight,
-  DollarSign,
   ChevronRight,
   Globe,
   Flag,
@@ -346,14 +345,6 @@ export default function CoursePageContent({
                   </span>
                 </div>
               )}
-              {course.priceRange && (
-                <div className="flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-2 rounded-lg backdrop-blur-sm">
-                  <DollarSign className="w-5 h-5 text-gold-300" />
-                  <span className="text-white font-semibold">
-                    {course.priceRange}
-                  </span>
-                </div>
-              )}
             </div>
           </div>
         </div>
@@ -684,12 +675,8 @@ export default function CoursePageContent({
                   Plan Your Trip
                 </h3>
                 <p className="text-cream-300/80 text-sm mb-6 leading-relaxed">
-                  Custom {course.name} packages from{" "}
-                  <span className="text-gold-400 font-semibold">
-                    {course.priceRange || "custom pricing"}
-                  </span>{" "}
-                  per golfer. Lodging, tee times, carts &amp; concierge
-                  planning included.
+                  Custom {course.name} group golf packages with lodging, tee
+                  times, carts &amp; concierge planning included.
                 </p>
                 <div className="space-y-3">
                   <Link
@@ -731,14 +718,6 @@ export default function CoursePageContent({
                     <div className="fact-row">
                       <dt className="fact-label">Par</dt>
                       <dd className="fact-value">{course.par}</dd>
-                    </div>
-                  )}
-                  {course.priceRange && (
-                    <div className="fact-row">
-                      <dt className="fact-label">Package Price</dt>
-                      <dd className="fact-value text-gold-600">
-                        {course.priceRange}
-                      </dd>
                     </div>
                   )}
                   <div className="fact-row">
@@ -814,11 +793,6 @@ export default function CoursePageContent({
                       <span className="text-cream-300/60 text-sm">
                         {r.regionLabel}
                       </span>
-                      {r.priceRange && (
-                        <span className="text-gold-400/80 text-sm font-semibold">
-                          {r.priceRange}
-                        </span>
-                      )}
                     </div>
                   </div>
                 </Link>

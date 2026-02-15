@@ -23,8 +23,11 @@ const navItems = [
     href: "/best-golf-courses-reno/",
     children: [
       { label: "All Courses", href: "/best-golf-courses-reno/" },
-      { label: "Lake Tahoe Courses", href: "/best-golf-courses-lake-tahoe/" },
-      { label: "Reno Courses", href: "/best-golf-courses-reno/" },
+      { label: "Reno, NV", href: "/best-golf-courses-reno/" },
+      { label: "Lake Tahoe & Truckee, CA", href: "/best-golf-courses-lake-tahoe/" },
+      { label: "Carson Valley, NV", href: "/best-golf-courses-reno/" },
+      { label: "Graeagle, CA", href: "/best-golf-courses-reno/" },
+      { label: "Northern California", href: "/best-golf-courses-reno/" },
     ],
   },
   {
