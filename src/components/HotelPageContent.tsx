@@ -16,7 +16,7 @@ interface HotelFAQ { question: string; answer: string; }
 export interface HotelProps {
   slug: string; name: string; region: string; regionLabel: string; type: string;
   address: HotelAddress; geo: HotelGeo; phone?: string; website?: string;
-  priceRange: string; priceFrom?: string; starRating?: number; aaaRating?: string;
+  priceRange?: string; priceFrom?: string; starRating?: number; aaaRating?: string;
   rating?: HotelRating; description: string; shortDescription: string;
   highlights: string[]; amenities: string[]; roomTypes: HotelRoomType[];
   dining: HotelDining[]; spaBars: string[]; totalRooms?: number | null;

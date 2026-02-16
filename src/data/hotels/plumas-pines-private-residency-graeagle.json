@@ -15,8 +15,6 @@
     "latitude": 39.748,
     "longitude": -120.6175
   },
-  "priceRange": "$199\u2013$599",
-  "priceFrom": "$199",
   "rating": {
     "value": 4.5,
     "count": 320,
@@ -111,5 +109,7 @@
     "These thoughtfully appointed townhomes come in various sizes \u2014 ranging from two to four bedrooms \u2014 and are designed for families, groups, or golf retreats. Every unit comes fully furnished with bed and bath linens, a well-appointed kitchen with cookware and utensils, washer/dryer, gas BBQ, satellite or streaming TV, and WiFi. Many feature spacious living areas with vaulted ceilings, outdoor decks with fairway views, and access to the Plumas Pines Rec Center with pool.",
     "Start your mornings overlooking fairways or the Feather River, then spend your day at the Rec Center pool, tennis courts, or on the links. Walk to downtown Graeagle for shops, restaurants, and the famous Graeagle Grocery Store. End the evening with al fresco dining on your private deck or a relaxing soak after a day of mountain adventure. Select pet-friendly properties are available for guests traveling with their four-legged companions."
   ],
-  "website": "https://www.plumaspinesvacationhomesandrentals.com"
+  "website": "https://www.plumaspinesvacationhomesandrentals.com",
+  "priceRange": "",
+  "priceFrom": ""
 }

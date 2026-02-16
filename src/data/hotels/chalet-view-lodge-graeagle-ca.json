@@ -17,8 +17,6 @@
   },
   "phone": "(530) 832-5528",
   "website": "https://www.chaletviewlodge.com",
-  "priceRange": "$175\u2013$450",
-  "priceFrom": "$175",
   "rating": {
     "value": 4.0,
     "count": 523,
@@ -103,18 +101,15 @@
   "roomTypes": [
     {
       "name": "Resort Guest Room",
-      "description": "Modern rooms with Parachute Home bedding, Nespresso machine, Molton Brown amenities, and in-room tablets. 33 available.",
-      "priceFrom": "$175"
+      "description": "Modern rooms with Parachute Home bedding, Nespresso machine, Molton Brown amenities, and in-room tablets. 33 available."
     },
     {
       "name": "Terrace Suite",
-      "description": "Spacious suites with private terraces, lofted seating areas, and panoramic Lost Sierra views. 9 available.",
-      "priceFrom": "$275"
+      "description": "Spacious suites with private terraces, lofted seating areas, and panoramic Lost Sierra views. 9 available."
     },
     {
       "name": "Rustic Cabin",
-      "description": "One and two-bedroom cabins with wrap-around porches, full kitchens, and mountain charm. 7 available.",
-      "priceFrom": "$325"
+      "description": "One and two-bedroom cabins with wrap-around porches, full kitchens, and mountain charm. 7 available."
     },
     {
       "name": "Villa",
@@ -157,5 +152,7 @@
     "Inside, enjoy thoughtful amenities \u2014 cozy accommodations with lofted seating, in-room tablets, Nespresso coffee machines, and exclusive Molton Brown bath products. Personal assistant services via IVY text keep everything at your fingertips. Dine on locally inspired fare at two on-site restaurants: savor artisan brews paired with seasonal plates at Eureka Peak Brewing Co., or enjoy garden-view dining at Kitchen+Bar.",
     "Chalet View Lodge is more than a stay \u2014 it's a luxurious mountain escape, a premier wedding venue, and a gathering spot for family and friends. With full spa services, tranquil surroundings, and staff known for warm hospitality, it's a place you'll want to return to time and again."
   ],
-  "acreage": 10
+  "acreage": 10,
+  "priceRange": "",
+  "priceFrom": ""
 }

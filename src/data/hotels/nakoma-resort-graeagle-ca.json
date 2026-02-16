@@ -17,8 +17,6 @@
   },
   "phone": "(530) 897-2300",
   "website": "https://nakomaresort.com",
-  "priceRange": "$159\u2013$499",
-  "priceFrom": "$159",
   "rating": {
     "value": 4.2,
     "count": 410,
@@ -150,5 +148,7 @@
     "Adventure is just steps away \u2014 play a round on the famed Dragon golf course (designed around a Frank Lloyd Wright concept from 1923, built in 2001), hit the driving range, or explore the area's hiking, snowshoeing, and snow-tubing trails. Kids and families will love the arcade, game room, children's club, and theater inside Altitude, while couples will savor the spa and mountain ambiance.",
     "During evenings, treat yourself to elevated fare at Fifty44 Restaurant & Bar, located in the iconic Frank Lloyd Wright-inspired Lodge \u2014 enjoy wood-fired dishes and sweeping Sierra views from the majestic fireplace room or summer deck. For something more casual, the Middle Fork Bistro + Bar in Altitude serves craft cocktails, flatbreads, hearty salads, and small plates with soaring ceilings and walls of glass.",
     "Family and pet lovers rejoice: the Inn welcomes up to two dogs (up to 75 lbs each), with access to nearby forest trails for both you and your four-legged friends to roam."
-  ]
+  ],
+  "priceRange": "",
+  "priceFrom": ""
 }

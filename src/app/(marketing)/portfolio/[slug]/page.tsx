@@ -67,7 +67,7 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
             geo: { "@type": "GeoCoordinates", latitude: hotel.geo.latitude, longitude: hotel.geo.longitude },
           }),
           telephone: hotel.phone || "+1-888-584-8232",
-          priceRange: hotel.priceRange,
+          ...(hotel.priceRange ? { priceRange: hotel.priceRange } : {}),
           ...(hotel.rating && {
             aggregateRating: {
               "@type": "AggregateRating",

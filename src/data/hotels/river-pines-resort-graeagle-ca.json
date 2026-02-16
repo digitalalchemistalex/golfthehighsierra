@@ -15,8 +15,6 @@
     "latitude": 39.7485,
     "longitude": -120.62
   },
-  "priceRange": "$80\u2013$325",
-  "priceFrom": "$80",
   "rating": {
     "value": 4.3,
     "count": 280,
@@ -57,23 +55,19 @@
   "roomTypes": [
     {
       "name": "Standard Room",
-      "description": "Comfortable rooms with brand-new mattresses, knotty-pine interiors, and mountain views. From $80/night.",
-      "priceFrom": "$80"
+      "description": "Comfortable rooms with brand-new mattresses, knotty-pine interiors, and mountain views."
     },
     {
       "name": "Deluxe Room",
-      "description": "Upgraded rooms with additional space, modern amenities, and forest or river views.",
-      "priceFrom": "$110"
+      "description": "Upgraded rooms with additional space, modern amenities, and forest or river views."
     },
     {
       "name": "One-Bedroom Cabin",
-      "description": "Charming cabins with rustic charm, kitchenettes, and covered porches set among the pines.",
-      "priceFrom": "$130"
+      "description": "Charming cabins with rustic charm, kitchenettes, and covered porches set among the pines."
     },
     {
       "name": "Suite",
-      "description": "Spacious suites with full kitchenettes, separate living areas, and room for families or small groups. From $185/night.",
-      "priceFrom": "$185"
+      "description": "Spacious suites with full kitchenettes, separate living areas, and room for families or small groups."
     }
   ],
   "dining": [
@@ -135,5 +129,7 @@
     "River Pines isn't just about comfort \u2014 it's about connection. Outdoor enthusiasts can cast a line in the nearby Feather River, tee off at world-class courses like Plumas Pines and Graeagle Meadows, trek bike trails through Plumas-Eureka State Park, or explore local boutiques and galleries in the charming village of Graeagle. When hunger strikes, head next door to the newly remodeled Roadhouse Restaurant for hearty meals, refreshing cocktails, and indoor-outdoor dining \u2014 or grab a drink at the outdoor pool bar."
   ],
   "acreage": 17,
-  "website": "https://www.riverpines.com"
+  "website": "https://www.riverpines.com",
+  "priceRange": "",
+  "priceFrom": ""
 }
