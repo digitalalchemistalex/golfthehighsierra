@@ -116,8 +116,8 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
     "--white": "#fff", "--cream": "#faf8f5", "--bone": "#eee9e2", "--sand": "#d4cfc6",
     "--stone": "#8a857c", "--charcoal": "#3a3832", "--ink": "#1a1917",
     "--gold": "#b49a6a", "--gold-glow": "#c8ad7e",
-    "--serif": "'Cormorant', Georgia, serif",
-    "--sans": "'Manrope', system-ui, sans-serif",
+    "--serif": "'Plus Jakarta Sans', system-ui, sans-serif",
+    "--sans": "'Plus Jakarta Sans', system-ui, sans-serif",
   } as React.CSSProperties;
 
   return (
@@ -145,7 +145,7 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
           {/* Hero content — course name + stats */}
           <div style={{ position: "absolute", inset: 0, zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 clamp(32px,5vw,80px) clamp(48px,8vh,80px)" }}>
             <R>
-              <h1 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(42px,7vw,90px)", lineHeight: .92, color: "#fff", letterSpacing: "-.03em" }}>
+              <h1 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(42px,7vw,90px)", lineHeight: .92, color: "#fff", letterSpacing: "-.03em" }}>
                 {nameParts.slice(0, -2).join(" ") || firstName}<br />
                 <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.55)" }}>{nameParts.slice(-2).join(" ")}</em>
               </h1>
@@ -192,7 +192,7 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
       <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 600 }} className="max-md:!grid-cols-1">
         <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>The Course</div></R>
-          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em" }}>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em" }}>
             {course.featuredHole?.title ? <>The <em style={{ fontStyle: "italic" }}>{course.featuredHole.title.replace(/^The\s*/i, "")}</em></> : <>Where Mountains Meet <em style={{ fontStyle: "italic" }}>Mastery</em></>}
           </h2></R>
           <R delay={0.16}><p style={{ fontSize: 13, lineHeight: 1.9, color: "var(--stone)", fontWeight: 300, maxWidth: 440, marginTop: 16 }}>{para1}</p></R>
@@ -217,7 +217,7 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
           <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14 }}>
             {course.featuredHole ? "Signature Hole" : "The Experience"}
           </div></R>
-          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em", color: "#fff" }}>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em", color: "#fff" }}>
             {course.featuredHole?.title ? <>{course.featuredHole.title.split(" ").slice(0, -1).join(" ")} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.4)" }}>{course.featuredHole.title.split(" ").slice(-1)}</em></> : <>Championship <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.4)" }}>Golf</em></>}
           </h2></R>
           <R delay={0.16}>
@@ -235,7 +235,7 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
         {/* Left: stats + distances */}
         <div style={{ padding: "clamp(48px,8vh,80px) clamp(32px,5vw,80px)", background: "var(--cream)" }}>
           <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>At a Glance</div></R>
-          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1 }}><em style={{ fontStyle: "italic" }}>{firstName}</em> Details</h2></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1 }}><em style={{ fontStyle: "italic" }}>{firstName}</em> Details</h2></R>
 
           {/* Mini stats */}
           <R delay={0.16}>
@@ -280,7 +280,7 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
         {/* Right: FAQ */}
         <div style={{ padding: "clamp(48px,8vh,80px) clamp(32px,5vw,80px)", background: "var(--white)" }}>
           <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>FAQ</div></R>
-          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, marginBottom: 20 }}>Common <em style={{ fontStyle: "italic" }}>Questions</em></h2></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, marginBottom: 20 }}>Common <em style={{ fontStyle: "italic" }}>Questions</em></h2></R>
           {course.faqs.slice(0, 5).map((f, i) => (
             <R key={i} delay={0.12 + i * 0.04}><FAQ q={f.question} a={f.answer} /></R>
           ))}
@@ -291,7 +291,7 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
       {relatedCourses.length > 0 && (
         <section style={{ padding: "clamp(48px,7vh,80px) clamp(32px,7vw,120px)", background: "var(--cream)" }}>
           <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>Nearby</div></R>
-          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1 }}>More in <em style={{ fontStyle: "italic" }}>{course.regionLabel}</em></h2></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1 }}>More in <em style={{ fontStyle: "italic" }}>{course.regionLabel}</em></h2></R>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16, marginTop: 24 }} className="max-md:!grid-cols-1">
             {relatedCourses.map((rc, i) => (
               <R key={rc.slug} delay={0.12 + i * 0.06}>
@@ -321,7 +321,7 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
       <section style={{ background: "var(--ink)", textAlign: "center", padding: "clamp(64px,10vh,120px) clamp(32px,7vw,120px)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 60%,rgba(180,154,106,.05),transparent 70%)" }} />
         <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14, position: "relative", zIndex: 1 }}>Book {firstName}</div></R>
-        <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, color: "#fff", marginBottom: 12, position: "relative", zIndex: 1 }}>Play {firstName} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.35)" }}>With Your Group</em></h2></R>
+        <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, color: "#fff", marginBottom: 12, position: "relative", zIndex: 1 }}>Play {firstName} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.35)" }}>With Your Group</em></h2></R>
         <R delay={0.16}><p style={{ fontSize: 13, color: "rgba(255,255,255,.25)", fontWeight: 300, maxWidth: 380, margin: "0 auto 28px", lineHeight: 1.8, position: "relative", zIndex: 1 }}>
           {course.priceRange ? `Stay-and-play from ${course.priceRange.split("–")[0]}/golfer. ` : ""}Tee times, lodging, dining — one call.
         </p></R>

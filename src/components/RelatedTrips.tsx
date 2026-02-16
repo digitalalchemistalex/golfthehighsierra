@@ -369,7 +369,7 @@ export default function RelatedTrips({ slug, type }: { slug: string; type: "cour
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
           <div style={{ textAlign: "center", marginBottom: 40 }}>
             <div className="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-2">Real Trips Featuring {label}</div>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900" style={{ fontFamily: "'Cormorant', Georgia, serif", fontWeight: 400 }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900" style={{ fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif", fontWeight: 700 }}>
               {trips.length} Group{trips.length !== 1 ? "s" : ""} <em className="italic text-slate-400">Played Here</em>
             </h2>
             <p className="text-sm text-slate-500 mt-2 max-w-lg mx-auto">Real itineraries from past groups. See courses, lodging, day-by-day logistics, and pricing — then request an identical or customized quote.</p>

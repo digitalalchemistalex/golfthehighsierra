@@ -99,8 +99,8 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
     "--white": "#fff", "--cream": "#faf8f5", "--bone": "#eee9e2", "--sand": "#d4cfc6",
     "--stone": "#8a857c", "--charcoal": "#3a3832", "--ink": "#1a1917",
     "--gold": "#b49a6a", "--gold-glow": "#c8ad7e",
-    "--serif": "'Cormorant', Georgia, serif",
-    "--sans": "'Manrope', system-ui, sans-serif",
+    "--serif": "'Plus Jakarta Sans', system-ui, sans-serif",
+    "--sans": "'Plus Jakarta Sans', system-ui, sans-serif",
   } as React.CSSProperties;
 
   /* Compute type label */
@@ -168,7 +168,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
       <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 600 }} className="max-md:!grid-cols-1">
         <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>The Property</div></R>
-          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em" }}>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em" }}>
             {hotel.highlights?.[0] ? <em style={{ fontStyle: "italic" }}>{hotel.highlights[0]}</em> : <>Where Comfort Meets <em style={{ fontStyle: "italic" }}>Adventure</em></>}
           </h2></R>
           <R delay={0.16}><p style={{ fontSize: 13, lineHeight: 1.9, color: "var(--stone)", fontWeight: 300, maxWidth: 440, marginTop: 16 }}>{hotel.description.substring(0, 350)}</p></R>
@@ -203,7 +203,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
           <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14 }}>
             {hotel.dining?.length > 0 ? "Dining & Nightlife" : "The Experience"}
           </div></R>
-          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em", color: "#fff" }}>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em", color: "#fff" }}>
             {hotel.dining?.length > 0 ? <>World-Class <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.4)" }}>Dining</em></> : <>Unmatched <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.4)" }}>Hospitality</em></>}
           </h2></R>
 
@@ -239,7 +239,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
         {/* Left: Room types + amenities */}
         <div style={{ padding: "clamp(48px,8vh,80px) clamp(32px,5vw,80px)", background: "var(--cream)" }}>
           <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>At a Glance</div></R>
-          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1 }}><em style={{ fontStyle: "italic" }}>{firstName}</em> Details</h2></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1 }}><em style={{ fontStyle: "italic" }}>{firstName}</em> Details</h2></R>
 
           {/* Mini stats */}
           <R delay={0.16}>
@@ -296,7 +296,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
         {/* Right: FAQ */}
         <div style={{ padding: "clamp(48px,8vh,80px) clamp(32px,5vw,80px)", background: "var(--white)" }}>
           <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>FAQ</div></R>
-          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, marginBottom: 20 }}>Common <em style={{ fontStyle: "italic" }}>Questions</em></h2></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, marginBottom: 20 }}>Common <em style={{ fontStyle: "italic" }}>Questions</em></h2></R>
           {hotel.faqs?.slice(0, 5).map((f, i) => (
             <R key={i} delay={0.12 + i * 0.04}><FAQ q={f.question} a={f.answer} /></R>
           ))}
@@ -307,7 +307,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
       {relatedHotels.length > 0 && (
         <section style={{ padding: "clamp(48px,7vh,80px) clamp(32px,7vw,120px)", background: "var(--cream)" }}>
           <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>Nearby</div></R>
-          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1 }}>More in <em style={{ fontStyle: "italic" }}>{hotel.regionLabel}</em></h2></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1 }}>More in <em style={{ fontStyle: "italic" }}>{hotel.regionLabel}</em></h2></R>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16, marginTop: 24 }} className="max-md:!grid-cols-1">
             {relatedHotels.map((rh, i) => (
               <R key={rh.slug} delay={0.12 + i * 0.06}>
@@ -337,7 +337,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
       <section style={{ background: "var(--ink)", textAlign: "center", padding: "clamp(64px,10vh,120px) clamp(32px,7vw,120px)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 60%,rgba(180,154,106,.05),transparent 70%)" }} />
         <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14, position: "relative", zIndex: 1 }}>Stay &amp; Play</div></R>
-        <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, color: "#fff", marginBottom: 12, position: "relative", zIndex: 1 }}>Book {firstName} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.35)" }}>Golf Package</em></h2></R>
+        <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, color: "#fff", marginBottom: 12, position: "relative", zIndex: 1 }}>Book {firstName} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.35)" }}>Golf Package</em></h2></R>
         <R delay={0.16}><p style={{ fontSize: 13, color: "rgba(255,255,255,.25)", fontWeight: 300, maxWidth: 380, margin: "0 auto 28px", lineHeight: 1.8, position: "relative", zIndex: 1 }}>
           {hotel.priceRange ? `Stay-and-play from ${hotel.priceFrom || hotel.priceRange.split("–")[0]}/golfer. ` : ""}Lodging, tee times, dining — one call.
         </p></R>

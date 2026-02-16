@@ -501,19 +501,19 @@ const HOMEPAGE_HTML = `
       <!-- Feature 1: Real Trip Database -->
       <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:24px">
         <div style="font-size:28px;margin-bottom:12px">&#128203;</div>
-        <div style="font-family:'DM Serif Display',serif;font-size:18px;color:#fff;margin-bottom:8px">Real Trips from Real Groups</div>
+        <div style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;font-size:18px;color:#fff;margin-bottom:8px">Real Trips from Real Groups</div>
         <div style="font-size:13px;color:rgba(255,255,255,.5);line-height:1.6">Browse actual past trips with real courses, lodging, group sizes, and pricing &mdash; built from 10,000+ outings we&rsquo;ve organized over 20 years.</div>
       </div>
       <!-- Feature 2: Smart Filters -->
       <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:24px">
         <div style="font-size:28px;margin-bottom:12px">&#128269;</div>
-        <div style="font-family:'DM Serif Display',serif;font-size:18px;color:#fff;margin-bottom:8px">Filter by Region, Vibe &amp; Budget</div>
+        <div style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;font-size:18px;color:#fff;margin-bottom:8px">Filter by Region, Vibe &amp; Budget</div>
         <div style="font-size:13px;color:rgba(255,255,255,.5);line-height:1.6">Narrow trips by destination, trip style (budget, premium, corporate, bachelor party, weekend getaway), group size, lodging type, and more.</div>
       </div>
       <!-- Feature 3: Instant Quote -->
       <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:24px">
         <div style="font-size:28px;margin-bottom:12px">&#128176;</div>
-        <div style="font-family:'DM Serif Display',serif;font-size:18px;color:#fff;margin-bottom:8px">Request a Custom Quote</div>
+        <div style="font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;font-size:18px;color:#fff;margin-bottom:8px">Request a Custom Quote</div>
         <div style="font-size:13px;color:rgba(255,255,255,.5);line-height:1.6">Find a trip you like, tell us your dates and group size, and get a professional day-by-day itinerary with courses, lodging, and transport.</div>
       </div>
     </div>
