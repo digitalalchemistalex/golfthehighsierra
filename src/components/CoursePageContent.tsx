@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import HeroTripSlider from "./HeroTripSlider";
 
 /* ─── Types ─── */
 interface CourseAddress { streetAddress?: string; addressLocality?: string; addressRegion?: string; postalCode?: string; }
@@ -122,57 +123,66 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
   return (
     <div style={{ ...cssVars, fontFamily: "var(--sans)", background: "var(--white)", color: "var(--ink)", overflowX: "hidden" }}>
 
-      {/* ═══ 1. HERO ═══ */}
-      <section style={{ position: "relative", height: "100vh", minHeight: 650, overflow: "hidden", background: "#0a0a08" }}>
-        <div style={{ position: "absolute", inset: 0 }}>
-          {course.heroImage && <Image src={course.heroImage} alt={course.name} fill priority className="object-cover" sizes="100vw" style={{ opacity: .5, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
-        </div>
-        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(0,0,0,.25) 0%,transparent 35%,transparent 55%,rgba(0,0,0,.65) 100%)" }} />
+      {/* ═══ 1. HERO — Split: Image Left + Caddie Slider Right ═══ */}
+      <section style={{ position: "relative", minHeight: 650, overflow: "hidden", background: "#0a0a08" }} className="flex flex-col lg:flex-row lg:h-screen">
 
-        {/* Top bar */}
-        <div style={{ position: "absolute", top: "clamp(24px,4vh,48px)", left: "clamp(32px,7vw,120px)", right: "clamp(32px,7vw,120px)", display: "flex", justifyContent: "space-between", zIndex: 3 }}>
-          <div style={{ fontFamily: "var(--serif)", fontSize: 13, color: "rgba(255,255,255,.35)", letterSpacing: 3, textTransform: "uppercase" }}>Golf the High Sierra</div>
-          <div style={{ display: "flex", gap: 24 }}>
-            <Link href="/best-golf-courses-reno/" style={{ fontSize: 10, color: "rgba(255,255,255,.3)", letterSpacing: 2, textTransform: "uppercase" }}>Courses</Link>
-            <Link href="/contact-custom-golf-package/" style={{ fontSize: 10, color: "rgba(255,255,255,.3)", letterSpacing: 2, textTransform: "uppercase" }}>Book</Link>
+        {/* ── LEFT: Course Image ── */}
+        <div className="relative w-full lg:w-1/2 h-[70vh] lg:h-full shrink-0">
+          <div style={{ position: "absolute", inset: 0 }}>
+            {course.heroImage && <Image src={course.heroImage} alt={course.name} fill priority className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" style={{ opacity: .55, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
+          </div>
+          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(0,0,0,.25) 0%,transparent 35%,transparent 55%,rgba(0,0,0,.65) 100%)" }} />
+
+          {/* Top bar */}
+          <div style={{ position: "absolute", top: "clamp(24px,4vh,48px)", left: "clamp(32px,5vw,80px)", right: "clamp(32px,5vw,80px)", display: "flex", justifyContent: "space-between", zIndex: 3 }}>
+            <div style={{ fontFamily: "var(--serif)", fontSize: 13, color: "rgba(255,255,255,.35)", letterSpacing: 3, textTransform: "uppercase" }}>Golf the High Sierra</div>
+            <div style={{ display: "flex", gap: 24 }}>
+              <Link href="/best-golf-courses-reno/" style={{ fontSize: 10, color: "rgba(255,255,255,.3)", letterSpacing: 2, textTransform: "uppercase" }}>Courses</Link>
+              <Link href="/contact-custom-golf-package/" style={{ fontSize: 10, color: "rgba(255,255,255,.3)", letterSpacing: 2, textTransform: "uppercase" }}>Book</Link>
+            </div>
+          </div>
+
+          {/* Hero content — course name + stats */}
+          <div style={{ position: "absolute", inset: 0, zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 clamp(32px,5vw,80px) clamp(48px,8vh,80px)" }}>
+            <R>
+              <h1 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(42px,7vw,90px)", lineHeight: .92, color: "#fff", letterSpacing: "-.03em" }}>
+                {nameParts.slice(0, -2).join(" ") || firstName}<br />
+                <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.55)" }}>{nameParts.slice(-2).join(" ")}</em>
+              </h1>
+            </R>
+            <R delay={0.12}>
+              <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 16, fontSize: 12, color: "rgba(255,255,255,.3)", fontWeight: 300 }}>
+                {course.designer && <><span>{course.designer}</span><span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.2)" }} /></>}
+                {course.yearBuilt && <><span>Est. {course.yearBuilt}</span><span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.2)" }} /></>}
+                <span>{course.regionLabel}</span>
+              </div>
+            </R>
+            <R delay={0.24}>
+              <div style={{ display: "flex", gap: "clamp(16px,2.5vw,36px)", marginTop: "clamp(16px,3vh,32px)", paddingTop: "clamp(12px,2vh,20px)", borderTop: "1px solid rgba(255,255,255,.07)", flexWrap: "wrap" }}>
+                {[
+                  course.holes && { v: course.holes, l: "Holes" },
+                  course.par && { v: course.par, l: "Par" },
+                  course.yardage && { v: course.yardage.toLocaleString(), l: "Yards" },
+                  course.slope && { v: course.slope, l: "Slope" },
+                  course.rating && { v: course.rating.value, l: "Rating" },
+                ].filter(Boolean).map((s, i) => (
+                  <div key={i}>
+                    <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(20px,2.5vw,34px)", fontWeight: 300, color: "#fff", lineHeight: 1 }}>{(s as {v:string|number}).v}</div>
+                    <div style={{ fontSize: 8, color: "rgba(255,255,255,.2)", letterSpacing: 2.5, textTransform: "uppercase", marginTop: 5 }}>{(s as {l:string}).l}</div>
+                  </div>
+                ))}
+              </div>
+            </R>
           </div>
         </div>
 
-        {/* Hero content */}
-        <div style={{ position: "absolute", inset: 0, zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 clamp(32px,7vw,120px) clamp(48px,8vh,100px)" }}>
-          <R>
-            <h1 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(52px,9vw,120px)", lineHeight: .92, color: "#fff", letterSpacing: "-.03em" }}>
-              {nameParts.slice(0, -2).join(" ") || firstName}<br />
-              <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.55)" }}>{nameParts.slice(-2).join(" ")}</em>
-            </h1>
-          </R>
-          <R delay={0.12}>
-            <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 16, fontSize: 12, color: "rgba(255,255,255,.3)", fontWeight: 300 }}>
-              {course.designer && <><span>{course.designer}</span><span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.2)" }} /></>}
-              {course.yearBuilt && <><span>Est. {course.yearBuilt}</span><span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.2)" }} /></>}
-              <span>{course.regionLabel}</span>
-            </div>
-          </R>
-          <R delay={0.24}>
-            <div style={{ display: "flex", gap: "clamp(20px,3.5vw,48px)", marginTop: "clamp(20px,3.5vh,40px)", paddingTop: "clamp(14px,2.5vh,24px)", borderTop: "1px solid rgba(255,255,255,.07)" }}>
-              {[
-                course.holes && { v: course.holes, l: "Holes" },
-                course.par && { v: course.par, l: "Par" },
-                course.yardage && { v: course.yardage.toLocaleString(), l: "Yards" },
-                course.slope && { v: course.slope, l: "Slope" },
-                course.rating && { v: course.rating.value, l: "Rating" },
-              ].filter(Boolean).map((s, i) => (
-                <div key={i}>
-                  <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(24px,3vw,40px)", fontWeight: 300, color: "#fff", lineHeight: 1 }}>{(s as {v:string|number}).v}</div>
-                  <div style={{ fontSize: 8, color: "rgba(255,255,255,.2)", letterSpacing: 2.5, textTransform: "uppercase", marginTop: 5 }}>{(s as {l:string}).l}</div>
-                </div>
-              ))}
-            </div>
-          </R>
+        {/* ── RIGHT: Trips Caddie Slider ── */}
+        <div className="w-full lg:w-1/2 bg-[#0a0f0a] relative border-l-0 lg:border-l border-white/[0.04]">
+          <HeroTripSlider slug={course.slug} type="course" />
         </div>
 
         {/* Scroll indicator */}
-        <div style={{ position: "absolute", bottom: 20, left: "50%", transform: "translateX(-50%)", zIndex: 3, display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
+        <div className="hidden lg:flex" style={{ position: "absolute", bottom: 20, left: "25%", transform: "translateX(-50%)", zIndex: 3, flexDirection: "column", alignItems: "center", gap: 6 }}>
           <span style={{ fontSize: 7, color: "rgba(255,255,255,.15)", letterSpacing: 3, textTransform: "uppercase" }}>Scroll</span>
           <div style={{ width: 1, height: 32, background: "linear-gradient(rgba(255,255,255,.25),transparent)", animation: "sdrop 2s ease infinite" }} />
         </div>
