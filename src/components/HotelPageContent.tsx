@@ -120,14 +120,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
           </div>
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(0,0,0,.25) 0%,transparent 35%,transparent 55%,rgba(0,0,0,.65) 100%)" }} />
 
-          {/* Top bar */}
-          <div style={{ position: "absolute", top: "clamp(24px,4vh,48px)", left: "clamp(32px,7vw,120px)", right: "clamp(32px,7vw,120px)", display: "flex", justifyContent: "space-between", zIndex: 3 }}>
-            <div style={{ fontFamily: "var(--serif)", fontSize: 13, color: "rgba(255,255,255,.65)", letterSpacing: 3, textTransform: "uppercase" }}>Golf the High Sierra</div>
-            <div style={{ display: "flex", gap: 24 }}>
-              <Link href="/accommodations-in-reno-tahoe/" style={{ fontSize: 10, color: "rgba(255,255,255,.6)", letterSpacing: 2, textTransform: "uppercase" }}>Hotels</Link>
-              <Link href="/contact-custom-golf-package/" style={{ fontSize: 10, color: "rgba(255,255,255,.6)", letterSpacing: 2, textTransform: "uppercase" }}>Book</Link>
-            </div>
-          </div>
+
 
           {/* Hero content */}
           <div style={{ position: "absolute", inset: 0, zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 clamp(32px,7vw,120px) clamp(48px,8vh,100px)" }}>
