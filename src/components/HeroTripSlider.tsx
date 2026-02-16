@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { useState, useEffect, useCallback, useRef } from "react";
+import QuoteModal from "./QuoteModal";
 
 /* ─── Slug → name maps ─── */
 const COURSE_NAMES: Record<string, string[]> = {
@@ -114,7 +115,7 @@ function pickImage(trip: Trip): string {
    FULL TRIP CARD — exact TripsCaddie match
    (same as RelatedTrips but scrollable)
    ═══════════════════════════════════════════ */
-function FullCard({ trip }: { trip: Trip }) {
+function FullCard({ trip, onQuote }: { trip: Trip; onQuote: (t: Trip) => void }) {
   const [imgLoaded, setImgLoaded] = useState(false);
   const [showLogistics, setShowLogistics] = useState(false);
   const imgSrc = pickImage(trip);
@@ -301,9 +302,9 @@ function FullCard({ trip }: { trip: Trip }) {
           </button>
         )}
         <div className="grid grid-cols-6 gap-2">
-          <a href="/contact-custom-golf-package/" className="col-span-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-[11px] font-extrabold uppercase tracking-wide transition-all shadow-md shadow-emerald-200 hover:shadow-lg flex items-center justify-center gap-1.5 active:scale-[0.98]">
+          <button onClick={() => onQuote(trip)} className="col-span-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-[11px] font-extrabold uppercase tracking-wide transition-all shadow-md shadow-emerald-200 hover:shadow-lg flex items-center justify-center gap-1.5 active:scale-[0.98]">
             📋 Custom Quote
-          </a>
+          </button>
           <a href="tel:+18885848232" className="col-span-1 py-2.5 bg-white hover:bg-blue-50 text-slate-400 hover:text-blue-600 border border-slate-200 hover:border-blue-200 rounded-xl transition-all flex items-center justify-center shadow-sm" title="Call to Book">📞</a>
         </div>
       </div>
@@ -319,6 +320,7 @@ export default function HeroTripSlider({ slug, type }: { slug: string; type: "co
   const [active, setActive] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [paused, setPaused] = useState(false);
+  const [quoteTrip, setQuoteTrip] = useState<Trip | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -344,6 +346,7 @@ export default function HeroTripSlider({ slug, type }: { slug: string; type: "co
   if (!loaded || trips.length === 0) return null;
 
   return (
+    <>
     <div
       ref={containerRef}
       className="flex flex-col h-full"
@@ -367,7 +370,7 @@ export default function HeroTripSlider({ slug, type }: { slug: string; type: "co
               i === active ? "opacity-100 translate-x-0 z-10" : i < active ? "opacity-0 -translate-x-8 z-0" : "opacity-0 translate-x-8 z-0"
             }`}
           >
-            <FullCard trip={trip} />
+            <FullCard trip={trip} onQuote={setQuoteTrip} />
           </div>
         ))}
       </div>
@@ -389,5 +392,7 @@ export default function HeroTripSlider({ slug, type }: { slug: string; type: "co
         </div>
       )}
     </div>
+      {quoteTrip && <QuoteModal trip={quoteTrip} onClose={() => setQuoteTrip(null)} />}
+    </>
   );
 }
