@@ -1,9 +1,9 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
-/* ─── Slug → name maps (same as RelatedTrips) ─── */
+/* ─── Slug → name maps ─── */
 const COURSE_NAMES: Record<string, string[]> = {
   "edgewood-tahoe-golf-course": ["Edgewood Tahoe", "Edgewood"],
   "incline-village-golf-courses-nv": ["Incline Village Championship", "Incline Village Mountain", "Incline Village"],
@@ -54,7 +54,6 @@ const LODGING_NAMES: Record<string, string[]> = {
 };
 
 const API_URL = "https://golfthehighsierra.com/trips-caddie/api/api-recaps.php";
-const CADDIE_URL = "https://tripscaddie.golfthehighsierra.com";
 
 interface Trip {
   id?: string; groupName?: string; groupSize?: number; nights?: number; rounds?: number;
@@ -64,12 +63,12 @@ interface Trip {
 }
 
 const VIBE_COLORS: Record<string, string> = {
-  budget: "bg-blue-400/20 text-blue-200 border-blue-400/30",
-  value: "bg-teal-400/20 text-teal-200 border-teal-400/30",
-  premium: "bg-amber-400/20 text-amber-200 border-amber-400/30",
-  "bucket list": "bg-purple-400/20 text-purple-200 border-purple-400/30",
-  "bachelor party": "bg-rose-400/20 text-rose-200 border-rose-400/30",
-  corporate: "bg-slate-400/20 text-slate-200 border-slate-400/30",
+  budget: "bg-blue-100/80 text-blue-800 border-blue-200",
+  value: "bg-teal-100/80 text-teal-800 border-teal-200",
+  premium: "bg-amber-100/80 text-amber-800 border-amber-200",
+  "bucket list": "bg-purple-100/80 text-purple-800 border-purple-200",
+  "bachelor party": "bg-rose-100/80 text-rose-800 border-rose-200",
+  corporate: "bg-slate-200/80 text-slate-800 border-slate-300",
 };
 
 function matchesCourse(trip: Trip, names: string[]): boolean {
@@ -84,108 +83,104 @@ function matchesLodging(trip: Trip, names: string[]): boolean {
   return names.some(n => l.includes(n.toLowerCase()) || n.toLowerCase().includes(l));
 }
 
-/* ── Mini Trip Card (dark theme, compact for hero slider) ── */
-function MiniCard({ trip, active }: { trip: Trip; active: boolean }) {
+/* ══════════════════════════════════════
+   WHITE CARD — exact TripsCaddie style
+   ══════════════════════════════════════ */
+function SliderCard({ trip }: { trip: Trip }) {
   const price = trip.pricePerPerson || trip.pricePerPersonEstimate;
-  const nights = trip.nights || ((trip.dailyItinerary?.length || 1) - 1);
-  const vibeClass = VIBE_COLORS[(trip.vibe || "").toLowerCase()] || "bg-white/10 text-white/70 border-white/20";
+  const nights = trip.nights && trip.nights > 0 ? trip.nights : ((trip.dailyItinerary?.length || 1) - 1);
+  const vibeClass = VIBE_COLORS[(trip.vibe || "").toLowerCase()] || "bg-white/90 text-slate-800 border-slate-200";
 
   return (
-    <div className={`transition-all duration-700 ${active ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none absolute inset-0"}`}>
-      <div className="bg-white/[0.06] backdrop-blur-md border border-white/[0.08] rounded-2xl overflow-hidden">
-        {/* Card Header */}
-        <div className="p-5 pb-4">
-          <div className="flex items-start justify-between gap-3 mb-4">
-            <div>
-              <h3 className="text-lg font-bold text-white leading-snug mb-1">{trip.groupName || "Golf Group"}</h3>
-              <div className="flex items-center gap-2 text-[11px] text-white/40 font-medium">
-                {trip.month && <span>📅 {trip.month} {trip.year}</span>}
+    <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden h-full flex flex-col">
+      {/* Header */}
+      <div className="p-5 pb-3">
+        <div className="flex items-start justify-between gap-3 mb-4">
+          <div className="min-w-0">
+            <h3 className="text-base font-extrabold text-slate-900 leading-snug line-clamp-2">{trip.groupName || "Golf Group"}</h3>
+            {(trip.month || trip.year) && (
+              <div className="flex items-center gap-1.5 text-[11px] text-slate-400 font-medium mt-1">
+                📅 {trip.month} {trip.year}
               </div>
-            </div>
-            {trip.vibe && (
-              <span className={`text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border whitespace-nowrap ${vibeClass}`}>
-                {trip.vibe}
-              </span>
             )}
           </div>
+          {trip.vibe && (
+            <span className={`text-[9px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border whitespace-nowrap shrink-0 ${vibeClass}`}>
+              {trip.vibe}
+            </span>
+          )}
+        </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-4 gap-2 mb-4">
-            <div className="bg-white/[0.05] border border-white/[0.06] rounded-xl py-2.5 text-center">
-              <div className="text-[10px] uppercase font-bold text-white/30 tracking-wider mb-0.5">Pax</div>
-              <div className="text-lg font-bold text-white leading-none">{trip.groupSize || "—"}</div>
-            </div>
-            <div className="bg-emerald-500/10 border border-emerald-400/20 rounded-xl py-2.5 text-center">
-              <div className="text-[10px] font-bold text-emerald-400/60 uppercase tracking-wider mb-0.5">From</div>
-              <div className="text-lg font-bold text-emerald-300 leading-none">${price ? Math.round(price) : "—"}</div>
-              <div className="text-[8px] uppercase font-bold text-emerald-400/50 tracking-wide">/person</div>
-            </div>
-            <div className="bg-white/[0.05] border border-white/[0.06] rounded-xl py-2.5 text-center">
-              <div className="text-[10px] uppercase font-bold text-white/30 tracking-wider mb-0.5">Nights</div>
-              <div className="text-lg font-bold text-white leading-none">{nights}</div>
-            </div>
-            <div className="bg-white/[0.05] border border-white/[0.06] rounded-xl py-2.5 text-center">
-              <div className="text-[10px] uppercase font-bold text-white/30 tracking-wider mb-0.5">Rounds</div>
-              <div className="text-lg font-bold text-white leading-none">{trip.rounds || trip.courses?.length || 0}</div>
+        {/* Stats Grid — exact TripsCaddie layout */}
+        <div className="grid grid-cols-4 gap-2 mb-4">
+          <div className="flex flex-col items-center justify-center bg-slate-50 border border-slate-100 rounded-xl py-2.5 hover:bg-white hover:shadow-sm hover:border-slate-200 transition-all cursor-help" title="Number of Travelers">
+            <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-0.5">Pax</span>
+            <span className="block text-lg font-bold text-slate-800 leading-none">{trip.groupSize || "TBD"}</span>
+          </div>
+          <div className="flex flex-col items-center justify-center bg-emerald-50/50 border border-emerald-100/50 rounded-xl py-2.5 hover:bg-emerald-50 hover:shadow-sm hover:border-emerald-200 transition-all cursor-help" title="Price per person">
+            <span className="text-[10px] font-bold text-emerald-600/70 uppercase tracking-wider leading-none mb-0.5">From</span>
+            <span className="block text-lg font-bold text-emerald-800 leading-none">${price ? new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 }).format(price) : "TBD"}</span>
+            <span className="text-[9px] uppercase font-bold text-emerald-600/60 tracking-wide mt-0.5">/Person</span>
+          </div>
+          <div className="flex flex-col items-center justify-center bg-slate-50 border border-slate-100 rounded-xl py-2.5 hover:bg-white hover:shadow-sm hover:border-slate-200 transition-all cursor-help" title="Nights">
+            <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-0.5">Nights</span>
+            <span className="block text-lg font-bold text-slate-800 leading-none">{nights}</span>
+          </div>
+          <div className="flex flex-col items-center justify-center bg-slate-50 border border-slate-100 rounded-xl py-2.5 hover:bg-white hover:shadow-sm hover:border-slate-200 transition-all cursor-help" title="Rounds">
+            <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-0.5">Rounds</span>
+            <span className="block text-lg font-bold text-slate-800 leading-none">{trip.rounds || trip.courses?.length || 0}</span>
+          </div>
+        </div>
+
+        {/* Synopsis */}
+        {trip.synopsis && (
+          <p className="text-sm text-slate-600 italic leading-relaxed border-l-[3px] border-emerald-500 pl-4 py-1 mb-4 line-clamp-2">&ldquo;{trip.synopsis}&rdquo;</p>
+        )}
+
+        {/* Courses */}
+        {trip.courses && trip.courses.length > 0 && (
+          <div className="mb-3">
+            <div className="flex items-center text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-2">⛳ Activities</div>
+            <div className="flex flex-wrap gap-1.5">
+              {trip.courses.slice(0, 4).map((c, i) => (
+                <span key={i} className="bg-white text-slate-600 px-2.5 py-1.5 rounded-lg text-xs font-semibold border border-slate-200 shadow-sm">{c}</span>
+              ))}
+              {trip.courses.length > 4 && <span className="text-xs text-slate-400 px-1 py-1.5">+{trip.courses.length - 4}</span>}
             </div>
           </div>
+        )}
 
-          {/* Courses */}
-          {trip.courses && trip.courses.length > 0 && (
-            <div className="mb-3">
-              <div className="text-[9px] uppercase tracking-widest text-white/25 font-bold mb-2">⛳ Courses</div>
-              <div className="flex flex-wrap gap-1.5">
-                {trip.courses.slice(0, 4).map((c, i) => (
-                  <span key={i} className="bg-white/[0.06] text-white/70 px-2 py-1 rounded-lg text-[11px] font-medium border border-white/[0.06]">{c}</span>
-                ))}
-                {trip.courses.length > 4 && <span className="text-[11px] text-white/30 px-1 py-1">+{trip.courses.length - 4} more</span>}
-              </div>
-            </div>
-          )}
+        {/* Lodging */}
+        {trip.lodging && (
+          <div>
+            <div className="flex items-center text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-2">🏨 Stayed</div>
+            <span className="inline-flex items-center bg-indigo-50 text-indigo-800 px-3 py-1.5 rounded-lg text-xs font-bold border border-indigo-100">{trip.lodging}</span>
+          </div>
+        )}
+      </div>
 
-          {/* Lodging */}
-          {trip.lodging && (
-            <div className="mb-3">
-              <div className="text-[9px] uppercase tracking-widest text-white/25 font-bold mb-2">🏨 Stayed</div>
-              <span className="bg-indigo-500/15 text-indigo-200/80 px-2.5 py-1 rounded-lg text-[11px] font-bold border border-indigo-400/15">{trip.lodging}</span>
-            </div>
-          )}
-
-          {/* Synopsis */}
-          {trip.synopsis && (
-            <p className="text-[12px] text-white/40 italic leading-relaxed border-l-2 border-emerald-500/40 pl-3 mt-3 line-clamp-2">&ldquo;{trip.synopsis}&rdquo;</p>
-          )}
-        </div>
-
-        {/* CTA */}
-        <div className="border-t border-white/[0.06] p-4 flex gap-2">
-          <a
-            href="/contact-custom-golf-package/"
-            className="flex-1 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-white rounded-xl text-[11px] font-extrabold uppercase tracking-wide text-center transition-all shadow-lg shadow-emerald-900/30"
-          >
-            📋 Book This Trip
-          </a>
-          <a
-            href={CADDIE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="py-2.5 px-4 bg-white/[0.06] hover:bg-white/[0.12] text-white/60 hover:text-white rounded-xl text-[11px] font-bold transition-all border border-white/[0.08]"
-          >
-            Browse All →
-          </a>
-        </div>
+      {/* CTA Footer */}
+      <div className="border-t border-slate-100 p-4 mt-auto">
+        <a
+          href="/contact-custom-golf-package/"
+          className="block w-full py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-extrabold uppercase tracking-wide text-center transition-all shadow-md shadow-emerald-200 hover:shadow-lg active:scale-[0.98]"
+        >
+          📋 Book This Trip
+        </a>
       </div>
     </div>
   );
 }
 
 /* ═══════════════════════════════════════
-   HERO TRIP SLIDER — right side of hero
+   HERO TRIP SLIDER
    ═══════════════════════════════════════ */
 export default function HeroTripSlider({ slug, type }: { slug: string; type: "course" | "hotel" }) {
   const [trips, setTrips] = useState<Trip[]>([]);
   const [active, setActive] = useState(0);
   const [loaded, setLoaded] = useState(false);
+  const [hovered, setHovered] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const names = type === "course" ? COURSE_NAMES[slug] : LODGING_NAMES[slug];
@@ -199,19 +194,24 @@ export default function HeroTripSlider({ slug, type }: { slug: string; type: "co
       .catch(() => setLoaded(true));
   }, [slug, type]);
 
-  /* Auto-rotate every 6 seconds */
+  /* Auto-rotate — STOPS on hover */
   const next = useCallback(() => setActive(a => (a + 1) % Math.max(trips.length, 1)), [trips.length]);
   useEffect(() => {
-    if (trips.length < 2) return;
+    if (trips.length < 2 || hovered) return;
     const id = setInterval(next, 6000);
     return () => clearInterval(id);
-  }, [trips.length, next]);
+  }, [trips.length, next, hovered]);
 
   if (!loaded || trips.length === 0) return null;
 
   return (
-    <div className="flex flex-col h-full justify-center px-6 py-8 lg:px-10 lg:py-12">
-      {/* Section label */}
+    <div
+      ref={containerRef}
+      className="flex flex-col h-full justify-center p-6 lg:p-10"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      {/* Label */}
       <div className="mb-4">
         <div className="text-[9px] uppercase tracking-[4px] text-emerald-400/70 font-bold mb-1">Trips Caddie</div>
         <div className="text-sm text-white/50 font-light">
@@ -219,17 +219,22 @@ export default function HeroTripSlider({ slug, type }: { slug: string; type: "co
         </div>
       </div>
 
-      {/* Cards — stacked, only active visible */}
-      <div className="relative flex-1 min-h-0">
+      {/* Card area */}
+      <div className="relative flex-1 min-h-[420px]">
         {trips.map((trip, i) => (
-          <MiniCard key={trip.id || i} trip={trip} active={i === active} />
+          <div
+            key={trip.id || i}
+            className={`transition-all duration-500 ease-in-out ${i === active ? "opacity-100 translate-x-0 relative" : "opacity-0 translate-x-8 absolute inset-0 pointer-events-none"}`}
+          >
+            <SliderCard trip={trip} />
+          </div>
         ))}
       </div>
 
-      {/* Navigation dots + arrows */}
+      {/* Nav */}
       {trips.length > 1 && (
         <div className="flex items-center justify-between mt-4">
-          <button onClick={() => setActive(a => (a - 1 + trips.length) % trips.length)} className="w-8 h-8 rounded-full bg-white/[0.06] hover:bg-white/[0.12] flex items-center justify-center text-white/40 hover:text-white transition-all border border-white/[0.06]">
+          <button onClick={() => setActive(a => (a - 1 + trips.length) % trips.length)} className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white/50 hover:text-white transition-all">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
           </button>
           <div className="flex gap-2">
@@ -237,7 +242,7 @@ export default function HeroTripSlider({ slug, type }: { slug: string; type: "co
               <button key={i} onClick={() => setActive(i)} className={`h-1.5 rounded-full transition-all duration-500 ${i === active ? "w-6 bg-emerald-400" : "w-1.5 bg-white/20 hover:bg-white/40"}`} />
             ))}
           </div>
-          <button onClick={next} className="w-8 h-8 rounded-full bg-white/[0.06] hover:bg-white/[0.12] flex items-center justify-center text-white/40 hover:text-white transition-all border border-white/[0.06]">
+          <button onClick={next} className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white/50 hover:text-white transition-all">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
           </button>
         </div>
