@@ -19,3 +19,34 @@
   }
   h1, h2, h3 { font-family: 'Cormorant', Georgia, serif; }
 }
+
+@layer components {
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #D4AD4A 0%, #E8C97A 50%, #D4AD4A 100%);
+    background-size: 200% 200%;
+    color: #0F2118;
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 16px rgba(212, 168, 83, 0.4), 0 0 6px rgba(212, 168, 83, 0.2);
+    animation: btnGlow 2.5s ease-in-out infinite;
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 28px rgba(212, 168, 83, 0.6), 0 0 12px rgba(212, 168, 83, 0.35);
+    background-position: 100% 50%;
+  }
+
+  @keyframes btnGlow {
+    0%, 100% { box-shadow: 0 0 16px rgba(212, 168, 83, 0.4), 0 0 6px rgba(212, 168, 83, 0.2); }
+    50% { box-shadow: 0 0 24px rgba(212, 168, 83, 0.6), 0 0 10px rgba(212, 168, 83, 0.35); }
+  }
+}
