@@ -449,7 +449,7 @@ const HOMEPAGE_HTML = `
       </div>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
         <a href="https://tripscaddie.golfthehighsierra.com/" class="rms-btn" target="_blank">&#127951; Open Trips Caddie</a>
-        <a href="https://tripscaddie.golfthehighsierra.com/?region=Reno" target="_blank" style="color:rgba(255,255,255,.6);font-size:13px;text-decoration:none;padding:14px 16px;border:1px solid rgba(255,255,255,.15);border-radius:8px;transition:all .2s;display:inline-flex;align-items:center;gap:4px" onmouseover="this.style.borderColor='rgba(255,255,255,.35)';this.style.color='#fff'" onmouseout="this.style.borderColor='rgba(255,255,255,.15)';this.style.color='rgba(255,255,255,.6)'">Browse Reno Trips &#8594;</a>
+        <a href="https://tripscaddie.golfthehighsierra.com/?region=Reno" target="_blank" style="color:rgba(255,255,255,.6);font-size:13px;text-decoration:none;padding:14px 16px;border:1px solid rgba(255,255,255,.5);border-radius:8px;transition:all .2s;display:inline-flex;align-items:center;gap:4px" onmouseover="this.style.borderColor='rgba(255,255,255,.65)';this.style.color='#fff'" onmouseout="this.style.borderColor='rgba(255,255,255,.5)';this.style.color='rgba(255,255,255,.6)'">Browse Reno Trips &#8594;</a>
       </div>
     </div>
     <!-- Right side: Region quick links with REAL course counts from app data -->
@@ -458,36 +458,36 @@ const HOMEPAGE_HTML = `
         <div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase;margin-bottom:16px">Browse Trips by Destination</div>
         <div style="display:flex;flex-direction:column;gap:8px">
           <a href="https://tripscaddie.golfthehighsierra.com/?region=Reno" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127922; Reno</div><div style="font-size:12px;color:rgba(255,255,255,.45);margin-top:2px">Casino resort lodging</div></div>
-            <span style="color:rgba(255,255,255,.3);font-size:18px">&#8594;</span>
+            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127922; Reno</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Casino resort lodging</div></div>
+            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
           </a>
           <a href="https://tripscaddie.golfthehighsierra.com/?region=Lake%20Tahoe" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127956; Lake Tahoe</div><div style="font-size:12px;color:rgba(255,255,255,.45);margin-top:2px">Lakefront &amp; alpine lodging</div></div>
-            <span style="color:rgba(255,255,255,.3);font-size:18px">&#8594;</span>
+            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127956; Lake Tahoe</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Lakefront &amp; alpine lodging</div></div>
+            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
           </a>
           <a href="https://tripscaddie.golfthehighsierra.com/?region=Truckee" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127794; Truckee</div><div style="font-size:12px;color:rgba(255,255,255,.45);margin-top:2px">Mountain lodging</div></div>
-            <span style="color:rgba(255,255,255,.3);font-size:18px">&#8594;</span>
+            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127794; Truckee</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Mountain lodging</div></div>
+            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
           </a>
           <a href="https://tripscaddie.golfthehighsierra.com/?region=Graeagle%2FLost%20Sierra" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#9968; Graeagle / Lost Sierra</div><div style="font-size:12px;color:rgba(255,255,255,.45);margin-top:2px">Secluded mountain golf</div></div>
-            <span style="color:rgba(255,255,255,.3);font-size:18px">&#8594;</span>
+            <div><div style="font-size:15px;font-weight:600;color:#fff">&#9968; Graeagle / Lost Sierra</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Secluded mountain golf</div></div>
+            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
           </a>
           <a href="https://tripscaddie.golfthehighsierra.com/?region=Carson%20Valley" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127956; Carson Valley</div><div style="font-size:12px;color:rgba(255,255,255,.45);margin-top:2px">Wide-open desert golf</div></div>
-            <span style="color:rgba(255,255,255,.3);font-size:18px">&#8594;</span>
+            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127956; Carson Valley</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Wide-open desert golf</div></div>
+            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
           </a>
           <a href="https://tripscaddie.golfthehighsierra.com/?region=Mesquite" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127797; Mesquite, NV</div><div style="font-size:12px;color:rgba(255,255,255,.45);margin-top:2px">Desert golf &middot; Year-round play</div></div>
-            <span style="color:rgba(255,255,255,.3);font-size:18px">&#8594;</span>
+            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127797; Mesquite, NV</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Desert golf &middot; Year-round play</div></div>
+            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
           </a>
           <a href="https://tripscaddie.golfthehighsierra.com/?region=St.%20George" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#9728;&#65039; St. George, UT</div><div style="font-size:12px;color:rgba(255,255,255,.45);margin-top:2px">Red rock golf &middot; Near Zion</div></div>
-            <span style="color:rgba(255,255,255,.3);font-size:18px">&#8594;</span>
+            <div><div style="font-size:15px;font-weight:600;color:#fff">&#9728;&#65039; St. George, UT</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Red rock golf &middot; Near Zion</div></div>
+            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
           </a>
           <a href="https://tripscaddie.golfthehighsierra.com/?region=Monterey" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127754; Monterey, CA</div><div style="font-size:12px;color:rgba(255,255,255,.45);margin-top:2px">Coastal golf</div></div>
-            <span style="color:rgba(255,255,255,.3);font-size:18px">&#8594;</span>
+            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127754; Monterey, CA</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Coastal golf</div></div>
+            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
           </a>
         </div>
       </div>
@@ -496,7 +496,7 @@ const HOMEPAGE_HTML = `
 
   <!-- Bottom: What You'll Find — describes real app features, no fabricated trips -->
   <div style="margin-top:48px;position:relative;z-index:1">
-    <div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.4);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px;text-align:center">What You&rsquo;ll Find Inside Trips Caddie</div>
+    <div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.7);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px;text-align:center">What You&rsquo;ll Find Inside Trips Caddie</div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
       <!-- Feature 1: Real Trip Database -->
       <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:24px">

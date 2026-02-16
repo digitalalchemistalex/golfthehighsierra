@@ -118,10 +118,10 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
 
         {/* Top bar */}
         <div style={{ position: "absolute", top: "clamp(24px,4vh,48px)", left: "clamp(32px,7vw,120px)", right: "clamp(32px,7vw,120px)", display: "flex", justifyContent: "space-between", zIndex: 3 }}>
-          <div style={{ fontFamily: "var(--serif)", fontSize: 13, color: "rgba(255,255,255,.35)", letterSpacing: 3, textTransform: "uppercase" }}>Golf the High Sierra</div>
+          <div style={{ fontFamily: "var(--serif)", fontSize: 13, color: "rgba(255,255,255,.65)", letterSpacing: 3, textTransform: "uppercase" }}>Golf the High Sierra</div>
           <div style={{ display: "flex", gap: 24 }}>
-            <Link href="/accommodations-in-reno-tahoe/" style={{ fontSize: 10, color: "rgba(255,255,255,.3)", letterSpacing: 2, textTransform: "uppercase" }}>Hotels</Link>
-            <Link href="/contact-custom-golf-package/" style={{ fontSize: 10, color: "rgba(255,255,255,.3)", letterSpacing: 2, textTransform: "uppercase" }}>Book</Link>
+            <Link href="/accommodations-in-reno-tahoe/" style={{ fontSize: 10, color: "rgba(255,255,255,.6)", letterSpacing: 2, textTransform: "uppercase" }}>Hotels</Link>
+            <Link href="/contact-custom-golf-package/" style={{ fontSize: 10, color: "rgba(255,255,255,.6)", letterSpacing: 2, textTransform: "uppercase" }}>Book</Link>
           </div>
         </div>
 
@@ -129,15 +129,15 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
         <div style={{ position: "absolute", inset: 0, zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 clamp(32px,7vw,120px) clamp(48px,8vh,100px)" }}>
           <R>
             <h1 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: "clamp(48px,8vw,110px)", lineHeight: .92, color: "#fff", letterSpacing: "-.03em" }}>
-              {nameParts.length > 3 ? <>{nameParts.slice(0, -2).join(" ")}<br /><em style={{ fontStyle: "italic", color: "rgba(255,255,255,.55)" }}>{nameParts.slice(-2).join(" ")}</em></> : <>{firstName}<br /><em style={{ fontStyle: "italic", color: "rgba(255,255,255,.55)" }}>{nameParts.slice(1).join(" ")}</em></>}
+              {nameParts.length > 3 ? <>{nameParts.slice(0, -2).join(" ")}<br /><em style={{ fontStyle: "italic", color: "rgba(255,255,255,.75)" }}>{nameParts.slice(-2).join(" ")}</em></> : <>{firstName}<br /><em style={{ fontStyle: "italic", color: "rgba(255,255,255,.75)" }}>{nameParts.slice(1).join(" ")}</em></>}
             </h1>
           </R>
           <R delay={0.12}>
-            <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 16, fontSize: 12, color: "rgba(255,255,255,.3)", fontWeight: 300 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 16, fontSize: 12, color: "rgba(255,255,255,.6)", fontWeight: 300 }}>
               <span>{typeLabel}</span>
-              <span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.2)" }} />
+              <span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.75)" }} />
               <span>{hotel.regionLabel}</span>
-              {hotel.starRating && <><span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.2)" }} /><span>{"★".repeat(hotel.starRating)} Star</span></>}
+              {hotel.starRating && <><span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.75)" }} /><span>{"★".repeat(hotel.starRating)} Star</span></>}
             </div>
           </R>
           <R delay={0.24}>
@@ -150,7 +150,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
               ].filter(Boolean).map((s, i) => (
                 <div key={i}>
                   <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(24px,3vw,40px)", fontWeight: 300, color: "#fff", lineHeight: 1 }}>{(s as {v:string|number}).v}</div>
-                  <div style={{ fontSize: 8, color: "rgba(255,255,255,.2)", letterSpacing: 2.5, textTransform: "uppercase", marginTop: 5 }}>{(s as {l:string}).l}</div>
+                  <div style={{ fontSize: 10, color: "rgba(255,255,255,.75)", letterSpacing: 2.5, textTransform: "uppercase", marginTop: 5 }}>{(s as {l:string}).l}</div>
                 </div>
               ))}
             </div>
@@ -159,15 +159,15 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
 
         {/* Scroll indicator */}
         <div style={{ position: "absolute", bottom: 20, left: "50%", transform: "translateX(-50%)", zIndex: 3, display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
-          <span style={{ fontSize: 7, color: "rgba(255,255,255,.15)", letterSpacing: 3, textTransform: "uppercase" }}>Scroll</span>
-          <div style={{ width: 1, height: 32, background: "linear-gradient(rgba(255,255,255,.25),transparent)", animation: "sdrop 2s ease infinite" }} />
+          <span style={{ fontSize: 10, color: "rgba(255,255,255,.5)", letterSpacing: 3, textTransform: "uppercase" }}>Scroll</span>
+          <div style={{ width: 1, height: 32, background: "linear-gradient(rgba(255,255,255,.6),transparent)", animation: "sdrop 2s ease infinite" }} />
         </div>
       </section>
 
       {/* ═══ 2. CONTENT — text + gallery ═══ */}
       <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 600 }} className="max-md:!grid-cols-1">
         <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-          <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>The Property</div></R>
+          <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>The Property</div></R>
           <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em" }}>
             {hotel.highlights?.[0] ? <em style={{ fontStyle: "italic" }}>{hotel.highlights[0]}</em> : <>Where Comfort Meets <em style={{ fontStyle: "italic" }}>Adventure</em></>}
           </h2></R>
@@ -200,11 +200,11 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
           {(gallery[1] || hotel.heroImage) && <Image src={gallery[1] || hotel.heroImage} alt="Feature" fill className="object-cover opacity-60 hover:opacity-75 hover:scale-[1.04] transition-all duration-[8s]" sizes="(max-width:900px) 100vw, 50vw" />}
         </div>
         <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-          <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14 }}>
+          <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14 }}>
             {hotel.dining?.length > 0 ? "Dining & Nightlife" : "The Experience"}
           </div></R>
           <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em", color: "#fff" }}>
-            {hotel.dining?.length > 0 ? <>World-Class <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.4)" }}>Dining</em></> : <>Unmatched <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.4)" }}>Hospitality</em></>}
+            {hotel.dining?.length > 0 ? <>World-Class <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.7)" }}>Dining</em></> : <>Unmatched <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.7)" }}>Hospitality</em></>}
           </h2></R>
 
           {/* Dining list or quote */}
@@ -215,9 +215,9 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
                   <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", padding: "14px 0", borderBottom: "1px solid rgba(255,255,255,.06)" }}>
                     <div>
                       <div style={{ fontSize: 14, fontWeight: 400, color: "#fff" }}>{d.name}</div>
-                      <div style={{ fontSize: 11, color: "rgba(255,255,255,.3)", fontWeight: 300, marginTop: 3 }}>{d.description.substring(0, 60)}{d.description.length > 60 ? "…" : ""}</div>
+                      <div style={{ fontSize: 11, color: "rgba(255,255,255,.6)", fontWeight: 300, marginTop: 3 }}>{d.description.substring(0, 60)}{d.description.length > 60 ? "…" : ""}</div>
                     </div>
-                    <span style={{ fontSize: 8, color: "var(--gold)", letterSpacing: 2, textTransform: "uppercase", flexShrink: 0, marginLeft: 16 }}>{d.type}</span>
+                    <span style={{ fontSize: 10, color: "var(--gold)", letterSpacing: 2, textTransform: "uppercase", flexShrink: 0, marginLeft: 16 }}>{d.type}</span>
                   </div>
                 ))}
               </div>
@@ -228,7 +228,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
                 <span style={{ fontFamily: "var(--serif)", fontSize: 60, color: "rgba(180,154,106,.2)", lineHeight: ".5", position: "absolute", top: 0, left: 0 }}>&ldquo;</span>
                 {quoteText}
               </div>
-              <div style={{ fontSize: 9, color: "rgba(255,255,255,.2)", letterSpacing: 2, textTransform: "uppercase", marginTop: 16 }}>— Golf the High Sierra</div>
+              <div style={{ fontSize: 10, color: "rgba(255,255,255,.75)", letterSpacing: 2, textTransform: "uppercase", marginTop: 16 }}>— Golf the High Sierra</div>
             </R>
           )}
         </div>
@@ -238,7 +238,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
       <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 0 }} className="max-md:!grid-cols-1">
         {/* Left: Room types + amenities */}
         <div style={{ padding: "clamp(48px,8vh,80px) clamp(32px,5vw,80px)", background: "var(--cream)" }}>
-          <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>At a Glance</div></R>
+          <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>At a Glance</div></R>
           <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1 }}><em style={{ fontStyle: "italic" }}>{firstName}</em> Details</h2></R>
 
           {/* Mini stats */}
@@ -251,7 +251,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
               ].filter(Boolean).map((s, i) => (
                 <div key={i} style={{ textAlign: "center", padding: "16px 8px", border: "1px solid var(--bone)", borderRadius: 8, background: "var(--white)" }}>
                   <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(22px,2.5vw,30px)", fontWeight: 300 }}>{(s as {v:string|number}).v}</div>
-                  <div style={{ fontSize: 8, letterSpacing: 2, textTransform: "uppercase", color: "var(--stone)", marginTop: 3 }}>{(s as {l:string}).l}</div>
+                  <div style={{ fontSize: 10, letterSpacing: 2, textTransform: "uppercase", color: "var(--stone)", marginTop: 3 }}>{(s as {l:string}).l}</div>
                 </div>
               ))}
             </div>
@@ -260,7 +260,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
           {/* Room types */}
           {hotel.roomTypes?.length > 0 && (
             <R delay={0.2}>
-              <div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginTop: 24, marginBottom: 8 }}>Accommodations</div>
+              <div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginTop: 24, marginBottom: 8 }}>Accommodations</div>
               {hotel.roomTypes.slice(0, 5).map((rm, i) => (
                 <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "10px 0", borderBottom: "1px solid var(--bone)", fontSize: 12, fontWeight: 300 }}>
                   <span style={{ color: "var(--charcoal)" }}>{rm.name}</span>
@@ -273,7 +273,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
           {/* Amenities compact */}
           {hotel.amenities?.length > 0 && (
             <R delay={0.28}>
-              <div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginTop: 24, marginBottom: 10 }}>Amenities</div>
+              <div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginTop: 24, marginBottom: 10 }}>Amenities</div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
                 {hotel.amenities.slice(0, 8).map((a, i) => (
                   <span key={i} style={{ fontSize: 10, padding: "5px 12px", borderRadius: 100, border: "1px solid var(--bone)", color: "var(--stone)", fontWeight: 300 }}>{a}</span>
@@ -295,7 +295,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
 
         {/* Right: FAQ */}
         <div style={{ padding: "clamp(48px,8vh,80px) clamp(32px,5vw,80px)", background: "var(--white)" }}>
-          <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>FAQ</div></R>
+          <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>FAQ</div></R>
           <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, marginBottom: 20 }}>Common <em style={{ fontStyle: "italic" }}>Questions</em></h2></R>
           {hotel.faqs?.slice(0, 5).map((f, i) => (
             <R key={i} delay={0.12 + i * 0.04}><FAQ q={f.question} a={f.answer} /></R>
@@ -306,7 +306,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
       {/* ═══ RELATED ═══ */}
       {relatedHotels.length > 0 && (
         <section style={{ padding: "clamp(48px,7vh,80px) clamp(32px,7vw,120px)", background: "var(--cream)" }}>
-          <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>Nearby</div></R>
+          <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>Nearby</div></R>
           <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1 }}>More in <em style={{ fontStyle: "italic" }}>{hotel.regionLabel}</em></h2></R>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16, marginTop: 24 }} className="max-md:!grid-cols-1">
             {relatedHotels.map((rh, i) => (
@@ -315,14 +315,14 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
                   <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--white)", transition: "all .5s" }} className="hover:!border-transparent hover:!shadow-[0_16px_48px_rgba(0,0,0,.06)] hover:-translate-y-1">
                     <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
                       {rh.heroImage ? <Image src={rh.heroImage} alt={rh.name} fill className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
-                      {rh.priceFrom && <span style={{ position: "absolute", top: 10, right: 10, background: "var(--ink)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 9, fontWeight: 600 }}>{rh.priceFrom}</span>}
+                      {rh.priceFrom && <span style={{ position: "absolute", top: 10, right: 10, background: "var(--ink)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 10, fontWeight: 600 }}>{rh.priceFrom}</span>}
                     </div>
                     <div style={{ padding: 16 }}>
                       <div style={{ fontFamily: "var(--serif)", fontSize: 18, fontWeight: 400, color: "var(--ink)" }}>{rh.name}</div>
-                      <div style={{ fontSize: 8, textTransform: "uppercase", letterSpacing: 2, color: "var(--stone)", margin: "4px 0 12px" }}>{rh.regionLabel}</div>
+                      <div style={{ fontSize: 10, textTransform: "uppercase", letterSpacing: 2, color: "var(--stone)", margin: "4px 0 12px" }}>{rh.regionLabel}</div>
                       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: 10, borderTop: "1px solid var(--bone)" }}>
                         {rh.rating && <span style={{ fontSize: 10, color: "var(--stone)" }}>★ {rh.rating.value}</span>}
-                        <span style={{ fontSize: 9, color: "var(--gold)", fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>View →</span>
+                        <span style={{ fontSize: 10, color: "var(--gold)", fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>View →</span>
                       </div>
                     </div>
                   </div>
@@ -336,14 +336,14 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
       {/* ═══ 5. CTA ═══ */}
       <section style={{ background: "var(--ink)", textAlign: "center", padding: "clamp(64px,10vh,120px) clamp(32px,7vw,120px)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 60%,rgba(180,154,106,.05),transparent 70%)" }} />
-        <R><div style={{ fontSize: 9, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14, position: "relative", zIndex: 1 }}>Stay &amp; Play</div></R>
-        <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, color: "#fff", marginBottom: 12, position: "relative", zIndex: 1 }}>Book {firstName} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.35)" }}>Golf Package</em></h2></R>
-        <R delay={0.16}><p style={{ fontSize: 13, color: "rgba(255,255,255,.25)", fontWeight: 300, maxWidth: 380, margin: "0 auto 28px", lineHeight: 1.8, position: "relative", zIndex: 1 }}>
+        <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14, position: "relative", zIndex: 1 }}>Stay &amp; Play</div></R>
+        <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, color: "#fff", marginBottom: 12, position: "relative", zIndex: 1 }}>Book {firstName} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.65)" }}>Golf Package</em></h2></R>
+        <R delay={0.16}><p style={{ fontSize: 13, color: "rgba(255,255,255,.6)", fontWeight: 300, maxWidth: 380, margin: "0 auto 28px", lineHeight: 1.8, position: "relative", zIndex: 1 }}>
           {hotel.priceRange ? `Stay-and-play from ${hotel.priceFrom || hotel.priceRange.split("–")[0]}/golfer. ` : ""}Lodging, tee times, dining — one call.
         </p></R>
         <R delay={0.2}>
           <div style={{ position: "relative", zIndex: 1 }}>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "8px 16px", borderRadius: 100, border: "1px solid rgba(180,154,106,.12)", fontSize: 9, color: "var(--gold)", fontWeight: 500, marginBottom: 24, letterSpacing: ".5px" }}>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "8px 16px", borderRadius: 100, border: "1px solid rgba(180,154,106,.12)", fontSize: 10, color: "var(--gold)", fontWeight: 500, marginBottom: 24, letterSpacing: ".5px" }}>
               <span style={{ width: 4, height: 4, borderRadius: "50%", background: "var(--gold)", animation: "euroP 2s infinite" }} />
               Custom packages available year-round
             </div>
@@ -354,7 +354,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
             <Link href="/contact-custom-golf-package/" style={{ display: "inline-block", padding: "15px 36px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 10, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase", transition: "all .4s" }} className="hover:!bg-[#c8ad7e] hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(180,154,106,.2)]">
               Plan My Trip
             </Link>
-            <a href="tel:+18885848232" style={{ display: "inline-block", padding: "15px 36px", border: "1px solid rgba(255,255,255,.1)", color: "rgba(255,255,255,.35)", borderRadius: 100, fontSize: 10, fontWeight: 400, letterSpacing: 2, textTransform: "uppercase", transition: "all .4s" }} className="hover:!border-white/35 hover:!text-white">
+            <a href="tel:+18885848232" style={{ display: "inline-block", padding: "15px 36px", border: "1px solid rgba(255,255,255,.1)", color: "rgba(255,255,255,.65)", borderRadius: 100, fontSize: 10, fontWeight: 400, letterSpacing: 2, textTransform: "uppercase", transition: "all .4s" }} className="hover:!border-white/35 hover:!text-white">
               Call 888-584-8232
             </a>
           </div>
