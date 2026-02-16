@@ -177,7 +177,7 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
         </div>
 
         {/* ── RIGHT: Trips Caddie Slider ── */}
-        <div className="w-full lg:w-1/2 bg-[#0a0f0a] relative border-l-0 lg:border-l border-white/[0.04] min-h-[600px] lg:min-h-0">
+        <div className="hidden lg:block w-full lg:w-1/2 bg-[#0a0f0a] relative border-l-0 lg:border-l border-white/[0.04]">
           <HeroTripSlider slug={course.slug} type="course" />
         </div>
 
