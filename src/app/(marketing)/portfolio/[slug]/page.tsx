@@ -4,6 +4,7 @@ import { getAllCourseSlugs, getCourseBySlug, getCoursesByRegion } from "@/data/c
 import { getAllHotelSlugs, getHotelBySlug, getHotelsByRegion } from "@/data/hotels";
 import HotelPageContent from "@/components/HotelPageContent";
 import CoursePageContent from "@/components/CoursePageContent";
+import RelatedTrips from "@/components/RelatedTrips";
 
 export async function generateStaticParams() {
   const courseSlugs = getAllCourseSlugs().map((slug) => ({ slug }));
@@ -106,6 +107,7 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(hotelSchema) }} />
         <HotelPageContent hotel={hotel} relatedHotels={relatedHotels} />
+        <RelatedTrips slug={hotel.slug} type="hotel" />
       </>
     );
   }
@@ -178,6 +180,7 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <CoursePageContent course={course} relatedCourses={related} />
+      <RelatedTrips slug={course.slug} type="course" />
     </>
   );
 }
