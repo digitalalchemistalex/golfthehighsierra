@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 
 /* ─── Slug → TripsCaddie name mapping ─── */
 const COURSE_NAMES: Record<string, string[]> = {
