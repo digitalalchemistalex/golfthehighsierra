@@ -303,7 +303,7 @@ function FullCard({ trip, onQuote }: { trip: Trip; onQuote: (t: Trip) => void })
         )}
         <div className="grid grid-cols-6 gap-2">
           <button onClick={() => onQuote(trip)} className="col-span-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-[11px] font-extrabold uppercase tracking-wide transition-all shadow-md shadow-emerald-200 hover:shadow-lg flex items-center justify-center gap-1.5 active:scale-[0.98]">
-            📋 Custom Quote
+            🏌️ Get This Trip
           </button>
           <a href="tel:+18885848232" className="col-span-1 py-2.5 bg-white hover:bg-blue-50 text-slate-400 hover:text-blue-600 border border-slate-200 hover:border-blue-200 rounded-xl transition-all flex items-center justify-center shadow-sm" title="Call to Book">📞</a>
         </div>

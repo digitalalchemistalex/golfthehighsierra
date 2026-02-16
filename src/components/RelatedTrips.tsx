@@ -326,7 +326,7 @@ function TripCard({ trip, onQuote }: { trip: Trip; onQuote: (t: Trip) => void })
             onClick={() => onQuote(trip)}
             className="col-span-5 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-extrabold uppercase tracking-wide transition-all duration-300 shadow-md shadow-emerald-200 hover:shadow-lg flex items-center justify-center gap-2 active:scale-[0.98]"
           >
-            📋 Custom Quote
+            🏌️ Get This Trip
           </button>
           <a
             href={`tel:+18885848232`}
@@ -374,7 +374,7 @@ export default function RelatedTrips({ slug, type }: { slug: string; type: "cour
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900" style={{ fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif", fontWeight: 700 }}>
               {trips.length} Group{trips.length !== 1 ? "s" : ""} <em className="italic text-slate-400">Played Here</em>
             </h2>
-            <p className="text-sm text-slate-500 mt-2 max-w-lg mx-auto">Real itineraries from past groups. See courses, lodging, day-by-day logistics, and pricing — then request an identical or customized quote.</p>
+            <p className="text-sm text-slate-500 mt-2 max-w-lg mx-auto">Real itineraries from past groups. See courses, lodging, day-by-day logistics, and pricing — then request the same trip or customize it for your group.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {trips.map((trip, i) => (

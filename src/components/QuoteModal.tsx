@@ -38,7 +38,7 @@ export default function QuoteModal({ trip, onClose }: { trip: QuoteTrip; onClose
     }
     setSending(true);
     const price = trip.pricePerPerson || trip.pricePerPersonEstimate || 0;
-    const pricingNote = `<div style="background:#fef3c7;padding:12px 16px;border-radius:8px;border:1px solid #fcd34d;margin-bottom:16px"><p style="margin:0;font-size:13px;color:#92400e;line-height:1.5"><strong>⚠️ Pricing Note:</strong> The price shown ($${Math.round(price)}/person) reflects what a previous group paid. Your custom quote will be based on current rates, group size, dates, and availability — final pricing may differ.</p></div>`;
+    const pricingNote = `<div style="background:#fef3c7;padding:12px 16px;border-radius:8px;border:1px solid #fcd34d;margin-bottom:16px"><p style="margin:0;font-size:13px;color:#92400e;line-height:1.5"><strong>⚠️ Pricing Note:</strong> The price shown ($${Math.round(price)}/person) reflects what a previous group paid. Your quote will be based on current rates, group size, dates, and availability — final pricing may differ.</p></div>`;
 
     /* ── Itinerary HTML (shared by both emails) ── */
     const itineraryHtml = trip.dailyItinerary && trip.dailyItinerary.length > 0 ? `
@@ -129,7 +129,7 @@ export default function QuoteModal({ trip, onClose }: { trip: QuoteTrip; onClose
       <div style="font-family:sans-serif;max-width:600px;margin:0 auto;color:#334155;line-height:1.5">
         <div style="background:#065f46;color:white;padding:24px;border-radius:8px 8px 0 0">
           <h2 style="margin:0;font-size:20px">⛳ Thanks for Your Quote Request!</h2>
-          <p style="margin:8px 0 0;font-size:14px;color:rgba(255,255,255,.7)">We'll get back to you within 24 hours with a custom quote.</p>
+          <p style="margin:8px 0 0;font-size:14px;color:rgba(255,255,255,.7)">We'll get back to you within 24 hours with your quote.</p>
         </div>
         <div style="padding:24px;border:1px solid #e2e8f0;border-top:none;border-radius:0 0 8px 8px">
           <p style="margin:0 0 16px;font-size:15px;color:#1e293b">Hi <strong>${name}</strong>, we received your request for a trip based on <strong>${trip.groupName}</strong>.</p>
@@ -159,7 +159,7 @@ export default function QuoteModal({ trip, onClose }: { trip: QuoteTrip; onClose
 
           <div style="background:#f0fdf4;padding:16px;border-radius:8px;border:1px solid #bbf7d0;margin-bottom:24px;text-align:center">
             <p style="margin:0;font-size:14px;color:#166534"><strong>What happens next?</strong></p>
-            <p style="margin:6px 0 0;font-size:13px;color:#14532d">Our team will review your request and build a custom quote based on current availability and rates. Expect to hear from us within 24 hours.</p>
+            <p style="margin:6px 0 0;font-size:13px;color:#14532d">Our team will review your request and build your quote based on current availability and rates. Expect to hear from us within 24 hours.</p>
           </div>
 
           <p style="margin:0;font-size:14px;color:#64748b;text-align:center;line-height:1.6">Need something sooner? Call us at <a href="tel:+18885848232" style="color:#065f46;font-weight:600">(888) 584-8232</a></p>
@@ -201,7 +201,7 @@ export default function QuoteModal({ trip, onClose }: { trip: QuoteTrip; onClose
             <svg className="w-8 h-8 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
           </div>
           <h3 className="text-xl font-bold text-slate-800 mb-2">Quote Request Sent!</h3>
-          <p className="text-sm text-slate-500">We&apos;ll get back to you within 24 hours with a custom quote.</p>
+          <p className="text-sm text-slate-500">We&apos;ll get back to you within 24 hours with your quote.</p>
         </div>
       </div>
     );
@@ -211,15 +211,15 @@ export default function QuoteModal({ trip, onClose }: { trip: QuoteTrip; onClose
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50" onClick={onClose}>
       <div className="bg-white rounded-xl shadow-2xl w-full max-w-lg overflow-hidden flex flex-col max-h-[90vh]" onClick={e => e.stopPropagation()}>
         <div className="p-4 border-b border-slate-100 flex justify-between items-center bg-slate-50 shrink-0">
-          <h3 className="font-bold text-slate-800">Custom Quote</h3>
+          <h3 className="font-bold text-slate-800">Get This Trip</h3>
           <button onClick={onClose} className="p-1 hover:bg-slate-200 rounded-full transition-colors">
             <svg className="w-5 h-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
           </button>
         </div>
         <div className="p-6 space-y-5 overflow-y-auto">
-          <p className="text-sm text-slate-500">Request a custom quote based on <strong>{trip.groupName}</strong>. Tell us what you&apos;d change.</p>
+          <p className="text-sm text-slate-500">Get a quote based on <strong>{trip.groupName}</strong>. Tell us what you&apos;d change.</p>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-xs text-amber-800 leading-relaxed">
-            <strong>⚠️ Pricing Note:</strong> The prices shown reflect what a previous group actually paid. Your custom quote will be based on current rates, your group size, dates, and availability — final pricing may differ.
+            <strong>⚠️ Pricing Note:</strong> The prices shown reflect what a previous group actually paid. Your quote will be based on current rates, your group size, dates, and availability — final pricing may differ.
           </div>
           <div>
             <label className="block text-xs font-bold text-slate-500 uppercase mb-1">Full Name <span className="text-rose-500">*</span></label>
