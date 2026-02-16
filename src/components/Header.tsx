@@ -468,7 +468,7 @@ export default function Header() {
                         { icon: Mountain, label: "Things To Do", desc: "Activities, nightlife, casinos & adventures", href: "/experiences-things-to-do-in-reno-nv/" },
                         { icon: Utensils, label: "Best Restaurants", desc: "Fine dining & group-friendly spots in Reno", href: "/best-restaurants-reno-nv/" },
                         { icon: MapPin, label: "Locations Map", desc: "Interactive map of courses, hotels & attractions", href: "/locations-map/" },
-                      ].map((item, i) => (
+                      ].map((item) => (
                         <Link
                           key={item.href}
                           href={item.href}
