@@ -52,7 +52,9 @@ const LODGING_NAMES: Record<string, string[]> = {
   "old-greenwood-lodging-truckee-ca": ["Old Greenwood Lodging", "Old Greenwood"],
   "hampton-inn-truckee-ca": ["Hampton Inn Truckee", "Hampton Inn"],
   "river-pines-resort-graeagle-ca": ["River Pines Resort", "River Pines"],
-  "plumas-pines-private-residency-graeagle": ["Plumas Pines Private Residency", "Plumas Pines"],
+  "plumas-pines-private-residency-graeagle": ["Plumas Pines Private Residency", "Plumas Pines Townhomes", "Plumas Pines"],
+  "nakoma-resort-graeagle-ca": ["The Inn at Nakoma", "Inn at Nakoma", "Nakoma Resort", "Nakoma"],
+  "chalet-view-lodge-graeagle-ca": ["Chalet View Lodge", "Chalet View"],
   "carson-valley-inn-casino": ["Carson Valley Inn"],
 };
 
