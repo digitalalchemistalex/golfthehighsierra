@@ -1,0 +1,94 @@
+{
+  "slug": "chapel-tavern-reno",
+  "name": "Chapel Tavern",
+  "type": "bar",
+  "region": "reno",
+  "regionLabel": "Reno, NV",
+  "parentVenue": null,
+  "tagline": "Craft Cocktails, Whiskey & Late-Night Bar",
+  "bestFor": "Craft cocktails, whiskey lovers, and unique spirits",
+  "address": {
+    "streetAddress": "1099 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.5155,
+    "longitude": -119.8128
+  },
+  "phone": null,
+  "website": "https://www.chapeltavern.com",
+  "hours": "Mon–Fri: 2:00 PM – 4:00 AM | Sat–Sun: 10:00 AM – 4:00 AM",
+  "priceRange": "$10–$20 per cocktail",
+  "ambiance": "Industrial-chic with an intimate, laid-back atmosphere",
+  "dogFriendly": true,
+  "description": "A renowned craft cocktail bar in Midtown Reno, celebrated for its expert mixology, unique spirits, and cozy yet lively atmosphere.",
+  "pointOfView": "A renowned craft cocktail bar in Midtown Reno, celebrated for its expert mixology, unique spirits, and cozy yet lively atmosphere.",
+  "highlights": [
+    { "icon": "🍹", "label": "Best For", "value": "Craft cocktails, whiskey lovers, and unique spirits" },
+    { "icon": "🔥", "label": "Hidden Gem", "value": "\"Dealer's Choice\" cocktail — Bartenders create a custom drink based on your preferences" },
+    { "icon": "🎶", "label": "Ambiance", "value": "Industrial-chic with an intimate, laid-back atmosphere" },
+    { "icon": "🥂", "label": "Signature Drink", "value": "Frosé — A frozen cocktail made with natural wines, perfect for warm days" },
+    { "icon": "🎵", "label": "Music", "value": "Eclectic playlists ranging from classic rock to modern indie" },
+    { "icon": "🐾", "label": "Dog-Friendly", "value": "Yes! Well-behaved dogs are welcome" }
+  ],
+  "insiderTips": [
+    "Try the \"Dealer's Choice\" — Let the bartender craft a drink based on your favorite flavors",
+    "Best Time to Go — Weeknights for a chill vibe, weekends for a lively crowd with more energy",
+    "Outdoor Seating Available — Enjoy your drinks in their beer garden on warm nights",
+    "Limited Parking — Arrive Early. Street parking can fill up quickly, especially after 8 PM",
+    "Special Events & Themed Nights — Keep an eye out for special cocktail events & seasonal menus"
+  ],
+  "parking": {
+    "summary": "Midtown Reno — metered street parking; limited free parking behind the building",
+    "details": [
+      "On-Site Parking: Limited free parking behind the building",
+      "Street Parking: Metered along S Virginia St, Cheney St, and surrounding streets",
+      "Weekend Free Parking: Some metered spots free after 6 PM and on Sundays",
+      "Midtown Parking Lot — 945 S Virginia St (2 min walk)",
+      "Bike Parking: Designated bike racks near the entrance"
+    ]
+  },
+  "groupEvents": {
+    "description": "Full or partial venue rental with flexible options. Cozy & upscale atmosphere with a laid-back yet sophisticated vibe. Custom music & playlists. Work with bartenders to create custom drink menus.",
+    "idealFor": "Birthday parties, retirement celebrations, fundraisers, wedding receptions, rehearsal dinners",
+    "reservationUrl": "https://www.chapeltavern.com/#Events"
+  },
+  "distances": [
+    { "location": "Downtown Reno", "minutes": 3 },
+    { "location": "Peppermill & Atlantis Casino Resorts", "minutes": 5 },
+    { "location": "Grand Sierra Resort & Casino", "minutes": 10 },
+    { "location": "Truckee, CA", "minutes": 25 },
+    { "location": "Carson City, NV", "minutes": 30 },
+    { "location": "Stateline, NV (Lake Tahoe Casinos)", "minutes": 50 },
+    { "location": "Graeagle, CA", "minutes": 65 }
+  ],
+  "directionsUrl": "https://www.google.com/maps/dir//1099+S+Virginia+St,+Reno,+NV+89502",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/FOOD-LIQUID-Chapel-D-Robert-1-300x200.webp",
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2025/03/FOOD-LIQUID-Chapel-D-Robert-1-300x200.webp"
+  ],
+  "faqs": [
+    {
+      "question": "Where is Chapel Tavern located?",
+      "answer": "Chapel Tavern is located at 1099 S Virginia St, Reno, Nevada, in Midtown, just minutes from downtown Reno."
+    },
+    {
+      "question": "What are Chapel Tavern's hours?",
+      "answer": "Chapel Tavern is open Monday–Friday from 2:00 PM to 4:00 AM and Saturday–Sunday from 10:00 AM to 4:00 AM."
+    },
+    {
+      "question": "Is Chapel Tavern dog-friendly?",
+      "answer": "Yes. Well-behaved dogs are welcome inside the bar and on the outdoor garden patio."
+    },
+    {
+      "question": "Can I include Chapel Tavern in a golf package?",
+      "answer": "Yes. Golf the High Sierra can include après-golf nightlife experiences at Chapel Tavern in a custom golf package."
+    }
+  ],
+  "meta": {
+    "title": "Chapel Tavern Reno NV | Craft Cocktails, Whiskey & Late-Night Bar",
+    "description": "Visit Chapel Tavern in Midtown Reno – a craft cocktail bar known for whiskey, unique spirits, and expert mixology. Enjoy Dealer's Choice drinks, frosé, and a dog-friendly atmosphere until 4 AM daily."
+  }
+}

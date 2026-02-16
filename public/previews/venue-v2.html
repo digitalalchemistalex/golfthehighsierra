@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Chapel Tavern — Venue Preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--w:#fff;--sn:#fdfcfb;--bn:#f5f2ee;--pl:#e8e4de;--st:#8a857c;--ch:#3a3832;--ik:#1a1917;--bz:#a0845c;--bz2:#b89b6e;--sf:'Cormorant Garamond',Georgia,serif;--bd:'Outfit',system-ui,sans-serif}*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:var(--bd);color:var(--ik);background:var(--w);overflow-x:hidden;-webkit-font-smoothing:antialiased}::selection{background:var(--bz);color:#fff}a{text-decoration:none;color:inherit}img{display:block;max-width:100%}
+
+/* REVEALS */
+.rv{opacity:0;transform:translateY(36px);transition:opacity 1s cubic-bezier(.23,1,.32,1),transform 1s cubic-bezier(.23,1,.32,1)}.rv.v{opacity:1;transform:translateY(0)}
+.rv-l{opacity:0;transform:translateX(-50px);transition:opacity 1s cubic-bezier(.23,1,.32,1),transform 1s cubic-bezier(.23,1,.32,1)}.rv-l.v{opacity:1;transform:translateX(0)}
+.rv-s{opacity:0;transform:scale(.88);transition:opacity 1.1s cubic-bezier(.23,1,.32,1),transform 1.1s cubic-bezier(.23,1,.32,1)}.rv-s.v{opacity:1;transform:scale(1)}
+
+/* CURSOR GLOW */
+#glow{position:fixed;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(160,132,92,.06) 0%,transparent 70%);pointer-events:none;z-index:9999;transform:translate(-50%,-50%);display:none}
+
+/* ═══ 1. HERO ═══ */
+.hero{position:relative;height:100vh;min-height:700px;overflow:hidden;background:#080807}
+.hero video,.hero .hero-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero video{filter:brightness(.35) saturate(1.2);z-index:1}
+.hero .hero-poster{filter:brightness(.35) saturate(1.2);z-index:0}
+.hero .grain{position:absolute;inset:0;opacity:.03;mix-blend-mode:overlay;z-index:2;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:150px}
+.hero .grad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,transparent 30%,transparent 50%,rgba(8,8,7,.88) 100%);z-index:2}
+.hero .vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50%,transparent 45%,rgba(0,0,0,.4) 100%);z-index:2}
+.hero-top{position:absolute;top:clamp(24px,4vh,48px);left:clamp(32px,7vw,120px);right:clamp(32px,7vw,120px);display:flex;justify-content:space-between;align-items:center;z-index:5;opacity:0;animation:fadeD .8s ease .6s forwards}
+.hero-brand{font-family:var(--sf);font-size:13px;color:rgba(255,255,255,.35);letter-spacing:4px;text-transform:uppercase}
+.hero-links{display:flex;gap:24px}.hero-links a{font-size:10px;color:rgba(255,255,255,.3);letter-spacing:2px;text-transform:uppercase;transition:color .3s}.hero-links a:hover{color:rgba(255,255,255,.7)}
+.hero-content{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;justify-content:flex-end;padding:0 clamp(32px,7vw,120px) clamp(56px,9vh,110px)}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 18px;border-radius:100px;border:1px solid rgba(160,132,92,.35);font-size:9px;color:var(--bz2);font-weight:500;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:24px;width:fit-content;backdrop-filter:blur(10px);background:rgba(0,0,0,.25);opacity:0;animation:fadeU .8s ease .9s forwards}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--bz);animation:pulse 2s infinite}
+.hero h1{font-family:var(--sf);font-weight:300;font-size:clamp(56px,10vw,130px);line-height:.86;color:#fff;letter-spacing:-.04em;opacity:0;animation:heroUp 1.3s cubic-bezier(.23,1,.32,1) 1s forwards}
+.hero h1 em{font-style:italic;color:rgba(255,255,255,.6)}
+.hero-sub{font-size:14px;color:rgba(255,255,255,.55);margin-top:18px;font-weight:300;max-width:520px;line-height:1.7;opacity:0;animation:fadeU .8s ease 1.5s forwards}
+.hero-stats{display:flex;gap:clamp(28px,4.5vw,60px);margin-top:28px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);opacity:0;animation:fadeU .8s ease 1.8s forwards}
+.hero-stats .sv{font-size:15px;color:rgba(255,255,255,.8);font-weight:400}
+.hero-stats .sl{font-size:8px;color:rgba(255,255,255,.35);letter-spacing:2.5px;text-transform:uppercase;margin-top:4px}
+.scroll-ind{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:5;display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0;animation:fadeIn 1s ease 2.5s forwards}
+.scroll-mouse{width:20px;height:30px;border:1.5px solid rgba(255,255,255,.2);border-radius:11px;position:relative}
+.scroll-mouse::after{content:'';position:absolute;top:6px;left:50%;transform:translateX(-50%);width:2px;height:7px;border-radius:2px;background:rgba(255,255,255,.3);animation:mScroll 1.8s ease infinite}
+
+/* ═══ 2. IMAGE BAND + FLOATERS ═══ */
+.img-band{position:relative;height:400px;overflow:hidden}
+.img-band img{width:100%;height:100%;object-fit:cover;filter:brightness(.75) saturate(1.1)}
+.img-band .ov{position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(26,25,23,.5) 100%)}
+.float-cards{position:relative;display:flex;justify-content:center;gap:16px;margin-top:-70px;z-index:2;padding:0 clamp(32px,7vw,100px);flex-wrap:wrap}
+.fcard{background:var(--w);border-radius:20px;padding:24px 28px;min-width:170px;text-align:center;border:1px solid var(--pl);box-shadow:0 20px 50px rgba(0,0,0,.07);transition:all .5s cubic-bezier(.23,1,.32,1)}
+.fcard:hover{transform:translateY(-6px);box-shadow:0 28px 70px rgba(0,0,0,.12);border-color:var(--bz)}
+.fcard .fi{font-size:32px;margin-bottom:10px;display:block;transition:transform .4s}.fcard:hover .fi{transform:scale(1.2) rotate(-8deg)}
+.fcard .fv{font-size:15px;color:var(--ik);font-weight:500;margin-bottom:3px}
+.fcard .fl{font-size:9px;color:var(--st);letter-spacing:2px;text-transform:uppercase}
+
+/* ═══ 3. TYPO + GALLERY ═══ */
+.typo{background:var(--w);padding:clamp(70px,12vh,140px) clamp(36px,7vw,120px);display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(40px,6vw,100px);align-items:center}
+.typo h2{font-family:var(--sf);font-size:clamp(42px,6vw,82px);font-weight:300;line-height:.92;letter-spacing:-.03em}
+.typo h2 em{font-style:italic;color:var(--bz)}
+.bronze-bar{width:60px;height:3px;background:linear-gradient(90deg,var(--bz),var(--bz2));border-radius:3px;margin:28px 0}
+.typo blockquote{border-left:2px solid var(--bz);padding-left:24px;margin-bottom:24px}
+.typo blockquote p{font-family:var(--sf);font-size:clamp(18px,2.2vw,24px);font-style:italic;color:var(--ch);line-height:1.55;font-weight:300}
+.typo .body{font-size:14px;color:var(--st);line-height:1.95;font-weight:300;max-width:480px}
+.stag{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sg{border-radius:16px;overflow:hidden;position:relative;cursor:pointer;aspect-ratio:1}
+.sg:nth-child(2),.sg:nth-child(4){margin-top:40px}
+.sg img{width:100%;height:100%;object-fit:cover;transition:all .7s cubic-bezier(.23,1,.32,1)}
+.sg:hover img{transform:scale(1.08);filter:brightness(1.05)}
+.sg .sg-ov{position:absolute;inset:0;background:linear-gradient(transparent 50%,rgba(0,0,0,.4) 100%);opacity:0;transition:opacity .4s}.sg:hover .sg-ov{opacity:1}
+.sg .sg-lb{position:absolute;bottom:14px;left:16px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#fff;font-weight:500;padding:4px 14px;background:rgba(0,0,0,.4);border-radius:100px;backdrop-filter:blur(6px);opacity:0;transform:translateY(6px);transition:all .4s .1s}.sg:hover .sg-lb{opacity:1;transform:translateY(0)}
+
+/* ═══ 4. PARALLAX BREAK ═══ */
+.px-break{height:450px;position:relative;overflow:hidden;clip-path:inset(0)}
+.px-break img{position:fixed;top:0;left:0;width:100%;height:100vh;object-fit:cover;filter:brightness(.65) saturate(1.1)}
+.px-break .pb-ct{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:2;text-align:center;background:rgba(0,0,0,.2)}
+.px-break h3{font-family:var(--sf);font-size:clamp(32px,5vw,64px);color:#fff;font-weight:300}.px-break h3 em{font-style:italic;color:rgba(255,255,255,.5)}
+.px-break p{font-size:13px;color:rgba(255,255,255,.5);margin-top:12px;font-weight:300}
+
+/* ═══ 5. TIPS ═══ */
+.tips{background:var(--bn);padding:clamp(64px,10vh,120px) clamp(36px,7vw,120px);display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(40px,6vw,100px);align-items:start}
+.eye{font-size:9px;letter-spacing:4.5px;text-transform:uppercase;color:var(--st);font-weight:500;margin-bottom:14px}
+.sec-h{font-family:var(--sf);font-size:clamp(32px,4vw,56px);font-weight:300;line-height:1.05;margin-bottom:20px}
+.sec-h em{font-style:italic}
+.tips-list{display:flex;flex-direction:column;gap:14px}
+.tip{display:flex;gap:20px;padding:22px 24px;background:var(--w);border-radius:18px;border:1px solid var(--pl);transition:all .5s cubic-bezier(.23,1,.32,1);cursor:default}
+.tip:hover{transform:translateX(8px);border-color:var(--bz);box-shadow:0 12px 36px rgba(0,0,0,.05)}
+.tip-n{width:42px;height:42px;border-radius:50%;background:var(--bn);display:flex;align-items:center;justify-content:center;font-family:var(--sf);font-size:20px;color:var(--bz);font-weight:400;flex-shrink:0;transition:all .4s}
+.tip:hover .tip-n{background:var(--bz);color:#fff}
+.tip-t{font-size:15px;color:var(--ik);font-weight:500;margin-bottom:4px}
+.tip-d{font-size:13px;color:var(--st);font-weight:300;line-height:1.65}
+
+/* ═══ 6. HIGHLIGHTS ═══ */
+.hl{background:var(--w);padding:clamp(64px,10vh,120px) clamp(36px,7vw,120px)}
+.hl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.hlc{padding:30px 24px;background:var(--sn);border-radius:20px;border:1px solid var(--pl);position:relative;overflow:hidden;transition:all .5s cubic-bezier(.23,1,.32,1)}
+.hlc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--bz),var(--bz2));transform:scaleX(0);transform-origin:left;transition:transform .5s}
+.hlc:hover{transform:translateY(-5px);box-shadow:0 20px 56px rgba(0,0,0,.06);border-color:transparent}
+.hlc:hover::before{transform:scaleX(1)}
+.hlc .hi{font-size:32px;margin-bottom:14px;display:block;transition:transform .4s}.hlc:hover .hi{transform:scale(1.2) rotate(-8deg)}
+.hlc .hl-l{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--bz);font-weight:600;margin-bottom:8px}
+.hlc .hl-v{font-size:14px;color:var(--ch);font-weight:300;line-height:1.7}
+
+/* ═══ 7. LOC + FAQ ═══ */
+.info{display:grid;grid-template-columns:1fr 1fr}
+.loc{padding:clamp(56px,9vh,96px) clamp(36px,6vw,80px);background:var(--bn)}
+.faq-s{padding:clamp(56px,9vh,96px) clamp(36px,6vw,80px);background:var(--w)}
+.dr{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--pl);font-size:13px;transition:padding .3s}.dr:hover{padding-left:6px}
+.dr .dl{color:var(--ch);font-weight:400}.dr .dm{color:var(--bz);font-weight:600;font-size:12px}
+.addr{margin-top:24px;padding:22px;background:var(--w);border-radius:18px;border:1px solid var(--pl)}.addr p{font-size:14px;color:var(--ch);line-height:1.6}.addr .sub{font-size:12px;color:var(--st);margin-top:6px;font-weight:300}
+.btn-r{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.pill{padding:10px 24px;border-radius:100px;font-size:10px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;transition:all .4s;cursor:pointer;border:none;display:inline-block}
+.pill-f{background:var(--bz);color:#fff}.pill-f:hover{background:var(--bz2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(160,132,92,.2)}
+.pill-o{border:1px solid var(--pl);color:var(--ch);background:none}.pill-o:hover{border-color:var(--bz);color:var(--bz)}
+.faq-item{border-bottom:1px solid var(--pl)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;width:100%;padding:20px 0;background:none;border:none;font-family:var(--bd);font-size:14px;color:var(--ch);cursor:pointer;text-align:left;gap:14px;font-weight:400;transition:color .3s}
+.faq-q:hover{color:var(--bz)}
+.faq-icon{width:28px;height:28px;border-radius:50%;border:1px solid var(--pl);display:flex;align-items:center;justify-content:center;font-size:15px;color:var(--st);flex-shrink:0;transition:all .4s;font-weight:300}
+.faq-item.open .faq-icon{background:var(--bz);color:#fff;border-color:var(--bz);transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.23,1,.32,1)}.faq-item.open .faq-a{max-height:200px}
+.faq-a p{padding-bottom:20px;font-size:13px;color:var(--st);line-height:1.85;font-weight:300}
+.ev-card{margin-top:28px;padding:28px;background:var(--bn);border-radius:20px;border:1px solid var(--pl);transition:all .4s}.ev-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.03)}
+.ev-l{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--bz);font-weight:600;margin-bottom:10px}
+.ev-d{font-size:13px;color:var(--ch);font-weight:300;line-height:1.75}.ev-id{font-size:11px;color:var(--st);margin-top:10px;font-weight:300}
+
+/* ═══ 8. CTA ═══ */
+.cta{background:var(--ik);text-align:center;padding:clamp(80px,12vh,140px) clamp(36px,7vw,120px);position:relative;overflow:hidden}
+.cta .glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 70%,rgba(160,132,92,.06),transparent 65%)}
+.cta .grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:80px 80px}
+.cta .inner{position:relative;z-index:1}
+.cta h2{font-family:var(--sf);font-size:clamp(32px,4.5vw,60px);font-weight:300;color:#fff;margin-bottom:14px}
+.cta h2 em{font-style:italic;color:rgba(255,255,255,.5)}
+.cta-body{font-size:15px;color:rgba(255,255,255,.5);font-weight:300;max-width:440px;margin:0 auto 32px;line-height:1.85}
+.urgency{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;border-radius:100px;border:1px solid rgba(160,132,92,.15);font-size:9px;color:var(--bz);font-weight:500;margin-bottom:28px}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta-p{padding:16px 42px;background:var(--bz);color:#fff;border-radius:100px;font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;transition:all .5s;display:inline-block}
+.cta-p:hover{background:var(--bz2);transform:translateY(-3px);box-shadow:0 16px 48px rgba(160,132,92,.25)}
+.cta-g{padding:16px 42px;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.5);border-radius:100px;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;transition:all .4s;display:inline-block}
+.cta-g:hover{border-color:rgba(255,255,255,.4);color:#fff}
+
+/* KEYFRAMES */
+@keyframes heroUp{from{opacity:0;transform:translateY(60px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeU{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeD{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes mScroll{0%{opacity:1;transform:translateX(-50%) translateY(0)}100%{opacity:0;transform:translateX(-50%) translateY(12px)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.15}}
+
+@media(max-width:900px){.typo,.tips,.info{grid-template-columns:1fr}.stag{gap:6px}.float-cards{flex-direction:column;align-items:center;gap:12px}.hl-grid{grid-template-columns:1fr 1fr}.hero-links{display:none}}
+@media(max-width:600px){.hl-grid{grid-template-columns:1fr}.hero h1{font-size:clamp(44px,13vw,72px)}.hero-stats{flex-wrap:wrap;gap:20px}.stag .sg:nth-child(2),.stag .sg:nth-child(4){margin-top:0}}
+</style>
+</head>
+<body>
+<div id="glow"></div>
+
+<!-- ═══ 1. HERO ═══ -->
+<section class="hero">
+  <img class="hero-poster" src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1800&q=85" alt="">
+  <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1800&q=85">
+    <source src="https://videos.pexels.com/video-files/3794/3794-hd_1920_1080_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="grain"></div><div class="grad"></div><div class="vig"></div>
+  <div class="hero-top"><div class="hero-brand">Golf the High Sierra</div><div class="hero-links"><a href="#">Experiences</a><a href="#">Book</a></div></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span class="badge-dot"></span>Bar & Nightlife</div>
+    <h1>Chapel<br><em>Tavern</em></h1>
+    <p class="hero-sub">A renowned craft cocktail bar in Midtown Reno, celebrated for expert mixology, 100+ whiskeys, and a lively atmosphere.</p>
+    <div class="hero-stats">
+      <div><div class="sv">2 PM – 4 AM</div><div class="sl">Hours</div></div>
+      <div><div class="sv">$10–$20</div><div class="sl">Cocktails</div></div>
+      <div><div class="sv">Industrial-chic</div><div class="sl">Ambiance</div></div>
+    </div>
+  </div>
+  <div class="scroll-ind"><div class="scroll-mouse"></div><span style="font-size:7px;color:rgba(255,255,255,.15);letter-spacing:4px;text-transform:uppercase">Scroll</span></div>
+</section>
+
+<!-- ═══ 2. IMAGE BAND + CARDS ═══ -->
+<div class="img-band"><img src="https://images.unsplash.com/photo-1525268323446-0505b6fe7778?w=1600&q=85" alt="Whiskey wall"><div class="ov"></div></div>
+<div class="float-cards">
+  <div class="fcard rv" style="transition-delay:.05s"><span class="fi">🍹</span><div class="fv">Craft Cocktails</div><div class="fl">Best For</div></div>
+  <div class="fcard rv" style="transition-delay:.15s"><span class="fi">🥃</span><div class="fv">100+ Whiskeys</div><div class="fl">Collection</div></div>
+  <div class="fcard rv" style="transition-delay:.25s"><span class="fi">🌙</span><div class="fv">Open Until 4 AM</div><div class="fl">Late Night</div></div>
+  <div class="fcard rv" style="transition-delay:.35s"><span class="fi">🐾</span><div class="fv">Dogs Welcome</div><div class="fl">Pet-Friendly</div></div>
+</div>
+
+<!-- ═══ 3. BIG TEXT + GALLERY ═══ -->
+<section class="typo">
+  <div class="rv-l">
+    <h2>The Chapel<br><em>Experience</em></h2>
+    <div class="bronze-bar"></div>
+    <blockquote><p>Where "Drink is our religion" isn't just a motto — it's a craft philosophy backed by 100+ whiskeys and bartenders who treat every pour like gospel.</p></blockquote>
+    <p class="body">From 8 to 100 guests — include Chapel Tavern in your group golf package. After a round on the links, unwind with craft cocktails just minutes from the best courses in the High Sierra.</p>
+  </div>
+  <div class="stag">
+    <div class="sg rv-s" style="transition-delay:.1s"><img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&q=80" alt="Cocktail"><div class="sg-ov"></div><div class="sg-lb">Craft Cocktails</div></div>
+    <div class="sg rv-s" style="transition-delay:.2s"><img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=500&q=80" alt="Bar"><div class="sg-ov"></div><div class="sg-lb">The Bar</div></div>
+    <div class="sg rv-s" style="transition-delay:.3s"><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=500&q=80" alt="Mixing"><div class="sg-ov"></div><div class="sg-lb">Expert Mixology</div></div>
+    <div class="sg rv-s" style="transition-delay:.4s"><img src="https://images.unsplash.com/photo-1525268323446-0505b6fe7778?w=500&q=80" alt="Whiskey"><div class="sg-ov"></div><div class="sg-lb">100+ Whiskeys</div></div>
+  </div>
+</section>
+
+<!-- ═══ 4. PARALLAX BREAK ═══ -->
+<div class="px-break">
+  <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=85" alt="Bar atmosphere">
+  <div class="pb-ct"><div>
+    <h3 class="rv">100+ Whiskeys. <em>Infinite Possibilities.</em></h3>
+    <p class="rv" style="transition-delay:.15s">Order the "Dealer's Choice" and let the experts surprise you.</p>
+  </div></div>
+</div>
+
+<!-- ═══ 5. TIPS ═══ -->
+<section class="tips">
+  <div class="rv-l">
+    <div class="eye">The Hack</div>
+    <h2 class="sec-h">Insider <em>Tips</em></h2>
+    <p style="font-size:14px;color:var(--st);line-height:1.9;font-weight:300;max-width:400px">What the regulars know — and now you will too.</p>
+  </div>
+  <div class="tips-list">
+    <div class="tip rv" style="transition-delay:.1s"><div class="tip-n">1</div><div><div class="tip-t">Try the "Dealer's Choice"</div><div class="tip-d">Tell your bartender what flavors you like — they'll create something custom.</div></div></div>
+    <div class="tip rv" style="transition-delay:.2s"><div class="tip-n">2</div><div><div class="tip-t">Best Time to Go</div><div class="tip-d">Weeknights for chill vibes. Weekends for energy and a crowd.</div></div></div>
+    <div class="tip rv" style="transition-delay:.3s"><div class="tip-n">3</div><div><div class="tip-t">Grab the Patio</div><div class="tip-d">Massive outdoor seating on Virginia Street — perfect for warm Reno nights.</div></div></div>
+    <div class="tip rv" style="transition-delay:.4s"><div class="tip-n">4</div><div><div class="tip-t">Park Early or Ride</div><div class="tip-d">Street parking fills fast after 8 PM. Use ParkMobile or rideshare in.</div></div></div>
+    <div class="tip rv" style="transition-delay:.5s"><div class="tip-n">5</div><div><div class="tip-t">Check Events Calendar</div><div class="tip-d">Seasonal menus, tap takeovers, live music — always something happening.</div></div></div>
+  </div>
+</section>
+
+<!-- ═══ 6. HIGHLIGHTS ═══ -->
+<section class="hl">
+  <div class="eye rv">Key Highlights</div>
+  <h2 class="sec-h rv" style="transition-delay:.1s;margin-bottom:36px">What to <em>Know</em></h2>
+  <div class="hl-grid">
+    <div class="hlc rv" style="transition-delay:.1s"><span class="hi">🍹</span><div class="hl-l">Best For</div><div class="hl-v">Craft cocktails, whiskey lovers, and unique spirits from around the world</div></div>
+    <div class="hlc rv" style="transition-delay:.18s"><span class="hi">🔥</span><div class="hl-l">Hidden Gem</div><div class="hl-v">"Dealer's Choice" — bartenders create a custom drink based on your preferences</div></div>
+    <div class="hlc rv" style="transition-delay:.26s"><span class="hi">🎶</span><div class="hl-l">Ambiance</div><div class="hl-v">Industrial-chic with reclaimed wood, metal accents, and intimate seating</div></div>
+    <div class="hlc rv" style="transition-delay:.34s"><span class="hi">🥂</span><div class="hl-l">Signature Drink</div><div class="hl-v">Frosé — frozen cocktail made with natural wines, perfect for warm days</div></div>
+    <div class="hlc rv" style="transition-delay:.42s"><span class="hi">🎵</span><div class="hl-l">Music</div><div class="hl-v">Eclectic playlists from classic rock to modern indie, live events weekly</div></div>
+    <div class="hlc rv" style="transition-delay:.5s"><span class="hi">🐾</span><div class="hl-l">Dog-Friendly</div><div class="hl-v">Well-behaved dogs welcome inside and on the outdoor garden patio</div></div>
+  </div>
+</section>
+
+<!-- ═══ 7. LOCATION + FAQ ═══ -->
+<section class="info">
+  <div class="loc">
+    <div class="eye rv">Location</div>
+    <h2 class="sec-h rv" style="transition-delay:.1s">Getting <em>There</em></h2>
+    <div class="dr rv" style="transition-delay:.15s"><span class="dl">Downtown Reno</span><span class="dm" data-c="3">0 min</span></div>
+    <div class="dr rv" style="transition-delay:.2s"><span class="dl">Peppermill & Atlantis</span><span class="dm" data-c="5">0 min</span></div>
+    <div class="dr rv" style="transition-delay:.25s"><span class="dl">Grand Sierra Resort</span><span class="dm" data-c="10">0 min</span></div>
+    <div class="dr rv" style="transition-delay:.3s"><span class="dl">Truckee, CA</span><span class="dm" data-c="25">0 min</span></div>
+    <div class="dr rv" style="transition-delay:.35s"><span class="dl">Carson City, NV</span><span class="dm" data-c="30">0 min</span></div>
+    <div class="dr rv" style="transition-delay:.4s"><span class="dl">Lake Tahoe (Stateline)</span><span class="dm" data-c="50">0 min</span></div>
+    <div class="addr rv" style="transition-delay:.45s">
+      <p>1099 S Virginia St, Reno, NV 89502</p>
+      <p class="sub">Mon–Fri: 2 PM – 4 AM | Sat–Sun: 10 AM – 4 AM</p>
+      <div class="btn-r"><a href="#" class="pill pill-f">Directions</a><a href="#" class="pill pill-o">Website</a></div>
+    </div>
+  </div>
+  <div class="faq-s">
+    <div class="eye rv">FAQ</div>
+    <h2 class="sec-h rv" style="transition-delay:.1s">Common <em>Questions</em></h2>
+    <div class="faq-item rv" style="transition-delay:.15s"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Where is Chapel Tavern located?<span class="faq-icon">+</span></button><div class="faq-a"><p>1099 S Virginia St in Midtown Reno, just minutes from downtown.</p></div></div>
+    <div class="faq-item rv" style="transition-delay:.2s"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">What are Chapel Tavern's hours?<span class="faq-icon">+</span></button><div class="faq-a"><p>Mon–Fri: 2:00 PM to 4:00 AM. Sat–Sun: 10:00 AM to 4:00 AM.</p></div></div>
+    <div class="faq-item rv" style="transition-delay:.25s"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is Chapel Tavern dog-friendly?<span class="faq-icon">+</span></button><div class="faq-a"><p>Yes — well-behaved dogs are welcome inside and on the garden patio.</p></div></div>
+    <div class="faq-item rv" style="transition-delay:.3s"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Can I add it to a golf package?<span class="faq-icon">+</span></button><div class="faq-a"><p>Yes. Golf the High Sierra can include après-golf nightlife in any custom package.</p></div></div>
+    <div class="ev-card rv" style="transition-delay:.4s">
+      <div class="ev-l">Private Events</div>
+      <p class="ev-d">Full or partial venue rental. Custom music, playlists, and craft drink menus curated by their bartenders.</p>
+      <p class="ev-id">Ideal for: Birthday parties, fundraisers, wedding receptions, rehearsal dinners</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 8. CTA ═══ -->
+<section class="cta">
+  <div class="glow"></div><div class="grid-bg"></div>
+  <div class="inner">
+    <div class="eye rv" style="color:var(--bz)">Experience Chapel</div>
+    <h2 class="rv" style="transition-delay:.1s">Add Chapel to <em>Your Golf Trip</em></h2>
+    <p class="cta-body rv" style="transition-delay:.2s">Golf, lodging, nightlife — all in one custom package. One call plans everything.</p>
+    <div class="rv" style="transition-delay:.3s;text-align:center"><div class="urgency"><span class="badge-dot"></span>Groups of 8+ save 20%</div></div>
+    <div class="cta-btns rv" style="transition-delay:.4s"><a href="#" class="cta-p">Plan My Trip</a><a href="#" class="cta-g">Call 888-584-8232</a></div>
+  </div>
+</section>
+
+<script>
+// Reveal observer
+const obs=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&(e.target.classList.add('v'),obs.unobserve(e.target))})},{threshold:.05,rootMargin:'-20px'});
+document.querySelectorAll('.rv,.rv-l,.rv-s').forEach(e=>obs.observe(e));
+
+// Cursor glow (desktop only)
+const gl=document.getElementById('glow');
+if(window.matchMedia('(pointer:fine)').matches&&gl){gl.style.display='block';document.addEventListener('mousemove',e=>{gl.style.left=e.clientX+'px';gl.style.top=e.clientY+'px'})}
+
+// Count-up distances
+document.querySelectorAll('[data-c]').forEach(el=>{const t=parseInt(el.dataset.c);const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){let c=0;const s=()=>{c+=Math.ceil(t/15);if(c>=t){el.textContent=t+' min';return}el.textContent=c+' min';requestAnimationFrame(s)};s();o.unobserve(el)}},{threshold:.5});o.observe(el)});
+</script>
+</body>
+</html>
