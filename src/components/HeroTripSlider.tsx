@@ -362,12 +362,12 @@ export default function HeroTripSlider({ slug, type }: { slug: string; type: "co
       </div>
 
       {/* Card area */}
-      <div className="flex-1 min-h-0 px-4 lg:px-6 overflow-hidden relative">
+      <div className="flex-1 min-h-0 px-4 lg:px-6 overflow-y-auto">
         {trips.map((trip, i) => (
           <div
             key={trip.id || i}
-            className={`absolute inset-x-4 lg:inset-x-6 top-0 bottom-0 transition-all duration-700 ease-in-out ${
-              i === active ? "opacity-100 translate-x-0 z-10" : i < active ? "opacity-0 -translate-x-8 z-0" : "opacity-0 translate-x-8 z-0"
+            className={`transition-opacity duration-500 ${
+              i === active ? "block opacity-100" : "hidden opacity-0"
             }`}
           >
             <FullCard trip={trip} onQuote={setQuoteTrip} />
