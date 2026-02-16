@@ -4,10 +4,15 @@ import { useState } from "react";
 
 const EMAIL_URL = "https://golfthehighsierra.com/trips-caddie/api/api-send-email.php";
 
+interface DayItem { day?: number; date?: string; time?: string; activity?: string; location?: string; notes?: string; }
+interface Logistics { transportType?: string; passengerCount?: number; specialRequests?: string[]; }
+
 export interface QuoteTrip {
   id?: string; groupName?: string; groupSize?: number; nights?: number; rounds?: number;
   courses?: string[]; lodging?: string; pricePerPerson?: number; pricePerPersonEstimate?: number;
-  vibe?: string;
+  vibe?: string; synopsis?: string; whyItWorked?: string; highlights?: string[];
+  dailyItinerary?: DayItem[]; logistics?: Logistics;
+  month?: string; year?: number;
 }
 
 export default function QuoteModal({ trip, onClose }: { trip: QuoteTrip; onClose: () => void }) {
@@ -34,78 +39,142 @@ export default function QuoteModal({ trip, onClose }: { trip: QuoteTrip; onClose
     setSending(true);
     const price = trip.pricePerPerson || trip.pricePerPersonEstimate || 0;
     const pricingNote = `<div style="background:#fef3c7;padding:12px 16px;border-radius:8px;border:1px solid #fcd34d;margin-bottom:16px"><p style="margin:0;font-size:13px;color:#92400e;line-height:1.5"><strong>⚠️ Pricing Note:</strong> The price shown ($${Math.round(price)}/person) reflects what a previous group paid. Your custom quote will be based on current rates, group size, dates, and availability — final pricing may differ.</p></div>`;
-    const tripSummary = `${trip.groupSize} golfers · ${trip.nights} nights · ${trip.rounds || trip.courses?.length || 0} rounds · $${Math.round(price)}/person (historical)`;
 
+    /* ── Itinerary HTML (shared by both emails) ── */
+    const itineraryHtml = trip.dailyItinerary && trip.dailyItinerary.length > 0 ? `
+      <div style="margin-bottom:24px">
+        <h3 style="color:#475569;font-size:14px;text-transform:uppercase;border-bottom:2px solid #e2e8f0;padding-bottom:5px">Itinerary Summary</h3>
+        <table style="width:100%;border-collapse:collapse;font-size:13px">
+          ${trip.dailyItinerary.map((d, i) => `
+            <tr style="border-bottom:1px solid #f1f5f9;background-color:${i % 2 === 0 ? "#ffffff" : "#f8fafc"}">
+              <td style="padding:10px;font-weight:bold;width:60px;vertical-align:top;color:#059669">Day ${d.day || i + 1}</td>
+              <td style="padding:10px;vertical-align:top">
+                <div style="font-weight:700;color:#0f172a;margin-bottom:2px">${d.activity || ""}</div>
+                <div style="color:#64748b">${d.time || ""} ${d.location ? "@ " + d.location : ""}</div>
+                ${d.notes ? `<div style="color:#94a3b8;font-style:italic;font-size:12px;margin-top:2px">"${d.notes}"</div>` : ""}
+              </td>
+            </tr>
+          `).join("")}
+        </table>
+      </div>` : "";
+
+    /* ── Special requests HTML ── */
+    const specialReqHtml = trip.logistics?.specialRequests && trip.logistics.specialRequests.length > 0 ? `
+      <div style="background:#fff1f2;border:1px solid #fecdd3;padding:16px;border-radius:8px;margin-bottom:24px">
+        <h3 style="margin:0 0 8px;color:#9f1239;font-size:13px;text-transform:uppercase">Special Requests (Original Trip)</h3>
+        <ul style="margin:0;padding-left:18px;color:#881337;font-size:13px">${trip.logistics.specialRequests.map(r => `<li style="margin-bottom:4px">${r}</li>`).join("")}</ul>
+      </div>` : "";
+
+    /* ── Highlights HTML ── */
+    const highlightsHtml = trip.highlights && trip.highlights.length > 0 ? `
+      <div style="margin-bottom:16px">
+        <strong style="font-size:12px;color:#64748b;text-transform:uppercase">Highlights:</strong>
+        <p style="margin:4px 0 0;font-size:14px">${trip.highlights.join(" · ")}</p>
+      </div>` : "";
+
+    /* ═══ ADMIN EMAIL ═══ */
     const adminSubject = `Trip Caddie Quote Request: ${trip.groupName} - ${name}`;
     const adminHtml = `
-      <div style="font-family:sans-serif;max-width:600px;margin:auto;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden">
-        <div style="background:#065f46;color:white;padding:20px 24px">
-          <h2 style="margin:0;font-size:18px">⛳ Trip Caddie Quote Request</h2>
-        </div>
-        <div style="padding:24px">
-          <h3 style="margin:0 0 4px;color:#1e293b">${trip.groupName}</h3>
-          <p style="margin:0 0 16px;color:#64748b;font-size:14px">${tripSummary}</p>
-          <table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px">
-            <tr><td style="padding:8px 0;color:#64748b;width:120px">Customer</td><td style="padding:8px 0;font-weight:600">${name}</td></tr>
-            <tr><td style="padding:8px 0;color:#64748b">Email</td><td style="padding:8px 0"><a href="mailto:${email}">${email}</a></td></tr>
-            <tr><td style="padding:8px 0;color:#64748b">Phone</td><td style="padding:8px 0"><a href="tel:${phone}">${phone}</a></td></tr>
-            ${company ? `<tr><td style="padding:8px 0;color:#64748b">Company</td><td style="padding:8px 0">${company}</td></tr>` : ""}
+      <div style="font-family:sans-serif;max-width:600px;margin:0 auto;color:#334155;line-height:1.5">
+        <h2 style="color:#064e3b;border-bottom:2px solid #059669;padding-bottom:10px;font-size:20px">⛳ Trip Caddie Quote Request</h2>
+
+        <div style="background:#f8fafc;padding:20px;border-radius:8px;margin-bottom:24px;border:1px solid #e2e8f0">
+          <h3 style="margin-top:0;color:#475569;font-size:14px;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid #cbd5e1;padding-bottom:5px;margin-bottom:10px">Customer Details</h3>
+          <table style="width:100%;border-collapse:collapse">
+            <tr><td style="padding:4px 0;width:100px;color:#64748b;font-size:14px">Name:</td><td style="padding:4px 0;font-weight:600;color:#0f172a">${name}</td></tr>
+            <tr><td style="padding:4px 0;width:100px;color:#64748b;font-size:14px">Email:</td><td style="padding:4px 0;font-weight:600"><a href="mailto:${email}" style="color:#059669;text-decoration:none">${email}</a></td></tr>
+            <tr><td style="padding:4px 0;width:100px;color:#64748b;font-size:14px">Phone:</td><td style="padding:4px 0;font-weight:600"><a href="tel:${phone}" style="color:#059669;text-decoration:none">${phone}</a></td></tr>
+            ${company ? `<tr><td style="padding:4px 0;width:100px;color:#64748b;font-size:14px">Company:</td><td style="padding:4px 0;font-weight:600">${company}</td></tr>` : ""}
           </table>
-          <div style="background:#f8fafc;padding:16px;border-radius:8px;border:1px solid #e2e8f0;margin-bottom:16px">
-            <strong style="font-size:12px;color:#64748b;text-transform:uppercase">Courses:</strong>
-            <p style="margin:4px 0 0">${trip.courses?.join(", ") || "TBD"}</p>
-          </div>
-          <div style="background:#f8fafc;padding:16px;border-radius:8px;border:1px solid #e2e8f0;margin-bottom:16px">
-            <strong style="font-size:12px;color:#64748b;text-transform:uppercase">Lodging:</strong>
-            <p style="margin:4px 0 0">${trip.lodging || "TBD"}</p>
-          </div>
-          <div style="background:#fffbeb;padding:16px;border-radius:8px;border:1px solid #fde68a">
-            <strong style="font-size:12px;color:#92400e;text-transform:uppercase">Specific Requests / Changes</strong>
-            <p style="margin:4px 0 0">${changes}</p>
+        </div>
+
+        <div style="margin-bottom:24px">
+          <h3 style="background:#0f172a;color:#fff;font-size:14px;padding:8px 12px;border-radius:6px 6px 0 0;margin-bottom:0">Trip Reference: ${trip.groupName}</h3>
+          <div style="border:1px solid #e2e8f0;border-top:none;padding:15px;border-radius:0 0 6px 6px">
+            <ul style="list-style:none;padding:0;margin:0">
+              <li style="margin-bottom:8px;font-size:14px"><strong>📅 Date:</strong> ${trip.month || "N/A"} ${trip.year || ""}</li>
+              <li style="margin-bottom:8px;font-size:14px"><strong>👥 Pax:</strong> ${trip.groupSize || "TBD"}</li>
+              <li style="margin-bottom:8px;font-size:14px"><strong>🌙 Nights:</strong> ${trip.nights || "TBD"}</li>
+              <li style="margin-bottom:8px;font-size:14px"><strong>⛳ Rounds:</strong> ${trip.rounds || trip.courses?.length || 0}</li>
+              <li style="margin-bottom:8px;font-size:14px"><strong>💰 Reference Price:</strong> $${Math.round(price)}/pp (historical)</li>
+              <li style="margin-bottom:8px;font-size:14px"><strong>🎯 Vibe:</strong> ${trip.vibe || "N/A"}</li>
+              <li style="margin-bottom:8px;font-size:14px"><strong>🏨 Lodging:</strong> ${trip.lodging || "TBD"}</li>
+              <li style="margin-bottom:8px;font-size:14px"><strong>⛳ Courses:</strong> ${trip.courses?.join(", ") || "TBD"}</li>
+              <li style="margin-bottom:8px;font-size:14px"><strong>🚌 Transport:</strong> ${trip.logistics?.transportType || "N/A"}</li>
+            </ul>
           </div>
         </div>
-        <div style="background:#f8fafc;padding:16px 24px;border-top:1px solid #e2e8f0;text-align:center">
-          <p style="margin:0;color:#94a3b8;font-size:12px">Sent via Golf the High Sierra · Trip Caddie</p>
+
+        ${highlightsHtml}
+
+        <div style="background:#fff7ed;border:1px solid #fed7aa;padding:20px;border-radius:8px;margin-bottom:24px">
+          <h3 style="margin-top:0;color:#9a3412;font-size:14px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px">Specific Requests / Changes</h3>
+          <p style="margin:0;white-space:pre-wrap;color:#431407;font-size:14px">${changes}</p>
+        </div>
+
+        ${itineraryHtml}
+        ${specialReqHtml}
+
+        ${trip.whyItWorked ? `<div style="background:#f0fdf4;padding:16px;border-radius:8px;border:1px solid #bbf7d0;margin-bottom:24px"><strong style="font-size:12px;color:#166534;text-transform:uppercase">💡 Pro Tip (from original trip):</strong><p style="margin:6px 0 0;font-size:13px;color:#14532d;font-style:italic">"${trip.whyItWorked}"</p></div>` : ""}
+
+        <div style="font-size:11px;color:#94a3b8;border-top:1px solid #e2e8f0;padding-top:20px;text-align:center">
+          Sent via <strong>Trip Caddie</strong> on golfthehighsierra.com<br/>
+          Trip ID: ${trip.id || "N/A"} • ${new Date().toLocaleString()}
         </div>
       </div>`;
 
+    /* ═══ CUSTOMER CONFIRMATION EMAIL ═══ */
     const custSubject = `Your Golf Trip Quote Request — ${trip.groupName}`;
     const custHtml = `
-      <div style="font-family:sans-serif;max-width:600px;margin:auto;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden">
-        <div style="background:#065f46;color:white;padding:24px">
-          <h2 style="margin:0;font-size:18px">⛳ Thanks for Your Quote Request!</h2>
-          <p style="margin:8px 0 0;font-size:14px;color:rgba(255,255,255,.7)">We&apos;ll get back to you within 24 hours.</p>
+      <div style="font-family:sans-serif;max-width:600px;margin:0 auto;color:#334155;line-height:1.5">
+        <div style="background:#065f46;color:white;padding:24px;border-radius:8px 8px 0 0">
+          <h2 style="margin:0;font-size:20px">⛳ Thanks for Your Quote Request!</h2>
+          <p style="margin:8px 0 0;font-size:14px;color:rgba(255,255,255,.7)">We'll get back to you within 24 hours with a custom quote.</p>
         </div>
-        <div style="padding:24px">
+        <div style="padding:24px;border:1px solid #e2e8f0;border-top:none;border-radius:0 0 8px 8px">
           <p style="margin:0 0 16px;font-size:15px;color:#1e293b">Hi <strong>${name}</strong>, we received your request for a trip based on <strong>${trip.groupName}</strong>.</p>
+
           ${pricingNote}
-          <h4 style="margin:0 0 8px;font-size:13px;color:#64748b;text-transform:uppercase">Trip Reference</h4>
-          <p style="margin:0 0 4px;font-size:14px;color:#1e293b"><strong>${trip.groupName}</strong></p>
-          <p style="margin:0 0 16px;color:#64748b;font-size:14px">${tripSummary}</p>
-          <div style="background:#f8fafc;padding:16px;border-radius:8px;border:1px solid #e2e8f0;margin-bottom:12px">
-            <strong style="font-size:12px;color:#64748b">Courses:</strong> ${trip.courses?.join(", ") || "TBD"}
+
+          <div style="margin-bottom:24px">
+            <h3 style="background:#0f172a;color:#fff;font-size:14px;padding:8px 12px;border-radius:6px 6px 0 0;margin-bottom:0">Your Trip Reference: ${trip.groupName}</h3>
+            <div style="border:1px solid #e2e8f0;border-top:none;padding:15px;border-radius:0 0 6px 6px">
+              <ul style="list-style:none;padding:0;margin:0">
+                <li style="margin-bottom:8px;font-size:14px"><strong>📅 Date:</strong> ${trip.month || "N/A"} ${trip.year || ""}</li>
+                <li style="margin-bottom:8px;font-size:14px"><strong>👥 Group Size:</strong> ${trip.groupSize || "TBD"}</li>
+                <li style="margin-bottom:8px;font-size:14px"><strong>🌙 Nights:</strong> ${trip.nights || "TBD"}</li>
+                <li style="margin-bottom:8px;font-size:14px"><strong>⛳ Courses:</strong> ${trip.courses?.join(", ") || "TBD"}</li>
+                <li style="margin-bottom:8px;font-size:14px"><strong>🏨 Lodging:</strong> ${trip.lodging || "TBD"}</li>
+                <li style="margin-bottom:8px;font-size:14px"><strong>💰 Reference Price:</strong> $${Math.round(price)}/person <em style="color:#92400e">(historical — your quote may differ)</em></li>
+              </ul>
+            </div>
           </div>
-          <div style="background:#f8fafc;padding:16px;border-radius:8px;border:1px solid #e2e8f0;margin-bottom:12px">
-            <strong style="font-size:12px;color:#64748b">Lodging:</strong> ${trip.lodging || "TBD"}
+
+          ${itineraryHtml}
+
+          <div style="background:#fff7ed;border:1px solid #fed7aa;padding:16px;border-radius:8px;margin-bottom:24px">
+            <h3 style="margin-top:0;color:#9a3412;font-size:13px;text-transform:uppercase;margin-bottom:6px">Your Requests / Changes</h3>
+            <p style="margin:0;white-space:pre-wrap;color:#431407;font-size:14px">${changes}</p>
           </div>
-          <div style="background:#f8fafc;padding:16px;border-radius:8px;border:1px solid #e2e8f0;margin-bottom:16px">
-            <strong style="font-size:12px;color:#64748b">Your Requests:</strong> ${changes}
+
+          <div style="background:#f0fdf4;padding:16px;border-radius:8px;border:1px solid #bbf7d0;margin-bottom:24px;text-align:center">
+            <p style="margin:0;font-size:14px;color:#166534"><strong>What happens next?</strong></p>
+            <p style="margin:6px 0 0;font-size:13px;color:#14532d">Our team will review your request and build a custom quote based on current availability and rates. Expect to hear from us within 24 hours.</p>
           </div>
-          <p style="margin:0;font-size:14px;color:#64748b;line-height:1.6">Our team will review your request and reach out with a custom quote. If you need anything sooner, call us at <a href="tel:+18885848232" style="color:#065f46;font-weight:600">(888) 584-8232</a>.</p>
+
+          <p style="margin:0;font-size:14px;color:#64748b;text-align:center;line-height:1.6">Need something sooner? Call us at <a href="tel:+18885848232" style="color:#065f46;font-weight:600">(888) 584-8232</a></p>
         </div>
-        <div style="background:#f8fafc;padding:16px 24px;border-top:1px solid #e2e8f0;text-align:center">
-          <p style="margin:0;color:#94a3b8;font-size:12px">Golf the High Sierra · Expert Group Golf Trip Planners · 20+ Years</p>
+        <div style="padding:16px;text-align:center">
+          <p style="margin:0;color:#94a3b8;font-size:11px">Golf the High Sierra · Expert Group Golf Trip Planners · 20+ Years</p>
         </div>
       </div>`;
 
     try {
-      /* Send admin email */
       const adminResp = await fetch(EMAIL_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ to: "info@golfthehighsierra.com", subject: adminSubject, html: adminHtml }),
       });
-      /* Send customer confirmation */
       await fetch(EMAIL_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
