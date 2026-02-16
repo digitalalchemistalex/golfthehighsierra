@@ -1,0 +1,126 @@
+{
+  "slug": "nakoma-resort-graeagle-ca",
+  "name": "Nakoma Resort",
+  "region": "graeagle",
+  "regionLabel": "Graeagle",
+  "type": "resort",
+  "address": {
+    "streetAddress": "348 Bear Run",
+    "addressLocality": "Clio",
+    "addressRegion": "CA",
+    "postalCode": "96106",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 39.7352,
+    "longitude": -120.5874
+  },
+  "phone": "(530) 832-0270",
+  "website": "https://www.nakomaresort.com",
+  "priceRange": "$159\u2013$499",
+  "priceFrom": "$159",
+  "rating": {
+    "value": 4.2,
+    "count": 410,
+    "sources": "Google"
+  },
+  "description": "Nakoma Resort is a Frank Lloyd Wright-inspired mountain retreat in the Lost Sierra, home to the Dragon Golf Course \u2014 one of Northern California's most dramatic layouts. The resort features lodge rooms, spa villas, and townhome-style residences surrounded by towering pines and alpine meadows. With an on-site spa, restaurant, pool, and direct access to one of the most unique golf experiences in the state, Nakoma is the ultimate base camp for Graeagle-area golf trips.",
+  "shortDescription": "Frank Lloyd Wright-inspired resort with the Dragon Golf Course, spa villas, and mountain luxury in the Lost Sierra.",
+  "highlights": [
+    "Home of the Dragon Golf Course",
+    "Frank Lloyd Wright-inspired clubhouse",
+    "Spa villas & lodge rooms",
+    "Townhome-style residences for groups",
+    "On-site spa, restaurant & pool",
+    "Near Graeagle Meadows, Plumas Pines, Whitehawk Ranch"
+  ],
+  "amenities": [
+    "On-site Dragon Golf Course",
+    "Full-service spa",
+    "Restaurant & bar",
+    "Pool (seasonal)",
+    "Fitness center",
+    "Free parking",
+    "Pet friendly"
+  ],
+  "heroImage": "/images/hotels/nakoma-resort/resort-1.jpg",
+  "images": [
+    "/images/hotels/nakoma-resort/resort-1.jpg",
+    "/images/hotels/nakoma-resort/resort-2.jpg",
+    "/images/hotels/nakoma-resort/resort-3.jpg",
+    "/images/hotels/nakoma-resort/resort-4.jpg",
+    "/images/hotels/nakoma-resort/resort-5.jpg",
+    "/images/hotels/nakoma-resort/townhome-1.jpg",
+    "/images/hotels/nakoma-resort/townhome-2.jpg",
+    "/images/hotels/nakoma-resort/townhome-3.jpg",
+    "/images/hotels/nakoma-resort/townhome-4.webp"
+  ],
+  "nearbyGolf": [
+    "nakoma-dragon-golf-course",
+    "graeagle-meadows-golf-course",
+    "plumas-pines-golf-resort",
+    "whitehawk-ranch-golf-course"
+  ],
+  "faqs": [
+    {
+      "question": "Is Nakoma Resort close to the Dragon Golf Course?",
+      "answer": "The Dragon Golf Course is on-site at Nakoma Resort. Walk from your room to the first tee in minutes."
+    },
+    {
+      "question": "What room types are available for golf groups?",
+      "answer": "Nakoma offers lodge rooms, spa villas with private hot tubs, and multi-bedroom townhome residences perfect for groups of 4-12."
+    },
+    {
+      "question": "How far is Nakoma from other Graeagle-area courses?",
+      "answer": "Graeagle Meadows is 10 minutes, Plumas Pines is 12 minutes, and Whitehawk Ranch is about 20 minutes."
+    }
+  ],
+  "meta": {
+    "title": "Nakoma Resort | Dragon Golf Course & Spa Villas | Golf the High Sierra",
+    "description": "Stay at Nakoma Resort in the Lost Sierra \u2014 home of the Dragon Golf Course, Frank Lloyd Wright-inspired clubhouse, spa villas, and mountain luxury. Book your group golf trip."
+  },
+  "totalRooms": 40,
+  "roomTypes": [
+    {
+      "name": "Lodge Room",
+      "description": "Comfortable lodge rooms with mountain views, mini-fridge, and flat-screen TV."
+    },
+    {
+      "name": "Spa Villa",
+      "description": "Premium villas with private hot tubs, fireplaces, and spa-inspired bathrooms."
+    },
+    {
+      "name": "Townhome Residence",
+      "description": "Multi-bedroom townhomes with full kitchens, living areas, and private decks \u2014 ideal for golf groups."
+    }
+  ],
+  "dining": [
+    {
+      "name": "Nakoma Restaurant",
+      "description": "Fine dining in the Frank Lloyd Wright-inspired clubhouse with panoramic mountain views.",
+      "type": "restaurant"
+    },
+    {
+      "name": "Dragon Bar & Grill",
+      "description": "Casual post-round dining with craft cocktails and pub fare.",
+      "type": "restaurant"
+    }
+  ],
+  "spaBars": [
+    "Full-service Nakoma Spa",
+    "Outdoor hot tubs",
+    "Fitness center"
+  ],
+  "parking": "Free parking",
+  "relatedCourses": [
+    "nakoma-dragon-golf-course",
+    "graeagle-meadows-golf-course",
+    "plumas-pines-golf-resort",
+    "whitehawk-ranch-golf-course"
+  ],
+  "relatedHotels": [
+    "chalet-view-lodge-graeagle-ca",
+    "river-pines-resort-graeagle-ca",
+    "plumas-pines-private-residency-graeagle"
+  ]
+}

@@ -57,8 +57,13 @@
   "dining": [],
   "spaBars": [],
   "parking": "Free parking",
-  "images": [],
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/plumas-pines-residences.jpg",
+  "images": [
+    "/images/hotels/nakoma-resort/townhome-1.jpg",
+    "/images/hotels/nakoma-resort/townhome-2.jpg",
+    "/images/hotels/nakoma-resort/townhome-3.jpg",
+    "/images/hotels/nakoma-resort/townhome-4.webp"
+  ],
+  "heroImage": "/images/hotels/nakoma-resort/townhome-1.jpg",
   "faqs": [
     {
       "question": "Can you walk to the golf course?",

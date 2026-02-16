@@ -69,8 +69,15 @@
     "River Pines Bar"
   ],
   "parking": "Free parking",
-  "images": [],
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/river-pines-resort.jpg",
+  "images": [
+    "/images/hotels/river-pines-resort/exterior-2.webp",
+    "/images/hotels/river-pines-resort/bar.webp",
+    "/images/hotels/river-pines-resort/cabin.jpg",
+    "/images/hotels/river-pines-resort/king-room.jpg",
+    "/images/hotels/river-pines-resort/queens-room.jpg",
+    "/images/hotels/river-pines-resort/exterior-1.jpg"
+  ],
+  "heroImage": "/images/hotels/river-pines-resort/exterior-2.webp",
   "faqs": [
     {
       "question": "What golf courses are near River Pines?",

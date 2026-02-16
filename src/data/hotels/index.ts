@@ -23,6 +23,8 @@ import cedarHouseData from "./cedar-house-sport-hotel.json";
 import carsonValleyData from "./carson-valley-inn-casino.json";
 import plumasPinesLodgingData from "./plumas-pines-private-residency-graeagle.json";
 import riverPinesData from "./river-pines-resort-graeagle-ca.json";
+import nakomaResortData from "./nakoma-resort-graeagle-ca.json";
+import chaletViewData from "./chalet-view-lodge-graeagle-ca.json";
 import portolaData from "./portola-hotel-spa-monterey.json";
 
 export const ALL_HOTELS = [
@@ -46,6 +48,8 @@ export const ALL_HOTELS = [
   carsonValleyData,
   plumasPinesLodgingData,
   riverPinesData,
+  nakomaResortData,
+  chaletViewData,
   portolaData,
 ] as const;
 

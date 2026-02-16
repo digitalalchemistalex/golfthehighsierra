@@ -1,0 +1,137 @@
+{
+  "slug": "chalet-view-lodge-graeagle-ca",
+  "name": "Chalet View Lodge",
+  "region": "graeagle",
+  "regionLabel": "Graeagle",
+  "type": "boutique-resort",
+  "address": {
+    "streetAddress": "72056 Highway 70",
+    "addressLocality": "Portola",
+    "addressRegion": "CA",
+    "postalCode": "96122",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "latitude": 39.7958,
+    "longitude": -120.5133
+  },
+  "phone": "(530) 832-5528",
+  "website": "https://www.chaletviewlodge.com",
+  "priceRange": "$175\u2013$450",
+  "priceFrom": "$175",
+  "rating": {
+    "value": 4.0,
+    "count": 523,
+    "sources": "TripAdvisor"
+  },
+  "description": "Chalet View Lodge is a boutique mountain resort in the Lost Sierra, featured in National Geographic's Lakes & Mountains collection. The 51-room property offers resort guest rooms, rustic cabins, terrace suites, and private villas \u2014 all combining modern luxury with rustic mountain charm. On-site amenities include Eureka Peak Brewing Co. taproom, seasonal pool and hot tub, full spa, and a stunning wedding venue. Located 51 miles north of Truckee and 54 miles from Reno, it's the perfect base camp for Graeagle-area golf at Dragon, Graeagle Meadows, Plumas Pines, and Whitehawk Ranch.",
+  "shortDescription": "National Geographic-featured boutique resort with on-site brewery, spa, and mountain luxury near Graeagle golf courses.",
+  "highlights": [
+    "Featured in National Geographic",
+    "On-site Eureka Peak Brewing Co.",
+    "51 rooms: cabins, suites & villas",
+    "Seasonal pool & hot tub",
+    "Full-service spa",
+    "Near Dragon, Graeagle Meadows, Plumas Pines"
+  ],
+  "amenities": [
+    "Eureka Peak Brewing Co. taproom",
+    "Full-service spa",
+    "Seasonal pool & hot tub",
+    "On-site restaurant",
+    "Free WiFi",
+    "Free parking",
+    "Nespresso in-room coffee",
+    "Molton Brown bath amenities",
+    "Dog friendly ($50/night)",
+    "Wedding & event venue"
+  ],
+  "heroImage": "/images/hotels/chalet-view-lodge/hero.jpg",
+  "images": [
+    "/images/hotels/chalet-view-lodge/hero.jpg",
+    "/images/hotels/chalet-view-lodge/rooms-hero.jpg",
+    "/images/hotels/chalet-view-lodge/bedroom.jpg",
+    "/images/hotels/chalet-view-lodge/lobby.jpg",
+    "/images/hotels/chalet-view-lodge/brewery.jpg",
+    "/images/hotels/chalet-view-lodge/pool.jpg",
+    "/images/hotels/chalet-view-lodge/cabin-exterior.jpg",
+    "/images/hotels/chalet-view-lodge/terrace-suite.jpg",
+    "/images/hotels/chalet-view-lodge/villa.jpg",
+    "/images/hotels/chalet-view-lodge/golf-meadow.jpg",
+    "/images/hotels/chalet-view-lodge/grounds.jpg",
+    "/images/hotels/chalet-view-lodge/suite.jpg"
+  ],
+  "nearbyGolf": [
+    "nakoma-dragon-golf-course",
+    "graeagle-meadows-golf-course",
+    "plumas-pines-golf-resort",
+    "whitehawk-ranch-golf-course",
+    "grizzly-ranch-golf-club"
+  ],
+  "faqs": [
+    {
+      "question": "How close is Chalet View Lodge to golf courses?",
+      "answer": "Dragon at Nakoma is 15 minutes, Graeagle Meadows is 12 minutes, Plumas Pines is 15 minutes, and Whitehawk Ranch is about 25 minutes."
+    },
+    {
+      "question": "What room types work best for golf groups?",
+      "answer": "The rustic cabins and villas are ideal for groups \u2014 villas offer multiple bedrooms, full kitchens, and private outdoor space. Resort rooms work well for individual golfers."
+    },
+    {
+      "question": "Does Chalet View Lodge have dining on-site?",
+      "answer": "Yes. Eureka Peak Brewing Co. offers craft beers on tap with wood-fired pizzas, bratwurst, and dishes made with local seasonal ingredients."
+    },
+    {
+      "question": "Is there a spa at Chalet View Lodge?",
+      "answer": "Yes, they offer full spa services. The resort was also featured as one of National Geographic's premier mountain getaways."
+    }
+  ],
+  "meta": {
+    "title": "Chalet View Lodge | Boutique Mountain Resort & Brewery | Golf the High Sierra",
+    "description": "Stay at Chalet View Lodge near Graeagle \u2014 a National Geographic-featured boutique resort with on-site brewery, spa, pool, and easy access to Dragon, Graeagle Meadows, and Plumas Pines golf courses."
+  },
+  "totalRooms": 51,
+  "roomTypes": [
+    {
+      "name": "Resort Guest Room",
+      "description": "Modern rooms with Parachute Home bedding, Nespresso machine, and Molton Brown amenities."
+    },
+    {
+      "name": "Rustic Cabin",
+      "description": "One and two-bedroom cabins with wrap-around porches and mountain charm."
+    },
+    {
+      "name": "Terrace Suite",
+      "description": "Spacious suites with private terraces overlooking the Lost Sierra."
+    },
+    {
+      "name": "Villa",
+      "description": "Private multi-bedroom villas with full kitchens, living areas, and outdoor space \u2014 perfect for groups."
+    }
+  ],
+  "dining": [
+    {
+      "name": "Eureka Peak Brewing Co.",
+      "description": "On-site taproom with craft beers on tap, wood-fired pizzas, and locally sourced seasonal dishes.",
+      "type": "restaurant"
+    }
+  ],
+  "spaBars": [
+    "Full-service spa",
+    "Seasonal pool & hot tub",
+    "Molton Brown bath amenities"
+  ],
+  "parking": "Free parking with EV charging",
+  "relatedCourses": [
+    "nakoma-dragon-golf-course",
+    "graeagle-meadows-golf-course",
+    "plumas-pines-golf-resort",
+    "whitehawk-ranch-golf-course",
+    "grizzly-ranch-golf-club"
+  ],
+  "relatedHotels": [
+    "nakoma-resort-graeagle-ca",
+    "river-pines-resort-graeagle-ca",
+    "plumas-pines-private-residency-graeagle"
+  ]
+}
