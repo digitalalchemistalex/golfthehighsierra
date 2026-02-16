@@ -24,27 +24,36 @@
     "count": 523,
     "sources": "TripAdvisor"
   },
-  "description": "Chalet View Lodge is a boutique mountain resort in the Lost Sierra, featured in National Geographic's Lakes & Mountains collection. The 51-room property offers resort guest rooms, rustic cabins, terrace suites, and private villas \u2014 all combining modern luxury with rustic mountain charm. On-site amenities include Eureka Peak Brewing Co. taproom, seasonal pool and hot tub, full spa, and a stunning wedding venue. Located 51 miles north of Truckee and 54 miles from Reno, it's the perfect base camp for Graeagle-area golf at Dragon, Graeagle Meadows, Plumas Pines, and Whitehawk Ranch.",
-  "shortDescription": "National Geographic-featured boutique resort with on-site brewery, spa, and mountain luxury near Graeagle golf courses.",
+  "description": "Nestled in the heart of the High Sierra, Chalet View Lodge is a boutique resort where rustic elegance meets modern comfort in a serene forest setting. Crafted from timber and stone, this mountain retreat sprawls across 10 picturesque acres \u2014 offering lodge rooms, terrace suites, and private cabins surrounded by sweeping views of forests, streams, and alpine trails.",
+  "shortDescription": "Timber-and-stone boutique resort on 10 acres with on-site brewery, spa, 9-hole course, and mountain luxury.",
   "highlights": [
+    "10 acres of timber-and-stone mountain resort",
     "Featured in National Geographic",
-    "On-site Eureka Peak Brewing Co.",
-    "51 rooms: cabins, suites & villas",
-    "Seasonal pool & hot tub",
-    "Full-service spa",
-    "Near Dragon, Graeagle Meadows, Plumas Pines"
+    "Two restaurants: Eureka Peak Brewing Co. & Kitchen+Bar",
+    "9-hole executive golf course on-site",
+    "Seasonal pool, hot tub & catch-and-release fishing pond",
+    "IVY personal assistant via text"
   ],
   "amenities": [
     "Eureka Peak Brewing Co. taproom",
+    "Kitchen+Bar restaurant",
+    "9-hole executive golf course",
     "Full-service spa",
     "Seasonal pool & hot tub",
-    "On-site restaurant",
-    "Free WiFi",
-    "Free parking",
+    "Catch-and-release fishing pond",
+    "Volleyball courts",
+    "Bocce ball & basketball",
+    "Horseshoe pits",
+    "Playground",
+    "IVY text personal assistant",
+    "In-room tablets & lofted seating",
     "Nespresso in-room coffee",
     "Molton Brown bath amenities",
+    "Parachute Home bedding",
+    "Free WiFi & parking",
+    "EV charging station",
     "Dog friendly ($50/night)",
-    "Wedding & event venue"
+    "Premier wedding venue"
   ],
   "heroImage": "/images/hotels/chalet-view-lodge/hero.jpg",
   "images": [
@@ -88,32 +97,40 @@
   ],
   "meta": {
     "title": "Chalet View Lodge | Boutique Mountain Resort & Brewery | Golf the High Sierra",
-    "description": "Stay at Chalet View Lodge near Graeagle \u2014 a National Geographic-featured boutique resort with on-site brewery, spa, pool, and easy access to Dragon, Graeagle Meadows, and Plumas Pines golf courses."
+    "description": "Stay at Chalet View Lodge \u2014 a 10-acre National Geographic-featured boutique resort with on-site brewery, 9-hole golf course, spa, and access to Dragon, Graeagle Meadows & Plumas Pines golf courses."
   },
-  "totalRooms": 51,
+  "totalRooms": 49,
   "roomTypes": [
     {
       "name": "Resort Guest Room",
-      "description": "Modern rooms with Parachute Home bedding, Nespresso machine, and Molton Brown amenities."
-    },
-    {
-      "name": "Rustic Cabin",
-      "description": "One and two-bedroom cabins with wrap-around porches and mountain charm."
+      "description": "Modern rooms with Parachute Home bedding, Nespresso machine, Molton Brown amenities, and in-room tablets. 33 available.",
+      "priceFrom": "$175"
     },
     {
       "name": "Terrace Suite",
-      "description": "Spacious suites with private terraces overlooking the Lost Sierra."
+      "description": "Spacious suites with private terraces, lofted seating areas, and panoramic Lost Sierra views. 9 available.",
+      "priceFrom": "$275"
+    },
+    {
+      "name": "Rustic Cabin",
+      "description": "One and two-bedroom cabins with wrap-around porches, full kitchens, and mountain charm. 7 available.",
+      "priceFrom": "$325"
     },
     {
       "name": "Villa",
-      "description": "Private multi-bedroom villas with full kitchens, living areas, and outdoor space \u2014 perfect for groups."
+      "description": "Private multi-bedroom villas with full kitchens, living areas, and outdoor space \u2014 perfect for golf groups and families."
     }
   ],
   "dining": [
     {
       "name": "Eureka Peak Brewing Co.",
-      "description": "On-site taproom with craft beers on tap, wood-fired pizzas, and locally sourced seasonal dishes.",
-      "type": "restaurant"
+      "type": "brewery",
+      "description": "On-site taproom with artisan craft beers on tap paired with seasonal plates made from locally sourced ingredients."
+    },
+    {
+      "name": "Kitchen+Bar",
+      "type": "restaurant",
+      "description": "Garden-view dining featuring locally inspired fare in a relaxed mountain setting."
     }
   ],
   "spaBars": [
@@ -133,5 +150,12 @@
     "nakoma-resort-graeagle-ca",
     "river-pines-resort-graeagle-ca",
     "plumas-pines-private-residency-graeagle"
-  ]
+  ],
+  "contentParagraphs": [
+    "Nestled in the heart of the High Sierra, Chalet View Lodge is a boutique resort where rustic elegance meets modern comfort in a serene forest setting. Crafted from timber and stone, this mountain retreat sprawls across 10 picturesque acres \u2014 offering 33 resort rooms, 9 terrace suites, and 7 private cabins surrounded by sweeping views of forests, streams, and alpine trails. Featured in National Geographic's Lakes & Mountains collection, it's a destination that lives up to the hype.",
+    "Wake to the scent of pine and adventure outside your door: hike, snowshoe, bike, or tee off on the resort's 9-hole executive golf course. After exploring, unwind by the seasonal outdoor pool and hot tub, spa, volleyball courts, or the charming catch-and-release fishing pond. The resort also offers bocce ball, basketball, horseshoe pits, and a playground.",
+    "Inside, enjoy thoughtful amenities \u2014 cozy accommodations with lofted seating, in-room tablets, Nespresso coffee machines, and exclusive Molton Brown bath products. Personal assistant services via IVY text keep everything at your fingertips. Dine on locally inspired fare at two on-site restaurants: savor artisan brews paired with seasonal plates at Eureka Peak Brewing Co., or enjoy garden-view dining at Kitchen+Bar.",
+    "Chalet View Lodge is more than a stay \u2014 it's a luxurious mountain escape, a premier wedding venue, and a gathering spot for family and friends. With full spa services, tranquil surroundings, and staff known for warm hospitality, it's a place you'll want to return to time and again."
+  ],
+  "acreage": 10
 }

@@ -15,58 +15,82 @@
     "latitude": 39.7485,
     "longitude": -120.62
   },
-  "priceRange": "$129\u2013$349",
-  "priceFrom": "$129",
+  "priceRange": "$80\u2013$325",
+  "priceFrom": "$80",
   "rating": {
     "value": 4.3,
     "count": 280,
     "sources": "Google"
   },
-  "description": "River Pines Resort in Graeagle offers charming cabins and lodge rooms along the Middle Fork of the Feather River. Walking distance to Graeagle Meadows Golf Course with on-site dining and a relaxed mountain atmosphere.",
-  "shortDescription": "Charming riverside cabins in Graeagle, walking distance to Graeagle Meadows Golf Course.",
+  "description": "Tucked into the towering pines of the northern Sierra Nevada, River Pines Resort offers a standout retreat for families, couples, and outdoor lovers. A family-owned haven for over 40 years \u2014 with new ownership keeping its soul intact \u2014 this charming destination blends cozy lodging, thoughtful amenities, and mountain-side adventure under one roof. Wake up refreshed in compact cabins, well-appointed rooms, or spacious suites with kitchenettes \u2014 all designed to match your comfort needs.",
+  "shortDescription": "Family-owned mountain resort in Graeagle with cabins, pool, hot tub, and The Roadhouse dining next door.",
   "highlights": [
-    "Charming cabins on the Feather River",
-    "Walking distance to Graeagle Meadows Golf Course",
-    "On-site restaurant & bar",
-    "Relaxed mountain atmosphere",
-    "Near Plumas Pines & Whitehawk Ranch",
-    "Pool & outdoor recreation"
+    "17-acre mountain retreat on the Feather River",
+    "44 rooms + 18 charming cabins",
+    "New ownership March 2024 \u2014 brand-new mattresses & upgrades",
+    "Large outdoor pool, hot tub & pool bar",
+    "Newly remodeled Roadhouse Restaurant",
+    "Shuffleboard, ping-pong, horseshoes & game lounge"
   ],
   "amenities": [
-    "On-site restaurant & bar",
-    "Pool (seasonal)",
-    "River access",
-    "BBQ areas",
-    "Free parking"
+    "44 rooms & 18 cabins",
+    "Large outdoor pool (seasonal)",
+    "In-ground hot tub",
+    "Outdoor pool bar",
+    "The Roadhouse Restaurant (next door, remodeled)",
+    "Cozy lodge with fireplace",
+    "Complimentary library",
+    "Shuffleboard & ping-pong",
+    "Horseshoe pit",
+    "Puzzle table & game lounge",
+    "Playground",
+    "Kitchenettes (select suites)",
+    "Brand-new mattresses (2024)",
+    "Free WiFi",
+    "Free parking",
+    "Pet-friendly (seasonal, select rooms)",
+    "Wedding venue",
+    "General store",
+    "Laundry facilities",
+    "Near Feather River fishing"
   ],
   "roomTypes": [
     {
-      "name": "Lodge Room",
-      "description": "Comfortable lodge room with mountain decor."
+      "name": "Standard Room",
+      "description": "Comfortable rooms with brand-new mattresses, knotty-pine interiors, and mountain views. From $80/night.",
+      "priceFrom": "$80"
     },
     {
-      "name": "Cabin",
-      "description": "Private cabin with kitchenette and deck."
+      "name": "Deluxe Room",
+      "description": "Upgraded rooms with additional space, modern amenities, and forest or river views.",
+      "priceFrom": "$110"
     },
     {
-      "name": "Family Cabin",
-      "description": "Larger cabin for groups with full kitchen."
+      "name": "One-Bedroom Cabin",
+      "description": "Charming cabins with rustic charm, kitchenettes, and covered porches set among the pines.",
+      "priceFrom": "$130"
+    },
+    {
+      "name": "Suite",
+      "description": "Spacious suites with full kitchenettes, separate living areas, and room for families or small groups. From $185/night.",
+      "priceFrom": "$185"
     }
   ],
   "dining": [
     {
-      "name": "River Pines Restaurant",
+      "name": "The Roadhouse Restaurant",
       "type": "restaurant",
-      "description": "On-site dining with American comfort food."
+      "description": "Newly remodeled on-site restaurant serving hearty American fare, refreshing cocktails, and indoor-outdoor dining. Open 5:00\u20139:00 PM."
     },
     {
-      "name": "River Pines Bar",
+      "name": "Outdoor Pool Bar",
       "type": "bar",
-      "description": "Casual bar with cocktails and beer."
+      "description": "Fully stocked outdoor bar adjacent to the pool with craft cocktails, cold beers, burgers, and hot dogs in a relaxed mountain setting."
     }
   ],
   "spaBars": [
-    "River Pines Bar"
+    "In-ground hot tub",
+    "Outdoor pool bar"
   ],
   "parking": "Free parking",
   "images": [
@@ -91,16 +115,25 @@
   "relatedCourses": [
     "graeagle-meadows-golf-course",
     "plumas-pines-golf-resort",
-    "whitehawk-ranch-golf-club",
-    "nakoma-golf-resort"
+    "whitehawk-ranch-golf-course",
+    "nakoma-dragon-golf-course"
   ],
   "relatedHotels": [
-    "plumas-pines-private-residency-graeagle"
+    "plumas-pines-private-residency-graeagle",
+    "chalet-view-lodge-graeagle-ca",
+    "nakoma-resort-graeagle-ca"
   ],
   "meta": {
-    "title": "River Pines Resort Graeagle | Cabins & Golf Packages",
-    "description": "Riverside cabins in Graeagle near Graeagle Meadows Golf Course. On-site dining and custom golf packages."
+    "title": "River Pines Resort | Graeagle Cabins & Lodging | Golf the High Sierra",
+    "description": "Stay at River Pines Resort \u2014 a 17-acre mountain retreat in Graeagle with 44 rooms, 18 cabins, pool, hot tub, and The Roadhouse Restaurant. Minutes from Plumas Pines, Graeagle Meadows & Whitehawk Ranch golf."
   },
-  "phone": "+1-888-584-8232",
-  "totalRooms": null
+  "phone": "(530) 836-2552",
+  "totalRooms": 62,
+  "contentParagraphs": [
+    "Tucked into the towering pines of the northern Sierra Nevada, River Pines Resort is a scenic, full-service mountain retreat spanning 17 acres in the heart of Plumas County. Nestled along the Middle Fork of the Feather River, the resort features 44 comfortable rooms and 18 charming cabins \u2014 a family-owned haven for over 40 years with new ownership since March 2024 keeping its soul intact while making exciting upgrades.",
+    "Wake up refreshed in compact cabins, well-appointed rooms, or spacious suites with kitchenettes \u2014 all with brand-new mattresses and refreshed interiors. Enjoy your morning coffee by the fireplace in the cozy lodge, or dip into the large outdoor pool followed by a soak in the in-ground hot tub. Shuffleboard, ping-pong, horseshoes, a puzzle table, complimentary library, and a game lounge add even more ways to unwind.",
+    "River Pines isn't just about comfort \u2014 it's about connection. Outdoor enthusiasts can cast a line in the nearby Feather River, tee off at world-class courses like Plumas Pines and Graeagle Meadows, trek bike trails through Plumas-Eureka State Park, or explore local boutiques and galleries in the charming village of Graeagle. When hunger strikes, head next door to the newly remodeled Roadhouse Restaurant for hearty meals, refreshing cocktails, and indoor-outdoor dining \u2014 or grab a drink at the outdoor pool bar."
+  ],
+  "acreage": 17,
+  "website": "https://www.riverpines.com"
 }

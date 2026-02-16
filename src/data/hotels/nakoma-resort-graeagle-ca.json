@@ -1,11 +1,11 @@
 {
   "slug": "nakoma-resort-graeagle-ca",
-  "name": "Nakoma Resort",
+  "name": "The Inn at Nakoma",
   "region": "graeagle",
   "regionLabel": "Graeagle",
   "type": "resort",
   "address": {
-    "streetAddress": "348 Bear Run",
+    "streetAddress": "41 Village Trail",
     "addressLocality": "Clio",
     "addressRegion": "CA",
     "postalCode": "96106",
@@ -15,8 +15,8 @@
     "latitude": 39.7352,
     "longitude": -120.5874
   },
-  "phone": "(530) 832-0270",
-  "website": "https://www.nakomaresort.com",
+  "phone": "(530) 897-2300",
+  "website": "https://nakomaresort.com",
   "priceRange": "$159\u2013$499",
   "priceFrom": "$159",
   "rating": {
@@ -24,24 +24,41 @@
     "count": 410,
     "sources": "Google"
   },
-  "description": "Nakoma Resort is a Frank Lloyd Wright-inspired mountain retreat in the Lost Sierra, home to the Dragon Golf Course \u2014 one of Northern California's most dramatic layouts. The resort features lodge rooms, spa villas, and townhome-style residences surrounded by towering pines and alpine meadows. With an on-site spa, restaurant, pool, and direct access to one of the most unique golf experiences in the state, Nakoma is the ultimate base camp for Graeagle-area golf trips.",
-  "shortDescription": "Frank Lloyd Wright-inspired resort with the Dragon Golf Course, spa villas, and mountain luxury in the Lost Sierra.",
+  "description": "Discover a sanctuary of style and serenity nestled in fragrant pine forests, just 45 minutes from Truckee-Tahoe. The Inn at Nakoma blends modern comfort with lodge-inspired design, offering 42 thoughtfully appointed rooms and suites featuring Frette Italian linens, pillow-top beds, Keurig coffee makers, and flat-screen TVs \u2014 all set against forest or golf-course views.",
+  "shortDescription": "Lodge-inspired resort with 42 rooms, Frette linens, the Dragon golf course, Fifty44 Restaurant, and full spa in the Lost Sierra.",
   "highlights": [
-    "Home of the Dragon Golf Course",
-    "Frank Lloyd Wright-inspired clubhouse",
-    "Spa villas & lodge rooms",
-    "Townhome-style residences for groups",
-    "On-site spa, restaurant & pool",
-    "Near Graeagle Meadows, Plumas Pines, Whitehawk Ranch"
+    "42 rooms with Frette Italian linens",
+    "Home of the Dragon Golf Course & driving range",
+    "Frank Lloyd Wright-inspired Lodge",
+    "Fifty44 Restaurant & Bar + Middle Fork Bistro",
+    "The Spa at Nakoma + heated pool & two hot tubs",
+    "Dog-friendly (2 dogs up to 75 lbs each)"
   ],
   "amenities": [
-    "On-site Dragon Golf Course",
-    "Full-service spa",
-    "Restaurant & bar",
-    "Pool (seasonal)",
-    "Fitness center",
+    "Dragon Golf Course (on-site, Frank Lloyd Wright concept)",
+    "Driving range & golf lessons",
+    "Golf pro shop",
+    "Fifty44 Restaurant & Bar (in FLW Lodge)",
+    "Middle Fork Bistro + Bar (in Altitude)",
+    "Cooked-to-order breakfast (8\u201311 AM)",
+    "The Spa at Nakoma (massages, facials, body treatments)",
+    "Altitude Recreation Center (12,000 sq ft, opened 2017)",
+    "Heated outdoor pool",
+    "Two hot tubs / spa tubs",
+    "Fitness center & climbing wall",
+    "Arcade & game room",
+    "Children's club",
+    "Theater room",
+    "Lobby fireplace lounge",
+    "Frette Italian linens & pillow-top beds",
+    "Keurig in-room coffee",
+    "Free WiFi",
     "Free parking",
-    "Pet friendly"
+    "Dog-friendly (2 dogs, 75 lbs max each)",
+    "Ski shuttle (seasonal, surcharge)",
+    "Business center",
+    "Gift shop",
+    "Wedding & event venues"
   ],
   "heroImage": "/images/hotels/nakoma-resort/resort-1.jpg",
   "images": [
@@ -76,34 +93,38 @@
     }
   ],
   "meta": {
-    "title": "Nakoma Resort | Dragon Golf Course & Spa Villas | Golf the High Sierra",
-    "description": "Stay at Nakoma Resort in the Lost Sierra \u2014 home of the Dragon Golf Course, Frank Lloyd Wright-inspired clubhouse, spa villas, and mountain luxury. Book your group golf trip."
+    "title": "The Inn at Nakoma | Dragon Golf Course & Spa | Golf the High Sierra",
+    "description": "Stay at The Inn at Nakoma \u2014 42 rooms with Frette linens, the Dragon Golf Course, Fifty44 Restaurant in a Frank Lloyd Wright Lodge, full spa, and mountain luxury in the Lost Sierra."
   },
-  "totalRooms": 40,
+  "totalRooms": 42,
   "roomTypes": [
     {
-      "name": "Lodge Room",
-      "description": "Comfortable lodge rooms with mountain views, mini-fridge, and flat-screen TV."
+      "name": "King Room",
+      "description": "400 sq ft rooms with one king bed, Frette Italian linens, pillow-top mattress, golf course or forest views, free WiFi, desk, and Keurig coffee maker."
+    },
+    {
+      "name": "Queen Room",
+      "description": "Rooms with two queen beds offering double the comfort for families, same premium amenities and forest or golf views."
+    },
+    {
+      "name": "Executive Suite",
+      "description": "Larger floorplan with separate living area, sleeper sofa, king bed, and expanded bath with separate shower and tub."
     },
     {
       "name": "Spa Villa",
-      "description": "Premium villas with private hot tubs, fireplaces, and spa-inspired bathrooms."
-    },
-    {
-      "name": "Townhome Residence",
-      "description": "Multi-bedroom townhomes with full kitchens, living areas, and private decks \u2014 ideal for golf groups."
+      "description": "Luxurious standalone villas with private hot tubs, fireplaces, and spa-inspired bathrooms \u2014 the ultimate mountain retreat."
     }
   ],
   "dining": [
     {
-      "name": "Nakoma Restaurant",
-      "description": "Fine dining in the Frank Lloyd Wright-inspired clubhouse with panoramic mountain views.",
-      "type": "restaurant"
+      "name": "Fifty44 Restaurant & Bar",
+      "type": "restaurant",
+      "description": "Elevated dining in the Frank Lloyd Wright-inspired Lodge with wood-fired dishes, sweeping Sierra views from the fireplace room or summer deck."
     },
     {
-      "name": "Dragon Bar & Grill",
-      "description": "Casual post-round dining with craft cocktails and pub fare.",
-      "type": "restaurant"
+      "name": "Middle Fork Bistro + Bar",
+      "type": "restaurant",
+      "description": "Casual refuge for lighter fare, craft cocktails, and a relaxed mountain vibe."
     }
   ],
   "spaBars": [
@@ -122,5 +143,12 @@
     "chalet-view-lodge-graeagle-ca",
     "river-pines-resort-graeagle-ca",
     "plumas-pines-private-residency-graeagle"
+  ],
+  "contentParagraphs": [
+    "Discover a sanctuary of style and serenity nestled in fragrant pine forests, just 45 minutes from Truckee-Tahoe. The Inn at Nakoma blends modern comfort with lodge-inspired design, offering 42 thoughtfully appointed rooms and suites featuring Frette Italian linens, pillow-top beds, Keurig coffee makers, and flat-screen TVs \u2014 all set against forest or golf-course views. King rooms average 400 square feet with either golf course or forest views.",
+    "Start your day in cozy luxury: savor cooked-to-order breakfasts (8\u201311 AM) or unwind by the lobby fireplace, take refreshing dips in the heated outdoor pool, and relax in two hot tubs. Fitness fans and spa lovers alike can enjoy the gym and climbing wall at Altitude \u2014 Nakoma's 12,000-square-foot recreation center unveiled in 2017 \u2014 or indulge in deep-tissue massages, body treatments, and facials at The Spa at Nakoma.",
+    "Adventure is just steps away \u2014 play a round on the famed Dragon golf course (designed around a Frank Lloyd Wright concept from 1923, built in 2001), hit the driving range, or explore the area's hiking, snowshoeing, and snow-tubing trails. Kids and families will love the arcade, game room, children's club, and theater inside Altitude, while couples will savor the spa and mountain ambiance.",
+    "During evenings, treat yourself to elevated fare at Fifty44 Restaurant & Bar, located in the iconic Frank Lloyd Wright-inspired Lodge \u2014 enjoy wood-fired dishes and sweeping Sierra views from the majestic fireplace room or summer deck. For something more casual, the Middle Fork Bistro + Bar in Altitude serves craft cocktails, flatbreads, hearty salads, and small plates with soaring ceilings and walls of glass.",
+    "Family and pet lovers rejoice: the Inn welcomes up to two dogs (up to 75 lbs each), with access to nearby forest trails for both you and your four-legged friends to roam."
   ]
 }
