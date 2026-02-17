@@ -40,13 +40,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/project-type/all-eldorado/`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${base}/project-type/all-lake-tahoe-resort/`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${base}/project-type/old-greenwood/`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${base}/project-type/all-golf-courses/`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${base}/project-type/all-golf-courses-page-2/`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${base}/project-type/all-golf-courses-page-3/`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${base}/project-type/all-hotels/`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${base}/project-type/all-hotels-page-2/`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${base}/project-type/all-hotels-page-3/`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${base}/project-type/all-experiences-page-2/`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
   ];
 
   const coursePages: MetadataRoute.Sitemap = [
@@ -174,3 +167,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [...staticPages, ...taxonomyPages, ...coursePages, ...hotelPages, ...venuePages];
 }
+
