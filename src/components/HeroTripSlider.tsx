@@ -354,7 +354,7 @@ export default function HeroTripSlider({ slug, type }: { slug: string; type: "co
       onMouseLeave={() => setPaused(false)}
     >
       {/* Header */}
-      <div className="px-6 pt-6 pb-3 lg:px-8 lg:pt-8 shrink-0">
+      <div className="px-6 pt-20 pb-3 lg:px-8 lg:pt-24 shrink-0">
         <div className="text-[9px] uppercase tracking-[4px] text-emerald-500 font-bold mb-1">Trips Caddie</div>
         <div className="text-sm text-slate-400 font-light">
           <span className="text-white font-bold">{trips.length}</span> group{trips.length !== 1 ? "s" : ""} played here
