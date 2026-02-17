@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Golf The High Sierra
 
-## Getting Started
+> Full website rebuild — WordPress → Next.js on Vercel  
+> **Live:** https://golfthehighsierra.vercel.app/
 
-First, run the development server:
+## Overview
+
+Golf tourism platform serving Reno, Tahoe, South Lake, Carson, and Graeagle regions. 147 total pages including golf courses, hotels, experiences, dining, and more.
+
+**Currently Live:** 22 golf courses, 23 hotels, 17+ static pages, region pages, taxonomy pages.
+
+## Tech Stack
+
+- **Framework:** Next.js 14 (App Router, TypeScript)
+- **Hosting:** Vercel (auto-deploy from `main`)
+- **Font:** Plus Jakarta Sans
+- **Content:** JSON data files (no CMS)
+- **API:** TripsCaddie real trip data integration
+
+## Quick Start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
+npx next build     # Production build test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/data/courses/   → 22 golf course JSON files
+src/data/hotels/    → 23 hotel JSON files
+src/components/     → Page templates + shared components
+src/app/(marketing)/ → All routes
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Key Files
 
-## Learn More
+| File | Purpose |
+|------|---------|
+| `MASTER_SPEC.md` | Complete project specification |
+| `src/components/CoursePageContent.tsx` | Golf course page template (Euro V3) |
+| `src/components/HotelPageContent.tsx` | Hotel page template (White Luxury) |
+| `src/components/HomepageContent.tsx` | Homepage (Pine/Gold editorial) |
+| `src/components/HeroTripSlider.tsx` | TripsCaddie slider with touch swipe |
+| `src/components/QuoteModal.tsx` | Quote request → dual email |
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+git add -A && git commit -m "description" && git push origin main
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Vercel auto-deploys on push to `main`. Build must pass first.
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Phone:** 1-888-584-8232
+- **Email:** info@golfthehighsierra.com
+- **Owner:** Sean
