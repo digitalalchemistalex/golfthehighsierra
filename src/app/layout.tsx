@@ -56,6 +56,9 @@ const outfit = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  verification: {
+    google: "nDBztyHTS0rGyUvdPlddXYiF_m73Ilt_Q-sR-tn1UKA",
+  },
   title: {
     default: `${siteConfig.name} | Reno-Tahoe Golf Packages`,
     template: `%s | ${siteConfig.name}`,
@@ -105,3 +108,4 @@ export default function RootLayout({
     </html>
   );
 }
+
