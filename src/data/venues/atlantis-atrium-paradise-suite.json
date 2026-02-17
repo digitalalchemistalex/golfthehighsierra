@@ -1,0 +1,39 @@
+{
+  "slug": "atlantis-atrium-paradise-suite",
+  "name": "Atrium Paradise Suite",
+  "type": "room",
+  "priceRange": "$$$$",
+  "description": "The most luxurious accommodation at the Atlantis, featuring a stunning atrium-style layout with premium appointments throughout. This expansive suite offers separate living and sleeping areas, premium entertainment systems, exclusive Concierge Lounge access, and the finest amenities the resort has to offer. Butler service and VIP treatment included.",
+  "shortDescription": "Atlantis's premier suite with stunning atrium layout, VIP treatment, and butler service.",
+  "highlights": [
+    "Premier Suite",
+    "Atrium Layout",
+    "VIP Treatment",
+    "Butler Service",
+    "Concierge Lounge",
+    "Finest Amenities"
+  ],
+  "hours": "Check-in 4pm | Check-out 11am",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/2-atlantis-room-hero-shot-2020-atrium-paradise-suite.jpg",
+  "meta": {
+    "title": "Atrium Paradise Suite \u2013 Atlantis Reno | Golf The High Sierra",
+    "description": "Book the Atrium Paradise Suite at Atlantis Reno \u2013 the resort's premier luxury suite with VIP treatment and butler service."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "images": [],
+  "faqs": []
+}

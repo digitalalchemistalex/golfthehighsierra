@@ -1,0 +1,39 @@
+{
+  "slug": "atlantis-luxury-tower-room",
+  "name": "Luxury Tower Room",
+  "type": "room",
+  "priceRange": "$$$",
+  "description": "Upgraded tower rooms with enhanced luxury appointments, premium furnishings, and panoramic Sierra Nevada views. Features custom Sealy pillow-top mattresses, 55-inch flat screen HDTV, premium Wi-Fi, marble-accented bathroom with June Jacobs products, and Bose Wave Radio. Non-smoking rooms available in king or two queen configurations.",
+  "shortDescription": "Enhanced luxury tower room with premium furnishings and panoramic mountain views.",
+  "highlights": [
+    "Luxury Furnishings",
+    "55\" HDTV",
+    "Bose Wave Radio",
+    "Panoramic Views",
+    "Premium Wi-Fi",
+    "June Jacobs Products"
+  ],
+  "hours": "Check-in 4pm | Check-out 11am",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/luxury-tower-room-hero.jpg",
+  "meta": {
+    "title": "Luxury Tower Room \u2013 Atlantis Reno | Golf The High Sierra",
+    "description": "Book the Luxury Tower Room at Atlantis Reno \u2013 upgraded appointments with panoramic Sierra views and Bose audio."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "images": [],
+  "faqs": []
+}

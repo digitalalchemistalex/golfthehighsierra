@@ -1,0 +1,39 @@
+{
+  "slug": "atlantis-executive-spa-suite",
+  "name": "Executive Spa Suite",
+  "type": "room",
+  "priceRange": "$$$$",
+  "description": "Expansive suite offering the premium spa experience with in-room jetted tub, separate living area, and exclusive 25th floor Concierge Lounge access with complimentary breakfast and hors d'oeuvres. Enhanced furnishings, larger footprint, 55-inch HDTV, Bose Wave Radio, and butler service available. The ideal retreat after a day on the course.",
+  "shortDescription": "Expansive executive suite with Jacuzzi, separate living area, and Concierge Lounge.",
+  "highlights": [
+    "Executive Suite",
+    "In-Room Jacuzzi",
+    "Separate Living Area",
+    "Concierge Lounge",
+    "Butler Service",
+    "Premium Bose Audio"
+  ],
+  "hours": "Check-in 4pm | Check-out 11am",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/executive-spa-suite-hero.jpg",
+  "meta": {
+    "title": "Executive Spa Suite \u2013 Atlantis Reno | Golf The High Sierra",
+    "description": "Book the Executive Spa Suite at Atlantis Reno \u2013 spacious luxury with Jacuzzi, living area, and exclusive concierge services."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "images": [],
+  "faqs": []
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "atlantis-bar-suite",
+  "name": "Bar Suite",
+  "type": "room",
+  "priceRange": "$$$$",
+  "description": "Unique suite featuring a built-in bar area perfect for entertaining guests after a round of golf. Generous living space with premium furnishings, custom bar setup, floor-to-ceiling windows with mountain views, and access to the exclusive Concierge Lounge. Features 55-inch HDTV, Bose Wave Radio, and butler service upon request.",
+  "shortDescription": "Entertainment-ready suite with built-in bar, mountain views, and Concierge access.",
+  "highlights": [
+    "Built-In Bar",
+    "Entertainment Ready",
+    "Concierge Lounge",
+    "Mountain Views",
+    "Premium Furnishings",
+    "Butler Service"
+  ],
+  "hours": "Check-in 4pm | Check-out 11am",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/bar_suite_screenshots_1920x620.jpg",
+  "meta": {
+    "title": "Bar Suite \u2013 Atlantis Reno | Golf The High Sierra",
+    "description": "Book the Bar Suite at Atlantis Reno \u2013 unique suite with built-in bar, mountain views, and concierge services."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "images": [],
+  "faqs": []
+}

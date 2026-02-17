@@ -1,0 +1,39 @@
+{
+  "slug": "atlantis-tower-room",
+  "name": "Atlantis Tower Room",
+  "type": "room",
+  "priceRange": "$$",
+  "description": "375 square feet of marble-accented living space with majestic Sierra Nevada views through floor-to-ceiling windows. Voted Reno's Best Rooms, these non-smoking rooms feature custom Sealy pillow-top mattresses, 50-inch flat screen HDTV with 45+ HD channels, premium Wi-Fi, individual climate control, digital safe, and June Jacobs bath products. Choose from one king or two queen beds.",
+  "shortDescription": "375 sq ft marble-accented room with Sierra Nevada views and custom pillow-top beds.",
+  "highlights": [
+    "375 Sq Ft",
+    "Floor-to-Ceiling Windows",
+    "Sierra Nevada Views",
+    "Sealy Pillow-Top Beds",
+    "50\" HDTV",
+    "June Jacobs Products"
+  ],
+  "hours": "Check-in 4pm | Check-out 11am",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-tower-room-hero-2.jpg",
+  "meta": {
+    "title": "Atlantis Tower Room \u2013 Reno's Best Rooms | Golf The High Sierra",
+    "description": "Book the Atlantis Tower Room in Reno \u2013 375 sq ft with Sierra Nevada views, marble accents, and custom pillow-top beds."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "images": [],
+  "faqs": []
+}

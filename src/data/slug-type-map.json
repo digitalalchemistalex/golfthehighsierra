@@ -102,5 +102,15 @@
   "eldorado-skyline-player-spa-small": "venue",
   "eldorado-skyline-player-spa-large": "venue",
   "eldorado-skyline-vip-hospitality": "venue",
-  "eldorado-virginia-twenty-one-suite": "venue"
+  "eldorado-virginia-twenty-one-suite": "venue",
+  "atlantis-tower-room": "venue",
+  "atlantis-luxury-tower-room": "venue",
+  "atlantis-concierge-tower-room": "venue",
+  "atlantis-spa-suite": "venue",
+  "atlantis-executive-spa-suite": "venue",
+  "atlantis-bar-suite": "venue",
+  "atlantis-atrium-paradise-suite": "venue",
+  "atlantis-steakhouse": "venue",
+  "atlantis-sports-bar-lounge": "venue",
+  "atlantis-cocktail-lounge": "venue"
 }

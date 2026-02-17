@@ -1,0 +1,52 @@
+{
+  "slug": "atlantis-steakhouse",
+  "name": "Atlantis Steakhouse Lounge",
+  "type": "bar",
+  "priceRange": "$$$",
+  "description": "Enjoy elegant food, premium wines and classic cocktails while relaxing in this sophisticated hideaway adjacent to the award-winning Atlantis Steakhouse. The unique interior design features a centerpiece 1,200-gallon tropical fish tank, creating the perfect space for lively celebration with friends or a quiet conversation. Premium wines and classic cocktails in an intimate setting.",
+  "shortDescription": "Sophisticated lounge with 1,200-gallon fish tank, premium wines, and classic cocktails.",
+  "highlights": [
+    "Award-Winning Adjacent",
+    "1,200-Gallon Fish Tank",
+    "Premium Wines",
+    "Classic Cocktails",
+    "Sophisticated Setting",
+    "Intimate Atmosphere"
+  ],
+  "hours": "Wed - Sun from 5pm",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/steakhouse-drinks-featured-card.jpg",
+  "faqs": [
+    {
+      "question": "Is this the Atlantis Steakhouse restaurant?",
+      "answer": "This is the lounge adjacent to the award-winning Atlantis Steakhouse, offering elegant drinks and food."
+    },
+    {
+      "question": "What makes the lounge special?",
+      "answer": "A stunning 1,200-gallon tropical fish tank serves as the centerpiece in this sophisticated space."
+    },
+    {
+      "question": "When is it open?",
+      "answer": "Wednesday through Sunday, opening at 5pm."
+    }
+  ],
+  "meta": {
+    "title": "Atlantis Steakhouse Lounge \u2013 Premium Cocktails Reno | Golf The High Sierra",
+    "description": "Sip premium wines and cocktails by the 1,200-gallon fish tank at the Atlantis Steakhouse Lounge in Reno."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "images": []
+}

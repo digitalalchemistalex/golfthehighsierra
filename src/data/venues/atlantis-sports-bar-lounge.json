@@ -1,0 +1,52 @@
+{
+  "slug": "atlantis-sports-bar-lounge",
+  "name": "Atlantis Sports Bar & Lounge",
+  "type": "bar",
+  "priceRange": "$$",
+  "description": "24-hour sports bar located across from the Race & Sports Book, featuring 28 TV screens tuned to the nation's sporting events. Enjoy an extensive draft beer selection, over 90 whiskies from around the world, and great food from Manhattan Deli. Daily Happy Hour from 3pm to 6pm with half off drinks and select food. Every seat feels like a front row experience.",
+  "shortDescription": "24-hour sports bar with 28 TVs, 90+ whiskies, and daily happy hour at the Atlantis.",
+  "highlights": [
+    "24 Hours",
+    "28 TV Screens",
+    "90+ Whiskies",
+    "Draft Beer Selection",
+    "Daily Happy Hour 3-6pm",
+    "Race & Sports Book Adjacent"
+  ],
+  "hours": "Daily 24/7",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/untitled21.jpg",
+  "faqs": [
+    {
+      "question": "Is the Sports Bar open 24 hours?",
+      "answer": "Yes, it's open 24/7 and located right across from the Race & Sports Book."
+    },
+    {
+      "question": "When is Happy Hour?",
+      "answer": "Daily from 3pm to 6pm with half off drinks and select food items."
+    },
+    {
+      "question": "How many TVs are there?",
+      "answer": "28 screens tuned to sporting events from around the country."
+    }
+  ],
+  "meta": {
+    "title": "Atlantis Sports Bar & Lounge \u2013 24hr Sports Bar Reno | Golf The High Sierra",
+    "description": "Watch every game on 28 screens with 90+ whiskies and daily happy hour at Atlantis Sports Bar & Lounge in Reno."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "images": []
+}
