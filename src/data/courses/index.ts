@@ -25,6 +25,7 @@ import toiyabeData from "./toiyabe-golf-club.json";
 import washoeData from "./washoe-county-golf-course.json";
 import whitehawkData from "./whitehawk-ranch-golf-course.json";
 import wolfRunData from "./wolf-run-golf-club.json";
+import winchesterData from "./winchester-golf-country-club.json";
 
 export const ALL_COURSES = [
   arrowcreekData,
@@ -48,6 +49,7 @@ export const ALL_COURSES = [
   toiyabeData,
   washoeData,
   whitehawkData,
+  winchesterData,
   wolfRunData,
 ] as const;
 
