@@ -15,13 +15,13 @@ interface FeaturedHole { title?: string; description?: string; }
 interface CourseTip { title?: string; content?: string; }
 
 export interface CourseProps {
-  slug: string; name: string; region: string; regionLabel: string;
+  slug: string; name: string; region?: string; regionLabel: string;
   address?: CourseAddress; geo?: CourseGeo; phone?: string; website?: string;
   priceRange?: string; rating?: CourseRating; description: string;
   holes?: number; par?: number | null; designer?: string;
   yardage?: number; slope?: number; courseRating?: number; yearBuilt?: number;
   heroImage?: string; images: string[]; videoUrl?: string;
-  faqs: CourseFAQ[]; meta: { title: string; description: string };
+  faqs: CourseFAQ[]; meta?: { title: string; description: string };
   bodyText?: string[]; distances?: string[]; facilities?: string[];
   tips?: CourseTip[]; pointOfView?: string; hack?: string;
   contentParagraphs?: string[]; featuredHole?: FeaturedHole;
@@ -101,8 +101,9 @@ function Lightbox({ images, startIndex, onClose, name }: { images: string[]; sta
 /* ═══════════════════════════════════════
    MAIN COMPONENT
    ═══════════════════════════════════════ */
-export default function CoursePageContent({ course, relatedCourses = [] }: { course: CourseProps; relatedCourses?: RelatedCourse[] }) {
+export default function CoursePageContent({ course, relatedCourses = [], blurs = {} }: { course: CourseProps; relatedCourses?: RelatedCourse[]; blurs?: Record<string, string> }) {
   const [lbIndex, setLbIndex] = useState<number | null>(null);
+  const bp = (src: string) => blurs[src] ? { placeholder: "blur" as const, blurDataURL: blurs[src] } : {};
 
   const gallery = course.images.filter(u => !isScorecard(u) && !isLogo(u));
   // Ensure at least 3 gallery images by falling back to heroImage
@@ -134,7 +135,7 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
         {/* ── LEFT: Course Image ── */}
         <div className="relative w-full lg:w-1/2 h-[70vh] lg:h-full shrink-0">
           <div style={{ position: "absolute", inset: 0 }}>
-            {course.heroImage && <Image src={course.heroImage} alt={course.name} fill priority className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" style={{ opacity: .55, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
+            {course.heroImage && <Image src={course.heroImage} alt={course.name} fill priority {...bp(course.heroImage)} className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" style={{ opacity: .55, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
           </div>
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(0,0,0,.25) 0%,transparent 35%,transparent 55%,rgba(0,0,0,.65) 100%)" }} />
 
@@ -195,7 +196,7 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: 4 }} className="max-md:!min-h-[400px]">
           {displayGallery.slice(0, 3).map((img, i) => (
             <div key={i} style={{ overflow: "hidden", position: "relative", cursor: "pointer", ...(i === 2 ? { gridColumn: "span 2" } : {}) }} onClick={() => setLbIndex(i)}>
-              <Image src={img} alt={`${course.name} ${i + 1}`} fill className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.06] transition-all duration-700" sizes="(max-width:900px) 100vw, 50vw" />
+              <Image src={img} alt={`${course.name} ${i + 1}`} fill {...bp(img)} className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.06] transition-all duration-700" sizes="(max-width:900px) 100vw, 50vw" />
             </div>
           ))}
         </div>
@@ -204,7 +205,7 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
       {/* ═══ 3. DARK FEATURE ═══ */}
       <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", background: "var(--ink)" }} className="max-md:!grid-cols-1">
         <div style={{ position: "relative", overflow: "hidden", minHeight: 400 }} className="max-md:!min-h-[300px]">
-          {displayGallery[1] && <Image src={displayGallery[1]} alt="Feature" fill className="object-cover opacity-60 hover:opacity-75 hover:scale-[1.04] transition-all duration-[8s]" sizes="(max-width:900px) 100vw, 50vw" />}
+          {displayGallery[1] && <Image src={displayGallery[1]} alt="Feature" fill {...bp(displayGallery[1])} className="object-cover opacity-60 hover:opacity-75 hover:scale-[1.04] transition-all duration-[8s]" sizes="(max-width:900px) 100vw, 50vw" />}
         </div>
         <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14 }}>
@@ -291,7 +292,7 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
                 <Link href={`/portfolio/${rc.slug}/`}>
                   <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--white)", transition: "all .5s" }} className="hover:!border-transparent hover:!shadow-[0_16px_48px_rgba(0,0,0,.06)] hover:-translate-y-1">
                     <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
-                      {rc.heroImage ? <Image src={rc.heroImage} alt={rc.name} fill className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
+                      {rc.heroImage ? <Image src={rc.heroImage} alt={rc.name} fill {...bp(rc.heroImage)} className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
                       {rc.priceRange && <span style={{ position: "absolute", top: 10, right: 10, background: "var(--ink)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 10, fontWeight: 600 }}>{rc.priceRange}</span>}
                     </div>
                     <div style={{ padding: 16 }}>

@@ -15,18 +15,23 @@ interface HotelDining { name: string; slug?: string; type: string; description: 
 interface HotelFAQ { question: string; answer: string; }
 
 export interface HotelProps {
-  slug: string; name: string; region: string; regionLabel: string; type: string;
-  address: HotelAddress; geo: HotelGeo; phone?: string; website?: string;
+  slug: string; name: string; region?: string; regionLabel: string; type?: string;
+  address?: HotelAddress; geo?: HotelGeo; phone?: string; website?: string;
   priceRange?: string; priceFrom?: string; starRating?: number; aaaRating?: string;
   rating?: HotelRating; description: string; shortDescription: string;
   highlights: string[]; amenities: string[]; roomTypes: HotelRoomType[];
   dining: HotelDining[]; spaBars: string[]; totalRooms?: number | null;
   parking: string; images: string[]; heroImage: string; faqs: HotelFAQ[];
   relatedCourses: string[]; relatedHotels: string[];
-  meta: { title: string; description: string };
+  meta?: { title: string; description: string };
 }
 
-interface HotelPageContentProps { hotel: HotelProps; relatedHotels: HotelProps[]; }
+interface RelatedHotel {
+  slug: string; name: string; regionLabel: string;
+  heroImage?: string; priceFrom?: string; rating?: HotelRating;
+}
+
+interface HotelPageContentProps { hotel: HotelProps; relatedHotels: RelatedHotel[]; blurs?: Record<string, string>; }
 
 /* ─── Reveal ─── */
 function R({ children, className = "", delay = 0, style }: { children: React.ReactNode; className?: string; delay?: number; style?: React.CSSProperties }) {
@@ -87,8 +92,9 @@ function Lightbox({ images, startIndex, onClose, name }: { images: string[]; sta
 /* ═══════════════════════════════════════
    MAIN COMPONENT
    ═══════════════════════════════════════ */
-export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPageContentProps) {
+export default function HotelPageContent({ hotel, relatedHotels = [], blurs = {} }: HotelPageContentProps) {
   const [lbIndex, setLbIndex] = useState<number | null>(null);
+  const bp = (src: string) => blurs[src] ? { placeholder: "blur" as const, blurDataURL: blurs[src] } : {};
 
   const gallery = hotel.images?.length ? hotel.images : [];
   const addr = hotel.address;
@@ -116,7 +122,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
         {/* ── LEFT: Hotel Info ── */}
         <div className="w-full lg:w-1/2 relative" style={{ minHeight: 500 }}>
           <div style={{ position: "absolute", inset: 0 }}>
-            {hotel.heroImage && <Image src={hotel.heroImage} alt={hotel.name} fill priority className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" style={{ opacity: .5, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
+            {hotel.heroImage && <Image src={hotel.heroImage} alt={hotel.name} fill priority {...bp(hotel.heroImage)} className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" style={{ opacity: .5, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
           </div>
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(0,0,0,.25) 0%,transparent 35%,transparent 55%,rgba(0,0,0,.65) 100%)" }} />
 
@@ -186,7 +192,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: 4 }} className="max-md:!min-h-[400px]">
           {(gallery.length > 0 ? gallery : [hotel.heroImage]).slice(0, 3).map((img, i) => (
             <div key={i} style={{ overflow: "hidden", position: "relative", cursor: gallery.length > 0 ? "pointer" : "default", ...(i === 2 ? { gridColumn: "span 2" } : {}) }} onClick={() => gallery.length > 0 && setLbIndex(i)}>
-              <Image src={img} alt={`${hotel.name} ${i + 1}`} fill className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.06] transition-all duration-700" sizes="(max-width:900px) 100vw, 50vw" />
+              <Image src={img} alt={`${hotel.name} ${i + 1}`} fill {...bp(img)} className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.06] transition-all duration-700" sizes="(max-width:900px) 100vw, 50vw" />
             </div>
           ))}
         </div>
@@ -195,7 +201,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
       {/* ═══ 3. DARK FEATURE — dining + amenities ═══ */}
       <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", background: "var(--ink)" }} className="max-md:!grid-cols-1">
         <div style={{ position: "relative", overflow: "hidden", minHeight: 400 }} className="max-md:!min-h-[300px]">
-          {(gallery[1] || hotel.heroImage) && <Image src={gallery[1] || hotel.heroImage} alt="Feature" fill className="object-cover opacity-60 hover:opacity-75 hover:scale-[1.04] transition-all duration-[8s]" sizes="(max-width:900px) 100vw, 50vw" />}
+          {(gallery[1] || hotel.heroImage) && <Image src={gallery[1] || hotel.heroImage} alt="Feature" fill {...bp(gallery[1] || hotel.heroImage)} className="object-cover opacity-60 hover:opacity-75 hover:scale-[1.04] transition-all duration-[8s]" sizes="(max-width:900px) 100vw, 50vw" />}
         </div>
         <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14 }}>
@@ -312,7 +318,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
                 <Link href={`/portfolio/${rh.slug}/`}>
                   <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--white)", transition: "all .5s" }} className="hover:!border-transparent hover:!shadow-[0_16px_48px_rgba(0,0,0,.06)] hover:-translate-y-1">
                     <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
-                      {rh.heroImage ? <Image src={rh.heroImage} alt={rh.name} fill className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
+                      {rh.heroImage ? <Image src={rh.heroImage} alt={rh.name} fill {...bp(rh.heroImage)} className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
                       {rh.priceFrom && <span style={{ position: "absolute", top: 10, right: 10, background: "var(--ink)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 10, fontWeight: 600 }}>{rh.priceFrom}</span>}
                     </div>
                     <div style={{ padding: 16 }}>

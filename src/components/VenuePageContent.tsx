@@ -11,17 +11,22 @@ interface VenueGeo { latitude: number; longitude: number; }
 interface VenueFAQ { question: string; answer: string; }
 
 export interface VenueProps {
-  slug: string; name: string; type: string; region: string; regionLabel: string;
-  parentHotel: string | null; address: VenueAddress; geo: VenueGeo;
+  slug: string; name: string; type: string; region?: string; regionLabel: string;
+  parentHotel: string | null; address?: VenueAddress; geo?: VenueGeo;
   phone?: string; website?: string; priceRange?: string;
   description: string; shortDescription: string;
   highlights: string[]; hours: string;
   heroImage: string; images: string[];
   faqs: VenueFAQ[];
-  meta: { title: string; description: string };
+  meta?: { title: string; description: string };
 }
 
-interface VenuePageContentProps { venue: VenueProps; relatedVenues: VenueProps[]; }
+interface RelatedVenue {
+  slug: string; name: string; regionLabel: string;
+  heroImage?: string; priceRange?: string; type: string;
+}
+
+interface VenuePageContentProps { venue: VenueProps; relatedVenues: RelatedVenue[]; blurs?: Record<string, string>; }
 
 /* ─── Reveal ─── */
 function R({ children, className = "", delay = 0, style }: { children: React.ReactNode; className?: string; delay?: number; style?: React.CSSProperties }) {
@@ -92,8 +97,9 @@ function typeLabel(type: string) {
 /* ═══════════════════════════════════════
    MAIN COMPONENT
    ═══════════════════════════════════════ */
-export default function VenuePageContent({ venue, relatedVenues = [] }: VenuePageContentProps) {
+export default function VenuePageContent({ venue, relatedVenues = [], blurs = {} }: VenuePageContentProps) {
   const [lbIndex, setLbIndex] = useState<number | null>(null);
+  const bp = (src: string) => blurs[src] ? { placeholder: "blur" as const, blurDataURL: blurs[src] } : {};
 
   const gallery = venue.images?.length ? venue.images : [];
   const addr = venue.address;
@@ -118,7 +124,7 @@ export default function VenuePageContent({ venue, relatedVenues = [] }: VenuePag
       {/* ═══ 1. HERO ═══ */}
       <section style={{ position: "relative", height: "70vh", minHeight: 500, maxHeight: 700, overflow: "hidden", background: "#0a0a08" }}>
         {hasHero ? (
-          <Image src={venue.heroImage} alt={venue.name} fill priority className="object-cover" sizes="100vw" style={{ opacity: .45, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />
+          <Image src={venue.heroImage} alt={venue.name} fill priority {...bp(venue.heroImage)} className="object-cover" sizes="100vw" style={{ opacity: .45, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />
         ) : (
           <div style={{ position: "absolute", inset: 0, background: heroGradient }} />
         )}
@@ -179,7 +185,7 @@ export default function VenuePageContent({ venue, relatedVenues = [] }: VenuePag
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: 4 }} className="max-md:!min-h-[400px]">
             {gallery.slice(0, 3).map((img, i) => (
               <div key={i} style={{ overflow: "hidden", position: "relative", cursor: "pointer", ...(i === 2 ? { gridColumn: "span 2" } : {}) }} onClick={() => setLbIndex(i)}>
-                <Image src={img} alt={`${venue.name} ${i + 1}`} fill className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.06] transition-all duration-700" sizes="(max-width:900px) 100vw, 50vw" />
+                <Image src={img} alt={`${venue.name} ${i + 1}`} fill {...bp(img)} className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.06] transition-all duration-700" sizes="(max-width:900px) 100vw, 50vw" />
               </div>
             ))}
           </div>
@@ -190,7 +196,7 @@ export default function VenuePageContent({ venue, relatedVenues = [] }: VenuePag
       <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", background: "var(--ink)" }} className="max-md:!grid-cols-1">
         <div style={{ position: "relative", overflow: "hidden", minHeight: 400 }} className="max-md:!min-h-[300px]">
           {(gallery[0] || hasHero) ? (
-            <Image src={gallery[0] || venue.heroImage} alt="Feature" fill className="object-cover opacity-60 hover:opacity-75 hover:scale-[1.04] transition-all duration-[8s]" sizes="(max-width:900px) 100vw, 50vw" />
+            <Image src={gallery[0] || venue.heroImage} alt="Feature" fill {...bp(gallery[0] || venue.heroImage)} className="object-cover opacity-60 hover:opacity-75 hover:scale-[1.04] transition-all duration-[8s]" sizes="(max-width:900px) 100vw, 50vw" />
           ) : (
             <div style={{ position: "absolute", inset: 0, background: heroGradient, opacity: .4 }} />
           )}
@@ -285,7 +291,7 @@ export default function VenuePageContent({ venue, relatedVenues = [] }: VenuePag
                 <Link href={`/portfolio/${rv.slug}/`}>
                   <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--white)", transition: "all .5s" }} className="hover:!border-transparent hover:!shadow-[0_16px_48px_rgba(0,0,0,.06)] hover:-translate-y-1">
                     <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative", background: "linear-gradient(135deg, #1E3A2F 0%, #111 50%, #1E3A2F 100%)" }}>
-                      {rv.heroImage ? <Image src={rv.heroImage} alt={rv.name} fill className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : (
+                      {rv.heroImage ? <Image src={rv.heroImage} alt={rv.name} fill {...bp(rv.heroImage)} className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : (
                         <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 40 }}>{typeIcon(rv.type)}</div>
                       )}
                       <span style={{ position: "absolute", top: 10, right: 10, background: "var(--ink)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 10, fontWeight: 600, textTransform: "uppercase", letterSpacing: 1 }}>{typeLabel(rv.type)}</span>
