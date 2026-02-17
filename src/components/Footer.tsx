@@ -18,19 +18,21 @@ const footerLinks = {
     { label: "Harvey's Lake Tahoe", href: "/portfolio/harveys-lake-tahoe/" },
     { label: "Lodging Packages", href: "/group-golf-lodging-packages/" },
   ],
-  Packages: [
+  "Dining & Experiences": [
+    { label: "Restaurants", href: "/best-restaurants-reno-nv/" },
+    { label: "Experiences & Activities", href: "/experiences-things-to-do-in-reno-nv/" },
     { label: "Reno Golf Packages", href: "/reno-golf-packages/" },
     { label: "Lake Tahoe Packages", href: "/lake-tahoe-golf-packages/" },
-    { label: "Group Golf", href: "/group-golf-reno-tahoe/" },
     { label: "Corporate Events", href: "/corporate-golf-events/" },
-    { label: "Get a Quote", href: "/contact-custom-golf-package/" },
   ],
   Company: [
     { label: "About Us", href: "/about-group-golf-packages/" },
-    { label: "Blog", href: "/blog-explore-the-high-sierra/" },
+    { label: "Group Golf", href: "/group-golf-reno-tahoe/" },
     { label: "TripsCaddie App", href: "/trips-caddie-app/" },
+    { label: "Blog", href: "/blog-explore-the-high-sierra/" },
     { label: "FAQ", href: "/faq/" },
     { label: "Locations Map", href: "/locations-map/" },
+    { label: "Get a Quote", href: "/contact-custom-golf-package/" },
   ],
 };
 
@@ -165,3 +167,4 @@ export default function Footer() {
     </footer>
   );
 }
+
