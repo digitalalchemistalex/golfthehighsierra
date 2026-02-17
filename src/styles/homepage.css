@@ -70,7 +70,7 @@
 .hero-nav button:hover:not(.active){background:rgba(255,255,255,.7)}
 
 /* â•â•â•â•â•â•â•â•â•â•â• TRUST STRIP â•â•â•â•â•â•â•â•â•â•â• */
-.trust{background:var(--white);border-bottom:1px solid var(--border);padding:28px clamp(24px,6vw,100px);display:flex;justify-content:center;gap:clamp(20px,4vw,64px);flex-wrap:wrap}
+.trust{background:var(--white);border-bottom:1px solid var(--border);padding:28px clamp(24px,6vw,100px);display:grid;grid-template-columns:repeat(2,auto);justify-content:center;gap:12px clamp(32px,6vw,80px)}
 .trust-chip{display:flex;align-items:center;gap:12px;padding:8px 16px;border-radius:10px;transition:all .3s;cursor:default}
 .trust-chip:hover{background:var(--cream);transform:translateY(-2px);box-shadow:var(--shadow-sm)}
 .trust-icon{width:44px;height:44px;border-radius:12px;background:var(--gold-soft);display:flex;align-items:center;justify-content:center;font-size:18px;transition:transform .3s}
@@ -307,7 +307,7 @@
   .process-steps::before{display:none}
 
   /* Convert grids to horizontal sliders */
-  .exp-grid,.region-cards,.process-steps,.tg,.trust,.portal-features,.rms-features{
+  .exp-grid,.region-cards,.process-steps,.tg,.portal-features,.rms-features{
     display:flex!important;
     overflow-x:auto;
     scroll-snap-type:x mandatory;
@@ -318,17 +318,17 @@
   }
   .exp-grid::-webkit-scrollbar,.region-cards::-webkit-scrollbar,
   .process-steps::-webkit-scrollbar,.tg::-webkit-scrollbar,
-  .trust::-webkit-scrollbar,.portal-features::-webkit-scrollbar,
+  .portal-features::-webkit-scrollbar,
   .rms-features::-webkit-scrollbar{display:none}
 
   .exp-grid>*,.region-cards>*,.process-steps>*,.tg>*,
-  .trust>*,.portal-features>*,.rms-features>*{
+  .portal-features>*,.rms-features>*{
     flex:0 0 80%;
     scroll-snap-align:center;
     min-width:0;
   }
 
-  .trust>*{flex:0 0 65%}
+  /* Trust stays as 2-col grid on mobile */
 
   /* Show dot indicators */
   .slider-dots{display:flex}
@@ -357,8 +357,7 @@
   .portal-features>*,.rms-features>*{
     flex:0 0 85%;
   }
-  .trust>*{flex:0 0 75%}
-  .trust{gap:16px}
+  .trust{gap:12px 24px;padding:20px clamp(16px,4vw,40px)}
   .contract-grid{gap:24px}
   .hero{min-height:60vh}
 }

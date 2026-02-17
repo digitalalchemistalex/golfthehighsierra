@@ -32,7 +32,7 @@ const EXP_CARDS = [
 const REGIONS = [
   { name: 'Reno', subtitle: 'Casino Golf Capital', badge: '7 Courses', price: 'From $189', img: '/images/homepage/homepage-11.jpg', alt: 'Lakeridge Golf Course Reno NV', chips: ['Lakeridge', 'ArrowCreek', 'Red Hawk', 'Wolf Run', 'Somersett'], hotels: '\u{1F3E8} Atlantis \u00B7 Peppermill \u00B7 Grand Sierra Resort \u00B7 Eldorado', rating: '4.8 (290 reviews)', href: '/group-golf-reno-tahoe/' },
   { name: 'Lake Tahoe', subtitle: 'Lakefront & Alpine', badge: '3 Courses', price: 'From $299', img: '/images/homepage/homepage-12.jpg', alt: 'Incline Village Championship Course Lake Tahoe', chips: ['Edgewood Tahoe', 'Incline Village'], hotels: '\u{1F3E8} Hyatt Regency \u00B7 Lodge at Edgewood \u00B7 Lakeside resorts', rating: '4.9 (185 reviews)', href: '/best-golf-courses-lake-tahoe/' },
-  { name: 'Truckee', subtitle: 'Mountain Championship', badge: '4 Courses', price: 'From $249', img: '/images/homepage/homepage-13.jpg', alt: "Gray's Crossing Golf Course Truckee CA", chips: ['Old Greenwood', 'Coyote Moon', "Gray's Crossing", 'Tahoe Donner', 'Plumas Pines'], hotels: '\u{1F3E8} Truckee villas \u00B7 Cedar House \u00B7 Graeagle Lodge \u00B7 Hampton Inn', rating: '4.8 (120 reviews)', href: '/group-golf-reno-tahoe/' },
+  { name: 'Truckee', subtitle: 'Mountain Championship', badge: '4 Courses', price: 'From $249', img: '/images/homepage/homepage-13.jpg', alt: "Gray's Crossing Golf Course Truckee CA", chips: ['Old Greenwood', 'Coyote Moon', "Gray's Crossing", 'Tahoe Donner', 'Plumas Pines'], hotels: '\u{1F3E8} Truckee villas \u00B7 Gravity Haus \u00B7 Graeagle Lodge \u00B7 Hampton Inn', rating: '4.8 (120 reviews)', href: '/group-golf-reno-tahoe/' },
   { name: 'Carson Valley', subtitle: 'Best Value in the Sierra', badge: '4 Courses', price: 'From $149', img: '/images/homepage/homepage-14.jpg', alt: 'Dayton Valley Golf Club Carson Valley NV', chips: ['Genoa Lakes', 'Dayton Valley', 'Toiyabe', 'Eagle Valley'], hotels: '\u{1F3E8} Carson Valley Inn \u00B7 Holiday Inn \u00B7 Budget-friendly options', rating: '4.7 (77 reviews)', href: '/group-golf-reno-tahoe/' },
 ];
 
@@ -260,3 +260,4 @@ export default function HomepageContent() {
     </div>
   );
 }
+
