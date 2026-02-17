@@ -176,7 +176,7 @@ export default function HomepageContent() {
       </div>
 
       <section className="contract"><div className="contract-grid">
-        <Anim direction="left" className="contract-img-wrap"><div className="dot-pattern" /><div className="contract-img"><img src="/images/homepage/homepage-06.jpg" alt="Group golf outing at Reno course" /></div><div className="float-card"><strong>10,000+</strong><span>Outings Planned</span></div></Anim>
+        <Anim direction="left" className="contract-img-wrap"><div className="dot-pattern" /><div className="contract-img"><img src="/images/homepage/homepage-06.jpg" alt="Group golf outing at Reno course" loading="lazy" /></div><div className="float-card"><strong>10,000+</strong><span>Outings Planned</span></div></Anim>
         <Anim direction="right" className="contract-text">
           <h2>One Contract. One Deposit.<br />Your Life Made Easy.</h2>
           <p>Instead of dealing with multiple contracts and deposits from hotels and golf courses, Golf the High Sierra makes all reservations on your group&apos;s behalf. You sign once, pay once, and we handle the rest.</p>
@@ -189,7 +189,7 @@ export default function HomepageContent() {
       </div></section>
 
       <div className="exp-strip"><Anim className="exp-strip-label">The Complete Experience</Anim><div className="exp-grid">
-        {EXP_CARDS.map((c,i)=>(<Anim key={i} delay={i*.06} className="exp-card"><img src={c.img} alt={c.alt} /><div className="exp-card-ov" /><div className="exp-card-content"><div className="exp-card-icon">{c.icon}</div><h4>{c.title}</h4><span>{c.sub}</span></div></Anim>))}
+        {EXP_CARDS.map((c,i)=>(<Anim key={i} delay={i*.06} className="exp-card"><img src={c.img} alt={c.alt} loading="lazy" /><div className="exp-card-ov" /><div className="exp-card-content"><div className="exp-card-icon">{c.icon}</div><h4>{c.title}</h4><span>{c.sub}</span></div></Anim>))}
       </div></div>
 
       <section className="regions">
@@ -199,7 +199,7 @@ export default function HomepageContent() {
           <p style={{maxWidth:720,marginTop:8}}>The Reno-Tahoe area offers four distinct golf regions, each with its own personality. Tell us your vibe and we&apos;ll match you.</p>
         </Anim>
         <div className="region-cards">
-          {REGIONS.map((r,i)=>(<Anim key={i} delay={i*.08} className="rc"><div className="rc-img"><div className="rc-badge">{r.badge}</div><div className="rc-price">{r.price}</div><img src={r.img} alt={r.alt} /></div><div className="rc-body"><h3>{r.name}</h3><div className="rc-subtitle">{r.subtitle}</div><div className="rc-chips">{r.chips.map((c,j)=><span key={j} className="chip">{c}</span>)}</div><div className="rc-hotels">{r.hotels}</div><div className="rc-rating"><span className="rc-stars">{'\u2605'.repeat(5)}</span><span>{r.rating}</span></div><div className="rc-link"><Link href={r.href}>Explore {r.name} Packages</Link><div className="arrow">\u2192</div></div></div></Anim>))}
+          {REGIONS.map((r,i)=>(<Anim key={i} delay={i*.08} className="rc"><div className="rc-img"><div className="rc-badge">{r.badge}</div><div className="rc-price">{r.price}</div><img src={r.img} alt={r.alt} loading="lazy" /></div><div className="rc-body"><h3>{r.name}</h3><div className="rc-subtitle">{r.subtitle}</div><div className="rc-chips">{r.chips.map((c,j)=><span key={j} className="chip">{c}</span>)}</div><div className="rc-hotels">{r.hotels}</div><div className="rc-rating"><span className="rc-stars">{'\u2605'.repeat(5)}</span><span>{r.rating}</span></div><div className="rc-link"><Link href={r.href}>Explore {r.name} Packages</Link><div className="arrow">\u2192</div></div></div></Anim>))}
         </div>
       </section>
 
@@ -236,7 +236,7 @@ export default function HomepageContent() {
             ))}
           </div>
         </Anim>
-        <Anim direction="right" className="portal-img"><img src="/images/homepage/homepage-15.jpg" alt="Group golf trip" /><div className="portal-float"><p>&ldquo;The registration portal alone saved me 20 hours of work. Everyone paid directly — I didn&apos;t chase a single dollar.&rdquo;</p><cite>— Steve R., TripAdvisor</cite></div></Anim>
+        <Anim direction="right" className="portal-img"><img src="/images/homepage/homepage-15.jpg" alt="Group golf trip" loading="lazy" /><div className="portal-float"><p>&ldquo;The registration portal alone saved me 20 hours of work. Everyone paid directly — I didn&apos;t chase a single dollar.&rdquo;</p><cite>— Steve R., TripAdvisor</cite></div></Anim>
       </div></section>
 
       <section className="journey-section" id="simpleprocess">
