@@ -217,13 +217,13 @@ export default async function TaxonomyPage({
         <div className="max-w-5xl mx-auto text-center">
           <h1
             className="text-4xl md:text-5xl font-light mb-4"
-            style={{ fontFamily: "Cormorant Garamond, serif" }}
+            style={{ fontFamily: "var(--font-serif)" }}
           >
             {tax.title}
           </h1>
           <p
             className="text-lg text-white/80 max-w-2xl mx-auto"
-            style={{ fontFamily: "Outfit, sans-serif" }}
+            style={{ fontFamily: "var(--font-outfit)" }}
           >
             {tax.description}
           </p>
@@ -268,14 +268,14 @@ export default async function TaxonomyPage({
                 <div className="p-5">
                   <h3
                     className="text-lg font-semibold text-[#111] mb-2"
-                    style={{ fontFamily: "Cormorant Garamond, serif" }}
+                    style={{ fontFamily: "var(--font-serif)" }}
                   >
                     {item.name}
                   </h3>
                   {item.shortDescription && (
                     <p
                       className="text-sm text-[#555] line-clamp-2"
-                      style={{ fontFamily: "Outfit, sans-serif" }}
+                      style={{ fontFamily: "var(--font-outfit)" }}
                     >
                       {item.shortDescription}
                     </p>
@@ -306,13 +306,13 @@ export default async function TaxonomyPage({
       <section className="bg-[#1E3A2F] text-white py-16 px-6 text-center">
         <h2
           className="text-3xl font-light mb-4"
-          style={{ fontFamily: "Cormorant Garamond, serif" }}
+          style={{ fontFamily: "var(--font-serif)" }}
         >
           Plan Your Group Golf Trip
         </h2>
         <p
           className="text-white/70 mb-6 max-w-xl mx-auto"
-          style={{ fontFamily: "Outfit, sans-serif" }}
+          style={{ fontFamily: "var(--font-outfit)" }}
         >
           Custom packages with lodging, tee times, dining, and transportation
           across the High Sierra.

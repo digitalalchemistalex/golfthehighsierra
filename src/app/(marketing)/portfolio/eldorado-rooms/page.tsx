@@ -29,13 +29,13 @@ export default function EldoradoRoomsPage() {
           </p>
           <h1
             className="text-4xl md:text-5xl font-light mb-4"
-            style={{ fontFamily: "Cormorant Garamond, serif" }}
+            style={{ fontFamily: "var(--font-serif)" }}
           >
             Eldorado Rooms & Suites
           </h1>
           <p
             className="text-lg text-white/80 max-w-2xl mx-auto"
-            style={{ fontFamily: "Outfit, sans-serif" }}
+            style={{ fontFamily: "var(--font-outfit)" }}
           >
             {rooms.length} room types available for your group golf stay
           </p>
@@ -69,14 +69,14 @@ export default function EldoradoRoomsPage() {
               <div className="p-5">
                 <h3
                   className="text-lg font-semibold text-[#111] mb-2"
-                  style={{ fontFamily: "Cormorant Garamond, serif" }}
+                  style={{ fontFamily: "var(--font-serif)" }}
                 >
                   {room.name}
                 </h3>
                 {room.shortDescription && (
                   <p
                     className="text-sm text-[#555] line-clamp-2"
-                    style={{ fontFamily: "Outfit, sans-serif" }}
+                    style={{ fontFamily: "var(--font-outfit)" }}
                   >
                     {room.shortDescription}
                   </p>
@@ -93,13 +93,13 @@ export default function EldoradoRoomsPage() {
       <section className="bg-[#1E3A2F] text-white py-16 px-6 text-center">
         <h2
           className="text-3xl font-light mb-4"
-          style={{ fontFamily: "Cormorant Garamond, serif" }}
+          style={{ fontFamily: "var(--font-serif)" }}
         >
           Book Your Eldorado Golf Package
         </h2>
         <p
           className="text-white/70 mb-6 max-w-xl mx-auto"
-          style={{ fontFamily: "Outfit, sans-serif" }}
+          style={{ fontFamily: "var(--font-outfit)" }}
         >
           Group rates, tee times, and room blocks at THE ROW in downtown Reno.
         </p>

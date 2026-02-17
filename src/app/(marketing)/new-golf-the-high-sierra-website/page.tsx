@@ -21,13 +21,13 @@ export default function NewWebsiteBlogPost() {
           </p>
           <h1
             className="text-4xl md:text-5xl font-light mb-4 leading-tight"
-            style={{ fontFamily: "Cormorant Garamond, serif" }}
+            style={{ fontFamily: "var(--font-serif)" }}
           >
             Introducing the New Golf The High Sierra Website
           </h1>
           <p
             className="text-white/70 text-sm"
-            style={{ fontFamily: "Outfit, sans-serif" }}
+            style={{ fontFamily: "var(--font-outfit)" }}
           >
             February 2026
           </p>
@@ -38,7 +38,7 @@ export default function NewWebsiteBlogPost() {
       <article className="max-w-3xl mx-auto px-6 py-16">
         <div
           className="prose prose-lg max-w-none text-[#333]"
-          style={{ fontFamily: "Outfit, sans-serif" }}
+          style={{ fontFamily: "var(--font-outfit)" }}
         >
           <p className="text-xl text-[#555] leading-relaxed">
             We&apos;re thrilled to unveil the completely redesigned Golf The
@@ -50,7 +50,7 @@ export default function NewWebsiteBlogPost() {
 
           <h2
             className="text-2xl mt-12 mb-4 text-[#1E3A2F]"
-            style={{ fontFamily: "Cormorant Garamond, serif" }}
+            style={{ fontFamily: "var(--font-serif)" }}
           >
             What&apos;s New
           </h2>
@@ -69,7 +69,7 @@ export default function NewWebsiteBlogPost() {
 
           <h2
             className="text-2xl mt-12 mb-4 text-[#1E3A2F]"
-            style={{ fontFamily: "Cormorant Garamond, serif" }}
+            style={{ fontFamily: "var(--font-serif)" }}
           >
             Built for Speed
           </h2>
@@ -82,7 +82,7 @@ export default function NewWebsiteBlogPost() {
 
           <h2
             className="text-2xl mt-12 mb-4 text-[#1E3A2F]"
-            style={{ fontFamily: "Cormorant Garamond, serif" }}
+            style={{ fontFamily: "var(--font-serif)" }}
           >
             Mobile-First Design
           </h2>
@@ -95,7 +95,7 @@ export default function NewWebsiteBlogPost() {
 
           <h2
             className="text-2xl mt-12 mb-4 text-[#1E3A2F]"
-            style={{ fontFamily: "Cormorant Garamond, serif" }}
+            style={{ fontFamily: "var(--font-serif)" }}
           >
             140+ Pages of Content
           </h2>
@@ -108,7 +108,7 @@ export default function NewWebsiteBlogPost() {
 
           <h2
             className="text-2xl mt-12 mb-4 text-[#1E3A2F]"
-            style={{ fontFamily: "Cormorant Garamond, serif" }}
+            style={{ fontFamily: "var(--font-serif)" }}
           >
             Ready to Plan Your Trip?
           </h2>

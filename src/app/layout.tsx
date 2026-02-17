@@ -18,6 +18,42 @@ const jakarta = localFont({
   variable: "--font-jakarta",
 });
 
+const cormorant = localFont({
+  src: [
+    { path: "./fonts/cormorant-garamond-latin-300-normal.woff2", weight: "300", style: "normal" },
+    { path: "./fonts/cormorant-garamond-latin-300-italic.woff2", weight: "300", style: "italic" },
+    { path: "./fonts/cormorant-garamond-latin-400-normal.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/cormorant-garamond-latin-400-italic.woff2", weight: "400", style: "italic" },
+    { path: "./fonts/cormorant-garamond-latin-600-normal.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/cormorant-garamond-latin-700-normal.woff2", weight: "700", style: "normal" },
+    { path: "./fonts/cormorant-garamond-latin-700-italic.woff2", weight: "700", style: "italic" },
+  ],
+  display: "swap",
+  variable: "--font-cormorant",
+});
+
+const manrope = localFont({
+  src: [
+    { path: "./fonts/manrope-latin-400-normal.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/manrope-latin-500-normal.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/manrope-latin-600-normal.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/manrope-latin-700-normal.woff2", weight: "700", style: "normal" },
+  ],
+  display: "swap",
+  variable: "--font-manrope",
+});
+
+const outfit = localFont({
+  src: [
+    { path: "./fonts/outfit-latin-300-normal.woff2", weight: "300", style: "normal" },
+    { path: "./fonts/outfit-latin-400-normal.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/outfit-latin-500-normal.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/outfit-latin-600-normal.woff2", weight: "600", style: "normal" },
+  ],
+  display: "swap",
+  variable: "--font-outfit",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
@@ -61,7 +97,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={jakarta.variable}>
+    <html lang="en" className={`${jakarta.variable} ${cormorant.variable} ${manrope.variable} ${outfit.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
