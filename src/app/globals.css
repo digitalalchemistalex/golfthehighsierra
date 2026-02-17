@@ -10,10 +10,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  ::selection { background: #b49a6a; color: #fff; }
+  ::selection { background: #C9A24D; color: #fff; }
   body {
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-    color: #1a1917;
+    color: #111111;
     background: #ffffff;
     overflow-x: hidden;
   }
@@ -26,9 +26,9 @@
     align-items: center;
     justify-content: center;
     padding: 10px 24px;
-    background: linear-gradient(135deg, #D4AD4A 0%, #E8C97A 50%, #D4AD4A 100%);
+    background: linear-gradient(135deg, #C9A24D 0%, #D4B76A 50%, #C9A24D 100%);
     background-size: 200% 200%;
-    color: #0F2118;
+    color: #1E3A2F;
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-weight: 700;
     font-size: 13px;
@@ -36,17 +36,17 @@
     border-radius: 100px;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 0 16px rgba(212, 168, 83, 0.4), 0 0 6px rgba(212, 168, 83, 0.2);
+    box-shadow: 0 0 16px rgba(201, 162, 77, 0.4), 0 0 6px rgba(201, 162, 77, 0.2);
     animation: btnGlow 2.5s ease-in-out infinite;
   }
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 28px rgba(212, 168, 83, 0.6), 0 0 12px rgba(212, 168, 83, 0.35);
+    box-shadow: 0 0 28px rgba(201, 162, 77, 0.6), 0 0 12px rgba(201, 162, 77, 0.35);
     background-position: 100% 50%;
   }
 
   @keyframes btnGlow {
-    0%, 100% { box-shadow: 0 0 16px rgba(212, 168, 83, 0.4), 0 0 6px rgba(212, 168, 83, 0.2); }
-    50% { box-shadow: 0 0 24px rgba(212, 168, 83, 0.6), 0 0 10px rgba(212, 168, 83, 0.35); }
+    0%, 100% { box-shadow: 0 0 16px rgba(201, 162, 77, 0.4), 0 0 6px rgba(201, 162, 77, 0.2); }
+    50% { box-shadow: 0 0 24px rgba(201, 162, 77, 0.6), 0 0 10px rgba(201, 162, 77, 0.35); }
   }
 }

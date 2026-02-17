@@ -2,14 +2,14 @@
 
 /* Homepage-specific CSS variables */
 .homepage {
-  --pine:#1A3C2A; --pine-dk:#0F2118; --pine-lt:#2D5E42; --sage:#7B9E87;
-  --gold:#B8963E; --gold-h:#D4AD4A; --gold-soft:rgba(184,150,62,.12);
+  --pine:#1E3A2F; --pine-dk:#132A22; --pine-lt:#6B8E7F; --sage:#6B8E7F;
+  --gold:#C9A24D; --gold-h:#B08C3A; --gold-soft:rgba(201,162,77,.12);
   --cream:#FAFAF5; --cream-w:#F4F1EA; --white:#FFF;
-  --text:#2C2C2C; --text2:#6B6B6B; --border:#E4E0D8;
+  --text:#111111; --text2:#6B6B6B; --border:#E4E0D8;
   --shadow-sm:0 2px 8px rgba(0,0,0,.04);
   --shadow-md:0 8px 30px rgba(0,0,0,.07);
   --shadow-lg:0 16px 48px rgba(0,0,0,.1);
-  --shadow-gold:0 8px 32px rgba(184,150,62,.15);
+  --shadow-gold:0 8px 32px rgba(201,162,77,.15);
   --pad:clamp(56px,7vw,100px);
   --radius:12px;
   --red:#ff1053;

@@ -98,8 +98,8 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
 
   const cssVars = {
     "--white": "#fff", "--cream": "#faf8f5", "--bone": "#eee9e2", "--sand": "#d4cfc6",
-    "--stone": "#8a857c", "--charcoal": "#3a3832", "--ink": "#1a1917",
-    "--gold": "#b49a6a", "--gold-glow": "#c8ad7e",
+    "--stone": "#8a857c", "--charcoal": "#3a3832", "--ink": "#111111",
+    "--gold": "#C9A24D", "--gold-glow": "#D4B76A",
     "--serif": "'Plus Jakarta Sans', system-ui, sans-serif",
     "--sans": "'Plus Jakarta Sans', system-ui, sans-serif",
   } as React.CSSProperties;
@@ -223,7 +223,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
           ) : (
             <R delay={0.16}>
               <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(20px,2.5vw,30px)", fontWeight: 300, fontStyle: "italic", lineHeight: 1.5, color: "rgba(255,255,255,.6)", marginTop: 16, maxWidth: 440, position: "relative", paddingTop: 28 }}>
-                <span style={{ fontFamily: "var(--serif)", fontSize: 60, color: "rgba(180,154,106,.2)", lineHeight: ".5", position: "absolute", top: 0, left: 0 }}>&ldquo;</span>
+                <span style={{ fontFamily: "var(--serif)", fontSize: 60, color: "rgba(201,162,77,.2)", lineHeight: ".5", position: "absolute", top: 0, left: 0 }}>&ldquo;</span>
                 {quoteText}
               </div>
               <div style={{ fontSize: 10, color: "rgba(255,255,255,.75)", letterSpacing: 2, textTransform: "uppercase", marginTop: 16 }}>— Golf the High Sierra</div>
@@ -333,7 +333,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
 
       {/* ═══ 5. CTA ═══ */}
       <section style={{ background: "var(--ink)", textAlign: "center", padding: "clamp(64px,10vh,120px) clamp(32px,7vw,120px)", position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 60%,rgba(180,154,106,.05),transparent 70%)" }} />
+        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 60%,rgba(201,162,77,.05),transparent 70%)" }} />
         <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14, position: "relative", zIndex: 1 }}>Stay &amp; Play</div></R>
         <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, color: "#fff", marginBottom: 12, position: "relative", zIndex: 1 }}>Book {firstName} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.65)" }}>Golf Package</em></h2></R>
         <R delay={0.16}><p style={{ fontSize: 13, color: "rgba(255,255,255,.6)", fontWeight: 300, maxWidth: 380, margin: "0 auto 28px", lineHeight: 1.8, position: "relative", zIndex: 1 }}>
@@ -341,7 +341,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
         </p></R>
         <R delay={0.2}>
           <div style={{ position: "relative", zIndex: 1 }}>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "8px 16px", borderRadius: 100, border: "1px solid rgba(180,154,106,.12)", fontSize: 10, color: "var(--gold)", fontWeight: 500, marginBottom: 24, letterSpacing: ".5px" }}>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "8px 16px", borderRadius: 100, border: "1px solid rgba(201,162,77,.12)", fontSize: 10, color: "var(--gold)", fontWeight: 500, marginBottom: 24, letterSpacing: ".5px" }}>
               <span style={{ width: 4, height: 4, borderRadius: "50%", background: "var(--gold)", animation: "euroP 2s infinite" }} />
               Custom packages available year-round
             </div>
@@ -349,7 +349,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
         </R>
         <R delay={0.28}>
           <div style={{ display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap", position: "relative", zIndex: 1 }}>
-            <Link href="/contact-custom-golf-package/" style={{ display: "inline-block", padding: "15px 36px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 10, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase", transition: "all .4s" }} className="hover:!bg-[#c8ad7e] hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(180,154,106,.2)]">
+            <Link href="/contact-custom-golf-package/" style={{ display: "inline-block", padding: "15px 36px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 10, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase", transition: "all .4s" }} className="hover:!bg-[#D4B76A] hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(201,162,77,.2)]">
               Plan My Trip
             </Link>
             <a href="tel:+18885848232" style={{ display: "inline-block", padding: "15px 36px", border: "1px solid rgba(255,255,255,.1)", color: "rgba(255,255,255,.65)", borderRadius: 100, fontSize: 10, fontWeight: 400, letterSpacing: 2, textTransform: "uppercase", transition: "all .4s" }} className="hover:!border-white/35 hover:!text-white">
