@@ -3,6 +3,8 @@ const nextConfig = {
   trailingSlash: true,
   async redirects() {
     return [
+      // ── Region page slug fixes ──
+      { source: '/group-golf-lodging-packages/', destination: '/best-golf-courses-carson-valley/', permanent: true },
       // ── Original WP slug redirects (already existed) ──
       { source: '/portfolio/atlantis-tower-rooms/', destination: '/portfolio/atlantis-tower-room/', permanent: true },
       { source: '/portfolio/atlantis-luxury-tower-rooms/', destination: '/portfolio/atlantis-luxury-tower-room/', permanent: true },

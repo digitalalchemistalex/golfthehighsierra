@@ -103,7 +103,7 @@ export const REGIONS: RegionData[] = [
     },
   },
   {
-    slug: "best-golf-courses-reno",
+    slug: "best-golf-courses-truckee",
     name: "Truckee & North Tahoe",
     tagline: "Mountain Championship",
     description:
@@ -134,13 +134,13 @@ export const REGIONS: RegionData[] = [
     season: "May–October",
     courseRegions: ["truckee"],
     meta: {
-      title: "Best Golf Courses Reno-Tahoe | Truckee Mountain Golf Packages",
+      title: "Best Golf Courses Truckee | Mountain Golf Packages North Tahoe",
       description:
         "Play Truckee's championship mountain courses — Old Greenwood, Coyote Moon, Gray's Crossing. Custom packages with villa lodging.",
     },
   },
   {
-    slug: "group-golf-lodging-packages",
+    slug: "best-golf-courses-carson-valley",
     name: "Carson Valley",
     tagline: "Best Value in the Sierra",
     description:
@@ -176,7 +176,7 @@ export const REGIONS: RegionData[] = [
     },
   },
   {
-    slug: "lake-tahoe-golf-packages",
+    slug: "best-golf-courses-graeagle",
     name: "Graeagle & Lost Sierra",
     tagline: "Secluded Mountain Golf",
     description:
@@ -207,7 +207,7 @@ export const REGIONS: RegionData[] = [
     season: "May–October",
     courseRegions: ["graeagle"],
     meta: {
-      title: "Graeagle Golf Packages | Lost Sierra Stay & Play",
+      title: "Best Golf Courses Graeagle | Lost Sierra Stay & Play Packages",
       description:
         "Golf the Lost Sierra — Grizzly Ranch, Whitehawk, Nakoma Dragon + 2 more. Secluded mountain packages with lodge-style lodging from $149.",
     },
