@@ -81,12 +81,16 @@
   "heroImage": "/images/hotels/portola-hotel-spa-monterey/hero.jpg",
   "faqs": [
     {
-      "question": "How close is Portola to Pebble Beach?",
-      "answer": "About 15 minutes to Pebble Beach, Spyglass Hill, and the Links at Spanish Bay."
+      "question": "Why is a Monterey hotel listed on a Reno-Tahoe golf site?",
+      "answer": "Golf the High Sierra offers extended packages that include Monterey/Pebble Beach courses like Poppy Hills and Bayonet & Black Horse. Portola Hotel is the ideal base for these coastal courses."
     },
     {
-      "question": "Is Portola good for golf groups?",
-      "answer": "Excellent \u2014 luxury waterfront lodging with great dining, plus easy access to the world-class Monterey Peninsula courses."
+      "question": "How far is Portola Hotel from Pebble Beach?",
+      "answer": "About 10 minutes to Pebble Beach Golf Links. Poppy Hills, Spyglass Hill, and Bayonet & Black Horse are all within 15-20 minutes."
+    },
+    {
+      "question": "Does Portola have a spa?",
+      "answer": "Yes \u2014 the Spa on the Plaza offers full-service treatments including massages, facials, body wraps, and a fitness center."
     }
   ],
   "relatedCourses": [],
@@ -96,5 +100,5 @@
     "description": "Luxury waterfront hotel in Monterey. Vista Blue Spa, fine dining, and golf packages near Pebble Beach."
   },
   "phone": "(831) 649-4511",
-  "totalRooms": null
+  "totalRooms": 379
 }

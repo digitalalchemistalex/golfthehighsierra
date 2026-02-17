@@ -42,15 +42,21 @@
   ],
   "roomTypes": [
     {
-      "name": "Studio Suite",
-      "description": "Open-layout with kitchenette."
+      "name": "Standard Room",
+      "description": "Spacious room with modern mountain-lodge decor, flat-screen TV, mini-fridge, coffee maker, and WiFi. Many rooms feature balconies."
     },
     {
-      "name": "One Bedroom Suite",
-      "description": "Separate bedroom with full living area."
+      "name": "Suite",
+      "description": "One-bedroom suite with separate living area, full kitchen or kitchenette, and upgraded amenities. Ideal for extended stays."
     }
   ],
-  "dining": [],
+  "dining": [
+    {
+      "name": "Timber Cove Bar & Grill",
+      "type": "restaurant",
+      "description": "On-site dining featuring American comfort food, craft cocktails, and local brews in a rustic mountain-lodge setting."
+    }
+  ],
   "spaBars": [],
   "parking": "Free self-parking",
   "images": [
@@ -62,12 +68,16 @@
   "heroImage": "/images/hotels/lake-tahoe-resort-hotel/hero.webp",
   "faqs": [
     {
-      "question": "Are all rooms suites?",
-      "answer": "Yes \u2014 every room is a suite with separate living area."
+      "question": "Where is Lake Tahoe Resort Hotel located?",
+      "answer": "In the heart of South Lake Tahoe's Heavenly Village, steps from shops, restaurants, and the Heavenly Gondola. The lake beaches are a short walk away."
     },
     {
-      "question": "How close to golf?",
-      "answer": "Edgewood Tahoe is about 5 minutes away."
+      "question": "Is Lake Tahoe Resort Hotel the same as Margaritaville?",
+      "answer": "No \u2014 they are separate properties, though both are located in the South Lake Tahoe area. Lake Tahoe Resort Hotel is an independent hotel in Heavenly Village."
+    },
+    {
+      "question": "Does the hotel offer ski packages?",
+      "answer": "Yes \u2014 the hotel offers various seasonal packages. For custom golf packages, contact Golf the High Sierra at 888-584-8232."
     }
   ],
   "relatedCourses": [
@@ -84,5 +94,5 @@
     "description": "All-suite hotel in South Lake Tahoe near Heavenly Village with golf packages."
   },
   "phone": "(530) 544-5400",
-  "totalRooms": null
+  "totalRooms": 400
 }

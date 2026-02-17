@@ -23,7 +23,7 @@
     "count": 2200,
     "sources": "TripAdvisor, Google"
   },
-  "description": "Circus Circus Reno is Northern Nevada's only circus-themed casino resort. Free live circus acts, Carnival Midway arcade, and budget-friendly rooms. Part of THE ROW connected to Silver Legacy and Eldorado.",
+  "description": "Part of THE ROW in downtown Reno, Circus Circus features 1,572 rooms across two towers connected to Silver Legacy and Eldorado via enclosed skywalks. The family-friendly resort offers a full casino, the Midway with carnival games and free circus acts, multiple dining options, and easy access to downtown Reno's entertainment district.",
   "shortDescription": "Budget-friendly casino with free circus acts, family entertainment, and THE ROW complex access.",
   "highlights": [
     "Only circus-themed casino in Northern Nevada",
@@ -67,7 +67,7 @@
     }
   ],
   "spaBars": [],
-  "totalRooms": 572,
+  "totalRooms": 1572,
   "parking": "Free parking in Silver Legacy garage",
   "images": [
     "/images/hotels/circus-circus-reno/interior.jpg",
@@ -77,12 +77,16 @@
   "heroImage": "/images/hotels/circus-circus-reno/hero.jpg",
   "faqs": [
     {
-      "question": "Is Circus Circus good for golf groups on a budget?",
-      "answer": "Yes \u2014 rooms from $89/night with full access to Silver Legacy and Eldorado via THE ROW."
+      "question": "Is Circus Circus connected to other casinos?",
+      "answer": "Yes \u2014 Circus Circus is part of THE ROW, connected to Silver Legacy and Eldorado via enclosed skywalks. You can walk between all three properties without going outside."
     },
     {
-      "question": "Does Circus Circus have table games?",
-      "answer": "Slots and video poker. Walk to Silver Legacy or Eldorado for live table games."
+      "question": "Is Circus Circus good for families?",
+      "answer": "Absolutely \u2014 the Midway features carnival games, free daily circus acts, and a family-friendly atmosphere that makes it one of Reno's best options for families."
+    },
+    {
+      "question": "Does Circus Circus offer golf packages?",
+      "answer": "Yes \u2014 Golf the High Sierra creates custom packages with Circus Circus lodging and tee times at 20+ courses. Call 888-584-8232 for a free quote."
     }
   ],
   "relatedCourses": [

@@ -16,14 +16,14 @@
     "longitude": -119.7656
   },
   "website": "https://www.cvinn.com",
-  "priceRange": "$89\u2013$249",
-  "priceFrom": "$89",
+  "priceRange": "$85\u2013$249",
+  "priceFrom": "$85",
   "rating": {
     "value": 4.1,
     "count": 1400,
     "sources": "TripAdvisor, Google"
   },
-  "description": "Carson Valley Inn & Casino is a welcoming inn and casino in Minden, NV, offering comfortable rooms, gaming, dining, and easy access to Carson Valley golf courses including Genoa Lakes and Dayton Valley.",
+  "description": "Situated at the foot of the Sierra Nevada Mountains in Minden, Nevada, Carson Valley Inn is a full-service casino resort just 20 minutes from Lake Tahoe. The property features 149 hotel rooms including 11 suites, a 74-room motor lodge, and a 59-site RV park. With 600 slot machines, eight table games, a sports book, three dining options, live entertainment in the Cabaret Lounge, and the outdoor TJ's Corral concert venue, CVI delivers authentic Nevada hospitality with no resort fees.",
   "shortDescription": "Welcoming inn in Minden with casino, dining, and easy access to Carson Valley golf courses.",
   "highlights": [
     "Affordable lodging in Carson Valley",
@@ -76,12 +76,16 @@
   "heroImage": "/images/hotels/carson-valley-inn-casino/hero.jpg",
   "faqs": [
     {
-      "question": "What golf courses are near Carson Valley Inn?",
-      "answer": "Genoa Lakes Golf Club, Dayton Valley Golf Club, and Toiyabe Golf Club are all within 15-25 minutes."
+      "question": "Does Carson Valley Inn charge a resort fee?",
+      "answer": "No \u2014 Carson Valley Inn never charges resort fees. Free parking (valet and self-parking) is included for all guests."
     },
     {
-      "question": "Is this a good base for Carson Valley golf?",
-      "answer": "Excellent \u2014 it's the primary lodging option in Carson Valley with affordable rooms and casino entertainment."
+      "question": "How far is Carson Valley Inn from Lake Tahoe?",
+      "answer": "Lake Tahoe's south shore is about 20 minutes west via Highway 88. The Reno-Tahoe International Airport is approximately 45 minutes north."
+    },
+    {
+      "question": "What golf courses are near Carson Valley Inn?",
+      "answer": "Carson Valley is surrounded by excellent courses including Genoa Lakes, Dayton Valley, Eagle Valley, and Toiyabe. Golf the High Sierra builds custom packages with CVI lodging \u2014 call 888-584-8232."
     }
   ],
   "relatedCourses": [
@@ -99,5 +103,5 @@
     "description": "Stay at Carson Valley Inn in Minden. Casino, dining, and golf packages near Genoa Lakes and Dayton Valley."
   },
   "phone": "(775) 782-9711",
-  "totalRooms": null
+  "totalRooms": 282
 }

@@ -83,12 +83,16 @@
   "heroImage": "/images/hotels/nugget-casino-resort-reno/hero.jpg",
   "faqs": [
     {
-      "question": "Where is Nugget Casino Resort?",
-      "answer": "1100 Nugget Ave in Sparks, NV \u2014 minutes from downtown Reno."
+      "question": "How big is Nugget Casino Resort?",
+      "answer": "One of Reno-Sparks' largest properties with 1,380 rooms in twin 28-story towers, a full casino, 110,000 sq ft of meeting space, and the 8,500-seat Nugget Event Center for major concerts."
+    },
+    {
+      "question": "What dining options are available?",
+      "answer": "Five restaurants including Rosie's Caf\u00e9 (24-hour casual), Steakhouse at the Nugget (fine dining), and multiple quick-serve and bar options."
     },
     {
       "question": "Does Nugget offer golf packages?",
-      "answer": "Yes \u2014 Golf the High Sierra creates custom packages. Groups save up to 20%."
+      "answer": "Yes \u2014 Golf the High Sierra creates custom packages with Nugget lodging and tee times at 20+ courses. The year-round atrium pool is a bonus. Call 888-584-8232."
     }
   ],
   "relatedCourses": [

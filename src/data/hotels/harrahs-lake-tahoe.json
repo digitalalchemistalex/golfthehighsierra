@@ -42,16 +42,16 @@
   ],
   "roomTypes": [
     {
-      "name": "Standard Room",
-      "description": "Mountain or city views."
+      "name": "Mountain Tower Room",
+      "description": "Newly renovated room in the Mountain Tower with contemporary decor, premium bedding, flat-screen TV, and mountain views."
     },
     {
-      "name": "Premium Room",
-      "description": "Upgraded amenities."
+      "name": "Mountain Tower Premium Room",
+      "description": "Upgraded room with enhanced furnishings, workspace, and panoramic views of the lake or mountains."
     },
     {
       "name": "Suite",
-      "description": "Spacious with living area."
+      "description": "Spacious suite with separate living area, premium amenities, and spectacular Lake Tahoe or mountain views."
     }
   ],
   "dining": [
@@ -81,8 +81,16 @@
   "heroImage": "/images/hotels/harrahs-lake-tahoe/hero.jpg",
   "faqs": [
     {
-      "question": "How close is Harrah's to Edgewood?",
-      "answer": "Less than 5 minutes \u2014 practically next door."
+      "question": "Is Harrah's connected to Harvey's?",
+      "answer": "Yes \u2014 Harrah's and Harvey's Lake Tahoe are connected via an enclosed skywalk, giving guests easy access to both properties' dining, entertainment, and casino floors."
+    },
+    {
+      "question": "Does Harrah's have a pool?",
+      "answer": "Yes \u2014 an outdoor pool is available seasonally along with a full-service spa and fitness center."
+    },
+    {
+      "question": "How far is Harrah's from Heavenly ski resort?",
+      "answer": "Heavenly Village and the gondola are within walking distance \u2014 about a 5-minute walk from the hotel."
     }
   ],
   "relatedCourses": [
@@ -100,5 +108,5 @@
     "description": "Harrah's Lake Tahoe in Stateline. Minutes from Edgewood Tahoe with custom golf packages."
   },
   "phone": "(775) 588-6611",
-  "totalRooms": null
+  "totalRooms": 512
 }

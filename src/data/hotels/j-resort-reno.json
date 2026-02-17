@@ -23,7 +23,7 @@
     "count": 1800,
     "sources": "TripAdvisor, Google"
   },
-  "description": "J Resort is a refreshed downtown Reno casino hotel offering modern rooms, dining, and gaming. Formerly the Sands Regency, renovated with a contemporary vibe and affordable pricing for golf groups.",
+  "description": "Formerly the Sands Regency, J Resort is Reno's newest casino resort in the heart of the emerging Neon Line District. The $150+ million renovation by Jacobs Entertainment features 833 remodeled rooms across three towers (Aspen, Birch, and Cedar), an upgraded casino floor, original curated art throughout, three restaurants, and the outdoor Glow Plaza festival grounds for year-round entertainment.",
   "shortDescription": "Refreshed downtown Reno casino hotel with modern rooms and affordable pricing.",
   "highlights": [
     "Recently renovated downtown property",
@@ -52,9 +52,25 @@
       "description": "Spacious suites for golf groups."
     }
   ],
-  "dining": [],
+  "dining": [
+    {
+      "name": "J Paul's Italian Steakhouse",
+      "type": "restaurant",
+      "description": "Fine dining with contemporary Italian-American flair \u2014 antipasti, seafood cold bar, prime steaks, and handmade pastas."
+    },
+    {
+      "name": "Hanna's Table",
+      "type": "restaurant",
+      "description": "Caf\u00e9 classics for breakfast, lunch, and dinner in a cozy, welcoming atmosphere."
+    },
+    {
+      "name": "The Buffet",
+      "type": "restaurant",
+      "description": "Completely renovated all-you-can-enjoy buffet with diverse entr\u00e9es and desserts."
+    }
+  ],
   "spaBars": [],
-  "totalRooms": 800,
+  "totalRooms": 833,
   "parking": "Free self-parking",
   "images": [
     "/images/hotels/j-resort-reno/exterior.jpg",
@@ -65,8 +81,20 @@
   "heroImage": "/images/hotels/j-resort-reno/hero.png",
   "faqs": [
     {
-      "question": "Is J Resort good for golf groups?",
-      "answer": "Yes \u2014 affordable downtown location with easy access to Reno's golf courses, dining, and nightlife."
+      "question": "What is J Resort's connection to the Sands Regency?",
+      "answer": "J Resort is the fully renovated and rebranded former Sands Regency, transformed by Jacobs Entertainment with $150+ million in upgrades including new rooms, restaurants, casino, and art installations."
+    },
+    {
+      "question": "What is the Neon Line District?",
+      "answer": "A multi-billion dollar mixed-use entertainment district being developed along 4th Street west of downtown Reno, with J Resort as the anchor property."
+    },
+    {
+      "question": "Does J Resort have a pool?",
+      "answer": "A rooftop pool and spa complex is part of the Phase 2 expansion. Currently the resort offers a seasonal outdoor pool area (Memorial Day through Labor Day)."
+    },
+    {
+      "question": "Does J Resort offer golf packages?",
+      "answer": "Yes \u2014 Golf the High Sierra creates custom packages with J Resort lodging and tee times at 20+ Reno-Tahoe courses. Call 888-584-8232."
     }
   ],
   "relatedCourses": [

@@ -98,12 +98,16 @@
   "heroImage": "/images/hotels/river-pines-resort/exterior-2.webp",
   "faqs": [
     {
-      "question": "What golf courses are near River Pines?",
-      "answer": "Graeagle Meadows is walking distance. Plumas Pines, Whitehawk Ranch, and Nakoma are 10-20 minutes."
+      "question": "What type of accommodations does River Pines offer?",
+      "answer": "Rustic lodge rooms and cabins nestled in the pines along the Feather River in Graeagle. A genuine mountain retreat with a relaxed, casual atmosphere."
     },
     {
       "question": "Does River Pines have dining?",
-      "answer": "Yes \u2014 on-site restaurant and bar for post-round meals."
+      "answer": "Yes \u2014 the on-site restaurant and bar is a popular gathering spot for locals and visitors, featuring American comfort food and cocktails."
+    },
+    {
+      "question": "What golf courses are nearby?",
+      "answer": "Graeagle Meadows and Plumas Pines are both minutes away. Additional courses include Whitehawk Ranch and Nakoma Dragon. Golf the High Sierra builds custom packages \u2014 call 888-584-8232."
     }
   ],
   "relatedCourses": [

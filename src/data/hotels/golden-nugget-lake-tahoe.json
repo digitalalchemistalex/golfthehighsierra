@@ -44,14 +44,12 @@
   ],
   "roomTypes": [
     {
-      "name": "Standard Room",
-      "description": "Lake or mountain views.",
-      "priceFrom": "$149"
+      "name": "Deluxe Room",
+      "description": "Comfortable rooms with modern amenities including flat-screen TV, WiFi, coffee maker, and premium bedding."
     },
     {
       "name": "Suite",
-      "description": "Spacious with living area.",
-      "priceFrom": "$280"
+      "description": "Spacious suite with separate living area, upgraded furnishings, and mountain or lake views."
     }
   ],
   "dining": [
@@ -85,12 +83,16 @@
   "heroImage": "/images/hotels/golden-nugget-lake-tahoe/exterior.webp",
   "faqs": [
     {
-      "question": "How close to Edgewood?",
-      "answer": "5 minutes from Edgewood Tahoe Golf Course."
+      "question": "Where is Golden Nugget Lake Tahoe located?",
+      "answer": "On the Nevada side of South Lake Tahoe's casino corridor, within walking distance of Heavenly Village and the gondola to Heavenly ski resort."
     },
     {
-      "question": "Is it pet-friendly?",
-      "answer": "Yes \u2014 pet-friendly accommodations available."
+      "question": "Does Golden Nugget have a pool?",
+      "answer": "Yes \u2014 an outdoor pool is available seasonally along with full casino, dining, and entertainment options."
+    },
+    {
+      "question": "Can I book golf packages at Golden Nugget?",
+      "answer": "Yes \u2014 Golf the High Sierra creates custom stay-and-play packages. Call 888-584-8232 for pricing."
     }
   ],
   "relatedCourses": [

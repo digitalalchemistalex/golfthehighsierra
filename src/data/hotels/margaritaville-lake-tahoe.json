@@ -42,12 +42,12 @@
   ],
   "roomTypes": [
     {
-      "name": "Standard Room",
-      "description": "Island-inspired rooms."
+      "name": "Standard King Room",
+      "description": "Island-inspired room with premium king bed, tropical-modern decor, flat-screen TV, Bluetooth speaker, mini-fridge, and Margaritaville-branded amenities."
     },
     {
-      "name": "Suite",
-      "description": "Mountain or pool views."
+      "name": "Balcony Suite",
+      "description": "Upgraded suite with private balcony, separate sitting area, enhanced amenities, and mountain or resort views."
     }
   ],
   "dining": [
@@ -69,12 +69,16 @@
   "heroImage": "/images/hotels/margaritaville-lake-tahoe/hero.webp",
   "faqs": [
     {
-      "question": "What's unique about Margaritaville?",
-      "answer": "Jimmy Buffett island vibes in the Sierra with LandShark Bar and St. Somewhere Spa."
+      "question": "What makes Margaritaville different from other Tahoe hotels?",
+      "answer": "Margaritaville brings Jimmy Buffett's laid-back island lifestyle to the mountains \u2014 with tropical-inspired decor, a lively restaurant and bar scene, outdoor pool with cabanas, and a relaxed vacation atmosphere year-round."
     },
     {
-      "question": "How close to golf?",
-      "answer": "Edgewood Tahoe is about 5 minutes away."
+      "question": "What dining is available?",
+      "answer": "The resort features the LandShark Bar & Grill for casual dining, the 5 o'Clock Somewhere Bar for cocktails, and a complimentary breakfast for guests."
+    },
+    {
+      "question": "How close is Margaritaville to the ski resorts?",
+      "answer": "The Heavenly Gondola is a short drive or shuttle ride away. The hotel also offers easy access to South Lake Tahoe beaches and Stateline casinos."
     }
   ],
   "relatedCourses": [
@@ -91,5 +95,5 @@
     "description": "Island vibes at Margaritaville Lake Tahoe. LandShark Bar, spa, and golf packages near Edgewood."
   },
   "phone": "(530) 544-5400",
-  "totalRooms": null
+  "totalRooms": 234
 }

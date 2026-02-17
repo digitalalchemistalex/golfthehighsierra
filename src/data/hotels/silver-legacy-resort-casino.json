@@ -93,12 +93,16 @@
   "heroImage": "/images/hotels/silver-legacy-resort-casino/hero.jpg",
   "faqs": [
     {
-      "question": "Is Silver Legacy connected to other casinos?",
-      "answer": "Yes \u2014 Silver Legacy is part of THE ROW, connected via skyway to Eldorado and Circus Circus."
+      "question": "What is Silver Legacy's signature feature?",
+      "answer": "The iconic silver dome that towers over downtown Reno. Inside, the dome houses a mining-themed centerpiece that lights up with a dramatic show."
     },
     {
-      "question": "Does Silver Legacy have a spa?",
-      "answer": "Yes \u2014 The Spa at Silver Legacy offers massages, facials, and body treatments."
+      "question": "Is Silver Legacy connected to other casinos?",
+      "answer": "Yes \u2014 Silver Legacy is the center of THE ROW, connected to Eldorado and Circus Circus via enclosed skywalks."
+    },
+    {
+      "question": "What dining is available?",
+      "answer": "Multiple options including Ruth's Chris Steak House, Pearl Oyster Bar & Grill, Canter's Delicatessen (the famous LA deli), The Stir cocktail lounge, and more."
     }
   ],
   "relatedCourses": [

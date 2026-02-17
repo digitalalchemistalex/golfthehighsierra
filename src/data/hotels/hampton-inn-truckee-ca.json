@@ -33,28 +33,36 @@
     "Hilton Honors"
   ],
   "amenities": [
-    "Complimentary breakfast",
-    "Indoor pool & hot tub",
+    "Complimentary hot breakfast daily",
+    "Indoor heated pool & hot tub",
     "Fitness center",
+    "Free WiFi throughout",
+    "Free self-parking",
     "Business center",
-    "Free Wi-Fi",
-    "Free parking"
+    "Guest laundry",
+    "100% Hampton satisfaction guarantee"
   ],
   "roomTypes": [
     {
-      "name": "Standard King",
-      "description": "Comfortable king with modern amenities."
+      "name": "Standard King Room",
+      "description": "Clean and comfortable king room with Hampton's signature Clean and Fresh bed, complimentary WiFi, mini-fridge, microwave, and coffee maker."
     },
     {
-      "name": "Double Queen",
-      "description": "Two queens for golf groups."
+      "name": "Double Queen Room",
+      "description": "Room with two queen beds, perfect for families or groups. Same Hampton standard amenities plus in-room safe."
     },
     {
-      "name": "Studio Suite",
-      "description": "Suite with living area."
+      "name": "King Studio Suite",
+      "description": "Extended-stay suite with king bed, separate sitting area, sofa bed, microwave, and mini-fridge."
     }
   ],
-  "dining": [],
+  "dining": [
+    {
+      "name": "Complimentary Hot Breakfast",
+      "type": "breakfast",
+      "description": "Hampton's signature free hot breakfast buffet served daily with eggs, waffles, bacon, fresh fruit, pastries, and coffee."
+    }
+  ],
   "spaBars": [],
   "parking": "Free self-parking",
   "images": [
@@ -66,12 +74,16 @@
   "heroImage": "/images/hotels/hampton-inn-truckee-ca/hero.jpg",
   "faqs": [
     {
-      "question": "What courses are nearby?",
-      "answer": "Old Greenwood, Northstar, Tahoe Donner, Coyote Moon, and Gray's Crossing are all 15-20 minutes."
+      "question": "Does Hampton Inn Truckee include breakfast?",
+      "answer": "Yes \u2014 complimentary hot breakfast is included daily for all guests, featuring eggs, waffles, bacon, fresh fruit, pastries, and coffee."
     },
     {
-      "question": "Is breakfast included?",
-      "answer": "Yes \u2014 complimentary hot breakfast for all guests."
+      "question": "How far is Hampton Inn from the ski resorts?",
+      "answer": "Northstar California is about 10 minutes away, Palisades Tahoe is approximately 20 minutes, and downtown Truckee is just 5 minutes."
+    },
+    {
+      "question": "Does Hampton Inn have a pool?",
+      "answer": "Yes \u2014 an indoor heated pool and hot tub are available year-round."
     }
   ],
   "relatedCourses": [
@@ -90,5 +102,5 @@
     "description": "Hampton Inn Truckee with complimentary breakfast and golf packages near Old Greenwood and Northstar."
   },
   "phone": "(530) 587-7575",
-  "totalRooms": null
+  "totalRooms": 101
 }

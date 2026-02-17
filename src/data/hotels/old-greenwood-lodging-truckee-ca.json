@@ -42,19 +42,25 @@
   ],
   "roomTypes": [
     {
-      "name": "2-Bedroom Townhome",
-      "description": "Full kitchen, fireplace, mountain views."
+      "name": "Mountain Lodge Room",
+      "description": "Rustic-luxe lodge room with stone fireplace, premium bedding, and mountain views. Access to Old Greenwood's golf course and amenities."
     },
     {
-      "name": "3-Bedroom Residence",
-      "description": "Large home for groups of 6."
+      "name": "Cabin",
+      "description": "Private cabin with full kitchen, living area, fireplace, and deck. Perfect for families or groups wanting a home-away-from-home experience."
     },
     {
-      "name": "4-Bedroom Estate",
-      "description": "Premium estate with hot tub and course views."
+      "name": "Townhome",
+      "description": "Multi-bedroom townhome with full kitchen, multiple bathrooms, living and dining areas, garage, and private outdoor space."
     }
   ],
-  "dining": [],
+  "dining": [
+    {
+      "name": "Twenty-Six",
+      "type": "restaurant",
+      "description": "Seasonal restaurant at the Old Greenwood clubhouse offering Pacific Northwest-inspired cuisine with Tahoe views."
+    }
+  ],
   "spaBars": [],
   "parking": "Free parking",
   "images": [
@@ -67,12 +73,16 @@
   "heroImage": "/images/hotels/old-greenwood-lodging-truckee-ca/hero.jpg",
   "faqs": [
     {
-      "question": "Walk to the course?",
-      "answer": "Yes \u2014 residences are on the course."
+      "question": "Is Old Greenwood a golf resort?",
+      "answer": "Yes \u2014 the Jack Nicklaus Signature golf course is steps away. Lodging guests get preferred tee times and access to the clubhouse and practice facilities."
     },
     {
-      "question": "Full kitchens?",
-      "answer": "Yes \u2014 all residences have full kitchens."
+      "question": "What type of accommodations are offered?",
+      "answer": "Mountain lodge rooms, private cabins, and multi-bedroom townhomes \u2014 from couples retreats to large group getaways."
+    },
+    {
+      "question": "How far is Old Greenwood from Truckee?",
+      "answer": "About 10 minutes from downtown Truckee, 15 minutes from Northstar California, and 35 minutes from Reno-Tahoe International Airport."
     }
   ],
   "relatedCourses": [

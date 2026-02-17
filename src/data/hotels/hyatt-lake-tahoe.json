@@ -45,17 +45,16 @@
   ],
   "roomTypes": [
     {
-      "name": "Standard Room",
-      "description": "Mountain or partial lake views."
+      "name": "Mountain View Room",
+      "description": "Elegant room with mountain views, plush bedding, flat-screen TV, and Hyatt Grand Bed. Lake-side rooms also available."
     },
     {
-      "name": "Lake View Room",
-      "description": "Stunning Lake Tahoe views."
+      "name": "Lakefront Cottage",
+      "description": "Private lakefront cottage with direct beach access, fireplace, separate living area, and unobstructed Lake Tahoe views."
     },
     {
-      "name": "Lakeside Cottage",
-      "description": "Private cottage with hot tub.",
-      "priceFrom": "$499"
+      "name": "Grand Suite",
+      "description": "Premium suite with panoramic lake views, separate living room, luxury bathroom with soaking tub, and exclusive lounge access."
     }
   ],
   "dining": [
@@ -84,12 +83,16 @@
   "heroImage": "/images/hotels/hyatt-lake-tahoe/hero.jpg",
   "faqs": [
     {
-      "question": "How close is Hyatt to golf courses?",
-      "answer": "Steps from Incline Village Championship and Mountain courses."
+      "question": "Does Hyatt Lake Tahoe have a private beach?",
+      "answer": "Yes \u2014 the resort features a private beach with direct Lake Tahoe access, seasonal water sports equipment, and lakeside dining."
     },
     {
-      "question": "Does Hyatt have a private beach?",
-      "answer": "Yes \u2014 private lakefront beach exclusively for resort guests."
+      "question": "What is the Stillwater Spa?",
+      "answer": "A full-service spa offering massages, facials, body treatments, and a fitness center with indoor pool, all with mountain views."
+    },
+    {
+      "question": "How far is Hyatt from the ski resorts?",
+      "answer": "Diamond Peak is about 5 minutes away, Northstar California approximately 15 minutes, and Palisades Tahoe about 30 minutes."
     }
   ],
   "relatedCourses": [
@@ -107,5 +110,5 @@
     "description": "Luxury lakefront Hyatt with private beach, Stillwater Spa, and golf packages at Incline Village and Edgewood."
   },
   "phone": "(775) 832-1234",
-  "totalRooms": null
+  "totalRooms": 422
 }

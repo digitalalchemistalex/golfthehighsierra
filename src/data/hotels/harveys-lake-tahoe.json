@@ -41,16 +41,16 @@
   ],
   "roomTypes": [
     {
-      "name": "Standard Room",
-      "description": "Mountain views."
+      "name": "Deluxe Room",
+      "description": "Comfortable rooms with contemporary mountain-lodge decor, premium bedding, flat-screen TV, and views of Lake Tahoe or the mountains."
     },
     {
-      "name": "Premium Room",
-      "description": "Enhanced finishes."
+      "name": "Resort Tower Room",
+      "description": "Upgraded rooms in the Resort Tower with modern finishes, enhanced amenities, and stunning lake views."
     },
     {
-      "name": "Suite",
-      "description": "Separate living area."
+      "name": "Lake Tower Suite",
+      "description": "Spacious suite with separate living area, wet bar, and panoramic Lake Tahoe views."
     }
   ],
   "dining": [
@@ -75,12 +75,16 @@
   "heroImage": "/images/hotels/harveys-lake-tahoe/hero.jpg",
   "faqs": [
     {
-      "question": "Is Harvey's connected to Harrah's?",
-      "answer": "Yes \u2014 connected with shared dining, gaming, and entertainment."
+      "question": "Does Harvey's have an outdoor concert venue?",
+      "answer": "Yes \u2014 the Harvey's Outdoor Arena hosts major touring acts throughout the summer season, with capacity for thousands of concertgoers right on the lake."
     },
     {
-      "question": "How close to Edgewood?",
-      "answer": "Less than 5 minutes \u2014 practically adjacent."
+      "question": "What dining is available at Harvey's?",
+      "answer": "Multiple options including Sage Room Steak House, Caf\u00e9 Tahoe, Hard Rock Caf\u00e9, and several casual dining and bar options."
+    },
+    {
+      "question": "Is Harvey's a good base for skiing?",
+      "answer": "Excellent \u2014 Heavenly Village and the gondola are within walking distance. The resort also offers ski valet and storage services during winter."
     }
   ],
   "relatedCourses": [
@@ -98,5 +102,5 @@
     "description": "Harvey's Lake Tahoe with outdoor pool, mountain views, and golf packages near Edgewood."
   },
   "phone": "(775) 588-6611",
-  "totalRooms": null
+  "totalRooms": 740
 }

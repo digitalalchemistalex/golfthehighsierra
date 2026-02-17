@@ -81,12 +81,16 @@
   "heroImage": "/images/hotels/nakoma-resort/townhome-1.jpg",
   "faqs": [
     {
-      "question": "Can you walk to the golf course?",
-      "answer": "Yes \u2014 residences are on or adjacent to Plumas Pines Golf Course."
+      "question": "What are the Townhomes at Plumas Pines?",
+      "answer": "Private vacation rental townhomes adjacent to the Plumas Pines Golf Resort in Graeagle, perfect for golf groups wanting a home-base experience with full kitchens and multiple bedrooms."
     },
     {
-      "question": "What other courses are nearby?",
-      "answer": "Graeagle Meadows, Whitehawk Ranch, and Nakoma are all within 15-20 minutes."
+      "question": "Is the golf course walking distance?",
+      "answer": "Yes \u2014 the Plumas Pines golf course is right next door. Guests can walk to the first tee and enjoy preferred rates and tee times."
+    },
+    {
+      "question": "What's nearby in Graeagle?",
+      "answer": "The charming mountain village of Graeagle offers dining, shopping, hiking, fishing, and access to Plumas National Forest. Additional golf at Graeagle Meadows is minutes away."
     }
   ],
   "relatedCourses": [
