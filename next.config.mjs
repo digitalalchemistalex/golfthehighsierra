@@ -4,6 +4,8 @@ const nextConfig = {
   async redirects() {
     return [
       // ── Region page slug fixes ──
+      { source: '/best-golf-courses-reno/', destination: '/reno-golf-packages/', permanent: true },
+      { source: '/lake-tahoe-golf-packages/', destination: '/best-golf-courses-lake-tahoe/', permanent: true },
       { source: '/group-golf-lodging-packages/', destination: '/best-golf-courses-carson-valley/', permanent: true },
       // ── Original WP slug redirects (already existed) ──
       { source: '/portfolio/atlantis-tower-rooms/', destination: '/portfolio/atlantis-tower-room/', permanent: true },
