@@ -160,11 +160,6 @@ export default function HotelPageContent({ hotel, relatedHotels = [] }: HotelPag
           <HeroTripSlider slug={hotel.slug} type="hotel" />
         </div>
 
-        {/* Scroll indicator */}
-        <div className="hidden lg:flex" style={{ position: "absolute", bottom: 20, left: "25%", transform: "translateX(-50%)", zIndex: 3, flexDirection: "column", alignItems: "center", gap: 6 }}>
-          <span style={{ fontSize: 10, color: "rgba(255,255,255,.5)", letterSpacing: 3, textTransform: "uppercase" }}>Scroll</span>
-          <div style={{ width: 1, height: 32, background: "linear-gradient(rgba(255,255,255,.6),transparent)", animation: "sdrop 2s ease infinite" }} />
-        </div>
       </section>
 
       {/* ═══ 2. CONTENT — text + gallery ═══ */}
