@@ -24,7 +24,7 @@ export default function AdminDashboard() {
 
   const login = async () => {
     setError("");
-    const res = await fetch("/api/admin/auth", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ password }) });
+    const res = await fetch("/api/admin/auth/", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ password }) });
     if (res.ok) { sessionStorage.setItem("gths-admin", "1"); setAuthed(true); }
     else setError("Invalid password");
   };
@@ -32,7 +32,7 @@ export default function AdminDashboard() {
   const loadItems = async (type: string) => {
     setLoading(true);
     try {
-      const res = await fetch(`/api/admin/items?type=${type}`);
+      const res = await fetch(`/api/admin/items/?type=${type}`);
       if (res.ok) { const data = await res.json(); setItems(data.items || []); }
     } catch { }
     setLoading(false);
@@ -41,7 +41,7 @@ export default function AdminDashboard() {
   const loadItem = async (type: string, slug: string) => {
     setLoading(true);
     try {
-      const res = await fetch(`/api/admin/items?type=${type}&slug=${slug}`);
+      const res = await fetch(`/api/admin/items/?type=${type}&slug=${slug}`);
       if (res.ok) { const data = await res.json(); setEditing(data); }
     } catch { }
     setLoading(false);
@@ -52,7 +52,7 @@ export default function AdminDashboard() {
     setSaving(true);
     try {
       const type = tab === "blog" ? "blog" : tab;
-      const res = await fetch("/api/admin/items", {
+      const res = await fetch("/api/admin/items/", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ type, slug: editing.slug, data: editing })

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const TOKEN = process.env.GITHUB_TOKEN || "";
+const TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || "";
 const REPO = process.env.GITHUB_REPO || "digitalalchemistalex/golfthehighsierra";
 const API = `https://api.github.com/repos/${REPO}`;
 
