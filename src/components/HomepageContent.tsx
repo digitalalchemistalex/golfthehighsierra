@@ -182,7 +182,7 @@ export default function HomepageContent() {
           <p>Instead of dealing with multiple contracts and deposits from hotels and golf courses, Golf the High Sierra makes all reservations on your group&apos;s behalf. You sign once, pay once, and we handle the rest.</p>
           <div className="val-list">
             {[['One Contract for Everything','Courses, hotels, dining, transport \u2014 one signature.'],['Complimentary Registration Portal','Attendees register & pay online. You never chase money.'],['Groups of 4 to 400','Buddies trips, corporate outings, conferences, tournaments.'],['Full-Service Event Planning','Breakout sessions, meal selection, transport, activities.']].map(([t,d],i)=>(
-              <div key={i} className="val-item"><div className="val-chk">\u2714</div><div><strong>{t}</strong><span>{d}</span></div></div>
+              <div key={i} className="val-item"><div className="val-chk">{'\u2714'}</div><div><strong>{t}</strong><span>{d}</span></div></div>
             ))}
           </div>
         </Anim>
@@ -218,8 +218,8 @@ export default function HomepageContent() {
         <Anim direction="right">
           <div style={{background:'rgba(255,255,255,.04)',border:'1px solid rgba(255,255,255,.08)',borderRadius:12,padding:24}}>
             <div style={{fontSize:13,fontWeight:600,color:'rgba(255,255,255,.5)',marginBottom:16,letterSpacing:1,textTransform:'uppercase'}}>Browse by Region</div>
-            {[{name:'Reno',courses:'7 courses \u00B7 6 casino-resorts',href:'https://tripscaddie.golfthehighsierra.com/?region=Reno'},{name:'Lake Tahoe',courses:'3 courses \u00B7 lakefront lodging',href:'https://tripscaddie.golfthehighsierra.com/?region=Lake%20Tahoe'},{name:'Truckee & Graeagle',courses:'8 courses \u00B7 mountain villas',href:'https://tripscaddie.golfthehighsierra.com/?region=Truckee'},{name:'Carson Valley',courses:'4 courses \u00B7 best value',href:'https://tripscaddie.golfthehighsierra.com/?region=Carson%20Valley'},{name:'Monterey & Pebble Beach',courses:'5 courses \u00B7 oceanfront golf',href:'https://tripscaddie.golfthehighsierra.com/?region=Monterey'},{name:'Mesquite & St. George',courses:'6 courses \u00B7 desert championship',href:'https://tripscaddie.golfthehighsierra.com/?region=Mesquite'}].map((r,i)=>(
-              <a key={i} href={r.href} target="_blank" rel="noreferrer" style={{display:'flex',alignItems:'center',justifyContent:'space-between',padding:'14px 0',borderBottom:'1px solid rgba(255,255,255,.06)',textDecoration:'none',color:'#fff',fontSize:14}}><div><div style={{fontWeight:600}}>{r.name}</div><div style={{fontSize:12,color:'rgba(255,255,255,.4)',marginTop:2}}>{r.courses}</div></div><div style={{color:'rgba(255,255,255,.3)',fontSize:18}}>{'\u2192'}</div></a>
+            {[{name:'Reno',courses:'7 courses \u00B7 6 casino-resorts',href:'/best-golf-courses-reno/'},{name:'Lake Tahoe',courses:'3 courses \u00B7 lakefront lodging',href:'/best-golf-courses-lake-tahoe/'},{name:'Truckee & Graeagle',courses:'8 courses \u00B7 mountain villas',href:'/group-golf-reno-tahoe/'},{name:'Carson Valley',courses:'4 courses \u00B7 best value',href:'/group-golf-reno-tahoe/'},{name:'Monterey & Pebble Beach',courses:'5 courses \u00B7 oceanfront golf',href:'/group-golf-reno-tahoe/'},{name:'Mesquite & St. George',courses:'6 courses \u00B7 desert championship',href:'/group-golf-reno-tahoe/'}].map((r,i)=>(
+              <Link key={i} href={r.href} style={{display:'flex',alignItems:'center',justifyContent:'space-between',padding:'14px 0',borderBottom:'1px solid rgba(255,255,255,.06)',textDecoration:'none',color:'#fff',fontSize:14}}><div><div style={{fontWeight:600}}>{r.name}</div><div style={{fontSize:12,color:'rgba(255,255,255,.4)',marginTop:2}}>{r.courses}</div></div><div style={{color:'rgba(255,255,255,.3)',fontSize:18}}>{'\u2192'}</div></Link>
             ))}
           </div>
         </Anim>
