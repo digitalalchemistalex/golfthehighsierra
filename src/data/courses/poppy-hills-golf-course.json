@@ -10,8 +10,8 @@
     "postalCode": "93953"
   },
   "geo": {
-    "lat": 36.582368,
-    "lng": -121.938398
+    "latitude": 36.582368,
+    "longitude": -121.938398
   },
   "phone": "(831) 622-8239",
   "website": "https://poppyhillsgolf.ncga.org/",
@@ -47,11 +47,22 @@
     "title": "Poppy Hills Golf Course \u2013 Pebble Beach | Golf The High Sierra",
     "description": "Play the NCGA's flagship course in Pebble Beach \u2014 a RTJ Jr. masterpiece through the Del Monte Forest. Golf Digest Top 100, former AT&T Pro-Am host. Book through GTHS."
   },
-  "bodyText": "Poppy Hills rides the rolling elevation of the Del Monte Forest, bringing together breathtaking design and golf's greatest landscape. Originally opened in 1986, the course underwent an extensive $10 million renovation in 2013-2014 that transformed it into what Colin Montgomerie compared to 'a little bit of Pinehurst and a little bit of Pine Valley.' The renovation removed 60 acres of irrigated turf, eliminated all rough in favor of sandy waste areas and pine straw, and opened surprising ocean views of Monterey Bay through the towering pines.",
+  "bodyText": [
+    "Poppy Hills rides the rolling elevation of the Del Monte Forest, bringing together breathtaking design and golf's greatest landscape. Originally opened in 1986, the course underwent an extensive $10 million renovation in 2013-2014 that transformed it into what Colin Montgomerie compared to 'a little bit of Pinehurst and a little bit of Pine Valley.' The renovation removed 60 acres of irrigated turf, eliminated all rough in favor of sandy waste areas and pine straw, and opened surprising ocean views of Monterey Bay through the towering pines."
+  ],
   "tips": [
-    "Play the sandy waste areas as you would links-style \u2014 bump and run works beautifully",
-    "The bentgrass greens are among the purest on the peninsula \u2014 trust your reads",
-    "Wind picks up in the afternoon \u2014 morning tee times play calmer"
+    {
+      "title": "",
+      "content": "Play the sandy waste areas as you would links-style \u2014 bump and run works beautifully"
+    },
+    {
+      "title": "",
+      "content": "The bentgrass greens are among the purest on the peninsula \u2014 trust your reads"
+    },
+    {
+      "title": "",
+      "content": "Wind picks up in the afternoon \u2014 morning tee times play calmer"
+    }
   ],
   "facilities": [
     "Driving Range",
@@ -63,7 +74,7 @@
   ],
   "pointOfView": "The closest you can get to playing golf in a National Park \u2014 Robert Trent Jones Jr.'s own words describe Poppy Hills perfectly. For GTHS groups adding a Monterey Peninsula extension, this is the most accessible championship course in Pebble Beach at a fraction of the cost of its famous neighbors.",
   "hack": "",
-  "distances": {},
+  "distances": [],
   "contentParagraphs": [],
   "featuredHole": {
     "number": 15,
@@ -72,10 +83,10 @@
     "description": "A brilliant Redan-style par 3 that demands precise club selection. The green angles away from the tee, with a deep bunker guarding the front. The prevailing wind adds another dimension to this strategic gem."
   },
   "teeTimeInfo": "",
-  "teeTips": "",
-  "yardage": "7,002",
-  "slope": "135",
-  "courseRating": "73.5",
-  "yearBuilt": "1986 (renovated 2014)",
+  "teeTips": [],
+  "yardage": 7002,
+  "slope": 135,
+  "courseRating": 73.5,
+  "yearBuilt": 1986,
   "logo": ""
 }

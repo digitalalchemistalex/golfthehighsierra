@@ -10,8 +10,8 @@
     "postalCode": "96150"
   },
   "geo": {
-    "lat": 38.9167,
-    "lng": -120.0167
+    "latitude": 38.9167,
+    "longitude": -120.0167
   },
   "phone": "(530) 577-0788",
   "website": "https://www.laketahoegc.com/",
@@ -51,11 +51,22 @@
     "title": "Lake Tahoe Golf Course \u2013 South Lake Tahoe | Golf The High Sierra",
     "description": "South Lake Tahoe's premier 18-hole public course with Sierra Nevada panoramas, the Upper Truckee River, and Audubon-certified natural beauty. Book through GTHS."
   },
-  "bodyText": "Since 1959, Lake Tahoe Golf Course has been the South Shore's go-to round \u2014 a William Bell Jr. design that plays through grassy mountain meadows with the Upper Truckee River creating natural water hazards and the Sierra Nevada providing a jaw-dropping 360-degree backdrop. As an Audubon-certified facility, the course preserves natural habitats for hawks, eagles, black bears, and beavers that golfers regularly encounter during their rounds. The park-style layout features tree-lined fairways, gentle streams, and strategic ponds that reward thoughtful shot-making over raw power.",
+  "bodyText": [
+    "Since 1959, Lake Tahoe Golf Course has been the South Shore's go-to round \u2014 a William Bell Jr. design that plays through grassy mountain meadows with the Upper Truckee River creating natural water hazards and the Sierra Nevada providing a jaw-dropping 360-degree backdrop. As an Audubon-certified facility, the course preserves natural habitats for hawks, eagles, black bears, and beavers that golfers regularly encounter during their rounds. The park-style layout features tree-lined fairways, gentle streams, and strategic ponds that reward thoughtful shot-making over raw power."
+  ],
   "tips": [
-    "Club down \u2014 at 6,260 feet elevation the ball carries 10% farther",
-    "The Upper Truckee River comes into play on several holes \u2014 respect the water",
-    "Morning rounds are magical with the mountains catching first light"
+    {
+      "title": "",
+      "content": "Club down \u2014 at 6,260 feet elevation the ball carries 10% farther"
+    },
+    {
+      "title": "",
+      "content": "The Upper Truckee River comes into play on several holes \u2014 respect the water"
+    },
+    {
+      "title": "",
+      "content": "Morning rounds are magical with the mountains catching first light"
+    }
   ],
   "facilities": [
     "Driving Range",
@@ -69,7 +80,7 @@
   ],
   "pointOfView": "The quintessential South Shore golf experience and a staple of every GTHS Lake Tahoe package. Minutes from Heavenly, Harrah's, and Harvey's \u2014 this is where your group plays the day they explore the South Shore. The meadow setting with river views offers a completely different vibe from the mountain courses up in Truckee.",
   "hack": "",
-  "distances": {},
+  "distances": [],
   "contentParagraphs": [],
   "featuredHole": {
     "number": 17,
@@ -78,10 +89,10 @@
     "description": "A scenic par 4 where the Upper Truckee River guards the right side and mature pines frame the left. The approach to an elevated green with mountain views behind is one of the most photographed shots in Tahoe golf."
   },
   "teeTimeInfo": "",
-  "teeTips": "",
-  "yardage": "6,741",
-  "slope": "129",
-  "courseRating": "71.3",
-  "yearBuilt": "1959",
+  "teeTips": [],
+  "yardage": 6741,
+  "slope": 129,
+  "courseRating": 71.3,
+  "yearBuilt": 1959,
   "logo": ""
 }
