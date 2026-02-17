@@ -1,0 +1,87 @@
+{
+  "slug": "lake-tahoe-golf-course",
+  "name": "Lake Tahoe Golf Course",
+  "region": "south-lake",
+  "regionLabel": "South Lake Tahoe",
+  "address": {
+    "streetAddress": "2500 Emerald Bay Road",
+    "addressLocality": "South Lake Tahoe",
+    "addressRegion": "CA",
+    "postalCode": "96150"
+  },
+  "geo": {
+    "lat": 38.9167,
+    "lng": -120.0167
+  },
+  "phone": "(530) 577-0788",
+  "website": "https://www.laketahoegc.com/",
+  "priceRange": "$$",
+  "rating": {
+    "value": 4.2,
+    "count": 275
+  },
+  "description": "The South Shore's premier public course, Lake Tahoe Golf Course is a William Bell Jr. design set against 360-degree Sierra Nevada views with the Upper Truckee River winding through its meadow-style layout. An Audubon-certified facility where you're as likely to spot eagles, bears, and beavers as birdies.",
+  "holes": 18,
+  "par": 71,
+  "designer": "William Bell Jr.",
+  "heroImage": "/images/courses/lake-tahoe-golf-course/hero.jpg",
+  "images": [
+    "/images/courses/lake-tahoe-golf-course/img-1.jpg",
+    "/images/courses/lake-tahoe-golf-course/img-2.jpg",
+    "/images/courses/lake-tahoe-golf-course/img-3.png",
+    "/images/courses/lake-tahoe-golf-course/img-4.jpg",
+    "/images/courses/lake-tahoe-golf-course/img-5.jpg"
+  ],
+  "videoUrl": "",
+  "faqs": [
+    {
+      "question": "When is the course open?",
+      "answer": "Lake Tahoe Golf Course is seasonal, typically open May through October depending on weather conditions. Twilight rates are available for afternoon play."
+    },
+    {
+      "question": "Can I host events at the course?",
+      "answer": "Yes. The clubhouse and patio host weddings and events for up to 165 guests with catering, full bar, and stunning mountain backdrops."
+    },
+    {
+      "question": "How does elevation affect play?",
+      "answer": "At 6,260 feet elevation, the ball flies roughly 10% farther than at sea level. Club down and enjoy the extra distance."
+    }
+  ],
+  "meta": {
+    "title": "Lake Tahoe Golf Course \u2013 South Lake Tahoe | Golf The High Sierra",
+    "description": "South Lake Tahoe's premier 18-hole public course with Sierra Nevada panoramas, the Upper Truckee River, and Audubon-certified natural beauty. Book through GTHS."
+  },
+  "bodyText": "Since 1959, Lake Tahoe Golf Course has been the South Shore's go-to round \u2014 a William Bell Jr. design that plays through grassy mountain meadows with the Upper Truckee River creating natural water hazards and the Sierra Nevada providing a jaw-dropping 360-degree backdrop. As an Audubon-certified facility, the course preserves natural habitats for hawks, eagles, black bears, and beavers that golfers regularly encounter during their rounds. The park-style layout features tree-lined fairways, gentle streams, and strategic ponds that reward thoughtful shot-making over raw power.",
+  "tips": [
+    "Club down \u2014 at 6,260 feet elevation the ball carries 10% farther",
+    "The Upper Truckee River comes into play on several holes \u2014 respect the water",
+    "Morning rounds are magical with the mountains catching first light"
+  ],
+  "facilities": [
+    "Driving Range",
+    "Practice Green",
+    "Chipping Area",
+    "Practice Bunker",
+    "Pro Shop",
+    "Restaurant",
+    "Bar",
+    "Event Space"
+  ],
+  "pointOfView": "The quintessential South Shore golf experience and a staple of every GTHS Lake Tahoe package. Minutes from Heavenly, Harrah's, and Harvey's \u2014 this is where your group plays the day they explore the South Shore. The meadow setting with river views offers a completely different vibe from the mountain courses up in Truckee.",
+  "hack": "",
+  "distances": {},
+  "contentParagraphs": [],
+  "featuredHole": {
+    "number": 17,
+    "par": 4,
+    "yardage": 405,
+    "description": "A scenic par 4 where the Upper Truckee River guards the right side and mature pines frame the left. The approach to an elevated green with mountain views behind is one of the most photographed shots in Tahoe golf."
+  },
+  "teeTimeInfo": "",
+  "teeTips": "",
+  "yardage": "6,741",
+  "slope": "129",
+  "courseRating": "71.3",
+  "yearBuilt": "1959",
+  "logo": ""
+}

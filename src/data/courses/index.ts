@@ -26,6 +26,9 @@ import washoeData from "./washoe-county-golf-course.json";
 import whitehawkData from "./whitehawk-ranch-golf-course.json";
 import wolfRunData from "./wolf-run-golf-club.json";
 import winchesterData from "./winchester-golf-country-club.json";
+import poppyHillsData from "./poppy-hills-golf-course.json";
+import bayonetBlackHorseData from "./bayonet-black-horse-golf-course.json";
+import lakeTahoeGCData from "./lake-tahoe-golf-course.json";
 
 export const ALL_COURSES = [
   arrowcreekData,
@@ -51,6 +54,9 @@ export const ALL_COURSES = [
   whitehawkData,
   winchesterData,
   wolfRunData,
+  poppyHillsData,
+  bayonetBlackHorseData,
+  lakeTahoeGCData,
 ] as const;
 
 export type CourseData = (typeof ALL_COURSES)[number];

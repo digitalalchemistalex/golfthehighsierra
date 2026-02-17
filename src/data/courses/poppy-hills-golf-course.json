@@ -1,0 +1,81 @@
+{
+  "slug": "poppy-hills-golf-course",
+  "name": "Poppy Hills Golf Course",
+  "region": "n-california",
+  "regionLabel": "Northern California",
+  "address": {
+    "streetAddress": "3200 Lopez Road",
+    "addressLocality": "Pebble Beach",
+    "addressRegion": "CA",
+    "postalCode": "93953"
+  },
+  "geo": {
+    "lat": 36.582368,
+    "lng": -121.938398
+  },
+  "phone": "(831) 622-8239",
+  "website": "https://poppyhillsgolf.ncga.org/",
+  "priceRange": "$$$",
+  "rating": {
+    "value": 4.5,
+    "count": 324
+  },
+  "description": "Nestled within Pebble Beach's Del Monte Forest, Poppy Hills is the NCGA's flagship course \u2014 a Robert Trent Jones Jr. masterpiece where towering Monterey Pines frame firm-and-fast fairways with no rough, just sandy naturalized areas and pine straw. Co-host of the AT&T Pebble Beach Pro-Am for 19 years and a Golf Digest Top 100 You Can Play.",
+  "holes": 18,
+  "par": 71,
+  "designer": "Robert Trent Jones Jr.",
+  "heroImage": "/images/courses/poppy-hills-golf-course/hero.jpg",
+  "images": [
+    "/images/courses/poppy-hills-golf-course/img-5.jpg"
+  ],
+  "videoUrl": "",
+  "faqs": [
+    {
+      "question": "Is Poppy Hills open to the public?",
+      "answer": "Yes. Poppy Hills is owned by the Northern California Golf Association and open to all golfers. NCGA members receive discounted rates."
+    },
+    {
+      "question": "What makes Poppy Hills unique?",
+      "answer": "It's the only course in America owned by an amateur golf association. The 2014 renovation removed all rough, replacing it with sandy waste areas and pine straw \u2014 creating firm, fast, links-style conditions in a forest setting."
+    },
+    {
+      "question": "How does Poppy Hills connect to GTHS trips?",
+      "answer": "Poppy Hills is part of GTHS Monterey Peninsula add-on packages, combining Pebble Beach area golf with the Reno-Tahoe experience for multi-destination golf vacations."
+    }
+  ],
+  "meta": {
+    "title": "Poppy Hills Golf Course \u2013 Pebble Beach | Golf The High Sierra",
+    "description": "Play the NCGA's flagship course in Pebble Beach \u2014 a RTJ Jr. masterpiece through the Del Monte Forest. Golf Digest Top 100, former AT&T Pro-Am host. Book through GTHS."
+  },
+  "bodyText": "Poppy Hills rides the rolling elevation of the Del Monte Forest, bringing together breathtaking design and golf's greatest landscape. Originally opened in 1986, the course underwent an extensive $10 million renovation in 2013-2014 that transformed it into what Colin Montgomerie compared to 'a little bit of Pinehurst and a little bit of Pine Valley.' The renovation removed 60 acres of irrigated turf, eliminated all rough in favor of sandy waste areas and pine straw, and opened surprising ocean views of Monterey Bay through the towering pines.",
+  "tips": [
+    "Play the sandy waste areas as you would links-style \u2014 bump and run works beautifully",
+    "The bentgrass greens are among the purest on the peninsula \u2014 trust your reads",
+    "Wind picks up in the afternoon \u2014 morning tee times play calmer"
+  ],
+  "facilities": [
+    "Driving Range",
+    "Practice Green",
+    "Pro Shop",
+    "Restaurant",
+    "Bar",
+    "Clubhouse"
+  ],
+  "pointOfView": "The closest you can get to playing golf in a National Park \u2014 Robert Trent Jones Jr.'s own words describe Poppy Hills perfectly. For GTHS groups adding a Monterey Peninsula extension, this is the most accessible championship course in Pebble Beach at a fraction of the cost of its famous neighbors.",
+  "hack": "",
+  "distances": {},
+  "contentParagraphs": [],
+  "featuredHole": {
+    "number": 15,
+    "par": 3,
+    "yardage": 183,
+    "description": "A brilliant Redan-style par 3 that demands precise club selection. The green angles away from the tee, with a deep bunker guarding the front. The prevailing wind adds another dimension to this strategic gem."
+  },
+  "teeTimeInfo": "",
+  "teeTips": "",
+  "yardage": "7,002",
+  "slope": "135",
+  "courseRating": "73.5",
+  "yearBuilt": "1986 (renovated 2014)",
+  "logo": ""
+}
