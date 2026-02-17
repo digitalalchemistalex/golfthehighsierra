@@ -41,8 +41,8 @@ export async function GET(req: NextRequest) {
     // Fetch each file to get name, region, heroImage
     const items = await Promise.all(
       files
-        .filter((f: any) => f.name.endsWith(".json"))
-        .map(async (f: any) => {
+        .filter((f: {name:string}) => f.name.endsWith(".json"))
+        .map(async (f: {name:string; url:string}) => {
           try {
             const r = await ghFetch(f.url);
             const d = await r.json();
@@ -60,7 +60,7 @@ export async function GET(req: NextRequest) {
         })
     );
 
-    return NextResponse.json({ items: items.sort((a: any, b: any) => a.name.localeCompare(b.name)) });
+    return NextResponse.json({ items: items.sort((a: {name:string}, b: {name:string}) => a.name.localeCompare(b.name)) });
   } catch (e) {
     return NextResponse.json({ error: String(e) }, { status: 500 });
   }

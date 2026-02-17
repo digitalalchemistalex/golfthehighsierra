@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 
 /* ═══ Types ═══ */
 interface Item { slug: string; name: string; type: string; region?: string; heroImage?: string; }
-interface BlogPost { slug: string; title: string; excerpt: string; category: string; date: string; readTime: string; icon: string; href: string; }
 
 /* ═══ Admin Dashboard ═══ */
 export default function AdminDashboard() {
@@ -13,7 +12,8 @@ export default function AdminDashboard() {
   const [tab, setTab] = useState<"courses"|"hotels"|"venues"|"blog"|"settings">("courses");
   const [items, setItems] = useState<Item[]>([]);
   const [loading, setLoading] = useState(false);
-  const [editing, setEditing] = useState<any>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [editing, setEditing] = useState<Record<string, any> | null>(null);
   const [saving, setSaving] = useState(false);
   const [toast, setToast] = useState("");
   const [search, setSearch] = useState("");
