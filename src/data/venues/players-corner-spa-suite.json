@@ -1,7 +1,7 @@
 {
   "slug": "players-corner-spa-suite",
   "name": "Players Corner Spa Suite",
-  "type": "lounge",
+  "type": "room",
   "region": "reno",
   "regionLabel": "Reno",
   "parentHotel": "silver-legacy-resort-casino",
@@ -17,18 +17,18 @@
   },
   "phone": "(775) 325-7401",
   "website": "https://www.silverlegacyreno.com",
-  "priceRange": "$$\u2013$$$",
-  "description": "Players Corner Spa Suite at Silver Legacy provides an exclusive, VIP-style lounge experience for high-value resort guests. This premium space offers complimentary beverages, comfortable seating, and a private atmosphere away from the bustling casino floor. It's a refined retreat where guests can relax and enjoy personalized service.",
-  "shortDescription": "Exclusive VIP lounge with complimentary beverages and personalized service at Silver Legacy.",
+  "priceRange": "$$$",
+  "description": "The Players Corner Spa Suite at Silver Legacy is a premium hotel room category located on floors 34-36, offering some of the best views in the resort. Each suite features modern furniture, sleek plush carpeting, a 55-inch television, a small living room area with wet bar, ergonomic chair and desk, and a refrigerator. The corner positioning provides city and mountain views from multiple windows. As a Caesars Rewards property, room rates and upgrades may be available based on player tier status.",
+  "shortDescription": "Premium corner suite on floors 34-36 with living area and mountain views at Silver Legacy.",
   "highlights": [
-    "VIP Access",
-    "Complimentary Beverages",
-    "Private Atmosphere",
-    "Personalized Service",
-    "Silver Legacy",
-    "Premium Lounge"
+    "Floors 34-36",
+    "Corner Mountain Views",
+    "Living Room Area",
+    "Wet Bar",
+    "55-inch TV",
+    "Caesars Rewards Eligible"
   ],
-  "hours": "By Invitation / Player Status",
+  "hours": "Hotel room - 24/7",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/11/EG74nuYU4AElPFf.jpg",
   "images": [],
   "faqs": [

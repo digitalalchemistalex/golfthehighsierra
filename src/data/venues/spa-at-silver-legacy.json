@@ -18,17 +18,17 @@
   "phone": "(775) 325-7401",
   "website": "https://www.silverlegacyreno.com/amenities/spa",
   "priceRange": "$$$",
-  "description": "The Spa at Silver Legacy offers a sanctuary of relaxation within one of Reno's premier casino resorts. Featuring a full menu of massage therapies, body treatments, facials, and salon services, the spa provides the perfect recovery after a day on the golf course. Private treatment rooms, a relaxation lounge, steam room, and sauna create a complete wellness experience.",
-  "shortDescription": "Full-service resort spa with massage, body treatments, and recovery services.",
+  "description": "The Spa at Silver Legacy is a 21,000-square-foot wellness facility occupying the entire fourth floor of the resort. The spa features 12 treatment rooms (including 3 couples suites), seven hydrotherapy soaking tubs, a Himalayan salt inhalation room, three relaxation lounges, two steam rooms, two saunas, two private hospitality suites for groups, and a full-service salon. Signature treatments include the Tahoe Trilogy salt scrub experience and the Fiery Snow Facial using hot and cold elements. Products feature custom-blended scents inspired by Sierra botanicals developed with UNR.",
+  "shortDescription": "21,000 sqft spa on Silver Legacy's 4th floor with 12 treatment rooms, salt room, and hydrotherapy.",
   "highlights": [
-    "Massage Therapies",
-    "Body Treatments",
-    "Facials & Salon",
-    "Steam Room & Sauna",
-    "Relaxation Lounge",
-    "Post-Golf Recovery"
+    "21,000 Square Feet",
+    "12 Treatment Rooms",
+    "Himalayan Salt Room",
+    "7 Hydrotherapy Tubs",
+    "Couples Suites",
+    "Full-Service Salon"
   ],
-  "hours": "Daily 9AM\u20137PM",
+  "hours": "Thu-Sun 9AM-7PM (Closed Mon-Wed)",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/11/EG74nuYU4AElPFf.jpg",
   "images": [],
   "faqs": [
