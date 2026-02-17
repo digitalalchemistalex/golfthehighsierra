@@ -335,13 +335,45 @@ export default function HeroTripSlider({ slug, type }: { slug: string; type: "co
       .catch(() => setLoaded(true));
   }, [slug, type]);
 
-  /* Auto-rotate — PAUSE on hover */
+  /* Auto-rotate — PAUSE on hover or touch */
   const next = useCallback(() => setActive(a => (a + 1) % Math.max(trips.length, 1)), [trips.length]);
+  const prev = useCallback(() => setActive(a => (a - 1 + trips.length) % trips.length), [trips.length]);
   useEffect(() => {
     if (trips.length < 2 || paused) return;
     const id = setInterval(next, 6000);
     return () => clearInterval(id);
   }, [trips.length, next, paused]);
+
+  /* Touch / swipe support */
+  const touchStartX = useRef(0);
+  const touchStartY = useRef(0);
+  const isSwiping = useRef(false);
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
+    isSwiping.current = false;
+    setPaused(true);
+  }, []);
+
+  const handleTouchMove = useCallback((e: React.TouchEvent) => {
+    const dx = e.touches[0].clientX - touchStartX.current;
+    const dy = e.touches[0].clientY - touchStartY.current;
+    // Only count as swipe if horizontal movement > vertical
+    if (Math.abs(dx) > 20 && Math.abs(dx) > Math.abs(dy)) {
+      isSwiping.current = true;
+    }
+  }, []);
+
+  const handleTouchEnd = useCallback((e: React.TouchEvent) => {
+    const dx = e.changedTouches[0].clientX - touchStartX.current;
+    if (isSwiping.current && Math.abs(dx) > 40) {
+      if (dx < 0) next();   // swipe left → next
+      else prev();          // swipe right → prev
+    }
+    isSwiping.current = false;
+    // Keep paused after touch interaction so it doesn't auto-advance while user is reading
+  }, [next, prev]);
 
   if (!loaded || trips.length === 0) return null;
 
@@ -352,6 +384,9 @@ export default function HeroTripSlider({ slug, type }: { slug: string; type: "co
       className="flex flex-col h-full"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
     >
       {/* Header */}
       <div className="px-6 pt-20 pb-3 lg:px-8 lg:pt-24 shrink-0">
@@ -378,7 +413,7 @@ export default function HeroTripSlider({ slug, type }: { slug: string; type: "co
       {/* Navigation */}
       {trips.length > 1 && (
         <div className="flex items-center justify-between px-6 py-4 lg:px-8 shrink-0">
-          <button onClick={() => setActive(a => (a - 1 + trips.length) % trips.length)} className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white/50 hover:text-white transition-all border border-white/10">
+          <button onClick={prev} className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white/50 hover:text-white transition-all border border-white/10">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
           </button>
           <div className="flex gap-2">
