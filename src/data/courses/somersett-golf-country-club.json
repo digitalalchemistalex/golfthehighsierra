@@ -22,7 +22,11 @@
   "par": 72,
   "designer": "Tom Kite",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/somersett.jpg",
-  "images": [],
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/somersett.jpg",
+    "/images/courses/somersett-golf-country-club/aerial.jpg",
+    "https://www.somersettgolf.com/getmedia/5bfa02ea-1fda-4e86-8d46-a6252dd37908/dji_fly_20241029_172338_379_1730247835266_photo_optimized.aspx?width=2000&height=1125&ext=.jpg"
+  ],
   "videoUrl": "",
   "faqs": [
     {

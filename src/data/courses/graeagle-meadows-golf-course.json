@@ -22,7 +22,13 @@
   "par": 72,
   "designer": "Ellis Van Gorder",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/08/GraeagleGC.jpg",
-  "images": [],
+  "images": [
+    "/images/courses/graeagle-meadows-golf-course/overview.webp",
+    "/images/courses/graeagle-meadows-golf-course/greagle-meadows.webp",
+    "/images/courses/graeagle-meadows-golf-course/the-course.webp",
+    "/images/courses/graeagle-meadows-golf-course/graeagle-meadows-golf-course-03.webp",
+    "/images/courses/graeagle-meadows-golf-course/graeagle-meadows-golf-course-04.webp"
+  ],
   "videoUrl": "",
   "faqs": [
     {

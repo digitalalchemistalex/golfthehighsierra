@@ -12,7 +12,7 @@
   "geo": {},
   "phone": "+1-888-584-8232",
   "website": "https://golfthehighsierra.com/portfolio/genoa-lakes-golf-club/",
-  "priceRange": "$179–$399",
+  "priceRange": "$179\u2013$399",
   "rating": {
     "value": 4.8,
     "count": 347
@@ -22,20 +22,26 @@
   "par": 72,
   "designer": "Peter Jacobsen & Jim Hardy",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2024/04/genoa-lakes.jpg",
-  "images": [],
+  "images": [
+    "/images/courses/genoa-lakes-golf-club/fairway-1.jpg",
+    "/images/courses/genoa-lakes-golf-club/fairway-2.jpg",
+    "/images/courses/genoa-lakes-golf-club/hole-3.jpg",
+    "/images/courses/genoa-lakes-golf-club/hole-4.jpg",
+    "/images/courses/genoa-lakes-golf-club/events.jpg"
+  ],
   "videoUrl": "",
   "faqs": [
     {
-      "question": "What’s included in Genoa Lakes golf group packages?",
+      "question": "What\u2019s included in Genoa Lakes golf group packages?",
       "answer": "Lodging, guaranteed tee times, carts, and concierge planning. Optional transportation, dining, and multi-course itineraries."
     },
     {
       "question": "What do Genoa Lakes group packages cost?",
-      "answer": "Typical range is $179–$399 per golfer depending on dates, lodging selection, and group size."
+      "answer": "Typical range is $179\u2013$399 per golfer depending on dates, lodging selection, and group size."
     },
     {
       "question": "Do you handle corporate or tournament groups?",
-      "answer": "Yes—room blocks, tee-time blocks, tournament setup, and transportation for corporate and leisure groups."
+      "answer": "Yes\u2014room blocks, tee-time blocks, tournament setup, and transportation for corporate and leisure groups."
     }
   ],
   "meta": {
@@ -50,7 +56,7 @@
     "The\nLakes Course\nwas co-designed by\nPeter Jacobsen and John Harbottle III\n, while the\nRanch Course\nwas designed by\nJohnny Miller and John Harbottle III\n.",
     "The\nLakes Course\nis lush and scenic, with wetlands and the Carson River in play.\nThe\nRanch Course\nis built into the Sierra foothills with bunkers, elevation changes, and panoramic desert views.",
     "Yes. Both courses are open to public play, with seasonal rates, twilight discounts, and group packages available.",
-    "Yes. Golf the High Sierra offers\ncustom stay-and-play packages\nthat include Genoa Lakes, nearby lodging, and optional add-ons like dining or spa experiences.\nRequest your package here »"
+    "Yes. Golf the High Sierra offers\ncustom stay-and-play packages\nthat include Genoa Lakes, nearby lodging, and optional add-ons like dining or spa experiences.\nRequest your package here \u00bb"
   ],
   "tips": [
     {
@@ -59,7 +65,7 @@
     },
     {
       "title": "Can I book a stay-and-play package with Genoa Lakes?",
-      "content": "Yes. Golf the High Sierra offers\ncustom stay-and-play packages\nthat include Genoa Lakes, nearby lodging, and optional add-ons like dining or spa experiences.\nRequest your package here »"
+      "content": "Yes. Golf the High Sierra offers\ncustom stay-and-play packages\nthat include Genoa Lakes, nearby lodging, and optional add-ons like dining or spa experiences.\nRequest your package here \u00bb"
     },
     {
       "title": "Golf The High Sierra",
@@ -72,7 +78,7 @@
   ],
   "facilities": [
     "The Ranch Course is built into the Sierra foothills with bunkers, elevation changes, and panoramic desert views.",
-    "Yes. Golf the High Sierra offers custom stay-and-play packages that include Genoa Lakes, nearby lodging, and optional add-ons like dining or spa experiences. Request your package here »",
+    "Yes. Golf the High Sierra offers custom stay-and-play packages that include Genoa Lakes, nearby lodging, and optional add-ons like dining or spa experiences. Request your package here \u00bb",
     "Trips Caddie",
     "All Lake Tahoe Resort"
   ],
@@ -87,7 +93,7 @@
     "Luxury and performance are the name of the game on the Lakes Course. Co-designed by PGA Champion Peter Jacobsen and John Harbottle III, this links-style course with rolling fairways meets head-on with the eastern slopes of the breathtaking Sierra Nevada Mountains."
   ],
   "featuredHole": {
-    "title": "Hole #5 — Par 3",
+    "title": "Hole #5 \u2014 Par 3",
     "description": "A beautiful par 3 with the Sierra Nevada range framing the background. Water guards the front and right of the green. Club selection is critical at this elevation."
   },
   "teeTimeInfo": "",

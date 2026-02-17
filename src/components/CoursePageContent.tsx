@@ -105,6 +105,11 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
   const [lbIndex, setLbIndex] = useState<number | null>(null);
 
   const gallery = course.images.filter(u => !isScorecard(u) && !isLogo(u));
+  // Ensure at least 3 gallery images by falling back to heroImage
+  const displayGallery = gallery.length >= 3 ? gallery : [
+    ...(course.heroImage ? [course.heroImage] : []),
+    ...gallery,
+  ].filter((v, i, a) => a.indexOf(v) === i).slice(0, 3);
   const distances = course.distances?.length ? course.distances : parseDistances(course.bodyText || []);
   const addr = course.address;
   const nameParts = course.name.split(" ");
@@ -188,7 +193,7 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
           <R delay={0.24}><p style={{ fontSize: 13, lineHeight: 1.9, color: "var(--stone)", fontWeight: 300, maxWidth: 440 }}>From 8 to 100 players — consecutive tee times, rooming lists, comps for organizers. Buddy trip, corporate outing, or charity tournament. 20+ years of expert group planning.</p></R>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: 4 }} className="max-md:!min-h-[400px]">
-          {gallery.slice(0, 3).map((img, i) => (
+          {displayGallery.slice(0, 3).map((img, i) => (
             <div key={i} style={{ overflow: "hidden", position: "relative", cursor: "pointer", ...(i === 2 ? { gridColumn: "span 2" } : {}) }} onClick={() => setLbIndex(i)}>
               <Image src={img} alt={`${course.name} ${i + 1}`} fill className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.06] transition-all duration-700" sizes="(max-width:900px) 100vw, 50vw" />
             </div>
@@ -199,7 +204,7 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
       {/* ═══ 3. DARK FEATURE ═══ */}
       <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", background: "var(--ink)" }} className="max-md:!grid-cols-1">
         <div style={{ position: "relative", overflow: "hidden", minHeight: 400 }} className="max-md:!min-h-[300px]">
-          {gallery[1] && <Image src={gallery[1]} alt="Feature" fill className="object-cover opacity-60 hover:opacity-75 hover:scale-[1.04] transition-all duration-[8s]" sizes="(max-width:900px) 100vw, 50vw" />}
+          {displayGallery[1] && <Image src={displayGallery[1]} alt="Feature" fill className="object-cover opacity-60 hover:opacity-75 hover:scale-[1.04] transition-all duration-[8s]" sizes="(max-width:900px) 100vw, 50vw" />}
         </div>
         <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14 }}>
@@ -334,7 +339,7 @@ export default function CoursePageContent({ course, relatedCourses = [] }: { cou
       </section>
 
       {/* Lightbox */}
-      {lbIndex !== null && <Lightbox images={gallery} startIndex={lbIndex} onClose={() => setLbIndex(null)} name={course.name} />}
+      {lbIndex !== null && <Lightbox images={displayGallery.length > 0 ? displayGallery : gallery} startIndex={lbIndex} onClose={() => setLbIndex(null)} name={course.name} />}
 
       {/* Keyframes */}
       <style jsx global>{`

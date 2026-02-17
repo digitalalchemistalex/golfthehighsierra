@@ -22,7 +22,9 @@
   "par": 72,
   "designer": "Jack Miller & Homer Flint (West) / Rocky Roquemore (East)",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/08/EagleValleyWest2.jpg",
-  "images": [],
+  "images": [
+    "https://golfthehighsierra.com/wp-content/uploads/2021/08/EagleValleyWest2.jpg"
+  ],
   "videoUrl": "",
   "faqs": [
     {
