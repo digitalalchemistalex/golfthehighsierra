@@ -13,6 +13,7 @@ interface HotelRating { value: number; count: number; sources: string; }
 interface HotelRoomType { name: string; description: string; priceFrom?: string; image?: string; }
 interface HotelDining { name: string; slug?: string; type: string; description: string; }
 interface HotelFAQ { question: string; answer: string; }
+interface HotelTestimonial { stars: number; quote: string; author: string; source: string; meta: string; }
 
 export interface HotelProps {
   slug: string; name: string; region?: string; regionLabel: string; type?: string;
@@ -21,7 +22,7 @@ export interface HotelProps {
   rating?: HotelRating; description: string; shortDescription: string;
   highlights: string[]; amenities: string[]; roomTypes: HotelRoomType[];
   dining: HotelDining[]; spaBars: string[]; totalRooms?: number | null;
-  parking: string; images: string[]; heroImage: string; faqs: HotelFAQ[];
+  parking: string; images: string[]; heroImage: string; faqs: HotelFAQ[]; testimonials?: HotelTestimonial[];
   relatedCourses: string[]; relatedHotels: string[];
   meta?: { title: string; description: string };
 }
@@ -342,9 +343,31 @@ export default function HotelPageContent({ hotel, relatedHotels = [], blurs = {}
         </section>
       )}
 
+      {/* ═══ TESTIMONIALS ═══ */}
+      {hotel.testimonials && hotel.testimonials.length > 0 && (
+        <section style={{ background: "#f9f7f2", padding: "clamp(56px,8vh,96px) clamp(24px,5vw,80px)" }}>
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14, textAlign: "center" }}>Guest Reviews</div></R>
+            <R delay={0.06}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(24px,3vw,36px)", lineHeight: 1.15, color: "var(--ink)", textAlign: "center", marginBottom: 40 }}>What Guests Say About {firstName}</h2></R>
+            <div style={{ display: "grid", gap: 20 }}>
+              {hotel.testimonials.map((t, i) => (
+                <R key={i} delay={0.08 + i * 0.06}>
+                  <div style={{ background: "#fff", borderRadius: 12, padding: "28px 28px 24px", boxShadow: "0 2px 12px rgba(0,0,0,.04)", border: "1px solid rgba(0,0,0,.04)" }}>
+                    <div style={{ color: "#C9A24D", fontSize: 16, marginBottom: 8, letterSpacing: 2 }}>{"★".repeat(t.stars)}{"☆".repeat(5 - t.stars)}</div>
+                    <p style={{ fontSize: 14, lineHeight: 1.7, color: "#444", margin: "0 0 14px", fontStyle: "italic" }}>&ldquo;{t.quote}&rdquo;</p>
+                    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                      <div style={{ width: 32, height: 32, borderRadius: "50%", background: "var(--ink)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 600 }}>{t.author[0]}</div>
+                      <div><div style={{ fontSize: 13, fontWeight: 600, color: "var(--ink)" }}>{t.author}</div><div style={{ fontSize: 11, color: "#999" }}>{t.meta}</div></div>
+                    </div>
+                  </div>
+                </R>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* ═══ 5. CTA ═══ */}
-      <section style={{ background: "var(--ink)", textAlign: "center", padding: "clamp(64px,10vh,120px) clamp(32px,7vw,120px)", position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 60%,rgba(201,162,77,.05),transparent 70%)" }} />
         <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14, position: "relative", zIndex: 1 }}>Stay &amp; Play</div></R>
         <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, color: "#fff", marginBottom: 12, position: "relative", zIndex: 1 }}>Book {firstName} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.65)" }}>Golf Package</em></h2></R>
         <R delay={0.16}><p style={{ fontSize: 13, color: "rgba(255,255,255,.6)", fontWeight: 300, maxWidth: 380, margin: "0 auto 28px", lineHeight: 1.8, position: "relative", zIndex: 1 }}>
@@ -382,3 +405,4 @@ export default function HotelPageContent({ hotel, relatedHotels = [], blurs = {}
     </div>
   );
 }
+
