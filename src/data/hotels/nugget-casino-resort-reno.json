@@ -75,8 +75,12 @@
   "spaBars": [],
   "totalRooms": 1380,
   "parking": "Free self-parking",
-  "images": [],
-  "heroImage": "",
+  "images": [
+    "/images/hotels/nugget-casino-resort-reno/img-1.jpg",
+    "/images/hotels/nugget-casino-resort-reno/img-2.jpg",
+    "/images/hotels/nugget-casino-resort-reno/img-3.jpg"
+  ],
+  "heroImage": "/images/hotels/nugget-casino-resort-reno/hero.jpg",
   "faqs": [
     {
       "question": "Where is Nugget Casino Resort?",

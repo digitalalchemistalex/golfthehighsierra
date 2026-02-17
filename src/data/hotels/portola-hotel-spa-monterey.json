@@ -74,8 +74,11 @@
     "Peter B's Brewpub"
   ],
   "parking": "Valet parking available",
-  "images": [],
-  "heroImage": "",
+  "images": [
+    "/images/hotels/portola-hotel-spa-monterey/img-1.jpg",
+    "/images/hotels/portola-hotel-spa-monterey/img-2.jpg"
+  ],
+  "heroImage": "/images/hotels/portola-hotel-spa-monterey/hero.jpg",
   "faqs": [
     {
       "question": "How close is Portola to Pebble Beach?",

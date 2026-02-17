@@ -112,8 +112,12 @@
   ],
   "totalRooms": 814,
   "parking": "Free parking in Silver Legacy garage",
-  "images": [],
-  "heroImage": "",
+  "images": [
+    "/images/hotels/eldorado-resorts-reno-eldorado-at-the-row/img-1.jpg",
+    "/images/hotels/eldorado-resorts-reno-eldorado-at-the-row/img-2.jpg",
+    "/images/hotels/eldorado-resorts-reno-eldorado-at-the-row/img-3.jpg"
+  ],
+  "heroImage": "/images/hotels/eldorado-resorts-reno-eldorado-at-the-row/hero.jpg",
   "faqs": [
     {
       "question": "How many room types does Eldorado have?",

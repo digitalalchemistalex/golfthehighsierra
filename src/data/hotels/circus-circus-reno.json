@@ -69,8 +69,12 @@
   "spaBars": [],
   "totalRooms": 572,
   "parking": "Free parking in Silver Legacy garage",
-  "images": [],
-  "heroImage": "",
+  "images": [
+    "/images/hotels/circus-circus-reno/interior.jpg",
+    "/images/hotels/circus-circus-reno/midway.jpg",
+    "/images/hotels/circus-circus-reno/casino.jpg"
+  ],
+  "heroImage": "/images/hotels/circus-circus-reno/hero.jpg",
   "faqs": [
     {
       "question": "Is Circus Circus good for golf groups on a budget?",

@@ -67,8 +67,13 @@
     "Cabaret Lounge"
   ],
   "parking": "Free self-parking",
-  "images": [],
-  "heroImage": "",
+  "images": [
+    "/images/hotels/carson-valley-inn-casino/room.jpg",
+    "/images/hotels/carson-valley-inn-casino/suites.jpg",
+    "/images/hotels/carson-valley-inn-casino/golf.png",
+    "/images/hotels/carson-valley-inn-casino/pool.png"
+  ],
+  "heroImage": "/images/hotels/carson-valley-inn-casino/hero.jpg",
   "faqs": [
     {
       "question": "What golf courses are near Carson Valley Inn?",

@@ -85,8 +85,12 @@
   ],
   "totalRooms": 1720,
   "parking": "Free parking in Silver Legacy garage",
-  "images": [],
-  "heroImage": "",
+  "images": [
+    "/images/hotels/silver-legacy-resort-casino/img-1.jpg",
+    "/images/hotels/silver-legacy-resort-casino/img-2.jpg",
+    "/images/hotels/silver-legacy-resort-casino/img-3.jpg"
+  ],
+  "heroImage": "/images/hotels/silver-legacy-resort-casino/hero.jpg",
   "faqs": [
     {
       "question": "Is Silver Legacy connected to other casinos?",

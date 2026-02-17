@@ -76,8 +76,12 @@
     "Lakeside Beach Bar"
   ],
   "parking": "Valet and self-parking",
-  "images": [],
-  "heroImage": "",
+  "images": [
+    "/images/hotels/hyatt-lake-tahoe/img-1.jpg",
+    "/images/hotels/hyatt-lake-tahoe/img-2.jpg",
+    "/images/hotels/hyatt-lake-tahoe/img-3.jpg"
+  ],
+  "heroImage": "/images/hotels/hyatt-lake-tahoe/hero.jpg",
   "faqs": [
     {
       "question": "How close is Hyatt to golf courses?",
