@@ -14,7 +14,7 @@
     "Ultra Casino Experience"
   ],
   "hours": "Mon - Wed Closed | Thu 6pm - 2am | Fri - Sun 10am - Close",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Bar-Centro-1440x530-1.jpg",
+  "heroImage": "/images/venues/eldorado-bar-centro/hero.jpg",
   "faqs": [
     {
       "question": "What makes Bar Centro special?",
@@ -30,7 +30,7 @@
     }
   ],
   "meta": {
-    "title": "Bar Centro – Chic Casino Bar at Eldorado Reno | Golf The High Sierra",
+    "title": "Bar Centro \u2013 Chic Casino Bar at Eldorado Reno | Golf The High Sierra",
     "description": "Sip fresh hand-squeezed cocktails at Bar Centro, the chic raised bar in the heart of Eldorado's casino floor in downtown Reno."
   },
   "region": "reno",
@@ -55,14 +55,14 @@
       "quote": "Post-round drinks at Bar Centro are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
       "author": "Sandy L.",
       "source": "Yelp",
-      "meta": "Yelp · golf trip group"
+      "meta": "Yelp \u00b7 golf trip group"
     },
     {
       "stars": 5,
       "quote": "Bar Centro has become our go-to after-golf hangout. Cold beers, good energy, and it's right inside eldorado-resorts-reno-eldorado-at-the-row. GTHS knows all the best spots.",
       "author": "Keith F.",
       "source": "Google",
-      "meta": "Google · corporate dinner (48)"
+      "meta": "Google \u00b7 corporate dinner (48)"
     }
   ]
 }

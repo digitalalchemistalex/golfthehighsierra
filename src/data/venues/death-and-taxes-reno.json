@@ -28,8 +28,8 @@
     "Intimate Atmosphere",
     "Midtown Location"
   ],
-  "hours": "Thu–Sat 7PM–2AM",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/02/death-and-taxes-reno-1-scaled.jpg",
+  "hours": "Thu\u2013Sat 7PM\u20132AM",
+  "heroImage": "/images/venues/death-and-taxes-reno/hero.jpg",
   "images": [],
   "faqs": [
     {
@@ -46,7 +46,7 @@
     }
   ],
   "meta": {
-    "title": "Death & Taxes – Speakeasy Cocktails in Reno | Golf The High Sierra",
+    "title": "Death & Taxes \u2013 Speakeasy Cocktails in Reno | Golf The High Sierra",
     "description": "Experience prohibition-era cocktails at Death & Taxes, Reno's acclaimed speakeasy. An unforgettable nightcap for golf groups."
   },
   "testimonials": [
@@ -55,14 +55,14 @@
       "quote": "We ended every day of our golf trip at Death & Taxes. Great selection, friendly bartenders, and the kind of place where your group can be loud and happy after a great round.",
       "author": "Rebecca C.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · corporate dinner (16)"
+      "meta": "TripAdvisor \u00b7 corporate dinner (16)"
     },
     {
       "stars": 5,
       "quote": "Death & Taxes has become our go-to after-golf hangout. Cold beers, good energy, and it's right in the heart of Reno. GTHS knows all the best spots.",
       "author": "Angela N.",
       "source": "Yelp",
-      "meta": "Yelp · corporate dinner (24)"
+      "meta": "Yelp \u00b7 corporate dinner (24)"
     }
   ]
 }

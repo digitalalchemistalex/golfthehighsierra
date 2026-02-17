@@ -14,10 +14,10 @@
     "Circular Wet Bar"
   ],
   "hours": "Check-in 4pm | Check-out 11am",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/ELDO-XC-Executive-Suite-King-1440x530-Web-Hero.jpg",
+  "heroImage": "/images/venues/eldorado-sierra-executive-suite/hero.jpg",
   "meta": {
-    "title": "Sierra Executive Suite 1 King – Eldorado Reno | Golf The High Sierra",
-    "description": "Book the Sierra Executive Suite at Eldorado Reno – 820 sq ft one-bedroom suite with separate living room and wet bar."
+    "title": "Sierra Executive Suite 1 King \u2013 Eldorado Reno | Golf The High Sierra",
+    "description": "Book the Sierra Executive Suite at Eldorado Reno \u2013 820 sq ft one-bedroom suite with separate living room and wet bar."
   },
   "region": "reno",
   "regionLabel": "Reno",
@@ -42,14 +42,14 @@
       "quote": "Sierra Executive Suite | 1 King was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
       "author": "Tom P.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · team outing"
+      "meta": "TripAdvisor \u00b7 team outing"
     },
     {
       "stars": 5,
       "quote": "Visited Sierra Executive Suite | 1 King during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
       "author": "Nick M.",
       "source": "Yelp",
-      "meta": "Yelp · date night during golf trip"
+      "meta": "Yelp \u00b7 date night during golf trip"
     }
   ]
 }

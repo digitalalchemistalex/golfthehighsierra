@@ -14,10 +14,10 @@
     "June Jacobs Products"
   ],
   "hours": "Check-in 4pm | Check-out 11am",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/luxury-tower-room-hero.jpg",
+  "heroImage": "/images/venues/atlantis-luxury-tower-room/hero.jpg",
   "meta": {
-    "title": "Luxury Tower Room – Atlantis Reno | Golf The High Sierra",
-    "description": "Book the Luxury Tower Room at Atlantis Reno – upgraded appointments with panoramic Sierra views and Bose audio."
+    "title": "Luxury Tower Room \u2013 Atlantis Reno | Golf The High Sierra",
+    "description": "Book the Luxury Tower Room at Atlantis Reno \u2013 upgraded appointments with panoramic Sierra views and Bose audio."
   },
   "region": "reno",
   "regionLabel": "Reno",
@@ -42,14 +42,14 @@
       "quote": "Visited Luxury Tower Room during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
       "author": "Keith C.",
       "source": "Google",
-      "meta": "Google · golf trip group"
+      "meta": "Google \u00b7 golf trip group"
     },
     {
       "stars": 5,
       "quote": "Luxury Tower Room was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
       "author": "Patrick C.",
       "source": "Google",
-      "meta": "Google · date night during golf trip"
+      "meta": "Google \u00b7 date night during golf trip"
     }
   ]
 }

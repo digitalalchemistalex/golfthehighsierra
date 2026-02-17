@@ -14,10 +14,10 @@
     "Finest Amenities"
   ],
   "hours": "Check-in 4pm | Check-out 11am",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/2-atlantis-room-hero-shot-2020-atrium-paradise-suite.jpg",
+  "heroImage": "/images/venues/atlantis-atrium-paradise-suite/hero.jpg",
   "meta": {
-    "title": "Atrium Paradise Suite – Atlantis Reno | Golf The High Sierra",
-    "description": "Book the Atrium Paradise Suite at Atlantis Reno – the resort's premier luxury suite with VIP treatment and butler service."
+    "title": "Atrium Paradise Suite \u2013 Atlantis Reno | Golf The High Sierra",
+    "description": "Book the Atrium Paradise Suite at Atlantis Reno \u2013 the resort's premier luxury suite with VIP treatment and butler service."
   },
   "region": "reno",
   "regionLabel": "Reno",
@@ -42,14 +42,14 @@
       "quote": "Atrium Paradise Suite was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
       "author": "Paul S.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · group dinner (24)"
+      "meta": "TripAdvisor \u00b7 group dinner (24)"
     },
     {
       "stars": 5,
       "quote": "Visited Atrium Paradise Suite during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
       "author": "Mark W.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · after-round drinks"
+      "meta": "TripAdvisor \u00b7 after-round drinks"
     }
   ]
 }

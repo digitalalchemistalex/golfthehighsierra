@@ -14,7 +14,7 @@
     "USB Phone Charging"
   ],
   "hours": "Mon - Thu & Sun Closed | Fri & Sat 5pm - Closing",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/HiddenPizzaBG.jpg",
+  "heroImage": "/images/venues/eldorado-hidden-pizza/hero.jpg",
   "faqs": [
     {
       "question": "Where is Hidden Pizza?",
@@ -30,8 +30,8 @@
     }
   ],
   "meta": {
-    "title": "Hidden Pizza – Late Night NY-Style at Eldorado Reno | Golf The High Sierra",
-    "description": "Discover Hidden Pizza at Eldorado Reno – New York-style wood-fired pies on weekends, tucked away on the second floor."
+    "title": "Hidden Pizza \u2013 Late Night NY-Style at Eldorado Reno | Golf The High Sierra",
+    "description": "Discover Hidden Pizza at Eldorado Reno \u2013 New York-style wood-fired pies on weekends, tucked away on the second floor."
   },
   "region": "reno",
   "regionLabel": "Reno",
@@ -55,14 +55,14 @@
       "quote": "Hidden Pizza was the perfect post-golf dinner spot. The menu had something for everyone in our group. eldorado-resorts-reno-eldorado-at-the-row is lucky to have this on-site.",
       "author": "Rachel B.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · golf trip group"
+      "meta": "TripAdvisor \u00b7 golf trip group"
     },
     {
       "stars": 5,
       "quote": "Golf the High Sierra arranged our group dinner at Hidden Pizza and it was a highlight of the trip. Great atmosphere, excellent food, and they accommodated all our dietary needs.",
       "author": "Luke F.",
       "source": "Yelp",
-      "meta": "Yelp · corporate dinner (8)"
+      "meta": "Yelp \u00b7 corporate dinner (8)"
     }
   ]
 }

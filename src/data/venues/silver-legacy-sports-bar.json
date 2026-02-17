@@ -28,8 +28,8 @@
     "Bar Food",
     "Group Seating"
   ],
-  "hours": "Daily 10AM–2AM",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/11/Sports-Book-Bar-SLR-Web-Hero-1440x530-1.jpg",
+  "hours": "Daily 10AM\u20132AM",
+  "heroImage": "/images/venues/silver-legacy-sports-bar/hero.jpg",
   "images": [],
   "faqs": [
     {
@@ -46,7 +46,7 @@
     }
   ],
   "meta": {
-    "title": "Silver Legacy Sports Bar – Reno Casino Sports | Golf The High Sierra",
+    "title": "Silver Legacy Sports Bar \u2013 Reno Casino Sports | Golf The High Sierra",
     "description": "Catch every game on wall-to-wall screens at Silver Legacy's Sports Bar. The Row's go-to spot for golf groups in Reno."
   },
   "testimonials": [
@@ -55,14 +55,14 @@
       "quote": "Silver Legacy Sports Bar has become our go-to after-golf hangout. Cold beers, good energy, and it's right inside silver-legacy-resort-casino. GTHS knows all the best spots.",
       "author": "Sarah S.",
       "source": "Google",
-      "meta": "Google · after-round drinks"
+      "meta": "Google \u00b7 after-round drinks"
     },
     {
       "stars": 5,
       "quote": "We ended every day of our golf trip at Silver Legacy Sports Bar. Great selection, friendly bartenders, and the kind of place where your group can be loud and happy after a great round.",
       "author": "Michelle E.",
       "source": "Yelp",
-      "meta": "Yelp · corporate dinner (28)"
+      "meta": "Yelp \u00b7 corporate dinner (28)"
     }
   ]
 }

@@ -28,8 +28,8 @@
     "The Row Complex",
     "Individual Stations"
   ],
-  "hours": "Daily 9AM–1AM",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Sportsbar-1440x530-1.jpg",
+  "hours": "Daily 9AM\u20131AM",
+  "heroImage": "/images/venues/stadium-bar-eldorado/hero.jpg",
   "images": [],
   "faqs": [
     {
@@ -46,7 +46,7 @@
     }
   ],
   "meta": {
-    "title": "Stadium Bar at Eldorado – Sports & Betting Reno | Golf The High Sierra",
+    "title": "Stadium Bar at Eldorado \u2013 Sports & Betting Reno | Golf The High Sierra",
     "description": "Experience premium sports viewing and betting at Eldorado's Stadium Bar. Massive LED wall and craft beers on The Row."
   },
   "testimonials": [
@@ -55,14 +55,14 @@
       "quote": "Stadium Bar has become our go-to after-golf hangout. Cold beers, good energy, and it's right inside eldorado-resorts-reno-eldorado-at-the-row. GTHS knows all the best spots.",
       "author": "Jeff P.",
       "source": "Google",
-      "meta": "Google · group dinner (12)"
+      "meta": "Google \u00b7 group dinner (12)"
     },
     {
       "stars": 5,
       "quote": "Post-round drinks at Stadium Bar are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
       "author": "Ryan P.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · group dinner (32)"
+      "meta": "TripAdvisor \u00b7 group dinner (32)"
     }
   ]
 }

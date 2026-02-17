@@ -14,7 +14,7 @@
     "Grab & Go"
   ],
   "hours": "Daily",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/StarbucksELR_1440x530.jpg",
+  "heroImage": "/images/venues/eldorado-starbucks/hero.jpg",
   "faqs": [
     {
       "question": "Is this a full Starbucks?",
@@ -55,14 +55,14 @@
       "quote": "Had dinner at Starbucks Coffee after our round and it was fantastic. Great food, attentive service, and they handled our group of 16 without a hitch. GTHS recommended it and they were spot on.",
       "author": "Nathan N.",
       "source": "Google",
-      "meta": "Google · group dinner (8)"
+      "meta": "Google \u00b7 group dinner (8)"
     },
     {
       "stars": 5,
       "quote": "Golf the High Sierra arranged our group dinner at Starbucks Coffee and it was a highlight of the trip. Great atmosphere, excellent food, and they accommodated all our dietary needs.",
       "author": "Jennifer M.",
       "source": "Yelp",
-      "meta": "Yelp · team outing"
+      "meta": "Yelp \u00b7 team outing"
     }
   ]
 }

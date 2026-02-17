@@ -29,7 +29,7 @@
     "Caesars Rewards Eligible"
   ],
   "hours": "Hotel room - 24/7",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/11/EG74nuYU4AElPFf.jpg",
+  "heroImage": "/images/venues/players-corner-spa-suite/hero.jpg",
   "images": [],
   "faqs": [
     {
@@ -46,7 +46,7 @@
     }
   ],
   "meta": {
-    "title": "Players Corner Spa Suite – VIP Lounge Silver Legacy | Golf The High Sierra",
+    "title": "Players Corner Spa Suite \u2013 VIP Lounge Silver Legacy | Golf The High Sierra",
     "description": "Experience VIP treatment at the Players Corner Spa Suite in Silver Legacy. Exclusive lounge with complimentary beverages for qualifying guests."
   },
   "testimonials": [
@@ -55,14 +55,14 @@
       "quote": "Visited Players Corner Spa Suite during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
       "author": "Rebecca S.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · group dinner (16)"
+      "meta": "TripAdvisor \u00b7 group dinner (16)"
     },
     {
       "stars": 5,
       "quote": "Players Corner Spa Suite was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
       "author": "James H.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · group dinner (12)"
+      "meta": "TripAdvisor \u00b7 group dinner (12)"
     }
   ]
 }

@@ -29,7 +29,7 @@
     "Full-Service Salon"
   ],
   "hours": "Thu-Sun 9AM-7PM (Closed Mon-Wed)",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/11/EG74nuYU4AElPFf.jpg",
+  "heroImage": "/images/venues/spa-at-silver-legacy/hero.jpg",
   "images": [],
   "faqs": [
     {
@@ -46,7 +46,7 @@
     }
   ],
   "meta": {
-    "title": "The Spa at Silver Legacy – Reno Resort Spa | Golf The High Sierra",
+    "title": "The Spa at Silver Legacy \u2013 Reno Resort Spa | Golf The High Sierra",
     "description": "Recover after golf with massage, body treatments, and sauna at The Spa at Silver Legacy in Reno. Book your wellness experience."
   },
   "testimonials": [
@@ -55,14 +55,14 @@
       "quote": "The Spa at Silver Legacy was exactly what we needed after 3 days of golf. GTHS built it into our package and it was a smart add. Everyone left feeling refreshed and ready for the next round.",
       "author": "Stephanie M.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · team outing"
+      "meta": "TripAdvisor \u00b7 team outing"
     },
     {
       "stars": 5,
       "quote": "Booked spa treatments at The Spa at Silver Legacy as part of our non-golfer package. Incredible facilities and the staff was very professional. Perfect option for the non-golfers in our group.",
       "author": "Rachel L.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · golf trip group"
+      "meta": "TripAdvisor \u00b7 golf trip group"
     }
   ]
 }

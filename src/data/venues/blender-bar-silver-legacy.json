@@ -17,7 +17,7 @@
   },
   "phone": "(775) 325-7401",
   "website": "https://www.silverlegacyreno.com",
-  "priceRange": "$–$$",
+  "priceRange": "$\u2013$$",
   "description": "The Blender Bar at Silver Legacy specializes in frozen and blended cocktails, offering a colorful, fun bar experience on the mezzanine level. Known for its oversized frozen drinks in sizes up to 100 ounces, it's the only place in Reno for this kind of frozen and specialty cocktail experience. Popular choices include the GO PACK and Italian Margarita, plus a selection of craft beers.",
   "shortDescription": "Colorful frozen cocktail bar on the Silver Legacy mezzanine with oversized blended drinks.",
   "highlights": [
@@ -28,13 +28,13 @@
     "Craft Beer Selection",
     "Fun & Colorful"
   ],
-  "hours": "Daily 12PM–12AM",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/11/Blender-Bar-Hero.jpg",
+  "hours": "Daily 12PM\u201312AM",
+  "heroImage": "/images/venues/blender-bar-silver-legacy/hero.jpg",
   "images": [],
   "faqs": [
     {
       "question": "What does the Blender Bar specialize in?",
-      "answer": "Frozen and blended cocktails in oversized glasses — colorful, fun, and refreshing."
+      "answer": "Frozen and blended cocktails in oversized glasses \u2014 colorful, fun, and refreshing."
     },
     {
       "question": "Is it on the casino floor?",
@@ -42,11 +42,11 @@
     },
     {
       "question": "Are the drinks strong?",
-      "answer": "They vary — you can order standard or double-strength versions of most blended cocktails."
+      "answer": "They vary \u2014 you can order standard or double-strength versions of most blended cocktails."
     }
   ],
   "meta": {
-    "title": "Blender Bar – Frozen Cocktails at Silver Legacy | Golf The High Sierra",
+    "title": "Blender Bar \u2013 Frozen Cocktails at Silver Legacy | Golf The High Sierra",
     "description": "Cool down with frozen and blended cocktails at the Blender Bar in Silver Legacy Resort. Colorful, fun drinks on the casino floor."
   },
   "testimonials": [
@@ -55,14 +55,14 @@
       "quote": "We ended every day of our golf trip at Blender Bar. Great selection, friendly bartenders, and the kind of place where your group can be loud and happy after a great round.",
       "author": "Julie N.",
       "source": "Google",
-      "meta": "Google · post-golf drinks (24)"
+      "meta": "Google \u00b7 post-golf drinks (24)"
     },
     {
       "stars": 5,
       "quote": "Post-round drinks at Blender Bar are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
       "author": "Jeff R.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · team outing"
+      "meta": "TripAdvisor \u00b7 team outing"
     }
   ]
 }

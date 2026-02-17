@@ -14,10 +14,10 @@
     "Wet Bar"
   ],
   "hours": "Check-in 4pm | Check-out 11am",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/ELDO-Studio-Suite-3_Web-Hero.jpg",
+  "heroImage": "/images/venues/eldorado-sierra-studio-suite/hero.jpg",
   "meta": {
-    "title": "Sierra Studio Suite 1 King – Eldorado Reno | Golf The High Sierra",
-    "description": "Book the Sierra Studio Suite at Eldorado Resort Reno – 500 sq ft with living area, dining for four, and wet bar."
+    "title": "Sierra Studio Suite 1 King \u2013 Eldorado Reno | Golf The High Sierra",
+    "description": "Book the Sierra Studio Suite at Eldorado Resort Reno \u2013 500 sq ft with living area, dining for four, and wet bar."
   },
   "region": "reno",
   "regionLabel": "Reno",
@@ -42,14 +42,14 @@
       "quote": "Visited Sierra Studio Suite | 1 King during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
       "author": "John K.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · corporate dinner (8)"
+      "meta": "TripAdvisor \u00b7 corporate dinner (8)"
     },
     {
       "stars": 5,
       "quote": "Sierra Studio Suite | 1 King was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
       "author": "James D.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · post-golf drinks (8)"
+      "meta": "TripAdvisor \u00b7 post-golf drinks (8)"
     }
   ]
 }

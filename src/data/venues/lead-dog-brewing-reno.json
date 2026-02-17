@@ -28,8 +28,8 @@
     "Food Trucks",
     "East 4th St Corridor"
   ],
-  "hours": "Mon–Thu 12PM–9PM, Fri–Sat 12PM–10PM, Sun 12PM–8PM",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/AB-Breweries-Lead-Dog-Brewing-Exterior.webp",
+  "hours": "Mon\u2013Thu 12PM\u20139PM, Fri\u2013Sat 12PM\u201310PM, Sun 12PM\u20138PM",
+  "heroImage": "/images/venues/lead-dog-brewing-reno/hero.jpg",
   "images": [],
   "faqs": [
     {
@@ -46,7 +46,7 @@
     }
   ],
   "meta": {
-    "title": "Lead Dog Brewing – Reno Craft Beer | Golf The High Sierra",
+    "title": "Lead Dog Brewing \u2013 Reno Craft Beer | Golf The High Sierra",
     "description": "Discover Lead Dog Brewing in Reno's East 4th Street corridor. Adventurous craft beers and a spacious patio perfect for golf groups."
   },
   "testimonials": [
@@ -55,14 +55,14 @@
       "quote": "Lead Dog Brewing has become our go-to after-golf hangout. Cold beers, good energy, and it's right in the heart of Reno. GTHS knows all the best spots.",
       "author": "Jason S.",
       "source": "Google",
-      "meta": "Google · golf trip group"
+      "meta": "Google \u00b7 golf trip group"
     },
     {
       "stars": 5,
       "quote": "We ended every day of our golf trip at Lead Dog Brewing. Great selection, friendly bartenders, and the kind of place where your group can be loud and happy after a great round.",
       "author": "Sarah W.",
       "source": "Yelp",
-      "meta": "Yelp · group dinner (40)"
+      "meta": "Yelp \u00b7 group dinner (40)"
     }
   ]
 }

@@ -14,7 +14,7 @@
     "Race & Sports Book Adjacent"
   ],
   "hours": "Daily 24/7",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/untitled21.jpg",
+  "heroImage": "/images/venues/atlantis-sports-bar-lounge/hero.jpg",
   "faqs": [
     {
       "question": "Is the Sports Bar open 24 hours?",
@@ -30,7 +30,7 @@
     }
   ],
   "meta": {
-    "title": "Atlantis Sports Bar & Lounge – 24hr Sports Bar Reno | Golf The High Sierra",
+    "title": "Atlantis Sports Bar & Lounge \u2013 24hr Sports Bar Reno | Golf The High Sierra",
     "description": "Watch every game on 28 screens with 90+ whiskies and daily happy hour at Atlantis Sports Bar & Lounge in Reno."
   },
   "region": "reno",
@@ -55,14 +55,14 @@
       "quote": "Atlantis Sports Bar & Lounge has become our go-to after-golf hangout. Cold beers, good energy, and it's right inside atlantis-casino-resort-spa-reno. GTHS knows all the best spots.",
       "author": "Gary B.",
       "source": "Google",
-      "meta": "Google · after-round drinks"
+      "meta": "Google \u00b7 after-round drinks"
     },
     {
       "stars": 4,
       "quote": "We ended every day of our golf trip at Atlantis Sports Bar & Lounge. Great selection, friendly bartenders, and the kind of place where your group can be loud and happy after a great round.",
       "author": "Steve W.",
       "source": "Google",
-      "meta": "Google · golf trip group"
+      "meta": "Google \u00b7 golf trip group"
     }
   ]
 }

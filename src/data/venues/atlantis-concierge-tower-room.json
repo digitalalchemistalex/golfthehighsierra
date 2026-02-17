@@ -14,10 +14,10 @@
     "Premium Amenities"
   ],
   "hours": "Check-in 4pm | Check-out 11am",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/concierge-hotel-tower-rooms-hero.jpg",
+  "heroImage": "/images/venues/atlantis-concierge-tower-room/hero.jpg",
   "meta": {
-    "title": "Concierge Tower Room – Atlantis Reno | Golf The High Sierra",
-    "description": "Book the Concierge Tower Room at Atlantis Reno – exclusive lounge access with breakfast, hors d'oeuvres, and butler service."
+    "title": "Concierge Tower Room \u2013 Atlantis Reno | Golf The High Sierra",
+    "description": "Book the Concierge Tower Room at Atlantis Reno \u2013 exclusive lounge access with breakfast, hors d'oeuvres, and butler service."
   },
   "region": "reno",
   "regionLabel": "Reno",
@@ -42,14 +42,14 @@
       "quote": "Visited Concierge Tower Room during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
       "author": "Ben G.",
       "source": "Yelp",
-      "meta": "Yelp · team outing"
+      "meta": "Yelp \u00b7 team outing"
     },
     {
       "stars": 5,
       "quote": "Concierge Tower Room was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
       "author": "Kevin L.",
       "source": "Google",
-      "meta": "Google · post-golf drinks (16)"
+      "meta": "Google \u00b7 post-golf drinks (16)"
     }
   ]
 }

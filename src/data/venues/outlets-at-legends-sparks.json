@@ -28,8 +28,8 @@
     "Adjacent to SCHEELS",
     "Restaurants"
   ],
-  "hours": "Mon–Sat 10AM–8PM, Sun 11AM–6PM",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2024/04/legends.jpg",
+  "hours": "Mon\u2013Sat 10AM\u20138PM, Sun 11AM\u20136PM",
+  "heroImage": "/images/venues/outlets-at-legends-sparks/hero.jpg",
   "images": [],
   "faqs": [
     {
@@ -46,7 +46,7 @@
     }
   ],
   "meta": {
-    "title": "Outlets at Legends Sparks – Tax-Free Shopping | Golf The High Sierra",
+    "title": "Outlets at Legends Sparks \u2013 Tax-Free Shopping | Golf The High Sierra",
     "description": "Shop 60+ brand-name outlets at the Legends in Sparks. Tax-free advantage and adjacent to SCHEELS. Perfect for golf trip shopping."
   },
   "testimonials": [
@@ -55,14 +55,14 @@
       "quote": "Outlets at Legends was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno / Sparks has so much more than just great courses.",
       "author": "Brandon N.",
       "source": "Yelp",
-      "meta": "Yelp · corporate dinner (8)"
+      "meta": "Yelp \u00b7 corporate dinner (8)"
     },
     {
       "stars": 5,
       "quote": "Visited Outlets at Legends during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
       "author": "Ashley J.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · golf trip group"
+      "meta": "TripAdvisor \u00b7 golf trip group"
     }
   ]
 }

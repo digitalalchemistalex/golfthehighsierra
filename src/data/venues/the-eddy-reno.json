@@ -28,8 +28,8 @@
     "Truckee Riverwalk",
     "Seasonal (March-November)"
   ],
-  "hours": "Tue–Sun 11AM–10PM",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/the_eddy_am_091_2_3.jpg",
+  "hours": "Tue\u2013Sun 11AM\u201310PM",
+  "heroImage": "/images/venues/the-eddy-reno/hero.jpg",
   "images": [],
   "faqs": [
     {
@@ -46,7 +46,7 @@
     }
   ],
   "meta": {
-    "title": "The Eddy – Modern Gastropub in Downtown Reno | Golf The High Sierra",
+    "title": "The Eddy \u2013 Modern Gastropub in Downtown Reno | Golf The High Sierra",
     "description": "Enjoy creative American cuisine and craft cocktails at The Eddy in downtown Reno. A perfect dinner spot for golf groups."
   },
   "testimonials": [
@@ -55,14 +55,14 @@
       "quote": "Post-round drinks at The Eddy are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
       "author": "Greg W.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · date night during golf trip"
+      "meta": "TripAdvisor \u00b7 date night during golf trip"
     },
     {
       "stars": 5,
       "quote": "The Eddy has become our go-to after-golf hangout. Cold beers, good energy, and it's right in the heart of Reno. GTHS knows all the best spots.",
       "author": "Brian L.",
       "source": "Yelp",
-      "meta": "Yelp · team outing"
+      "meta": "Yelp \u00b7 team outing"
     }
   ]
 }

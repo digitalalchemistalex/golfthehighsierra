@@ -14,10 +14,10 @@
     "Top Floor Views"
   ],
   "hours": "Check-in 4pm | Check-out 11am",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/New-Room-2-Queens-Eldorado-Final-Hero1-1440x530-1.jpg",
+  "heroImage": "/images/venues/eldorado-sierra-luxury-2-queen/hero.jpg",
   "meta": {
-    "title": "Sierra Luxury Room 2 Queen – Eldorado Reno | Golf The High Sierra",
-    "description": "Book the Sierra Luxury Room with two queens at Eldorado Resort Reno – premium accommodations for up to four guests."
+    "title": "Sierra Luxury Room 2 Queen \u2013 Eldorado Reno | Golf The High Sierra",
+    "description": "Book the Sierra Luxury Room with two queens at Eldorado Resort Reno \u2013 premium accommodations for up to four guests."
   },
   "region": "reno",
   "regionLabel": "Reno",
@@ -42,14 +42,14 @@
       "quote": "Sierra Luxury Room | 2 Queen was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
       "author": "Amanda G.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · team outing"
+      "meta": "TripAdvisor \u00b7 team outing"
     },
     {
       "stars": 4,
       "quote": "Visited Sierra Luxury Room | 2 Queen during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
       "author": "Kevin G.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · group dinner (36)"
+      "meta": "TripAdvisor \u00b7 group dinner (36)"
     }
   ]
 }

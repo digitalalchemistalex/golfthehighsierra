@@ -14,10 +14,10 @@
     "Compact Luxury"
   ],
   "hours": "Check-in 4pm | Check-out 11am",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Players-Spa-Suite-Hero.jpg",
+  "heroImage": "/images/venues/eldorado-skyline-player-spa-small/hero.jpg",
   "meta": {
-    "title": "Skyline Player Spa Suite Small – Eldorado Reno | Golf The High Sierra",
-    "description": "Book the Skyline Player Spa Suite (Small) at Eldorado Reno – spa-inspired comfort in the Skyline Tower."
+    "title": "Skyline Player Spa Suite Small \u2013 Eldorado Reno | Golf The High Sierra",
+    "description": "Book the Skyline Player Spa Suite (Small) at Eldorado Reno \u2013 spa-inspired comfort in the Skyline Tower."
   },
   "region": "reno",
   "regionLabel": "Reno",
@@ -42,14 +42,14 @@
       "quote": "Skyline Player Spa Suite | Small was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
       "author": "Scott T.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · after-round drinks"
+      "meta": "TripAdvisor \u00b7 after-round drinks"
     },
     {
       "stars": 5,
       "quote": "Visited Skyline Player Spa Suite | Small during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
       "author": "Megan L.",
       "source": "Yelp",
-      "meta": "Yelp · after-round drinks"
+      "meta": "Yelp \u00b7 after-round drinks"
     }
   ]
 }

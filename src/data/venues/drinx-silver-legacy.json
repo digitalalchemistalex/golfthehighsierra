@@ -28,8 +28,8 @@
     "Pre-Show Drinks",
     "Silver Legacy"
   ],
-  "hours": "Daily 4PM–1AM",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/11/Drinx-Hero.jpg",
+  "hours": "Daily 4PM\u20131AM",
+  "heroImage": "/images/venues/drinx-silver-legacy/hero.jpg",
   "images": [],
   "faqs": [
     {
@@ -46,7 +46,7 @@
     }
   ],
   "meta": {
-    "title": "Drinx – Contemporary Bar at Silver Legacy | Golf The High Sierra",
+    "title": "Drinx \u2013 Contemporary Bar at Silver Legacy | Golf The High Sierra",
     "description": "Enjoy creative cocktails at Drinx in Silver Legacy Resort. A sleek, modern bar near the entertainment venues."
   },
   "testimonials": [
@@ -55,14 +55,14 @@
       "quote": "Post-round drinks at Drinx are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
       "author": "Megan K.",
       "source": "Yelp",
-      "meta": "Yelp · group dinner (20)"
+      "meta": "Yelp \u00b7 group dinner (20)"
     },
     {
       "stars": 5,
       "quote": "Drinx has become our go-to after-golf hangout. Cold beers, good energy, and it's right inside silver-legacy-resort-casino. GTHS knows all the best spots.",
       "author": "Patricia S.",
       "source": "Google",
-      "meta": "Google · post-golf drinks (40)"
+      "meta": "Google \u00b7 post-golf drinks (40)"
     }
   ]
 }

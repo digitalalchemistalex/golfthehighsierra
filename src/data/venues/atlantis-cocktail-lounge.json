@@ -14,7 +14,7 @@
     "Late Night"
   ],
   "hours": "Daily",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlaintis-cocktail-bar.jpg",
+  "heroImage": "/images/venues/atlantis-cocktail-lounge/hero.jpg",
   "faqs": [
     {
       "question": "Where is the Cocktail Lounge?",
@@ -26,7 +26,7 @@
     }
   ],
   "meta": {
-    "title": "Atlantis Cocktail Lounge – Casino Bar Reno | Golf The High Sierra",
+    "title": "Atlantis Cocktail Lounge \u2013 Casino Bar Reno | Golf The High Sierra",
     "description": "Enjoy expertly crafted cocktails at the Atlantis Cocktail Lounge on the casino floor in Reno."
   },
   "region": "reno",
@@ -51,14 +51,14 @@
       "quote": "Post-round drinks at Atlantis Cocktail Lounge are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
       "author": "Carlos L.",
       "source": "Google",
-      "meta": "Google · date night during golf trip"
+      "meta": "Google \u00b7 date night during golf trip"
     },
     {
       "stars": 5,
       "quote": "Atlantis Cocktail Lounge has become our go-to after-golf hangout. Cold beers, good energy, and it's right inside atlantis-casino-resort-spa-reno. GTHS knows all the best spots.",
       "author": "Paul G.",
       "source": "Yelp",
-      "meta": "Yelp · group dinner (36)"
+      "meta": "Yelp \u00b7 group dinner (36)"
     }
   ]
 }

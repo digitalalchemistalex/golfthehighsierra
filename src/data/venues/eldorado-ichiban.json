@@ -3,7 +3,7 @@
   "name": "Ichiban Japanese Steak House",
   "type": "restaurant",
   "priceRange": "$$$",
-  "description": "Ichiban Japanese Steak House has been a local favorite for over 40 years, bringing the best Teppanyaki show in town to the Eldorado. Enjoy the artistry and showmanship of skilled chefs preparing sizzling entrées right at your table in this 11,000 square foot restaurant featuring 140 Teppanyaki table-style seats. Locally owned and operated, Ichiban accepts Caesars Rewards at THE ROW Reno.",
+  "description": "Ichiban Japanese Steak House has been a local favorite for over 40 years, bringing the best Teppanyaki show in town to the Eldorado. Enjoy the artistry and showmanship of skilled chefs preparing sizzling entr\u00e9es right at your table in this 11,000 square foot restaurant featuring 140 Teppanyaki table-style seats. Locally owned and operated, Ichiban accepts Caesars Rewards at THE ROW Reno.",
   "shortDescription": "40-year Reno favorite with Teppanyaki showmanship and 140 table-style seats at the Eldorado.",
   "highlights": [
     "40+ Years in Reno",
@@ -14,11 +14,11 @@
     "Locally Owned"
   ],
   "hours": "Sun - Thu 4:30pm - 9pm | Fri & Sat 4:30pm - 9:30pm",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/153886022_10159234053673750_781555543673748448_n.jpg",
+  "heroImage": "/images/venues/eldorado-ichiban/hero.jpg",
   "faqs": [
     {
       "question": "What style of cooking is Ichiban?",
-      "answer": "Teppanyaki/Hibachi, where skilled chefs prepare sizzling entrées right at your table with impressive showmanship."
+      "answer": "Teppanyaki/Hibachi, where skilled chefs prepare sizzling entr\u00e9es right at your table with impressive showmanship."
     },
     {
       "question": "How long has Ichiban been open?",
@@ -30,7 +30,7 @@
     }
   ],
   "meta": {
-    "title": "Ichiban Japanese Steak House – Teppanyaki at Eldorado Reno | Golf The High Sierra",
+    "title": "Ichiban Japanese Steak House \u2013 Teppanyaki at Eldorado Reno | Golf The High Sierra",
     "description": "Experience 40+ years of Teppanyaki showmanship at Ichiban Japanese Steak House in Eldorado Resort, downtown Reno."
   },
   "region": "reno",
@@ -55,14 +55,14 @@
       "quote": "Had dinner at Ichiban Japanese Steak House after our round and it was fantastic. Great food, attentive service, and they handled our group of 16 without a hitch. GTHS recommended it and they were spot on.",
       "author": "Dan F.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · golf trip group"
+      "meta": "TripAdvisor \u00b7 golf trip group"
     },
     {
       "stars": 5,
       "quote": "Ichiban Japanese Steak House was the perfect post-golf dinner spot. The menu had something for everyone in our group. eldorado-resorts-reno-eldorado-at-the-row is lucky to have this on-site.",
       "author": "Tom P.",
       "source": "Yelp",
-      "meta": "Yelp · date night during golf trip"
+      "meta": "Yelp \u00b7 date night during golf trip"
     }
   ]
 }
