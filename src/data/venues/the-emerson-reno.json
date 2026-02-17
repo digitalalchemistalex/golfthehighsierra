@@ -1,0 +1,52 @@
+{
+  "slug": "the-emerson-reno",
+  "name": "The Emerson",
+  "type": "bar",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": null,
+  "address": {
+    "streetAddress": "55 N Sierra St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5276,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 348-7860",
+  "website": "https://theemersonreno.com",
+  "priceRange": "$$\u2013$$$",
+  "description": "The Emerson is a refined cocktail lounge and restaurant located in downtown Reno, known for its elegant art deco-inspired interior and thoughtfully crafted cocktail menu. The space exudes sophistication with rich leather seating, warm lighting, and a carefully curated soundtrack. Their cocktail program focuses on classic preparations with modern twists, using premium spirits and house-made ingredients.",
+  "shortDescription": "Refined art deco cocktail lounge with classic cocktails and elegant ambiance in downtown Reno.",
+  "highlights": [
+    "Art Deco Interior",
+    "Premium Cocktails",
+    "Downtown Location",
+    "Upscale Dining",
+    "Late Night Menu",
+    "Live Jazz"
+  ],
+  "hours": "Mon\u2013Sat 4PM\u201312AM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What is The Emerson known for?",
+      "answer": "The Emerson is celebrated for its art deco ambiance, premium cocktail program, and refined dining experience in the heart of downtown Reno."
+    },
+    {
+      "question": "Do I need a reservation?",
+      "answer": "Reservations are recommended, especially on weekends. Walk-ins are welcome but seating is limited."
+    },
+    {
+      "question": "Is The Emerson suitable for a group dinner?",
+      "answer": "Yes, The Emerson can accommodate golf groups for dinner and drinks. Contact them for large party arrangements."
+    }
+  ],
+  "meta": {
+    "title": "The Emerson \u2013 Upscale Cocktails in Downtown Reno | Golf The High Sierra",
+    "description": "Experience refined cocktails and art deco elegance at The Emerson in downtown Reno. An upscale apr\u00e8s-golf destination for discerning groups."
+  }
+}

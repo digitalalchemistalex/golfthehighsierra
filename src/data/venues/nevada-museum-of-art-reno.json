@@ -1,0 +1,52 @@
+{
+  "slug": "nevada-museum-of-art-reno",
+  "name": "Nevada Museum of Art",
+  "type": "museum",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": null,
+  "address": {
+    "streetAddress": "160 W Liberty St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.529,
+    "longitude": -119.8165
+  },
+  "phone": "(775) 329-3333",
+  "website": "https://www.nevadaart.org",
+  "priceRange": "$",
+  "description": "The Nevada Museum of Art is the only accredited art museum in the state of Nevada, housed in a striking building designed by architect Will Bruder. The museum's collection spans contemporary art, photography, and works exploring the relationship between art and the environment. Its rotating exhibitions bring world-class art to the region, while the permanent collection focuses on art of the Greater West.",
+  "shortDescription": "Nevada's only accredited art museum with contemporary art in a striking architectural landmark.",
+  "highlights": [
+    "Accredited Art Museum",
+    "Will Bruder Architecture",
+    "Contemporary Art",
+    "Rotating Exhibitions",
+    "Rooftop Sky Room",
+    "Museum Store"
+  ],
+  "hours": "Wed\u2013Sun 10AM\u20136PM, Thu 10AM\u20138PM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What type of art does the museum feature?",
+      "answer": "The museum focuses on contemporary art, photography, and works exploring art and environment, with rotating world-class exhibitions."
+    },
+    {
+      "question": "Is the building itself noteworthy?",
+      "answer": "Yes, designed by renowned architect Will Bruder, the building is an architectural landmark inspired by the Black Rock Desert landscape."
+    },
+    {
+      "question": "Is there a restaurant?",
+      "answer": "The museum features a rooftop Sky Room with stunning views of downtown Reno and the surrounding mountains."
+    }
+  ],
+  "meta": {
+    "title": "Nevada Museum of Art \u2013 Contemporary Art in Reno | Golf The High Sierra",
+    "description": "Visit Nevada's only accredited art museum in a striking architectural landmark. Contemporary art and rotating exhibitions in downtown Reno."
+  }
+}

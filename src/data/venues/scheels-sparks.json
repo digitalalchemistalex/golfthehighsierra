@@ -1,0 +1,52 @@
+{
+  "slug": "scheels-sparks",
+  "name": "SCHEELS",
+  "type": "shopping",
+  "region": "reno",
+  "regionLabel": "Reno / Sparks",
+  "parentHotel": null,
+  "address": {
+    "streetAddress": "1200 Scheels Dr",
+    "addressLocality": "Sparks",
+    "addressRegion": "NV",
+    "postalCode": "89434"
+  },
+  "geo": {
+    "latitude": 39.5452,
+    "longitude": -119.7107
+  },
+  "phone": "(775) 331-2700",
+  "website": "https://www.scheels.com/store/sparks-nv",
+  "priceRange": "$$\u2013$$$",
+  "description": "SCHEELS in Sparks is a massive 245,000-square-foot sporting goods destination that goes far beyond traditional retail. The store features a 16,000-gallon saltwater aquarium, a 65-foot Ferris wheel, interactive shooting galleries, specialty shops, and an enormous selection of golf equipment and apparel. It's an experience in itself, with multiple restaurants and attractions under one roof.",
+  "shortDescription": "A 245,000 sq ft sporting goods experience with Ferris wheel, aquarium, and golf gear.",
+  "highlights": [
+    "245,000 Sq Ft",
+    "Indoor Ferris Wheel",
+    "Saltwater Aquarium",
+    "Golf Pro Shop",
+    "Restaurants Inside",
+    "Free Attractions"
+  ],
+  "hours": "Mon\u2013Sat 9AM\u20139PM, Sun 10AM\u20136PM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What makes SCHEELS special?",
+      "answer": "SCHEELS Sparks is a 245,000 sq ft experience with a Ferris wheel, aquarium, shooting gallery, and one of the region's best golf equipment selections."
+    },
+    {
+      "question": "Does SCHEELS have golf equipment?",
+      "answer": "Yes, they carry a comprehensive selection of golf clubs, bags, apparel, shoes, and accessories from all major brands."
+    },
+    {
+      "question": "Is SCHEELS free to visit?",
+      "answer": "Entry is free. The Ferris wheel, shooting gallery, and other attractions are also complimentary."
+    }
+  ],
+  "meta": {
+    "title": "SCHEELS Sparks \u2013 Golf Gear & Attractions | Golf The High Sierra",
+    "description": "Visit SCHEELS in Sparks for 245,000 sq ft of sporting goods, golf equipment, a Ferris wheel, and aquarium. A must-see for golf groups."
+  }
+}

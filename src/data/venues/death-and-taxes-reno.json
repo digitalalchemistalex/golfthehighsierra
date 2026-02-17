@@ -1,0 +1,52 @@
+{
+  "slug": "death-and-taxes-reno",
+  "name": "Death & Taxes",
+  "type": "bar",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": null,
+  "address": {
+    "streetAddress": "140 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5292,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 636-9999",
+  "website": "https://deathandtaxesbar.com",
+  "priceRange": "$$",
+  "description": "Death & Taxes is an acclaimed speakeasy-style cocktail bar hidden in downtown Reno, offering a dimly lit, intimate atmosphere with expertly crafted classic cocktails. The bar's design evokes the prohibition era with exposed brick, vintage furnishings, and a moody ambiance. Bartenders here are true craft specialists, creating bespoke cocktails tailored to each guest's preferences.",
+  "shortDescription": "Speakeasy-style cocktail bar with prohibition-era ambiance and bespoke craft cocktails.",
+  "highlights": [
+    "Speakeasy Atmosphere",
+    "Bespoke Cocktails",
+    "Prohibition Era Design",
+    "Expert Bartenders",
+    "Downtown Reno",
+    "Intimate Setting"
+  ],
+  "hours": "Thu\u2013Sat 7PM\u20132AM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What kind of bar is Death & Taxes?",
+      "answer": "It's a speakeasy-style cocktail bar with a hidden entrance, dimly lit interior, and focus on expertly crafted classic cocktails."
+    },
+    {
+      "question": "Do I need a reservation?",
+      "answer": "Reservations aren't required but the bar is small and popular. Arriving early is recommended."
+    },
+    {
+      "question": "Can Death & Taxes accommodate a golf group?",
+      "answer": "The intimate setting works best for smaller groups of 4-8. For larger groups, contact them in advance."
+    }
+  ],
+  "meta": {
+    "title": "Death & Taxes \u2013 Speakeasy Cocktails in Reno | Golf The High Sierra",
+    "description": "Experience prohibition-era cocktails at Death & Taxes, Reno's acclaimed speakeasy. An unforgettable nightcap for golf groups."
+  }
+}

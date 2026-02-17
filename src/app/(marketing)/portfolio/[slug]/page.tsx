@@ -2,14 +2,17 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllCourseSlugs, getCourseBySlug, getCoursesByRegion } from "@/data/courses";
 import { getAllHotelSlugs, getHotelBySlug, getHotelsByRegion } from "@/data/hotels";
+import { getAllVenueSlugs, getVenueBySlug, getVenuesByRegion, getVenuesByType } from "@/data/venues";
 import HotelPageContent from "@/components/HotelPageContent";
 import CoursePageContent from "@/components/CoursePageContent";
+import VenuePageContent from "@/components/VenuePageContent";
 import RelatedTrips from "@/components/RelatedTrips";
 
 export async function generateStaticParams() {
   const courseSlugs = getAllCourseSlugs().map((slug) => ({ slug }));
   const hotelSlugs = getAllHotelSlugs().map((slug) => ({ slug }));
-  return [...courseSlugs, ...hotelSlugs];
+  const venueSlugs = getAllVenueSlugs().map((slug) => ({ slug }));
+  return [...courseSlugs, ...hotelSlugs, ...venueSlugs];
 }
 
 export async function generateMetadata({
@@ -19,7 +22,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const course = getCourseBySlug(params.slug);
   const hotel = !course ? getHotelBySlug(params.slug) : undefined;
-  const item = course || hotel;
+  const venue = !course && !hotel ? getVenueBySlug(params.slug) : undefined;
+  const item = course || hotel || venue;
   if (!item) return { title: "Not Found" };
   return {
     title: item.meta.title,
@@ -39,6 +43,7 @@ export async function generateMetadata({
 export default function PortfolioPage({ params }: { params: { slug: string } }) {
   const course = getCourseBySlug(params.slug);
   const hotel = !course ? getHotelBySlug(params.slug) : undefined;
+  const venue = !course && !hotel ? getVenueBySlug(params.slug) : undefined;
 
   // Hotel page
   if (hotel) {
@@ -108,6 +113,75 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(hotelSchema) }} />
         <HotelPageContent hotel={hotel} relatedHotels={relatedHotels} />
         <RelatedTrips slug={hotel.slug} type="hotel" />
+      </>
+    );
+  }
+
+  // Venue page
+  if (venue) {
+    // Related: same type first, then same region
+    const sameType = getVenuesByType(venue.type).filter((v) => v.slug !== venue.slug);
+    const sameRegion = getVenuesByRegion(venue.region).filter((v) => v.slug !== venue.slug && !sameType.find((s) => s.slug === v.slug));
+    const relatedVenues = [...sameType, ...sameRegion].slice(0, 3);
+
+    const venueSchemaType = (() => {
+      switch (venue.type) {
+        case "bar": case "lounge": return "BarOrPub";
+        case "spa": return "HealthAndBeautyBusiness";
+        case "museum": return "Museum";
+        case "shopping": return "ShoppingCenter";
+        case "pool": case "fitness": case "amenity": return "SportsActivityLocation";
+        default: return "LocalBusiness";
+      }
+    })();
+
+    const venueSchema = {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": venueSchemaType,
+          name: venue.name,
+          description: venue.description,
+          url: `https://golfthehighsierra.com/portfolio/${venue.slug}/`,
+          ...(venue.heroImage ? { image: venue.heroImage } : {}),
+          ...(venue.address?.streetAddress && {
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: venue.address.streetAddress,
+              addressLocality: venue.address.addressLocality,
+              addressRegion: venue.address.addressRegion,
+              postalCode: venue.address.postalCode,
+              addressCountry: "US",
+            },
+          }),
+          ...(venue.geo?.latitude && {
+            geo: { "@type": "GeoCoordinates", latitude: venue.geo.latitude, longitude: venue.geo.longitude },
+          }),
+          ...(venue.phone ? { telephone: venue.phone } : {}),
+          ...(venue.priceRange ? { priceRange: venue.priceRange } : {}),
+        },
+        ...(venue.faqs?.length > 0 ? [{
+          "@type": "FAQPage",
+          mainEntity: venue.faqs.map((faq: { question: string; answer: string }) => ({
+            "@type": "Question", name: faq.question,
+            acceptedAnswer: { "@type": "Answer", text: faq.answer },
+          })),
+        }] : []),
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://golfthehighsierra.com" },
+            { "@type": "ListItem", position: 2, name: "Experiences", item: "https://golfthehighsierra.com" },
+            { "@type": "ListItem", position: 3, name: venue.name, item: `https://golfthehighsierra.com/portfolio/${venue.slug}/` },
+          ],
+        },
+      ],
+    };
+
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(venueSchema) }} />
+        <VenuePageContent venue={venue} relatedVenues={relatedVenues} />
       </>
     );
   }

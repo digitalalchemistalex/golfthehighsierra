@@ -1,0 +1,52 @@
+{
+  "slug": "players-corner-spa-suite",
+  "name": "Players Corner Spa Suite",
+  "type": "lounge",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "silver-legacy-resort-casino",
+  "address": {
+    "streetAddress": "407 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5302,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 325-7401",
+  "website": "https://www.silverlegacyreno.com",
+  "priceRange": "$$\u2013$$$",
+  "description": "Players Corner Spa Suite at Silver Legacy provides an exclusive, VIP-style lounge experience for high-value resort guests. This premium space offers complimentary beverages, comfortable seating, and a private atmosphere away from the bustling casino floor. It's a refined retreat where guests can relax and enjoy personalized service.",
+  "shortDescription": "Exclusive VIP lounge with complimentary beverages and personalized service at Silver Legacy.",
+  "highlights": [
+    "VIP Access",
+    "Complimentary Beverages",
+    "Private Atmosphere",
+    "Personalized Service",
+    "Silver Legacy",
+    "Premium Lounge"
+  ],
+  "hours": "By Invitation / Player Status",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "How do I access the Players Corner Spa Suite?",
+      "answer": "Access is based on player status and resort guest tier. Check with the front desk or your player's club card."
+    },
+    {
+      "question": "What's included?",
+      "answer": "Complimentary beverages, comfortable lounge seating, and personalized service in a private setting."
+    },
+    {
+      "question": "Is this part of the spa?",
+      "answer": "It's a premium lounge experience separate from the main spa facility, located within Silver Legacy Resort."
+    }
+  ],
+  "meta": {
+    "title": "Players Corner Spa Suite \u2013 VIP Lounge Silver Legacy | Golf The High Sierra",
+    "description": "Experience VIP treatment at the Players Corner Spa Suite in Silver Legacy. Exclusive lounge with complimentary beverages for qualifying guests."
+  }
+}

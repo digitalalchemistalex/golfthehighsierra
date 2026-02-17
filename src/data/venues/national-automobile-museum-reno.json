@@ -1,0 +1,52 @@
+{
+  "slug": "national-automobile-museum-reno",
+  "name": "National Automobile Museum",
+  "type": "museum",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": null,
+  "address": {
+    "streetAddress": "10 S Lake St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5258,
+    "longitude": -119.818
+  },
+  "phone": "(775) 333-9300",
+  "website": "https://www.automuseum.org",
+  "priceRange": "$",
+  "description": "The National Automobile Museum, also known as The Harrah Collection, houses one of the finest collections of antique, vintage, classic, and special-interest automobiles in the world. With over 200 vehicles displayed across four galleries representing different eras, the museum brings automotive history to life through immersive streetscape settings complete with period sounds and artifacts. Founded by casino magnate William F. Harrah, this is a must-visit Reno attraction.",
+  "shortDescription": "World-class collection of 200+ historic automobiles in immersive streetscape galleries.",
+  "highlights": [
+    "200+ Historic Vehicles",
+    "The Harrah Collection",
+    "Four Era Galleries",
+    "Immersive Streetscapes",
+    "Truckee River Adjacent",
+    "Gift Shop"
+  ],
+  "hours": "Mon\u2013Sat 9:30AM\u20135:30PM, Sun 10AM\u20134PM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What is the National Automobile Museum?",
+      "answer": "Founded from William F. Harrah's legendary car collection, it features 200+ historic automobiles in immersive streetscape galleries spanning four automotive eras."
+    },
+    {
+      "question": "How long does a visit take?",
+      "answer": "Most visitors spend 1.5 to 2 hours exploring the four galleries and gift shop."
+    },
+    {
+      "question": "Where is the museum?",
+      "answer": "On the banks of the Truckee River in downtown Reno, walking distance from the casino corridor."
+    }
+  ],
+  "meta": {
+    "title": "National Automobile Museum Reno \u2013 The Harrah Collection | Golf The High Sierra",
+    "description": "Explore 200+ historic automobiles at Reno's National Automobile Museum. A must-visit attraction for golf groups visiting the High Sierra."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "peppermill-sports-bar",
+  "name": "Peppermill Sports Bar",
+  "type": "bar",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "peppermill-resort-spa-casino",
+  "address": {
+    "streetAddress": "2707 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4937,
+    "longitude": -119.7992
+  },
+  "phone": "(775) 826-2121",
+  "website": "https://www.peppermillreno.com",
+  "priceRange": "$$",
+  "description": "The Peppermill Sports Bar combines the resort's legendary hospitality with a state-of-the-art sports viewing experience. Featuring multiple large screens, sports betting windows, and the Peppermill's signature generous service, it's a top-tier destination for watching games. The bar serves craft beers, cocktails, and a menu of hearty bar favorites.",
+  "shortDescription": "State-of-the-art sports bar with betting windows at Reno's legendary Peppermill Resort.",
+  "highlights": [
+    "Large Screen Arrays",
+    "Sports Betting",
+    "Peppermill Resort",
+    "Craft Beers",
+    "Bar Favorites",
+    "Legendary Service"
+  ],
+  "hours": "Daily 9AM\u20131AM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What makes the Peppermill Sports Bar special?",
+      "answer": "The Peppermill's legendary service combined with state-of-the-art screens and sports betting creates a premium viewing experience."
+    },
+    {
+      "question": "Is there sports betting?",
+      "answer": "Yes, sports betting windows are integrated into the bar area."
+    },
+    {
+      "question": "How far is the Peppermill from downtown?",
+      "answer": "About 10 minutes south of downtown on S Virginia Street, easily accessible by car or rideshare."
+    }
+  ],
+  "meta": {
+    "title": "Peppermill Sports Bar \u2013 Premier Sports Viewing Reno | Golf The High Sierra",
+    "description": "Watch every game at the Peppermill Sports Bar with state-of-the-art screens, betting, and legendary Reno hospitality."
+  }
+}

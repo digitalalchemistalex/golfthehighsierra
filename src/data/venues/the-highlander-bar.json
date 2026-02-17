@@ -1,0 +1,52 @@
+{
+  "slug": "the-highlander-bar",
+  "name": "The Highlander Bar",
+  "type": "bar",
+  "region": "tahoe",
+  "regionLabel": "South Lake Tahoe",
+  "parentHotel": "harveys-lake-tahoe",
+  "address": {
+    "streetAddress": "18 US-50",
+    "addressLocality": "Stateline",
+    "addressRegion": "NV",
+    "postalCode": "89449"
+  },
+  "geo": {
+    "latitude": 38.957,
+    "longitude": -119.9405
+  },
+  "phone": "(775) 588-2411",
+  "website": "https://www.caesars.com/harveys-tahoe",
+  "priceRange": "$$",
+  "description": "The Highlander Bar at Harvey's Lake Tahoe is a classic sports bar with multiple screens, craft beers, and a lively atmosphere. Located on the casino floor, it's the go-to spot to watch major sporting events while enjoying cold drinks and bar bites. The casual, energetic environment is perfect for golf groups looking to catch a game and relive their round.",
+  "shortDescription": "Classic sports bar at Harvey's Tahoe with big screens, craft beers, and game-day energy.",
+  "highlights": [
+    "Multiple Big Screens",
+    "Craft Beers",
+    "Sports Bar",
+    "Casino Floor",
+    "Bar Bites",
+    "Harvey's Tahoe"
+  ],
+  "hours": "Daily 11AM\u20131AM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "Is The Highlander a sports bar?",
+      "answer": "Yes, it's Harvey's signature sports bar with multiple screens showing all major sporting events."
+    },
+    {
+      "question": "Is it inside the casino?",
+      "answer": "Yes, located on the casino floor at Harvey's Lake Tahoe in Stateline."
+    },
+    {
+      "question": "Good for golf groups?",
+      "answer": "Absolutely. The lively atmosphere, cold beers, and big screens make it perfect for unwinding after a round."
+    }
+  ],
+  "meta": {
+    "title": "The Highlander Bar at Harvey's Tahoe \u2013 Sports Bar | Golf The High Sierra",
+    "description": "Watch the game and enjoy craft beers at The Highlander Bar in Harvey's Lake Tahoe. The perfect sports bar for golf groups."
+  }
+}

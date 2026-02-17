@@ -1,0 +1,52 @@
+{
+  "slug": "harveys-heated-pool",
+  "name": "Harvey's Heated Pool",
+  "type": "pool",
+  "region": "tahoe",
+  "regionLabel": "South Lake Tahoe",
+  "parentHotel": "harveys-lake-tahoe",
+  "address": {
+    "streetAddress": "18 US-50",
+    "addressLocality": "Stateline",
+    "addressRegion": "NV",
+    "postalCode": "89449"
+  },
+  "geo": {
+    "latitude": 38.957,
+    "longitude": -119.9405
+  },
+  "phone": "(775) 588-2411",
+  "website": "https://www.caesars.com/harveys-tahoe",
+  "priceRange": "$$",
+  "description": "Harvey's Lake Tahoe features a heated outdoor pool and hot tub area with stunning views of the Sierra Nevada mountains. The pool deck offers lounge chairs, cabana-style seating, and poolside beverage service. It's the perfect spot for post-golf relaxation, especially during summer and early fall when the mountain air and warm water create an unforgettable combination.",
+  "shortDescription": "Heated outdoor pool with mountain views and poolside service at Harvey's Tahoe.",
+  "highlights": [
+    "Heated Outdoor Pool",
+    "Mountain Views",
+    "Hot Tub",
+    "Poolside Service",
+    "Lounge Chairs",
+    "Cabana Seating"
+  ],
+  "hours": "Seasonal: Daily 8AM\u20138PM (Summer), Weekends (Spring/Fall)",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "Is the pool heated?",
+      "answer": "Yes, the outdoor pool is heated, making it comfortable even on cooler mountain days."
+    },
+    {
+      "question": "Is the pool open year-round?",
+      "answer": "The pool operates seasonally, primarily from late spring through early fall."
+    },
+    {
+      "question": "Is there poolside food and drink service?",
+      "answer": "Yes, beverages and light snacks are available poolside during open hours."
+    }
+  ],
+  "meta": {
+    "title": "Harvey's Heated Pool \u2013 Lake Tahoe Poolside | Golf The High Sierra",
+    "description": "Relax at Harvey's heated pool in Lake Tahoe with mountain views and poolside service. Perfect post-golf recovery."
+  }
+}

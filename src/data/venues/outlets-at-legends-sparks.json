@@ -1,0 +1,52 @@
+{
+  "slug": "outlets-at-legends-sparks",
+  "name": "Outlets at Legends",
+  "type": "shopping",
+  "region": "reno",
+  "regionLabel": "Reno / Sparks",
+  "parentHotel": null,
+  "address": {
+    "streetAddress": "1390 E Greg St",
+    "addressLocality": "Sparks",
+    "addressRegion": "NV",
+    "postalCode": "89434"
+  },
+  "geo": {
+    "latitude": 39.5431,
+    "longitude": -119.7098
+  },
+  "phone": "(775) 475-3000",
+  "website": "https://www.outletsatlegends.com",
+  "priceRange": "$$",
+  "description": "The Outlets at Legends is a premier open-air shopping destination in Sparks featuring over 60 brand-name outlet stores, restaurants, and entertainment options. The center includes popular retailers like Nike, Under Armour, Coach, and Columbia alongside dining options and Nevada's tax-free shopping advantage. Adjacent to SCHEELS, it's a convenient one-stop shopping experience.",
+  "shortDescription": "Open-air outlet shopping with 60+ stores, tax-free advantage, and dining options.",
+  "highlights": [
+    "60+ Outlet Stores",
+    "Tax-Free Shopping",
+    "Open-Air Design",
+    "Nike & Under Armour",
+    "Adjacent to SCHEELS",
+    "Restaurants"
+  ],
+  "hours": "Mon\u2013Sat 10AM\u20138PM, Sun 11AM\u20136PM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What stores are at the Outlets at Legends?",
+      "answer": "The center features 60+ brand-name outlets including Nike, Under Armour, Coach, Columbia, and many more."
+    },
+    {
+      "question": "Is there tax-free shopping?",
+      "answer": "Nevada has no state income tax and sales tax is lower than California, making this a great shopping destination."
+    },
+    {
+      "question": "Is it near SCHEELS?",
+      "answer": "Yes, the Outlets at Legends and SCHEELS share the Legends shopping complex in Sparks."
+    }
+  ],
+  "meta": {
+    "title": "Outlets at Legends Sparks \u2013 Tax-Free Shopping | Golf The High Sierra",
+    "description": "Shop 60+ brand-name outlets at the Legends in Sparks. Tax-free advantage and adjacent to SCHEELS. Perfect for golf trip shopping."
+  }
+}

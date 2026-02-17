@@ -1,0 +1,52 @@
+{
+  "slug": "lead-dog-brewing-reno",
+  "name": "Lead Dog Brewing",
+  "type": "bar",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": null,
+  "address": {
+    "streetAddress": "415 E 4th St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89512"
+  },
+  "geo": {
+    "latitude": 39.5302,
+    "longitude": -119.8115
+  },
+  "phone": "(775) 393-5773",
+  "website": "https://leaddogbrewing.com",
+  "priceRange": "$$",
+  "description": "Lead Dog Brewing is one of Reno's premier craft breweries, operating out of a striking industrial space in the city's growing East 4th Street corridor. The brewery is known for its adventurous approach to brewing, producing everything from hazy IPAs and barrel-aged stouts to innovative sour ales. The taproom features an expansive outdoor patio area, perfect for enjoying Nevada's sunny weather after a round of golf.",
+  "shortDescription": "Adventurous craft brewery with hazy IPAs, barrel-aged stouts, and a sprawling patio.",
+  "highlights": [
+    "Craft Brewery & Taproom",
+    "Industrial Space",
+    "Outdoor Patio",
+    "Rotating Taps",
+    "Food Trucks",
+    "East 4th St Corridor"
+  ],
+  "hours": "Mon\u2013Thu 12PM\u20139PM, Fri\u2013Sat 12PM\u201310PM, Sun 12PM\u20138PM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What types of beer does Lead Dog brew?",
+      "answer": "Lead Dog is known for bold, experimental brews including hazy IPAs, barrel-aged stouts, fruited sours, and seasonal specialties."
+    },
+    {
+      "question": "Is Lead Dog family-friendly?",
+      "answer": "Yes, the taproom welcomes families and often features food trucks on the patio."
+    },
+    {
+      "question": "How far is Lead Dog from downtown Reno hotels?",
+      "answer": "Just a short 5-minute drive or rideshare from the downtown Reno casino corridor."
+    }
+  ],
+  "meta": {
+    "title": "Lead Dog Brewing \u2013 Reno Craft Beer | Golf The High Sierra",
+    "description": "Discover Lead Dog Brewing in Reno's East 4th Street corridor. Adventurous craft beers and a spacious patio perfect for golf groups."
+  }
+}

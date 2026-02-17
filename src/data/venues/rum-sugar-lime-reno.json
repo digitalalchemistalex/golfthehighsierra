@@ -1,0 +1,52 @@
+{
+  "slug": "rum-sugar-lime-reno",
+  "name": "Rum Sugar Lime",
+  "type": "bar",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": null,
+  "address": {
+    "streetAddress": "1039 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.5161,
+    "longitude": -119.8098
+  },
+  "phone": "(775) 409-4600",
+  "website": "https://rumsugarlime.com",
+  "priceRange": "$$",
+  "description": "Rum Sugar Lime brings tropical vibes to Reno's Midtown district with an extensive rum-focused cocktail program and Caribbean-inspired atmosphere. The bar features over 100 rums from around the world, creative tiki-style cocktails, and a lively ambiance complete with island d\u00e9cor and reggae beats. It's become a local favorite for its festive energy and inventive drinks.",
+  "shortDescription": "Tropical rum bar with 100+ rums, tiki cocktails, and Caribbean vibes in Reno's Midtown.",
+  "highlights": [
+    "100+ Rum Selection",
+    "Tiki Cocktails",
+    "Caribbean Atmosphere",
+    "Midtown District",
+    "Tropical D\u00e9cor",
+    "Group-Friendly"
+  ],
+  "hours": "Wed\u2013Sun 5PM\u201312AM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What makes Rum Sugar Lime special?",
+      "answer": "The bar specializes in rum with over 100 varieties from around the world, crafted into creative tiki-style cocktails in a tropical setting."
+    },
+    {
+      "question": "Is Rum Sugar Lime good for groups?",
+      "answer": "Absolutely! The lively, festive atmosphere makes it perfect for golf groups looking for a fun night out."
+    },
+    {
+      "question": "Where is Rum Sugar Lime?",
+      "answer": "Located in Reno's Midtown district on S Virginia Street, surrounded by restaurants, bars, and shops."
+    }
+  ],
+  "meta": {
+    "title": "Rum Sugar Lime \u2013 Tropical Rum Bar in Reno Midtown | Golf The High Sierra",
+    "description": "Discover 100+ rums and creative tiki cocktails at Rum Sugar Lime in Reno's Midtown. A tropical apr\u00e8s-golf escape."
+  }
+}

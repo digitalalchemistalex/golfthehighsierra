@@ -1,0 +1,52 @@
+{
+  "slug": "carson-valley-inn-amenities",
+  "name": "Carson Valley Inn Amenities",
+  "type": "amenity",
+  "region": "carson",
+  "regionLabel": "Carson Valley",
+  "parentHotel": "carson-valley-inn-casino",
+  "address": {
+    "streetAddress": "1627 US-395",
+    "addressLocality": "Minden",
+    "addressRegion": "NV",
+    "postalCode": "89423"
+  },
+  "geo": {
+    "latitude": 38.959,
+    "longitude": -119.7663
+  },
+  "phone": "(775) 782-9711",
+  "website": "https://www.cvinn.com",
+  "priceRange": "$\u2013$$",
+  "description": "Carson Valley Inn offers a comprehensive amenities package that makes it an ideal base for golf groups exploring the Carson Valley region. Facilities include an outdoor pool and hot tub, fitness center, wedding chapel, RV park, and multiple dining options. The resort's convenient location near Genoa Lakes, Eagle Valley, and Dayton Valley golf courses makes it a smart lodging choice.",
+  "shortDescription": "Full resort amenities at Carson Valley Inn including pool, fitness, and dining.",
+  "highlights": [
+    "Outdoor Pool & Hot Tub",
+    "Fitness Center",
+    "Multiple Restaurants",
+    "Casino Floor",
+    "RV Park",
+    "Near Golf Courses"
+  ],
+  "hours": "Pool: Daily 8AM\u201310PM, Fitness: 24 Hours",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What amenities does Carson Valley Inn offer?",
+      "answer": "Outdoor pool, hot tub, fitness center, casino, multiple restaurants, wedding chapel, and RV park."
+    },
+    {
+      "question": "Which golf courses are nearby?",
+      "answer": "Genoa Lakes, Eagle Valley, Dayton Valley, and Toiyabe are all within 15-30 minutes."
+    },
+    {
+      "question": "Is the pool open year-round?",
+      "answer": "The outdoor pool operates seasonally during warmer months, while the hot tub is available longer."
+    }
+  ],
+  "meta": {
+    "title": "Carson Valley Inn Amenities \u2013 Pool, Fitness & More | Golf The High Sierra",
+    "description": "Enjoy pool, fitness, casino, and dining at Carson Valley Inn. Ideal golf group amenities near Carson Valley's best courses."
+  }
+}

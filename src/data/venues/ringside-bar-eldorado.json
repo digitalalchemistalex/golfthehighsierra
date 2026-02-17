@@ -1,0 +1,52 @@
+{
+  "slug": "ringside-bar-eldorado",
+  "name": "Ringside Bar",
+  "type": "bar",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "priceRange": "$$",
+  "description": "The Ringside Bar at the Eldorado offers a casual, lively atmosphere in the heart of the casino floor. Known for its friendly bartenders and generous pours, Ringside is a popular gathering spot for guests looking to enjoy a drink while soaking in the casino energy. It's a no-frills, good-times bar that's always buzzing.",
+  "shortDescription": "Casual casino floor bar with friendly service and lively atmosphere at the Eldorado.",
+  "highlights": [
+    "Casino Floor",
+    "Friendly Bartenders",
+    "Generous Pours",
+    "Lively Atmosphere",
+    "Eldorado Resort",
+    "Casual Vibe"
+  ],
+  "hours": "Daily 24 Hours",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "Is Ringside Bar open 24 hours?",
+      "answer": "Yes, like many casino bars, Ringside offers service around the clock."
+    },
+    {
+      "question": "Where in the Eldorado is it?",
+      "answer": "On the main casino floor, centrally located and easy to find."
+    },
+    {
+      "question": "What's the atmosphere like?",
+      "answer": "Casual and lively with friendly bartenders and the energy of the casino surrounding you."
+    }
+  ],
+  "meta": {
+    "title": "Ringside Bar at Eldorado \u2013 24hr Casino Bar Reno | Golf The High Sierra",
+    "description": "Enjoy 24-hour drinks and casino energy at the Ringside Bar in Eldorado Resort. Casual and lively in downtown Reno."
+  }
+}

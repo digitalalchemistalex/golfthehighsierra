@@ -1,0 +1,52 @@
+{
+  "slug": "cliche-lounge-harrahs-tahoe",
+  "name": "Clich\u00e9 Lounge",
+  "type": "lounge",
+  "region": "tahoe",
+  "regionLabel": "South Lake Tahoe",
+  "parentHotel": "harrahs-lake-tahoe",
+  "address": {
+    "streetAddress": "15 US-50",
+    "addressLocality": "Stateline",
+    "addressRegion": "NV",
+    "postalCode": "89449"
+  },
+  "geo": {
+    "latitude": 38.9568,
+    "longitude": -119.9409
+  },
+  "phone": "(775) 588-6611",
+  "website": "https://www.caesars.com/harrahs-tahoe",
+  "priceRange": "$$",
+  "description": "Clich\u00e9 Lounge at Harrah's Lake Tahoe offers a modern, upscale nightlife experience with stunning views of the Sierra Nevada mountains. The lounge features craft cocktails, premium spirits, and a sophisticated atmosphere with contemporary d\u00e9cor. Live DJs on weekends create an energetic vibe, making it a popular apr\u00e8s-ski and apr\u00e8s-golf destination.",
+  "shortDescription": "Modern upscale lounge at Harrah's Tahoe with mountain views and weekend DJs.",
+  "highlights": [
+    "Mountain Views",
+    "Craft Cocktails",
+    "Weekend DJs",
+    "Modern Design",
+    "Harrah's Tahoe",
+    "Apr\u00e8s-Golf Spot"
+  ],
+  "hours": "Thu\u2013Sun 8PM\u20132AM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "Where is Clich\u00e9 Lounge?",
+      "answer": "Inside Harrah's Lake Tahoe casino resort in Stateline, Nevada, with views of the Sierra Nevada mountains."
+    },
+    {
+      "question": "What nights is Clich\u00e9 open?",
+      "answer": "Typically Thursday through Sunday evenings with DJ entertainment on weekends."
+    },
+    {
+      "question": "Is there a dress code?",
+      "answer": "Smart casual is recommended. The lounge has an upscale but relaxed atmosphere."
+    }
+  ],
+  "meta": {
+    "title": "Clich\u00e9 Lounge at Harrah's Tahoe \u2013 Nightlife | Golf The High Sierra",
+    "description": "Experience upscale nightlife at Clich\u00e9 Lounge in Harrah's Lake Tahoe. Mountain views, craft cocktails, and DJs for golf groups."
+  }
+}

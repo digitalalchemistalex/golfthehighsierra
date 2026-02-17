@@ -1,0 +1,52 @@
+{
+  "slug": "the-eddy-reno",
+  "name": "The Eddy",
+  "type": "bar",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": null,
+  "address": {
+    "streetAddress": "22 S Sierra St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5278,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 954-8040",
+  "website": "https://theeddyreno.com",
+  "priceRange": "$$",
+  "description": "The Eddy is a modern gastropub and cocktail bar in downtown Reno that combines creative American cuisine with an impressive drinks program. Named after the eddies that form in the Truckee River nearby, the bar features a rotating menu of craft cocktails, local beers, and an approachable wine list. The warm, contemporary space offers both bar and table seating with an inviting atmosphere.",
+  "shortDescription": "Modern gastropub with creative cocktails and elevated pub fare along the Truckee River corridor.",
+  "highlights": [
+    "Gastropub Cuisine",
+    "Craft Cocktails",
+    "Truckee River Adjacent",
+    "Local Beers",
+    "Weekend Brunch",
+    "Outdoor Seating"
+  ],
+  "hours": "Tue\u2013Sun 11AM\u201310PM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "Does The Eddy have food?",
+      "answer": "Yes, The Eddy serves elevated American gastropub cuisine with creative dishes using local ingredients."
+    },
+    {
+      "question": "Where is The Eddy located?",
+      "answer": "The Eddy is on S Sierra Street in downtown Reno, steps from the Truckee River walk and casino corridor."
+    },
+    {
+      "question": "Is there outdoor seating?",
+      "answer": "Yes, The Eddy offers outdoor seating that's popular during Reno's warm seasons."
+    }
+  ],
+  "meta": {
+    "title": "The Eddy \u2013 Modern Gastropub in Downtown Reno | Golf The High Sierra",
+    "description": "Enjoy creative American cuisine and craft cocktails at The Eddy in downtown Reno. A perfect dinner spot for golf groups."
+  }
+}

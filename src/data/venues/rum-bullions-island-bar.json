@@ -1,0 +1,52 @@
+{
+  "slug": "rum-bullions-island-bar",
+  "name": "Rum Bullions Island Bar",
+  "type": "bar",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "silver-legacy-resort-casino",
+  "address": {
+    "streetAddress": "407 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5302,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 325-7401",
+  "website": "https://www.silverlegacyreno.com",
+  "priceRange": "$$",
+  "description": "Rum Bullions Island Bar sits beneath Silver Legacy's iconic dome, offering tropical-inspired cocktails in a unique island setting right on the casino floor. The bar is known for its frozen drinks, rum specialties, and festive atmosphere. It's a lively stop that brings a taste of the tropics to the High Sierra.",
+  "shortDescription": "Tropical island bar beneath Silver Legacy's iconic dome with frozen rum cocktails.",
+  "highlights": [
+    "Under the Dome",
+    "Tropical Cocktails",
+    "Frozen Drinks",
+    "Island Theme",
+    "Casino Floor",
+    "Rum Specialties"
+  ],
+  "hours": "Daily 11AM\u20131AM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "Where is Rum Bullions?",
+      "answer": "Beneath Silver Legacy's signature dome on the main casino floor."
+    },
+    {
+      "question": "What are the drink specialties?",
+      "answer": "Tropical frozen drinks, rum cocktails, and island-inspired beverages."
+    },
+    {
+      "question": "Is it a full bar?",
+      "answer": "Yes, while rum is the specialty, they serve a full range of cocktails, beer, and wine."
+    }
+  ],
+  "meta": {
+    "title": "Rum Bullions Island Bar \u2013 Silver Legacy Dome | Golf The High Sierra",
+    "description": "Sip tropical cocktails beneath Silver Legacy's dome at Rum Bullions Island Bar. Frozen drinks and island vibes in downtown Reno."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "harveys-fitness-center",
+  "name": "Harvey's Fitness Center",
+  "type": "fitness",
+  "region": "tahoe",
+  "regionLabel": "South Lake Tahoe",
+  "parentHotel": "harveys-lake-tahoe",
+  "address": {
+    "streetAddress": "18 US-50",
+    "addressLocality": "Stateline",
+    "addressRegion": "NV",
+    "postalCode": "89449"
+  },
+  "geo": {
+    "latitude": 38.957,
+    "longitude": -119.9405
+  },
+  "phone": "(775) 588-2411",
+  "website": "https://www.caesars.com/harveys-tahoe",
+  "priceRange": "$",
+  "description": "The Fitness Center at Harvey's Lake Tahoe provides hotel guests with a well-equipped workout space to maintain their fitness routine while on a golf trip. The facility includes cardio machines, free weights, strength training equipment, and stretch areas. At 6,200 feet elevation, even a light workout here provides extra conditioning.",
+  "shortDescription": "Well-equipped hotel fitness center at 6,200 feet elevation at Harvey's Tahoe.",
+  "highlights": [
+    "Cardio Equipment",
+    "Free Weights",
+    "Strength Training",
+    "Stretch Area",
+    "Hotel Guest Access",
+    "High Altitude Training"
+  ],
+  "hours": "Daily 6AM\u20138PM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "Is the fitness center free for hotel guests?",
+      "answer": "Yes, the fitness center is complimentary for Harvey's hotel guests."
+    },
+    {
+      "question": "What equipment is available?",
+      "answer": "Cardio machines, free weights, strength training equipment, and stretch areas."
+    },
+    {
+      "question": "Does the altitude affect workouts?",
+      "answer": "At 6,200 feet, you may notice increased effort \u2014 stay hydrated and ease into your routine."
+    }
+  ],
+  "meta": {
+    "title": "Harvey's Fitness Center \u2013 Lake Tahoe Gym | Golf The High Sierra",
+    "description": "Stay fit at Harvey's Tahoe fitness center with cardio, weights, and strength training at 6,200 feet. Complimentary for guests."
+  }
+}

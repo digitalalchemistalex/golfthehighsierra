@@ -1,0 +1,52 @@
+{
+  "slug": "comedy-bar-silver-legacy",
+  "name": "Comedy Bar",
+  "type": "bar",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "silver-legacy-resort-casino",
+  "address": {
+    "streetAddress": "407 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5302,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 325-7401",
+  "website": "https://www.silverlegacyreno.com",
+  "priceRange": "$$",
+  "description": "The Comedy Bar at Silver Legacy combines live stand-up comedy with a full bar for an entertaining night out. Featuring both established comedians and rising talent, the intimate venue delivers laughs in a casual setting with drink service throughout the show. It's a unique apr\u00e8s-golf experience that golf groups consistently enjoy.",
+  "shortDescription": "Live stand-up comedy with full bar service in an intimate Silver Legacy venue.",
+  "highlights": [
+    "Live Stand-Up Comedy",
+    "Full Bar Service",
+    "Intimate Venue",
+    "National Comedians",
+    "Silver Legacy",
+    "Group Entertainment"
+  ],
+  "hours": "Show nights vary, typically Thu\u2013Sat 8PM & 10PM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What kind of comedy shows are there?",
+      "answer": "Live stand-up comedy featuring both established national acts and rising comedic talent."
+    },
+    {
+      "question": "Can I drink during the show?",
+      "answer": "Yes, full bar service runs throughout every performance."
+    },
+    {
+      "question": "Is this good for golf groups?",
+      "answer": "Perfect for groups \u2014 the combination of comedy and drinks makes for a memorable evening after golf."
+    }
+  ],
+  "meta": {
+    "title": "Comedy Bar at Silver Legacy \u2013 Live Comedy Reno | Golf The High Sierra",
+    "description": "Laugh it up at Silver Legacy's Comedy Bar. Live stand-up comedy with full bar service \u2014 perfect group entertainment after golf."
+  }
+}

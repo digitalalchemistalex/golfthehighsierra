@@ -1,0 +1,52 @@
+{
+  "slug": "pignic-pub-and-patio-reno",
+  "name": "Pignic Pub & Patio",
+  "type": "bar",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": null,
+  "address": {
+    "streetAddress": "235 Flint St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5269,
+    "longitude": -119.816
+  },
+  "phone": "(775) 376-1948",
+  "website": "https://pignicpub.com",
+  "priceRange": "$$",
+  "description": "Pignic Pub & Patio is a beloved Reno gathering spot that combines excellent barbecue with cold craft beers and a massive outdoor patio overlooking the Truckee River. The casual, dog-friendly venue features picnic tables, yard games, and a relaxed atmosphere that's ideal for unwinding after a day on the links. Their slow-smoked meats and creative sides have earned a devoted following.",
+  "shortDescription": "BBQ pub with a massive Truckee River patio, craft beers, and yard games.",
+  "highlights": [
+    "Truckee River Patio",
+    "Slow-Smoked BBQ",
+    "Craft Beer Selection",
+    "Yard Games",
+    "Dog-Friendly",
+    "Casual Atmosphere"
+  ],
+  "hours": "Mon\u2013Sun 11AM\u20139PM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What food does Pignic serve?",
+      "answer": "Pignic specializes in slow-smoked barbecue including brisket, pulled pork, ribs, and creative sides."
+    },
+    {
+      "question": "Is Pignic good for large groups?",
+      "answer": "Yes! The expansive patio with picnic tables and yard games is perfect for golf groups."
+    },
+    {
+      "question": "Is Pignic on the Truckee River?",
+      "answer": "Yes, the patio overlooks the Truckee River, offering beautiful views especially during summer."
+    }
+  ],
+  "meta": {
+    "title": "Pignic Pub & Patio \u2013 BBQ & Beers on the Truckee | Golf The High Sierra",
+    "description": "Enjoy slow-smoked BBQ, craft beers, and Truckee River views at Pignic Pub & Patio in Reno. Perfect for golf groups."
+  }
+}

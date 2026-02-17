@@ -1,0 +1,52 @@
+{
+  "slug": "chapel-tavern-reno",
+  "name": "Chapel Tavern",
+  "type": "bar",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": null,
+  "address": {
+    "streetAddress": "1495 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.5116,
+    "longitude": -119.8095
+  },
+  "phone": "(775) 324-2244",
+  "website": "https://chapeltavern.com",
+  "priceRange": "$$",
+  "description": "Chapel Tavern is a sophisticated craft cocktail destination housed in a beautifully restored 1930s chapel in Reno's Midtown district. The bar's unique architecture features original stained glass windows and soaring cathedral ceilings, creating an atmosphere unlike any other in the region. Known for its innovative cocktail program, Chapel Tavern draws inspiration from classic and modern mixology, with seasonal menus that highlight local ingredients and creative techniques.",
+  "shortDescription": "Craft cocktails in a restored 1930s chapel with stained glass and cathedral ceilings.",
+  "highlights": [
+    "Restored 1930s Chapel",
+    "Craft Cocktail Program",
+    "Midtown District",
+    "Seasonal Menus",
+    "Live Music Nights",
+    "Architectural Gem"
+  ],
+  "hours": "Tue\u2013Sun 5PM\u201312AM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "Where is Chapel Tavern located?",
+      "answer": "Chapel Tavern is in Reno's vibrant Midtown district at 1495 S Virginia St, surrounded by restaurants and shops."
+    },
+    {
+      "question": "Does Chapel Tavern serve food?",
+      "answer": "Yes, they offer a curated menu of elevated bar snacks and shareables that pair perfectly with their cocktail program."
+    },
+    {
+      "question": "Is Chapel Tavern good for groups?",
+      "answer": "Absolutely. The unique chapel setting with its vaulted ceilings makes it a memorable spot for golf groups looking for post-round drinks."
+    }
+  ],
+  "meta": {
+    "title": "Chapel Tavern \u2013 Craft Cocktails in Reno's Midtown | Golf The High Sierra",
+    "description": "Experience craft cocktails in a beautifully restored 1930s chapel in Reno's Midtown. Perfect apr\u00e8s-golf destination for groups visiting the High Sierra."
+  }
+}

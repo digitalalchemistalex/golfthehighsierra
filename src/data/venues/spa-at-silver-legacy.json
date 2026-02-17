@@ -1,0 +1,52 @@
+{
+  "slug": "spa-at-silver-legacy",
+  "name": "The Spa at Silver Legacy",
+  "type": "spa",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "silver-legacy-resort-casino",
+  "address": {
+    "streetAddress": "407 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5302,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 325-7401",
+  "website": "https://www.silverlegacyreno.com/amenities/spa",
+  "priceRange": "$$$",
+  "description": "The Spa at Silver Legacy offers a sanctuary of relaxation within one of Reno's premier casino resorts. Featuring a full menu of massage therapies, body treatments, facials, and salon services, the spa provides the perfect recovery after a day on the golf course. Private treatment rooms, a relaxation lounge, steam room, and sauna create a complete wellness experience.",
+  "shortDescription": "Full-service resort spa with massage, body treatments, and recovery services.",
+  "highlights": [
+    "Massage Therapies",
+    "Body Treatments",
+    "Facials & Salon",
+    "Steam Room & Sauna",
+    "Relaxation Lounge",
+    "Post-Golf Recovery"
+  ],
+  "hours": "Daily 9AM\u20137PM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What services does The Spa at Silver Legacy offer?",
+      "answer": "Full massage therapies, body treatments, facials, salon services, steam room, and sauna."
+    },
+    {
+      "question": "Do I need to be a hotel guest?",
+      "answer": "The spa welcomes both hotel guests and non-guests. Advance booking is recommended."
+    },
+    {
+      "question": "Is this good for post-golf recovery?",
+      "answer": "Absolutely. Deep tissue and sports massages are popular with golfers for recovery after a round."
+    }
+  ],
+  "meta": {
+    "title": "The Spa at Silver Legacy \u2013 Reno Resort Spa | Golf The High Sierra",
+    "description": "Recover after golf with massage, body treatments, and sauna at The Spa at Silver Legacy in Reno. Book your wellness experience."
+  }
+}

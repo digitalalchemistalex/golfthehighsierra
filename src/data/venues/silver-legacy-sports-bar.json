@@ -1,0 +1,52 @@
+{
+  "slug": "silver-legacy-sports-bar",
+  "name": "Silver Legacy Sports Bar",
+  "type": "bar",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "silver-legacy-resort-casino",
+  "address": {
+    "streetAddress": "407 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5302,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 325-7401",
+  "website": "https://www.silverlegacyreno.com",
+  "priceRange": "$$",
+  "description": "The Sports Bar at Silver Legacy Resort Casino puts you at the center of the action with wall-to-wall screens, a full bar, and comfortable seating. Watch every major sporting event while enjoying craft beers, premium cocktails, and bar food favorites. Located on the main casino floor, it's a natural gathering point for golf groups staying at The Row.",
+  "shortDescription": "Wall-to-wall screens and full bar on the Silver Legacy casino floor.",
+  "highlights": [
+    "Wall-to-Wall Screens",
+    "Full Bar",
+    "Casino Floor",
+    "The Row Location",
+    "Bar Food",
+    "Group Seating"
+  ],
+  "hours": "Daily 10AM\u20132AM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "Where is the Silver Legacy Sports Bar?",
+      "answer": "On the main casino floor at Silver Legacy Resort, part of The Row complex in downtown Reno."
+    },
+    {
+      "question": "What can I watch there?",
+      "answer": "All major sporting events on wall-to-wall screens including NFL, NBA, PGA, and more."
+    },
+    {
+      "question": "Is it walkable from Eldorado and Circus Circus?",
+      "answer": "Yes, The Row connects Silver Legacy, Eldorado, and Circus Circus via indoor skywalks."
+    }
+  ],
+  "meta": {
+    "title": "Silver Legacy Sports Bar \u2013 Reno Casino Sports | Golf The High Sierra",
+    "description": "Catch every game on wall-to-wall screens at Silver Legacy's Sports Bar. The Row's go-to spot for golf groups in Reno."
+  }
+}

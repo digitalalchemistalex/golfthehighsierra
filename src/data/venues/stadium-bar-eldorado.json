@@ -1,0 +1,52 @@
+{
+  "slug": "stadium-bar-eldorado",
+  "name": "Stadium Bar",
+  "type": "bar",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "priceRange": "$$",
+  "description": "The Stadium Bar at the Eldorado brings a premium sports viewing experience to Reno's Row complex. Featuring a massive LED video wall, individual viewing stations, and a comprehensive sports betting menu, it's designed for the serious sports fan. Combined with craft beers, cocktails, and elevated bar food, it's the ultimate game-day destination.",
+  "shortDescription": "Premium sports viewing with massive LED wall and sports betting at the Eldorado.",
+  "highlights": [
+    "Massive LED Video Wall",
+    "Sports Betting",
+    "Craft Beers",
+    "Elevated Bar Food",
+    "The Row Complex",
+    "Individual Stations"
+  ],
+  "hours": "Daily 9AM\u20131AM",
+  "heroImage": "",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What makes Stadium Bar different from a regular sports bar?",
+      "answer": "Premium LED video wall, individual viewing stations, and integrated sports betting for a complete game-day experience."
+    },
+    {
+      "question": "Is it part of The Row?",
+      "answer": "Yes, located in the Eldorado which connects to Silver Legacy and Circus Circus via skywalks."
+    },
+    {
+      "question": "Do they have sports betting?",
+      "answer": "Yes, a comprehensive sports betting menu is integrated into the bar experience."
+    }
+  ],
+  "meta": {
+    "title": "Stadium Bar at Eldorado \u2013 Sports & Betting Reno | Golf The High Sierra",
+    "description": "Experience premium sports viewing and betting at Eldorado's Stadium Bar. Massive LED wall and craft beers on The Row."
+  }
+}
