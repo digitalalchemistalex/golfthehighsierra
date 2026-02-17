@@ -23,7 +23,7 @@ const TRUST = [
 ];
 
 const EXP_CARDS = [
-  { img: '/images/homepage/homepage-07.webp', alt: 'Championship golf course', icon: '\u{26F3}', title: '20+ Courses', sub: 'Championship golf across 4 regions' },
+  { img: '/images/homepage/homepage-07.webp', alt: 'Championship golf course', icon: '\u{26F3}', title: '20+ Courses', sub: 'Championship golf across 5 regions' },
   { img: '/images/homepage/homepage-08.webp', alt: 'Fine dining Reno casino', icon: '\u{1F37D}', title: 'Dining', sub: 'Casino restaurants & private events' },
   { img: '/images/homepage/homepage-09.webp', alt: 'Resort pool Peppermill Reno', icon: '\u{1F3E8}', title: 'Resorts & Casinos', sub: 'Atlantis, Peppermill, Grand Sierra & more' },
   { img: '/images/homepage/homepage-10.webp', alt: 'Old Greenwood villa lodging Truckee', icon: '\u{1F3E1}', title: 'Villa Lodging', sub: 'Mountain villas & private cabins' },
@@ -31,8 +31,9 @@ const EXP_CARDS = [
 
 const REGIONS = [
   { name: 'Reno', subtitle: 'Casino Golf Capital', badge: '7 Courses', price: 'From $189', img: '/images/homepage/homepage-11.jpg', alt: 'Lakeridge Golf Course Reno NV', chips: ['Lakeridge', 'ArrowCreek', 'Red Hawk', 'Wolf Run', 'Somersett'], hotels: '\u{1F3E8} Atlantis \u00B7 Peppermill \u00B7 Grand Sierra Resort \u00B7 Eldorado', rating: '4.8 (290 reviews)', href: '/group-golf-reno-tahoe/' },
-  { name: 'Lake Tahoe', subtitle: 'Lakefront & Alpine', badge: '3 Courses', price: 'From $299', img: '/images/homepage/homepage-12.jpg', alt: 'Incline Village Championship Course Lake Tahoe', chips: ['Edgewood Tahoe', 'Incline Village'], hotels: '\u{1F3E8} Hyatt Regency \u00B7 Lodge at Edgewood \u00B7 Lakeside resorts', rating: '4.9 (185 reviews)', href: '/best-golf-courses-lake-tahoe/' },
-  { name: 'Truckee', subtitle: 'Mountain Championship', badge: '4 Courses', price: 'From $249', img: '/images/homepage/homepage-13.jpg', alt: "Gray's Crossing Golf Course Truckee CA", chips: ['Old Greenwood', 'Coyote Moon', "Gray's Crossing", 'Tahoe Donner', 'Plumas Pines'], hotels: '\u{1F3E8} Truckee villas \u00B7 Gravity Haus \u00B7 Graeagle Lodge \u00B7 Hampton Inn', rating: '4.8 (120 reviews)', href: '/group-golf-reno-tahoe/' },
+  { name: 'Lake Tahoe', subtitle: 'Lakefront & Alpine', badge: '3 Courses', price: 'From $299', img: '/images/homepage/homepage-12.jpg', alt: 'Incline Village Championship Course Lake Tahoe', chips: ['Edgewood Tahoe', 'Incline Village'], hotels: '\u{1F3E8} Hyatt Regency \u00B7 Harrah\u2019s \u00B7 Harvey\u2019s \u00B7 Margaritaville', rating: '4.9 (185 reviews)', href: '/best-golf-courses-lake-tahoe/' },
+  { name: 'Truckee', subtitle: 'Mountain Championship', badge: '4 Courses', price: 'From $249', img: '/images/homepage/homepage-13.jpg', alt: "Gray's Crossing Golf Course Truckee CA", chips: ['Old Greenwood', 'Coyote Moon', "Gray's Crossing", 'Tahoe Donner'], hotels: '\u{1F3E8} Gravity Haus \u00B7 Hampton Inn \u00B7 Old Greenwood Villas', rating: '4.8 (120 reviews)', href: '/group-golf-reno-tahoe/' },
+  { name: 'Graeagle', subtitle: 'Hidden Gem of the Sierra', badge: '4 Courses', price: 'From $179', img: '/images/homepage/homepage-16.jpg', alt: 'Plumas Pines Golf Resort Graeagle California', chips: ['Plumas Pines', 'Graeagle Meadows', 'Whitehawk Ranch', 'Nakoma Dragon'], hotels: '\u{1F3E8} Chalet View Lodge \u00B7 River Pines Resort \u00B7 The Inn at Nakoma', rating: '4.8 (88 reviews)', href: '/group-golf-reno-tahoe/' },
   { name: 'Carson Valley', subtitle: 'Best Value in the Sierra', badge: '4 Courses', price: 'From $149', img: '/images/homepage/homepage-14.jpg', alt: 'Dayton Valley Golf Club Carson Valley NV', chips: ['Genoa Lakes', 'Dayton Valley', 'Toiyabe', 'Eagle Valley'], hotels: '\u{1F3E8} Carson Valley Inn \u00B7 Holiday Inn \u00B7 Budget-friendly options', rating: '4.7 (77 reviews)', href: '/group-golf-reno-tahoe/' },
 ];
 
@@ -196,7 +197,7 @@ export default function HomepageContent() {
         <Anim className="sec-head" style={{flexDirection:'column',alignItems:'flex-start',maxWidth:720}}>
           <div style={{fontSize:12,letterSpacing:3,textTransform:'uppercase',color:'#B8963E',fontWeight:600,marginBottom:8}}>Choose Your Region</div>
           <h2>Golf by Region — From Casino Nightlife to Mountain Solitude</h2>
-          <p style={{maxWidth:720,marginTop:8}}>The Reno-Tahoe area offers four distinct golf regions, each with its own personality. Tell us your vibe and we&apos;ll match you.</p>
+          <p style={{maxWidth:720,marginTop:8}}>The Reno-Tahoe area offers five distinct golf regions, each with its own personality. Tell us your vibe and we&apos;ll match you.</p>
         </Anim>
         <div className="region-cards">
           {REGIONS.map((r,i)=>(<Anim key={i} delay={i*.08} className="rc"><div className="rc-img"><div className="rc-badge">{r.badge}</div><div className="rc-price">{r.price}</div><img src={r.img} alt={r.alt} loading="lazy" /></div><div className="rc-body"><h3>{r.name}</h3><div className="rc-subtitle">{r.subtitle}</div><div className="rc-chips">{r.chips.map((c,j)=><span key={j} className="chip">{c}</span>)}</div><div className="rc-hotels">{r.hotels}</div><div className="rc-rating"><span className="rc-stars">{'\u2605'.repeat(5)}</span><span>{r.rating}</span></div><div className="rc-link"><Link href={r.href}>Explore {r.name} Packages</Link><div className="arrow">\u2192</div></div></div></Anim>))}
@@ -260,4 +261,5 @@ export default function HomepageContent() {
     </div>
   );
 }
+
 
