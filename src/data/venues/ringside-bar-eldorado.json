@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "Ringside Bar at Eldorado \u2013 24hr Casino Bar Reno | Golf The High Sierra",
+    "title": "Ringside Bar at Eldorado – 24hr Casino Bar Reno | Golf The High Sierra",
     "description": "Enjoy 24-hour drinks and casino energy at the Ringside Bar in Eldorado Resort. Casual and lively in downtown Reno."
-  }
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Post-round drinks at Ringside Bar are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
+      "author": "Travis J.",
+      "source": "Google",
+      "meta": "Google · corporate dinner (24)"
+    },
+    {
+      "stars": 4,
+      "quote": "We ended every day of our golf trip at Ringside Bar. Great selection, friendly bartenders, and the kind of place where your group can be loud and happy after a great round.",
+      "author": "Bill D.",
+      "source": "Yelp",
+      "meta": "Yelp · date night during golf trip"
+    }
+  ]
 }

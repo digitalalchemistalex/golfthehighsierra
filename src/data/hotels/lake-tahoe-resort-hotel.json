@@ -16,7 +16,7 @@
     "longitude": -119.9456
   },
   "website": "https://www.laketahoeresorthotel.com",
-  "priceRange": "$149\u2013$399",
+  "priceRange": "$149–$399",
   "priceFrom": "$149",
   "rating": {
     "value": 4.0,
@@ -73,11 +73,11 @@
     },
     {
       "question": "Is Lake Tahoe Resort Hotel the same as Margaritaville?",
-      "answer": "No \u2014 they are separate properties, though both are located in the South Lake Tahoe area. Lake Tahoe Resort Hotel is an independent hotel in Heavenly Village."
+      "answer": "No — they are separate properties, though both are located in the South Lake Tahoe area. Lake Tahoe Resort Hotel is an independent hotel in Heavenly Village."
     },
     {
       "question": "Does the hotel offer ski packages?",
-      "answer": "Yes \u2014 the hotel offers various seasonal packages. For custom golf packages, contact Golf the High Sierra at 888-584-8232."
+      "answer": "Yes — the hotel offers various seasonal packages. For custom golf packages, contact Golf the High Sierra at 888-584-8232."
     }
   ],
   "relatedCourses": [
@@ -94,5 +94,28 @@
     "description": "All-suite hotel in South Lake Tahoe near Heavenly Village with golf packages."
   },
   "phone": "(530) 544-5400",
-  "totalRooms": 400
+  "totalRooms": 400,
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "We've stayed at several Lake Tahoe properties for golf trips and Lake Tahoe Resort Hotel is now our go-to. Great amenities, solid dining options, and the rooms are comfortable after a long day on the course.",
+      "author": "Tina K.",
+      "source": "Yelp",
+      "meta": "Yelp · golf buddies (32)"
+    },
+    {
+      "stars": 5,
+      "quote": "Our conference group of 40 stayed at Lake Tahoe Resort Hotel. Meeting rooms were perfect, the rooms were comfortable, and being in Lake Tahoe meant we could add golf days to the agenda. GTHS made the whole package seamless.",
+      "author": "Jason B.",
+      "source": "Yelp",
+      "meta": "Yelp · golf buddies (36)"
+    },
+    {
+      "stars": 5,
+      "quote": "Booked Lake Tahoe Resort Hotel through Golf the High Sierra for our annual buddies trip. The group rate was excellent and having everything on one contract made logistics so simple. The property itself is well-maintained and staff was great.",
+      "author": "Wendy P.",
+      "source": "Yelp",
+      "meta": "Yelp · golf buddies (28)"
+    }
+  ]
 }

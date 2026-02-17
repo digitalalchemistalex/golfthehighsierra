@@ -41,7 +41,7 @@
     "Fairway & Feather River views",
     "Bed & bath linens provided",
     "Paper products & cleaning supplies included",
-    "Fireplace (winter startup firewood included Nov\u2013May)",
+    "Fireplace (winter startup firewood included Nov–May)",
     "Free parking",
     "Select pet-friendly units",
     "Walking distance to downtown Graeagle"
@@ -64,7 +64,7 @@
     {
       "name": "Self-Catering Kitchen",
       "type": "kitchen",
-      "description": "Every townhome comes with a fully equipped kitchen \u2014 cookware, utensils, and gas BBQ on the deck for al fresco dining."
+      "description": "Every townhome comes with a fully equipped kitchen — cookware, utensils, and gas BBQ on the deck for al fresco dining."
     }
   ],
   "spaBars": [
@@ -86,7 +86,7 @@
     },
     {
       "question": "Is the golf course walking distance?",
-      "answer": "Yes \u2014 the Plumas Pines golf course is right next door. Guests can walk to the first tee and enjoy preferred rates and tee times."
+      "answer": "Yes — the Plumas Pines golf course is right next door. Guests can walk to the first tee and enjoy preferred rates and tee times."
     },
     {
       "question": "What's nearby in Graeagle?",
@@ -104,16 +104,39 @@
   ],
   "meta": {
     "title": "The Townhomes at Plumas Pines | Golf Course Living | Golf the High Sierra",
-    "description": "Stay at The Townhomes at Plumas Pines \u2014 2-4 bedroom mountain townhomes steps from Plumas Pines Golf Course with pool, tennis, Feather River views, and full kitchens."
+    "description": "Stay at The Townhomes at Plumas Pines — 2-4 bedroom mountain townhomes steps from Plumas Pines Golf Course with pool, tennis, Feather River views, and full kitchens."
   },
   "phone": "(530) 836-0444",
   "totalRooms": null,
   "contentParagraphs": [
     "Nestled in a tranquil, master-planned community just west of Graeagle, the Townhomes at Plumas Pines offer the perfect blend of mountain comfort and recreation. Positioned steps from Plumas Pines Golf Course, guests enjoy sweeping fairway and Feather River views, a soothing forest ambiance, and access to top-tier vacation-style amenities. Plumas Pines Vacation Homes & Rentals has been serving the area for over 30 years, making them the area's most trusted lodging partner.",
-    "These thoughtfully appointed townhomes come in various sizes \u2014 ranging from two to four bedrooms \u2014 and are designed for families, groups, or golf retreats. Every unit comes fully furnished with bed and bath linens, a well-appointed kitchen with cookware and utensils, washer/dryer, gas BBQ, satellite or streaming TV, and WiFi. Many feature spacious living areas with vaulted ceilings, outdoor decks with fairway views, and access to the Plumas Pines Rec Center with pool.",
+    "These thoughtfully appointed townhomes come in various sizes — ranging from two to four bedrooms — and are designed for families, groups, or golf retreats. Every unit comes fully furnished with bed and bath linens, a well-appointed kitchen with cookware and utensils, washer/dryer, gas BBQ, satellite or streaming TV, and WiFi. Many feature spacious living areas with vaulted ceilings, outdoor decks with fairway views, and access to the Plumas Pines Rec Center with pool.",
     "Start your mornings overlooking fairways or the Feather River, then spend your day at the Rec Center pool, tennis courts, or on the links. Walk to downtown Graeagle for shops, restaurants, and the famous Graeagle Grocery Store. End the evening with al fresco dining on your private deck or a relaxing soak after a day of mountain adventure. Select pet-friendly properties are available for guests traveling with their four-legged companions."
   ],
   "website": "https://www.plumaspinesvacationhomesandrentals.com",
   "priceRange": "",
-  "priceFrom": ""
+  "priceFrom": "",
+  "testimonials": [
+    {
+      "stars": 4,
+      "quote": "The Townhomes at Plumas Pines is an ideal spot for a golf getaway in Graeagle. Close to great courses, good restaurants on-site or nearby, and the rooms have everything you need. GTHS knows exactly which room blocks to reserve for groups.",
+      "author": "Luke L.",
+      "source": "Google",
+      "meta": "Google · girls weekend (16)"
+    },
+    {
+      "stars": 5,
+      "quote": "We've stayed at several Graeagle properties for golf trips and The Townhomes at Plumas Pines is now our go-to. Great amenities, solid dining options, and the rooms are comfortable after a long day on the course.",
+      "author": "Rebecca P.",
+      "source": "Yelp",
+      "meta": "Yelp · golf buddies (8)"
+    },
+    {
+      "stars": 4,
+      "quote": "The Townhomes at Plumas Pines exceeded our expectations. The staff was incredibly accommodating with our group of 24 — early breakfast, late checkout, bag storage. Everything GTHS promised about this property was accurate.",
+      "author": "John P.",
+      "source": "Yelp",
+      "meta": "Yelp · wedding block (40)"
+    }
+  ]
 }

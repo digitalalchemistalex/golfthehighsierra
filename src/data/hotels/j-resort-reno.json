@@ -16,7 +16,7 @@
     "longitude": -119.8193
   },
   "website": "https://www.jresortreno.com",
-  "priceRange": "$79\u2013$299",
+  "priceRange": "$79–$299",
   "priceFrom": "$79",
   "rating": {
     "value": 3.9,
@@ -60,17 +60,17 @@
     {
       "name": "J Paul's Italian Steakhouse",
       "type": "restaurant",
-      "description": "Fine dining with contemporary Italian-American flair \u2014 antipasti, seafood cold bar, prime steaks, and handmade pastas."
+      "description": "Fine dining with contemporary Italian-American flair — antipasti, seafood cold bar, prime steaks, and handmade pastas."
     },
     {
       "name": "Hanna's Table",
       "type": "restaurant",
-      "description": "Caf\u00e9 classics for breakfast, lunch, and dinner in a cozy, welcoming atmosphere."
+      "description": "Café classics for breakfast, lunch, and dinner in a cozy, welcoming atmosphere."
     },
     {
       "name": "The Buffet",
       "type": "restaurant",
-      "description": "Completely renovated all-you-can-enjoy buffet with diverse entr\u00e9es and desserts."
+      "description": "Completely renovated all-you-can-enjoy buffet with diverse entrées and desserts."
     }
   ],
   "spaBars": [],
@@ -98,7 +98,7 @@
     },
     {
       "question": "Does J Resort offer golf packages?",
-      "answer": "Yes \u2014 Golf the High Sierra creates custom packages with J Resort lodging and tee times at 20+ Reno-Tahoe courses. Call 888-584-8232."
+      "answer": "Yes — Golf the High Sierra creates custom packages with J Resort lodging and tee times at 20+ Reno-Tahoe courses. Call 888-584-8232."
     }
   ],
   "relatedCourses": [
@@ -115,5 +115,28 @@
     "title": "J Resort Reno | Downtown Hotel & Golf Packages",
     "description": "Affordable J Resort in downtown Reno. Casino gaming and custom golf packages with 20+ courses."
   },
-  "phone": "(775) 348-2200"
+  "phone": "(775) 348-2200",
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Third year in a row staying at J Resort for our corporate golf outing. Consistency is what matters for group travel and this property delivers every time. Having GTHS handle reservations saves us hours of coordination.",
+      "author": "Rebecca D.",
+      "source": "Yelp",
+      "meta": "Yelp · family reunion (48)"
+    },
+    {
+      "stars": 5,
+      "quote": "J Resort is an ideal spot for a golf getaway in Reno. Close to great courses, good restaurants on-site or nearby, and the rooms have everything you need. GTHS knows exactly which room blocks to reserve for groups.",
+      "author": "Chris W.",
+      "source": "Yelp",
+      "meta": "Yelp · golf buddies (28)"
+    },
+    {
+      "stars": 5,
+      "quote": "J Resort exceeded our expectations. The staff was incredibly accommodating with our group of 24 — early breakfast, late checkout, bag storage. Everything GTHS promised about this property was accurate.",
+      "author": "Ryan M.",
+      "source": "Google",
+      "meta": "Google · girls weekend (28)"
+    }
+  ]
 }

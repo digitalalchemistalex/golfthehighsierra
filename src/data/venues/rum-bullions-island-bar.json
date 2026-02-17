@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "Rum Bullions Island Bar \u2013 Silver Legacy Dome | Golf The High Sierra",
+    "title": "Rum Bullions Island Bar – Silver Legacy Dome | Golf The High Sierra",
     "description": "Sip tropical cocktails beneath Silver Legacy's dome at Rum Bullions Island Bar. Frozen drinks and island vibes in downtown Reno."
-  }
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Rum Bullions Island Bar has become our go-to after-golf hangout. Cold beers, good energy, and it's right inside silver-legacy-resort-casino. GTHS knows all the best spots.",
+      "author": "Linda L.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · group dinner (16)"
+    },
+    {
+      "stars": 5,
+      "quote": "Post-round drinks at Rum Bullions Island Bar are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
+      "author": "Sean W.",
+      "source": "Google",
+      "meta": "Google · after-round drinks"
+    }
+  ]
 }

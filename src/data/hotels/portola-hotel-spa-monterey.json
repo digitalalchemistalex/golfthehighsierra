@@ -16,7 +16,7 @@
     "longitude": -121.8947
   },
   "website": "https://www.portolahotel.com",
-  "priceRange": "$249\u2013$699",
+  "priceRange": "$249–$699",
   "priceFrom": "$249",
   "starRating": 4,
   "rating": {
@@ -90,7 +90,7 @@
     },
     {
       "question": "Does Portola have a spa?",
-      "answer": "Yes \u2014 the Spa on the Plaza offers full-service treatments including massages, facials, body wraps, and a fitness center."
+      "answer": "Yes — the Spa on the Plaza offers full-service treatments including massages, facials, body wraps, and a fitness center."
     }
   ],
   "relatedCourses": [],
@@ -100,5 +100,28 @@
     "description": "Luxury waterfront hotel in Monterey. Vista Blue Spa, fine dining, and golf packages near Pebble Beach."
   },
   "phone": "(831) 649-4511",
-  "totalRooms": 379
+  "totalRooms": 379,
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Stayed at Portola Hotel & Spa for our golf trip and it was the perfect home base. Rooms were clean and spacious, location was ideal for hitting courses around Northern California. GTHS got us a group rate we couldn't find anywhere else.",
+      "author": "Kevin A.",
+      "source": "Yelp",
+      "meta": "Yelp · wedding block (24)"
+    },
+    {
+      "stars": 5,
+      "quote": "Our conference group of 40 stayed at Portola Hotel & Spa. Meeting rooms were perfect, the rooms were comfortable, and being in Northern California meant we could add golf days to the agenda. GTHS made the whole package seamless.",
+      "author": "Amanda M.",
+      "source": "Google",
+      "meta": "Google · girls weekend (20)"
+    },
+    {
+      "stars": 5,
+      "quote": "Booked Portola Hotel & Spa through Golf the High Sierra for our annual buddies trip. The group rate was excellent and having everything on one contract made logistics so simple. The property itself is well-maintained and staff was great.",
+      "author": "Julie C.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · wedding block (16)"
+    }
+  ]
 }

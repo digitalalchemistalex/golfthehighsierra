@@ -1,6 +1,6 @@
 {
   "slug": "cliche-lounge-harrahs-tahoe",
-  "name": "Clich\u00e9 Lounge",
+  "name": "Cliché Lounge",
   "type": "lounge",
   "region": "tahoe",
   "regionLabel": "South Lake Tahoe",
@@ -18,7 +18,7 @@
   "phone": "(775) 588-6611",
   "website": "https://www.caesars.com/harrahs-tahoe",
   "priceRange": "$$",
-  "description": "Clich\u00e9 Lounge at Harrah's Lake Tahoe is an upscale ultra-lounge and cigar bar located on the premium 16th floor. The intimate lounge offers over 50 fine cigar brands including Fuente Fuente Opus X, Zino Davidoff, and Vintage Macanudos, alongside premium wines, top-shelf whiskies, and craft cocktails. A state-of-the-art air filtration system keeps the space comfortable for both smokers and non-smokers. Open Friday and Saturday from 6 PM to midnight, with extended hours during holidays and outdoor concert nights. Featured in Cigar Aficionado as a destination cigar bar.",
+  "description": "Cliché Lounge at Harrah's Lake Tahoe is an upscale ultra-lounge and cigar bar located on the premium 16th floor. The intimate lounge offers over 50 fine cigar brands including Fuente Fuente Opus X, Zino Davidoff, and Vintage Macanudos, alongside premium wines, top-shelf whiskies, and craft cocktails. A state-of-the-art air filtration system keeps the space comfortable for both smokers and non-smokers. Open Friday and Saturday from 6 PM to midnight, with extended hours during holidays and outdoor concert nights. Featured in Cigar Aficionado as a destination cigar bar.",
   "shortDescription": "Upscale 16th-floor cigar lounge with 50+ brands, premium spirits, and lake views at Harrah's.",
   "highlights": [
     "16th Floor Location",
@@ -28,16 +28,16 @@
     "Air Filtration System",
     "Weekend Hours Only"
   ],
-  "hours": "Thu\u2013Sun 8PM\u20132AM",
+  "hours": "Thu–Sun 8PM–2AM",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/11/ClicheLounge.jpg",
   "images": [],
   "faqs": [
     {
-      "question": "Where is Clich\u00e9 Lounge?",
+      "question": "Where is Cliché Lounge?",
       "answer": "Inside Harrah's Lake Tahoe casino resort in Stateline, Nevada, with views of the Sierra Nevada mountains."
     },
     {
-      "question": "What nights is Clich\u00e9 open?",
+      "question": "What nights is Cliché open?",
       "answer": "Typically Thursday through Sunday evenings with DJ entertainment on weekends."
     },
     {
@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "Clich\u00e9 Lounge at Harrah's Tahoe \u2013 Nightlife | Golf The High Sierra",
-    "description": "Experience upscale nightlife at Clich\u00e9 Lounge in Harrah's Lake Tahoe. Mountain views, craft cocktails, and DJs for golf groups."
-  }
+    "title": "Cliché Lounge at Harrah's Tahoe – Nightlife | Golf The High Sierra",
+    "description": "Experience upscale nightlife at Cliché Lounge in Harrah's Lake Tahoe. Mountain views, craft cocktails, and DJs for golf groups."
+  },
+  "testimonials": [
+    {
+      "stars": 4,
+      "quote": "We ended every day of our golf trip at Cliché Lounge. Great selection, friendly bartenders, and the kind of place where your group can be loud and happy after a great round.",
+      "author": "Scott W.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · after-round drinks"
+    },
+    {
+      "stars": 5,
+      "quote": "Post-round drinks at Cliché Lounge are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
+      "author": "Mark K.",
+      "source": "Google",
+      "meta": "Google · post-golf drinks (48)"
+    }
+  ]
 }

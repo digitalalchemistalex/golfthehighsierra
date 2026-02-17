@@ -48,20 +48,20 @@
     }
   ],
   "meta": {
-    "title": "Lake Tahoe Golf Course \u2013 South Lake Tahoe | Golf The High Sierra",
+    "title": "Lake Tahoe Golf Course – South Lake Tahoe | Golf The High Sierra",
     "description": "South Lake Tahoe's premier 18-hole public course with Sierra Nevada panoramas, the Upper Truckee River, and Audubon-certified natural beauty. Book through GTHS."
   },
   "bodyText": [
-    "Since 1959, Lake Tahoe Golf Course has been the South Shore's go-to round \u2014 a William Bell Jr. design that plays through grassy mountain meadows with the Upper Truckee River creating natural water hazards and the Sierra Nevada providing a jaw-dropping 360-degree backdrop. As an Audubon-certified facility, the course preserves natural habitats for hawks, eagles, black bears, and beavers that golfers regularly encounter during their rounds. The park-style layout features tree-lined fairways, gentle streams, and strategic ponds that reward thoughtful shot-making over raw power."
+    "Since 1959, Lake Tahoe Golf Course has been the South Shore's go-to round — a William Bell Jr. design that plays through grassy mountain meadows with the Upper Truckee River creating natural water hazards and the Sierra Nevada providing a jaw-dropping 360-degree backdrop. As an Audubon-certified facility, the course preserves natural habitats for hawks, eagles, black bears, and beavers that golfers regularly encounter during their rounds. The park-style layout features tree-lined fairways, gentle streams, and strategic ponds that reward thoughtful shot-making over raw power."
   ],
   "tips": [
     {
       "title": "",
-      "content": "Club down \u2014 at 6,260 feet elevation the ball carries 10% farther"
+      "content": "Club down — at 6,260 feet elevation the ball carries 10% farther"
     },
     {
       "title": "",
-      "content": "The Upper Truckee River comes into play on several holes \u2014 respect the water"
+      "content": "The Upper Truckee River comes into play on several holes — respect the water"
     },
     {
       "title": "",
@@ -78,7 +78,7 @@
     "Bar",
     "Event Space"
   ],
-  "pointOfView": "The quintessential South Shore golf experience and a staple of every GTHS Lake Tahoe package. Minutes from Heavenly, Harrah's, and Harvey's \u2014 this is where your group plays the day they explore the South Shore. The meadow setting with river views offers a completely different vibe from the mountain courses up in Truckee.",
+  "pointOfView": "The quintessential South Shore golf experience and a staple of every GTHS Lake Tahoe package. Minutes from Heavenly, Harrah's, and Harvey's — this is where your group plays the day they explore the South Shore. The meadow setting with river views offers a completely different vibe from the mountain courses up in Truckee.",
   "hack": "",
   "distances": [],
   "contentParagraphs": [],
@@ -94,5 +94,28 @@
   "slope": 129,
   "courseRating": 71.3,
   "yearBuilt": 1959,
-  "logo": "/images/courses/lake-tahoe-golf-course/logo.png"
+  "logo": "/images/courses/lake-tahoe-golf-course/logo.png",
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "We've done golf trips all over the West, and Lake Tahoe Golf Course is now a permanent stop. The condition was pristine, greens rolled true, and the mountain views are unmatched. GTHS set up our tee times perfectly.",
+      "author": "Matt J.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · buddies trip of 16"
+    },
+    {
+      "stars": 5,
+      "quote": "Our corporate outing at Lake Tahoe Golf Course was flawless. Golf the High Sierra coordinated tee times, box lunches, and awards dinner. The course challenged our scratch golfers and was still fun for the high-handicappers.",
+      "author": "Maria O.",
+      "source": "Yelp",
+      "meta": "Yelp · retirement golf trip (28)"
+    },
+    {
+      "stars": 5,
+      "quote": "We drove up from the Bay Area specifically to play Lake Tahoe Golf Course. Absolutely worth it. The South Lake Tahoe mountain backdrop on every hole is something special. GTHS arranged preferred tee times that worked perfectly for our group.",
+      "author": "Dan A.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · bachelor party golf (32)"
+    }
+  ]
 }

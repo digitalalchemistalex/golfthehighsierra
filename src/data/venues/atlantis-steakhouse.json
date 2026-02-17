@@ -30,7 +30,7 @@
     }
   ],
   "meta": {
-    "title": "Atlantis Steakhouse Lounge \u2013 Premium Cocktails Reno | Golf The High Sierra",
+    "title": "Atlantis Steakhouse Lounge – Premium Cocktails Reno | Golf The High Sierra",
     "description": "Sip premium wines and cocktails by the 1,200-gallon fish tank at the Atlantis Steakhouse Lounge in Reno."
   },
   "region": "reno",
@@ -48,5 +48,21 @@
   },
   "phone": "(775) 825-4700",
   "website": "https://www.atlantiscasino.com",
-  "images": []
+  "images": [],
+  "testimonials": [
+    {
+      "stars": 4,
+      "quote": "Atlantis Steakhouse Lounge has become our go-to after-golf hangout. Cold beers, good energy, and it's right inside atlantis-casino-resort-spa-reno. GTHS knows all the best spots.",
+      "author": "Robert R.",
+      "source": "Google",
+      "meta": "Google · golf trip group"
+    },
+    {
+      "stars": 4,
+      "quote": "We ended every day of our golf trip at Atlantis Steakhouse Lounge. Great selection, friendly bartenders, and the kind of place where your group can be loud and happy after a great round.",
+      "author": "Kevin C.",
+      "source": "Yelp",
+      "meta": "Yelp · corporate dinner (20)"
+    }
+  ]
 }

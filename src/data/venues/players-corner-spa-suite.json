@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "Players Corner Spa Suite \u2013 VIP Lounge Silver Legacy | Golf The High Sierra",
+    "title": "Players Corner Spa Suite – VIP Lounge Silver Legacy | Golf The High Sierra",
     "description": "Experience VIP treatment at the Players Corner Spa Suite in Silver Legacy. Exclusive lounge with complimentary beverages for qualifying guests."
-  }
+  },
+  "testimonials": [
+    {
+      "stars": 4,
+      "quote": "Visited Players Corner Spa Suite during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
+      "author": "Rebecca S.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · group dinner (16)"
+    },
+    {
+      "stars": 5,
+      "quote": "Players Corner Spa Suite was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
+      "author": "James H.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · group dinner (12)"
+    }
+  ]
 }

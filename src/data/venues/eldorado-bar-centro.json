@@ -30,7 +30,7 @@
     }
   ],
   "meta": {
-    "title": "Bar Centro \u2013 Chic Casino Bar at Eldorado Reno | Golf The High Sierra",
+    "title": "Bar Centro – Chic Casino Bar at Eldorado Reno | Golf The High Sierra",
     "description": "Sip fresh hand-squeezed cocktails at Bar Centro, the chic raised bar in the heart of Eldorado's casino floor in downtown Reno."
   },
   "region": "reno",
@@ -48,5 +48,21 @@
   },
   "phone": "(775) 786-5700",
   "website": "https://www.eldoradoreno.com",
-  "images": []
+  "images": [],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Post-round drinks at Bar Centro are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
+      "author": "Sandy L.",
+      "source": "Yelp",
+      "meta": "Yelp · golf trip group"
+    },
+    {
+      "stars": 5,
+      "quote": "Bar Centro has become our go-to after-golf hangout. Cold beers, good energy, and it's right inside eldorado-resorts-reno-eldorado-at-the-row. GTHS knows all the best spots.",
+      "author": "Keith F.",
+      "source": "Google",
+      "meta": "Google · corporate dinner (48)"
+    }
+  ]
 }

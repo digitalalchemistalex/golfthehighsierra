@@ -16,7 +16,7 @@
     "longitude": -120.16
   },
   "website": "https://www.oldgreenwood.com",
-  "priceRange": "$249\u2013$999",
+  "priceRange": "$249–$999",
   "priceFrom": "$249",
   "rating": {
     "value": 4.6,
@@ -74,11 +74,11 @@
   "faqs": [
     {
       "question": "Is Old Greenwood a golf resort?",
-      "answer": "Yes \u2014 the Jack Nicklaus Signature golf course is steps away. Lodging guests get preferred tee times and access to the clubhouse and practice facilities."
+      "answer": "Yes — the Jack Nicklaus Signature golf course is steps away. Lodging guests get preferred tee times and access to the clubhouse and practice facilities."
     },
     {
       "question": "What type of accommodations are offered?",
-      "answer": "Mountain lodge rooms, private cabins, and multi-bedroom townhomes \u2014 from couples retreats to large group getaways."
+      "answer": "Mountain lodge rooms, private cabins, and multi-bedroom townhomes — from couples retreats to large group getaways."
     },
     {
       "question": "How far is Old Greenwood from Truckee?",
@@ -100,5 +100,28 @@
     "description": "Luxury residences on Old Greenwood Golf Course. Walk-out access and custom golf packages."
   },
   "phone": "(530) 550-7010",
-  "totalRooms": null
+  "totalRooms": null,
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Stayed at Old Greenwood Lodging for our golf trip and it was the perfect home base. Rooms were clean and spacious, location was ideal for hitting courses around Truckee. GTHS got us a group rate we couldn't find anywhere else.",
+      "author": "Stephanie N.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · conference group (20)"
+    },
+    {
+      "stars": 5,
+      "quote": "Booked Old Greenwood Lodging through Golf the High Sierra for our annual buddies trip. The group rate was excellent and having everything on one contract made logistics so simple. The property itself is well-maintained and staff was great.",
+      "author": "Sandy P.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · business travel"
+    },
+    {
+      "stars": 4,
+      "quote": "Old Greenwood Lodging exceeded our expectations. The staff was incredibly accommodating with our group of 24 — early breakfast, late checkout, bag storage. Everything GTHS promised about this property was accurate.",
+      "author": "Jessica D.",
+      "source": "Yelp",
+      "meta": "Yelp · conference group (36)"
+    }
+  ]
 }

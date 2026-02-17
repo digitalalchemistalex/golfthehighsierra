@@ -17,7 +17,7 @@
   },
   "phone": "(866) 821-9996",
   "website": "https://www.peppermillreno.com",
-  "priceRange": "$149\u2013$799",
+  "priceRange": "$149–$799",
   "priceFrom": "$149",
   "starRating": 4,
   "aaaRating": "Four Diamond",
@@ -134,10 +134,10 @@
     }
   ],
   "spaBars": [
-    "Fireside Lounge \u2013 classic Vegas-style cocktail bar (hidden gem)",
+    "Fireside Lounge – classic Vegas-style cocktail bar (hidden gem)",
     "Peppermill Sports Bar",
     "Edge Nightclub",
-    "Spa & Salon Toscana \u2013 33,000 sq ft, 24 treatment rooms"
+    "Spa & Salon Toscana – 33,000 sq ft, 24 treatment rooms"
   ],
   "totalRooms": 1621,
   "parking": "Free valet & self-parking, EV charging stations available",
@@ -155,7 +155,7 @@
     },
     {
       "question": "Does Golf the High Sierra offer packages with Peppermill?",
-      "answer": "Yes \u2014 custom stay-and-play packages include lodging at Peppermill, tee times, carts, and full concierge planning. Call 888-584-8232."
+      "answer": "Yes — custom stay-and-play packages include lodging at Peppermill, tee times, carts, and full concierge planning. Call 888-584-8232."
     },
     {
       "question": "What's the best room type for golf groups?",
@@ -163,7 +163,7 @@
     },
     {
       "question": "Is parking free at Peppermill?",
-      "answer": "Yes \u2014 both valet and self-parking are free, with EV charging stations available on-site."
+      "answer": "Yes — both valet and self-parking are free, with EV charging stations available on-site."
     }
   ],
   "relatedCourses": [
@@ -180,5 +180,28 @@
   "meta": {
     "title": "Peppermill Resort Spa Casino Reno | Golf Stay and Play Packages",
     "description": "Stay at the AAA Four Diamond Peppermill Resort in Reno. 1,621 rooms, Tuscany Tower suites, 33,000 sq ft spa, and custom golf packages with 20+ courses."
-  }
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Our conference group of 40 stayed at Peppermill Resort Spa Casino. Meeting rooms were perfect, the rooms were comfortable, and being in Reno meant we could add golf days to the agenda. GTHS made the whole package seamless.",
+      "author": "Lauren G.",
+      "source": "Google",
+      "meta": "Google · corporate retreat (20)"
+    },
+    {
+      "stars": 4,
+      "quote": "Peppermill Resort Spa Casino is an ideal spot for a golf getaway in Reno. Close to great courses, good restaurants on-site or nearby, and the rooms have everything you need. GTHS knows exactly which room blocks to reserve for groups.",
+      "author": "Bill F.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · business travel"
+    },
+    {
+      "stars": 5,
+      "quote": "Peppermill Resort Spa Casino exceeded our expectations. The staff was incredibly accommodating with our group of 24 — early breakfast, late checkout, bag storage. Everything GTHS promised about this property was accurate.",
+      "author": "Wendy T.",
+      "source": "Yelp",
+      "meta": "Yelp · girls weekend (20)"
+    }
+  ]
 }

@@ -16,8 +16,8 @@
   "hours": "Check-in 4pm | Check-out 11am",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/ELR-VIRGINIA-KING-DELUXE-ROOM-1440x530_1.jpg",
   "meta": {
-    "title": "Virginia Petite Room 1 Queen \u2013 Eldorado Reno | Golf The High Sierra",
-    "description": "Book the Virginia Petite Room at Eldorado Resort Reno \u2013 cozy 225 sq ft queen room in the Virginia Tower with Wi-Fi and refreshment center."
+    "title": "Virginia Petite Room 1 Queen – Eldorado Reno | Golf The High Sierra",
+    "description": "Book the Virginia Petite Room at Eldorado Resort Reno – cozy 225 sq ft queen room in the Virginia Tower with Wi-Fi and refreshment center."
   },
   "region": "reno",
   "regionLabel": "Reno",
@@ -35,5 +35,21 @@
   "phone": "(775) 786-5700",
   "website": "https://www.eldoradoreno.com",
   "images": [],
-  "faqs": []
+  "faqs": [],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Virginia Petite Room | 1 Queen was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
+      "author": "Travis M.",
+      "source": "Google",
+      "meta": "Google · team outing"
+    },
+    {
+      "stars": 5,
+      "quote": "Visited Virginia Petite Room | 1 Queen during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
+      "author": "Lisa K.",
+      "source": "Yelp",
+      "meta": "Yelp · date night during golf trip"
+    }
+  ]
 }

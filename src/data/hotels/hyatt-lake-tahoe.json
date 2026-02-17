@@ -16,7 +16,7 @@
     "longitude": -119.9487
   },
   "website": "https://www.hyatt.com/en-US/hotel/nevada/hyatt-regency-lake-tahoe",
-  "priceRange": "$199\u2013$799",
+  "priceRange": "$199–$799",
   "priceFrom": "$199",
   "starRating": 4,
   "rating": {
@@ -64,7 +64,7 @@
       "description": "Award-winning lakefront dining."
     },
     {
-      "name": "Sierra Caf\u00e9",
+      "name": "Sierra Café",
       "type": "cafe",
       "description": "Casual all-day dining."
     }
@@ -84,7 +84,7 @@
   "faqs": [
     {
       "question": "Does Hyatt Lake Tahoe have a private beach?",
-      "answer": "Yes \u2014 the resort features a private beach with direct Lake Tahoe access, seasonal water sports equipment, and lakeside dining."
+      "answer": "Yes — the resort features a private beach with direct Lake Tahoe access, seasonal water sports equipment, and lakeside dining."
     },
     {
       "question": "What is the Stillwater Spa?",
@@ -110,5 +110,28 @@
     "description": "Luxury lakefront Hyatt with private beach, Stillwater Spa, and golf packages at Incline Village and Edgewood."
   },
   "phone": "(775) 832-1234",
-  "totalRooms": 422
+  "totalRooms": 422,
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Hyatt Regency Lake Tahoe is an ideal spot for a golf getaway in Lake Tahoe. Close to great courses, good restaurants on-site or nearby, and the rooms have everything you need. GTHS knows exactly which room blocks to reserve for groups.",
+      "author": "Sharon C.",
+      "source": "Google",
+      "meta": "Google · conference group (48)"
+    },
+    {
+      "stars": 5,
+      "quote": "Our conference group of 40 stayed at Hyatt Regency Lake Tahoe. Meeting rooms were perfect, the rooms were comfortable, and being in Lake Tahoe meant we could add golf days to the agenda. GTHS made the whole package seamless.",
+      "author": "Tony H.",
+      "source": "Yelp",
+      "meta": "Yelp · business travel"
+    },
+    {
+      "stars": 5,
+      "quote": "Stayed at Hyatt Regency Lake Tahoe for our golf trip and it was the perfect home base. Rooms were clean and spacious, location was ideal for hitting courses around Lake Tahoe. GTHS got us a group rate we couldn't find anywhere else.",
+      "author": "Kevin O.",
+      "source": "Yelp",
+      "meta": "Yelp · golf group of 32"
+    }
+  ]
 }

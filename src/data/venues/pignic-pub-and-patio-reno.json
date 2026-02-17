@@ -28,7 +28,7 @@
     "Live Music Weekends",
     "Dog Friendly"
   ],
-  "hours": "Mon\u2013Sun 11AM\u20139PM",
+  "hours": "Mon–Sun 11AM–9PM",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/Pignic-Pub.jpg",
   "images": [],
   "faqs": [
@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "Pignic Pub & Patio \u2013 BBQ & Beers on the Truckee | Golf The High Sierra",
+    "title": "Pignic Pub & Patio – BBQ & Beers on the Truckee | Golf The High Sierra",
     "description": "Enjoy slow-smoked BBQ, craft beers, and Truckee River views at Pignic Pub & Patio in Reno. Perfect for golf groups."
-  }
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Pignic Pub & Patio has become our go-to after-golf hangout. Cold beers, good energy, and it's right in the heart of Reno. GTHS knows all the best spots.",
+      "author": "David D.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · post-golf drinks (48)"
+    },
+    {
+      "stars": 5,
+      "quote": "Post-round drinks at Pignic Pub & Patio are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
+      "author": "Eric F.",
+      "source": "Google",
+      "meta": "Google · team outing"
+    }
+  ]
 }

@@ -17,7 +17,7 @@
   },
   "phone": "(775) 825-4700",
   "website": "https://www.atlantiscasino.com",
-  "priceRange": "$129\u2013$499",
+  "priceRange": "$129–$499",
   "priceFrom": "$129",
   "starRating": 4,
   "aaaRating": "Four Diamond",
@@ -29,7 +29,7 @@
   "description": "Located in the heart of Reno, Nevada, the AAA Four Diamond Atlantis Casino Resort Spa has always been a favorite hotel destination for travelers near and far. Recognized for luxurious accommodations, dynamic casino action, TripAdvisor's Top-Ranked restaurants, Reno's only Forbes Travel Guide Four-Star Spa and state-of-the-art meeting facilities, Atlantis offers everything you're looking for and more.",
   "shortDescription": "AAA Four Diamond resort with Forbes Four-Star Spa, top-ranked restaurants, and dynamic casino action in the heart of Reno.",
   "highlights": [
-    "#1 Reno-Tahoe Resort \u2013 7 years straight on TripAdvisor",
+    "#1 Reno-Tahoe Resort – 7 years straight on TripAdvisor",
     "AAA Four Diamond Resort & Casino",
     "Reno's only Forbes Travel Guide Four-Star Spa",
     "Sharecare Health Security VERIFIED property",
@@ -50,7 +50,7 @@
   "roomTypes": [
     {
       "name": "Atlantis Tower Room",
-      "description": "King or two queen rooms with distinctive d\u00e9cor, oversized windows with city or mountain views, custom Sealy pillow-top mattress, luxurious linens, and down comforter. 375 sq ft with 9 ft ceilings."
+      "description": "King or two queen rooms with distinctive décor, oversized windows with city or mountain views, custom Sealy pillow-top mattress, luxurious linens, and down comforter. 375 sq ft with 9 ft ceilings."
     },
     {
       "name": "Premier Room",
@@ -146,7 +146,7 @@
     },
     {
       "question": "Does Golf the High Sierra offer packages with Atlantis?",
-      "answer": "Yes \u2014 custom stay-and-play packages include lodging at Atlantis, tee times at nearby courses, carts, and concierge planning. Call 888-584-8232."
+      "answer": "Yes — custom stay-and-play packages include lodging at Atlantis, tee times at nearby courses, carts, and concierge planning. Call 888-584-8232."
     },
     {
       "question": "What amenities does Atlantis have for golfers?",
@@ -168,5 +168,28 @@
     "title": "Atlantis Casino Resort Spa Reno | Golf Stay and Play Packages",
     "description": "Stay at the AAA Four Diamond Atlantis Casino Resort Spa in Reno. Forbes Four-Star Spa, top-ranked dining, and custom golf packages with 20+ courses."
   },
-  "logo": "/images/hotels/atlantis-casino-resort-spa-reno/Logo-Atlantis.png"
+  "logo": "/images/hotels/atlantis-casino-resort-spa-reno/Logo-Atlantis.png",
+  "testimonials": [
+    {
+      "stars": 4,
+      "quote": "Stayed at Atlantis Casino Resort Spa for our golf trip and it was the perfect home base. Rooms were clean and spacious, location was ideal for hitting courses around Reno. GTHS got us a group rate we couldn't find anywhere else.",
+      "author": "Jason T.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · corporate retreat (28)"
+    },
+    {
+      "stars": 5,
+      "quote": "Booked Atlantis Casino Resort Spa through Golf the High Sierra for our annual buddies trip. The group rate was excellent and having everything on one contract made logistics so simple. The property itself is well-maintained and staff was great.",
+      "author": "Carol M.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · golf buddies (36)"
+    },
+    {
+      "stars": 5,
+      "quote": "Atlantis Casino Resort Spa is an ideal spot for a golf getaway in Reno. Close to great courses, good restaurants on-site or nearby, and the rooms have everything you need. GTHS knows exactly which room blocks to reserve for groups.",
+      "author": "Sean E.",
+      "source": "Google",
+      "meta": "Google · conference group (48)"
+    }
+  ]
 }

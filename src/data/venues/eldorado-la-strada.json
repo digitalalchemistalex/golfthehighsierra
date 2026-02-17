@@ -30,7 +30,7 @@
     }
   ],
   "meta": {
-    "title": "La Strada \u2013 Food Network-Acclaimed Italian at Eldorado Reno | Golf The High Sierra",
+    "title": "La Strada – Food Network-Acclaimed Italian at Eldorado Reno | Golf The High Sierra",
     "description": "Savor Food Network-recognized Mushroom Ravioli and Italian fine dining at La Strada in Eldorado Resort, downtown Reno."
   },
   "region": "reno",
@@ -48,5 +48,21 @@
   },
   "phone": "(775) 786-5700",
   "website": "https://www.eldoradoreno.com",
-  "images": []
+  "images": [],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Golf the High Sierra arranged our group dinner at La Strada and it was a highlight of the trip. Great atmosphere, excellent food, and they accommodated all our dietary needs.",
+      "author": "Jeff M.",
+      "source": "Yelp",
+      "meta": "Yelp · group dinner (28)"
+    },
+    {
+      "stars": 4,
+      "quote": "La Strada was the perfect post-golf dinner spot. The menu had something for everyone in our group. eldorado-resorts-reno-eldorado-at-the-row is lucky to have this on-site.",
+      "author": "Paul L.",
+      "source": "Google",
+      "meta": "Google · corporate dinner (28)"
+    }
+  ]
 }

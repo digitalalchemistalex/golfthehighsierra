@@ -30,7 +30,7 @@
     }
   ],
   "meta": {
-    "title": "Millies \u2013 Breakfast & Sweet Shoppe at Eldorado Reno | Golf The High Sierra",
+    "title": "Millies – Breakfast & Sweet Shoppe at Eldorado Reno | Golf The High Sierra",
     "description": "Enjoy family-recipe breakfasts, fresh gelato, and classic milkshakes at Millies in Eldorado Resort, downtown Reno."
   },
   "region": "reno",
@@ -48,5 +48,21 @@
   },
   "phone": "(775) 786-5700",
   "website": "https://www.eldoradoreno.com",
-  "images": []
+  "images": [],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Golf the High Sierra arranged our group dinner at Millies and it was a highlight of the trip. Great atmosphere, excellent food, and they accommodated all our dietary needs.",
+      "author": "Scott K.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · post-golf drinks (24)"
+    },
+    {
+      "stars": 5,
+      "quote": "Had dinner at Millies after our round and it was fantastic. Great food, attentive service, and they handled our group of 16 without a hitch. GTHS recommended it and they were spot on.",
+      "author": "Julie S.",
+      "source": "Yelp",
+      "meta": "Yelp · golf trip group"
+    }
+  ]
 }

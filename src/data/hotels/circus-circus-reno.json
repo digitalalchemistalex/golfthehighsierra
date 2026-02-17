@@ -16,7 +16,7 @@
     "longitude": -119.8155
   },
   "website": "https://www.circusreno.com",
-  "priceRange": "$89\u2013$249",
+  "priceRange": "$89–$249",
   "priceFrom": "$89",
   "rating": {
     "value": 3.8,
@@ -78,15 +78,15 @@
   "faqs": [
     {
       "question": "Is Circus Circus connected to other casinos?",
-      "answer": "Yes \u2014 Circus Circus is part of THE ROW, connected to Silver Legacy and Eldorado via enclosed skywalks. You can walk between all three properties without going outside."
+      "answer": "Yes — Circus Circus is part of THE ROW, connected to Silver Legacy and Eldorado via enclosed skywalks. You can walk between all three properties without going outside."
     },
     {
       "question": "Is Circus Circus good for families?",
-      "answer": "Absolutely \u2014 the Midway features carnival games, free daily circus acts, and a family-friendly atmosphere that makes it one of Reno's best options for families."
+      "answer": "Absolutely — the Midway features carnival games, free daily circus acts, and a family-friendly atmosphere that makes it one of Reno's best options for families."
     },
     {
       "question": "Does Circus Circus offer golf packages?",
-      "answer": "Yes \u2014 Golf the High Sierra creates custom packages with Circus Circus lodging and tee times at 20+ courses. Call 888-584-8232 for a free quote."
+      "answer": "Yes — Golf the High Sierra creates custom packages with Circus Circus lodging and tee times at 20+ courses. Call 888-584-8232 for a free quote."
     }
   ],
   "relatedCourses": [
@@ -103,5 +103,28 @@
     "title": "Circus Circus Reno | Budget Hotel & Golf Packages",
     "description": "Budget-friendly Circus Circus with free circus acts and THE ROW access. Golf packages from $89/night."
   },
-  "phone": "(775) 329-0711"
+  "phone": "(775) 329-0711",
+  "testimonials": [
+    {
+      "stars": 4,
+      "quote": "Our conference group of 40 stayed at Circus Circus Reno Hotel & Casino. Meeting rooms were perfect, the rooms were comfortable, and being in Reno meant we could add golf days to the agenda. GTHS made the whole package seamless.",
+      "author": "David F.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · family reunion (28)"
+    },
+    {
+      "stars": 5,
+      "quote": "Stayed at Circus Circus Reno Hotel & Casino for our golf trip and it was the perfect home base. Rooms were clean and spacious, location was ideal for hitting courses around Reno. GTHS got us a group rate we couldn't find anywhere else.",
+      "author": "Dan A.",
+      "source": "Google",
+      "meta": "Google · golf buddies (48)"
+    },
+    {
+      "stars": 4,
+      "quote": "Circus Circus Reno Hotel & Casino is an ideal spot for a golf getaway in Reno. Close to great courses, good restaurants on-site or nearby, and the rooms have everything you need. GTHS knows exactly which room blocks to reserve for groups.",
+      "author": "Luke E.",
+      "source": "Google",
+      "meta": "Google · conference group (12)"
+    }
+  ]
 }

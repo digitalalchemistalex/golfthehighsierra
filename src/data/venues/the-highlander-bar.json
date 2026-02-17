@@ -28,7 +28,7 @@
     "Late-Night Dining",
     "11PM-6AM Breakfast"
   ],
-  "hours": "Daily 11AM\u20131AM",
+  "hours": "Daily 11AM–1AM",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/11/Highlanders.jpg",
   "images": [],
   "faqs": [
@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "The Highlander Bar at Harvey's Tahoe \u2013 Sports Bar | Golf The High Sierra",
+    "title": "The Highlander Bar at Harvey's Tahoe – Sports Bar | Golf The High Sierra",
     "description": "Watch the game and enjoy craft beers at The Highlander Bar in Harvey's Lake Tahoe. The perfect sports bar for golf groups."
-  }
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "The Highlander Bar has become our go-to after-golf hangout. Cold beers, good energy, and it's right inside harveys-lake-tahoe. GTHS knows all the best spots.",
+      "author": "Sandy P.",
+      "source": "Yelp",
+      "meta": "Yelp · team outing"
+    },
+    {
+      "stars": 5,
+      "quote": "Post-round drinks at The Highlander Bar are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
+      "author": "Bill F.",
+      "source": "Yelp",
+      "meta": "Yelp · post-golf drinks (48)"
+    }
+  ]
 }

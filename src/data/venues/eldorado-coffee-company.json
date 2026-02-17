@@ -30,7 +30,7 @@
     }
   ],
   "meta": {
-    "title": "Eldorado Coffee Company \u2013 Coffee & Pastries at Eldorado Reno | Golf The High Sierra",
+    "title": "Eldorado Coffee Company – Coffee & Pastries at Eldorado Reno | Golf The High Sierra",
     "description": "Start your day with fresh-roasted coffee, gelato, and pastries at The Eldorado Coffee Company on the Mezzanine level."
   },
   "region": "reno",
@@ -48,5 +48,21 @@
   },
   "phone": "(775) 786-5700",
   "website": "https://www.eldoradoreno.com",
-  "images": []
+  "images": [],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "The Eldorado Coffee Company was the perfect post-golf dinner spot. The menu had something for everyone in our group. eldorado-resorts-reno-eldorado-at-the-row is lucky to have this on-site.",
+      "author": "Tom R.",
+      "source": "Google",
+      "meta": "Google · post-golf drinks (32)"
+    },
+    {
+      "stars": 5,
+      "quote": "Golf the High Sierra arranged our group dinner at The Eldorado Coffee Company and it was a highlight of the trip. Great atmosphere, excellent food, and they accommodated all our dietary needs.",
+      "author": "Jessica G.",
+      "source": "Google",
+      "meta": "Google · post-golf drinks (32)"
+    }
+  ]
 }

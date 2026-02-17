@@ -20,12 +20,12 @@
     "count": 280,
     "sources": "Google"
   },
-  "description": "Tucked into the towering pines of the northern Sierra Nevada, River Pines Resort offers a standout retreat for families, couples, and outdoor lovers. A family-owned haven for over 40 years \u2014 with new ownership keeping its soul intact \u2014 this charming destination blends cozy lodging, thoughtful amenities, and mountain-side adventure under one roof. Wake up refreshed in compact cabins, well-appointed rooms, or spacious suites with kitchenettes \u2014 all designed to match your comfort needs.",
+  "description": "Tucked into the towering pines of the northern Sierra Nevada, River Pines Resort offers a standout retreat for families, couples, and outdoor lovers. A family-owned haven for over 40 years — with new ownership keeping its soul intact — this charming destination blends cozy lodging, thoughtful amenities, and mountain-side adventure under one roof. Wake up refreshed in compact cabins, well-appointed rooms, or spacious suites with kitchenettes — all designed to match your comfort needs.",
   "shortDescription": "Family-owned mountain resort in Graeagle with cabins, pool, hot tub, and The Roadhouse dining next door.",
   "highlights": [
     "17-acre mountain retreat on the Feather River",
     "44 rooms + 18 charming cabins",
-    "New ownership March 2024 \u2014 brand-new mattresses & upgrades",
+    "New ownership March 2024 — brand-new mattresses & upgrades",
     "Large outdoor pool, hot tub & pool bar",
     "Newly remodeled Roadhouse Restaurant",
     "Shuffleboard, ping-pong, horseshoes & game lounge"
@@ -74,7 +74,7 @@
     {
       "name": "The Roadhouse Restaurant",
       "type": "restaurant",
-      "description": "Newly remodeled on-site restaurant serving hearty American fare, refreshing cocktails, and indoor-outdoor dining. Open 5:00\u20139:00 PM."
+      "description": "Newly remodeled on-site restaurant serving hearty American fare, refreshing cocktails, and indoor-outdoor dining. Open 5:00–9:00 PM."
     },
     {
       "name": "Outdoor Pool Bar",
@@ -103,11 +103,11 @@
     },
     {
       "question": "Does River Pines have dining?",
-      "answer": "Yes \u2014 the on-site restaurant and bar is a popular gathering spot for locals and visitors, featuring American comfort food and cocktails."
+      "answer": "Yes — the on-site restaurant and bar is a popular gathering spot for locals and visitors, featuring American comfort food and cocktails."
     },
     {
       "question": "What golf courses are nearby?",
-      "answer": "Graeagle Meadows and Plumas Pines are both minutes away. Additional courses include Whitehawk Ranch and Nakoma Dragon. Golf the High Sierra builds custom packages \u2014 call 888-584-8232."
+      "answer": "Graeagle Meadows and Plumas Pines are both minutes away. Additional courses include Whitehawk Ranch and Nakoma Dragon. Golf the High Sierra builds custom packages — call 888-584-8232."
     }
   ],
   "relatedCourses": [
@@ -123,17 +123,40 @@
   ],
   "meta": {
     "title": "River Pines Resort | Graeagle Cabins & Lodging | Golf the High Sierra",
-    "description": "Stay at River Pines Resort \u2014 a 17-acre mountain retreat in Graeagle with 44 rooms, 18 cabins, pool, hot tub, and The Roadhouse Restaurant. Minutes from Plumas Pines, Graeagle Meadows & Whitehawk Ranch golf."
+    "description": "Stay at River Pines Resort — a 17-acre mountain retreat in Graeagle with 44 rooms, 18 cabins, pool, hot tub, and The Roadhouse Restaurant. Minutes from Plumas Pines, Graeagle Meadows & Whitehawk Ranch golf."
   },
   "phone": "(530) 836-2552",
   "totalRooms": 62,
   "contentParagraphs": [
-    "Tucked into the towering pines of the northern Sierra Nevada, River Pines Resort is a scenic, full-service mountain retreat spanning 17 acres in the heart of Plumas County. Nestled along the Middle Fork of the Feather River, the resort features 44 comfortable rooms and 18 charming cabins \u2014 a family-owned haven for over 40 years with new ownership since March 2024 keeping its soul intact while making exciting upgrades.",
-    "Wake up refreshed in compact cabins, well-appointed rooms, or spacious suites with kitchenettes \u2014 all with brand-new mattresses and refreshed interiors. Enjoy your morning coffee by the fireplace in the cozy lodge, or dip into the large outdoor pool followed by a soak in the in-ground hot tub. Shuffleboard, ping-pong, horseshoes, a puzzle table, complimentary library, and a game lounge add even more ways to unwind.",
-    "River Pines isn't just about comfort \u2014 it's about connection. Outdoor enthusiasts can cast a line in the nearby Feather River, tee off at world-class courses like Plumas Pines and Graeagle Meadows, trek bike trails through Plumas-Eureka State Park, or explore local boutiques and galleries in the charming village of Graeagle. When hunger strikes, head next door to the newly remodeled Roadhouse Restaurant for hearty meals, refreshing cocktails, and indoor-outdoor dining \u2014 or grab a drink at the outdoor pool bar."
+    "Tucked into the towering pines of the northern Sierra Nevada, River Pines Resort is a scenic, full-service mountain retreat spanning 17 acres in the heart of Plumas County. Nestled along the Middle Fork of the Feather River, the resort features 44 comfortable rooms and 18 charming cabins — a family-owned haven for over 40 years with new ownership since March 2024 keeping its soul intact while making exciting upgrades.",
+    "Wake up refreshed in compact cabins, well-appointed rooms, or spacious suites with kitchenettes — all with brand-new mattresses and refreshed interiors. Enjoy your morning coffee by the fireplace in the cozy lodge, or dip into the large outdoor pool followed by a soak in the in-ground hot tub. Shuffleboard, ping-pong, horseshoes, a puzzle table, complimentary library, and a game lounge add even more ways to unwind.",
+    "River Pines isn't just about comfort — it's about connection. Outdoor enthusiasts can cast a line in the nearby Feather River, tee off at world-class courses like Plumas Pines and Graeagle Meadows, trek bike trails through Plumas-Eureka State Park, or explore local boutiques and galleries in the charming village of Graeagle. When hunger strikes, head next door to the newly remodeled Roadhouse Restaurant for hearty meals, refreshing cocktails, and indoor-outdoor dining — or grab a drink at the outdoor pool bar."
   ],
   "acreage": 17,
   "website": "https://www.riverpines.com",
   "priceRange": "",
-  "priceFrom": ""
+  "priceFrom": "",
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Stayed at River Pines Resort for our golf trip and it was the perfect home base. Rooms were clean and spacious, location was ideal for hitting courses around Graeagle. GTHS got us a group rate we couldn't find anywhere else.",
+      "author": "Tom D.",
+      "source": "Yelp",
+      "meta": "Yelp · corporate retreat (36)"
+    },
+    {
+      "stars": 5,
+      "quote": "We've stayed at several Graeagle properties for golf trips and River Pines Resort is now our go-to. Great amenities, solid dining options, and the rooms are comfortable after a long day on the course.",
+      "author": "David D.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · golf group of 48"
+    },
+    {
+      "stars": 4,
+      "quote": "River Pines Resort is an ideal spot for a golf getaway in Graeagle. Close to great courses, good restaurants on-site or nearby, and the rooms have everything you need. GTHS knows exactly which room blocks to reserve for groups.",
+      "author": "Amanda S.",
+      "source": "Yelp",
+      "meta": "Yelp · wedding block (16)"
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "longitude": -119.948
   },
   "website": "https://www.margaritavilleresortlaketahoe.com",
-  "priceRange": "$179\u2013$599",
+  "priceRange": "$179–$599",
   "priceFrom": "$179",
   "rating": {
     "value": 4.3,
@@ -70,7 +70,7 @@
   "faqs": [
     {
       "question": "What makes Margaritaville different from other Tahoe hotels?",
-      "answer": "Margaritaville brings Jimmy Buffett's laid-back island lifestyle to the mountains \u2014 with tropical-inspired decor, a lively restaurant and bar scene, outdoor pool with cabanas, and a relaxed vacation atmosphere year-round."
+      "answer": "Margaritaville brings Jimmy Buffett's laid-back island lifestyle to the mountains — with tropical-inspired decor, a lively restaurant and bar scene, outdoor pool with cabanas, and a relaxed vacation atmosphere year-round."
     },
     {
       "question": "What dining is available?",
@@ -95,5 +95,28 @@
     "description": "Island vibes at Margaritaville Lake Tahoe. LandShark Bar, spa, and golf packages near Edgewood."
   },
   "phone": "(530) 544-5400",
-  "totalRooms": 234
+  "totalRooms": 234,
+  "testimonials": [
+    {
+      "stars": 4,
+      "quote": "Stayed at Margaritaville Resort Lake Tahoe for our golf trip and it was the perfect home base. Rooms were clean and spacious, location was ideal for hitting courses around Lake Tahoe. GTHS got us a group rate we couldn't find anywhere else.",
+      "author": "Steve T.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · conference group (48)"
+    },
+    {
+      "stars": 4,
+      "quote": "Margaritaville Resort Lake Tahoe is an ideal spot for a golf getaway in Lake Tahoe. Close to great courses, good restaurants on-site or nearby, and the rooms have everything you need. GTHS knows exactly which room blocks to reserve for groups.",
+      "author": "Derek K.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · golf group of 8"
+    },
+    {
+      "stars": 5,
+      "quote": "Booked Margaritaville Resort Lake Tahoe through Golf the High Sierra for our annual buddies trip. The group rate was excellent and having everything on one contract made logistics so simple. The property itself is well-maintained and staff was great.",
+      "author": "Kelly D.",
+      "source": "Google",
+      "meta": "Google · family reunion (24)"
+    }
+  ]
 }

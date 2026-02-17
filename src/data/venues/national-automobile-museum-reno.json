@@ -28,7 +28,7 @@
     "Truckee River Adjacent",
     "Gift Shop"
   ],
-  "hours": "Mon\u2013Sat 9:30AM\u20135:30PM, Sun 10AM\u20134PM",
+  "hours": "Mon–Sat 9:30AM–5:30PM, Sun 10AM–4PM",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/National-Automobile-Museum.jpg",
   "images": [],
   "faqs": [
@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "National Automobile Museum Reno \u2013 The Harrah Collection | Golf The High Sierra",
+    "title": "National Automobile Museum Reno – The Harrah Collection | Golf The High Sierra",
     "description": "Explore 200+ historic automobiles at Reno's National Automobile Museum. A must-visit attraction for golf groups visiting the High Sierra."
-  }
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Visited National Automobile Museum during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
+      "author": "Kelly P.",
+      "source": "Google",
+      "meta": "Google · after-round drinks"
+    },
+    {
+      "stars": 5,
+      "quote": "National Automobile Museum was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
+      "author": "Ben P.",
+      "source": "Google",
+      "meta": "Google · group dinner (36)"
+    }
+  ]
 }

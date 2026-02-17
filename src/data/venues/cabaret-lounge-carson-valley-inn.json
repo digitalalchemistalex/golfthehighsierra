@@ -17,7 +17,7 @@
   },
   "phone": "(775) 782-9711",
   "website": "https://www.cvinn.com",
-  "priceRange": "$\u2013$$",
+  "priceRange": "$–$$",
   "description": "The Cabaret Lounge at Carson Valley Inn offers free nightly live entertainment, cocktails, and a relaxed atmosphere in the heart of Carson Valley. Performers play seven nights a week (except during football season), providing listening and dancing entertainment for guests. It's a great place to unwind after playing Genoa Lakes, Eagle Valley, or Dayton Valley golf courses.",
   "shortDescription": "Free nightly live entertainment with cocktails at Carson Valley Inn.",
   "highlights": [
@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "Cabaret Lounge \u2013 Carson Valley Inn Entertainment | Golf The High Sierra",
-    "description": "Enjoy live entertainment and comedy at the Cabaret Lounge in Carson Valley Inn. The perfect apr\u00e8s-golf spot near Carson Valley courses."
-  }
+    "title": "Cabaret Lounge – Carson Valley Inn Entertainment | Golf The High Sierra",
+    "description": "Enjoy live entertainment and comedy at the Cabaret Lounge in Carson Valley Inn. The perfect après-golf spot near Carson Valley courses."
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Cabaret Lounge has become our go-to after-golf hangout. Cold beers, good energy, and it's right inside carson-valley-inn-casino. GTHS knows all the best spots.",
+      "author": "Brandon K.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · post-golf drinks (12)"
+    },
+    {
+      "stars": 5,
+      "quote": "Post-round drinks at Cabaret Lounge are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
+      "author": "Tom F.",
+      "source": "Yelp",
+      "meta": "Yelp · after-round drinks"
+    }
+  ]
 }

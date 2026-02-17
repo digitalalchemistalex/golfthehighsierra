@@ -18,7 +18,7 @@
   "phone": "(775) 826-2121",
   "website": "https://www.peppermillreno.com",
   "priceRange": "$$",
-  "description": "The Sports Bar at the Peppermill Resort features a state-of-the-art curved video display \u2014 the largest of its kind \u2014 composed of 34 high-definition screens in a two-sided, 360-degree configuration. Centrally located next to the Race and Sportsbook (which underwent a $3.5 million upgrade featuring a 110-foot-wide LED screen), it's a top-tier destination for watching games. The bar serves craft beers, cocktails, and New York-style deli food from the adjacent Sports Deli. Bar-top video poker is also available.",
+  "description": "The Sports Bar at the Peppermill Resort features a state-of-the-art curved video display — the largest of its kind — composed of 34 high-definition screens in a two-sided, 360-degree configuration. Centrally located next to the Race and Sportsbook (which underwent a $3.5 million upgrade featuring a 110-foot-wide LED screen), it's a top-tier destination for watching games. The bar serves craft beers, cocktails, and New York-style deli food from the adjacent Sports Deli. Bar-top video poker is also available.",
   "shortDescription": "State-of-the-art sports bar with 34-screen curved display next to Peppermill's $3.5M Race & Sportsbook.",
   "highlights": [
     "34-Screen Curved Display",
@@ -28,7 +28,7 @@
     "Bar-Top Video Poker",
     "Race & Sports Betting"
   ],
-  "hours": "Daily 9AM\u20131AM",
+  "hours": "Daily 9AM–1AM",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/PR-Sports-Bar-091420lo1.jpg",
   "images": [],
   "faqs": [
@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "Peppermill Sports Bar \u2013 Premier Sports Viewing Reno | Golf The High Sierra",
+    "title": "Peppermill Sports Bar – Premier Sports Viewing Reno | Golf The High Sierra",
     "description": "Watch every game at the Peppermill Sports Bar with state-of-the-art screens, betting, and legendary Reno hospitality."
-  }
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "We ended every day of our golf trip at Peppermill Sports Bar. Great selection, friendly bartenders, and the kind of place where your group can be loud and happy after a great round.",
+      "author": "Adam L.",
+      "source": "Google",
+      "meta": "Google · post-golf drinks (12)"
+    },
+    {
+      "stars": 5,
+      "quote": "Peppermill Sports Bar has become our go-to after-golf hangout. Cold beers, good energy, and it's right inside peppermill-resort-spa-casino. GTHS knows all the best spots.",
+      "author": "Gary F.",
+      "source": "Google",
+      "meta": "Google · post-golf drinks (16)"
+    }
+  ]
 }

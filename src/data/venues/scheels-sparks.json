@@ -17,7 +17,7 @@
   },
   "phone": "(775) 331-2700",
   "website": "https://www.scheels.com/store/sparks-nv",
-  "priceRange": "$$\u2013$$$",
+  "priceRange": "$$–$$$",
   "description": "SCHEELS in Sparks is a massive 295,000-square-foot sporting goods destination that goes far beyond traditional retail. The store features two 16,000-gallon aquariums (one freshwater, one saltwater), a 65-foot Ferris wheel, interactive shooting galleries, specialty shops, and an enormous selection of golf equipment and apparel. It's an experience in itself, with multiple restaurants and attractions under one roof.",
   "shortDescription": "A 295,000 sq ft sporting goods destination with Ferris wheel, dual aquariums, and golf gear.",
   "highlights": [
@@ -28,7 +28,7 @@
     "Restaurants Inside",
     "Free Attractions"
   ],
-  "hours": "Mon\u2013Sat 9AM\u20139PM, Sun 10AM\u20136PM",
+  "hours": "Mon–Sat 9AM–9PM, Sun 10AM–6PM",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2024/04/Picture3.jpg",
   "images": [],
   "faqs": [
@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "SCHEELS Sparks \u2013 Golf Gear & Attractions | Golf The High Sierra",
+    "title": "SCHEELS Sparks – Golf Gear & Attractions | Golf The High Sierra",
     "description": "Visit SCHEELS in Sparks for 245,000 sq ft of sporting goods, golf equipment, a Ferris wheel, and aquarium. A must-see for golf groups."
-  }
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "SCHEELS was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno / Sparks has so much more than just great courses.",
+      "author": "Ryan P.",
+      "source": "Google",
+      "meta": "Google · team outing"
+    },
+    {
+      "stars": 5,
+      "quote": "Visited SCHEELS during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
+      "author": "Sean N.",
+      "source": "Google",
+      "meta": "Google · golf trip group"
+    }
+  ]
 }

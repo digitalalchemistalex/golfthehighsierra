@@ -16,8 +16,8 @@
   "hours": "Check-in 4pm | Check-out 11am",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/executive-spa-suite-hero.jpg",
   "meta": {
-    "title": "Executive Spa Suite \u2013 Atlantis Reno | Golf The High Sierra",
-    "description": "Book the Executive Spa Suite at Atlantis Reno \u2013 spacious luxury with Jacuzzi, living area, and exclusive concierge services."
+    "title": "Executive Spa Suite – Atlantis Reno | Golf The High Sierra",
+    "description": "Book the Executive Spa Suite at Atlantis Reno – spacious luxury with Jacuzzi, living area, and exclusive concierge services."
   },
   "region": "reno",
   "regionLabel": "Reno",
@@ -35,5 +35,21 @@
   "phone": "(775) 825-4700",
   "website": "https://www.atlantiscasino.com",
   "images": [],
-  "faqs": []
+  "faqs": [],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Executive Spa Suite was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
+      "author": "Linda H.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · corporate dinner (48)"
+    },
+    {
+      "stars": 4,
+      "quote": "Visited Executive Spa Suite during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
+      "author": "Tony H.",
+      "source": "Yelp",
+      "meta": "Yelp · golf trip group"
+    }
+  ]
 }

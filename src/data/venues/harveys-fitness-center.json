@@ -28,7 +28,7 @@
     "Convention Center Floor",
     "High Altitude (6,200ft)"
   ],
-  "hours": "Daily 6AM\u20138PM",
+  "hours": "Daily 6AM–8PM",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/11/HarveysFitness.jpg",
   "images": [],
   "faqs": [
@@ -42,11 +42,27 @@
     },
     {
       "question": "Does the altitude affect workouts?",
-      "answer": "At 6,200 feet, you may notice increased effort \u2014 stay hydrated and ease into your routine."
+      "answer": "At 6,200 feet, you may notice increased effort — stay hydrated and ease into your routine."
     }
   ],
   "meta": {
-    "title": "Harvey's Fitness Center \u2013 Lake Tahoe Gym | Golf The High Sierra",
+    "title": "Harvey's Fitness Center – Lake Tahoe Gym | Golf The High Sierra",
     "description": "Stay fit at Harvey's Tahoe fitness center with cardio, weights, and strength training at 6,200 feet. Complimentary for guests."
-  }
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Booked spa treatments at Harvey's Fitness Center as part of our non-golfer package. Incredible facilities and the staff was very professional. Perfect option for the non-golfers in our group.",
+      "author": "David T.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · date night during golf trip"
+    },
+    {
+      "stars": 5,
+      "quote": "Harvey's Fitness Center was exactly what we needed after 3 days of golf. GTHS built it into our package and it was a smart add. Everyone left feeling refreshed and ready for the next round.",
+      "author": "Kathy L.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · after-round drinks"
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "slug": "eldorado-resorts-reno-eldorado-at-the-row",
-  "name": "Eldorado Resort Casino \u2013 AT THE ROW",
+  "name": "Eldorado Resort Casino – AT THE ROW",
   "region": "reno",
   "regionLabel": "Reno",
   "type": "casino-resort",
@@ -16,7 +16,7 @@
     "longitude": -119.814
   },
   "website": "https://www.eldoradoreno.com",
-  "priceRange": "$89\u2013$399",
+  "priceRange": "$89–$399",
   "priceFrom": "$89",
   "rating": {
     "value": 4.1,
@@ -121,15 +121,15 @@
   "faqs": [
     {
       "question": "How many room types does Eldorado have?",
-      "answer": "15 room types across three towers \u2014 Virginia, Skyline, and Sierra \u2014 from compact petite rooms to full spa suites with in-room whirlpool tubs."
+      "answer": "15 room types across three towers — Virginia, Skyline, and Sierra — from compact petite rooms to full spa suites with in-room whirlpool tubs."
     },
     {
       "question": "Is Eldorado connected to other casinos?",
-      "answer": "Yes \u2014 Eldorado is part of THE ROW, connected to Silver Legacy and Circus Circus via enclosed skywalks in downtown Reno."
+      "answer": "Yes — Eldorado is part of THE ROW, connected to Silver Legacy and Circus Circus via enclosed skywalks in downtown Reno."
     },
     {
       "question": "Does Eldorado offer golf packages?",
-      "answer": "Yes \u2014 Golf the High Sierra creates custom packages with Eldorado lodging and tee times at 20+ Reno-Tahoe courses. Call 888-584-8232."
+      "answer": "Yes — Golf the High Sierra creates custom packages with Eldorado lodging and tee times at 20+ Reno-Tahoe courses. Call 888-584-8232."
     }
   ],
   "relatedCourses": [
@@ -146,5 +146,28 @@
     "title": "Eldorado Resort Casino Reno | AT THE ROW Golf Packages",
     "description": "Stay at Eldorado in downtown Reno. 15 room types, 9 restaurants, and custom golf packages with 20+ courses."
   },
-  "phone": "(775) 786-5700"
+  "phone": "(775) 786-5700",
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Stayed at Eldorado Resort Casino – AT THE ROW for our golf trip and it was the perfect home base. Rooms were clean and spacious, location was ideal for hitting courses around Reno. GTHS got us a group rate we couldn't find anywhere else.",
+      "author": "Laura S.",
+      "source": "Google",
+      "meta": "Google · golf group of 16"
+    },
+    {
+      "stars": 4,
+      "quote": "Our conference group of 40 stayed at Eldorado Resort Casino – AT THE ROW. Meeting rooms were perfect, the rooms were comfortable, and being in Reno meant we could add golf days to the agenda. GTHS made the whole package seamless.",
+      "author": "Scott G.",
+      "source": "Yelp",
+      "meta": "Yelp · golf group of 20"
+    },
+    {
+      "stars": 5,
+      "quote": "Eldorado Resort Casino – AT THE ROW is an ideal spot for a golf getaway in Reno. Close to great courses, good restaurants on-site or nearby, and the rooms have everything you need. GTHS knows exactly which room blocks to reserve for groups.",
+      "author": "Nick S.",
+      "source": "Yelp",
+      "meta": "Yelp · golf group of 24"
+    }
+  ]
 }

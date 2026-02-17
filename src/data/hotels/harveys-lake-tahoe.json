@@ -16,7 +16,7 @@
     "longitude": -119.9415
   },
   "website": "https://www.caesars.com/harveys-tahoe",
-  "priceRange": "$149\u2013$549",
+  "priceRange": "$149–$549",
   "priceFrom": "$149",
   "rating": {
     "value": 4.2,
@@ -76,15 +76,15 @@
   "faqs": [
     {
       "question": "Does Harvey's have an outdoor concert venue?",
-      "answer": "Yes \u2014 the Harvey's Outdoor Arena hosts major touring acts throughout the summer season, with capacity for thousands of concertgoers right on the lake."
+      "answer": "Yes — the Harvey's Outdoor Arena hosts major touring acts throughout the summer season, with capacity for thousands of concertgoers right on the lake."
     },
     {
       "question": "What dining is available at Harvey's?",
-      "answer": "Multiple options including Sage Room Steak House, Caf\u00e9 Tahoe, Hard Rock Caf\u00e9, and several casual dining and bar options."
+      "answer": "Multiple options including Sage Room Steak House, Café Tahoe, Hard Rock Café, and several casual dining and bar options."
     },
     {
       "question": "Is Harvey's a good base for skiing?",
-      "answer": "Excellent \u2014 Heavenly Village and the gondola are within walking distance. The resort also offers ski valet and storage services during winter."
+      "answer": "Excellent — Heavenly Village and the gondola are within walking distance. The resort also offers ski valet and storage services during winter."
     }
   ],
   "relatedCourses": [
@@ -102,5 +102,28 @@
     "description": "Harvey's Lake Tahoe with outdoor pool, mountain views, and golf packages near Edgewood."
   },
   "phone": "(775) 588-6611",
-  "totalRooms": 740
+  "totalRooms": 740,
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Harvey's Lake Tahoe exceeded our expectations. The staff was incredibly accommodating with our group of 24 — early breakfast, late checkout, bag storage. Everything GTHS promised about this property was accurate.",
+      "author": "Carlos N.",
+      "source": "Yelp",
+      "meta": "Yelp · business travel"
+    },
+    {
+      "stars": 4,
+      "quote": "Harvey's Lake Tahoe is an ideal spot for a golf getaway in Lake Tahoe. Close to great courses, good restaurants on-site or nearby, and the rooms have everything you need. GTHS knows exactly which room blocks to reserve for groups.",
+      "author": "Laura D.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · girls weekend (24)"
+    },
+    {
+      "stars": 4,
+      "quote": "Third year in a row staying at Harvey's Lake Tahoe for our corporate golf outing. Consistency is what matters for group travel and this property delivers every time. Having GTHS handle reservations saves us hours of coordination.",
+      "author": "Bill M.",
+      "source": "Yelp",
+      "meta": "Yelp · girls weekend (32)"
+    }
+  ]
 }

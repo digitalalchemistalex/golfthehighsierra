@@ -17,7 +17,7 @@
   },
   "phone": "(775) 782-9711",
   "website": "https://www.cvinn.com",
-  "priceRange": "$\u2013$$",
+  "priceRange": "$–$$",
   "description": "Carson Valley Inn offers a comprehensive amenities package that makes it an ideal base for golf groups exploring the Carson Valley region. Facilities include an indoor pool shaped like the state of Nevada, two 6-person glass-enclosed hot spas, a fitness center with mountain views, RV park with 59 full-hookup sites, and three dining options including CV Steak and Katie's Country Kitchen (24-hour). Free WiFi, free parking, no resort fees, and a Tesla charging station round out the guest amenities.",
   "shortDescription": "Full resort amenities at Carson Valley Inn: indoor pool, hot spas, dining, and no resort fees.",
   "highlights": [
@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "Carson Valley Inn Amenities \u2013 Pool, Fitness & More | Golf The High Sierra",
+    "title": "Carson Valley Inn Amenities – Pool, Fitness & More | Golf The High Sierra",
     "description": "Enjoy pool, fitness, casino, and dining at Carson Valley Inn. Ideal golf group amenities near Carson Valley's best courses."
-  }
+  },
+  "testimonials": [
+    {
+      "stars": 4,
+      "quote": "Visited Carson Valley Inn Amenities during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
+      "author": "Dan P.",
+      "source": "Google",
+      "meta": "Google · post-golf drinks (24)"
+    },
+    {
+      "stars": 4,
+      "quote": "Carson Valley Inn Amenities was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Carson Valley has so much more than just great courses.",
+      "author": "Angela C.",
+      "source": "Yelp",
+      "meta": "Yelp · date night during golf trip"
+    }
+  ]
 }

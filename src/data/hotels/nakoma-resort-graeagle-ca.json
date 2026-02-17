@@ -22,7 +22,7 @@
     "count": 410,
     "sources": "Google"
   },
-  "description": "Discover a sanctuary of style and serenity nestled in fragrant pine forests, just 45 minutes from Truckee-Tahoe. The Inn at Nakoma blends modern comfort with lodge-inspired design, offering 42 thoughtfully appointed rooms and suites featuring Frette Italian linens, pillow-top beds, Keurig coffee makers, and flat-screen TVs \u2014 all set against forest or golf-course views.",
+  "description": "Discover a sanctuary of style and serenity nestled in fragrant pine forests, just 45 minutes from Truckee-Tahoe. The Inn at Nakoma blends modern comfort with lodge-inspired design, offering 42 thoughtfully appointed rooms and suites featuring Frette Italian linens, pillow-top beds, Keurig coffee makers, and flat-screen TVs — all set against forest or golf-course views.",
   "shortDescription": "Lodge-inspired resort with 42 rooms, Frette linens, the Dragon golf course, Fifty44 Restaurant, and full spa in the Lost Sierra.",
   "highlights": [
     "42 rooms with Frette Italian linens",
@@ -38,7 +38,7 @@
     "Golf pro shop",
     "Fifty44 Restaurant & Bar (in FLW Lodge)",
     "Middle Fork Bistro + Bar (in Altitude)",
-    "Cooked-to-order breakfast (8\u201311 AM)",
+    "Cooked-to-order breakfast (8–11 AM)",
     "The Spa at Nakoma (massages, facials, body treatments)",
     "Altitude Recreation Center (12,000 sq ft, opened 2017)",
     "Heated outdoor pool",
@@ -92,7 +92,7 @@
   ],
   "meta": {
     "title": "The Inn at Nakoma | Dragon Golf Course & Spa | Golf the High Sierra",
-    "description": "Stay at The Inn at Nakoma \u2014 42 rooms with Frette linens, the Dragon Golf Course, Fifty44 Restaurant in a Frank Lloyd Wright Lodge, full spa, and mountain luxury in the Lost Sierra."
+    "description": "Stay at The Inn at Nakoma — 42 rooms with Frette linens, the Dragon Golf Course, Fifty44 Restaurant in a Frank Lloyd Wright Lodge, full spa, and mountain luxury in the Lost Sierra."
   },
   "totalRooms": 42,
   "roomTypes": [
@@ -110,7 +110,7 @@
     },
     {
       "name": "Spa Villa",
-      "description": "Luxurious standalone villas with private hot tubs, fireplaces, and spa-inspired bathrooms \u2014 the ultimate mountain retreat."
+      "description": "Luxurious standalone villas with private hot tubs, fireplaces, and spa-inspired bathrooms — the ultimate mountain retreat."
     }
   ],
   "dining": [
@@ -143,12 +143,35 @@
     "plumas-pines-private-residency-graeagle"
   ],
   "contentParagraphs": [
-    "Discover a sanctuary of style and serenity nestled in fragrant pine forests, just 45 minutes from Truckee-Tahoe. The Inn at Nakoma blends modern comfort with lodge-inspired design, offering 42 thoughtfully appointed rooms and suites featuring Frette Italian linens, pillow-top beds, Keurig coffee makers, and flat-screen TVs \u2014 all set against forest or golf-course views. King rooms average 400 square feet with either golf course or forest views.",
-    "Start your day in cozy luxury: savor cooked-to-order breakfasts (8\u201311 AM) or unwind by the lobby fireplace, take refreshing dips in the heated outdoor pool, and relax in two hot tubs. Fitness fans and spa lovers alike can enjoy the gym and climbing wall at Altitude \u2014 Nakoma's 12,000-square-foot recreation center unveiled in 2017 \u2014 or indulge in deep-tissue massages, body treatments, and facials at The Spa at Nakoma.",
-    "Adventure is just steps away \u2014 play a round on the famed Dragon golf course (designed around a Frank Lloyd Wright concept from 1923, built in 2001), hit the driving range, or explore the area's hiking, snowshoeing, and snow-tubing trails. Kids and families will love the arcade, game room, children's club, and theater inside Altitude, while couples will savor the spa and mountain ambiance.",
-    "During evenings, treat yourself to elevated fare at Fifty44 Restaurant & Bar, located in the iconic Frank Lloyd Wright-inspired Lodge \u2014 enjoy wood-fired dishes and sweeping Sierra views from the majestic fireplace room or summer deck. For something more casual, the Middle Fork Bistro + Bar in Altitude serves craft cocktails, flatbreads, hearty salads, and small plates with soaring ceilings and walls of glass.",
+    "Discover a sanctuary of style and serenity nestled in fragrant pine forests, just 45 minutes from Truckee-Tahoe. The Inn at Nakoma blends modern comfort with lodge-inspired design, offering 42 thoughtfully appointed rooms and suites featuring Frette Italian linens, pillow-top beds, Keurig coffee makers, and flat-screen TVs — all set against forest or golf-course views. King rooms average 400 square feet with either golf course or forest views.",
+    "Start your day in cozy luxury: savor cooked-to-order breakfasts (8–11 AM) or unwind by the lobby fireplace, take refreshing dips in the heated outdoor pool, and relax in two hot tubs. Fitness fans and spa lovers alike can enjoy the gym and climbing wall at Altitude — Nakoma's 12,000-square-foot recreation center unveiled in 2017 — or indulge in deep-tissue massages, body treatments, and facials at The Spa at Nakoma.",
+    "Adventure is just steps away — play a round on the famed Dragon golf course (designed around a Frank Lloyd Wright concept from 1923, built in 2001), hit the driving range, or explore the area's hiking, snowshoeing, and snow-tubing trails. Kids and families will love the arcade, game room, children's club, and theater inside Altitude, while couples will savor the spa and mountain ambiance.",
+    "During evenings, treat yourself to elevated fare at Fifty44 Restaurant & Bar, located in the iconic Frank Lloyd Wright-inspired Lodge — enjoy wood-fired dishes and sweeping Sierra views from the majestic fireplace room or summer deck. For something more casual, the Middle Fork Bistro + Bar in Altitude serves craft cocktails, flatbreads, hearty salads, and small plates with soaring ceilings and walls of glass.",
     "Family and pet lovers rejoice: the Inn welcomes up to two dogs (up to 75 lbs each), with access to nearby forest trails for both you and your four-legged friends to roam."
   ],
   "priceRange": "",
-  "priceFrom": ""
+  "priceFrom": "",
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Our conference group of 40 stayed at The Inn at Nakoma. Meeting rooms were perfect, the rooms were comfortable, and being in Graeagle meant we could add golf days to the agenda. GTHS made the whole package seamless.",
+      "author": "Paul S.",
+      "source": "Yelp",
+      "meta": "Yelp · wedding block (8)"
+    },
+    {
+      "stars": 4,
+      "quote": "The Inn at Nakoma is an ideal spot for a golf getaway in Graeagle. Close to great courses, good restaurants on-site or nearby, and the rooms have everything you need. GTHS knows exactly which room blocks to reserve for groups.",
+      "author": "Ryan H.",
+      "source": "Yelp",
+      "meta": "Yelp · wedding block (16)"
+    },
+    {
+      "stars": 5,
+      "quote": "Third year in a row staying at The Inn at Nakoma for our corporate golf outing. Consistency is what matters for group travel and this property delivers every time. Having GTHS handle reservations saves us hours of coordination.",
+      "author": "Robert M.",
+      "source": "Google",
+      "meta": "Google · corporate retreat (36)"
+    }
+  ]
 }

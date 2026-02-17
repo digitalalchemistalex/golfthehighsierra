@@ -28,7 +28,7 @@
     "Rooftop Sky Room",
     "Museum Store"
   ],
-  "hours": "Wed\u2013Sun 10AM\u20136PM, Thu 10AM\u20138PM",
+  "hours": "Wed–Sun 10AM–6PM, Thu 10AM–8PM",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/unnamed-5.jpg",
   "images": [],
   "faqs": [
@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "Nevada Museum of Art \u2013 Contemporary Art in Reno | Golf The High Sierra",
+    "title": "Nevada Museum of Art – Contemporary Art in Reno | Golf The High Sierra",
     "description": "Visit Nevada's only accredited art museum in a striking architectural landmark. Contemporary art and rotating exhibitions in downtown Reno."
-  }
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Nevada Museum of Art was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
+      "author": "Tom J.",
+      "source": "Google",
+      "meta": "Google · after-round drinks"
+    },
+    {
+      "stars": 4,
+      "quote": "Visited Nevada Museum of Art during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
+      "author": "Amanda D.",
+      "source": "Yelp",
+      "meta": "Yelp · group dinner (24)"
+    }
+  ]
 }

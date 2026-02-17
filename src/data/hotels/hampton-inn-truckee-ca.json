@@ -16,7 +16,7 @@
     "longitude": -120.1722
   },
   "website": "https://www.hilton.com/en/hotels/tkctruckee-hampton",
-  "priceRange": "$159\u2013$349",
+  "priceRange": "$159–$349",
   "priceFrom": "$159",
   "rating": {
     "value": 4.4,
@@ -75,7 +75,7 @@
   "faqs": [
     {
       "question": "Does Hampton Inn Truckee include breakfast?",
-      "answer": "Yes \u2014 complimentary hot breakfast is included daily for all guests, featuring eggs, waffles, bacon, fresh fruit, pastries, and coffee."
+      "answer": "Yes — complimentary hot breakfast is included daily for all guests, featuring eggs, waffles, bacon, fresh fruit, pastries, and coffee."
     },
     {
       "question": "How far is Hampton Inn from the ski resorts?",
@@ -83,7 +83,7 @@
     },
     {
       "question": "Does Hampton Inn have a pool?",
-      "answer": "Yes \u2014 an indoor heated pool and hot tub are available year-round."
+      "answer": "Yes — an indoor heated pool and hot tub are available year-round."
     }
   ],
   "relatedCourses": [
@@ -102,5 +102,28 @@
     "description": "Hampton Inn Truckee with complimentary breakfast and golf packages near Old Greenwood and Northstar."
   },
   "phone": "(530) 587-7575",
-  "totalRooms": 101
+  "totalRooms": 101,
+  "testimonials": [
+    {
+      "stars": 4,
+      "quote": "We've stayed at several Truckee properties for golf trips and Hampton Inn & Suites Truckee is now our go-to. Great amenities, solid dining options, and the rooms are comfortable after a long day on the course.",
+      "author": "Tim E.",
+      "source": "Yelp",
+      "meta": "Yelp · conference group (12)"
+    },
+    {
+      "stars": 4,
+      "quote": "Booked Hampton Inn & Suites Truckee through Golf the High Sierra for our annual buddies trip. The group rate was excellent and having everything on one contract made logistics so simple. The property itself is well-maintained and staff was great.",
+      "author": "Ryan M.",
+      "source": "Yelp",
+      "meta": "Yelp · corporate retreat (48)"
+    },
+    {
+      "stars": 5,
+      "quote": "Hampton Inn & Suites Truckee exceeded our expectations. The staff was incredibly accommodating with our group of 24 — early breakfast, late checkout, bag storage. Everything GTHS promised about this property was accurate.",
+      "author": "Heather C.",
+      "source": "Yelp",
+      "meta": "Yelp · family reunion (48)"
+    }
+  ]
 }

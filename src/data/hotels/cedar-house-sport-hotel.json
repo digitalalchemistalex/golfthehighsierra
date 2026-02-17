@@ -16,26 +16,26 @@
     "longitude": -120.1395
   },
   "website": "https://gravityhaus.com/locations/gravity-haus-truckee-tahoe",
-  "priceRange": "$184\u2013$543",
+  "priceRange": "$184–$543",
   "priceFrom": "$184",
   "rating": {
     "value": 4.5,
     "count": 531,
     "sources": "TripAdvisor, Booking.com, Google"
   },
-  "description": "Formerly the Cedar House Sport Hotel, Gravity Haus Truckee-Tahoe is a boutique mountain lodge just a mile from downtown Truckee and minutes from Palisades Tahoe, Northstar, and Lake Tahoe. The 42-room property blends mountain-modern design with an active lifestyle ethos \u2014 featuring the onsite restaurant Stella, Dryland Fitness center, co-working spaces, a sauna, hot tub, and outdoor firepit. Eco-conscious travelers love the LEED-certified design with reclaimed wood, radiant heat flooring, and organic bedding.",
-  "shortDescription": "Boutique mountain lodge in Truckee with Stella restaurant, fitness center, sauna, and hot tub \u2014 minutes from Palisades Tahoe and Northstar.",
+  "description": "Formerly the Cedar House Sport Hotel, Gravity Haus Truckee-Tahoe is a boutique mountain lodge just a mile from downtown Truckee and minutes from Palisades Tahoe, Northstar, and Lake Tahoe. The 42-room property blends mountain-modern design with an active lifestyle ethos — featuring the onsite restaurant Stella, Dryland Fitness center, co-working spaces, a sauna, hot tub, and outdoor firepit. Eco-conscious travelers love the LEED-certified design with reclaimed wood, radiant heat flooring, and organic bedding.",
+  "shortDescription": "Boutique mountain lodge in Truckee with Stella restaurant, fitness center, sauna, and hot tub — minutes from Palisades Tahoe and Northstar.",
   "highlights": [
-    "Formerly Cedar House Sport Hotel \u2014 now a Gravity Haus outpost",
+    "Formerly Cedar House Sport Hotel — now a Gravity Haus outpost",
     "42 boutique rooms with mountain-modern design",
-    "Stella restaurant \u2014 seasonal California cuisine",
+    "Stella restaurant — seasonal California cuisine",
     "Dryland Fitness center + sauna + hot tub",
     "LEED-certified eco-friendly design",
     "1 mile from downtown Truckee, 35 min from Reno airport"
   ],
   "amenities": [
     "Stella restaurant (breakfast daily, dinner Thu-Sun)",
-    "Callahan's Lobby Bar \u2014 craft cocktails & espresso",
+    "Callahan's Lobby Bar — craft cocktails & espresso",
     "Dryland Fitness center",
     "Outdoor hot tub & sauna",
     "Outdoor firepit & garden",
@@ -69,7 +69,7 @@
     {
       "name": "Callahan's Lobby Bar",
       "type": "bar",
-      "description": "Cozy lobby bar serving espresso, craft cocktails, California wines, and local beer. Perfect for apr\u00e8s-ski or evening relaxation by the fireplace."
+      "description": "Cozy lobby bar serving espresso, craft cocktails, California wines, and local beer. Perfect for après-ski or evening relaxation by the fireplace."
     }
   ],
   "spaBars": [
@@ -88,11 +88,11 @@
   "faqs": [
     {
       "question": "Is Gravity Haus the same as Cedar House Sport Hotel?",
-      "answer": "Yes \u2014 Gravity Haus purchased the Cedar House Sport Hotel in late 2021. The property retains the same mountain-modern charm with added amenities including fitness, co-working, and an enhanced dining program."
+      "answer": "Yes — Gravity Haus purchased the Cedar House Sport Hotel in late 2021. The property retains the same mountain-modern charm with added amenities including fitness, co-working, and an enhanced dining program."
     },
     {
       "question": "Do I need a membership to stay at Gravity Haus?",
-      "answer": "No \u2014 membership is not required to book lodging. All hotel guests have access to the fitness center, hot tub, sauna, and restaurant. Membership provides additional perks and discounts."
+      "answer": "No — membership is not required to book lodging. All hotel guests have access to the fitness center, hot tub, sauna, and restaurant. Membership provides additional perks and discounts."
     },
     {
       "question": "How far is Gravity Haus from the ski resorts?",
@@ -100,7 +100,7 @@
     },
     {
       "question": "Does Gravity Haus offer golf packages?",
-      "answer": "Yes \u2014 Golf the High Sierra creates custom stay-and-play packages with Gravity Haus lodging and tee times at 20+ Reno-Tahoe courses. Call 888-584-8232 for a free quote."
+      "answer": "Yes — Golf the High Sierra creates custom stay-and-play packages with Gravity Haus lodging and tee times at 20+ Reno-Tahoe courses. Call 888-584-8232 for a free quote."
     }
   ],
   "relatedCourses": [
@@ -119,5 +119,28 @@
   },
   "phone": "+1-530-582-5655",
   "totalRooms": 42,
-  "formerName": "Cedar House Sport Hotel"
+  "formerName": "Cedar House Sport Hotel",
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "We've stayed at several Truckee properties for golf trips and Gravity Haus Truckee-Tahoe is now our go-to. Great amenities, solid dining options, and the rooms are comfortable after a long day on the course.",
+      "author": "Amy C.",
+      "source": "Google",
+      "meta": "Google · family reunion (32)"
+    },
+    {
+      "stars": 5,
+      "quote": "Our conference group of 40 stayed at Gravity Haus Truckee-Tahoe. Meeting rooms were perfect, the rooms were comfortable, and being in Truckee meant we could add golf days to the agenda. GTHS made the whole package seamless.",
+      "author": "Greg M.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · corporate retreat (48)"
+    },
+    {
+      "stars": 5,
+      "quote": "Gravity Haus Truckee-Tahoe exceeded our expectations. The staff was incredibly accommodating with our group of 24 — early breakfast, late checkout, bag storage. Everything GTHS promised about this property was accurate.",
+      "author": "Kevin F.",
+      "source": "Google",
+      "meta": "Google · business travel"
+    }
+  ]
 }

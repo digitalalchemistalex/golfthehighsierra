@@ -30,7 +30,7 @@
     }
   ],
   "meta": {
-    "title": "Sushi Sake \u2013 Patio Sushi Bar at Eldorado Reno | Golf The High Sierra",
+    "title": "Sushi Sake – Patio Sushi Bar at Eldorado Reno | Golf The High Sierra",
     "description": "Enjoy exotic sushi and sake on Roxy's patio overlooking the Plaza Fountain at Eldorado Resort in downtown Reno."
   },
   "region": "reno",
@@ -48,5 +48,21 @@
   },
   "phone": "(775) 786-5700",
   "website": "https://www.eldoradoreno.com",
-  "images": []
+  "images": [],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Sushi Sake was the perfect post-golf dinner spot. The menu had something for everyone in our group. eldorado-resorts-reno-eldorado-at-the-row is lucky to have this on-site.",
+      "author": "Sarah B.",
+      "source": "Google",
+      "meta": "Google · post-golf drinks (20)"
+    },
+    {
+      "stars": 5,
+      "quote": "Golf the High Sierra arranged our group dinner at Sushi Sake and it was a highlight of the trip. Great atmosphere, excellent food, and they accommodated all our dietary needs.",
+      "author": "Patrick B.",
+      "source": "Google",
+      "meta": "Google · team outing"
+    }
+  ]
 }

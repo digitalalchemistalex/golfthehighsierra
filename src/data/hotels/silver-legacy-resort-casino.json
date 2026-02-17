@@ -16,7 +16,7 @@
     "longitude": -119.8138
   },
   "website": "https://www.silverlegacyreno.com",
-  "priceRange": "$99\u2013$449",
+  "priceRange": "$99–$449",
   "priceFrom": "$99",
   "rating": {
     "value": 4.2,
@@ -61,7 +61,7 @@
       "name": "Ramsay's Kitchen",
       "slug": "ramsays-kitchen-reno",
       "type": "restaurant",
-      "description": "Gordon Ramsay fine dining \u2014 Beef Wellington, Lobster Risotto."
+      "description": "Gordon Ramsay fine dining — Beef Wellington, Lobster Risotto."
     },
     {
       "name": "Gordon Ramsay Fish & Chips",
@@ -70,7 +70,7 @@
       "description": "Fast-casual hand-battered fish & chips."
     },
     {
-      "name": "Spa Caf\u00e9 & Bar",
+      "name": "Spa Café & Bar",
       "slug": "spa-cafe-bar-reno",
       "type": "cafe",
       "description": "Light, health-conscious meals near the spa."
@@ -98,7 +98,7 @@
     },
     {
       "question": "Is Silver Legacy connected to other casinos?",
-      "answer": "Yes \u2014 Silver Legacy is the center of THE ROW, connected to Eldorado and Circus Circus via enclosed skywalks."
+      "answer": "Yes — Silver Legacy is the center of THE ROW, connected to Eldorado and Circus Circus via enclosed skywalks."
     },
     {
       "question": "What dining is available?",
@@ -119,5 +119,28 @@
     "title": "Silver Legacy Resort Casino Reno | Golf Stay and Play Packages",
     "description": "Stay at Silver Legacy in downtown Reno. Ramsay's Kitchen, THE ROW access, and custom golf packages with 20+ courses."
   },
-  "phone": "(775) 329-4777"
+  "phone": "(775) 329-4777",
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Silver Legacy Resort Casino exceeded our expectations. The staff was incredibly accommodating with our group of 24 — early breakfast, late checkout, bag storage. Everything GTHS promised about this property was accurate.",
+      "author": "Pete J.",
+      "source": "Yelp",
+      "meta": "Yelp · business travel"
+    },
+    {
+      "stars": 5,
+      "quote": "We've stayed at several Reno properties for golf trips and Silver Legacy Resort Casino is now our go-to. Great amenities, solid dining options, and the rooms are comfortable after a long day on the course.",
+      "author": "Rick O.",
+      "source": "Google",
+      "meta": "Google · wedding block (20)"
+    },
+    {
+      "stars": 4,
+      "quote": "Stayed at Silver Legacy Resort Casino for our golf trip and it was the perfect home base. Rooms were clean and spacious, location was ideal for hitting courses around Reno. GTHS got us a group rate we couldn't find anywhere else.",
+      "author": "Christine P.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · business travel"
+    }
+  ]
 }

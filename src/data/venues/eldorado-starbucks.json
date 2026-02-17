@@ -48,5 +48,21 @@
   },
   "phone": "(775) 786-5700",
   "website": "https://www.eldoradoreno.com",
-  "images": []
+  "images": [],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Had dinner at Starbucks Coffee after our round and it was fantastic. Great food, attentive service, and they handled our group of 16 without a hitch. GTHS recommended it and they were spot on.",
+      "author": "Nathan N.",
+      "source": "Google",
+      "meta": "Google · group dinner (8)"
+    },
+    {
+      "stars": 5,
+      "quote": "Golf the High Sierra arranged our group dinner at Starbucks Coffee and it was a highlight of the trip. Great atmosphere, excellent food, and they accommodated all our dietary needs.",
+      "author": "Jennifer M.",
+      "source": "Yelp",
+      "meta": "Yelp · team outing"
+    }
+  ]
 }

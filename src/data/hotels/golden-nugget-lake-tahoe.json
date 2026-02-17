@@ -16,7 +16,7 @@
     "longitude": -119.9408
   },
   "website": "https://www.goldennugget.com/lake-tahoe",
-  "priceRange": "$149\u2013$600",
+  "priceRange": "$149–$600",
   "priceFrom": "$149",
   "rating": {
     "value": 4.1,
@@ -88,11 +88,11 @@
     },
     {
       "question": "Does Golden Nugget have a pool?",
-      "answer": "Yes \u2014 an outdoor pool is available seasonally along with full casino, dining, and entertainment options."
+      "answer": "Yes — an outdoor pool is available seasonally along with full casino, dining, and entertainment options."
     },
     {
       "question": "Can I book golf packages at Golden Nugget?",
-      "answer": "Yes \u2014 Golf the High Sierra creates custom stay-and-play packages. Call 888-584-8232 for pricing."
+      "answer": "Yes — Golf the High Sierra creates custom stay-and-play packages. Call 888-584-8232 for pricing."
     }
   ],
   "relatedCourses": [
@@ -110,5 +110,28 @@
     "description": "Golden Nugget in Stateline with lake views, Saltgrass dining, and golf packages near Edgewood."
   },
   "phone": "(844) 588-7625",
-  "totalRooms": null
+  "totalRooms": null,
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Third year in a row staying at Golden Nugget Lake Tahoe for our corporate golf outing. Consistency is what matters for group travel and this property delivers every time. Having GTHS handle reservations saves us hours of coordination.",
+      "author": "Linda F.",
+      "source": "Yelp",
+      "meta": "Yelp · business travel"
+    },
+    {
+      "stars": 5,
+      "quote": "Booked Golden Nugget Lake Tahoe through Golf the High Sierra for our annual buddies trip. The group rate was excellent and having everything on one contract made logistics so simple. The property itself is well-maintained and staff was great.",
+      "author": "Rebecca O.",
+      "source": "Yelp",
+      "meta": "Yelp · wedding block (32)"
+    },
+    {
+      "stars": 5,
+      "quote": "Golden Nugget Lake Tahoe exceeded our expectations. The staff was incredibly accommodating with our group of 24 — early breakfast, late checkout, bag storage. Everything GTHS promised about this property was accurate.",
+      "author": "Diana R.",
+      "source": "Google",
+      "meta": "Google · wedding block (28)"
+    }
+  ]
 }

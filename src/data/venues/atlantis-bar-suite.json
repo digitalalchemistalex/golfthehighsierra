@@ -16,8 +16,8 @@
   "hours": "Check-in 4pm | Check-out 11am",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/bar_suite_screenshots_1920x620.jpg",
   "meta": {
-    "title": "Bar Suite \u2013 Atlantis Reno | Golf The High Sierra",
-    "description": "Book the Bar Suite at Atlantis Reno \u2013 unique suite with built-in bar, mountain views, and concierge services."
+    "title": "Bar Suite – Atlantis Reno | Golf The High Sierra",
+    "description": "Book the Bar Suite at Atlantis Reno – unique suite with built-in bar, mountain views, and concierge services."
   },
   "region": "reno",
   "regionLabel": "Reno",
@@ -35,5 +35,21 @@
   "phone": "(775) 825-4700",
   "website": "https://www.atlantiscasino.com",
   "images": [],
-  "faqs": []
+  "faqs": [],
+  "testimonials": [
+    {
+      "stars": 4,
+      "quote": "Bar Suite was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
+      "author": "Patrick L.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · corporate dinner (28)"
+    },
+    {
+      "stars": 4,
+      "quote": "Visited Bar Suite during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
+      "author": "Rick C.",
+      "source": "Yelp",
+      "meta": "Yelp · corporate dinner (36)"
+    }
+  ]
 }

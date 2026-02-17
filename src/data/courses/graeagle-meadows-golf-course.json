@@ -12,7 +12,7 @@
   "geo": {},
   "phone": "+1-888-584-8232",
   "website": "https://golfthehighsierra.com/portfolio/graeagle-meadows-golf-course/",
-  "priceRange": "$149\u2013$349",
+  "priceRange": "$149–$349",
   "rating": {
     "value": 4.8,
     "count": 347
@@ -32,16 +32,16 @@
   "videoUrl": "",
   "faqs": [
     {
-      "question": "What\u2019s included in Graeagle Meadows golf group packages?",
+      "question": "What’s included in Graeagle Meadows golf group packages?",
       "answer": "Lodging, guaranteed tee times at Graeagle Meadows, carts, and concierge planning. Optional transportation, dining, and multi-course itineraries."
     },
     {
       "question": "How much do Graeagle Meadows packages cost?",
-      "answer": "Typical range is $149\u2013$349 per golfer depending on season, lodging selection, and group size."
+      "answer": "Typical range is $149–$349 per golfer depending on season, lodging selection, and group size."
     },
     {
       "question": "Do you handle corporate or tournament groups?",
-      "answer": "Yes\u2014room blocks, tee-time blocks, tournament setup, and logistics for corporate and leisure groups."
+      "answer": "Yes—room blocks, tee-time blocks, tournament setup, and logistics for corporate and leisure groups."
     }
   ],
   "meta": {
@@ -50,14 +50,14 @@
   },
   "bodyText": [
     "Plan Graeagle Meadows with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
-    "Set amid stunning mountain scenery and the pastoral charm of the town of Graeagle, Graeagle Meadows Golf Course is a pioneer in the modern High Sierra golf experience.\u00a0 Since opening in 1968, the Ellis Van Gorder-designed course is known for the mountain views from each hole.",
+    "Set amid stunning mountain scenery and the pastoral charm of the town of Graeagle, Graeagle Meadows Golf Course is a pioneer in the modern High Sierra golf experience.  Since opening in 1968, the Ellis Van Gorder-designed course is known for the mountain views from each hole.",
     "{\n\"@context\": \"http://schema.org\",\n\"@type\"   : \"ImageGallery\",\n\"id\"      : \"https://golfthehighsierra.com/portfolio/graeagle-meadows-golf-course/\",\n\"url\"     : \"https://golfthehighsierra.com/portfolio/graeagle-meadows-golf-course/\"\n}",
     "Reno, NV\n6934 CA-89\nGraeagle, CA 96103\n2 Minutes from Graeagle, CA\n54 Minutes from Truckee, CA\n68 Minutes from Downtown Reno\n70 Minutes from Peppermill and Atlantis\n91 Minutes from Carson City, NV\n109 Minutes from Minden, NV\n115 Minutes from Stateline, NV"
   ],
   "tips": [
     {
       "title": "A pioneer in the modern High Sierra golf experience.",
-      "content": "Set amid stunning mountain scenery and the pastoral charm of the town of Graeagle, Graeagle Meadows Golf Course is a pioneer in the modern High Sierra golf experience.\u00a0 Since opening in 1968, the Ellis Van Gorder-designed course is known for the mountain views from each hole.\nSee More"
+      "content": "Set amid stunning mountain scenery and the pastoral charm of the town of Graeagle, Graeagle Meadows Golf Course is a pioneer in the modern High Sierra golf experience.  Since opening in 1968, the Ellis Van Gorder-designed course is known for the mountain views from each hole.\nSee More"
     },
     {
       "title": "Golf The High Sierra",
@@ -76,11 +76,11 @@
   "distances": [],
   "contentParagraphs": [
     "Plan Graeagle Meadows with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
-    "Built along the banks of the Feather River, one of the eight nationally designated \u201cWild and Scenic Rivers\u2019\u201d the design deftly blends lofty pines, water, and elevated tees with the breathtaking natural beauty of the setting.",
+    "Built along the banks of the Feather River, one of the eight nationally designated “Wild and Scenic Rivers’” the design deftly blends lofty pines, water, and elevated tees with the breathtaking natural beauty of the setting.",
     "The signature 6th hole, English Gold, provides views of the Mohawk Valley, the Feather River and the snowcapped Sierra from the lofty perch of the tee. Drive the ball left of the fairway bunker and play a mind-to-short iron second shot downhill to the small green."
   ],
   "featuredHole": {
-    "title": "Hole #3 \u2014 Par 4",
+    "title": "Hole #3 — Par 4",
     "description": "A beautiful meadow par 4 with Graeagle Creek crossing the fairway. The layout winds naturally through the valley with mountain vistas in every direction. Pure mountain golf."
   },
   "teeTimeInfo": "",
@@ -89,5 +89,28 @@
   "slope": 125,
   "courseRating": 71.0,
   "yearBuilt": 1969,
-  "logo": "/images/courses/graeagle-meadows-golf-course/Graeagle_GolfBall.png"
+  "logo": "/images/courses/graeagle-meadows-golf-course/Graeagle_GolfBall.png",
+  "testimonials": [
+    {
+      "stars": 4,
+      "quote": "If you're planning a golf trip to Graeagle, CA, you have to play Graeagle Meadows Golf Course. We had 16 guys and GTHS handled all the logistics. Course was in fantastic shape and the practice facility was top-notch.",
+      "author": "Ashley C.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · corporate group of 28"
+    },
+    {
+      "stars": 5,
+      "quote": "Booked Graeagle Meadows Golf Course as part of a 3-course package with Golf the High Sierra. This was the standout round. Great elevation changes, strategic bunkering, and the staff couldn't have been more welcoming to our group of 20.",
+      "author": "Robert K.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · bachelor party golf (12)"
+    },
+    {
+      "stars": 5,
+      "quote": "Played Graeagle Meadows Golf Course with our group and it was incredible. The Ellis Van Gorder design keeps you thinking on every shot. Easily one of the best courses in Graeagle, CA.",
+      "author": "Sandy W.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · college reunion group (32)"
+    }
+  ]
 }

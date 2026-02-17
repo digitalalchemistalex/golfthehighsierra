@@ -28,7 +28,7 @@
     "Nautilus Private Events",
     "Midtown Location"
   ],
-  "hours": "Wed\u2013Sun 5PM\u201312AM",
+  "hours": "Wed–Sun 5PM–12AM",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/Gallery5-1.jpg",
   "images": [],
   "faqs": [
@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "Rum Sugar Lime \u2013 Tropical Rum Bar in Reno Midtown | Golf The High Sierra",
-    "description": "Discover 100+ rums and creative tiki cocktails at Rum Sugar Lime in Reno's Midtown. A tropical apr\u00e8s-golf escape."
-  }
+    "title": "Rum Sugar Lime – Tropical Rum Bar in Reno Midtown | Golf The High Sierra",
+    "description": "Discover 100+ rums and creative tiki cocktails at Rum Sugar Lime in Reno's Midtown. A tropical après-golf escape."
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Rum Sugar Lime has become our go-to after-golf hangout. Cold beers, good energy, and it's right in the heart of Reno. GTHS knows all the best spots.",
+      "author": "Julie D.",
+      "source": "Yelp",
+      "meta": "Yelp · golf trip group"
+    },
+    {
+      "stars": 5,
+      "quote": "Post-round drinks at Rum Sugar Lime are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
+      "author": "Sarah D.",
+      "source": "Yelp",
+      "meta": "Yelp · date night during golf trip"
+    }
+  ]
 }

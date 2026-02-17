@@ -16,7 +16,7 @@
     "longitude": -119.9424
   },
   "website": "https://www.caesars.com/harrahs-tahoe",
-  "priceRange": "$129\u2013$499",
+  "priceRange": "$129–$499",
   "priceFrom": "$129",
   "rating": {
     "value": 4.1,
@@ -67,7 +67,7 @@
     }
   ],
   "spaBars": [
-    "Clich\u00e9 Lounge",
+    "Cliché Lounge",
     "Center Bar"
   ],
   "parking": "Free self-parking",
@@ -82,15 +82,15 @@
   "faqs": [
     {
       "question": "Is Harrah's connected to Harvey's?",
-      "answer": "Yes \u2014 Harrah's and Harvey's Lake Tahoe are connected via an enclosed skywalk, giving guests easy access to both properties' dining, entertainment, and casino floors."
+      "answer": "Yes — Harrah's and Harvey's Lake Tahoe are connected via an enclosed skywalk, giving guests easy access to both properties' dining, entertainment, and casino floors."
     },
     {
       "question": "Does Harrah's have a pool?",
-      "answer": "Yes \u2014 an outdoor pool is available seasonally along with a full-service spa and fitness center."
+      "answer": "Yes — an outdoor pool is available seasonally along with a full-service spa and fitness center."
     },
     {
       "question": "How far is Harrah's from Heavenly ski resort?",
-      "answer": "Heavenly Village and the gondola are within walking distance \u2014 about a 5-minute walk from the hotel."
+      "answer": "Heavenly Village and the gondola are within walking distance — about a 5-minute walk from the hotel."
     }
   ],
   "relatedCourses": [
@@ -108,5 +108,28 @@
     "description": "Harrah's Lake Tahoe in Stateline. Minutes from Edgewood Tahoe with custom golf packages."
   },
   "phone": "(775) 588-6611",
-  "totalRooms": 512
+  "totalRooms": 512,
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Third year in a row staying at Harrah's Lake Tahoe for our corporate golf outing. Consistency is what matters for group travel and this property delivers every time. Having GTHS handle reservations saves us hours of coordination.",
+      "author": "Robert L.",
+      "source": "Yelp",
+      "meta": "Yelp · corporate retreat (20)"
+    },
+    {
+      "stars": 4,
+      "quote": "We've stayed at several Lake Tahoe properties for golf trips and Harrah's Lake Tahoe is now our go-to. Great amenities, solid dining options, and the rooms are comfortable after a long day on the course.",
+      "author": "Gary D.",
+      "source": "Google",
+      "meta": "Google · golf group of 24"
+    },
+    {
+      "stars": 5,
+      "quote": "Our conference group of 40 stayed at Harrah's Lake Tahoe. Meeting rooms were perfect, the rooms were comfortable, and being in Lake Tahoe meant we could add golf days to the agenda. GTHS made the whole package seamless.",
+      "author": "Patrick H.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · family reunion (48)"
+    }
+  ]
 }

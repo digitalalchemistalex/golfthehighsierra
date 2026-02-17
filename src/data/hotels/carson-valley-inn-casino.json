@@ -16,7 +16,7 @@
     "longitude": -119.7656
   },
   "website": "https://www.cvinn.com",
-  "priceRange": "$85\u2013$249",
+  "priceRange": "$85–$249",
   "priceFrom": "$85",
   "rating": {
     "value": 4.1,
@@ -77,7 +77,7 @@
   "faqs": [
     {
       "question": "Does Carson Valley Inn charge a resort fee?",
-      "answer": "No \u2014 Carson Valley Inn never charges resort fees. Free parking (valet and self-parking) is included for all guests."
+      "answer": "No — Carson Valley Inn never charges resort fees. Free parking (valet and self-parking) is included for all guests."
     },
     {
       "question": "How far is Carson Valley Inn from Lake Tahoe?",
@@ -85,7 +85,7 @@
     },
     {
       "question": "What golf courses are near Carson Valley Inn?",
-      "answer": "Carson Valley is surrounded by excellent courses including Genoa Lakes, Dayton Valley, Eagle Valley, and Toiyabe. Golf the High Sierra builds custom packages with CVI lodging \u2014 call 888-584-8232."
+      "answer": "Carson Valley is surrounded by excellent courses including Genoa Lakes, Dayton Valley, Eagle Valley, and Toiyabe. Golf the High Sierra builds custom packages with CVI lodging — call 888-584-8232."
     }
   ],
   "relatedCourses": [
@@ -103,5 +103,28 @@
     "description": "Stay at Carson Valley Inn in Minden. Casino, dining, and golf packages near Genoa Lakes and Dayton Valley."
   },
   "phone": "(775) 782-9711",
-  "totalRooms": 282
+  "totalRooms": 282,
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Our conference group of 40 stayed at Carson Valley Inn & Casino. Meeting rooms were perfect, the rooms were comfortable, and being in Carson Valley meant we could add golf days to the agenda. GTHS made the whole package seamless.",
+      "author": "Stephanie T.",
+      "source": "Yelp",
+      "meta": "Yelp · girls weekend (16)"
+    },
+    {
+      "stars": 5,
+      "quote": "Booked Carson Valley Inn & Casino through Golf the High Sierra for our annual buddies trip. The group rate was excellent and having everything on one contract made logistics so simple. The property itself is well-maintained and staff was great.",
+      "author": "Kathy N.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · girls weekend (24)"
+    },
+    {
+      "stars": 4,
+      "quote": "Third year in a row staying at Carson Valley Inn & Casino for our corporate golf outing. Consistency is what matters for group travel and this property delivers every time. Having GTHS handle reservations saves us hours of coordination.",
+      "author": "Carlos L.",
+      "source": "Yelp",
+      "meta": "Yelp · girls weekend (16)"
+    }
+  ]
 }

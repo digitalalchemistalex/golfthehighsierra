@@ -28,7 +28,7 @@
     "$200M Renovation",
     "High Dive Pool & Lounge (2026)"
   ],
-  "hours": "Seasonal: Daily 8AM\u20138PM (Summer), Weekends (Spring/Fall)",
+  "hours": "Seasonal: Daily 8AM–8PM (Summer), Weekends (Spring/Fall)",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/11/Harveyspool.jpg",
   "images": [],
   "faqs": [
@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "Harvey's Heated Pool \u2013 Lake Tahoe Poolside | Golf The High Sierra",
+    "title": "Harvey's Heated Pool – Lake Tahoe Poolside | Golf The High Sierra",
     "description": "Relax at Harvey's heated pool in Lake Tahoe with mountain views and poolside service. Perfect post-golf recovery."
-  }
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Harvey's Heated Pool was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. South Lake Tahoe has so much more than just great courses.",
+      "author": "Nick D.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · golf trip group"
+    },
+    {
+      "stars": 4,
+      "quote": "Visited Harvey's Heated Pool during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
+      "author": "Karen B.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · team outing"
+    }
+  ]
 }

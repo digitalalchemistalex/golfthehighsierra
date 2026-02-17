@@ -17,7 +17,7 @@
   },
   "phone": "(775) 348-7860",
   "website": "https://theemersonreno.com",
-  "priceRange": "$$\u2013$$$",
+  "priceRange": "$$–$$$",
   "description": "The Emerson is a craft cocktail lounge at 955 S Virginia St in Reno's Midtown district, known for its mid-century modern design and expertly crafted cocktails. The bartenders create both classic cocktails with creative twists and house originals like the signature 'Hi Bestie.' The intimate space features vintage aesthetics with cozy seating, warm lighting, and vibrant murals. In addition to drinks, they serve small plates including flatbreads, meatballs, and their popular Tuesday Grilled Cheese Night and Wednesday Slider Night. The Emerson also hosts popular drag brunches and themed events, drawing an inclusive, welcoming crowd.",
   "shortDescription": "Mid-century modern cocktail lounge with craft cocktails, small plates, and drag events in Midtown.",
   "highlights": [
@@ -28,7 +28,7 @@
     "Midtown Location",
     "Inclusive Atmosphere"
   ],
-  "hours": "Mon\u2013Sat 4PM\u201312AM",
+  "hours": "Mon–Sat 4PM–12AM",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/Screenshot2024-11-05at9.33.20%20PM.png",
   "images": [],
   "faqs": [
@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "The Emerson \u2013 Upscale Cocktails in Downtown Reno | Golf The High Sierra",
-    "description": "Experience refined cocktails and art deco elegance at The Emerson in downtown Reno. An upscale apr\u00e8s-golf destination for discerning groups."
-  }
+    "title": "The Emerson – Upscale Cocktails in Downtown Reno | Golf The High Sierra",
+    "description": "Experience refined cocktails and art deco elegance at The Emerson in downtown Reno. An upscale après-golf destination for discerning groups."
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "We ended every day of our golf trip at The Emerson. Great selection, friendly bartenders, and the kind of place where your group can be loud and happy after a great round.",
+      "author": "Rebecca W.",
+      "source": "Google",
+      "meta": "Google · date night during golf trip"
+    },
+    {
+      "stars": 5,
+      "quote": "Post-round drinks at The Emerson are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
+      "author": "Greg J.",
+      "source": "Google",
+      "meta": "Google · post-golf drinks (32)"
+    }
+  ]
 }

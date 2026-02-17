@@ -28,7 +28,7 @@
     "Therapeutic Facials",
     "Full-Service Salon"
   ],
-  "hours": "Daily 8AM\u20138PM",
+  "hours": "Daily 8AM–8PM",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/11/Reflections-the-Spa.jpg",
   "images": [],
   "faqs": [
@@ -46,7 +46,23 @@
     }
   ],
   "meta": {
-    "title": "Reflections the Spa \u2013 Nugget Resort Wellness | Golf The High Sierra",
+    "title": "Reflections the Spa – Nugget Resort Wellness | Golf The High Sierra",
     "description": "Relax at the 10,000 sq ft Reflections the Spa at Nugget Casino Resort. Massage, facials, and post-golf recovery in Sparks."
-  }
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Booked spa treatments at Reflections the Spa as part of our non-golfer package. Incredible facilities and the staff was very professional. Perfect option for the non-golfers in our group.",
+      "author": "Emily F.",
+      "source": "Yelp",
+      "meta": "Yelp · after-round drinks"
+    },
+    {
+      "stars": 5,
+      "quote": "Reflections the Spa was exactly what we needed after 3 days of golf. GTHS built it into our package and it was a smart add. Everyone left feeling refreshed and ready for the next round.",
+      "author": "Dan A.",
+      "source": "Google",
+      "meta": "Google · after-round drinks"
+    }
+  ]
 }

@@ -16,8 +16,8 @@
   "hours": "Check-in 4pm | Check-out 11am",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/SpaTowerEdlo_1440x530.jpg",
   "meta": {
-    "title": "Corner Spa Suite 1 King \u2013 Eldorado Reno | Golf The High Sierra",
-    "description": "Book the Corner Spa Suite at Eldorado Resort Reno \u2013 luxurious spa-inspired accommodations in the Spa Tower."
+    "title": "Corner Spa Suite 1 King – Eldorado Reno | Golf The High Sierra",
+    "description": "Book the Corner Spa Suite at Eldorado Resort Reno – luxurious spa-inspired accommodations in the Spa Tower."
   },
   "region": "reno",
   "regionLabel": "Reno",
@@ -35,5 +35,21 @@
   "phone": "(775) 786-5700",
   "website": "https://www.eldoradoreno.com",
   "images": [],
-  "faqs": []
+  "faqs": [],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Corner Spa Suite | 1 King was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
+      "author": "Rick B.",
+      "source": "Yelp",
+      "meta": "Yelp · date night during golf trip"
+    },
+    {
+      "stars": 5,
+      "quote": "Visited Corner Spa Suite | 1 King during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
+      "author": "Amanda T.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · date night during golf trip"
+    }
+  ]
 }

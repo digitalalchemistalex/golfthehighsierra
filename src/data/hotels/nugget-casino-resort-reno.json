@@ -16,7 +16,7 @@
     "longitude": -119.7527
   },
   "website": "https://www.nuggetcasinoresort.com",
-  "priceRange": "$79\u2013$349",
+  "priceRange": "$79–$349",
   "priceFrom": "$79",
   "rating": {
     "value": 4.2,
@@ -67,7 +67,7 @@
       "description": "Fresh seafood and raw bar."
     },
     {
-      "name": "Rosie's Caf\u00e9",
+      "name": "Rosie's Café",
       "type": "cafe",
       "description": "24/7 casual dining."
     }
@@ -88,11 +88,11 @@
     },
     {
       "question": "What dining options are available?",
-      "answer": "Five restaurants including Rosie's Caf\u00e9 (24-hour casual), Steakhouse at the Nugget (fine dining), and multiple quick-serve and bar options."
+      "answer": "Five restaurants including Rosie's Café (24-hour casual), Steakhouse at the Nugget (fine dining), and multiple quick-serve and bar options."
     },
     {
       "question": "Does Nugget offer golf packages?",
-      "answer": "Yes \u2014 Golf the High Sierra creates custom packages with Nugget lodging and tee times at 20+ courses. The year-round atrium pool is a bonus. Call 888-584-8232."
+      "answer": "Yes — Golf the High Sierra creates custom packages with Nugget lodging and tee times at 20+ courses. The year-round atrium pool is a bonus. Call 888-584-8232."
     }
   ],
   "relatedCourses": [
@@ -110,5 +110,28 @@
     "title": "Nugget Casino Resort Reno-Sparks | Golf Stay Packages",
     "description": "Iconic Nugget Casino Resort. 1,380 rooms, 5 restaurants, and custom golf packages with 20+ courses."
   },
-  "phone": "(775) 356-3300"
+  "phone": "(775) 356-3300",
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Booked Nugget Casino Resort through Golf the High Sierra for our annual buddies trip. The group rate was excellent and having everything on one contract made logistics so simple. The property itself is well-maintained and staff was great.",
+      "author": "Travis B.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · girls weekend (40)"
+    },
+    {
+      "stars": 4,
+      "quote": "Nugget Casino Resort is an ideal spot for a golf getaway in Reno / Sparks. Close to great courses, good restaurants on-site or nearby, and the rooms have everything you need. GTHS knows exactly which room blocks to reserve for groups.",
+      "author": "Nick L.",
+      "source": "Google",
+      "meta": "Google · business travel"
+    },
+    {
+      "stars": 5,
+      "quote": "Stayed at Nugget Casino Resort for our golf trip and it was the perfect home base. Rooms were clean and spacious, location was ideal for hitting courses around Reno / Sparks. GTHS got us a group rate we couldn't find anywhere else.",
+      "author": "Maria W.",
+      "source": "Google",
+      "meta": "Google · girls weekend (12)"
+    }
+  ]
 }

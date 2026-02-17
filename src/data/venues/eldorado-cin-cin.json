@@ -3,7 +3,7 @@
   "name": "Cin Cin Bar & Lounge",
   "type": "bar",
   "priceRange": "$$",
-  "description": "Pronounced 'Chin Chin' \u2014 the Italian toast to good health, old friends, and the pleasure of wine. Cin Cin offers an extensive artisan cocktail program unlike any other Reno nightclub. Watch as artisan bartenders create classic and creative concoctions using only the finest spirits and ingredients, from fresh-squeezed juices to hand-muddled fruit, herbs, and vegetables for a truly memorable experience.",
+  "description": "Pronounced 'Chin Chin' — the Italian toast to good health, old friends, and the pleasure of wine. Cin Cin offers an extensive artisan cocktail program unlike any other Reno nightclub. Watch as artisan bartenders create classic and creative concoctions using only the finest spirits and ingredients, from fresh-squeezed juices to hand-muddled fruit, herbs, and vegetables for a truly memorable experience.",
   "shortDescription": "Upscale artisan cocktail lounge with Italian flair and handcrafted drinks at the Eldorado.",
   "highlights": [
     "Artisan Cocktails",
@@ -30,7 +30,7 @@
     }
   ],
   "meta": {
-    "title": "Cin Cin Bar & Lounge \u2013 Artisan Cocktails at Eldorado Reno | Golf The High Sierra",
+    "title": "Cin Cin Bar & Lounge – Artisan Cocktails at Eldorado Reno | Golf The High Sierra",
     "description": "Experience artisan cocktails with fresh-squeezed juices and hand-muddled ingredients at Cin Cin Bar & Lounge in Eldorado Reno."
   },
   "region": "reno",
@@ -48,5 +48,21 @@
   },
   "phone": "(775) 786-5700",
   "website": "https://www.eldoradoreno.com",
-  "images": []
+  "images": [],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "We ended every day of our golf trip at Cin Cin Bar & Lounge. Great selection, friendly bartenders, and the kind of place where your group can be loud and happy after a great round.",
+      "author": "Robert A.",
+      "source": "Yelp",
+      "meta": "Yelp · after-round drinks"
+    },
+    {
+      "stars": 5,
+      "quote": "Post-round drinks at Cin Cin Bar & Lounge are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
+      "author": "Tim N.",
+      "source": "Google",
+      "meta": "Google · group dinner (8)"
+    }
+  ]
 }

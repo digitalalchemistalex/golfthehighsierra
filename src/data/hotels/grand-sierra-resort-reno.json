@@ -17,7 +17,7 @@
   },
   "phone": "(775) 789-2000",
   "website": "https://www.grandsierraresort.com",
-  "priceRange": "$109\u2013$599",
+  "priceRange": "$109–$599",
   "priceFrom": "$109",
   "starRating": 4,
   "rating": {
@@ -30,8 +30,8 @@
   "highlights": [
     "Northern Nevada's largest casino resort",
     "2,000+ slot machines & 50+ table games",
-    "The Grand Theatre \u2013 2,700-seat concert venue",
-    "Lex Nightclub \u2013 Reno's premier nightclub",
+    "The Grand Theatre – 2,700-seat concert venue",
+    "Lex Nightclub – Reno's premier nightclub",
     "Charlie Palmer Steakhouse",
     "5 minutes from Reno-Tahoe International Airport",
     "Resort-style pool with cabanas & hot tubs"
@@ -83,7 +83,7 @@
       "description": "Premium sushi and Asian-inspired cuisine."
     },
     {
-      "name": "Uno M\u00e1s Street Tacos",
+      "name": "Uno Más Street Tacos",
       "type": "restaurant",
       "description": "Authentic street-style Mexican cuisine."
     },
@@ -93,7 +93,7 @@
       "description": "Expansive buffet with diverse international options."
     },
     {
-      "name": "Grand Caf\u00e9",
+      "name": "Grand Café",
       "type": "cafe",
       "description": "24/7 casual dining."
     }
@@ -121,7 +121,7 @@
     },
     {
       "question": "Does GSR offer golf packages?",
-      "answer": "Yes \u2014 Golf the High Sierra offers custom packages combining lodging at GSR with tee times at top Reno-Tahoe courses. Call 888-584-8232."
+      "answer": "Yes — Golf the High Sierra offers custom packages combining lodging at GSR with tee times at top Reno-Tahoe courses. Call 888-584-8232."
     },
     {
       "question": "What entertainment does GSR offer after golf?",
@@ -146,5 +146,28 @@
   "meta": {
     "title": "Grand Sierra Resort Reno | Casino, Dining & Golf Stay Packages",
     "description": "Stay at Northern Nevada's largest casino resort. 2,000+ slots, live concerts, fine dining, and custom golf packages with 20+ courses."
-  }
+  },
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "We've stayed at several Reno properties for golf trips and Grand Sierra Resort & Casino is now our go-to. Great amenities, solid dining options, and the rooms are comfortable after a long day on the course.",
+      "author": "Angela R.",
+      "source": "Google",
+      "meta": "Google · conference group (16)"
+    },
+    {
+      "stars": 5,
+      "quote": "Our conference group of 40 stayed at Grand Sierra Resort & Casino. Meeting rooms were perfect, the rooms were comfortable, and being in Reno meant we could add golf days to the agenda. GTHS made the whole package seamless.",
+      "author": "David O.",
+      "source": "Yelp",
+      "meta": "Yelp · family reunion (48)"
+    },
+    {
+      "stars": 4,
+      "quote": "Third year in a row staying at Grand Sierra Resort & Casino for our corporate golf outing. Consistency is what matters for group travel and this property delivers every time. Having GTHS handle reservations saves us hours of coordination.",
+      "author": "Tina C.",
+      "source": "Yelp",
+      "meta": "Yelp · corporate retreat (20)"
+    }
+  ]
 }

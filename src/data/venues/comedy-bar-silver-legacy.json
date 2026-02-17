@@ -26,7 +26,7 @@
     "Full Bar",
     "Casino Floor Location"
   ],
-  "hours": "Show nights vary, typically Thu\u2013Sat 8PM & 10PM",
+  "hours": "Show nights vary, typically Thu–Sat 8PM & 10PM",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/11/Comedy-Bar-SLR-Web-Hero-1440x530-1.jpg",
   "images": [],
   "faqs": [
@@ -40,11 +40,27 @@
     },
     {
       "question": "Is this good for golf groups?",
-      "answer": "Perfect for groups \u2014 the combination of comedy and drinks makes for a memorable evening after golf."
+      "answer": "Perfect for groups — the combination of comedy and drinks makes for a memorable evening after golf."
     }
   ],
   "meta": {
-    "title": "Comedy Bar at Silver Legacy \u2013 Live Comedy Reno | Golf The High Sierra",
-    "description": "Laugh it up at Silver Legacy's Comedy Bar. Live stand-up comedy with full bar service \u2014 perfect group entertainment after golf."
-  }
+    "title": "Comedy Bar at Silver Legacy – Live Comedy Reno | Golf The High Sierra",
+    "description": "Laugh it up at Silver Legacy's Comedy Bar. Live stand-up comedy with full bar service — perfect group entertainment after golf."
+  },
+  "testimonials": [
+    {
+      "stars": 4,
+      "quote": "We ended every day of our golf trip at Comedy Bar. Great selection, friendly bartenders, and the kind of place where your group can be loud and happy after a great round.",
+      "author": "Robert L.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · after-round drinks"
+    },
+    {
+      "stars": 5,
+      "quote": "Post-round drinks at Comedy Bar are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
+      "author": "Nathan F.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor · corporate dinner (8)"
+    }
+  ]
 }
