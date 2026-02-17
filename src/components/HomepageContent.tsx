@@ -1,144 +1,130 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
+/* eslint-disable @next/next/no-img-element */
+import Link from 'next/link';
 import '@/styles/homepage.css';
 
-export default function HomepageContent() {
+/* ─── Data ─── */
+const SLIDES = [
+  { badge: 'Reno, Nevada', h1: 'Championship Golf Meets Casino Nightlife', p: '7 courses, 8 casino-resorts, and one company that handles everything. Group golf packages built by locals since 2004.', cta1: { text: 'Plan Your Reno Trip', href: '/group-golf-reno-tahoe/' }, cta2: { text: 'View Reno Courses', href: '/best-golf-courses-reno/' }, img: '/images/homepage/homepage-01.jpg', alt: 'Reno Nevada skyline and Sierra Nevada mountains' },
+  { badge: 'Lake Tahoe', h1: 'Alpine Golf at 6,200 Feet Elevation', p: 'Edgewood, Incline Village, and Old Greenwood — lakefront and mountain courses your group will talk about for years.', cta1: { text: 'Explore Tahoe Packages', href: '/best-golf-courses-lake-tahoe/' }, cta2: { text: 'View Tahoe Courses', href: '/best-golf-courses-lake-tahoe/' }, img: '/images/homepage/homepage-02.jpg', alt: 'Edgewood Tahoe 18th hole Lake Tahoe' },
+  { badge: 'Truckee / North Tahoe', h1: 'Mountain Courses Through Towering Pines', p: "Old Greenwood, Coyote Moon, Gray's Crossing, Tahoe Donner — stay in Truckee villas, play championship courses.", cta1: { text: 'Truckee Packages', href: '/group-golf-reno-tahoe/' }, cta2: { text: 'View Courses', href: '/best-golf-courses-reno/' }, img: '/images/homepage/homepage-03.jpg', alt: 'Old Greenwood Golf Course Truckee California' },
+  { badge: 'Carson Valley', h1: 'Sierra Panoramas at Half the Price', p: 'Genoa Lakes, Dayton Valley, Toiyabe — uncrowded courses with mountain backdrops and the best value in the region.', cta1: { text: 'Carson Valley Trips', href: '/group-golf-reno-tahoe/' }, cta2: { text: 'View Courses', href: '/best-golf-courses-reno/' }, img: '/images/homepage/homepage-04.jpg', alt: 'Genoa Lakes Golf Club Carson Valley Nevada' },
+  { badge: '10,000+ Trips Planned', h1: 'One Call. One Contract. Zero Hassle.', p: '20+ years arranging group golf across Reno, Tahoe, and Carson Valley. Courses, hotels, dining, transport — we book it all.', cta1: { text: 'Request a Free Quote', href: '/contact-custom-golf-package/' }, cta2: { text: 'Call 888-584-8232', href: 'tel:+18885848232' }, img: '/images/homepage/homepage-05.jpg', alt: 'Red Hawk Golf Resort group golf outing' },
+];
+const TAB_LABELS = ['\u{1F4CD} Reno', '\u{1F4CD} Lake Tahoe', '\u{1F4CD} Truckee', '\u{1F4CD} Carson Valley', '\u{1F4CD} Overview'];
+
+const TRUST = [
+  { icon: '\u{1F3C6}', num: 20, suffix: '+', label: 'Years', sub: 'Serving Groups Since 2004' },
+  { icon: '\u{26F3}', num: 10000, suffix: '+', label: 'Outings', sub: 'Planned & Executed' },
+  { icon: '\u{1F3E8}', num: 20, suffix: '+', label: 'Courses', sub: 'Hotels, Casinos & Resorts' },
+  { icon: '\u{2B50}', num: 0, suffix: '', label: '4.8/5 Rating', sub: '672 Verified Reviews' },
+];
+
+const EXP_CARDS = [
+  { img: '/images/homepage/homepage-07.webp', alt: 'Championship golf course', icon: '\u{26F3}', title: '20+ Courses', sub: 'Championship golf across 4 regions' },
+  { img: '/images/homepage/homepage-08.webp', alt: 'Fine dining Reno casino', icon: '\u{1F37D}', title: 'Dining', sub: 'Casino restaurants & private events' },
+  { img: '/images/homepage/homepage-09.webp', alt: 'Resort pool Peppermill Reno', icon: '\u{1F3E8}', title: 'Resorts & Casinos', sub: 'Atlantis, Peppermill, Grand Sierra & more' },
+  { img: '/images/homepage/homepage-10.webp', alt: 'Old Greenwood villa lodging Truckee', icon: '\u{1F3E1}', title: 'Villa Lodging', sub: 'Mountain villas & private cabins' },
+];
+
+const REGIONS = [
+  { name: 'Reno', subtitle: 'Casino Golf Capital', badge: '7 Courses', price: 'From $189', img: '/images/homepage/homepage-11.jpg', alt: 'Lakeridge Golf Course Reno NV', chips: ['Lakeridge', 'ArrowCreek', 'Red Hawk', 'Wolf Run', 'Somersett'], hotels: '\u{1F3E8} Atlantis \u00B7 Peppermill \u00B7 Grand Sierra Resort \u00B7 Eldorado', rating: '4.8 (290 reviews)', href: '/group-golf-reno-tahoe/' },
+  { name: 'Lake Tahoe', subtitle: 'Lakefront & Alpine', badge: '3 Courses', price: 'From $299', img: '/images/homepage/homepage-12.jpg', alt: 'Incline Village Championship Course Lake Tahoe', chips: ['Edgewood Tahoe', 'Incline Village'], hotels: '\u{1F3E8} Hyatt Regency \u00B7 Lodge at Edgewood \u00B7 Lakeside resorts', rating: '4.9 (185 reviews)', href: '/best-golf-courses-lake-tahoe/' },
+  { name: 'Truckee', subtitle: 'Mountain Championship', badge: '4 Courses', price: 'From $249', img: '/images/homepage/homepage-13.jpg', alt: "Gray's Crossing Golf Course Truckee CA", chips: ['Old Greenwood', 'Coyote Moon', "Gray's Crossing", 'Tahoe Donner', 'Plumas Pines'], hotels: '\u{1F3E8} Truckee villas \u00B7 Cedar House \u00B7 Graeagle Lodge \u00B7 Hampton Inn', rating: '4.8 (120 reviews)', href: '/group-golf-reno-tahoe/' },
+  { name: 'Carson Valley', subtitle: 'Best Value in the Sierra', badge: '4 Courses', price: 'From $149', img: '/images/homepage/homepage-14.jpg', alt: 'Dayton Valley Golf Club Carson Valley NV', chips: ['Genoa Lakes', 'Dayton Valley', 'Toiyabe', 'Eagle Valley'], hotels: '\u{1F3E8} Carson Valley Inn \u00B7 Holiday Inn \u00B7 Budget-friendly options', rating: '4.7 (77 reviews)', href: '/group-golf-reno-tahoe/' },
+];
+
+const TESTIMONIALS = [
+  { stars: 5, quote: "We've used Golf the High Sierra for our annual corporate outing 6 years running. One phone call and everything is handled. The registration portal alone saves me 20 hours.", author: 'Mark T.', meta: 'Google \u00B7 Corporate Group of 32', avatar: 'M' },
+  { stars: 5, quote: "Organized a 24-person buddies trip. Everyone paid directly through the portal \u2014 I didn't chase a single dollar. Courses were perfectly matched to our skill mix.", author: 'Steve R.', meta: 'TripAdvisor \u00B7 Leisure Group', avatar: 'S' },
+  { stars: 5, quote: "From lodging to dinner reservations to the shuttle \u2014 everything was arranged before we arrived. Best group golf experience we've ever had, hands down.", author: 'David L.', meta: 'Yelp \u00B7 Mixed Group of 16', avatar: 'D' },
+];
+
+const FAQS = [
+  { q: 'What is included in a Golf the High Sierra package?', a: 'Every package includes tee times at your chosen courses, lodging at partner hotels or casinos, and access to our proprietary online registration portal. Add dining reservations, ground transportation, non-golfer activities, and corporate event planning as needed.' },
+  { q: 'How many people can be in a group?', a: 'We handle groups from 4 to 400+ people. Small buddies trips, mid-size corporate outings, full conferences with breakout sessions \u2014 we scale planning to fit your size and budget.' },
+  { q: 'What golf courses are available in the Reno Tahoe area?', a: "We partner with 20+ courses: Reno (Lakeridge, ArrowCreek, Red Hawk, Wolf Run, Somersett, Washoe), Lake Tahoe (Edgewood, Incline Village), Truckee (Old Greenwood, Coyote Moon, Gray's Crossing, Tahoe Donner), and Carson Valley (Genoa Lakes, Dayton Valley, Toiyabe)." },
+  { q: 'How does the one contract / one deposit process work?', a: 'We book everything on your behalf \u2014 hotels, courses, dining, transport. You get one contract covering all arrangements and one deposit to secure them. Your group members register and pay through our online portal. No chasing payments.' },
+  { q: 'Can non-golfers join the trip?', a: 'Absolutely. We arrange spa packages, lake cruises, hiking, wine tours, and casino entertainment. Non-golfer packages can be built into the same group registration so everyone books through one portal.' },
+];
+
+const JOURNEY_STEPS = [
+  { icon: '\u{1F4DE}', title: 'You Call, We Listen', desc: "Share your dates, group size, budget & wish list. Want Edgewood at sunset? A casino dinner for 40? We've heard it all.", tag: '\u23F1 Takes 10 minutes' },
+  { icon: '\u{1F5FA}\uFE0F', title: 'We Design Your Trip', desc: 'Courses matched to your skill mix, hotels that fit the vibe, dinner spots, shuttles \u2014 one package, one contract, one deposit.', tag: '\u{1F4CB} Custom quote in 24 hrs' },
+  { icon: '\u{1F4F1}', title: 'Your Group Registers', desc: "Everyone gets a link to our TripsCaddie portal \u2014 they pick their options, pay their share, done. Zero chasing.", tag: '\u{1F4B8} No more Venmo chaos' },
+  { icon: '\u{26F3}', title: 'Show Up & Play', desc: "Tee times confirmed, rooms ready, dinners booked. Your only job? Enjoy the round and take all the credit.", tag: '\u{1F3CC}\uFE0F You\'re the hero' },
+];
+
+/* ─── Hooks ─── */
+function useCountUp(target: number, suffix: string, isVisible: boolean) {
+  const [value, setValue] = useState('0' + suffix);
+  const counted = useRef(false);
   useEffect(() => {
-    // ─── Hero Slider with progress bar ───
-    const slides = document.querySelectorAll('.hero-slide');
-    const navBtns = document.querySelectorAll('.hero-nav button');
-    const tabs = document.querySelectorAll('.hero-tab');
-    const progressBar = document.getElementById('heroProgress');
-    let cur = 0;
-    let tm: ReturnType<typeof setInterval>;
-    const SLIDE_DURATION = 6000;
-
-    function goTo(n: number) {
-      slides[cur]?.classList.remove('active');
-      navBtns[cur]?.classList.remove('active');
-      tabs[cur]?.classList.remove('active');
-      cur = n;
-      slides[cur]?.classList.add('active');
-      navBtns[cur]?.classList.add('active');
-      tabs[cur]?.classList.add('active');
-      resetProgress();
+    if (!isVisible || counted.current || target === 0) return;
+    counted.current = true;
+    const duration = 1800;
+    const start = performance.now();
+    function tick(now: number) {
+      const pct = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - pct, 3);
+      setValue(Math.round(eased * target).toLocaleString() + suffix);
+      if (pct < 1) requestAnimationFrame(tick);
     }
-    function next() { goTo((cur + 1) % slides.length); }
-    function resetProgress() {
-      if (!progressBar) return;
-      progressBar.style.transition = 'none';
-      progressBar.style.width = '0%';
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          progressBar.style.transition = `width ${SLIDE_DURATION}ms linear`;
-          progressBar.style.width = '100%';
-        });
-      });
-    }
-    function startSlider() {
-      tm = setInterval(next, SLIDE_DURATION);
-      resetProgress();
-    }
-    function restartSlider() { clearInterval(tm); startSlider(); }
+    requestAnimationFrame(tick);
+  }, [isVisible, target, suffix]);
+  return value;
+}
 
-    navBtns.forEach(b => b.addEventListener('click', () => { restartSlider(); goTo(+(b as HTMLElement).dataset.i!); }));
-    tabs.forEach(b => b.addEventListener('click', () => { restartSlider(); goTo(+(b as HTMLElement).dataset.i!); }));
-    startSlider();
+function useInView(threshold = 0.1) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setVisible(true); obs.disconnect(); } }, { threshold });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [threshold]);
+  return { ref, visible };
+}
 
-    // ─── Scroll animations ───
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('show');
-          e.target.querySelectorAll('.trust-num[data-target]').forEach(countUpEl);
-        }
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.anim,.anim-left,.anim-right,.anim-scale,.trust').forEach(el => obs.observe(el));
+/* eslint-disable @typescript-eslint/no-explicit-any */
+function Anim({ children, className = '', delay = 0, direction = '', style }: { children: React.ReactNode; className?: string; delay?: number; direction?: string; style?: any }) {
+  const { ref, visible } = useInView();
+  const cls = direction === 'left' ? 'anim-left' : direction === 'right' ? 'anim-right' : direction === 'scale' ? 'anim-scale' : 'anim';
+  return <div ref={ref} className={`${cls} ${visible ? 'show' : ''} ${className}`} style={{ ...(delay ? { transitionDelay: `${delay}s` } : {}), ...style }}>{children}</div>;
+}
 
-    // ─── Journey timeline animation ───
-    const journeyEl = document.getElementById('journey');
-    let jObs: IntersectionObserver | null = null;
-    if (journeyEl) {
-      jObs = new IntersectionObserver(entries => {
-        entries.forEach(e => {
-          if (e.isIntersecting) {
-            journeyEl.classList.add('active');
-            document.querySelectorAll('.j-step').forEach((step, i) => {
-              setTimeout(() => step.classList.add('visible'), i * 200);
-            });
-            jObs?.unobserve(e.target);
-          }
-        });
-      }, { threshold: 0.2 });
-      jObs.observe(journeyEl);
-    }
+function TrustNum({ target, suffix, isVisible }: { target: number; suffix: string; isVisible: boolean }) {
+  const val = useCountUp(target, suffix, isVisible);
+  return <span className="trust-num">{val}</span>;
+}
 
-    // ─── Count-up animation ───
-    function countUpEl(el: Element) {
-      const htmlEl = el as HTMLElement;
-      if (htmlEl.dataset.counted) return;
-      htmlEl.dataset.counted = '1';
-      const target = parseInt(htmlEl.dataset.target || '0');
-      const suffix = htmlEl.dataset.suffix || '';
-      const duration = 1800;
-      const start = performance.now();
-      function tick(now: number) {
-        const elapsed = now - start;
-        const pct = Math.min(elapsed / duration, 1);
-        const eased = 1 - Math.pow(1 - pct, 3);
-        const val = Math.round(eased * target);
-        htmlEl.textContent = val.toLocaleString() + suffix;
-        if (pct < 1) requestAnimationFrame(tick);
-      }
-      requestAnimationFrame(tick);
-    }
+export default function HomepageContent() {
+  const [slide, setSlide] = useState(0);
+  const [progress, setProgress] = useState(0);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const timerRef = useRef<ReturnType<typeof setInterval>>();
+  const progressRef = useRef<ReturnType<typeof setInterval>>();
+  const trustInView = useInView(0.1);
 
-    // ─── FAQ accordion ───
-    document.querySelectorAll('.faq-q').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.parentElement;
-        const wasOpen = item?.classList.contains('open');
-        document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-        if (!wasOpen) item?.classList.add('open');
-      });
-    });
+  const goTo = useCallback((n: number) => { setSlide(n); setProgress(0); }, []);
 
-    // ─── Mobile Card Sliders (dot sync) ───
-    const sliderPairs = [
-      { track: '.exp-grid', dots: '[data-for="exp-grid"]' },
-      { track: '.region-cards', dots: '[data-for="region-cards"]' },
-      { track: '.journey-steps', dots: '[data-for="journey-steps"]' },
-      { track: '.tg', dots: '[data-for="tg"]' },
-      { track: '.trust', dots: '[data-for="trust"]' },
-    ];
-    sliderPairs.forEach(({ track, dots }) => {
-      const el = document.querySelector(track);
-      const dotsEl = document.querySelector(dots);
-      if (!el || !dotsEl) return;
-      const allDots = dotsEl.querySelectorAll('span');
-      const children = Array.from(el.children);
-      function updateDots() {
-        const scrollLeft = el!.scrollLeft;
-        const childW = (children[0] as HTMLElement)?.offsetWidth || 1;
-        const gap = parseFloat(getComputedStyle(el!).gap) || 16;
-        const idx = Math.round(scrollLeft / (childW + gap));
-        const clamped = Math.min(idx, allDots.length - 1);
-        allDots.forEach((d, i) => d.classList.toggle('active', i === clamped));
-      }
-      el.addEventListener('scroll', updateDots, { passive: true });
-      allDots.forEach((d, i) => {
-        d.addEventListener('click', () => {
-          const childW = (children[0] as HTMLElement)?.offsetWidth || 1;
-          const gap = parseFloat(getComputedStyle(el!).gap) || 16;
-          el!.scrollTo({ left: i * (childW + gap), behavior: 'smooth' });
-        });
-        (d as HTMLElement).style.cursor = 'pointer';
-      });
-    });
+  useEffect(() => {
+    const DURATION = 6000;
+    const startTime = Date.now();
+    clearInterval(progressRef.current);
+    progressRef.current = setInterval(() => { setProgress(Math.min((Date.now() - startTime) / DURATION, 1)); }, 50);
+    clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => { setSlide(prev => (prev + 1) % SLIDES.length); setProgress(0); }, DURATION);
+    return () => { clearInterval(timerRef.current); clearInterval(progressRef.current); };
+  }, [slide]);
 
-    // ─── Parallax on scroll for hero ───
+  const handleNav = (n: number) => { clearInterval(timerRef.current); clearInterval(progressRef.current); goTo(n); };
+
+  useEffect(() => {
     let ticking = false;
     function onScroll() {
       if (!ticking) {
@@ -154,498 +140,123 @@ export default function HomepageContent() {
       }
     }
     window.addEventListener('scroll', onScroll);
-
-    // Cleanup
-    return () => {
-      clearInterval(tm);
-      obs.disconnect();
-      jObs?.disconnect();
-      window.removeEventListener('scroll', onScroll);
-    };
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (
-    <div className="homepage" dangerouslySetInnerHTML={{ __html: HOMEPAGE_HTML }} />
+    <div className="homepage">
+      <section className="hero">
+        {SLIDES.map((s, i) => (
+          <div key={i} className={`hero-slide${i === slide ? ' active' : ''}`} data-i={i}>
+            <img src={s.img} alt={s.alt} />
+            <div className="hero-ov" />
+            <div className="hero-inner">
+              <div className="hero-badge"><div className="badge-dot" /> {s.badge}</div>
+              <h1>{s.h1}</h1>
+              <p>{s.p}</p>
+              <div className="hero-btns"><Link href={s.cta1.href} className="btn-w">{s.cta1.text}</Link><Link href={s.cta2.href} className="btn-ow">{s.cta2.text}</Link></div>
+            </div>
+          </div>
+        ))}
+        <div className="hero-progress"><div className="hero-progress-bar" style={{ width: `${progress * 100}%`, transition: 'width 50ms linear' }} /></div>
+        <div className="hero-nav">{SLIDES.map((_, i) => <button key={i} className={i === slide ? 'active' : ''} onClick={() => handleNav(i)}>&nbsp;</button>)}</div>
+        <div className="hero-tabs">{TAB_LABELS.map((label, i) => <button key={i} className={`hero-tab${i === slide ? ' active' : ''}`} onClick={() => handleNav(i)}>{label}</button>)}</div>
+      </section>
+
+      <div className="trust" ref={trustInView.ref}>
+        {TRUST.map((t, i) => (
+          <div key={i} className="trust-chip">
+            <div className="trust-icon">{t.icon}</div>
+            <div className="trust-txt">
+              <strong>{t.num > 0 ? <><TrustNum target={t.num} suffix={t.suffix} isVisible={trustInView.visible} /> {t.label}</> : t.label}</strong>
+              <span>{t.sub}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <section className="contract"><div className="contract-grid">
+        <Anim direction="left" className="contract-img-wrap"><div className="dot-pattern" /><div className="contract-img"><img src="/images/homepage/homepage-06.jpg" alt="Group golf outing at Reno course" /></div><div className="float-card"><strong>10,000+</strong><span>Outings Planned</span></div></Anim>
+        <Anim direction="right" className="contract-text">
+          <h2>One Contract. One Deposit.<br />Your Life Made Easy.</h2>
+          <p>Instead of dealing with multiple contracts and deposits from hotels and golf courses, Golf the High Sierra makes all reservations on your group&apos;s behalf. You sign once, pay once, and we handle the rest.</p>
+          <div className="val-list">
+            {[['One Contract for Everything','Courses, hotels, dining, transport \u2014 one signature.'],['Complimentary Registration Portal','Attendees register & pay online. You never chase money.'],['Groups of 4 to 400','Buddies trips, corporate outings, conferences, tournaments.'],['Full-Service Event Planning','Breakout sessions, meal selection, transport, activities.']].map(([t,d],i)=>(
+              <div key={i} className="val-item"><div className="val-chk">\u2714</div><div><strong>{t}</strong><span>{d}</span></div></div>
+            ))}
+          </div>
+        </Anim>
+      </div></section>
+
+      <div className="exp-strip"><Anim className="exp-strip-label">The Complete Experience</Anim><div className="exp-grid">
+        {EXP_CARDS.map((c,i)=>(<Anim key={i} delay={i*.06} className="exp-card"><img src={c.img} alt={c.alt} /><div className="exp-card-ov" /><div className="exp-card-content"><div className="exp-card-icon">{c.icon}</div><h4>{c.title}</h4><span>{c.sub}</span></div></Anim>))}
+      </div></div>
+
+      <section className="regions">
+        <Anim className="sec-head" style={{flexDirection:'column',alignItems:'flex-start',maxWidth:720}}>
+          <div style={{fontSize:12,letterSpacing:3,textTransform:'uppercase',color:'#B8963E',fontWeight:600,marginBottom:8}}>Choose Your Region</div>
+          <h2>Golf by Region — From Casino Nightlife to Mountain Solitude</h2>
+          <p style={{maxWidth:720,marginTop:8}}>The Reno-Tahoe area offers four distinct golf regions, each with its own personality. Tell us your vibe and we&apos;ll match you.</p>
+        </Anim>
+        <div className="region-cards">
+          {REGIONS.map((r,i)=>(<Anim key={i} delay={i*.08} className="rc"><div className="rc-img"><div className="rc-badge">{r.badge}</div><div className="rc-price">{r.price}</div><img src={r.img} alt={r.alt} /></div><div className="rc-body"><h3>{r.name}</h3><div className="rc-subtitle">{r.subtitle}</div><div className="rc-chips">{r.chips.map((c,j)=><span key={j} className="chip">{c}</span>)}</div><div className="rc-hotels">{r.hotels}</div><div className="rc-rating"><span className="rc-stars">{'\u2605'.repeat(5)}</span><span>{r.rating}</span></div><div className="rc-link"><Link href={r.href}>Explore {r.name} Packages</Link><div className="arrow">\u2192</div></div></div></Anim>))}
+        </div>
+      </section>
+
+      <section className="rms" id="tripscaddie"><div className="rms-grid">
+        <Anim direction="left">
+          <div className="rms-eyebrow">{'\u{1F3DF}'} Trips Caddie — Our Trip Planning Tool</div>
+          <h2>Browse Real Trips. Build Your Itinerary. Get an Instant Quote.</h2>
+          <p><a href="https://tripscaddie.golfthehighsierra.com/" target="_blank" rel="noreferrer" className="hl" style={{textDecoration:'underline'}}>Trips Caddie</a> is our free online trip planner built from 10,000+ real outings we&apos;ve organized.</p>
+          <div className="rms-features">
+            {[['\u{1F4CB}','Browse Real Trips','See actual itineraries from past groups'],['\u{1F310}','Filter by Region','Reno, Tahoe, Truckee, Graeagle, Carson Valley, Mesquite, St. George, Monterey'],['\u{1F4B0}','Request a Quote','Pick a trip, tell us dates & group size, get a custom quote in 24 hrs'],['\u{1F4C5}','Instant Itineraries','Professional day-by-day itineraries with courses, tee times & lodging']].map(([icon,title,desc],i)=>(
+              <div key={i} className="rf"><div className="rf-icon">{icon}</div><h5>{title}</h5><span>{desc}</span></div>
+            ))}
+          </div>
+          <div style={{display:'flex',gap:12,flexWrap:'wrap',marginTop:24}}><a href="https://tripscaddie.golfthehighsierra.com/" className="rms-btn" target="_blank" rel="noreferrer">{'\u{1F3DF}'} Open Trips Caddie</a></div>
+        </Anim>
+        <Anim direction="right">
+          <div style={{background:'rgba(255,255,255,.04)',border:'1px solid rgba(255,255,255,.08)',borderRadius:12,padding:24}}>
+            <div style={{fontSize:13,fontWeight:600,color:'rgba(255,255,255,.5)',marginBottom:16,letterSpacing:1,textTransform:'uppercase'}}>Browse by Region</div>
+            {[{name:'Reno',courses:'7 courses \u00B7 6 casino-resorts',href:'https://tripscaddie.golfthehighsierra.com/?region=Reno'},{name:'Lake Tahoe',courses:'3 courses \u00B7 lakefront lodging',href:'https://tripscaddie.golfthehighsierra.com/?region=Lake%20Tahoe'},{name:'Truckee & Graeagle',courses:'8 courses \u00B7 mountain villas',href:'https://tripscaddie.golfthehighsierra.com/?region=Truckee'},{name:'Carson Valley',courses:'4 courses \u00B7 best value',href:'https://tripscaddie.golfthehighsierra.com/?region=Carson%20Valley'},{name:'Monterey & Pebble Beach',courses:'5 courses \u00B7 oceanfront golf',href:'https://tripscaddie.golfthehighsierra.com/?region=Monterey'},{name:'Mesquite & St. George',courses:'6 courses \u00B7 desert championship',href:'https://tripscaddie.golfthehighsierra.com/?region=Mesquite'}].map((r,i)=>(
+              <a key={i} href={r.href} target="_blank" rel="noreferrer" style={{display:'flex',alignItems:'center',justifyContent:'space-between',padding:'14px 0',borderBottom:'1px solid rgba(255,255,255,.06)',textDecoration:'none',color:'#fff',fontSize:14}}><div><div style={{fontWeight:600}}>{r.name}</div><div style={{fontSize:12,color:'rgba(255,255,255,.4)',marginTop:2}}>{r.courses}</div></div><div style={{color:'rgba(255,255,255,.3)',fontSize:18}}>{'\u2192'}</div></a>
+            ))}
+          </div>
+        </Anim>
+      </div></section>
+
+      <section className="portal"><div className="portal-grid">
+        <Anim direction="left">
+          <div className="portal-eyebrow">Don&apos;t Chase the Money Anymore</div>
+          <h2>Proprietary Online Registration Portal</h2>
+          <p>Every group getaway booked with Golf the High Sierra has <span className="hl">complimentary use of our proprietary online registration system</span> — making your life as coordinator the easiest it has ever been.</p>
+          <div className="portal-features">
+            {[['\u{1F517}','Custom Registration Links','Send to your group. They register themselves.'],['\u{1F4B3}','Direct Payments','No chasing deposits. Everyone pays online.'],['\u{1F37D}','Meal & Session Selection','Breakfast, lunch, dinner, workshops, breakouts.'],['\u{1F4CA}','Dashboard Tracking','See who\'s registered and paid in real time.']].map(([icon,title,desc],i)=>(
+              <div key={i} className="pf"><div className="pf-icon">{icon}</div><h5>{title}</h5><span>{desc}</span></div>
+            ))}
+          </div>
+        </Anim>
+        <Anim direction="right" className="portal-img"><img src="/images/homepage/homepage-15.jpg" alt="Group golf trip" /><div className="portal-float"><p>&ldquo;The registration portal alone saved me 20 hours of work. Everyone paid directly — I didn&apos;t chase a single dollar.&rdquo;</p><cite>— Steve R., TripAdvisor</cite></div></Anim>
+      </div></section>
+
+      <section className="journey-section" id="simpleprocess">
+        <Anim className="sec-head" style={{justifyContent:'center',textAlign:'center',flexDirection:'column',alignItems:'center'}}><h2>Your Trip, Our Playbook</h2><p>From first call to first tee — here&apos;s how we make it happen.</p></Anim>
+        <div className="journey" id="journey"><div className="journey-track"><div className="journey-progress" /><div className="journey-ball" /></div>
+          <div className="journey-steps">
+            {JOURNEY_STEPS.map((s,i)=>(<Anim key={i} delay={i*.2} className="j-step"><div className="j-icon-wrap"><div className="j-pulse" /><div className="j-icon">{s.icon}</div><div className="j-num">{i+1}</div></div><div className="j-card"><h4>{s.title}</h4><p>{s.desc}</p><div className="j-tag">{s.tag}</div></div></Anim>))}
+          </div>
+        </div>
+      </section>
+
+      <section className="testi"><Anim className="sec-head"><h2>What Our Clients Say</h2><p>Rated 4.8/5 across 672 verified reviews on Google, Yelp & TripAdvisor.</p></Anim><div className="tg">
+        {TESTIMONIALS.map((t,i)=>(<Anim key={i} delay={i*.08} className="tc"><div className="tc-stars">{'\u2605'.repeat(t.stars)}</div><p className="tc-q">&ldquo;{t.quote}&rdquo;</p><div className="tc-bottom"><div className="tc-avatar">{t.avatar}</div><div className="tc-info"><span className="tc-a">{t.author}</span><span className="tc-m">{t.meta}</span></div></div></Anim>))}
+      </div></section>
+
+      <section className="faq"><Anim className="sec-head"><h2>Frequently Asked Questions</h2><p>Everything you need to know about group golf in Reno & Lake Tahoe.</p></Anim><div className="faq-list">
+        {FAQS.map((f,i)=>(<Anim key={i} className={`faq-item${openFaq===i?' open':''}`}><button className="faq-q" onClick={()=>setOpenFaq(openFaq===i?null:i)}>{f.q}<span className="faq-toggle">{openFaq===i?'\u2212':'+'}</span></button><div className="faq-a"><p>{f.a}</p></div></Anim>))}
+      </div></section>
+
+      <section className="cta"><Anim><h2>Ready to Plan Your Group Golf Trip?</h2></Anim><Anim><p>Tell us your dates, group size, and budget. We&apos;ll build a custom package — no obligation, no hidden fees.</p></Anim><Anim className="cta-btns"><Link href="/contact-custom-golf-package/" className="btn-g">Request a Free Quote</Link><a href="tel:+18885848232" className="btn-ol">Call 888-584-8232</a></Anim></section>
+    </div>
   );
 }
-
-const HOMEPAGE_HTML = `
-<!-- â•â•â•â•â•â•â•â•â•â•â• HERO SLIDER â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="hero">
-  <div class="hero-slide active" data-i="0">
-    <img src="/images/homepage/homepage-01.jpg" alt="Reno Nevada skyline and Sierra Nevada mountains">
-    <div class="hero-ov"></div>
-    <div class="hero-inner">
-      <div class="hero-badge"><div class="badge-dot"></div> Reno, Nevada</div>
-      <h1>Championship Golf Meets Casino Nightlife</h1>
-      <p>7 courses, 8 casino-resorts, and one company that handles everything. Group golf packages built by locals since 2004.</p>
-      <div class="hero-btns"><a href="#" class="btn-w">Plan Your Reno Trip</a><a href="#" class="btn-ow">View Reno Courses</a></div>
-    </div>
-  </div>
-  <div class="hero-slide" data-i="1">
-    <img src="/images/homepage/homepage-02.jpg" alt="Edgewood Tahoe 18th hole Lake Tahoe">
-    <div class="hero-ov"></div>
-    <div class="hero-inner">
-      <div class="hero-badge"><div class="badge-dot"></div> Lake Tahoe</div>
-      <h1>Alpine Golf at 6,200 Feet Elevation</h1>
-      <p>Edgewood, Incline Village, and Old Greenwood — lakefront and mountain courses your group will talk about for years.</p>
-      <div class="hero-btns"><a href="#" class="btn-w">Explore Tahoe Packages</a><a href="#" class="btn-ow">View Tahoe Courses</a></div>
-    </div>
-  </div>
-  <div class="hero-slide" data-i="2">
-    <img src="/images/homepage/homepage-03.jpg" alt="Old Greenwood Golf Course Truckee California">
-    <div class="hero-ov"></div>
-    <div class="hero-inner">
-      <div class="hero-badge"><div class="badge-dot"></div> Truckee / North Tahoe</div>
-      <h1>Mountain Courses Through Towering Pines</h1>
-      <p>Old Greenwood, Coyote Moon, Gray's Crossing, Tahoe Donner — stay in Truckee villas, play championship courses.</p>
-      <div class="hero-btns"><a href="#" class="btn-w">Truckee Packages</a><a href="#" class="btn-ow">View Courses</a></div>
-    </div>
-  </div>
-  <div class="hero-slide" data-i="3">
-    <img src="/images/homepage/homepage-04.jpg" alt="Genoa Lakes Golf Club Carson Valley Nevada">
-    <div class="hero-ov"></div>
-    <div class="hero-inner">
-      <div class="hero-badge"><div class="badge-dot"></div> Carson Valley</div>
-      <h1>Sierra Panoramas at Half the Price</h1>
-      <p>Genoa Lakes, Dayton Valley, Toiyabe — uncrowded courses with mountain backdrops and the best value in the region.</p>
-      <div class="hero-btns"><a href="#" class="btn-w">Carson Valley Trips</a><a href="#" class="btn-ow">View Courses</a></div>
-    </div>
-  </div>
-  <div class="hero-slide" data-i="4">
-    <img src="/images/homepage/homepage-05.jpg" alt="Red Hawk Golf Resort group golf outing">
-    <div class="hero-ov"></div>
-    <div class="hero-inner">
-      <div class="hero-badge"><div class="badge-dot"></div> 10,000+ Trips Planned</div>
-      <h1>One Call. One Contract. Zero Hassle.</h1>
-      <p>20+ years arranging group golf across Reno, Tahoe, and Carson Valley. Courses, hotels, dining, transport — we book it all.</p>
-      <div class="hero-btns"><a href="#" class="btn-w">Request a Free Quote</a><a href="tel:+18885848232" class="btn-ow">Call 888-584-8232</a></div>
-    </div>
-  </div>
-  <div class="hero-progress"><div class="hero-progress-bar" id="heroProgress"></div></div>
-  <div class="hero-nav">
-    <button class="active" data-i="0">&nbsp;</button>
-    <button data-i="1">&nbsp;</button>
-    <button data-i="2">&nbsp;</button>
-    <button data-i="3">&nbsp;</button>
-    <button data-i="4">&nbsp;</button>
-  </div>
-  <div class="hero-tabs">
-    <button class="hero-tab active" data-i="0">📍 Reno</button>
-    <button class="hero-tab" data-i="1">📍 Lake Tahoe</button>
-    <button class="hero-tab" data-i="2">📍 Truckee</button>
-    <button class="hero-tab" data-i="3">📍 Carson Valley</button>
-    <button class="hero-tab" data-i="4">📍 Overview</button>
-  </div>
-</section>
-
-<!-- â•â•â•â•â•â•â•â•â•â•â• TRUST STRIP â•â•â•â•â•â•â•â•â•â•â• -->
-<div class="trust">
-  <div class="trust-chip"><div class="trust-icon">🏆</div><div class="trust-txt"><strong><span class="trust-num" data-target="20" data-suffix="+">0</span> Years</strong><span>Serving Groups Since 2004</span></div></div>
-  <div class="trust-chip"><div class="trust-icon">⛳</div><div class="trust-txt"><strong><span class="trust-num" data-target="10000" data-suffix="+">0</span> Outings</strong><span>Planned &amp; Executed</span></div></div>
-  <div class="trust-chip"><div class="trust-icon">🏨</div><div class="trust-txt"><strong><span class="trust-num" data-target="20" data-suffix="+">0</span> Courses</strong><span>Hotels, Casinos &amp; Resorts</span></div></div>
-  <div class="trust-chip"><div class="trust-icon">⭐</div><div class="trust-txt"><strong>4.8/5 Rating</strong><span>672 Verified Reviews</span></div></div>
-</div>
-<div class="slider-dots" data-for="trust"><span class="active"></span><span></span><span></span><span></span></div>
-
-<!-- â•â•â•â•â•â•â•â•â•â•â• ONE CONTRACT â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="contract">
-  <div class="contract-grid">
-    <div class="contract-img-wrap anim-left">
-      <div class="dot-pattern"></div>
-      <div class="contract-img">
-        <img src="/images/homepage/homepage-06.jpg" alt="Group golf outing at Reno course">
-      </div>
-      <div class="float-card">
-        <strong>10,000+</strong>
-        <span>Outings Planned</span>
-      </div>
-    </div>
-    <div class="contract-text anim-right">
-      <h2>One Contract. One Deposit.<br>Your Life Made Easy.</h2>
-      <p>Instead of dealing with multiple contracts and deposits from hotels and golf courses, Golf the High Sierra makes all reservations on your group's behalf. You sign once, pay once, and we handle the rest.</p>
-      <div class="val-list">
-        <div class="val-item"><div class="val-chk">✔</div><div><strong>One Contract for Everything</strong><span>Courses, hotels, dining, transport — one signature.</span></div></div>
-        <div class="val-item"><div class="val-chk">✔</div><div><strong>Complimentary Registration Portal</strong><span>Attendees register &amp; pay online. You never chase money.</span></div></div>
-        <div class="val-item"><div class="val-chk">✔</div><div><strong>Groups of 4 to 400</strong><span>Buddies trips, corporate outings, conferences, tournaments.</span></div></div>
-        <div class="val-item"><div class="val-chk">✔</div><div><strong>Full-Service Event Planning</strong><span>Breakout sessions, meal selection, transport, activities.</span></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- â•â•â•â•â•â•â•â•â•â•â• EXPERIENCE STRIP â•â•â•â•â•â•â•â•â•â•â• -->
-<div class="exp-strip">
-  <div class="exp-strip-label anim">The Complete Experience</div>
-  <div class="exp-grid">
-    <div class="exp-card anim">
-      <img src="/images/homepage/homepage-07.webp" alt="Championship golf course">
-      <div class="exp-card-ov"></div>
-      <div class="exp-card-content">
-        <div class="exp-card-icon">⛳</div>
-        <h4>20+ Courses</h4>
-        <span>Championship golf across 4 regions</span>
-      </div>
-    </div>
-    <div class="exp-card anim" style="transition-delay:.06s">
-      <img src="/images/homepage/homepage-08.webp" alt="Fine dining Reno casino">
-      <div class="exp-card-ov"></div>
-      <div class="exp-card-content">
-        <div class="exp-card-icon">🍽</div>
-        <h4>Dining</h4>
-        <span>Casino restaurants &amp; private events</span>
-      </div>
-    </div>
-    <div class="exp-card anim" style="transition-delay:.12s">
-      <img src="/images/homepage/homepage-09.webp" alt="Resort pool Peppermill Reno">
-      <div class="exp-card-ov"></div>
-      <div class="exp-card-content">
-        <div class="exp-card-icon">🏨</div>
-        <h4>Resorts &amp; Casinos</h4>
-        <span>Atlantis, Peppermill, Grand Sierra &amp; more</span>
-      </div>
-    </div>
-    <div class="exp-card anim" style="transition-delay:.18s">
-      <img src="/images/homepage/homepage-10.webp" alt="Old Greenwood villa lodging Truckee">
-      <div class="exp-card-ov"></div>
-      <div class="exp-card-content">
-        <div class="exp-card-icon">🏡</div>
-        <h4>Villa Lodging</h4>
-        <span>Mountain villas &amp; private cabins</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- â•â•â•â•â•â•â•â•â•â•â• REGIONS (ENRICHED CARDS) â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="regions">
-  <div class="sec-head anim" style="flex-direction:column;align-items:flex-start;max-width:720px">
-    <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#B8963E;font-weight:600;margin-bottom:8px">Choose Your Region</div>
-    <h2>Golf by Region — From Casino Nightlife to Mountain Solitude</h2>
-    <p style="max-width:720px;margin-top:8px">The Reno-Tahoe area offers four distinct golf regions, each with its own personality. Reno delivers casino resorts and value. Lake Tahoe brings alpine lakefront courses. Truckee &amp; Graeagle are mountain escapes through towering pines. Carson Valley is wide-open desert golf at half the price. Tell us your vibe and we'll match you.</p>
-  </div>
-  <div class="slider-dots" data-for="exp-grid"><span class="active"></span><span></span><span></span><span></span></div>
-  <div class="region-cards">
-
-    <!-- RENO -->
-    <div class="rc anim">
-      <div class="rc-img">
-        <div class="rc-badge">7 Courses</div>
-        <div class="rc-price">From $189</div>
-        <img src="/images/homepage/homepage-11.jpg" alt="Lakeridge Golf Course Reno NV">
-      </div>
-      <div class="rc-body">
-        <h3>Reno</h3>
-        <div class="rc-subtitle">Casino Golf Capital</div>
-        <div class="rc-chips">
-          <span class="chip">Lakeridge</span>
-          <span class="chip">ArrowCreek</span>
-          <span class="chip">Red Hawk</span>
-          <span class="chip">Wolf Run</span>
-          <span class="chip">Somersett</span>
-        </div>
-        <div class="rc-hotels">&#127976; Atlantis · Peppermill · Grand Sierra Resort · Eldorado</div>
-        <div class="rc-rating"><span class="rc-stars">★★★★★</span><span>4.8 (290 reviews)</span></div>
-        <div class="rc-link">
-          <a href="#">Explore Reno Packages</a>
-          <div class="arrow">→</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- LAKE TAHOE -->
-    <div class="rc anim" style="transition-delay:.08s">
-      <div class="rc-img">
-        <div class="rc-badge">3 Courses</div>
-        <div class="rc-price">From $299</div>
-        <img src="/images/homepage/homepage-12.jpg" alt="Incline Village Championship Course Lake Tahoe">
-      </div>
-      <div class="rc-body">
-        <h3>Lake Tahoe</h3>
-        <div class="rc-subtitle">Lakefront &amp; Alpine</div>
-        <div class="rc-chips">
-          <span class="chip">Edgewood Tahoe</span>
-          <span class="chip">Incline Village</span>
-        </div>
-        <div class="rc-hotels">&#127976; Hyatt Regency · Lodge at Edgewood · Lakeside resorts</div>
-        <div class="rc-rating"><span class="rc-stars">★★★★★</span><span>4.9 (185 reviews)</span></div>
-        <div class="rc-link">
-          <a href="#">Explore Tahoe Packages</a>
-          <div class="arrow">→</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- TRUCKEE -->
-    <div class="rc anim" style="transition-delay:.16s">
-      <div class="rc-img">
-        <div class="rc-badge">4 Courses</div>
-        <div class="rc-price">From $249</div>
-        <img src="/images/homepage/homepage-13.jpg" alt="Gray's Crossing Golf Course Truckee CA">
-      </div>
-      <div class="rc-body">
-        <h3>Truckee</h3>
-        <div class="rc-subtitle">Mountain Championship</div>
-        <div class="rc-chips">
-          <span class="chip">Old Greenwood</span>
-          <span class="chip">Coyote Moon</span>
-          <span class="chip">Gray's Crossing</span>
-          <span class="chip">Tahoe Donner</span>
-          <span class="chip">Plumas Pines</span>
-        </div>
-        <div class="rc-hotels">&#127976; Truckee villas &middot; Cedar House &middot; Graeagle Lodge · Cedar House · Hampton Inn</div>
-        <div class="rc-rating"><span class="rc-stars">★★★★★</span><span>4.8 (120 reviews)</span></div>
-        <div class="rc-link">
-          <a href="#">Explore Truckee Packages</a>
-          <div class="arrow">→</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARSON VALLEY -->
-    <div class="rc anim" style="transition-delay:.24s">
-      <div class="rc-img">
-        <div class="rc-badge">4 Courses</div>
-        <div class="rc-price">From $149</div>
-        <img src="/images/homepage/homepage-14.jpg" alt="Dayton Valley Golf Club Carson Valley NV">
-      </div>
-      <div class="rc-body">
-        <h3>Carson Valley</h3>
-        <div class="rc-subtitle">Best Value in the Sierra</div>
-        <div class="rc-chips">
-          <span class="chip">Genoa Lakes</span>
-          <span class="chip">Dayton Valley</span>
-          <span class="chip">Toiyabe</span>
-          <span class="chip">Eagle Valley</span>
-        </div>
-        <div class="rc-hotels">&#127976; Carson Valley Inn · Holiday Inn · Budget-friendly options</div>
-        <div class="rc-rating"><span class="rc-stars">★★★★½</span><span>4.7 (77 reviews)</span></div>
-        <div class="rc-link">
-          <a href="#">Explore Carson Packages</a>
-          <div class="arrow">→</div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <div class="slider-dots" data-for="region-cards"><span class="active"></span><span></span><span></span><span></span></div>
-</section>
-
-
-<!-- â•â•â•â•â•â•â•â•â•â•â• TRIPS CADDIE / RMS PROMO â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="rms" id="tripscaddie">
-  <!-- Top: Intro + Feature Grid -->
-  <div class="rms-grid">
-    <div class="anim-left">
-      <div class="rms-eyebrow">&#127951; Trips Caddie &mdash; Our Trip Planning Tool</div>
-      <h2>Browse Real Trips. Build Your Itinerary. Get an Instant Quote.</h2>
-      <p><a href="https://tripscaddie.golfthehighsierra.com/" target="_blank" class="hl" style="text-decoration:underline">Trips Caddie</a> is our free online trip planner built from 10,000+ real outings we've organized. Browse past trips for inspiration, filter by region, then request a custom quote. We respond within 24 hours.</p>
-      <p>It covers <span class="hl">Reno</span>, <span class="hl">Lake Tahoe</span>, <span class="hl">Truckee</span>, <span class="hl">Graeagle / Lost Sierra</span>, <span class="hl">Carson Valley</span>, <span class="hl">Mesquite</span>, <span class="hl">St. George</span>, and <span class="hl">Monterey</span> &mdash; with real courses, real hotels, and real pricing.</p>
-      <div class="rms-features">
-        <div class="rf"><div class="rf-icon">&#128203;</div><h5>Browse Real Trips</h5><span>See actual itineraries from past groups &mdash; courses, hotels, group size, pricing</span></div>
-        <div class="rf"><div class="rf-icon">&#127760;</div><h5>Filter by Region</h5><span>Reno, Lake Tahoe, Truckee, Graeagle, Carson Valley, Mesquite, St. George, Monterey</span></div>
-        <div class="rf"><div class="rf-icon">&#128176;</div><h5>Request a Quote</h5><span>Pick a trip you like, tell us your dates &amp; group size, get a custom quote in 24 hrs</span></div>
-        <div class="rf"><div class="rf-icon">&#128197;</div><h5>Instant Itineraries</h5><span>Professional day-by-day itineraries with courses, tee times, lodging &amp; transport</span></div>
-      </div>
-      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
-        <a href="https://tripscaddie.golfthehighsierra.com/" class="rms-btn" target="_blank">&#127951; Open Trips Caddie</a>
-        <a href="https://tripscaddie.golfthehighsierra.com/?region=Reno" target="_blank" style="color:rgba(255,255,255,.6);font-size:13px;text-decoration:none;padding:14px 16px;border:1px solid rgba(255,255,255,.5);border-radius:8px;transition:all .2s;display:inline-flex;align-items:center;gap:4px" onmouseover="this.style.borderColor='rgba(255,255,255,.65)';this.style.color='#fff'" onmouseout="this.style.borderColor='rgba(255,255,255,.5)';this.style.color='rgba(255,255,255,.6)'">Browse Reno Trips &#8594;</a>
-      </div>
-    </div>
-    <!-- Right side: Region quick links with REAL course counts from app data -->
-    <div class="anim-right">
-      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:24px">
-        <div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase;margin-bottom:16px">Browse Trips by Destination</div>
-        <div style="display:flex;flex-direction:column;gap:8px">
-          <a href="https://tripscaddie.golfthehighsierra.com/?region=Reno" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127922; Reno</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Casino resort lodging</div></div>
-            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
-          </a>
-          <a href="https://tripscaddie.golfthehighsierra.com/?region=Lake%20Tahoe" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127956; Lake Tahoe</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Lakefront &amp; alpine lodging</div></div>
-            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
-          </a>
-          <a href="https://tripscaddie.golfthehighsierra.com/?region=Truckee" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127794; Truckee</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Mountain lodging</div></div>
-            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
-          </a>
-          <a href="https://tripscaddie.golfthehighsierra.com/?region=Graeagle%2FLost%20Sierra" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#9968; Graeagle / Lost Sierra</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Secluded mountain golf</div></div>
-            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
-          </a>
-          <a href="https://tripscaddie.golfthehighsierra.com/?region=Carson%20Valley" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127956; Carson Valley</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Wide-open desert golf</div></div>
-            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
-          </a>
-          <a href="https://tripscaddie.golfthehighsierra.com/?region=Mesquite" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127797; Mesquite, NV</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Desert golf &middot; Year-round play</div></div>
-            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
-          </a>
-          <a href="https://tripscaddie.golfthehighsierra.com/?region=St.%20George" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#9728;&#65039; St. George, UT</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Red rock golf &middot; Near Zion</div></div>
-            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
-          </a>
-          <a href="https://tripscaddie.golfthehighsierra.com/?region=Monterey" target="_blank" style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(255,255,255,.1)';this.style.transform='translateX(4px)'" onmouseout="this.style.background='rgba(255,255,255,.06)';this.style.transform='none'">
-            <div><div style="font-size:15px;font-weight:600;color:#fff">&#127754; Monterey, CA</div><div style="font-size:12px;color:rgba(255,255,255,.7);margin-top:2px">Coastal golf</div></div>
-            <span style="color:rgba(255,255,255,.6);font-size:18px">&#8594;</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bottom: What You'll Find — describes real app features, no fabricated trips -->
-  <div style="margin-top:48px;position:relative;z-index:1">
-    <div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.7);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px;text-align:center">What You&rsquo;ll Find Inside Trips Caddie</div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
-      <!-- Feature 1: Real Trip Database -->
-      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:24px">
-        <div style="font-size:28px;margin-bottom:12px">&#128203;</div>
-        <div style="font-family:var(--font-jakarta),system-ui,sans-serif;font-weight:700;font-size:18px;color:#fff;margin-bottom:8px">Real Trips from Real Groups</div>
-        <div style="font-size:13px;color:rgba(255,255,255,.5);line-height:1.6">Browse actual past trips with real courses, lodging, group sizes, and pricing &mdash; built from 10,000+ outings we&rsquo;ve organized over 20 years.</div>
-      </div>
-      <!-- Feature 2: Smart Filters -->
-      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:24px">
-        <div style="font-size:28px;margin-bottom:12px">&#128269;</div>
-        <div style="font-family:var(--font-jakarta),system-ui,sans-serif;font-weight:700;font-size:18px;color:#fff;margin-bottom:8px">Filter by Region, Vibe &amp; Budget</div>
-        <div style="font-size:13px;color:rgba(255,255,255,.5);line-height:1.6">Narrow trips by destination, trip style (budget, premium, corporate, bachelor party, weekend getaway), group size, lodging type, and more.</div>
-      </div>
-      <!-- Feature 3: Instant Quote -->
-      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:24px">
-        <div style="font-size:28px;margin-bottom:12px">&#128176;</div>
-        <div style="font-family:var(--font-jakarta),system-ui,sans-serif;font-weight:700;font-size:18px;color:#fff;margin-bottom:8px">Request a Custom Quote</div>
-        <div style="font-size:13px;color:rgba(255,255,255,.5);line-height:1.6">Find a trip you like, tell us your dates and group size, and get a professional day-by-day itinerary with courses, lodging, and transport.</div>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:24px">
-      <a href="https://tripscaddie.golfthehighsierra.com/" target="_blank" style="color:rgba(255,255,255,.5);font-size:14px;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:color .2s" onmouseover="this.style.color='#D4AD4A'" onmouseout="this.style.color='rgba(255,255,255,.5)'">Open Trips Caddie &#8594;</a>
-    </div>
-  </div>
-</section>
-
-<!-- â•â•â•â•â•â•â•â•â•â•â• REGISTRATION PORTAL â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="portal">
-  <div class="portal-grid">
-    <div class="anim-left">
-      <div class="portal-eyebrow">Don't Chase the Money Anymore</div>
-      <h2>Proprietary Online Registration Portal</h2>
-      <p>Every group getaway booked with Golf the High Sierra has <span class="hl">complimentary use of our proprietary online registration system</span> — making your life as coordinator the easiest it has ever been.</p>
-      <p>Your attendees build a package within a package, customized to their availability. They sign up themselves and pay us directly — or pay you via your own Stripe Account.</p>
-      <div class="portal-features">
-        <div class="pf"><div class="pf-icon">🔗</div><h5>Custom Registration Links</h5><span>Send to your group. They register themselves.</span></div>
-        <div class="pf"><div class="pf-icon">💳</div><h5>Direct Payments</h5><span>No chasing deposits. Everyone pays online.</span></div>
-        <div class="pf"><div class="pf-icon">🍽</div><h5>Meal &amp; Session Selection</h5><span>Breakfast, lunch, dinner, workshops, breakouts.</span></div>
-        <div class="pf"><div class="pf-icon">📊</div><h5>Dashboard Tracking</h5><span>See who's registered and paid in real time.</span></div>
-      </div>
-    </div>
-    <div class="portal-img anim-right">
-      <img src="/images/homepage/homepage-15.jpg" alt="Group golf trip with Golf the High Sierra">
-      <div class="portal-float">
-        <p>"The registration portal alone saved me 20 hours of work. Everyone paid directly — I didn't chase a single dollar."</p>
-        <cite>— Steve R., TripAdvisor</cite>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- â•â•â•â•â•â•â•â•â•â•â• HOW IT WORKS â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="journey-section" id="simpleprocess">
-  <div class="sec-head anim" style="justify-content:center;text-align:center;flex-direction:column;align-items:center">
-    <h2>Your Trip, Our Playbook</h2>
-    <p>From first call to first tee — here’s how we make it happen.</p>
-  </div>
-
-  <div class="journey" id="journey">
-    <div class="journey-track"><div class="journey-progress" id="journeyProgress"></div><div class="journey-ball" id="journeyBall"></div></div>
-
-    <div class="journey-steps">
-      <div class="j-step" data-step="1">
-        <div class="j-icon-wrap"><div class="j-pulse"></div><div class="j-icon">📞</div><div class="j-num">1</div></div>
-        <div class="j-card">
-          <h4>You Call, We Listen</h4>
-          <p>Share your dates, group size, budget & wish list. Want Edgewood at sunset? A casino dinner for 40? We’ve heard it all.</p>
-          <div class="j-tag">⏱ Takes 10 minutes</div>
-        </div>
-      </div>
-      <div class="j-step" data-step="2">
-        <div class="j-icon-wrap"><div class="j-pulse"></div><div class="j-icon">🗺️</div><div class="j-num">2</div></div>
-        <div class="j-card">
-          <h4>We Design Your Trip</h4>
-          <p>Courses matched to your skill mix, hotels that fit the vibe, dinner spots, shuttles — one package, one contract, one deposit.</p>
-          <div class="j-tag">📋 Custom quote in 24 hrs</div>
-        </div>
-      </div>
-      <div class="j-step" data-step="3">
-        <div class="j-icon-wrap"><div class="j-pulse"></div><div class="j-icon">📱</div><div class="j-num">3</div></div>
-        <div class="j-card">
-          <h4>Your Group Registers</h4>
-          <p>Everyone gets a link to our TripsCaddie portal — they pick their options, pay their share, done. Zero chasing.</p>
-          <div class="j-tag">💸 No more Venmo chaos</div>
-        </div>
-      </div>
-      <div class="j-step" data-step="4">
-        <div class="j-icon-wrap"><div class="j-pulse"></div><div class="j-icon">⛳</div><div class="j-num">4</div></div>
-        <div class="j-card">
-          <h4>Show Up & Play</h4>
-          <p>Tee times confirmed, rooms ready, dinners booked. Your only job? Enjoy the round and take all the credit.</p>
-          <div class="j-tag">🏌️ You’re the hero</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- â•â•â•â•â•â•â•â•â•â•â• TESTIMONIALS â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="testi">
-  <div class="sec-head anim"><h2>What Our Clients Say</h2><p>Rated 4.8/5 across 672 verified reviews on Google, Yelp &amp; TripAdvisor.</p></div>
-  <div class="tg">
-    <div class="tc anim">
-      <div class="tc-stars">★★★★★</div>
-      <p class="tc-q">"We've used Golf the High Sierra for our annual corporate outing 6 years running. One phone call and everything is handled. The registration portal alone saves me 20 hours."</p>
-      <div class="tc-bottom">
-        <div class="tc-avatar">M</div>
-        <div class="tc-info"><span class="tc-a">Mark T.</span><span class="tc-m">Google · Corporate Group of 32</span></div>
-      </div>
-    </div>
-    <div class="tc anim" style="transition-delay:.08s">
-      <div class="tc-stars">★★★★★</div>
-      <p class="tc-q">"Organized a 24-person buddies trip. Everyone paid directly through the portal — I didn't chase a single dollar. Courses were perfectly matched to our skill mix."</p>
-      <div class="tc-bottom">
-        <div class="tc-avatar">S</div>
-        <div class="tc-info"><span class="tc-a">Steve R.</span><span class="tc-m">TripAdvisor · Leisure Group</span></div>
-      </div>
-    </div>
-    <div class="tc anim" style="transition-delay:.16s">
-      <div class="tc-stars">★★★★★</div>
-      <p class="tc-q">"From lodging to dinner reservations to the shuttle — everything was arranged before we arrived. Best group golf experience we've ever had, hands down."</p>
-      <div class="tc-bottom">
-        <div class="tc-avatar">D</div>
-        <div class="tc-info"><span class="tc-a">David L.</span><span class="tc-m">Yelp · Mixed Group of 16</span></div>
-      </div>
-    </div>
-  </div>
-  <div class="slider-dots" data-for="tg"><span class="active"></span><span></span><span></span></div>
-</section>
-
-<!-- â•â•â•â•â•â•â•â•â•â•â• FAQ â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="faq">
-  <div class="sec-head anim"><h2>Frequently Asked Questions</h2><p>Everything you need to know about group golf in Reno &amp; Lake Tahoe.</p></div>
-  <div class="faq-list">
-    <div class="faq-item anim"><button class="faq-q">What is included in a Golf the High Sierra package?<span class="faq-toggle">+</span></button><div class="faq-a"><p>Every package includes tee times at your chosen courses, lodging at partner hotels or casinos, and access to our proprietary online registration portal. Add dining reservations, ground transportation, non-golfer activities, and corporate event planning as needed.</p></div></div>
-    <div class="faq-item anim"><button class="faq-q">How many people can be in a group?<span class="faq-toggle">+</span></button><div class="faq-a"><p>We handle groups from 4 to 400+ people. Small buddies trips, mid-size corporate outings, full conferences with breakout sessions — we scale planning to fit your size and budget.</p></div></div>
-    <div class="faq-item anim"><button class="faq-q">What golf courses are available in the Reno Tahoe area?<span class="faq-toggle">+</span></button><div class="faq-a"><p>We partner with 20+ courses: Reno (Lakeridge, ArrowCreek, Red Hawk, Wolf Run, Somersett, Washoe), Lake Tahoe (Edgewood, Incline Village), Truckee (Old Greenwood, Coyote Moon, Gray's Crossing, Tahoe Donner), and Carson Valley (Genoa Lakes, Dayton Valley, Toiyabe).</p></div></div>
-    <div class="faq-item anim"><button class="faq-q">How does the one contract / one deposit process work?<span class="faq-toggle">+</span></button><div class="faq-a"><p>We book everything on your behalf — hotels, courses, dining, transport. You get one contract covering all arrangements and one deposit to secure them. Your group members register and pay through our online portal. No chasing payments.</p></div></div>
-    <div class="faq-item anim"><button class="faq-q">Can non-golfers join the trip?<span class="faq-toggle">+</span></button><div class="faq-a"><p>Absolutely. We arrange spa packages, lake cruises, hiking, wine tours, and casino entertainment. Non-golfer packages can be built into the same group registration so everyone books through one portal.</p></div></div>
-  </div>
-</section>
-
-<!-- â•â•â•â•â•â•â•â•â•â•â• CTA â•â•â•â•â•â•â•â•â•â•â• -->
-<section class="cta">
-  <h2 class="anim">Ready to Plan Your Group Golf Trip?</h2>
-  <p class="anim">Tell us your dates, group size, and budget. We'll build a custom package — no obligation, no hidden fees.</p>
-  <div class="cta-btns anim">
-    <a href="#" class="btn-g">Request a Free Quote</a>
-    <a href="tel:+18885848232" class="btn-ol">Call 888-584-8232</a>
-  </div>
-</section>
-`;
