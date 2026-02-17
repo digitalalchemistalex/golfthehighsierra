@@ -1,0 +1,52 @@
+{
+  "slug": "eldorado-roxy",
+  "name": "Roxy",
+  "type": "restaurant",
+  "priceRange": "$$$",
+  "description": "Roxy is the Eldorado's award-winning fine dining bistro, voted Best Place to Take a Date by locals and listed on the DiRoNa Award list of Distinguished Restaurants of North America. Chefs hand-select top cuts of meats, poultry and fish to create exquisite entr\u00e9es prepared in a specialty wood-fired oven. Neighboring the Eldorado's Fountain of Fortune, Roxy showcases seven different architectural styles creating an enchanting European ambiance. Roxy's Bar & Lounge is famous for its 102 martinis and selection of 350 wines.",
+  "shortDescription": "Award-winning fine dining bistro with wood-fired entr\u00e9es and 102 martinis at the Eldorado.",
+  "highlights": [
+    "DiRoNa Award Winner",
+    "Wood-Fired Oven",
+    "102 Martinis",
+    "350 Wine Selection",
+    "Live Piano Nightly",
+    "European Ambiance"
+  ],
+  "hours": "Sun & Mon - Closed | Tue - Thu 5pm - 9pm | Fri & Sat 5pm - 10pm",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Roxy-Wine-Cellar-Hero.jpg",
+  "faqs": [
+    {
+      "question": "Is there a dress code at Roxy?",
+      "answer": "Yes, appropriate dress is required. No sleeveless shirts for gentlemen."
+    },
+    {
+      "question": "Does Roxy have a bar?",
+      "answer": "Yes, Roxy's Bar & Lounge features 102 martini varieties and 350 wines, with live piano and vocals nightly."
+    },
+    {
+      "question": "What awards has Roxy won?",
+      "answer": "Roxy has earned the DiRoNa Award and Wine Spectator Award of Excellence, plus multiple Best of Reno honors."
+    }
+  ],
+  "meta": {
+    "title": "Roxy \u2013 Award-Winning Fine Dining at Eldorado Reno | Golf The High Sierra",
+    "description": "Dine at Roxy, the Eldorado's DiRoNA-awarded bistro featuring wood-fired entr\u00e9es, 102 martinis, and live piano nightly in downtown Reno."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": []
+}

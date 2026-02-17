@@ -1,0 +1,52 @@
+{
+  "slug": "eldorado-la-strada",
+  "name": "La Strada",
+  "type": "restaurant",
+  "priceRange": "$$$",
+  "description": "La Strada earned a spot on Food Network's 2019 list of the Best Pastas in the Country for its signature Mushroom Ravioli. In addition to multiple Best of Reno awards, La Strada has won the Wine Spectator Award of Excellence for nine consecutive years. Experience the taste and romance of Italy at the Eldorado's signature Italian restaurant.",
+  "shortDescription": "Food Network-recognized Italian fine dining with nine-time Wine Spectator Award of Excellence.",
+  "highlights": [
+    "Food Network Best Pasta",
+    "Wine Spectator Excellence",
+    "Signature Mushroom Ravioli",
+    "Italian Fine Dining",
+    "Nine-Year Wine Award",
+    "Romantic Atmosphere"
+  ],
+  "hours": "Sun - Thu 5pm - 9pm | Fri & Sat 5pm - 10pm",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/La-Strada-1440x530-1.jpg",
+  "faqs": [
+    {
+      "question": "What is La Strada known for?",
+      "answer": "Their signature Mushroom Ravioli, recognized by Food Network as one of the best pastas in America."
+    },
+    {
+      "question": "Is there a dress code?",
+      "answer": "Yes, appropriate dress is required. No sleeveless shirts for gentlemen."
+    },
+    {
+      "question": "Does La Strada have a wine program?",
+      "answer": "Yes, they've won the Wine Spectator Award of Excellence for nine consecutive years."
+    }
+  ],
+  "meta": {
+    "title": "La Strada \u2013 Food Network-Acclaimed Italian at Eldorado Reno | Golf The High Sierra",
+    "description": "Savor Food Network-recognized Mushroom Ravioli and Italian fine dining at La Strada in Eldorado Resort, downtown Reno."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": []
+}

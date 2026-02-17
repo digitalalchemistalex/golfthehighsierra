@@ -1,0 +1,52 @@
+{
+  "slug": "eldorado-brew-brothers",
+  "name": "The Brew Brothers",
+  "type": "restaurant",
+  "priceRange": "$$",
+  "description": "Named Best Brewpub in America by Nightclub & Bar Magazine, The Brew Brothers offers eight custom microbrews and a creative menu including gourmet wood-fired pizzas, salads, burgers, ribs, sandwiches, and complete dinners. Also voted Best Microbrew, Best Beer Selection, and Best Live Music in several Best of Reno polls, The Brew Brothers was named the highest-selling brewpub in North America.",
+  "shortDescription": "America's best brewpub with eight custom microbrews, wood-fired pizzas, and live music.",
+  "highlights": [
+    "Best Brewpub in America",
+    "Eight Custom Microbrews",
+    "Wood-Fired Pizza",
+    "Live Music",
+    "Highest-Selling Brewpub",
+    "Happy Hour Mon-Thu"
+  ],
+  "hours": "Sun - Thu 11am - 10pm | Fri - Sat 11am - 12am",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Brew-Brothers-Hero-3.jpg",
+  "faqs": [
+    {
+      "question": "Does Brew Brothers brew their own beer?",
+      "answer": "Yes, they offer eight custom microbrews brewed on-site and were named the highest-selling brewpub in North America."
+    },
+    {
+      "question": "Is there live music?",
+      "answer": "Yes, The Brew Brothers has been voted Best Live Music in multiple Best of Reno polls."
+    },
+    {
+      "question": "What food is served?",
+      "answer": "Gourmet wood-fired pizzas, salads, burgers, ribs, sandwiches, soups, and complete dinners."
+    }
+  ],
+  "meta": {
+    "title": "The Brew Brothers \u2013 Best Brewpub in America at Eldorado Reno | Golf The High Sierra",
+    "description": "Visit The Brew Brothers at Eldorado Reno \u2013 named Best Brewpub in America with eight custom microbrews, wood-fired pizza, and live music."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": []
+}

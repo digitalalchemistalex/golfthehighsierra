@@ -1,0 +1,39 @@
+{
+  "slug": "eldorado-spa-one-bedroom-suite",
+  "name": "Spa One Bedroom Suite",
+  "type": "room",
+  "priceRange": "$$$$",
+  "description": "One-bedroom suite in the Spa Tower featuring a separate bedroom and living area with spa-inspired luxury appointments. Enjoy premium amenities including plush robes, designer toiletries, and access to the resort's spa facilities for the ultimate Reno getaway.",
+  "shortDescription": "Spacious one-bedroom suite in the Spa Tower with separate living area and spa amenities.",
+  "highlights": [
+    "Spa Tower",
+    "One Bedroom",
+    "Separate Living Area",
+    "Spa Amenities",
+    "Plush Robes",
+    "Premium Luxury"
+  ],
+  "hours": "Check-in 4pm | Check-out 11am",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Y1-Spa-Tower-One-Bedroom-1.jpg",
+  "meta": {
+    "title": "Spa One Bedroom Suite \u2013 Eldorado Reno | Golf The High Sierra",
+    "description": "Book the Spa One Bedroom Suite at Eldorado Reno \u2013 spacious suite with separate living area in the Spa Tower."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": [],
+  "faqs": []
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "eldorado-skyline-superior-2-queens",
+  "name": "Skyline Superior Room | 2 Queens",
+  "type": "room",
+  "priceRange": "$$",
+  "description": "Located in the Skyline Tower, this dual queen room offers comfortable accommodations for up to four guests. Features two queen-size beds, High Definition TV, in-room safe, high-speed Wi-Fi, refreshment center, mini-refrigerator, and complimentary coffee.",
+  "shortDescription": "Dual queen room in the Skyline Tower for up to four guests.",
+  "highlights": [
+    "Skyline Tower",
+    "2 Queen Beds",
+    "4 Max Guests",
+    "Comfortable Layout",
+    "Refreshment Center",
+    "Non-Smoking Available"
+  ],
+  "hours": "Check-in 4pm | Check-out 11am",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/ELR-SKYLINE-SUPERIOR-QUEEN-ROOM-900x500-1.jpg",
+  "meta": {
+    "title": "Skyline Superior Room 2 Queens \u2013 Eldorado Reno | Golf The High Sierra",
+    "description": "Book the Skyline Superior Room with two queens at Eldorado Resort Reno \u2013 spacious accommodations in the Skyline Tower."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": [],
+  "faqs": []
+}

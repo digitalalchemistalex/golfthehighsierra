@@ -1,0 +1,39 @@
+{
+  "slug": "eldorado-sierra-studio-suite",
+  "name": "Sierra Studio Suite | 1 King",
+  "type": "room",
+  "priceRange": "$$$",
+  "description": "500-square foot studio suite in the Sierra Tower featuring one king-size bed with a living area, dining for four, and a wet bar. Two flat-screen TVs, in-room safe, high-speed Wi-Fi, and premium amenities make this the perfect base for your golf getaway.",
+  "shortDescription": "500 sq ft studio suite with living area, dining for four, and wet bar in the Sierra Tower.",
+  "highlights": [
+    "500 Sq Ft",
+    "Sierra Tower",
+    "1 King Bed",
+    "Living Area",
+    "Dining for Four",
+    "Wet Bar"
+  ],
+  "hours": "Check-in 4pm | Check-out 11am",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/ELDO-Studio-Suite-3_Web-Hero.jpg",
+  "meta": {
+    "title": "Sierra Studio Suite 1 King \u2013 Eldorado Reno | Golf The High Sierra",
+    "description": "Book the Sierra Studio Suite at Eldorado Resort Reno \u2013 500 sq ft with living area, dining for four, and wet bar."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": [],
+  "faqs": []
+}

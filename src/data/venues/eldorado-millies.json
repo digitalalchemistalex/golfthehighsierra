@@ -1,0 +1,52 @@
+{
+  "slug": "eldorado-millies",
+  "name": "Millies",
+  "type": "restaurant",
+  "priceRange": "$",
+  "description": "Named after Eldorado owner and founder Don Carano's mother, Millies is downtown Reno's hotspot for delicious breakfast favorites featuring family recipes. Guests can visit the Sweet Shoppe & Bakery for fresh-roasted Eldorado coffee, chocolate sweets, classic milkshakes, and fresh-churned creamy gelato. A down-home coffee shop menu makes Millies the perfect spot to meet friends.",
+  "shortDescription": "Family-recipe breakfast spot with Sweet Shoppe, gelato, and fresh-roasted coffee at the Eldorado.",
+  "highlights": [
+    "Family Recipes",
+    "Sweet Shoppe & Bakery",
+    "Fresh Gelato",
+    "Eldorado Coffee",
+    "Classic Milkshakes",
+    "Breakfast Favorites"
+  ],
+  "hours": "Mon 7am - 2pm | Tue & Wed Closed | Thu - Sun 7am - 2pm",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Millies-Hero-2.jpg",
+  "faqs": [
+    {
+      "question": "What kind of food does Millies serve?",
+      "answer": "Breakfast favorites with family recipes, plus the Sweet Shoppe & Bakery with gelato, milkshakes, and pastries."
+    },
+    {
+      "question": "Who is Millies named after?",
+      "answer": "Eldorado founder Don Carano's mother, Millie."
+    },
+    {
+      "question": "When is Millies open?",
+      "answer": "Monday and Thursday through Sunday, 7am to 2pm. Closed Tuesday and Wednesday."
+    }
+  ],
+  "meta": {
+    "title": "Millies \u2013 Breakfast & Sweet Shoppe at Eldorado Reno | Golf The High Sierra",
+    "description": "Enjoy family-recipe breakfasts, fresh gelato, and classic milkshakes at Millies in Eldorado Resort, downtown Reno."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": []
+}

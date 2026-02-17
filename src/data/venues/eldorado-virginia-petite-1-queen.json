@@ -1,0 +1,39 @@
+{
+  "slug": "eldorado-virginia-petite-1-queen",
+  "name": "Virginia Petite Room | 1 Queen",
+  "type": "room",
+  "priceRange": "$",
+  "description": "225-square foot rooms located in the Virginia Tower on floors 3-10, featuring one queen-size bed. The petite queen rooms include a High Definition TV, in-room safe, high-speed Wi-Fi, refreshment center, mini-refrigerator, and complimentary coffee. Non-smoking and smoking options available.",
+  "shortDescription": "Compact 225 sq ft queen room in the Virginia Tower with all essential amenities.",
+  "highlights": [
+    "225 Sq Ft",
+    "Virginia Tower Floors 3-10",
+    "1 Queen Bed",
+    "2 Max Guests",
+    "Refreshment Center",
+    "Non-Smoking Available"
+  ],
+  "hours": "Check-in 4pm | Check-out 11am",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/ELR-VIRGINIA-KING-DELUXE-ROOM-1440x530_1.jpg",
+  "meta": {
+    "title": "Virginia Petite Room 1 Queen \u2013 Eldorado Reno | Golf The High Sierra",
+    "description": "Book the Virginia Petite Room at Eldorado Resort Reno \u2013 cozy 225 sq ft queen room in the Virginia Tower with Wi-Fi and refreshment center."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": [],
+  "faqs": []
+}

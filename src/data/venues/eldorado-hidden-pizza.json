@@ -1,0 +1,52 @@
+{
+  "slug": "eldorado-hidden-pizza",
+  "name": "Hidden Pizza",
+  "type": "restaurant",
+  "priceRange": "$",
+  "description": "Tucked into a corner of the Eldorado's second floor across from The Brew Brothers, Hidden Pizza is a New York-style eatery serving pizza by the pie on weekends. Executive Chef Ivano Centemeri created a perfectly crafted pizza dough recipe for the lightly-sauced, wood-fired comfort food. The restaurant evokes old school New York pizzerias with two state-of-the-art ovens, an open-face letter board, bar-top seating with USB charging, and historic photos of old Reno.",
+  "shortDescription": "Late-night New York-style wood-fired pizza tucked away on the Eldorado's second floor.",
+  "highlights": [
+    "New York Style Pizza",
+    "Wood-Fired Ovens",
+    "Late Night Eats",
+    "Executive Chef Recipe",
+    "Historic Reno Photos",
+    "USB Phone Charging"
+  ],
+  "hours": "Mon - Thu & Sun Closed | Fri & Sat 5pm - Closing",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/HiddenPizzaBG.jpg",
+  "faqs": [
+    {
+      "question": "Where is Hidden Pizza?",
+      "answer": "Second floor of the Eldorado, tucked in a corner across from The Brew Brothers."
+    },
+    {
+      "question": "When is it open?",
+      "answer": "Friday and Saturday only, starting at 5pm through late night."
+    },
+    {
+      "question": "What style of pizza?",
+      "answer": "New York-style, wood-fired with a recipe by Executive Chef Ivano Centemeri."
+    }
+  ],
+  "meta": {
+    "title": "Hidden Pizza \u2013 Late Night NY-Style at Eldorado Reno | Golf The High Sierra",
+    "description": "Discover Hidden Pizza at Eldorado Reno \u2013 New York-style wood-fired pies on weekends, tucked away on the second floor."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": []
+}

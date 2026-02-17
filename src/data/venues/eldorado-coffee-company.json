@@ -1,0 +1,52 @@
+{
+  "slug": "eldorado-coffee-company",
+  "name": "The Eldorado Coffee Company",
+  "type": "restaurant",
+  "priceRange": "$",
+  "description": "Located on the Eldorado Mezzanine outside of Millies, The Eldorado Coffee Company features coffee, teas, cappuccinos, espressos, lattes, mochas, Italian sodas, fresh-churned creamy gelato, grab-and-go sandwiches, wraps, and the finest fresh pastries made on site. Also offering freshly squeezed orange juice for a refreshing start to any morning.",
+  "shortDescription": "Mezzanine coffee shop with espresso drinks, gelato, pastries, and grab-and-go at the Eldorado.",
+  "highlights": [
+    "Fresh-Roasted Coffee",
+    "Espresso & Lattes",
+    "Fresh Gelato",
+    "On-Site Pastries",
+    "Grab & Go Options",
+    "Italian Sodas"
+  ],
+  "hours": "Daily",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/eldorado-coffee-company-hero.jpg",
+  "faqs": [
+    {
+      "question": "Where is the Eldorado Coffee Company?",
+      "answer": "On the Mezzanine level, just outside Millies restaurant."
+    },
+    {
+      "question": "Do they have food?",
+      "answer": "Yes, grab-and-go sandwiches, wraps, fresh pastries, and gelato."
+    },
+    {
+      "question": "What coffee drinks are available?",
+      "answer": "Coffee, teas, cappuccinos, espressos, lattes, mochas, and Italian sodas."
+    }
+  ],
+  "meta": {
+    "title": "Eldorado Coffee Company \u2013 Coffee & Pastries at Eldorado Reno | Golf The High Sierra",
+    "description": "Start your day with fresh-roasted coffee, gelato, and pastries at The Eldorado Coffee Company on the Mezzanine level."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": []
+}

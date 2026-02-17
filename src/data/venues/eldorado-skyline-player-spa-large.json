@@ -1,0 +1,39 @@
+{
+  "slug": "eldorado-skyline-player-spa-large",
+  "name": "Skyline Player Spa Suite | Large",
+  "type": "room",
+  "priceRange": "$$$$",
+  "description": "Premium spa suite in the Skyline Tower with generous space, in-room spa amenities, one king-size bed, and top-tier appointments. The larger footprint offers additional living space with plush robes, designer toiletries, and the ultimate spa suite experience.",
+  "shortDescription": "Spacious premium spa suite in the Skyline Tower with generous living space and spa amenities.",
+  "highlights": [
+    "Skyline Tower",
+    "Large Spa Suite",
+    "1 King Bed",
+    "Generous Space",
+    "In-Room Spa Amenities",
+    "Premium Luxury"
+  ],
+  "hours": "Check-in 4pm | Check-out 11am",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/ELDO-PL-Players-Spa-Suite-2_Web-Hero.jpg",
+  "meta": {
+    "title": "Skyline Player Spa Suite Large \u2013 Eldorado Reno | Golf The High Sierra",
+    "description": "Book the Skyline Player Spa Suite (Large) at Eldorado Reno \u2013 spacious spa-inspired luxury in the Skyline Tower."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": [],
+  "faqs": []
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "eldorado-cin-cin",
+  "name": "Cin Cin Bar & Lounge",
+  "type": "bar",
+  "priceRange": "$$",
+  "description": "Pronounced 'Chin Chin' \u2014 the Italian toast to good health, old friends, and the pleasure of wine. Cin Cin offers an extensive artisan cocktail program unlike any other Reno nightclub. Watch as artisan bartenders create classic and creative concoctions using only the finest spirits and ingredients, from fresh-squeezed juices to hand-muddled fruit, herbs, and vegetables for a truly memorable experience.",
+  "shortDescription": "Upscale artisan cocktail lounge with Italian flair and handcrafted drinks at the Eldorado.",
+  "highlights": [
+    "Artisan Cocktails",
+    "Fresh-Squeezed Juices",
+    "Hand-Muddled Ingredients",
+    "Italian Toast Tradition",
+    "Finest Spirits",
+    "Sophisticated Atmosphere"
+  ],
+  "hours": "7 Days a Week | 4:30pm - Close",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Cin-Cin-1440x530-1.jpg",
+  "faqs": [
+    {
+      "question": "What does Cin Cin mean?",
+      "answer": "Pronounced 'Chin Chin,' it's the Italian toast to good health, old friends, and the pleasure of wine."
+    },
+    {
+      "question": "What's special about the cocktails?",
+      "answer": "Artisan bartenders use fresh-squeezed juices, hand-muddled fruit, herbs, and vegetables with the finest spirits."
+    },
+    {
+      "question": "Is Cin Cin open every day?",
+      "answer": "Yes, seven days a week from 4:30pm to close."
+    }
+  ],
+  "meta": {
+    "title": "Cin Cin Bar & Lounge \u2013 Artisan Cocktails at Eldorado Reno | Golf The High Sierra",
+    "description": "Experience artisan cocktails with fresh-squeezed juices and hand-muddled ingredients at Cin Cin Bar & Lounge in Eldorado Reno."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": []
+}

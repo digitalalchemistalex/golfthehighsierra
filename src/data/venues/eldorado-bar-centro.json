@@ -1,0 +1,52 @@
+{
+  "slug": "eldorado-bar-centro",
+  "name": "Bar Centro",
+  "type": "bar",
+  "priceRange": "$$",
+  "description": "Experience all the action at this chic raised bar and lounge in the center of the Eldorado casino. Fuchsia and amethyst colors with silver and pearl accents comfortably seat 40 with plenty of space for late night happenings. The island bar dazzles with a stunning rectangular chandelier made from 36-ribbed glass cylinders suspended at various heights. Cocktails are made with juice freshly hand-squeezed by skilled bartenders.",
+  "shortDescription": "Chic raised casino bar with stunning chandelier, fresh-squeezed cocktails, and late-night energy.",
+  "highlights": [
+    "Raised Casino Bar",
+    "Hand-Squeezed Cocktails",
+    "Stunning Chandelier",
+    "40 Seats",
+    "Late Night Scene",
+    "Ultra Casino Experience"
+  ],
+  "hours": "Mon - Wed Closed | Thu 6pm - 2am | Fri - Sun 10am - Close",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Bar-Centro-1440x530-1.jpg",
+  "faqs": [
+    {
+      "question": "What makes Bar Centro special?",
+      "answer": "A stunning rectangular chandelier, fresh hand-squeezed cocktails, and a chic raised position in the center of the casino."
+    },
+    {
+      "question": "When is Bar Centro open?",
+      "answer": "Thursday 6pm-2am, Friday through Sunday 10am to close. Closed Monday through Wednesday."
+    },
+    {
+      "question": "How many seats?",
+      "answer": "Comfortably seats 40 with additional space for late night happenings."
+    }
+  ],
+  "meta": {
+    "title": "Bar Centro \u2013 Chic Casino Bar at Eldorado Reno | Golf The High Sierra",
+    "description": "Sip fresh hand-squeezed cocktails at Bar Centro, the chic raised bar in the heart of Eldorado's casino floor in downtown Reno."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": []
+}

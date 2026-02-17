@@ -1,0 +1,39 @@
+{
+  "slug": "eldorado-virginia-deluxe-2-queens",
+  "name": "Virginia Deluxe Room | 2 Queens",
+  "type": "room",
+  "priceRange": "$$",
+  "description": "Spacious dual queen rooms in the Virginia Tower offering comfortable accommodations for up to four guests. Features two queen-size beds, High Definition TV, in-room safe, high-speed Wi-Fi, refreshment center, mini-refrigerator, and complimentary coffee.",
+  "shortDescription": "Spacious dual queen room in the Virginia Tower, ideal for groups of up to four.",
+  "highlights": [
+    "Virginia Tower",
+    "2 Queen Beds",
+    "4 Max Guests",
+    "Spacious Layout",
+    "Refreshment Center",
+    "Non-Smoking Available"
+  ],
+  "hours": "Check-in 4pm | Check-out 11am",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Deluxe-Queen-Revised-1440x530_1.jpg",
+  "meta": {
+    "title": "Virginia Deluxe Room 2 Queens \u2013 Eldorado Reno | Golf The High Sierra",
+    "description": "Book the Virginia Deluxe Room with two queens at Eldorado Resort Reno \u2013 spacious accommodations for up to four guests."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": [],
+  "faqs": []
+}

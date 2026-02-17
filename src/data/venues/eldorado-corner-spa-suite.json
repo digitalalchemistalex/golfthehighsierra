@@ -1,0 +1,39 @@
+{
+  "slug": "eldorado-corner-spa-suite",
+  "name": "Corner Spa Suite | 1 King",
+  "type": "room",
+  "priceRange": "$$$$",
+  "description": "Corner suite in the Spa Tower featuring spa-inspired amenities, one king-size bed, and luxurious appointments. Enjoy the elevated Spa Tower experience with premium toiletries, plush robes, and access to the resort's spa facilities.",
+  "shortDescription": "Luxurious corner suite in the Spa Tower with spa-inspired amenities and premium appointments.",
+  "highlights": [
+    "Spa Tower",
+    "Corner Suite",
+    "1 King Bed",
+    "Spa Amenities",
+    "Plush Robes",
+    "Premium Toiletries"
+  ],
+  "hours": "Check-in 4pm | Check-out 11am",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/SpaTowerEdlo_1440x530.jpg",
+  "meta": {
+    "title": "Corner Spa Suite 1 King \u2013 Eldorado Reno | Golf The High Sierra",
+    "description": "Book the Corner Spa Suite at Eldorado Resort Reno \u2013 luxurious spa-inspired accommodations in the Spa Tower."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": [],
+  "faqs": []
+}

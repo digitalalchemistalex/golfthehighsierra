@@ -1,0 +1,52 @@
+{
+  "slug": "eldorado-sushi-sake",
+  "name": "Sushi Sake",
+  "type": "restaurant",
+  "priceRange": "$$",
+  "description": "Located on the patio of Roxy restaurant overlooking the magnificent Plaza Fountain, Sushi Sake is perfect for sushi lovers and people-watching. Guests can explore exotic types of sake, sip wine or Roxy's famous martinis while listening to live music. The bar seats up to 14 with additional table seating throughout the patio area, featuring contemporary Euro-Asian design accents of bamboo rings, pendant lighting, and fish-scale leather upholstery.",
+  "shortDescription": "Hip sushi bar on Roxy's patio with exotic sake, fountain views, and live music at the Eldorado.",
+  "highlights": [
+    "Plaza Fountain Views",
+    "Exotic Sake Selection",
+    "Live Music",
+    "Euro-Asian Design",
+    "Patio Dining",
+    "Connected to Roxy"
+  ],
+  "hours": "Sun & Mon - Closed | Tue - Thu 4pm - 9pm | Fri & Sat 4pm - 10pm",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Sushi-Sake-Hero-2.jpg",
+  "faqs": [
+    {
+      "question": "Where is Sushi Sake located?",
+      "answer": "On the patio of Roxy restaurant, overlooking the Eldorado's Plaza Fountain."
+    },
+    {
+      "question": "Is there live music?",
+      "answer": "Yes, enjoy live music while dining on the patio."
+    },
+    {
+      "question": "What makes it unique?",
+      "answer": "Contemporary Euro-Asian design with bamboo accents, exotic sake selection, and fountain views."
+    }
+  ],
+  "meta": {
+    "title": "Sushi Sake \u2013 Patio Sushi Bar at Eldorado Reno | Golf The High Sierra",
+    "description": "Enjoy exotic sushi and sake on Roxy's patio overlooking the Plaza Fountain at Eldorado Resort in downtown Reno."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": []
+}

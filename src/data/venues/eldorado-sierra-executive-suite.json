@@ -1,0 +1,39 @@
+{
+  "slug": "eldorado-sierra-executive-suite",
+  "name": "Sierra Executive Suite | 1 King",
+  "type": "room",
+  "priceRange": "$$$$",
+  "description": "820-square foot one-bedroom suite perfect for a getaway, featuring a living room with dining table, bar, and two flat-screen televisions. The separate bedroom has a king-size bed and can be closed off from the living area, with a circular wet bar and mini-refrigerator. Ideal for entertaining small parties.",
+  "shortDescription": "820 sq ft one-bedroom suite with separate living room, dining area, and circular wet bar.",
+  "highlights": [
+    "820 Sq Ft",
+    "Sierra Tower",
+    "Separate Bedroom",
+    "Living Room",
+    "Dining for Four",
+    "Circular Wet Bar"
+  ],
+  "hours": "Check-in 4pm | Check-out 11am",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/ELDO-XC-Executive-Suite-King-1440x530-Web-Hero.jpg",
+  "meta": {
+    "title": "Sierra Executive Suite 1 King \u2013 Eldorado Reno | Golf The High Sierra",
+    "description": "Book the Sierra Executive Suite at Eldorado Reno \u2013 820 sq ft one-bedroom suite with separate living room and wet bar."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": [],
+  "faqs": []
+}

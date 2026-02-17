@@ -1,0 +1,39 @@
+{
+  "slug": "eldorado-skyline-superior-1-king",
+  "name": "Skyline Superior Room | 1 King",
+  "type": "room",
+  "priceRange": "$$",
+  "description": "Standard king room in the Skyline Tower featuring one king-size bed, comfortable furnishings, High Definition TV, in-room safe, high-speed Wi-Fi, refreshment center, mini-refrigerator, and complimentary coffee. A solid choice for couples or business travelers.",
+  "shortDescription": "Standard king room in the Skyline Tower with modern amenities and comfort.",
+  "highlights": [
+    "Skyline Tower",
+    "1 King Bed",
+    "2 Max Guests",
+    "Modern Amenities",
+    "Refreshment Center",
+    "Business Friendly"
+  ],
+  "hours": "Check-in 4pm | Check-out 11am",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Superior-King-Hero-1440x530-1.jpg",
+  "meta": {
+    "title": "Skyline Superior Room 1 King \u2013 Eldorado Reno | Golf The High Sierra",
+    "description": "Book the Skyline Superior King Room at Eldorado Resort Reno \u2013 comfortable king accommodations in the Skyline Tower."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": [],
+  "faqs": []
+}

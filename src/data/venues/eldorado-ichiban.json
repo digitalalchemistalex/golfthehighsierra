@@ -1,0 +1,52 @@
+{
+  "slug": "eldorado-ichiban",
+  "name": "Ichiban Japanese Steak House",
+  "type": "restaurant",
+  "priceRange": "$$$",
+  "description": "Ichiban Japanese Steak House has been a local favorite for over 40 years, bringing the best Teppanyaki show in town to the Eldorado. Enjoy the artistry and showmanship of skilled chefs preparing sizzling entr\u00e9es right at your table in this 11,000 square foot restaurant featuring 140 Teppanyaki table-style seats. Locally owned and operated, Ichiban accepts Caesars Rewards at THE ROW Reno.",
+  "shortDescription": "40-year Reno favorite with Teppanyaki showmanship and 140 table-style seats at the Eldorado.",
+  "highlights": [
+    "40+ Years in Reno",
+    "Teppanyaki/Hibachi",
+    "140 Table Seats",
+    "11,000 Sq Ft",
+    "Caesars Rewards Accepted",
+    "Locally Owned"
+  ],
+  "hours": "Sun - Thu 4:30pm - 9pm | Fri & Sat 4:30pm - 9:30pm",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/153886022_10159234053673750_781555543673748448_n.jpg",
+  "faqs": [
+    {
+      "question": "What style of cooking is Ichiban?",
+      "answer": "Teppanyaki/Hibachi, where skilled chefs prepare sizzling entr\u00e9es right at your table with impressive showmanship."
+    },
+    {
+      "question": "How long has Ichiban been open?",
+      "answer": "Over 40 years as a Reno favorite, and it's locally owned and operated."
+    },
+    {
+      "question": "Do they accept Caesars Rewards?",
+      "answer": "Yes, Ichiban accepts Caesars Rewards at THE ROW Reno location."
+    }
+  ],
+  "meta": {
+    "title": "Ichiban Japanese Steak House \u2013 Teppanyaki at Eldorado Reno | Golf The High Sierra",
+    "description": "Experience 40+ years of Teppanyaki showmanship at Ichiban Japanese Steak House in Eldorado Resort, downtown Reno."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": []
+}

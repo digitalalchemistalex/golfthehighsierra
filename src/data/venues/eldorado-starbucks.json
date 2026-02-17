@@ -1,0 +1,52 @@
+{
+  "slug": "eldorado-starbucks",
+  "name": "Starbucks Coffee",
+  "type": "restaurant",
+  "priceRange": "$",
+  "description": "The Starbucks Coffee location inside the Eldorado Resort offers the full range of Starbucks beverages, including handcrafted espresso drinks, Frappuccinos, teas, refreshers, and seasonal favorites. A convenient stop for guests heading out to the golf course or returning from a day of adventures in the High Sierra.",
+  "shortDescription": "Full-service Starbucks inside the Eldorado for your favorite handcrafted beverages.",
+  "highlights": [
+    "Full Starbucks Menu",
+    "Espresso Drinks",
+    "Frappuccinos",
+    "Seasonal Favorites",
+    "Convenient Location",
+    "Grab & Go"
+  ],
+  "hours": "Daily",
+  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/StarbucksELR_1440x530.jpg",
+  "faqs": [
+    {
+      "question": "Is this a full Starbucks?",
+      "answer": "Yes, offering the complete Starbucks menu of handcrafted beverages."
+    },
+    {
+      "question": "Where is it located?",
+      "answer": "Inside the Eldorado Resort, conveniently located for guests."
+    },
+    {
+      "question": "Can I use my Starbucks Rewards?",
+      "answer": "Check with the location for current Starbucks Rewards acceptance."
+    }
+  ],
+  "meta": {
+    "title": "Starbucks Coffee at Eldorado Reno | Golf The High Sierra",
+    "description": "Grab your favorite Starbucks beverages inside Eldorado Resort Casino in downtown Reno."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "eldorado-resorts-reno-eldorado-at-the-row",
+  "address": {
+    "streetAddress": "345 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8139
+  },
+  "phone": "(775) 786-5700",
+  "website": "https://www.eldoradoreno.com",
+  "images": []
+}
