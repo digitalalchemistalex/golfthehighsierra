@@ -264,11 +264,16 @@ export default function HotelPageContent({ hotel, relatedHotels = [], blurs = {}
           {/* Room types */}
           {hotel.roomTypes?.length > 0 && (
             <R delay={0.2}>
-              <div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginTop: 24, marginBottom: 8 }}>Accommodations</div>
-              {hotel.roomTypes.slice(0, 5).map((rm, i) => (
-                <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "10px 0", borderBottom: "1px solid var(--bone)", fontSize: 12, fontWeight: 300 }}>
-                  <span style={{ color: "var(--charcoal)" }}>{rm.name}</span>
-                  {rm.priceFrom && <span style={{ color: "var(--gold)", fontWeight: 500 }}>{rm.priceFrom}</span>}
+              <div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginTop: 24, marginBottom: 12 }}>Accommodations</div>
+              {hotel.roomTypes.slice(0, 6).map((rm, i) => (
+                <div key={i} style={{ padding: "14px 0", borderBottom: "1px solid var(--bone)" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{ color: "var(--charcoal)", fontSize: 13, fontWeight: 500, fontFamily: "var(--serif)" }}>{rm.name}</span>
+                    {rm.priceFrom && <span style={{ color: "var(--gold)", fontWeight: 500, fontSize: 12 }}>{rm.priceFrom}</span>}
+                  </div>
+                  {rm.description && (
+                    <p style={{ color: "var(--stone)", fontSize: 11, fontWeight: 300, lineHeight: 1.5, marginTop: 4, marginBottom: 0 }}>{rm.description}</p>
+                  )}
                 </div>
               ))}
             </R>
