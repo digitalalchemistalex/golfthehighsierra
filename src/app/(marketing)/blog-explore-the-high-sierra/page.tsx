@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Clock, MapPin, Users, Star, Calendar } from "lucide-react";
+import { ArrowRight, Clock, Calendar } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Blog | Golf the High Sierra | Reno & Lake Tahoe Golf Tips",
