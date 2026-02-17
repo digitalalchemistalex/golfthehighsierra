@@ -26,8 +26,12 @@
   "designer": "Bob Cupp",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grizzly-Foto-1-scaled.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grizzly-Foto-2.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grizzly-Foto-1-scaled.jpg"
+    "/images/courses/grizzly-ranch-golf-club/hole-panorama.jpg",
+    "/images/courses/grizzly-ranch-golf-club/fairway-view.jpg",
+    "/images/courses/grizzly-ranch-golf-club/course-5.jpg",
+    "/images/courses/grizzly-ranch-golf-club/mountain-view.jpg",
+    "/images/courses/grizzly-ranch-golf-club/clubhouse-area.jpg",
+    "/images/courses/grizzly-ranch-golf-club/scenic.jpg"
   ],
   "videoUrl": "",
   "faqs": [
