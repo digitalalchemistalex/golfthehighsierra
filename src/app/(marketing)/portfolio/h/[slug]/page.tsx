@@ -8,8 +8,8 @@ import { getBlurs } from "@/lib/blur";
 /* ─── Slim helpers ─── */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function slimHotel(h: any) {
-  const { geo, website, meta, region, ...client } = h;
-  void geo; void website; void meta; void region;
+  const { geo, website, meta, region, relatedCourses, relatedHotels, aaaRating, logo, parking, spaBars, ...client } = h;
+  void geo; void website; void meta; void region; void relatedCourses; void relatedHotels; void aaaRating; void logo; void parking; void spaBars;
   return client;
 }
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
