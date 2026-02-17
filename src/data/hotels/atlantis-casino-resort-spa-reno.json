@@ -11,18 +11,25 @@
     "postalCode": "89502",
     "addressCountry": "US"
   },
-  "geo": { "latitude": 39.4834, "longitude": -119.7862 },
+  "geo": {
+    "latitude": 39.4834,
+    "longitude": -119.7862
+  },
   "phone": "+1-888-584-8232",
   "website": "https://www.atlantiscasino.com",
-  "priceRange": "$129–$499",
+  "priceRange": "$129\u2013$499",
   "priceFrom": "$129",
   "starRating": 4,
   "aaaRating": "Four Diamond",
-  "rating": { "value": 4.5, "count": 3200, "sources": "TripAdvisor, Google" },
+  "rating": {
+    "value": 4.5,
+    "count": 3200,
+    "sources": "TripAdvisor, Google"
+  },
   "description": "Located in the heart of Reno, Nevada, the AAA Four Diamond Atlantis Casino Resort Spa has always been a favorite hotel destination for travelers near and far. Recognized for luxurious accommodations, dynamic casino action, TripAdvisor's Top-Ranked restaurants, Reno's only Forbes Travel Guide Four-Star Spa and state-of-the-art meeting facilities, Atlantis offers everything you're looking for and more.",
   "shortDescription": "AAA Four Diamond resort with Forbes Four-Star Spa, top-ranked restaurants, and dynamic casino action in the heart of Reno.",
   "highlights": [
-    "#1 Reno-Tahoe Resort – 7 years straight on TripAdvisor",
+    "#1 Reno-Tahoe Resort \u2013 7 years straight on TripAdvisor",
     "AAA Four Diamond Resort & Casino",
     "Reno's only Forbes Travel Guide Four-Star Spa",
     "Sharecare Health Security VERIFIED property",
@@ -41,22 +48,85 @@
     "Room service"
   ],
   "roomTypes": [
-    { "name": "Atlantis Tower Room", "description": "Comfortable standard rooms in the Atlantis Tower with modern amenities.", "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-tower-room.jpg" },
-    { "name": "Luxury Tower Room", "description": "Upgraded tower rooms with enhanced finishes and premium bedding.", "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-luxury-tower.jpg" },
-    { "name": "Concierge Tower Room", "description": "Premium rooms with exclusive concierge floor access and upgraded amenities.", "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-concierge-tower.jpg" },
-    { "name": "Spa Suite", "description": "Spacious suites with in-room spa amenities and separate living area.", "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-spa-suite.jpg" },
-    { "name": "Executive Spa Suite", "description": "Larger spa suites with executive-level finishes and expanded living space.", "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-executive-spa.jpg" },
-    { "name": "Bar Suite", "description": "Suites featuring a wet bar area, perfect for entertaining.", "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-bar-suite.jpg" },
-    { "name": "Atrium Paradise Suite", "description": "The most luxurious suite with panoramic atrium views and premium amenities.", "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-atrium-paradise.jpg" }
+    {
+      "name": "Atlantis Tower Room",
+      "description": "Comfortable standard rooms in the Atlantis Tower with modern amenities.",
+      "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-tower-room.jpg"
+    },
+    {
+      "name": "Luxury Tower Room",
+      "description": "Upgraded tower rooms with enhanced finishes and premium bedding.",
+      "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-luxury-tower.jpg"
+    },
+    {
+      "name": "Concierge Tower Room",
+      "description": "Premium rooms with exclusive concierge floor access and upgraded amenities.",
+      "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-concierge-tower.jpg"
+    },
+    {
+      "name": "Spa Suite",
+      "description": "Spacious suites with in-room spa amenities and separate living area.",
+      "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-spa-suite.jpg"
+    },
+    {
+      "name": "Executive Spa Suite",
+      "description": "Larger spa suites with executive-level finishes and expanded living space.",
+      "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-executive-spa.jpg"
+    },
+    {
+      "name": "Bar Suite",
+      "description": "Suites featuring a wet bar area, perfect for entertaining.",
+      "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-bar-suite.jpg"
+    },
+    {
+      "name": "Atrium Paradise Suite",
+      "description": "The most luxurious suite with panoramic atrium views and premium amenities.",
+      "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-atrium-paradise.jpg"
+    }
   ],
   "dining": [
-    { "name": "Atlantis Steakhouse", "slug": "atlantis-steakhouse-reno", "type": "steakhouse", "description": "Award-winning fine dining steakhouse." },
-    { "name": "Bistro Napa", "slug": "bistro-napa", "type": "restaurant", "description": "Napa Valley-inspired fine dining with an extensive wine list." },
-    { "name": "Toucan Charlie's Buffet & Grille", "slug": "atlantis-toucan-charlies-buffet-grille", "type": "buffet", "description": "All-you-can-eat buffet with diverse international options." },
-    { "name": "Red Bloom", "slug": "red-bloom", "type": "restaurant", "description": "Asian-inspired cuisine in a vibrant setting." },
-    { "name": "Sky Terrace Oyster Bar", "slug": "sky-terrace-oyster-bar", "type": "restaurant", "description": "Fresh oysters and seafood with panoramic views." },
-    { "name": "Sky Terrace Sushi Bar", "slug": "atlantis-sky-terrace-sushi-bar", "type": "restaurant", "description": "Premium sushi and Japanese cuisine." },
-    { "name": "Purple Parrot", "slug": "purple-parrot", "type": "restaurant", "description": "Classic comfort food and cocktails." }
+    {
+      "name": "Atlantis Steakhouse",
+      "slug": "atlantis-steakhouse-reno",
+      "type": "steakhouse",
+      "description": "Award-winning fine dining steakhouse."
+    },
+    {
+      "name": "Bistro Napa",
+      "slug": "bistro-napa",
+      "type": "restaurant",
+      "description": "Napa Valley-inspired fine dining with an extensive wine list."
+    },
+    {
+      "name": "Toucan Charlie's Buffet & Grille",
+      "slug": "atlantis-toucan-charlies-buffet-grille",
+      "type": "buffet",
+      "description": "All-you-can-eat buffet with diverse international options."
+    },
+    {
+      "name": "Red Bloom",
+      "slug": "red-bloom",
+      "type": "restaurant",
+      "description": "Asian-inspired cuisine in a vibrant setting."
+    },
+    {
+      "name": "Sky Terrace Oyster Bar",
+      "slug": "sky-terrace-oyster-bar",
+      "type": "restaurant",
+      "description": "Fresh oysters and seafood with panoramic views."
+    },
+    {
+      "name": "Sky Terrace Sushi Bar",
+      "slug": "atlantis-sky-terrace-sushi-bar",
+      "type": "restaurant",
+      "description": "Premium sushi and Japanese cuisine."
+    },
+    {
+      "name": "Purple Parrot",
+      "slug": "purple-parrot",
+      "type": "restaurant",
+      "description": "Classic comfort food and cocktails."
+    }
   ],
   "spaBars": [
     "Sky Terrace Bar",
@@ -70,19 +140,37 @@
   "totalRooms": 824,
   "parking": "Free valet and self-parking",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/10/Logo-Atlantis.png",
     "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-exterior.jpg"
   ],
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Logo-Atlantis.png",
   "faqs": [
-    { "question": "What golf courses are near Atlantis Casino Resort Spa?", "answer": "ArrowCreek Country Club, LakeRidge Golf Course, Wolf Run Golf Club, and Red Hawk Golf Resort are all within 20 minutes of Atlantis." },
-    { "question": "Does Golf the High Sierra offer packages with Atlantis?", "answer": "Yes — custom stay-and-play packages include lodging at Atlantis, tee times at nearby courses, carts, and concierge planning. Call 888-584-8232." },
-    { "question": "What amenities does Atlantis have for golfers?", "answer": "Forbes Four-Star Spa for post-round recovery, 7 restaurants for group dinners, sports bar for watching games, and a full casino for evening entertainment." }
+    {
+      "question": "What golf courses are near Atlantis Casino Resort Spa?",
+      "answer": "ArrowCreek Country Club, LakeRidge Golf Course, Wolf Run Golf Club, and Red Hawk Golf Resort are all within 20 minutes of Atlantis."
+    },
+    {
+      "question": "Does Golf the High Sierra offer packages with Atlantis?",
+      "answer": "Yes \u2014 custom stay-and-play packages include lodging at Atlantis, tee times at nearby courses, carts, and concierge planning. Call 888-584-8232."
+    },
+    {
+      "question": "What amenities does Atlantis have for golfers?",
+      "answer": "Forbes Four-Star Spa for post-round recovery, 7 restaurants for group dinners, sports bar for watching games, and a full casino for evening entertainment."
+    }
   ],
-  "relatedCourses": ["arrowcreek-golf-club", "lakeridge-golf-course", "wolf-run-golf-club", "red-hawk-golf-resort"],
-  "relatedHotels": ["peppermill-resort-spa-casino", "grand-sierra-resort-reno", "silver-legacy-resort-casino"],
+  "relatedCourses": [
+    "arrowcreek-golf-club",
+    "lakeridge-golf-course",
+    "wolf-run-golf-club",
+    "red-hawk-golf-resort"
+  ],
+  "relatedHotels": [
+    "peppermill-resort-spa-casino",
+    "grand-sierra-resort-reno",
+    "silver-legacy-resort-casino"
+  ],
   "meta": {
     "title": "Atlantis Casino Resort Spa Reno | Golf Stay and Play Packages",
     "description": "Stay at the AAA Four Diamond Atlantis Casino Resort Spa in Reno. Forbes Four-Star Spa, top-ranked dining, and custom golf packages with 20+ courses."
-  }
+  },
+  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Logo-Atlantis.png"
 }

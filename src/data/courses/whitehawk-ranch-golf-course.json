@@ -12,7 +12,7 @@
   "geo": {},
   "phone": "+1-888-584-8232",
   "website": "https://golfthehighsierra.com/portfolio/whitehawk-ranch-golf-course/",
-  "priceRange": "$249–$449",
+  "priceRange": "$249\u2013$449",
   "rating": {
     "value": 4.6,
     "count": 287
@@ -23,25 +23,23 @@
   "designer": "Dick Bailey",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/whitehawk2.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_Whitehawk.png",
     "https://golfthehighsierra.com/wp-content/uploads/2021/09/whitehawk2.jpg",
     "https://golfthehighsierra.com/wp-content/uploads/2021/09/Whitehawk-Foto-3.jpeg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Whitehawk-Foto-1.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Whitehawk-Scorecard.jpg"
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Whitehawk-Foto-1.jpg"
   ],
   "videoUrl": "",
   "faqs": [
     {
-      "question": "What’s included in Whitehawk Ranch golf group packages?",
+      "question": "What\u2019s included in Whitehawk Ranch golf group packages?",
       "answer": "Lodging, guaranteed tee times at Whitehawk Ranch, carts, and concierge planning. Optional transportation, dining, and multi-course itineraries."
     },
     {
       "question": "How much do Whitehawk Ranch packages cost?",
-      "answer": "Typical range is $249–$449 per golfer depending on season, lodging selection, and group size."
+      "answer": "Typical range is $249\u2013$449 per golfer depending on season, lodging selection, and group size."
     },
     {
       "question": "Do you handle corporate or tournament groups?",
-      "answer": "Yes—tee-time blocks, room blocks, tournament setup, and logistics for corporate and leisure groups."
+      "answer": "Yes\u2014tee-time blocks, room blocks, tournament setup, and logistics for corporate and leisure groups."
     }
   ],
   "meta": {
@@ -50,7 +48,7 @@
   },
   "bodyText": [
     "Custom Whitehawk Ranch packages with lodging, guaranteed tee times, carts, and concierge planning for golf groups and corporate events.",
-    "White Hawk Ranch Golf Club is a championship experience set in the scenic and natural splendor of the High Sierra’s Mohawk Valley, just a short drive from Reno and Lake Tahoe.  Sounds of wildlife and babbling brooks complement the audible peace and majestic surroundings of pine, cedar, and quaking aspen tree-lined fairways and accessible greens.",
+    "White Hawk Ranch Golf Club is a championship experience set in the scenic and natural splendor of the High Sierra\u2019s Mohawk Valley, just a short drive from Reno and Lake Tahoe.\u00a0 Sounds of wildlife and babbling brooks complement the audible peace and majestic surroundings of pine, cedar, and quaking aspen tree-lined fairways and accessible greens.",
     "Clio, CA\n768 Whitehawk Drive\nClio, CA 96106\n10 Minutes from Graeagle, CA\n49 Minutes from Truckee, CA\n71 Minutes from Downtown Reno\n72 Minutes from Peppermill and Atlantis\n94 Minutes from Carson City, NV\n110 Minutes from Stateline, NV\n110 Minutes from Minden, NV"
   ],
   "tips": [
@@ -76,11 +74,11 @@
   "hack": "",
   "distances": [],
   "contentParagraphs": [
-    "White Hawk Ranch Golf Club is a championship experience set in the scenic and natural splendor of the High Sierra’s Mohawk Valley, just a short drive from Reno and Lake Tahoe. Sounds of wildlife and babbling brooks complement the audible peace and majestic surroundings of pine, cedar, and quaking aspen tree-lined fairways and accessible greens.",
+    "White Hawk Ranch Golf Club is a championship experience set in the scenic and natural splendor of the High Sierra\u2019s Mohawk Valley, just a short drive from Reno and Lake Tahoe. Sounds of wildlife and babbling brooks complement the audible peace and majestic surroundings of pine, cedar, and quaking aspen tree-lined fairways and accessible greens.",
     "Whitehawk Ranch boasts a all-grass practice facility, with putting and chipping greens, sand bunkers, and a well-known snack bar taking care of all your food and beverage needs. As one of four great golf courses in the Graeagle area, few areas are suited as well for a pristine mountain golf experience that should absolutely include Whitehawk Ranch."
   ],
   "featuredHole": {
-    "title": "Hole #11 — Par 5",
+    "title": "Hole #11 \u2014 Par 5",
     "description": "A sweeping downhill par 5 through the pines with views of the Mohawk Valley. Long hitters can reach the green in two, but the approach must clear a natural creek crossing."
   },
   "teeTimeInfo": "",
@@ -88,5 +86,6 @@
   "yardage": 6926,
   "slope": 133,
   "courseRating": 72.3,
-  "yearBuilt": 1996
+  "yearBuilt": 1996,
+  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_Whitehawk.png"
 }

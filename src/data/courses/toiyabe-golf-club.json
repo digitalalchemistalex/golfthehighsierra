@@ -15,35 +15,33 @@
   },
   "phone": "+1-888-584-8232",
   "website": "https://golfthehighsierra.com/portfolio/toiyabe-golf-club/",
-  "priceRange": "$199–$499",
+  "priceRange": "$199\u2013$499",
   "rating": {
     "value": 4.8,
     "count": 347
   },
-  "description": "Toiyabe Golf Club is a semi-private golf club nestled in the foothills of the Toiyabe National Forest and the Sierra Nevada Mountains in Washoe Valley, Nevada. The club’s signature 18-hole Robert Muir Graves-designed course is a natural blend of links-style and Alpine golf that will challenge low handicap players, as well as golfers of all abilities. Toiyabe Golf Club is open year-round and features a restaurant with indoor and outdoor dining, wedding and corporate meeting space, and special events throughout the year.",
+  "description": "Toiyabe Golf Club is a semi-private golf club nestled in the foothills of the Toiyabe National Forest and the Sierra Nevada Mountains in Washoe Valley, Nevada. The club\u2019s signature 18-hole Robert Muir Graves-designed course is a natural blend of links-style and Alpine golf that will challenge low handicap players, as well as golfers of all abilities. Toiyabe Golf Club is open year-round and features a restaurant with indoor and outdoor dining, wedding and corporate meeting space, and special events throughout the year.",
   "holes": 18,
   "par": 72,
   "designer": "Robert Muir Graves",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Toiyabe-Foto-1.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_Toiyabe.png",
     "https://golfthehighsierra.com/wp-content/uploads/2021/09/Toiyabe-Foto-2.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Toiyabe-Foto-1.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Toiyabe-Scorecard.jpg"
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Toiyabe-Foto-1.jpg"
   ],
   "videoUrl": "",
   "faqs": [
     {
-      "question": "What’s included in Toiyabe golf group packages?",
+      "question": "What\u2019s included in Toiyabe golf group packages?",
       "answer": "Lodging, pre-booked tee times at Toiyabe, carts, and concierge planning. Transportation and dining add-ons available."
     },
     {
       "question": "How much do Toiyabe packages cost?",
-      "answer": "Typical range is $199–$499 per golfer depending on season, lodging, and group size."
+      "answer": "Typical range is $199\u2013$499 per golfer depending on season, lodging, and group size."
     },
     {
       "question": "Do you handle corporate or tournament groups?",
-      "answer": "Yes—tee time blocks, room blocks, tournament setup, and full concierge planning for buddies and corporate groups."
+      "answer": "Yes\u2014tee time blocks, room blocks, tournament setup, and full concierge planning for buddies and corporate groups."
     }
   ],
   "meta": {
@@ -52,13 +50,13 @@
   },
   "bodyText": [
     "Play Toiyabe Golf Club near Reno with group golf trips, tee times, and stay and play packages. Expert planning for buddies, corporate, and leisure golf getaways.",
-    "Toiyabe Golf Club is a semi-private golf club nestled in the foothills of the Toiyabe National Forest and the Sierra Nevada Mountains in Washoe Valley, Nevada. The club’s signature 18-hole Robert Muir Graves-designed course is a natural blend of links-style and Alpine golf that will challenge low handicap players, as well as golfers of all abilities. Toiyabe Golf Club is open year-round and features a restaurant with indoor and outdoor dining, wedding and corporate meeting space, and special events throughout the year.",
+    "Toiyabe Golf Club is a semi-private golf club nestled in the foothills of the Toiyabe National Forest and the Sierra Nevada Mountains in Washoe Valley, Nevada. The club\u2019s signature 18-hole Robert Muir Graves-designed course is a natural blend of links-style and Alpine golf that will challenge low handicap players, as well as golfers of all abilities. Toiyabe Golf Club is open year-round and features a restaurant with indoor and outdoor dining, wedding and corporate meeting space, and special events throughout the year.",
     "Truckee, CA\n10685 Northwoods Blvd.\nTruckee, CA 96161\n15 Minutes from Carson City, NV\n25 Minutes from Peppermill and Atlantis\n29 Minutes from Downtown Reno\n30 Minutes from Minden, NV\n42 Minutes from Stateline, NV\n57 Minutes from Truckee, CA\n107 Minutes from Graeagle, CA"
   ],
   "tips": [
     {
       "title": "A classic design nestled halfway between Reno and Carson City.",
-      "content": "Toiyabe Golf Club is a semi-private golf club nestled in the foothills of the Toiyabe National Forest and the Sierra Nevada Mountains in Washoe Valley, Nevada. The club’s signature 18-hole Robert Muir Graves-designed course is a natural blend of links-style and Alpine golf that will challenge low handicap players, as well as golfers of all abilities. Toiyabe Golf Club is open year-round and features a restaurant with indoor and outdoor dining, wedding and corporate meeting space, and special events throughout the year.\nSee More"
+      "content": "Toiyabe Golf Club is a semi-private golf club nestled in the foothills of the Toiyabe National Forest and the Sierra Nevada Mountains in Washoe Valley, Nevada. The club\u2019s signature 18-hole Robert Muir Graves-designed course is a natural blend of links-style and Alpine golf that will challenge low handicap players, as well as golfers of all abilities. Toiyabe Golf Club is open year-round and features a restaurant with indoor and outdoor dining, wedding and corporate meeting space, and special events throughout the year.\nSee More"
     },
     {
       "title": "Golf The High Sierra",
@@ -86,7 +84,7 @@
     "Serving breakfast and lunch in an amazing setting overlooking the 18th hole at Toiyabe Golf Club and views of Slide Mountian. We offer a full bar and an traditional menu."
   ],
   "featuredHole": {
-    "title": "Hole #13 — Par 4",
+    "title": "Hole #13 \u2014 Par 4",
     "description": "A stunning uphill par 4 carved through the pines on the back nine. The approach plays a full club longer than the yardage suggests. The view of Slide Mountain from the green makes the climb worth it."
   },
   "teeTimeInfo": "",
@@ -94,5 +92,6 @@
   "yardage": 7116,
   "slope": 137,
   "courseRating": 73.5,
-  "yearBuilt": 1973
+  "yearBuilt": 1973,
+  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_Toiyabe.png"
 }

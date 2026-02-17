@@ -1,6 +1,6 @@
 {
   "slug": "grays-crossing-golf-course",
-  "name": "Gray’s Crossing Golf Course",
+  "name": "Gray\u2019s Crossing Golf Course",
   "region": "truckee",
   "regionLabel": "Truckee, CA",
   "address": {
@@ -15,45 +15,43 @@
   },
   "phone": "+1-888-584-8232",
   "website": "https://golfthehighsierra.com/portfolio/grays-crossing-golf-course/",
-  "priceRange": "$189–$429",
+  "priceRange": "$189\u2013$429",
   "rating": {
     "value": 4.6,
     "count": 289
   },
-  "description": "Returning to the traditions of the world’s most revered golf treasures, the Golf Club at Gray’s Crossing promises an experience that explores each player’s unlimited capacity to enjoy the riches of the greatest game ever played. Fast greens and immaculate, tournament-like conditions provide a pristine golf theater, set in majestic pines with a spectacular mountain backdrop.",
+  "description": "Returning to the traditions of the world\u2019s most revered golf treasures, the Golf Club at Gray\u2019s Crossing promises an experience that explores each player\u2019s unlimited capacity to enjoy the riches of the greatest game ever played. Fast greens and immaculate, tournament-like conditions provide a pristine golf theater, set in majestic pines with a spectacular mountain backdrop.",
   "holes": 18,
   "par": 72,
   "designer": "Peter Jacobsen",
   "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grays-Crossing-Foto-4.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_GarysCrossing.png",
     "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grays-Crossing-Foto-3.jpg",
     "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grays-Crossing-Foto-4.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grays-Crossing-Foto-1.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grayscrossing_scorecard_Revised.jpeg"
+    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grays-Crossing-Foto-1.jpg"
   ],
   "videoUrl": "",
   "faqs": [
     {
-      "question": "What’s included in Gray’s Crossing golf group packages?",
-      "answer": "Lodging, guaranteed tee times at Gray’s Crossing, carts, and concierge planning. Optional transportation and dining available."
+      "question": "What\u2019s included in Gray\u2019s Crossing golf group packages?",
+      "answer": "Lodging, guaranteed tee times at Gray\u2019s Crossing, carts, and concierge planning. Optional transportation and dining available."
     },
     {
-      "question": "How much do Gray’s Crossing packages cost?",
-      "answer": "Typical range is $189–$429 per golfer depending on dates, lodging, and group size."
+      "question": "How much do Gray\u2019s Crossing packages cost?",
+      "answer": "Typical range is $189\u2013$429 per golfer depending on dates, lodging, and group size."
     },
     {
       "question": "Do you organize corporate and tournament groups?",
-      "answer": "Yes—room blocks, tee-time reservations, tournament setup, and executive event planning."
+      "answer": "Yes\u2014room blocks, tee-time reservations, tournament setup, and executive event planning."
     }
   ],
   "meta": {
-    "title": "Gray’s Crossing Golf | Truckee Golf Groups &amp; Stay and Play",
-    "description": "Book Gray’s Crossing in Truckee with golf groups, tee times, and stay and play packages. Custom trips for buddies, corporate, and leisure groups."
+    "title": "Gray\u2019s Crossing Golf | Truckee Golf Groups &amp; Stay and Play",
+    "description": "Book Gray\u2019s Crossing in Truckee with golf groups, tee times, and stay and play packages. Custom trips for buddies, corporate, and leisure groups."
   },
   "bodyText": [
-    "Book Gray’s Crossing in Truckee with golf groups, tee times, and stay and play packages. Custom trips for buddies, corporate, and leisure groups.",
-    "Returning to the traditions of the world’s most revered golf treasures, the Golf Club at Gray’s Crossing promises an experience that explores each player’s unlimited capacity to enjoy the riches of the greatest game ever played. Fast greens and immaculate, tournament-like conditions provide a pristine golf theater, set in majestic pines with a spectacular mountain backdrop.",
+    "Book Gray\u2019s Crossing in Truckee with golf groups, tee times, and stay and play packages. Custom trips for buddies, corporate, and leisure groups.",
+    "Returning to the traditions of the world\u2019s most revered golf treasures, the Golf Club at Gray\u2019s Crossing promises an experience that explores each player\u2019s unlimited capacity to enjoy the riches of the greatest game ever played. Fast greens and immaculate, tournament-like conditions provide a pristine golf theater, set in majestic pines with a spectacular mountain backdrop.",
     "Truckee, CA\n11406 Henness Road\nTruckee, CA 96161\n5 Minutes from Truckee, CA\n35 Minutes from Downtown Reno\n41 Minutes from Peppermill and Atlantis\n54 Minutes from Graeagle, CA\n64 Minutes from Stateline, NV\n64 Minutes from Carson City, NV\n75 Minutes from Minden, NV"
   ],
   "tips": [
@@ -76,12 +74,12 @@
   "hack": "",
   "distances": [],
   "contentParagraphs": [
-    "Book Gray’s Crossing in Truckee with golf groups, tee times, and stay and play packages. Custom trips for buddies, corporate, and leisure groups.",
+    "Book Gray\u2019s Crossing in Truckee with golf groups, tee times, and stay and play packages. Custom trips for buddies, corporate, and leisure groups.",
     "Designed around soaring pines and undisturbed wetlands, the course has tight yet forgiving fairways, 83 bunkers, water on three holes and subtle elevation changes. Its natural, native beauty and expansive views of Mt. Rose and the Sierra Nevada Mountain ranges set the backdrop for an idyllic, walkable round.",
     "This Jim Hardy and Peter Jacobsen-designed masterpiece demands a combination of creative club choices and tactical strategies that call on golfers of all levels to expand their relationship with the game. Award-winning agronomists keep the course playing in tournament conditions all season long."
   ],
   "featuredHole": {
-    "title": "Hole #13 — Par 4",
+    "title": "Hole #13 \u2014 Par 4",
     "description": "A beautiful par 4 with the Truckee River running along the left side. The approach demands precision with water lurking. The mountain views from this hole are quintessential Truckee."
   },
   "teeTimeInfo": "",
@@ -89,5 +87,6 @@
   "yardage": 7243,
   "slope": 139,
   "courseRating": 74.6,
-  "yearBuilt": 2007
+  "yearBuilt": 2007,
+  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_GarysCrossing.png"
 }
