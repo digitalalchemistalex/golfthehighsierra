@@ -73,10 +73,6 @@
     {
       "title": "Golf The High Sierra",
       "content": "Book your next group golf trip with us!"
-    },
-    {
-      "title": "About Golf the High Sierra",
-      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
     }
   ],
   "facilities": [
@@ -102,5 +98,6 @@
   "yardage": 7031,
   "slope": 136,
   "courseRating": 73.4,
-  "yearBuilt": 2005
+  "yearBuilt": 2005,
+  "logo": "/images/courses/nakoma-dragon-golf-course/logo.png"
 }

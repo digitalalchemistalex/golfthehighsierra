@@ -26,6 +26,11 @@
   "designer": "Robert Trent Jones Jr.",
   "heroImage": "/images/courses/poppy-hills-golf-course/hero.jpg",
   "images": [
+    "/images/courses/poppy-hills-golf-course/hole-10.jpg",
+    "/images/courses/poppy-hills-golf-course/holes-9-18.jpg",
+    "/images/courses/poppy-hills-golf-course/hole-12.jpg",
+    "/images/courses/poppy-hills-golf-course/hole-2.jpg",
+    "/images/courses/poppy-hills-golf-course/hole-15.jpg",
     "/images/courses/poppy-hills-golf-course/img-5.jpg"
   ],
   "videoUrl": "",
@@ -88,5 +93,5 @@
   "slope": 135,
   "courseRating": 73.5,
   "yearBuilt": 1986,
-  "logo": ""
+  "logo": "/images/courses/poppy-hills-golf-course/logo.png"
 }

@@ -104,8 +104,8 @@ export default function VenuePageContent({ venue, relatedVenues = [] }: VenuePag
     "--white": "#fff", "--cream": "#faf8f5", "--bone": "#eee9e2", "--sand": "#d4cfc6",
     "--stone": "#8a857c", "--charcoal": "#3a3832", "--ink": "#111111",
     "--gold": "#C9A24D", "--gold-glow": "#D4B76A",
-    "--serif": "'Plus Jakarta Sans', system-ui, sans-serif",
-    "--sans": "'Plus Jakarta Sans', system-ui, sans-serif",
+    "--serif": "var(--font-jakarta), system-ui, sans-serif",
+    "--sans": "var(--font-jakarta), system-ui, sans-serif",
   } as React.CSSProperties;
 
   /* Hero fallback: gradient pattern if no heroImage */

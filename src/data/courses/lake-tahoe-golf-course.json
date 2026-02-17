@@ -28,7 +28,7 @@
   "images": [
     "/images/courses/lake-tahoe-golf-course/img-1.jpg",
     "/images/courses/lake-tahoe-golf-course/img-2.jpg",
-    "/images/courses/lake-tahoe-golf-course/img-3.png",
+    "/images/courses/lake-tahoe-golf-course/img-3.jpg",
     "/images/courses/lake-tahoe-golf-course/img-4.jpg",
     "/images/courses/lake-tahoe-golf-course/img-5.jpg"
   ],
@@ -94,5 +94,5 @@
   "slope": 129,
   "courseRating": 71.3,
   "yearBuilt": 1959,
-  "logo": ""
+  "logo": "/images/courses/lake-tahoe-golf-course/logo.png"
 }

@@ -81,10 +81,6 @@
     {
       "title": "Golf The High Sierra",
       "content": "Book your next group golf trip with us!"
-    },
-    {
-      "title": "About Golf the High Sierra",
-      "content": "Reno, NV\nT: 1-888-584-8232\nE:\ni\nnfo@golfthehighsierra.com\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n.holidays {\nbackground-color: green !important;\n}\n.booked_dates {\nbackground-color: red !important;\n}\n.available-deliveries, .available-deliveries a {\nbackground: yellow !important;\n}\n.partially-booked, .partially-booked a {\nbackground: linear-gradient(to bottom right, red59 0%, red59 50%, yellow 50%, yellow 100%) !important;\n}"
     }
   ],
   "pointOfView": "Tahoe Donner Golf Course is one of the oldest golf championship golf courses in the Lake Tahoe Basin. It is a true challenge for any golfer and a lovely introduction to the sport for those just starting. It is truly a walk, or ride, through the forest. Accurate shot-making is always the order of the day, especially off the tee. We wish it was open longer each year, but it's elevation brings snow early, and it stay late into spring, so play the course from mid-June to late-September for the best conditions.",
