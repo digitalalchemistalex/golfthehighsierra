@@ -141,7 +141,12 @@
   ],
   "totalRooms": 1621,
   "parking": "Free valet & self-parking, EV charging stations available",
-  "images": [],
+  "images": [
+    "/images/hotels/peppermill-resort-spa-casino/exterior.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/pool.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/room.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/lobby.jpg"
+  ],
   "heroImage": "/images/hotels/peppermill-resort-spa-casino/exterior.jpg",
   "faqs": [
     {

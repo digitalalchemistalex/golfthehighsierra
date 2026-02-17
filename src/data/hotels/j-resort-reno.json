@@ -56,7 +56,12 @@
   "spaBars": [],
   "totalRooms": 800,
   "parking": "Free self-parking",
-  "images": [],
+  "images": [
+    "/images/hotels/j-resort-reno/exterior.jpg",
+    "/images/hotels/j-resort-reno/pool.jpg",
+    "/images/hotels/j-resort-reno/room.jpg",
+    "/images/hotels/j-resort-reno/lobby.jpg"
+  ],
   "heroImage": "/images/hotels/j-resort-reno/hero.png",
   "faqs": [
     {

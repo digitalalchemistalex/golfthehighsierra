@@ -139,7 +139,12 @@
   ],
   "totalRooms": 824,
   "parking": "Free valet and self-parking",
-  "images": [],
+  "images": [
+    "/images/hotels/atlantis-casino-resort-spa-reno/exterior.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/pool.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/room.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/lobby.jpg"
+  ],
   "heroImage": "/images/hotels/atlantis-casino-resort-spa-reno/Logo-Atlantis.png",
   "faqs": [
     {

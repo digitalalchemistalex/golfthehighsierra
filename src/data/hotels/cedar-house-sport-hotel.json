@@ -62,7 +62,12 @@
     "Outdoor Hot Tub & Fire Pit"
   ],
   "parking": "Free parking",
-  "images": [],
+  "images": [
+    "/images/hotels/cedar-house-sport-hotel/exterior.jpg",
+    "/images/hotels/cedar-house-sport-hotel/room.jpg",
+    "/images/hotels/cedar-house-sport-hotel/lounge.jpg",
+    "/images/hotels/cedar-house-sport-hotel/dining.jpg"
+  ],
   "heroImage": "/images/hotels/cedar-house-sport-hotel/hero.jpg",
   "faqs": [
     {

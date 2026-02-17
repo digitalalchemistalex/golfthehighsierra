@@ -107,7 +107,12 @@
   ],
   "totalRooms": 1990,
   "parking": "Free valet & self-parking",
-  "images": [],
+  "images": [
+    "/images/hotels/grand-sierra-resort-reno/exterior.jpg",
+    "/images/hotels/grand-sierra-resort-reno/pool.jpg",
+    "/images/hotels/grand-sierra-resort-reno/room.jpg",
+    "/images/hotels/grand-sierra-resort-reno/lobby.jpg"
+  ],
   "heroImage": "/images/hotels/grand-sierra-resort-reno/hero.jpg",
   "faqs": [
     {
