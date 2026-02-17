@@ -48,16 +48,16 @@
   ],
   "roomTypes": [
     {
-      "name": "2-Bedroom Townhome",
-      "description": "Cozy mountain townhome with full kitchen, living area, washer/dryer, and outdoor deck \u2014 perfect for couples or golf buddies. Sleeps 4-6."
+      "name": "Two-Bedroom Townhome",
+      "description": "Private vacation townhome with two bedrooms, full kitchen, living and dining areas, and a deck overlooking the Plumas National Forest. Sleeps 4-6 guests."
     },
     {
-      "name": "3-Bedroom Townhome",
-      "description": "Spacious layout ideal for golf foursomes or small families, with multiple bathrooms, full kitchen, and fairway views."
+      "name": "Three-Bedroom Townhome",
+      "description": "Spacious townhome with three bedrooms, full kitchen, washer/dryer, fireplace, and multiple bathrooms. Ideal for golf groups of 6-8."
     },
     {
-      "name": "4-Bedroom Townhome",
-      "description": "Large residence for groups up to 8-10, with ample space for golf retreats. Many overlook the 4th or 5th fairway with Feather River views."
+      "name": "Four-Bedroom Townhome",
+      "description": "The largest option with four bedrooms, full kitchen, multiple living areas, and expansive deck. Perfect for large golf groups up to 10 guests."
     }
   ],
   "dining": [

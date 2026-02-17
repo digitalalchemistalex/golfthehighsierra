@@ -50,38 +50,31 @@
   "roomTypes": [
     {
       "name": "Atlantis Tower Room",
-      "description": "Comfortable standard rooms in the Atlantis Tower with modern amenities.",
-      "image": ""
+      "description": "King or two queen rooms with distinctive d\u00e9cor, oversized windows with city or mountain views, custom Sealy pillow-top mattress, luxurious linens, and down comforter. 375 sq ft with 9 ft ceilings."
+    },
+    {
+      "name": "Premier Room",
+      "description": "Newly redesigned rooms with walk-in showers, modern textures, and comfortable styling. Available in king or two queen configurations."
     },
     {
       "name": "Luxury Tower Room",
-      "description": "Upgraded tower rooms with enhanced finishes and premium bedding.",
-      "image": ""
+      "description": "Upscale furnishings with plush bedding, rich marble accents, luxury bath products, and 50-inch flat screen HDTV with multimedia launch pad. 375 sq ft."
     },
     {
       "name": "Concierge Tower Room",
-      "description": "Premium rooms with exclusive concierge floor access and upgraded amenities.",
-      "image": ""
+      "description": "All-new rooms on floors 21-27 with exclusive 25th floor Concierge Lounge access featuring complimentary continental breakfast and afternoon hors d'oeuvres. Warm woods and Michelangelo Marble."
     },
     {
-      "name": "Spa Suite",
-      "description": "Spacious suites with in-room spa amenities and separate living area.",
-      "image": ""
-    },
-    {
-      "name": "Executive Spa Suite",
-      "description": "Larger spa suites with executive-level finishes and expanded living space.",
-      "image": ""
+      "name": "Concierge Luxury Suite",
+      "description": "Starting at 600 sq ft with breathtaking panoramas, steam shower, dry sauna, spa tub, wet bar, and in-mirror vanity TV. Exclusive Concierge Lounge access."
     },
     {
       "name": "Bar Suite",
-      "description": "Suites featuring a wet bar area, perfect for entertaining.",
-      "image": ""
+      "description": "460 sq ft Premier Bar Suite with private wet bar and Concierge Lounge access. Perfect for unwinding after a day on the course."
     },
     {
-      "name": "Atrium Paradise Suite",
-      "description": "The most luxurious suite with panoramic atrium views and premium amenities.",
-      "image": ""
+      "name": "Executive Spa Suite",
+      "description": "Spacious 1,100 sq ft two-room suite with in-room jetted tub, separate living area, and premium amenities throughout."
     }
   ],
   "dining": [

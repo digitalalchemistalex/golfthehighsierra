@@ -40,16 +40,20 @@
   ],
   "roomTypes": [
     {
-      "name": "Standard Room",
-      "description": "Renovated rooms with modern finishes."
+      "name": "Birch Tower King",
+      "description": "Newly remodeled king room in the Birch Tower with plush pillow-top bed, walk-in shower, HDTV, and views of downtown Reno. Floor-to-ceiling windows, USB charging, coffee maker, refrigerator."
     },
     {
-      "name": "Deluxe Room",
-      "description": "Upgraded rooms with enhanced amenities."
+      "name": "Birch Tower Two Queen",
+      "description": "Two queen-size beds in the Birch Tower with walk-in shower, HDTV, and mountain or city views. Same modern amenities as the king rooms."
     },
     {
-      "name": "Suite",
-      "description": "Spacious suites for golf groups."
+      "name": "Aspen Tower King",
+      "description": "Lavish king room in the Aspen Tower with pillow-top bed, walk-in shower, HDTV, and wet bar. Mountain or downtown views."
+    },
+    {
+      "name": "King Grand Suite",
+      "description": "Spacious three-room suite with king bed, two full bathrooms, wet bar with barstools, queen sofa sleeper, and dining table seating eight. Sierra Nevada or downtown views. ADA compliant options available."
     }
   ],
   "dining": [
