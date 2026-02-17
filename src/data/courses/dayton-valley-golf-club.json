@@ -24,10 +24,10 @@
   "holes": 18,
   "par": 72,
   "designer": "Arnold Palmer",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/DaytonValley_2.jpg",
+  "heroImage": "/images/courses/dayton-valley-golf-club/DaytonValley_2.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/DaytonValley_2.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/DaytonValley_1.jpg",
+    "/images/courses/dayton-valley-golf-club/DaytonValley_2.jpg",
+    "/images/courses/dayton-valley-golf-club/DaytonValley_1.jpg",
     "/images/courses/dayton-valley-golf-club/golfnow-main.jpg",
     "/images/courses/dayton-valley-golf-club/golfnow-banner.jpg"
   ],
@@ -91,5 +91,5 @@
   "slope": 138,
   "courseRating": 74.3,
   "yearBuilt": 1991,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_DaytonValley.png"
+  "logo": "/images/courses/dayton-valley-golf-club/GolfBallonTee_DaytonValley.png"
 }

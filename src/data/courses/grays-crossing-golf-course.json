@@ -24,11 +24,11 @@
   "holes": 18,
   "par": 72,
   "designer": "Peter Jacobsen",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grays-Crossing-Foto-4.jpg",
+  "heroImage": "/images/courses/grays-crossing-golf-course/Grays-Crossing-Foto-4.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grays-Crossing-Foto-3.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grays-Crossing-Foto-4.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grays-Crossing-Foto-1.jpg"
+    "/images/courses/grays-crossing-golf-course/Grays-Crossing-Foto-3.jpg",
+    "/images/courses/grays-crossing-golf-course/Grays-Crossing-Foto-4.jpg",
+    "/images/courses/grays-crossing-golf-course/Grays-Crossing-Foto-1.jpg"
   ],
   "videoUrl": "",
   "faqs": [
@@ -88,5 +88,5 @@
   "slope": 139,
   "courseRating": 74.6,
   "yearBuilt": 2007,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_GarysCrossing.png"
+  "logo": "/images/courses/grays-crossing-golf-course/GolfBallonTee_GarysCrossing.png"
 }

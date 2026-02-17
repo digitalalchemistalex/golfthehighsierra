@@ -21,7 +21,7 @@
   "holes": 18,
   "par": 72,
   "designer": "Ellis Van Gorder",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/08/GraeagleGC.jpg",
+  "heroImage": "/images/courses/graeagle-meadows-golf-course/GraeagleGC.jpg",
   "images": [
     "/images/courses/graeagle-meadows-golf-course/overview.webp",
     "/images/courses/graeagle-meadows-golf-course/greagle-meadows.webp",
@@ -93,5 +93,5 @@
   "slope": 125,
   "courseRating": 71.0,
   "yearBuilt": 1969,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/08/Graeagle_GolfBall.png"
+  "logo": "/images/courses/graeagle-meadows-golf-course/Graeagle_GolfBall.png"
 }

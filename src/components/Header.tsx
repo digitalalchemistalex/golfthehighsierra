@@ -8,15 +8,15 @@ import { siteConfig } from "@/lib/config";
 
 /* ─── Featured cards for mega panels ─── */
 const featuredCourses = [
-  { name: "Edgewood Tahoe", slug: "edgewood-tahoe-golf-course", image: "https://golfthehighsierra.com/wp-content/uploads/2025/03/480305380_1022960253212508_1839293438816186105_n.jpg", tag: "Top Rated", region: "Lake Tahoe" },
-  { name: "Wolf Run Golf Club", slug: "wolf-run-golf-club", image: "https://golfthehighsierra.com/wp-content/uploads/2021/09/Wolf-Run-Foto-1.jpg", tag: "Most Popular", region: "Reno" },
-  { name: "Coyote Moon", slug: "coyote-moon-golf-course", image: "https://golfthehighsierra.com/wp-content/uploads/2021/09/coyote-moon2s.jpg", tag: "Scenic", region: "Truckee" },
+  { name: "Edgewood Tahoe", slug: "edgewood-tahoe-golf-course", image: "/images/header/edgewood-hero.jpg", tag: "Top Rated", region: "Lake Tahoe" },
+  { name: "Wolf Run Golf Club", slug: "wolf-run-golf-club", image: "/images/header/wolf-run-hero.jpg", tag: "Most Popular", region: "Reno" },
+  { name: "Coyote Moon", slug: "coyote-moon-golf-course", image: "/images/header/coyote-moon-hero.jpg", tag: "Scenic", region: "Truckee" },
 ];
 
 const featuredHotels = [
-  { name: "Peppermill Resort", slug: "peppermill-resort-spa-casino", image: "https://golfthehighsierra.com/wp-content/uploads/2021/10/peppermill-exterior.jpg", stars: 4, region: "Reno" },
-  { name: "Grand Sierra Resort", slug: "grand-sierra-resort-reno", image: "https://golfthehighsierra.com/wp-content/uploads/2021/10/gsr-exterior.jpg", stars: 4, region: "Reno" },
-  { name: "Hyatt Lake Tahoe", slug: "hyatt-lake-tahoe", image: "https://golfthehighsierra.com/wp-content/uploads/2021/10/hyatt-lake-tahoe.jpg", stars: 4, region: "Lake Tahoe" },
+  { name: "Peppermill Resort", slug: "peppermill-resort-spa-casino", image: "", stars: 4, region: "Reno" },
+  { name: "Grand Sierra Resort", slug: "grand-sierra-resort-reno", image: "", stars: 4, region: "Reno" },
+  { name: "Hyatt Lake Tahoe", slug: "hyatt-lake-tahoe", image: "", stars: 4, region: "Lake Tahoe" },
 ];
 
 /* ─── Mega Menu Panel Configurations ─── */
@@ -279,7 +279,7 @@ export default function Header() {
                   <div className="col-span-4">
                     <div className="relative rounded-2xl overflow-hidden h-full min-h-[280px] group">
                       <Image
-                        src="https://golfthehighsierra.com/wp-content/uploads/2025/03/480305380_1022960253212508_1839293438816186105_n.jpg"
+                        src="/images/header/edgewood-hero.jpg"
                         alt="Golf the High Sierra"
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -491,7 +491,7 @@ export default function Header() {
                   <div className="col-span-7">
                     <div className="relative rounded-2xl overflow-hidden h-full min-h-[220px] group">
                       <Image
-                        src="https://golfthehighsierra.com/wp-content/uploads/2021/09/coyote-moon2s.jpg"
+                        src="/images/header/coyote-moon-hero.jpg"
                         alt="Reno Tahoe Experiences"
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"

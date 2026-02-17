@@ -51,37 +51,37 @@
     {
       "name": "Atlantis Tower Room",
       "description": "Comfortable standard rooms in the Atlantis Tower with modern amenities.",
-      "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-tower-room.jpg"
+      "image": ""
     },
     {
       "name": "Luxury Tower Room",
       "description": "Upgraded tower rooms with enhanced finishes and premium bedding.",
-      "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-luxury-tower.jpg"
+      "image": ""
     },
     {
       "name": "Concierge Tower Room",
       "description": "Premium rooms with exclusive concierge floor access and upgraded amenities.",
-      "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-concierge-tower.jpg"
+      "image": ""
     },
     {
       "name": "Spa Suite",
       "description": "Spacious suites with in-room spa amenities and separate living area.",
-      "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-spa-suite.jpg"
+      "image": ""
     },
     {
       "name": "Executive Spa Suite",
       "description": "Larger spa suites with executive-level finishes and expanded living space.",
-      "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-executive-spa.jpg"
+      "image": ""
     },
     {
       "name": "Bar Suite",
       "description": "Suites featuring a wet bar area, perfect for entertaining.",
-      "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-bar-suite.jpg"
+      "image": ""
     },
     {
       "name": "Atrium Paradise Suite",
       "description": "The most luxurious suite with panoramic atrium views and premium amenities.",
-      "image": "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-atrium-paradise.jpg"
+      "image": ""
     }
   ],
   "dining": [
@@ -139,10 +139,8 @@
   ],
   "totalRooms": 824,
   "parking": "Free valet and self-parking",
-  "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/10/atlantis-exterior.jpg"
-  ],
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Logo-Atlantis.png",
+  "images": [],
+  "heroImage": "/images/hotels/atlantis-casino-resort-spa-reno/Logo-Atlantis.png",
   "faqs": [
     {
       "question": "What golf courses are near Atlantis Casino Resort Spa?",
@@ -172,5 +170,5 @@
     "title": "Atlantis Casino Resort Spa Reno | Golf Stay and Play Packages",
     "description": "Stay at the AAA Four Diamond Atlantis Casino Resort Spa in Reno. Forbes Four-Star Spa, top-ranked dining, and custom golf packages with 20+ courses."
   },
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/10/Logo-Atlantis.png"
+  "logo": "/images/hotels/atlantis-casino-resort-spa-reno/Logo-Atlantis.png"
 }

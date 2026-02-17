@@ -24,9 +24,9 @@
   "holes": 18,
   "par": 72,
   "designer": "Robert Muir Graves",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2023/02/4th-hole.jpg",
+  "heroImage": "/images/courses/northstar-golf-course/4th-hole.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2023/02/4th-hole.jpg",
+    "/images/courses/northstar-golf-course/4th-hole.jpg",
     "/images/courses/northstar-golf-course/golfnow-main.jpg",
     "/images/courses/northstar-golf-course/golfnow-banner.jpg"
   ],
@@ -107,5 +107,5 @@
   "slope": 135,
   "courseRating": 72.5,
   "yearBuilt": 1975,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2023/02/nstarscorecardfinal-scaled.jpg"
+  "logo": "/images/courses/northstar-golf-course/nstarscorecardfinal-scaled.jpg"
 }

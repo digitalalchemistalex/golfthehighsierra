@@ -21,10 +21,8 @@
   "holes": 18,
   "par": 72,
   "designer": "Roy Williams",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/Tahoe-Donner-Golf-Course.jpeg",
+  "heroImage": "/images/courses/tahoe-donner-golf-course-truckee-ca/Tahoe-Donner-Golf-Course.jpeg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2025/03/Tahoe-Donner-2.jpeg",
-    "https://golfthehighsierra.com/wp-content/uploads/2025/03/Tahoe-Donner-1.jpeg",
     "/images/courses/tahoe-donner-golf-course-truckee-ca/course-view.jpg",
     "/images/courses/tahoe-donner-golf-course-truckee-ca/clubhouse.jpg"
   ],
@@ -110,5 +108,5 @@
   "slope": 139,
   "courseRating": 72.9,
   "yearBuilt": 1976,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2025/03/download-1.png"
+  "logo": "/images/courses/tahoe-donner-golf-course-truckee-ca/download-1.png"
 }

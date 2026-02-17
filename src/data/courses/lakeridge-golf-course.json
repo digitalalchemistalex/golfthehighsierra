@@ -21,11 +21,11 @@
   "holes": 18,
   "par": 72,
   "designer": "Robert Trent Jones Jr.",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/LakeRidgeGolfCourse.jpg",
+  "heroImage": "/images/courses/lakeridge-golf-course/LakeRidgeGolfCourse.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Lakeridge-Foto-1.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/LakeRidgeGolfCourse.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/LakeridgeGolf3.jpg"
+    "/images/courses/lakeridge-golf-course/Lakeridge-Foto-1.jpg",
+    "/images/courses/lakeridge-golf-course/LakeRidgeGolfCourse.jpg",
+    "/images/courses/lakeridge-golf-course/LakeridgeGolf3.jpg"
   ],
   "videoUrl": "",
   "faqs": [
@@ -107,5 +107,5 @@
   "slope": 130,
   "courseRating": 71.6,
   "yearBuilt": 1969,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_LakeRidge.png"
+  "logo": "/images/courses/lakeridge-golf-course/GolfBallonTee_LakeRidge.png"
 }

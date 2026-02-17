@@ -24,11 +24,11 @@
   "holes": 18,
   "par": 72,
   "designer": "Jack Nicklaus",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Old-Greenwood-Foto-3.jpg",
+  "heroImage": "/images/courses/old-greenwood-golf-course/Old-Greenwood-Foto-3.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Old-Greenwood-Foto-4.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Old-Greenwood-Foto-2.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Old-Greenwood-Foto-3.jpg"
+    "/images/courses/old-greenwood-golf-course/Old-Greenwood-Foto-4.jpg",
+    "/images/courses/old-greenwood-golf-course/Old-Greenwood-Foto-2.jpg",
+    "/images/courses/old-greenwood-golf-course/Old-Greenwood-Foto-3.jpg"
   ],
   "videoUrl": "",
   "faqs": [
@@ -95,5 +95,5 @@
   "slope": 141,
   "courseRating": 75.3,
   "yearBuilt": 2004,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_OldGreenwood.png"
+  "logo": "/images/courses/old-greenwood-golf-course/GolfBallonTee_OldGreenwood.png"
 }

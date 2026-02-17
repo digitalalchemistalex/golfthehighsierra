@@ -24,10 +24,10 @@
   "holes": 18,
   "par": 72,
   "designer": "Robert Muir Graves",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Toiyabe-Foto-1.jpg",
+  "heroImage": "/images/courses/toiyabe-golf-club/Toiyabe-Foto-1.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Toiyabe-Foto-2.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Toiyabe-Foto-1.jpg",
+    "/images/courses/toiyabe-golf-club/Toiyabe-Foto-2.jpg",
+    "/images/courses/toiyabe-golf-club/Toiyabe-Foto-1.jpg",
     "/images/courses/toiyabe-golf-club/golfnow-1.jpg",
     "/images/courses/toiyabe-golf-club/golfnow-2.jpg",
     "/images/courses/toiyabe-golf-club/golfnow-3.jpg",
@@ -97,5 +97,5 @@
   "slope": 137,
   "courseRating": 73.5,
   "yearBuilt": 1973,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_Toiyabe.png"
+  "logo": "/images/courses/toiyabe-golf-club/GolfBallonTee_Toiyabe.png"
 }

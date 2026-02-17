@@ -24,13 +24,13 @@
   "holes": 18,
   "par": 72,
   "designer": "Robert Trent Jones Sr.",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/champ14th-promo-669x472-1.jpg",
+  "heroImage": "/images/courses/incline-village-golf-courses-nv/champ14th-promo-669x472-1.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2025/03/champ14th-promo-669x472-1.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2025/03/InclineVillageChampionshipCourse_18thHoleView_350px.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2025/03/Golf_champ_hole7_dow_header_1996x892.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2025/03/champ14th-promo-669x472-2.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2025/03/champ-promo-669x472-1.jpg"
+    "/images/courses/incline-village-golf-courses-nv/champ14th-promo-669x472-1.jpg",
+    "/images/courses/incline-village-golf-courses-nv/InclineVillageChampionshipCourse_18thHoleView_350px.jpg",
+    "/images/courses/incline-village-golf-courses-nv/Golf_champ_hole7_dow_header_1996x892.jpg",
+    "/images/courses/incline-village-golf-courses-nv/champ14th-promo-669x472-2.jpg",
+    "/images/courses/incline-village-golf-courses-nv/champ-promo-669x472-1.jpg"
   ],
   "videoUrl": "https://www.youtube.com/watch?v=TIbq6lJ2XnQ",
   "faqs": [
@@ -123,5 +123,5 @@
   "slope": 136,
   "courseRating": 72.8,
   "yearBuilt": 1964,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2025/03/images.png"
+  "logo": "/images/courses/incline-village-golf-courses-nv/images.png"
 }

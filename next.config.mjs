@@ -1,12 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'golfthehighsierra.com',
-      },
-    ],
+    remotePatterns: [],
   },
   // Allow trailing slashes to match WordPress URL structure
   trailingSlash: true,

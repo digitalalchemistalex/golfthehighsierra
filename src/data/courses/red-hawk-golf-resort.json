@@ -24,11 +24,11 @@
   "holes": 18,
   "par": 72,
   "designer": "Robert Trent Jones Jr.",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Red-Hawk-lakes-Foto-2.jpg",
+  "heroImage": "/images/courses/red-hawk-golf-resort/Red-Hawk-lakes-Foto-2.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Red-Hawk-lakes-Foto-1.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Red-Hawk-lakes-Foto-2.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Red-Hawk-Hills-Foto-1.png"
+    "/images/courses/red-hawk-golf-resort/Red-Hawk-lakes-Foto-1.jpg",
+    "/images/courses/red-hawk-golf-resort/Red-Hawk-lakes-Foto-2.jpg",
+    "/images/courses/red-hawk-golf-resort/Red-Hawk-Hills-Foto-1.png"
   ],
   "videoUrl": "",
   "faqs": [
@@ -109,5 +109,5 @@
   "slope": 139,
   "courseRating": 73.6,
   "yearBuilt": 1997,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_RedHawk.png"
+  "logo": "/images/courses/red-hawk-golf-resort/GolfBallonTee_RedHawk.png"
 }

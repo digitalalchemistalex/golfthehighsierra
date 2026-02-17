@@ -21,7 +21,7 @@
   "holes": 18,
   "par": 72,
   "designer": "Tom Kite",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/somersett.jpg",
+  "heroImage": "/images/courses/somersett-golf-country-club/somersett.jpg",
   "images": [
     "/images/courses/somersett-golf-country-club/homepage.jpg",
     "/images/courses/somersett-golf-country-club/aerial.jpg",
@@ -88,5 +88,5 @@
   "slope": 135,
   "courseRating": 72.4,
   "yearBuilt": 2003,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Somersett_GolfBall.png"
+  "logo": "/images/courses/somersett-golf-country-club/Somersett_GolfBall.png"
 }

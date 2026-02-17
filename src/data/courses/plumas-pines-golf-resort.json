@@ -21,11 +21,11 @@
   "holes": 18,
   "par": 72,
   "designer": "Homer Flint",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Plumas_pines.jpg",
+  "heroImage": "/images/courses/plumas-pines-golf-resort/Plumas_pines.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/08/PlumasPines-Hole-10.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Plumas_pines.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Plumas_pines2.jpg"
+    "/images/courses/plumas-pines-golf-resort/PlumasPines-Hole-10.jpg",
+    "/images/courses/plumas-pines-golf-resort/Plumas_pines.jpg",
+    "/images/courses/plumas-pines-golf-resort/Plumas_pines2.jpg"
   ],
   "videoUrl": "",
   "faqs": [
@@ -92,5 +92,5 @@
   "slope": 131,
   "courseRating": 71.2,
   "yearBuilt": 1980,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_PlumasPines.png"
+  "logo": "/images/courses/plumas-pines-golf-resort/GolfBallonTee_PlumasPines.png"
 }

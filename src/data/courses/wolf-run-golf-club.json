@@ -24,10 +24,10 @@
   "holes": 18,
   "par": 72,
   "designer": "John Fleming",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Wolf-Run-Foto-1.jpg",
+  "heroImage": "/images/courses/wolf-run-golf-club/Wolf-Run-Foto-1.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Wolf-Run-Foto-1.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/WolfRun3.jpg",
+    "/images/courses/wolf-run-golf-club/Wolf-Run-Foto-1.jpg",
+    "/images/courses/wolf-run-golf-club/WolfRun3.jpg",
     "/images/courses/wolf-run-golf-club/aerial.jpg",
     "/images/courses/wolf-run-golf-club/golfnow-2.jpg",
     "/images/courses/wolf-run-golf-club/golfnow-3.jpg",
@@ -99,5 +99,5 @@
   "slope": 131,
   "courseRating": 73.8,
   "yearBuilt": 1998,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/09/WolfRun_GolfBall.png"
+  "logo": "/images/courses/wolf-run-golf-club/WolfRun_GolfBall.png"
 }

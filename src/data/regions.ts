@@ -25,7 +25,7 @@ export const REGIONS: RegionData[] = [
     description:
       "Experience golf in Reno, Nevada with custom stay-and-play packages. Golf the High Sierra partners with the region's top courses and resorts to build tailored trips for individuals, groups, and corporate events. With over 20 years of experience, we handle tee times, lodging, dining, and transportation so you can focus on the game. Play nearly year-round in Reno's dry, warm climate. Pair golf with world-class casinos, dining, and shows. Reno airport is less than 10 minutes from downtown play.",
     heroImage:
-      "https://golfthehighsierra.com/wp-content/uploads/2021/09/Lakeridge-Golf.jpg",
+      "/images/regions/reno.jpg",
     highlights: [
       "7 championship courses within 30 minutes",
       "Casino resort lodging with group rates",
@@ -68,7 +68,7 @@ export const REGIONS: RegionData[] = [
     description:
       "Experience world-class golf surrounded by the Sierra Nevada mountains with our custom Lake Tahoe golf packages. From championship courses like Edgewood — home of the American Century Celebrity Tournament — to hidden gems nestled in the pines, we create unforgettable golf vacations tailored to your group. Play courses carved through towering pines with stunning lake views. Every round offers postcard-perfect backdrops of alpine meadows and snow-capped peaks.",
     heroImage:
-      "https://golfthehighsierra.com/wp-content/uploads/2024/05/Edgewood-1.jpg",
+      "/images/regions/tahoe.jpg",
     highlights: [
       "Edgewood Tahoe — home of the Celebrity Championship",
       "Incline Village Championship & Mountain courses",
@@ -109,7 +109,7 @@ export const REGIONS: RegionData[] = [
     description:
       "Truckee and North Lake Tahoe offer some of the most stunning mountain golf in California. Championship courses carved through towering Ponderosa Pines feature dramatic elevation changes, pristine conditions, and Sierra Nevada vistas at every turn. Old Greenwood hosts the PGA TOUR Barracuda Championship. Coyote Moon is a hidden gem among golf insiders. Villa-style lodging among the pines makes Truckee the ultimate golf retreat.",
     heroImage:
-      "https://golfthehighsierra.com/wp-content/uploads/2024/05/Grays-Crossing-3.jpg",
+      "/images/regions/truckee.jpg",
     highlights: [
       "Old Greenwood — PGA TOUR Barracuda Championship host",
       "Coyote Moon — rated among America's top public courses",
@@ -146,7 +146,7 @@ export const REGIONS: RegionData[] = [
     description:
       "Carson Valley delivers championship golf at the region's best prices. Three distinct courses — Genoa Lakes, Dayton Valley, and Eagle Valley — offer quality layouts in the scenic valley between Reno and Carson City. Budget-friendly lodging at the Carson Valley Inn makes this the smart choice for groups who want great golf without the premium price tag. Toiyabe Golf Club adds a semi-private option with excellent conditioning.",
     heroImage:
-      "https://golfthehighsierra.com/wp-content/uploads/2024/04/DaytonValley.jpg",
+      "/images/regions/carson.jpg",
     highlights: [
       "Best golf-per-dollar value in the Sierra",
       "Genoa Lakes — stunning mountain backdrop",
@@ -182,7 +182,7 @@ export const REGIONS: RegionData[] = [
     description:
       "Graeagle is the Sierra's best-kept secret — five championship courses hidden in the Lost Sierra region of Northern California. Grizzly Ranch, Whitehawk Ranch, Nakoma Dragon (a Robin Graves design), Plumas Pines, and Graeagle Meadows offer uncrowded mountain golf through pristine forests. Stay in private residences and mountain lodges for a true golf retreat experience away from the crowds.",
     heroImage:
-      "https://golfthehighsierra.com/wp-content/uploads/2024/05/Whitehawk-1.jpg",
+      "/images/regions/graeagle.jpg",
     highlights: [
       "5 courses in the secluded Lost Sierra",
       "Grizzly Ranch — exclusive mountain retreat",

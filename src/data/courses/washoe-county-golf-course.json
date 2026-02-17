@@ -21,9 +21,9 @@
   "holes": 18,
   "par": 72,
   "designer": "Original layout c. 1917, redesigned multiple times",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/08/slide1.jpg",
+  "heroImage": "/images/courses/washoe-county-golf-course/slide1.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/08/WashoeCountyGolf1.jpg",
+    "/images/courses/washoe-county-golf-course/WashoeCountyGolf1.jpg",
     "/images/courses/washoe-county-golf-course/golfnow-main.jpg",
     "/images/courses/washoe-county-golf-course/golfnow-banner.jpg"
   ],
@@ -87,5 +87,5 @@
   "slope": 121,
   "courseRating": 70.6,
   "yearBuilt": 1917,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/08/WashoeCounty_GolfBall.png"
+  "logo": "/images/courses/washoe-county-golf-course/WashoeCounty_GolfBall.png"
 }

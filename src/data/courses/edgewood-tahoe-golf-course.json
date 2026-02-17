@@ -24,13 +24,13 @@
   "holes": 18,
   "par": 72,
   "designer": "George Fazio",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2025/03/480305380_1022960253212508_1839293438816186105_n.jpg",
+  "heroImage": "/images/courses/edgewood-tahoe-golf-course/480305380_1022960253212508_1839293438816186105_n.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2025/03/18th-Hole-Photo-1024x505.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2025/03/479927464_1020935736748293_5586665005775589573_n-1024x768.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2025/03/480305380_1022960253212508_1839293438816186105_n-1-1024x768.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2025/03/481087530_1028864229288777_426186479615591081_n-1024x1024.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2025/03/golf-hero-1024x500.jpg"
+    "/images/courses/edgewood-tahoe-golf-course/18th-Hole-Photo-1024x505.jpg",
+    "/images/courses/edgewood-tahoe-golf-course/479927464_1020935736748293_5586665005775589573_n-1024x768.jpg",
+    "/images/courses/edgewood-tahoe-golf-course/480305380_1022960253212508_1839293438816186105_n-1-1024x768.jpg",
+    "/images/courses/edgewood-tahoe-golf-course/481087530_1028864229288777_426186479615591081_n-1024x1024.jpg",
+    "/images/courses/edgewood-tahoe-golf-course/golf-hero-1024x500.jpg"
   ],
   "videoUrl": "https://www.youtube.com/watch?v=cuS2Nq2QSQM",
   "faqs": [
@@ -111,5 +111,5 @@
   "slope": 142,
   "courseRating": 75.8,
   "yearBuilt": 1968,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2025/03/Screenshot-2025-03-08-at-12.33.35.png"
+  "logo": "/images/courses/edgewood-tahoe-golf-course/Screenshot-2025-03-08-at-12.33.35.png"
 }

@@ -21,11 +21,11 @@
   "holes": 18,
   "par": 72,
   "designer": "Dick Bailey",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/whitehawk2.jpg",
+  "heroImage": "/images/courses/whitehawk-ranch-golf-course/whitehawk2.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/whitehawk2.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Whitehawk-Foto-3.jpeg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Whitehawk-Foto-1.jpg"
+    "/images/courses/whitehawk-ranch-golf-course/whitehawk2.jpg",
+    "/images/courses/whitehawk-ranch-golf-course/Whitehawk-Foto-3.jpeg",
+    "/images/courses/whitehawk-ranch-golf-course/Whitehawk-Foto-1.jpg"
   ],
   "videoUrl": "",
   "faqs": [
@@ -87,5 +87,5 @@
   "slope": 133,
   "courseRating": 72.3,
   "yearBuilt": 1996,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_Whitehawk.png"
+  "logo": "/images/courses/whitehawk-ranch-golf-course/GolfBallonTee_Whitehawk.png"
 }

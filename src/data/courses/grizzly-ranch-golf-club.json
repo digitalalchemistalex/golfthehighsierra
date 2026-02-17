@@ -24,7 +24,7 @@
   "holes": 18,
   "par": 72,
   "designer": "Bob Cupp",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/Grizzly-Foto-1-scaled.jpg",
+  "heroImage": "/images/courses/grizzly-ranch-golf-club/Grizzly-Foto-1-scaled.jpg",
   "images": [
     "/images/courses/grizzly-ranch-golf-club/hole-panorama.jpg",
     "/images/courses/grizzly-ranch-golf-club/fairway-view.jpg",
@@ -108,5 +108,5 @@
   "slope": 140,
   "courseRating": 73.6,
   "yearBuilt": 2003,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_GrizzlyRanch.png"
+  "logo": "/images/courses/grizzly-ranch-golf-club/GolfBallonTee_GrizzlyRanch.png"
 }

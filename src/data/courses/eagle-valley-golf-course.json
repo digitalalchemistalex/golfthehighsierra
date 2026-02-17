@@ -21,7 +21,7 @@
   "holes": 18,
   "par": 72,
   "designer": "Jack Miller & Homer Flint (West) / Rocky Roquemore (East)",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/08/EagleValleyWest2.jpg",
+  "heroImage": "/images/courses/eagle-valley-golf-course/EagleValleyWest2.jpg",
   "images": [
     "/images/courses/eagle-valley-golf-course/golfnow-hero.jpg",
     "/images/courses/eagle-valley-golf-course/golfnow-1.jpg",
@@ -88,5 +88,5 @@
   "slope": 127,
   "courseRating": 71.6,
   "yearBuilt": 1977,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/08/EagleValleyBall.png"
+  "logo": "/images/courses/eagle-valley-golf-course/EagleValleyBall.png"
 }

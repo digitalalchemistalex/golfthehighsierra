@@ -21,11 +21,11 @@
   "holes": 18,
   "par": 72,
   "designer": "Brad Bell",
-  "heroImage": "https://golfthehighsierra.com/wp-content/uploads/2021/09/coyote-moon2s.jpg",
+  "heroImage": "/images/courses/coyote-moon-golf-course/coyote-moon2s.jpg",
   "images": [
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Coyote_moon.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/coyote-moon2s.jpg",
-    "https://golfthehighsierra.com/wp-content/uploads/2021/09/Coyote-Moon-No.-12.jpg"
+    "/images/courses/coyote-moon-golf-course/Coyote_moon.jpg",
+    "/images/courses/coyote-moon-golf-course/coyote-moon2s.jpg",
+    "/images/courses/coyote-moon-golf-course/Coyote-Moon-No.-12.jpg"
   ],
   "videoUrl": "",
   "faqs": [
@@ -87,5 +87,5 @@
   "slope": 140,
   "courseRating": 74.1,
   "yearBuilt": 2000,
-  "logo": "https://golfthehighsierra.com/wp-content/uploads/2021/09/GolfBallonTee_CoyoteMoon.png"
+  "logo": "/images/courses/coyote-moon-golf-course/GolfBallonTee_CoyoteMoon.png"
 }
