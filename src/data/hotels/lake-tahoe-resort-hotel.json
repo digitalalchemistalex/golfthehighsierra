@@ -53,8 +53,13 @@
   "dining": [],
   "spaBars": [],
   "parking": "Free self-parking",
-  "images": [],
-  "heroImage": "",
+  "images": [
+    "/images/hotels/lake-tahoe-resort-hotel/room.jpg",
+    "/images/hotels/lake-tahoe-resort-hotel/lobby.jpg",
+    "/images/hotels/lake-tahoe-resort-hotel/pool.jpg",
+    "/images/hotels/lake-tahoe-resort-hotel/dining.jpg"
+  ],
+  "heroImage": "/images/hotels/lake-tahoe-resort-hotel/hero.webp",
   "faqs": [
     {
       "question": "Are all rooms suites?",

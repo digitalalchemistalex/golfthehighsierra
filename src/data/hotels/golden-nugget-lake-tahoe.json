@@ -76,8 +76,13 @@
     "Casino Lounges"
   ],
   "parking": "Free valet parking",
-  "images": [],
-  "heroImage": "",
+  "images": [
+    "/images/hotels/golden-nugget-lake-tahoe/lobby.webp",
+    "/images/hotels/golden-nugget-lake-tahoe/room.webp",
+    "/images/hotels/golden-nugget-lake-tahoe/pool.webp",
+    "/images/hotels/golden-nugget-lake-tahoe/dining.webp"
+  ],
+  "heroImage": "/images/hotels/golden-nugget-lake-tahoe/exterior.webp",
   "faqs": [
     {
       "question": "How close to Edgewood?",

@@ -64,8 +64,15 @@
     "Outdoor Heated Pool"
   ],
   "parking": "Free self-parking",
-  "images": [],
-  "heroImage": "",
+  "images": [
+    "/images/hotels/harveys-lake-tahoe/lobby.jpg",
+    "/images/hotels/harveys-lake-tahoe/room.jpg",
+    "/images/hotels/harveys-lake-tahoe/pool.jpg",
+    "/images/hotels/harveys-lake-tahoe/casino.jpg",
+    "/images/hotels/harveys-lake-tahoe/dining.jpg",
+    "/images/hotels/harveys-lake-tahoe/parking.jpg"
+  ],
+  "heroImage": "/images/hotels/harveys-lake-tahoe/hero.jpg",
   "faqs": [
     {
       "question": "Is Harvey's connected to Harrah's?",

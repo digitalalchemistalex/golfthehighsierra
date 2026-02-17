@@ -62,8 +62,11 @@
     "5 O'Clock Somewhere Bar"
   ],
   "parking": "Free self-parking",
-  "images": [],
-  "heroImage": "",
+  "images": [
+    "/images/hotels/margaritaville-lake-tahoe/lobby.webp",
+    "/images/hotels/margaritaville-lake-tahoe/aerial.jpg"
+  ],
+  "heroImage": "/images/hotels/margaritaville-lake-tahoe/hero.webp",
   "faqs": [
     {
       "question": "What's unique about Margaritaville?",

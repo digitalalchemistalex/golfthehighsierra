@@ -71,8 +71,14 @@
     "Center Bar"
   ],
   "parking": "Free self-parking",
-  "images": [],
-  "heroImage": "",
+  "images": [
+    "/images/hotels/harrahs-lake-tahoe/exterior.webp",
+    "/images/hotels/harrahs-lake-tahoe/exterior-kayak.jpg",
+    "/images/hotels/harrahs-lake-tahoe/casino.jpg",
+    "/images/hotels/harrahs-lake-tahoe/pool.jpg",
+    "/images/hotels/harrahs-lake-tahoe/room.webp"
+  ],
+  "heroImage": "/images/hotels/harrahs-lake-tahoe/hero.jpg",
   "faqs": [
     {
       "question": "How close is Harrah's to Edgewood?",

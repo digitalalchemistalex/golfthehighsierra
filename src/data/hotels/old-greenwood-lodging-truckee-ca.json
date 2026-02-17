@@ -57,8 +57,14 @@
   "dining": [],
   "spaBars": [],
   "parking": "Free parking",
-  "images": [],
-  "heroImage": "",
+  "images": [
+    "/images/hotels/old-greenwood-lodging-truckee-ca/interior.jpg",
+    "/images/hotels/old-greenwood-lodging-truckee-ca/cabin.jpg",
+    "/images/hotels/old-greenwood-lodging-truckee-ca/exterior2.jpg",
+    "/images/hotels/old-greenwood-lodging-truckee-ca/lifestyle.jpg",
+    "/images/hotels/old-greenwood-lodging-truckee-ca/pool.jpg"
+  ],
+  "heroImage": "/images/hotels/old-greenwood-lodging-truckee-ca/hero.jpg",
   "faqs": [
     {
       "question": "Walk to the course?",

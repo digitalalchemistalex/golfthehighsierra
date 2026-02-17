@@ -57,8 +57,13 @@
   "dining": [],
   "spaBars": [],
   "parking": "Free self-parking",
-  "images": [],
-  "heroImage": "",
+  "images": [
+    "/images/hotels/hampton-inn-truckee-ca/exterior.jpg",
+    "/images/hotels/hampton-inn-truckee-ca/lobby.jpg",
+    "/images/hotels/hampton-inn-truckee-ca/room.jpg",
+    "/images/hotels/hampton-inn-truckee-ca/pool.jpg"
+  ],
+  "heroImage": "/images/hotels/hampton-inn-truckee-ca/hero.jpg",
   "faqs": [
     {
       "question": "What courses are nearby?",
