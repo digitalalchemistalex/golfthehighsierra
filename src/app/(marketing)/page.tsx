@@ -44,6 +44,8 @@ const jsonLd = {
 export default function HomePage() {
   return (
     <>
+      {/* LCP preload: first hero background image */}
+      <link rel="preload" as="image" href="/images/regions/reno.jpg" fetchPriority="high" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

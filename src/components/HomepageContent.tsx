@@ -142,7 +142,10 @@ export default function HomepageContent() {
         {/* BG Images */}
         {HERO_REGIONS.map((r, i) => (
           <div key={i} className={`hero-bg-img${i === slide ? ' active' : ''}`}>
-            <img src={r.img} alt={r.alt} />
+            {i === 0
+              ? <img src={r.img} alt={r.alt} fetchPriority="high" loading="eager" />
+              : <img src={r.img} alt={r.alt} loading="lazy" />
+            }
           </div>
         ))}
         <div className="hero-overlay" />
