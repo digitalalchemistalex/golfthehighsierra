@@ -80,6 +80,8 @@ function FAQ({ q, a }: { q: string; a: string }) {
 /* ─── Lightbox ─── */
 function Lightbox({ images, startIndex, onClose, name }: { images: string[]; startIndex: number; onClose: () => void; name: string }) {
   const [idx, setIdx] = useState(startIndex);
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => { setLoaded(false); }, [idx]);
   useEffect(() => {
     const h = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); if (e.key === "ArrowRight") setIdx(i => (i + 1) % images.length); if (e.key === "ArrowLeft") setIdx(i => (i - 1 + images.length) % images.length); };
     document.body.style.overflow = "hidden";
@@ -87,15 +89,22 @@ function Lightbox({ images, startIndex, onClose, name }: { images: string[]; sta
     return () => { document.body.style.overflow = ""; window.removeEventListener("keydown", h); };
   }, [images.length, onClose]);
   return (
-    <div className="fixed inset-0 z-[9999] bg-black/95 flex items-center justify-center" onClick={onClose}>
-      <button onClick={onClose} className="absolute top-4 right-4 text-white/60 hover:text-white z-10 p-2"><X className="w-8 h-8" /></button>
-      <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i - 1 + images.length) % images.length); }} className="absolute left-4 text-white/60 hover:text-white z-10 p-2"><ChevronLeft className="w-10 h-10" /></button>
-      <div className="relative w-[90vw] h-[80vh] flex items-center justify-center" onClick={e => e.stopPropagation()}>
+    <div style={{ position: "fixed", inset: 0, zIndex: 9999, background: "rgba(0,0,0,0.95)", display: "flex", alignItems: "center", justifyContent: "center" }} onClick={onClose}>
+      <button onClick={onClose} style={{ position: "absolute", top: 16, right: 16, color: "rgba(255,255,255,0.6)", zIndex: 10, padding: 8, background: "none", border: "none", cursor: "pointer" }}><X className="w-8 h-8" /></button>
+      <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i - 1 + images.length) % images.length); }} style={{ position: "absolute", left: 16, color: "rgba(255,255,255,0.6)", zIndex: 10, padding: 8, background: "none", border: "none", cursor: "pointer" }}><ChevronLeft className="w-10 h-10" /></button>
+      <div onClick={e => e.stopPropagation()} style={{ width: "90vw", height: "80vh", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
+        {!loaded && <div style={{ color: "rgba(255,255,255,0.3)", fontSize: 14, position: "absolute" }}>Loading...</div>}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={images[idx]} alt={`${name} ${idx + 1}`} className={`max-w-full max-h-full object-contain ${isLogo(images[idx]) ? "p-12" : ""}`} />
+        <img
+          key={idx}
+          src={images[idx]}
+          alt={`${name} ${idx + 1}`}
+          onLoad={() => setLoaded(true)}
+          style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain", display: loaded ? "block" : "none" }}
+        />
       </div>
-      <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i + 1) % images.length); }} className="absolute right-4 text-white/60 hover:text-white z-10 p-2"><ChevronRight className="w-10 h-10" /></button>
-      <div className="absolute bottom-4 text-white/40 text-xs tracking-widest">{idx + 1} / {images.length}</div>
+      <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i + 1) % images.length); }} style={{ position: "absolute", right: 16, color: "rgba(255,255,255,0.6)", zIndex: 10, padding: 8, background: "none", border: "none", cursor: "pointer" }}><ChevronRight className="w-10 h-10" /></button>
+      <div style={{ position: "absolute", bottom: 16, color: "rgba(255,255,255,0.4)", fontSize: 12, letterSpacing: 4 }}>{idx + 1} / {images.length}</div>
     </div>
   );
 }
