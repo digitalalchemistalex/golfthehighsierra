@@ -155,9 +155,9 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(0,0,0,.25) 0%,transparent 35%,transparent 55%,rgba(0,0,0,.65) 100%)" }} />
 
           {/* Hero content — course name + stats */}
-          <div style={{ position: "absolute", inset: 0, zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 clamp(32px,5vw,80px) clamp(48px,8vh,80px)" }}>
+          <div style={{ position: "absolute", inset: 0, zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 clamp(24px,5vw,80px) clamp(28px,6vh,80px)" }}>
             <R>
-              <h1 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(42px,7vw,90px)", lineHeight: .92, color: "#fff", letterSpacing: "-.03em" }}>
+              <h1 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(32px,7vw,90px)", lineHeight: .92, color: "#fff", letterSpacing: "-.03em" }}>
                 {nameParts.slice(0, -2).join(" ") || firstName}<br />
                 <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.75)" }}>{nameParts.slice(-2).join(" ")}</em>
               </h1>
