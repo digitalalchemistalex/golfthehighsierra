@@ -1,0 +1,57 @@
+{
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "slug": "atlantis-bar-centro",
+  "name": "Bar Centro \u2013 Atlantis",
+  "type": "bar",
+  "priceRange": "$$",
+  "description": "Bar Centro is Atlantis's signature atrium lounge \u2014 open 24 hours in a distinguished high-design setting with accenting foliage and an open atrium layout. Located adjacent to the Forbes Four-Star Atlantis Steakhouse, it serves as both a pre-dinner cocktail destination and a late-night lounge for the whole group. Counter seating and a large comfortable lounge area surround an extensive draft beer tap wall. The setting blends luxury aesthetics with a relaxed social atmosphere \u2014 the right place for a nightcap after golf and a good dinner.",
+  "shortDescription": "Atlantis's 24-hour atrium lounge \u2014 distinctive high-design setting, draft beer, and cocktails adjacent to the Forbes Four-Star Steakhouse.",
+  "highlights": [
+    "Open 24 Hours",
+    "Open Atrium Design with Foliage",
+    "Adjacent to Atlantis Steakhouse",
+    "Extensive Draft Beer Selection",
+    "Counter & Lounge Seating",
+    "Sophisticated Atmosphere"
+  ],
+  "hours": "Open 24 hours",
+  "heroImage": "/images/venues/atlantis-cocktail-lounge/hero.jpg",
+  "images": [],
+  "faqs": [
+    {
+      "question": "Is Bar Centro the same as the Atlantis Steakhouse lounge?",
+      "answer": "Bar Centro is a separate, standalone 24-hour bar that is adjacent to the Atlantis Steakhouse. The Steakhouse has its own bar area; Bar Centro serves as the resort's main atrium lounge and is open around the clock."
+    },
+    {
+      "question": "What is the atmosphere like at Bar Centro?",
+      "answer": "Distinguished and high-design \u2014 an open atrium setting with accent foliage creates a sophisticated but relaxed environment. It's the kind of place a golf group naturally gravitates to for the post-round debrief."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 4,
+      "quote": "The bar is also great \u2014 the bartenders know how to make a mean martini. Generous pours and a pleasant atmosphere throughout the resort.",
+      "author": "TripAdvisor Traveler",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 Repeat visitor"
+    }
+  ],
+  "meta": {
+    "title": "Bar Centro \u2013 Atlantis Atrium Lounge Reno | Golf The High Sierra",
+    "description": "Bar Centro at Atlantis Casino Resort Spa \u2014 24-hour atrium lounge with draft beer, cocktails, and high-design d\u00e9cor adjacent to the Forbes Four-Star Atlantis Steakhouse."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "slug": "atlantis-luxury-tower-rooms",
+  "name": "Atlantis Luxury Tower Room",
+  "type": "room",
+  "priceRange": "$$$",
+  "description": "Luxury Tower Rooms occupy floors 3 through 20 of Atlantis's newest and most recently renovated tower. Available in king and two-queen configurations, they feature upscale furnishings, plush bedding, rich marble accents, and floor-to-ceiling windows with panoramic Sierra Nevada or city views. In-room amenities include Bose Wave Radio, 55-inch flat-screen HDTV, premium Wi-Fi, and June Jacobs luxury bath products. Refrigerators are available in Luxury Tower rooms. The Concierge Lounge on the 25th floor is not included but may be purchased as an upgrade.",
+  "shortDescription": "Renovated tower rooms on floors 3\u201320 with upscale furnishings, marble accents, and panoramic views.",
+  "highlights": [
+    "Floors 3\u201320, Newest Tower",
+    "King or Two-Queen",
+    "Panoramic Sierra Nevada Views",
+    "Bose Wave Radio",
+    "55\" Flat-Screen HDTV",
+    "June Jacobs Bath Products"
+  ],
+  "hours": "Check-in 4:00 PM | Check-out 11:00 AM",
+  "heroImage": "/images/venues/atlantis-luxury-tower-room/hero.jpg",
+  "images": [],
+  "faqs": [
+    {
+      "question": "Do Luxury Tower Rooms have refrigerators?",
+      "answer": "Yes. Atlantis provides refrigerators in all Luxury Tower rooms. Concierge and Suite categories also include them."
+    },
+    {
+      "question": "What floor are Luxury Tower Rooms on?",
+      "answer": "Floors 3 through 20 of Atlantis's third and newest tower, which has been fully renovated with a contemporary aesthetic."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "The rooms are modern and well-appointed. Upper-floor rooms are quieter and have better city views \u2014 book as high as you can get.",
+      "author": "KAYAK reviewer",
+      "source": "KAYAK",
+      "meta": "KAYAK \u00b7 Verified stay"
+    },
+    {
+      "stars": 4,
+      "quote": "Very clean, nice rooms. Comfy beds. The Atlantis is consistently the best hotel experience in Reno \u2014 staff goes above and beyond.",
+      "author": "Hotels.com Guest",
+      "source": "Hotels.com",
+      "meta": "Hotels.com \u00b7 Rated Jan 2026"
+    }
+  ],
+  "meta": {
+    "title": "Atlantis Luxury Tower Room \u2013 AAA Four Diamond Reno | Golf The High Sierra",
+    "description": "Luxury Tower Rooms at Atlantis Casino Resort Spa \u2014 floors 3\u201320 of the newest tower, king or two-queen, Bose audio, panoramic Sierra Nevada views."
+  }
+}

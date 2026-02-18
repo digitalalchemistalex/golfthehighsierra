@@ -1,0 +1,68 @@
+{
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "slug": "atlantis-tower-rooms",
+  "name": "Atlantis Tower Room",
+  "type": "room",
+  "priceRange": "$$",
+  "description": "Atlantis Tower Rooms occupy the resort's original Royal Dolphin and Atrium towers and represent the entry point into Atlantis luxury. Floor-to-ceiling windows frame city and Sierra Nevada mountain views. Rooms feature marble accents, custom Sealy pillow-top mattresses, 50-inch flat-screen HDTV with HD channels, premium Wi-Fi, individual climate control, in-room digital safe, and June Jacobs luxury bath products. Choose one king or two queen beds. These rooms are currently undergoing phased renovation to match the newly remodeled Luxury and Concierge towers.",
+  "shortDescription": "Entry-level Atlantis tower rooms with floor-to-ceiling windows, Sierra Nevada views, and marble accents.",
+  "highlights": [
+    "Floor-to-Ceiling Windows",
+    "Sierra Nevada & City Views",
+    "Sealy Pillow-Top Mattresses",
+    "50\" Flat-Screen HDTV",
+    "June Jacobs Bath Products",
+    "Individual Climate Control"
+  ],
+  "hours": "Check-in 4:00 PM | Check-out 11:00 AM",
+  "heroImage": "/images/venues/atlantis-tower-room/hero.jpg",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What towers are Atlantis Tower Rooms in?",
+      "answer": "Atlantis Tower Rooms are located in the original Royal Dolphin and Atrium towers. Since 2021 these have been consolidated under the 'Atlantis Tower' category and carry the resort's entry-level rack rates."
+    },
+    {
+      "question": "Are Atlantis Tower Rooms being renovated?",
+      "answer": "Yes. The Atlantis and Atrium towers are currently in phased renovation to match the newly remodeled Luxury and Concierge towers. Some rooms have been updated; check directly with the hotel for current availability of renovated rooms."
+    },
+    {
+      "question": "What is the difference between Tower Rooms and Luxury Tower Rooms?",
+      "answer": "Luxury Tower Rooms are located in the newest third tower (floors 3\u201320), feature enhanced furnishings including Bose Wave Radio, and carry higher rates. Tower Rooms are in the original towers at lower price points."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 4,
+      "quote": "Nice location away from the noise of downtown Reno. Spacious rooms with good views, several dining options, and close to golf courses and the convention center.",
+      "author": "TripAdvisor Traveler",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 Verified stay"
+    },
+    {
+      "stars": 4,
+      "quote": "Atlantis is our go-to hotel when going to Reno for business or pleasure. The rooms are comfortable and the location is ideal \u2014 away from the chaos of downtown.",
+      "author": "TripAdvisor Traveler",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 Repeat visitor"
+    }
+  ],
+  "meta": {
+    "title": "Atlantis Tower Room \u2013 Reno Hotel Rooms | Golf The High Sierra",
+    "description": "Book Atlantis Tower Rooms in Reno \u2014 floor-to-ceiling windows with Sierra Nevada views, marble accents, and Sealy pillow-top beds at the AAA Four Diamond Atlantis Casino Resort Spa."
+  }
+}

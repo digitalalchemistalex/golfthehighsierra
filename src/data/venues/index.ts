@@ -62,16 +62,16 @@ import eldoPlayerSpaLargeData from "./eldorado-skyline-player-spa-large.json";
 import eldoVipHospitalityData from "./eldorado-skyline-vip-hospitality.json";
 import eldoVirginia21Data from "./eldorado-virginia-twenty-one-suite.json";
 // Atlantis Sub-Pages
-import atlTowerRoomData from "./atlantis-tower-room.json";
-import atlLuxuryTowerData from "./atlantis-luxury-tower-room.json";
-import atlConciergeTowerData from "./atlantis-concierge-tower-room.json";
-import atlSpaSuiteData from "./atlantis-spa-suite.json";
-import atlExecSpaSuiteData from "./atlantis-executive-spa-suite.json";
-import atlBarSuiteData from "./atlantis-bar-suite.json";
+import atlTowerRoomData from "./atlantis-tower-rooms.json";
+import atlLuxuryTowerData from "./atlantis-luxury-tower-rooms.json";
+import atlConciergeTowerData from "./atlantis-concierge-tower-rooms.json";
+import atlSpaSuiteData from "./atlantis-spa-suites.json";
+import atlExecSpaSuiteData from "./atlantis-executive-spa-suites.json";
+import atlBarSuiteData from "./atlantis-bar-suites.json";
 import atlAtriumParadiseData from "./atlantis-atrium-paradise-suite.json";
-import atlSteakhouseData from "./atlantis-steakhouse.json";
+import atlSteakhouseData from "./atlantis-steakhouse-reno.json";
 import atlSportsBarData from "./atlantis-sports-bar-lounge.json";
-import atlCocktailData from "./atlantis-cocktail-lounge.json";
+import atlBarCentroData from "./atlantis-bar-centro.json";
 
 export const ALL_VENUES = [
   chapelTavernData,
@@ -142,7 +142,7 @@ export const ALL_VENUES = [
   atlAtriumParadiseData,
   atlSteakhouseData,
   atlSportsBarData,
-  atlCocktailData,
+  atlBarCentroData,
 ] as const;
 
 export type VenueData = (typeof ALL_VENUES)[number];

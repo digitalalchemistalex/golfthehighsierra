@@ -1,0 +1,57 @@
+{
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "slug": "atlantis-spa-suites",
+  "name": "Atlantis Spa Suite",
+  "type": "room",
+  "priceRange": "$$$$",
+  "description": "Atlantis Spa Suites combine hotel luxury with spa-level indulgence. Each suite features an in-room jetted Jacuzzi tub, separate living area, floor-to-ceiling windows with panoramic views, 55-inch HDTV, Bose Wave Radio, and premium June Jacobs bath products. Spa Suite guests receive access to the 25th-floor Concierge Lounge, including complimentary breakfast, afternoon hors d'oeuvres, and evening cocktails. Spa Atlantis \u2014 Reno's only Forbes Travel Guide Four-Star spa \u2014 is located within the resort and offers preferential booking for suite guests.",
+  "shortDescription": "Suite with in-room Jacuzzi tub, separate living area, and access to Reno's only Forbes Four-Star spa.",
+  "highlights": [
+    "In-Room Jacuzzi Tub",
+    "Separate Living Area",
+    "Concierge Lounge Access",
+    "Complimentary Breakfast",
+    "Forbes Four-Star Spa Access",
+    "Panoramic City Views"
+  ],
+  "hours": "Check-in 4:00 PM | Check-out 11:00 AM",
+  "heroImage": "/images/venues/atlantis-spa-suite/hero.jpg",
+  "images": [],
+  "faqs": [
+    {
+      "question": "Does the Spa Suite include spa access?",
+      "answer": "Spa Atlantis is a Forbes Four-Star spa located within the resort. Spa Suite guests receive preferential booking access; treatments are priced separately."
+    },
+    {
+      "question": "What is the difference between the Spa Suite and Executive Spa Suite?",
+      "answer": "The Executive Spa Suite is larger with expanded panoramic views and premium butler-level service. Both include the Jacuzzi tub and Concierge Lounge access."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Book spa slots early \u2014 they fill up fast, especially on weekends. Upper-floor suites have panoramic views that make the upgrade worth it.",
+      "author": "KAYAK reviewer",
+      "source": "KAYAK",
+      "meta": "KAYAK \u00b7 Verified stay"
+    }
+  ],
+  "meta": {
+    "title": "Atlantis Spa Suite \u2013 Jacuzzi & Forbes Four-Star Spa Access | Golf The High Sierra",
+    "description": "Atlantis Spa Suites in Reno feature in-room Jacuzzi tubs, Concierge Lounge access, and proximity to the only Forbes Four-Star spa in Northern Nevada."
+  }
+}

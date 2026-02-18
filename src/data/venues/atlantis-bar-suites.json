@@ -1,0 +1,57 @@
+{
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "slug": "atlantis-bar-suites",
+  "name": "Atlantis Bar Suite",
+  "type": "room",
+  "priceRange": "$$$$",
+  "description": "The Atlantis Bar Suite is a 971-square-foot king suite with a midcentury modern aesthetic and a built-in wet bar \u2014 purpose-built for entertaining after a round of golf. The redesigned suite connects to the Penthouse Villa for extended group configurations. Features include floor-to-ceiling windows, Concierge Lounge access, and the full complement of Atlantis premium amenities. A natural choice for the group organizer who wants to host a nightcap for the whole crew without leaving the room.",
+  "shortDescription": "971 sq ft king suite with built-in wet bar and midcentury design \u2014 ideal for post-round group entertaining.",
+  "highlights": [
+    "971 Sq Ft King Suite",
+    "Built-In Wet Bar",
+    "Midcentury Modern Design",
+    "Connects to Penthouse Villa",
+    "Floor-to-Ceiling Windows",
+    "Concierge Lounge Access"
+  ],
+  "hours": "Check-in 4:00 PM | Check-out 11:00 AM",
+  "heroImage": "/images/venues/atlantis-bar-suite/hero.jpg",
+  "images": [],
+  "faqs": [
+    {
+      "question": "Does the Bar Suite connect to other rooms?",
+      "answer": "Yes. The Atlantis Bar Suite connects to the Penthouse Villa, making it suitable for large group configurations."
+    },
+    {
+      "question": "What size is the Bar Suite?",
+      "answer": "971 square feet \u2014 a one-bedroom king suite with a separate sitting and bar area."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "The entire staff is very friendly which brings an added dimension to a quality experience. We will return on every visit we make to Reno.",
+      "author": "TripAdvisor Traveler",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 Verified stay"
+    }
+  ],
+  "meta": {
+    "title": "Atlantis Bar Suite \u2013 971 Sq Ft Entertainment Suite Reno | Golf The High Sierra",
+    "description": "The Atlantis Bar Suite in Reno is a 971 sq ft king suite with built-in wet bar and midcentury design \u2014 perfect for golf group entertaining."
+  }
+}

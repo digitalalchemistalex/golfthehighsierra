@@ -1,0 +1,53 @@
+{
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "slug": "atlantis-executive-spa-suites",
+  "name": "Atlantis Executive Spa Suite",
+  "type": "room",
+  "priceRange": "$$$$",
+  "description": "The Executive Spa Suite is designed for groups who want to entertain in style. A full separate sitting area features floor-to-ceiling windows framing stunning city or Sierra Nevada mountain views. The in-room jetted Jacuzzi tub, premium Bose audio, and butler-level Concierge Lounge access make this one of Atlantis's most complete packages. The suite connects to the Penthouse Parlor for extended group configurations. Ideal for golf trip leaders who want a base of operations \u2014 comfortable, private, and impressive.",
+  "shortDescription": "Full sitting area, in-room Jacuzzi, mountain views, and Concierge Lounge \u2014 ideal for group trip organizers.",
+  "highlights": [
+    "Full Separate Sitting Area",
+    "Floor-to-Ceiling Mountain Views",
+    "In-Room Jacuzzi Tub",
+    "Connects to Penthouse Parlor",
+    "Concierge Lounge Access",
+    "Bose Wave Audio System"
+  ],
+  "hours": "Check-in 4:00 PM | Check-out 11:00 AM",
+  "heroImage": "/images/venues/atlantis-executive-spa-suite/hero.jpg",
+  "images": [],
+  "faqs": [
+    {
+      "question": "Can the Executive Spa Suite connect to other rooms?",
+      "answer": "Yes. The Executive Spa Suite connects to the Penthouse Parlor, making it possible to configure a multi-room setup for larger golf groups or corporate parties."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "This is now our favorite Reno hotel. Spacious, well-appointed, and the staff provides service that makes you feel at home. Perfect for a group trip.",
+      "author": "TripAdvisor Traveler",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 Verified stay"
+    }
+  ],
+  "meta": {
+    "title": "Atlantis Executive Spa Suite \u2013 Group-Ready Luxury in Reno | Golf The High Sierra",
+    "description": "Atlantis Executive Spa Suite \u2014 full sitting area, in-room Jacuzzi, Concierge Lounge access, and panoramic Sierra Nevada views. Ideal for golf group organizers."
+  }
+}

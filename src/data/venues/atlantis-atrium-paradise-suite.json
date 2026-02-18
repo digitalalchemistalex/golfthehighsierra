@@ -1,24 +1,4 @@
 {
-  "slug": "atlantis-atrium-paradise-suite",
-  "name": "Atrium Paradise Suite",
-  "type": "room",
-  "priceRange": "$$$$",
-  "description": "The most luxurious accommodation at the Atlantis, featuring a stunning atrium-style layout with premium appointments throughout. This expansive suite offers separate living and sleeping areas, premium entertainment systems, exclusive Concierge Lounge access, and the finest amenities the resort has to offer. Butler service and VIP treatment included.",
-  "shortDescription": "Atlantis's premier suite with stunning atrium layout, VIP treatment, and butler service.",
-  "highlights": [
-    "Premier Suite",
-    "Atrium Layout",
-    "VIP Treatment",
-    "Butler Service",
-    "Concierge Lounge",
-    "Finest Amenities"
-  ],
-  "hours": "Check-in 4pm | Check-out 11am",
-  "heroImage": "/images/venues/atlantis-atrium-paradise-suite/hero.jpg",
-  "meta": {
-    "title": "Atrium Paradise Suite \u2013 Atlantis Reno | Golf The High Sierra",
-    "description": "Book the Atrium Paradise Suite at Atlantis Reno \u2013 the resort's premier luxury suite with VIP treatment and butler service."
-  },
   "region": "reno",
   "regionLabel": "Reno",
   "parentHotel": "atlantis-casino-resort-spa-reno",
@@ -34,22 +14,40 @@
   },
   "phone": "(775) 825-4700",
   "website": "https://www.atlantiscasino.com",
+  "slug": "atlantis-atrium-paradise-suite",
+  "name": "Atlantis Atrium Paradise Suite",
+  "type": "room",
+  "priceRange": "$$$$",
+  "description": "The Atrium Paradise Suite occupies the pinnacle of the Atlantis tower experience. Located among the VIP suite floors at the top of the resort, this suite features an open atrium layout, premium appointments throughout, and Penthouse Villa-level access. Atlantis reserves the 26th and 27th floor VIP suites for guests booking through exclusive channels \u2014 GTHS can arrange access for group organizers seeking the highest level of accommodation at the resort. Includes all Concierge Tower privileges plus elevated butler-style service.",
+  "shortDescription": "Top-tier VIP suite at the pinnacle of Atlantis \u2014 atrium layout, Penthouse Villa access, and butler service.",
+  "highlights": [
+    "Top VIP Suite Floors",
+    "Atrium Layout",
+    "Penthouse Villa Access",
+    "Butler-Style Service",
+    "All Concierge Tower Privileges",
+    "Exclusive Booking Channel"
+  ],
+  "hours": "Check-in 4:00 PM | Check-out 11:00 AM",
+  "heroImage": "/images/venues/atlantis-atrium-paradise-suite/hero.jpg",
   "images": [],
-  "faqs": [],
+  "faqs": [
+    {
+      "question": "How do I book the Atrium Paradise Suite?",
+      "answer": "VIP suites on the 26th and 27th floors at Atlantis are not available through standard booking channels. Contact GTHS directly \u2014 we can arrange group suite access for qualifying group sizes."
+    }
+  ],
   "testimonials": [
     {
       "stars": 5,
-      "quote": "Atrium Paradise Suite was a fun surprise on our trip. Perfect for the non-golfers and honestly the golfers enjoyed it too. Reno has so much more than just great courses.",
-      "author": "Paul S.",
-      "source": "TripAdvisor",
-      "meta": "TripAdvisor \u00b7 group dinner (24)"
-    },
-    {
-      "stars": 5,
-      "quote": "Visited Atrium Paradise Suite during our golf trip and it was a great addition to the itinerary. Nice change of pace from the courses. GTHS really knows how to round out a trip with the right activities.",
-      "author": "Mark W.",
-      "source": "TripAdvisor",
-      "meta": "TripAdvisor \u00b7 after-round drinks"
+      "quote": "Atlantis is a favorite hotel destination for travelers near and far. The resort genuinely offers everything you're looking for \u2014 and then some.",
+      "author": "Atlantis Casino Resort Spa",
+      "source": "AtlantisCasino.com",
+      "meta": "AtlantisCasino.com \u00b7 Official description"
     }
-  ]
+  ],
+  "meta": {
+    "title": "Atlantis Atrium Paradise Suite \u2013 VIP Penthouse Reno | Golf The High Sierra",
+    "description": "The Atlantis Atrium Paradise Suite \u2014 top VIP floors of Atlantis Casino Resort Spa, Reno. GTHS can arrange exclusive access for golf group organizers."
+  }
 }

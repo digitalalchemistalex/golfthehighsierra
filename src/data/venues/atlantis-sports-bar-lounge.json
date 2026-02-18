@@ -1,38 +1,4 @@
 {
-  "slug": "atlantis-sports-bar-lounge",
-  "name": "Atlantis Sports Bar & Lounge",
-  "type": "bar",
-  "priceRange": "$$",
-  "description": "24-hour sports bar located across from the Race & Sports Book, featuring 28 TV screens tuned to the nation's sporting events. Enjoy an extensive draft beer selection, over 90 whiskies from around the world, and great food from Manhattan Deli. Daily Happy Hour from 3pm to 6pm with half off drinks and select food. Every seat feels like a front row experience.",
-  "shortDescription": "24-hour sports bar with 28 TVs, 90+ whiskies, and daily happy hour at the Atlantis.",
-  "highlights": [
-    "24 Hours",
-    "28 TV Screens",
-    "90+ Whiskies",
-    "Draft Beer Selection",
-    "Daily Happy Hour 3-6pm",
-    "Race & Sports Book Adjacent"
-  ],
-  "hours": "Daily 24/7",
-  "heroImage": "/images/venues/atlantis-sports-bar-lounge/hero.jpg",
-  "faqs": [
-    {
-      "question": "Is the Sports Bar open 24 hours?",
-      "answer": "Yes, it's open 24/7 and located right across from the Race & Sports Book."
-    },
-    {
-      "question": "When is Happy Hour?",
-      "answer": "Daily from 3pm to 6pm with half off drinks and select food items."
-    },
-    {
-      "question": "How many TVs are there?",
-      "answer": "28 screens tuned to sporting events from around the country."
-    }
-  ],
-  "meta": {
-    "title": "Atlantis Sports Bar & Lounge \u2013 24hr Sports Bar Reno | Golf The High Sierra",
-    "description": "Watch every game on 28 screens with 90+ whiskies and daily happy hour at Atlantis Sports Bar & Lounge in Reno."
-  },
   "region": "reno",
   "regionLabel": "Reno",
   "parentHotel": "atlantis-casino-resort-spa-reno",
@@ -48,21 +14,44 @@
   },
   "phone": "(775) 825-4700",
   "website": "https://www.atlantiscasino.com",
+  "slug": "atlantis-sports-bar-lounge",
+  "name": "Atlantis Sports Bar & Lounge",
+  "type": "bar",
+  "priceRange": "$$",
+  "description": "Atlantis Sports Bar & Lounge is open 24 hours and located directly adjacent to the Race & Sports Book \u2014 the center of the action for any group with sports bets running alongside tee times. Multiple screens cover national and international sports around the clock. Draft beer, whiskeys, and a full bar menu keep the group going whether it's a 6 AM tee time pre-game or a midnight wind-down after a day on the course. Part of a casino floor that includes 1,391 slot machines and 36 gaming tables.",
+  "shortDescription": "24-hour sports bar adjacent to the Race & Sports Book \u2014 multiple screens, draft beer, and full bar service.",
+  "highlights": [
+    "Open 24 Hours",
+    "Adjacent to Race & Sports Book",
+    "Multiple Sports Screens",
+    "Draft Beer Selection",
+    "Full Bar & Cocktails",
+    "Casino Floor Access"
+  ],
+  "hours": "Open 24 hours",
+  "heroImage": "/images/venues/atlantis-sports-bar-lounge/hero.jpg",
   "images": [],
+  "faqs": [
+    {
+      "question": "Is the Sports Bar open during early morning tee times?",
+      "answer": "Yes \u2014 the Atlantis Sports Bar & Lounge is open 24 hours, making it accessible before early tee times and after late rounds."
+    },
+    {
+      "question": "Can I place sports bets from the Sports Bar?",
+      "answer": "The Sports Bar is directly adjacent to the Atlantis Race & Sports Book where bets are placed. The two areas are connected for easy access."
+    }
+  ],
   "testimonials": [
     {
       "stars": 4,
-      "quote": "Atlantis Sports Bar & Lounge has become our go-to after-golf hangout. Cold beers, good energy, and it's right inside atlantis-casino-resort-spa-reno. GTHS knows all the best spots.",
-      "author": "Gary B.",
-      "source": "Google",
-      "meta": "Google \u00b7 after-round drinks"
-    },
-    {
-      "stars": 4,
-      "quote": "We ended every day of our golf trip at Atlantis Sports Bar & Lounge. Great selection, friendly bartenders, and the kind of place where your group can be loud and happy after a great round.",
-      "author": "Steve W.",
-      "source": "Google",
-      "meta": "Google \u00b7 golf trip group"
+      "quote": "Great casino floor \u2014 clean and well maintained. The sports book area keeps the energy going throughout the day and night.",
+      "author": "TripAdvisor Traveler",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 Verified stay"
     }
-  ]
+  ],
+  "meta": {
+    "title": "Atlantis Sports Bar & Lounge \u2013 24-Hour Bar & Sports Book Reno | Golf The High Sierra",
+    "description": "Atlantis Sports Bar & Lounge in Reno is open 24 hours, adjacent to the Race & Sports Book \u2014 multiple screens, draft beer, and full bar for golf groups."
+  }
 }

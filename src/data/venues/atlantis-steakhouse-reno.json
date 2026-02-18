@@ -1,0 +1,75 @@
+{
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 824-4330",
+  "website": "https://www.atlantiscasino.com",
+  "slug": "atlantis-steakhouse-reno",
+  "name": "Atlantis Steakhouse",
+  "type": "restaurant",
+  "priceRange": "$$$$",
+  "description": "Northern Nevada's only Forbes Travel Guide Four-Star restaurant \u2014 a distinction shared by only 146 establishments worldwide. The Atlantis Steakhouse serves Allen Brothers of Chicago dry-aged USDA prime beef and Japanese Wagyu imported from Kumamoto, Japan. The wine list of 336 selections has received the Wine Spectator Award of Excellence for over 23 consecutive years. Styled with honey onyx accents, glowing warm lighting, and plush dining settees, the room captures a cosmopolitan elegance that moves between Chicago and San Francisco in feel. Tableside preparations \u2014 Caesar salad, Steak Diane, Bananas Foster, and more \u2014 are a house signature. Private dining for groups of 15 to 50 can be arranged, making this the natural choice for a group golf dinner.",
+  "shortDescription": "Northern Nevada's only Forbes Four-Star restaurant. Allen Brothers steaks, tableside service, and 336-selection wine list.",
+  "highlights": [
+    "Forbes Four-Star (Only in Northern Nevada)",
+    "Allen Brothers Chicago Prime Beef",
+    "Japanese Wagyu \u2014 Kumamoto, Japan",
+    "336 Wine Selections \u2014 Wine Spectator Award 23+ Years",
+    "Tableside Caesar, Steak Diane & Bananas Foster",
+    "Private Dining for Groups of 15\u201350"
+  ],
+  "hours": "Dinner nightly \u2014 reservations recommended",
+  "heroImage": "/images/venues/atlantis-steakhouse/hero.jpg",
+  "images": [],
+  "faqs": [
+    {
+      "question": "Does the Atlantis Steakhouse take group reservations?",
+      "answer": "Yes. Private dining for groups of 15 to 50 can be arranged. Contact the restaurant directly at (775) 824-4330 or ask GTHS to coordinate as part of a golf package."
+    },
+    {
+      "question": "What makes the Atlantis Steakhouse Forbes Four-Star?",
+      "answer": "The Forbes Travel Guide Four-Star distinction is held by only 146 restaurants worldwide. The Atlantis Steakhouse is the only Forbes Four-Star restaurant in Northern Nevada, earning this rating through consistent quality of food, service, and ambiance."
+    },
+    {
+      "question": "What wines are available?",
+      "answer": "The wine list features 336 selections curated by the in-house sommelier. The list has earned the Wine Spectator Award of Excellence for more than 23 consecutive years."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "As a group of 8, we sat in the back room. Food, service, setting, ambiance were all top-notch. Been there many times and they never disappoint.",
+      "author": "TripAdvisor Traveler",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 Group dining review"
+    },
+    {
+      "stars": 5,
+      "quote": "Ate with a party of 60. All food came out hot, tender, and delicious. You don't find that very often with large groups. The chef even came out to check on everyone.",
+      "author": "TripAdvisor Traveler",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 Large group dining"
+    },
+    {
+      "stars": 5,
+      "quote": "It's rated the top restaurant in Reno on TripAdvisor for good reason. The Caesar salad made tableside was a highlight. We were stuffed and it was worth every penny.",
+      "author": "TripAdvisor Traveler",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 Verified diner"
+    }
+  ],
+  "meta": {
+    "title": "Atlantis Steakhouse \u2013 Northern Nevada's Only Forbes Four-Star Restaurant | Golf The High Sierra",
+    "description": "Book the Atlantis Steakhouse in Reno \u2014 Northern Nevada's only Forbes Four-Star restaurant. Allen Brothers prime beef, Kumamoto Wagyu, 336 wines, tableside service, and private group dining."
+  }
+}

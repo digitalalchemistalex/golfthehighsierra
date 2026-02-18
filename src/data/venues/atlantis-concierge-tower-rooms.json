@@ -1,0 +1,57 @@
+{
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "slug": "atlantis-concierge-tower-rooms",
+  "name": "Atlantis Concierge Tower Room",
+  "type": "room",
+  "priceRange": "$$$",
+  "description": "Atlantis is home to Northern Nevada's only Concierge Tower \u2014 a distinction that sets it apart from every other resort in the region. Concierge Tower Rooms include exclusive access to the 25th-floor Concierge Lounge, which offers complimentary continental breakfast, afternoon hors d'oeuvres, and evening cocktails daily. All rooms in the Concierge Tower have been completely remodeled with a contemporary aesthetic, featuring 55-inch flat-screen HDTVs, Bose Wave Radio, floor-to-ceiling windows, and refrigerators. Available in king and two-queen configurations.",
+  "shortDescription": "Northern Nevada's only Concierge Tower \u2014 includes 25th-floor lounge access with complimentary breakfast and cocktails.",
+  "highlights": [
+    "Northern Nevada's Only Concierge Tower",
+    "25th-Floor Concierge Lounge Access",
+    "Complimentary Breakfast",
+    "Afternoon Hors d'oeuvres",
+    "Evening Cocktails",
+    "Fully Remodeled Rooms"
+  ],
+  "hours": "Check-in 4:00 PM | Check-out 11:00 AM",
+  "heroImage": "/images/venues/atlantis-concierge-tower-room/hero.jpg",
+  "images": [],
+  "faqs": [
+    {
+      "question": "What's included in Concierge Lounge access?",
+      "answer": "The 25th-floor Concierge Lounge offers complimentary continental breakfast, afternoon hors d'oeuvres, and evening cocktails for all Concierge Tower guests."
+    },
+    {
+      "question": "Is the Concierge Tower unique to Atlantis?",
+      "answer": "Yes. Atlantis is home to the only Concierge Tower in Northern Nevada, making it the only resort in the region to offer this level of service."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Several guests had an excellent experience at the concierge tower and highly recommend it for a more luxurious stay. The lounge is a nice touch after a long day on the course.",
+      "author": "KAYAK reviewer",
+      "source": "KAYAK",
+      "meta": "KAYAK \u00b7 Verified stay"
+    }
+  ],
+  "meta": {
+    "title": "Atlantis Concierge Tower Room \u2013 Northern Nevada's Only Concierge Tower | Golf The High Sierra",
+    "description": "Stay in Atlantis Casino Resort Spa's exclusive Concierge Tower \u2014 the only one in Northern Nevada. Includes 25th-floor lounge with complimentary breakfast, hors d'oeuvres, and cocktails."
+  }
+}
