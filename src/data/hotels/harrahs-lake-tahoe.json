@@ -129,5 +129,7 @@
       "source": "TripAdvisor",
       "meta": "TripAdvisor · family reunion (48)"
     }
-  ]
+  ],
+  "priceRange": "",
+  "priceFrom": ""
 }

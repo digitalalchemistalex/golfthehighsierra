@@ -175,5 +175,7 @@
       "source": "TripAdvisor",
       "meta": "TripAdvisor · business travel"
     }
-  ]
+  ],
+  "priceRange": "",
+  "priceFrom": ""
 }

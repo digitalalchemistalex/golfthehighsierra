@@ -136,5 +136,7 @@
       "source": "Yelp",
       "meta": "Yelp · wedding block (40)"
     }
-  ]
+  ],
+  "priceRange": "",
+  "priceFrom": ""
 }

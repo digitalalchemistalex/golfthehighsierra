@@ -121,5 +121,7 @@
       "source": "TripAdvisor",
       "meta": "TripAdvisor · wedding block (16)"
     }
-  ]
+  ],
+  "priceRange": "",
+  "priceFrom": ""
 }

@@ -8,7 +8,7 @@ export interface RegionData {
   hotels: { name: string; slug?: string }[];
   whyPlay: string;
   bestFor: string[];
-  priceRange: string;
+  priceRange?: string;
   season: string;
   courseRegions: string[]; // region keys matching course data
   meta: {

@@ -63,7 +63,7 @@ export function generateGolfCourseSchema(course: GolfCourse) {
           ...course.geo,
         },
         telephone: course.phone || siteConfig.phone,
-        priceRange: course.priceRange,
+        ...(course.priceRange && { priceRange: course.priceRange }),
         ...(course.rating && {
           aggregateRating: {
             "@type": "AggregateRating",
@@ -141,7 +141,7 @@ export function generateHotelSchema(hotel: Hotel) {
           ...hotel.geo,
         },
         telephone: hotel.phone || siteConfig.phone,
-        priceRange: hotel.priceRange,
+        ...(hotel.priceRange && { priceRange: hotel.priceRange }),
         ...(hotel.starRating && { starRating: { "@type": "Rating", ratingValue: String(hotel.starRating) } }),
         ...(hotel.totalRooms && { numberOfRooms: hotel.totalRooms }),
         ...(hotel.rating && {

@@ -167,5 +167,7 @@
       "source": "Yelp",
       "meta": "Yelp · golf group of 24"
     }
-  ]
+  ],
+  "priceRange": "",
+  "priceFrom": ""
 }

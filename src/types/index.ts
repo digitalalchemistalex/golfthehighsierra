@@ -44,7 +44,7 @@ export interface GolfCourse {
   geo: GeoCoordinates;
   phone?: string;
   website?: string;
-  priceRange: string;
+  priceRange?: string;
   greenFees?: string;
   rating?: Rating;
   description: string;
@@ -95,7 +95,7 @@ export interface Hotel {
   geo: GeoCoordinates;
   phone?: string;
   website?: string;
-  priceRange: string;
+  priceRange?: string;
   priceFrom?: string;
   starRating?: number;
   aaaRating?: string; // "Four Diamond", etc.
