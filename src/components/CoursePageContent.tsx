@@ -179,10 +179,9 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
         {/* ── RIGHT: Trips Caddie Slider or fallback image ── */}
         <div className="hidden lg:block w-full lg:w-1/2 relative border-l-0 lg:border-l border-white/[0.04]">
           <HeroTripSlider slug={course.slug} type="course" />
-          {/* Fallback: show second gallery image when no trips load */}
+          {/* Fallback: show gallery image when no trips load */}
           <div className="hero-right-fallback absolute inset-0 -z-[1]">
-            {galleryImages[1] && <Image src={galleryImages[1]} alt={`${course.name} gallery`} fill {...bp(galleryImages[1])} className="object-cover brightness-[.45]" sizes="50vw" />}
-            {!galleryImages[1] && course.heroImage && <Image src={course.heroImage} alt={course.name} fill {...bp(course.heroImage)} className="object-cover brightness-[.35] scale-x-[-1]" sizes="50vw" />}
+            {course.images?.[1] ? <Image src={course.images[1]} alt={`${course.name} gallery`} fill {...bp(course.images[1])} className="object-cover brightness-[.45]" sizes="50vw" /> : course.heroImage && <Image src={course.heroImage} alt={course.name} fill {...bp(course.heroImage)} className="object-cover brightness-[.35] scale-x-[-1]" sizes="50vw" />}
           </div>
         </div>
 
