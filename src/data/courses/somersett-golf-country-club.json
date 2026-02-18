@@ -16,7 +16,7 @@
     "value": 4.8,
     "count": 347
   },
-  "description": "While looking up you may catch a glimpse of a hawk or golden eagle, at eye level you may see deer or a coyote but facing down our fairways you will surely take note of the 62 white sand bunkers and 7 lakes. This private country club has quickly become a jewel of Reno and is available for groups after 12pm if booked through Golf the High Sierra. Named one of Golfweek’s top private residential courses, Somersett Country Club has found its distinction as a secret, must-play that should be included on any Reno/Tahoe golf trip itinerary.",
+  "description": "While looking up you may catch a glimpse of a hawk or golden eagle, at eye level you may see deer or a coyote but facing down our fairways you will surely take note of the 62 white sand bunkers and 7 lakes. This private country club has quickly become a jewel of Reno and is available for groups after 12pm if booked through Golf the High Sierra. Named one of Golfweek\u2019s top private residential courses, Somersett Country Club has found its distinction as a secret, must-play that should be included on any Reno/Tahoe golf trip itinerary.",
   "holes": 18,
   "par": 72,
   "designer": "Tom Kite",
@@ -28,21 +28,22 @@
     "/images/courses/somersett-golf-country-club/hole-5.jpg",
     "/images/courses/somersett-golf-country-club/hole-6.jpg",
     "/images/courses/somersett-golf-country-club/hole-10.jpg",
-    "/images/courses/somersett-golf-country-club/hole-11.jpg"
+    "/images/courses/somersett-golf-country-club/hole-11.jpg",
+    "/images/courses/somersett-golf-country-club/header-bg.jpg"
   ],
   "videoUrl": "",
   "faqs": [
     {
-      "question": "What’s included in Somersett golf group packages?",
+      "question": "What\u2019s included in Somersett golf group packages?",
       "answer": "Lodging, guaranteed tee times at Somersett, carts, and concierge planning. Add transportation, dining, and multi-course options."
     },
     {
       "question": "How much do Somersett group packages cost?",
-      "answer": "Typical range is $179–$399 per golfer depending on season, lodging, and group size."
+      "answer": "Typical range is $179\u2013$399 per golfer depending on season, lodging, and group size."
     },
     {
       "question": "Do you handle corporate or tournament groups?",
-      "answer": "Yes—room blocks, tee-time blocks, tournament setup, and transportation for corporate and leisure groups."
+      "answer": "Yes\u2014room blocks, tee-time blocks, tournament setup, and transportation for corporate and leisure groups."
     }
   ],
   "meta": {
@@ -51,7 +52,7 @@
   },
   "bodyText": [
     "Play Somersett in Reno with golf groups, tee times, and stay and play packages. Expert trip planning for buddies, corporate, and leisure groups.",
-    "Somersett Golf and Country Club is nestled against Peavine Mountain opposite the eastern slopes of the Sierra Nevada in Northwest Reno.  Elevated well above the valley floor, breathtaking vistas abound as you navigate 62 white sand bunkers, seven lakes, and dramatic elevation changes while playing this gorgeously-designed private golf course.",
+    "Somersett Golf and Country Club is nestled against Peavine Mountain opposite the eastern slopes of the Sierra Nevada in Northwest Reno.\u00a0 Elevated well above the valley floor, breathtaking vistas abound as you navigate 62 white sand bunkers, seven lakes, and dramatic elevation changes while playing this gorgeously-designed private golf course.",
     "{\n\"@context\": \"http://schema.org\",\n\"@type\"   : \"ImageGallery\",\n\"id\"      : \"https://golfthehighsierra.com/portfolio/somersett-golf-country-club/\",\n\"url\"     : \"https://golfthehighsierra.com/portfolio/somersett-golf-country-club/\"\n}",
     "Reno, NV\n2019 Championship Trail\nReno, Nevada 89523\n15 Minutes from Downtown Reno\n21 Minutes from Peppermill and Atlantis\n35 Minutes from Truckee, CA\n43 Minutes from Carson City, NV\n60 Minutes from Minden, NV\n71 Minutes from Graeagle, CA\n73 Minutes from Stateline, NV"
   ],
@@ -71,10 +72,10 @@
   "contentParagraphs": [
     "Play Somersett in Reno with golf groups, tee times, and stay and play packages. Expert trip planning for buddies, corporate, and leisure groups.",
     "Somersett Golf and Country Club is nestled against Peavine Mountain opposite the eastern slopes of the Sierra Nevada in Northwest Reno. Elevated well above the valley floor, breathtaking vistas abound as you navigate 62 white sand bunkers, seven lakes, and dramatic elevation changes while playing this gorgeously-designed private golf course.",
-    "Options include a stretched out 7,252 yards when played from the Sierra Tees, or a shortened up 6,393 yards from the Truckee Tees. Shorter hitters may opt for 5,912 yards from the Peavine Tees or go at 5,216 yards from the Rose Tees. Wherever you decide to play from, you will enjoy the generous landing areas of perfectly groomed emerald bluegrass fairways. Somersett’s many elevation changes allow for many spectacular panoramic views of the Nevada high desert."
+    "Options include a stretched out 7,252 yards when played from the Sierra Tees, or a shortened up 6,393 yards from the Truckee Tees. Shorter hitters may opt for 5,912 yards from the Peavine Tees or go at 5,216 yards from the Rose Tees. Wherever you decide to play from, you will enjoy the generous landing areas of perfectly groomed emerald bluegrass fairways. Somersett\u2019s many elevation changes allow for many spectacular panoramic views of the Nevada high desert."
   ],
   "featuredHole": {
-    "title": "Hole #8 — Par 4",
+    "title": "Hole #8 \u2014 Par 4",
     "description": "A risk-reward par 4 with a dramatic elevated tee and views of the Truckee Meadows. Big hitters can cut the corner over the ravine, but a miss left is gone. Smart play is a long iron off the tee to the wide part of the fairway."
   },
   "teeTimeInfo": "",
@@ -90,21 +91,21 @@
       "quote": "If you're planning a golf trip to Reno, NV, you have to play Somersett Golf & Country Club. We had 16 guys and GTHS handled all the logistics. Course was in fantastic shape and the practice facility was top-notch.",
       "author": "Sean L.",
       "source": "Google",
-      "meta": "Google · annual golf weekend (48)"
+      "meta": "Google \u00b7 annual golf weekend (48)"
     },
     {
       "stars": 5,
       "quote": "Somersett Golf & Country Club delivers every time. This was our third trip and the course keeps getting better. Par 3s are memorable, greens are quick and true. Best value for championship golf in the Reno, NV area.",
       "author": "Patricia G.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · annual golf weekend (48)"
+      "meta": "TripAdvisor \u00b7 annual golf weekend (48)"
     },
     {
       "stars": 5,
-      "quote": "Our annual group plays Somersett Golf & Country Club every year through GTHS. The course never disappoints — it's always in tournament condition. The Reno, NV scenery makes it feel like a bucket-list round every time.",
+      "quote": "Our annual group plays Somersett Golf & Country Club every year through GTHS. The course never disappoints \u2014 it's always in tournament condition. The Reno, NV scenery makes it feel like a bucket-list round every time.",
       "author": "Amanda P.",
       "source": "Google",
-      "meta": "Google · corporate group of 16"
+      "meta": "Google \u00b7 corporate group of 16"
     }
   ],
   "priceRange": ""

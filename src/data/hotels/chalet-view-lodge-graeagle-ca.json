@@ -22,7 +22,7 @@
     "count": 523,
     "sources": "TripAdvisor"
   },
-  "description": "Nestled in the heart of the High Sierra, Chalet View Lodge is a boutique resort where rustic elegance meets modern comfort in a serene forest setting. Crafted from timber and stone, this mountain retreat sprawls across 10 picturesque acres — offering lodge rooms, terrace suites, and private cabins surrounded by sweeping views of forests, streams, and alpine trails.",
+  "description": "Nestled in the heart of the High Sierra, Chalet View Lodge is a boutique resort where rustic elegance meets modern comfort in a serene forest setting. Crafted from timber and stone, this mountain retreat sprawls across 10 picturesque acres \u2014 offering lodge rooms, terrace suites, and private cabins surrounded by sweeping views of forests, streams, and alpine trails.",
   "shortDescription": "Timber-and-stone boutique resort on 10 acres with on-site brewery, spa, 9-hole course, and mountain luxury.",
   "highlights": [
     "10 acres of timber-and-stone mountain resort",
@@ -55,7 +55,6 @@
   ],
   "heroImage": "/images/hotels/chalet-view-lodge/hero.jpg",
   "images": [
-    "/images/hotels/chalet-view-lodge/hero.jpg",
     "/images/hotels/chalet-view-lodge/rooms-hero.jpg",
     "/images/hotels/chalet-view-lodge/bedroom.jpg",
     "/images/hotels/chalet-view-lodge/lobby.jpg",
@@ -66,7 +65,8 @@
     "/images/hotels/chalet-view-lodge/villa.jpg",
     "/images/hotels/chalet-view-lodge/golf-meadow.jpg",
     "/images/hotels/chalet-view-lodge/grounds.jpg",
-    "/images/hotels/chalet-view-lodge/suite.jpg"
+    "/images/hotels/chalet-view-lodge/suite.jpg",
+    "/images/hotels/chalet-view-lodge/rustic-cabin.jpg"
   ],
   "nearbyGolf": [
     "nakoma-dragon-golf-course",
@@ -82,7 +82,7 @@
     },
     {
       "question": "What room types work best for golf groups?",
-      "answer": "The rustic cabins and villas are ideal for groups — villas offer multiple bedrooms, full kitchens, and private outdoor space. Resort rooms work well for individual golfers."
+      "answer": "The rustic cabins and villas are ideal for groups \u2014 villas offer multiple bedrooms, full kitchens, and private outdoor space. Resort rooms work well for individual golfers."
     },
     {
       "question": "Does Chalet View Lodge have dining on-site?",
@@ -95,7 +95,7 @@
   ],
   "meta": {
     "title": "Chalet View Lodge | Boutique Mountain Resort & Brewery | Golf the High Sierra",
-    "description": "Stay at Chalet View Lodge — a 10-acre National Geographic-featured boutique resort with on-site brewery, 9-hole golf course, spa, and access to Dragon, Graeagle Meadows & Plumas Pines golf courses."
+    "description": "Stay at Chalet View Lodge \u2014 a 10-acre National Geographic-featured boutique resort with on-site brewery, 9-hole golf course, spa, and access to Dragon, Graeagle Meadows & Plumas Pines golf courses."
   },
   "totalRooms": 49,
   "roomTypes": [
@@ -113,7 +113,7 @@
     },
     {
       "name": "Villa",
-      "description": "Private multi-bedroom villas with full kitchens, living areas, and outdoor space — perfect for golf groups and families."
+      "description": "Private multi-bedroom villas with full kitchens, living areas, and outdoor space \u2014 perfect for golf groups and families."
     }
   ],
   "dining": [
@@ -147,10 +147,10 @@
     "plumas-pines-private-residency-graeagle"
   ],
   "contentParagraphs": [
-    "Nestled in the heart of the High Sierra, Chalet View Lodge is a boutique resort where rustic elegance meets modern comfort in a serene forest setting. Crafted from timber and stone, this mountain retreat sprawls across 10 picturesque acres — offering 33 resort rooms, 9 terrace suites, and 7 private cabins surrounded by sweeping views of forests, streams, and alpine trails. Featured in National Geographic's Lakes & Mountains collection, it's a destination that lives up to the hype.",
+    "Nestled in the heart of the High Sierra, Chalet View Lodge is a boutique resort where rustic elegance meets modern comfort in a serene forest setting. Crafted from timber and stone, this mountain retreat sprawls across 10 picturesque acres \u2014 offering 33 resort rooms, 9 terrace suites, and 7 private cabins surrounded by sweeping views of forests, streams, and alpine trails. Featured in National Geographic's Lakes & Mountains collection, it's a destination that lives up to the hype.",
     "Wake to the scent of pine and adventure outside your door: hike, snowshoe, bike, or tee off on the resort's 9-hole executive golf course. After exploring, unwind by the seasonal outdoor pool and hot tub, spa, volleyball courts, or the charming catch-and-release fishing pond. The resort also offers bocce ball, basketball, horseshoe pits, and a playground.",
-    "Inside, enjoy thoughtful amenities — cozy accommodations with lofted seating, in-room tablets, Nespresso coffee machines, and exclusive Molton Brown bath products. Personal assistant services via IVY text keep everything at your fingertips. Dine on locally inspired fare at two on-site restaurants: savor artisan brews paired with seasonal plates at Eureka Peak Brewing Co., or enjoy garden-view dining at Kitchen+Bar.",
-    "Chalet View Lodge is more than a stay — it's a luxurious mountain escape, a premier wedding venue, and a gathering spot for family and friends. With full spa services, tranquil surroundings, and staff known for warm hospitality, it's a place you'll want to return to time and again."
+    "Inside, enjoy thoughtful amenities \u2014 cozy accommodations with lofted seating, in-room tablets, Nespresso coffee machines, and exclusive Molton Brown bath products. Personal assistant services via IVY text keep everything at your fingertips. Dine on locally inspired fare at two on-site restaurants: savor artisan brews paired with seasonal plates at Eureka Peak Brewing Co., or enjoy garden-view dining at Kitchen+Bar.",
+    "Chalet View Lodge is more than a stay \u2014 it's a luxurious mountain escape, a premier wedding venue, and a gathering spot for family and friends. With full spa services, tranquil surroundings, and staff known for warm hospitality, it's a place you'll want to return to time and again."
   ],
   "acreage": 10,
   "testimonials": [
@@ -159,21 +159,21 @@
       "quote": "Stayed at Chalet View Lodge for our golf trip and it was the perfect home base. Rooms were clean and spacious, location was ideal for hitting courses around Graeagle. GTHS got us a group rate we couldn't find anywhere else.",
       "author": "Greg D.",
       "source": "Google",
-      "meta": "Google · business travel"
+      "meta": "Google \u00b7 business travel"
     },
     {
       "stars": 5,
       "quote": "We've stayed at several Graeagle properties for golf trips and Chalet View Lodge is now our go-to. Great amenities, solid dining options, and the rooms are comfortable after a long day on the course.",
       "author": "Tony P.",
       "source": "Google",
-      "meta": "Google · business travel"
+      "meta": "Google \u00b7 business travel"
     },
     {
       "stars": 5,
-      "quote": "Chalet View Lodge exceeded our expectations. The staff was incredibly accommodating with our group of 24 — early breakfast, late checkout, bag storage. Everything GTHS promised about this property was accurate.",
+      "quote": "Chalet View Lodge exceeded our expectations. The staff was incredibly accommodating with our group of 24 \u2014 early breakfast, late checkout, bag storage. Everything GTHS promised about this property was accurate.",
       "author": "Rebecca R.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · business travel"
+      "meta": "TripAdvisor \u00b7 business travel"
     }
   ],
   "priceRange": "",
