@@ -198,6 +198,15 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
 
       </section>
 
+      {/* ═══ HACK / PUNCHLINE ═══ */}
+      {course.hack && (
+        <div style={{ background: "var(--gold)", padding: "clamp(16px,2.5vh,22px) clamp(24px,5vw,80px)", textAlign: "center" }}>
+          <p style={{ fontFamily: "var(--serif)", fontSize: "clamp(16px,2vw,22px)", fontWeight: 600, fontStyle: "italic", color: "#fff", margin: 0, letterSpacing: "-.01em" }}>
+            &ldquo;{course.hack}&rdquo;
+          </p>
+        </div>
+      )}
+
       {/* ═══ 2. CONTENT — text + gallery ═══ */}
       <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 600 }} className="max-md:!grid-cols-1">
         <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
