@@ -7,11 +7,11 @@ import '@/styles/homepage.css';
 
 /* ─── Data ─── */
 const HERO_REGIONS = [
-  { name: 'Reno', img: '/images/regions/reno.jpg', alt: 'Reno Nevada championship golf', pitch: '<strong>7 championship courses</strong> and casino-resort lodging — booked with one call. Your group registers online through TripsCaddie. You never chase a dollar.', tabCourses: '7 courses', tabDetail: 'Casino resorts · Year-round · 300 days sun', tabPrice: 'From $189/golfer' },
-  { name: 'South Lake', img: '/images/regions/tahoe.jpg', alt: 'Edgewood Tahoe lakefront golf', pitch: '<strong>Edgewood Tahoe</strong> — home of the Celebrity Championship. Lakefront finishing holes your group will talk about for years. We handle lodging, dining, everything.', tabCourses: '3 courses', tabDetail: 'Edgewood · Celebrity Championship · Lakefront', tabPrice: 'From $299/golfer' },
-  { name: 'Truckee', img: '/images/regions/truckee.jpg', alt: 'Old Greenwood Golf Course Truckee', pitch: '<strong>PGA TOUR venue Old Greenwood</strong>, hidden gem Coyote Moon, mountain villas in the pines. One contract covers courses, lodging, transport — you show up and play.', tabCourses: '4 courses', tabDetail: 'Old Greenwood PGA · Coyote Moon · Villas', tabPrice: 'From $249/golfer' },
-  { name: 'Graeagle', img: '/images/regions/graeagle.jpg', alt: 'Graeagle Lost Sierra golf', pitch: '<strong>Five uncrowded courses</strong> in pristine mountain forest. Grizzly Ranch, Nakoma Dragon, Whitehawk. The ultimate golf escape — and we plan every detail.', tabCourses: '5 courses', tabDetail: 'Lost Sierra · Grizzly Ranch · Nakoma Dragon', tabPrice: 'From $149/golfer' },
-  { name: 'Carson Valley', img: '/images/regions/carson.jpg', alt: 'Genoa Lakes Golf Carson Valley', pitch: '<strong>Championship golf from $149/golfer.</strong> Genoa Lakes, Dayton Valley, Eagle Valley — same full-service planning, same portal, half the price.', tabCourses: '4 courses', tabDetail: 'Best value · Genoa Lakes · Mountain panoramas', tabPrice: 'From $149/golfer' },
+  { name: 'Reno', img: '/images/regions/reno.jpg', alt: 'Reno Nevada championship golf', pitch: '<strong>7 championship courses</strong> and casino-resort lodging — booked with one call. Your group registers online through TripsCaddie. You never chase a dollar.', tabCourses: '7 courses', tabDetail: 'Casino resorts · Year-round · 300 days sun' },
+  { name: 'South Lake', img: '/images/regions/tahoe.jpg', alt: 'Edgewood Tahoe lakefront golf', pitch: '<strong>Edgewood Tahoe</strong> — home of the Celebrity Championship. Lakefront finishing holes your group will talk about for years. We handle lodging, dining, everything.', tabCourses: '3 courses', tabDetail: 'Edgewood · Celebrity Championship · Lakefront' },
+  { name: 'Truckee', img: '/images/regions/truckee.jpg', alt: 'Old Greenwood Golf Course Truckee', pitch: '<strong>PGA TOUR venue Old Greenwood</strong>, hidden gem Coyote Moon, mountain villas in the pines. One contract covers courses, lodging, transport — you show up and play.', tabCourses: '4 courses', tabDetail: 'Old Greenwood PGA · Coyote Moon · Villas' },
+  { name: 'Graeagle', img: '/images/regions/graeagle.jpg', alt: 'Graeagle Lost Sierra golf', pitch: '<strong>Five uncrowded courses</strong> in pristine mountain forest. Grizzly Ranch, Nakoma Dragon, Whitehawk. The ultimate golf escape — and we plan every detail.', tabCourses: '5 courses', tabDetail: 'Lost Sierra · Grizzly Ranch · Nakoma Dragon' },
+  { name: 'Carson Valley', img: '/images/regions/carson.jpg', alt: 'Genoa Lakes Golf Carson Valley', pitch: '<strong>Championship golf from $149/golfer.</strong> Genoa Lakes, Dayton Valley, Eagle Valley — same full-service planning, same portal, half the price.', tabCourses: '4 courses', tabDetail: 'Best value · Genoa Lakes · Mountain panoramas' },
 ];
 
 const TRUST = [
@@ -189,7 +189,6 @@ export default function HomepageContent() {
               <button key={i} className={`hero-rtab${i === slide ? ' active' : ''}`} onClick={() => handleNav(i)}>
                 <div className="rtab-top"><span className="rtab-name">{r.name}</span><span className="rtab-courses">{r.tabCourses}</span></div>
                 <div className="rtab-detail">{r.tabDetail}</div>
-                <div className="rtab-price">{r.tabPrice} →</div>
               </button>
             ))}
           </div>
