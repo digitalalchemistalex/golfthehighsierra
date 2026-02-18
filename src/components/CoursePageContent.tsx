@@ -310,6 +310,24 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16, marginTop: 24 }} className="max-md:!grid-cols-1">
             {relatedCourses.map((rc, i) => (
               <R key={rc.slug} delay={0.12 + i * 0.06}>
+                {isEmbed ? (
+                <a href={`https://golfthehighsierra.com/portfolio/${rc.slug}/`} target="_top" style={{ textDecoration: "none", color: "inherit" }}>
+                  <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--white)", transition: "all .5s" }} className="hover:!border-transparent hover:!shadow-[0_16px_48px_rgba(0,0,0,.06)] hover:-translate-y-1">
+                    <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
+                      {rc.heroImage ? <Image src={rc.heroImage} alt={rc.name} fill {...bp(rc.heroImage)} className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
+                      {rc.priceRange && <span style={{ position: "absolute", top: 10, right: 10, background: "var(--ink)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 10, fontWeight: 600 }}>{rc.priceRange}</span>}
+                    </div>
+                    <div style={{ padding: 16 }}>
+                      <div style={{ fontFamily: "var(--serif)", fontSize: 18, fontWeight: 400, color: "var(--ink)" }}>{rc.name}</div>
+                      <div style={{ fontSize: 10, textTransform: "uppercase", letterSpacing: 2, color: "var(--stone)", margin: "4px 0 12px" }}>{rc.regionLabel}</div>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: 10, borderTop: "1px solid var(--bone)" }}>
+                        {rc.rating && <span style={{ fontSize: 10, color: "var(--stone)" }}>★ {rc.rating.value}</span>}
+                        <span style={{ fontSize: 10, color: "var(--gold)", fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>View →</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                ) : (
                 <Link href={`/portfolio/${rc.slug}/`}>
                   <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--white)", transition: "all .5s" }} className="hover:!border-transparent hover:!shadow-[0_16px_48px_rgba(0,0,0,.06)] hover:-translate-y-1">
                     <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
@@ -326,6 +344,7 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
                     </div>
                   </div>
                 </Link>
+                )}
               </R>
             ))}
           </div>
@@ -374,9 +393,15 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
         </R>
         <R delay={0.28}>
           <div style={{ display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap", position: "relative", zIndex: 1 }}>
+            {isEmbed ? (
+              <a href="https://golfthehighsierra.com/contact-custom-golf-package/" target="_top" style={{ display: "inline-block", padding: "15px 36px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 10, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase", transition: "all .4s", textDecoration: "none" }} className="hover:!bg-[#D4B76A] hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(201,162,77,.2)]">
+                Plan My Trip
+              </a>
+            ) : (
             <Link href="/contact-custom-golf-package/" style={{ display: "inline-block", padding: "15px 36px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 10, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase", transition: "all .4s" }} className="hover:!bg-[#D4B76A] hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(201,162,77,.2)]">
               Plan My Trip
             </Link>
+            )}
             <a href="tel:+18885848232" style={{ display: "inline-block", padding: "15px 36px", border: "1px solid rgba(255,255,255,.1)", color: "rgba(255,255,255,.65)", borderRadius: 100, fontSize: 10, fontWeight: 400, letterSpacing: 2, textTransform: "uppercase", transition: "all .4s" }} className="hover:!border-white/35 hover:!text-white">
               Call 888-584-8232
             </a>
