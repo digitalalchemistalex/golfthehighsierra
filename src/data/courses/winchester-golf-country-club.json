@@ -13,7 +13,7 @@
     "latitude": 38.9565,
     "longitude": -121.0315
   },
-  "phone": "+1-888-584-8232",
+  "phone": "+1-530-878-3001",
   "website": "https://www.winchestercountryclub.com/",
   "rating": {
     "value": 75.1,
@@ -104,7 +104,7 @@
   "teeTimeInfo": "Private club \u2014 group access arranged through Golf the High Sierra. Call 888-584-8232.",
   "teeTips": [],
   "yardage": 7144,
-  "slope": 143,
+  "slope": 145,
   "courseRating": 75.0,
   "yearBuilt": 2000,
   "logo": "/images/courses/winchester-golf-country-club/winchester-logo.png",
@@ -140,39 +140,353 @@
   ],
   "teeOptions": [
     {
-      "name": "Black",
+      "name": "Gold",
       "yardage": 7144,
       "rating": 75.1,
-      "slope": 143
+      "slope": 145
+    },
+    {
+      "name": "Black",
+      "yardage": 6819,
+      "rating": 73.8,
+      "slope": 142
+    },
+    {
+      "name": "Tournament",
+      "yardage": 6554,
+      "rating": 72.1,
+      "slope": 141
     },
     {
       "name": "Blue",
-      "yardage": 6713,
-      "rating": 72.4,
-      "slope": 138
+      "yardage": 6363,
+      "rating": 71.3,
+      "slope": 139
+    },
+    {
+      "name": "Member",
+      "yardage": 6063,
+      "rating": 69.9,
+      "slope": 135
     },
     {
       "name": "White",
-      "yardage": 6247,
-      "rating": 70.1,
-      "slope": 133
+      "yardage": 5856,
+      "rating": 69.2,
+      "slope": 131
     },
     {
-      "name": "Gold",
-      "yardage": 5707,
-      "rating": 67.5,
-      "slope": 126
+      "name": "WCC",
+      "yardage": 5528,
+      "rating": 67.4,
+      "slope": 123
     },
     {
-      "name": "Red",
-      "yardage": 5144,
-      "rating": 65.2,
-      "slope": 119
+      "name": "Green",
+      "yardage": 5289,
+      "rating": 66.3,
+      "slope": 118
     }
   ],
   "featuredHoleLabel": "Hole 18 \u2014 The Lodge Finish",
   "acreage": 223,
   "elevation": "1,800 ft",
   "courseType": "Private",
-  "drivingRange": "25-tee driving range"
+  "drivingRange": "25-tee driving range",
+  "scorecard": {
+    "tees": [
+      {
+        "name": "Gold",
+        "color": "#C9A24D",
+        "rating": 75.1,
+        "slope": 145,
+        "total": 7144,
+        "holes": [
+          428,
+          199,
+          433,
+          564,
+          384,
+          416,
+          172,
+          385,
+          517,
+          503,
+          227,
+          398,
+          575,
+          412,
+          223,
+          396,
+          401,
+          511
+        ]
+      },
+      {
+        "name": "Black",
+        "color": "#111111",
+        "rating": 73.8,
+        "slope": 142,
+        "total": 6819,
+        "holes": [
+          400,
+          171,
+          414,
+          533,
+          370,
+          406,
+          163,
+          373,
+          511,
+          481,
+          212,
+          379,
+          566,
+          388,
+          192,
+          387,
+          379,
+          494
+        ]
+      },
+      {
+        "name": "Tournament",
+        "color": "#4A4A4A",
+        "rating": 72.1,
+        "slope": 141,
+        "total": 6554,
+        "holes": [
+          400,
+          171,
+          378,
+          533,
+          329,
+          379,
+          163,
+          373,
+          488,
+          481,
+          187,
+          354,
+          536,
+          388,
+          162,
+          359,
+          379,
+          494
+        ]
+      },
+      {
+        "name": "Blue",
+        "color": "#1E3A7F",
+        "rating": 71.3,
+        "slope": 139,
+        "total": 6363,
+        "holes": [
+          375,
+          163,
+          378,
+          509,
+          329,
+          379,
+          145,
+          353,
+          488,
+          457,
+          187,
+          354,
+          536,
+          362,
+          162,
+          359,
+          354,
+          473
+        ]
+      },
+      {
+        "name": "Member",
+        "color": "#2E5E9E",
+        "rating": 69.9,
+        "slope": 135,
+        "total": 6063,
+        "holes": [
+          375,
+          163,
+          356,
+          509,
+          281,
+          344,
+          145,
+          326,
+          437,
+          457,
+          165,
+          316,
+          502,
+          362,
+          139,
+          359,
+          354,
+          473
+        ]
+      },
+      {
+        "name": "White",
+        "color": "#FFFFFF",
+        "rating": 69.2,
+        "slope": 131,
+        "total": 5856,
+        "holes": [
+          358,
+          136,
+          356,
+          503,
+          281,
+          344,
+          122,
+          326,
+          437,
+          432,
+          165,
+          316,
+          502,
+          326,
+          139,
+          331,
+          335,
+          447
+        ]
+      },
+      {
+        "name": "WCC",
+        "color": "#8B7355",
+        "rating": 67.4,
+        "slope": 123,
+        "total": 5528,
+        "holes": [
+          334,
+          136,
+          356,
+          503,
+          257,
+          344,
+          122,
+          279,
+          394,
+          401,
+          108,
+          316,
+          502,
+          326,
+          101,
+          304,
+          324,
+          421
+        ]
+      },
+      {
+        "name": "Green",
+        "color": "#2D5A27",
+        "rating": 66.3,
+        "slope": 118,
+        "total": 5289,
+        "holes": [
+          334,
+          118,
+          326,
+          478,
+          257,
+          287,
+          99,
+          279,
+          394,
+          401,
+          108,
+          305,
+          466,
+          287,
+          101,
+          304,
+          324,
+          421
+        ]
+      }
+    ],
+    "par": [
+      4,
+      3,
+      4,
+      5,
+      4,
+      4,
+      3,
+      4,
+      5,
+      4,
+      3,
+      4,
+      5,
+      4,
+      3,
+      4,
+      4,
+      5
+    ],
+    "handicap": {
+      "gentlemens": [
+        6,
+        12,
+        8,
+        2,
+        14,
+        10,
+        16,
+        4,
+        18,
+        1,
+        7,
+        15,
+        9,
+        5,
+        13,
+        11,
+        3,
+        17
+      ],
+      "ladies": [
+        6,
+        16,
+        4,
+        2,
+        12,
+        14,
+        18,
+        10,
+        8,
+        1,
+        17,
+        7,
+        3,
+        15,
+        13,
+        11,
+        5,
+        9
+      ]
+    }
+  },
+  "managedBy": "Duncan Golf Management",
+  "managementGroup": {
+    "name": "Duncan Golf Management",
+    "courses": [
+      "Winchester Country Club",
+      "Wolf Run Golf Club",
+      "Lake Ridge Golf Club",
+      "Toiyabe Golf Club"
+    ],
+    "note": "Part of the Duncan Golf Management family \u2014 play all four courses on one trip."
+  },
+  "courseMapImage": "/images/courses/winchester-golf-country-club/course-map.jpg",
+  "designerQuote": "\"Winchester Country Club represents the last collaboration between Robert Trent Jones, Sr. and Robert Trent Jones, Jr., who co-designed this elegant layout that unfolds across 223 forested acres in the Sierra Nevada foothills above Sacramento.\" \u2014 Robert Trent Jones Group",
+  "fax": "530-878-9515"
 }
