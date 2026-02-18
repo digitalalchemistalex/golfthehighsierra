@@ -65,3 +65,16 @@
   height: auto !important;
   max-height: 600px !important;
 }
+
+/* ─── Embed mode: fix hero height for iframe ─── */
+.gths-embed section:first-child {
+  min-height: 500px !important;
+  height: 500px !important;
+  max-height: 500px !important;
+}
+.gths-embed section:first-child > div:first-child {
+  height: 500px !important;
+}
+.gths-embed .lg\:h-screen {
+  height: 500px !important;
+}
