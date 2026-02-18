@@ -64,11 +64,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   if (type === "course") {
     const course = getCourseBySlug(params.slug)!;
+    const absImg = course.heroImage?.startsWith("/") ? `https://golfthehighsierra.com${course.heroImage}` : course.heroImage;
     return {
       title: course.meta.title, description: course.meta.description,
       robots: { index: true, follow: true },
-      openGraph: { title: course.meta.title, description: course.meta.description, url: `https://golfthehighsierra.com/portfolio/${course.slug}/`, images: course.heroImage ? [{ url: course.heroImage, width: 1200, height: 630 }] : [] },
-      twitter: { card: "summary_large_image", title: course.meta.title, description: course.meta.description },
+      openGraph: { title: course.meta.title, description: course.meta.description, url: `https://golfthehighsierra.com/portfolio/${course.slug}/`, images: absImg ? [{ url: absImg, width: 1200, height: 630 }] : [], type: "website", siteName: "Golf the High Sierra" },
+      twitter: { card: "summary_large_image", title: course.meta.title, description: course.meta.description, images: absImg ? [absImg] : [] },
       alternates: { canonical: `https://golfthehighsierra.com/portfolio/${course.slug}/` },
     };
   }
@@ -103,28 +104,41 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
     const course = getCourseBySlug(params.slug)!;
     const related = getCoursesByRegion(course.region).filter((c) => c.slug !== course.slug).slice(0, 3);
     const geo = course.geo as { latitude?: number; longitude?: number };
+    const BASE = "https://golfthehighsierra.com";
+    const pageUrl = `${BASE}/portfolio/${course.slug}/`;
+    const absImage = course.heroImage?.startsWith("/") ? `${BASE}${course.heroImage}` : course.heroImage;
     const schema = {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "GolfCourse", name: course.name, description: course.description,
-          url: `https://golfthehighsierra.com/portfolio/${course.slug}/`,
-          image: course.heroImage,
+          url: pageUrl, image: absImage,
           ...(course.address?.streetAddress && {
             address: { "@type": "PostalAddress", streetAddress: course.address.streetAddress, addressLocality: course.address.addressLocality, addressRegion: course.address.addressRegion, postalCode: course.address.postalCode, addressCountry: "US" },
           }),
           ...(geo?.latitude && { geo: { "@type": "GeoCoordinates", latitude: geo.latitude, longitude: geo.longitude } }),
           telephone: course.phone || "+1-888-584-8232",
           priceRange: course.priceRange,
+          ...(course.par && { numberOfHoles: course.holes || 18 }),
+          ...(course.designer && { founder: course.designer }),
+          ...(course.yearBuilt && { foundingDate: String(course.yearBuilt) }),
           ...(course.rating && { aggregateRating: { "@type": "AggregateRating", ratingValue: course.rating.value, ratingCount: course.rating.count, bestRating: 5, worstRating: 1 } }),
+          ...(course.testimonials?.length > 0 && { review: course.testimonials.slice(0, 3).map((t: { stars: number; quote: string; author: string; source: string }) => ({
+            "@type": "Review", reviewRating: { "@type": "Rating", ratingValue: t.stars, bestRating: 5 }, author: { "@type": "Person", name: t.author }, reviewBody: t.quote, publisher: { "@type": "Organization", name: t.source },
+          })) }),
+          amenityFeature: [
+            { "@type": "LocationFeatureSpecification", name: "Group Golf Packages", value: true },
+            { "@type": "LocationFeatureSpecification", name: "Corporate Events", value: true },
+          ],
         },
-        { "@type": "Service", name: `${course.name} Golf Groups & Stay and Play Packages`, serviceType: "Golf travel package", provider: { "@type": "Organization", name: "Golf the High Sierra", url: "https://golfthehighsierra.com", telephone: "+1-888-584-8232" } },
+        { "@type": "Service", name: `${course.name} Golf Groups & Stay and Play Packages`, serviceType: "Golf travel package", provider: { "@type": "Organization", name: "Golf the High Sierra", url: BASE, telephone: "+1-888-584-8232", sameAs: ["https://www.facebook.com/golfthehighsierra", "https://www.instagram.com/golfthehighsierra"] } },
         ...(course.faqs.length > 0 ? [{ "@type": "FAQPage", mainEntity: course.faqs.map((faq: { question: string; answer: string }) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) }] : []),
         { "@type": "BreadcrumbList", itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://golfthehighsierra.com" },
-          { "@type": "ListItem", position: 2, name: "Golf Courses", item: "https://golfthehighsierra.com/best-golf-courses-reno/" },
-          { "@type": "ListItem", position: 3, name: course.name, item: `https://golfthehighsierra.com/portfolio/${course.slug}/` },
+          { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+          { "@type": "ListItem", position: 2, name: "Golf Courses", item: `${BASE}/best-golf-courses-reno/` },
+          { "@type": "ListItem", position: 3, name: course.name, item: pageUrl },
         ]},
+        { "@type": "WebPage", "@id": pageUrl, name: course.meta.title, description: course.meta.description, speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", ".course-intro", ".course-faq"] }, isPartOf: { "@type": "WebSite", name: "Golf the High Sierra", url: BASE } },
       ],
     };
     return (

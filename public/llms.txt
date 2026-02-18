@@ -1,0 +1,180 @@
+# Golf the High Sierra (GTHS)
+# The premier golf trip planner for Reno, Lake Tahoe, Carson Valley & Graeagle since 2004.
+# Website: https://golfthehighsierra.com
+# Phone: 1-888-584-8232
+# Email: info@golfthehighsierra.com
+# Service: Custom group golf packages for 4-400+ players across 5 regions in Northern Nevada and California
+
+## About
+Golf the High Sierra plans turnkey golf trips in the Reno-Tahoe-Carson Valley-Graeagle region. Services include tee time coordination, hotel booking, dining reservations, transportation, and event planning for buddy trips, corporate outings, and charity tournaments. Over 20 years of experience with 20,000+ groups served.
+
+## Golf Courses (26)
+- ArrowCreek Country Club | Reno, NV | Par 72 | 7150 yards | Slope 142 | Designer: Arnold Palmer (Legend) / Fuzzy Zoeller (Challenge) | Rating: 4.8/5 | Price: $219–$429 | URL: https://golfthehighsierra.com/portfolio/arrowcreek-golf-club/
+- Bayonet & Black Horse Golf Course | Northern California | Par 72 | 7104 yards | Slope 141 | Designer: General Robert McClure / Gene Bates (renovation) | Rating: 4.3/5 | Price: $$ | URL: https://golfthehighsierra.com/portfolio/bayonet-black-horse-golf-course/
+- Coyote Moon Golf Course | Truckee, CA | Par 72 | 7177 yards | Slope 140 | Designer: Brad Bell | Rating: 4.8/5 | Price: $199–$499 | URL: https://golfthehighsierra.com/portfolio/coyote-moon-golf-course/
+- Dayton Valley Golf Club | Carson Valley, NV | Par 72 | 7218 yards | Slope 138 | Designer: Arnold Palmer | Rating: 4.8/5 | Price: $199–$499 | URL: https://golfthehighsierra.com/portfolio/dayton-valley-golf-club/
+- Eagle Valley Golf Course | Carson Valley, NV | Par 72 | 6851 yards | Slope 127 | Designer: Jack Miller & Homer Flint (West) / Rocky Roquemore (East) | Rating: 4.8/5 | Price: $199–$499 | URL: https://golfthehighsierra.com/portfolio/eagle-valley-golf-course/
+- Edgewood Tahoe Golf Course | Lake Tahoe | Par 72 | 7555 yards | Slope 142 | Designer: George Fazio | Rating: 4.8/5 | Price: $299–$699 | URL: https://golfthehighsierra.com/portfolio/edgewood-tahoe-golf-course/
+- Genoa Lakes Golf Club | Carson Valley, NV | Par 72 | 7263 yards | Slope 135 | Designer: Peter Jacobsen & Jim Hardy | Rating: 4.8/5 | Price: $179–$399 | URL: https://golfthehighsierra.com/portfolio/genoa-lakes-golf-club/
+- Graeagle Meadows Golf Course | Graeagle, CA | Par 72 | 6700 yards | Slope 125 | Designer: Ellis Van Gorder | Rating: 4.8/5 | Price: $149–$349 | URL: https://golfthehighsierra.com/portfolio/graeagle-meadows-golf-course/
+- Gray’s Crossing Golf Course | Truckee, CA | Par 72 | 7243 yards | Slope 139 | Designer: Peter Jacobsen | Rating: 4.6/5 | Price: $189–$429 | URL: https://golfthehighsierra.com/portfolio/grays-crossing-golf-course/
+- Grizzly Ranch Golf Club | Graeagle, CA | Par 72 | 7007 yards | Slope 140 | Designer: Bob Cupp | Rating: 4.7/5 | Price: $179–$599 | URL: https://golfthehighsierra.com/portfolio/grizzly-ranch-golf-club/
+- Incline Village Golf Courses | Lake Tahoe | Par 72 | 7106 yards | Slope 136 | Designer: Robert Trent Jones Sr. | Rating: 4.7/5 | Price: $189–$449 | URL: https://golfthehighsierra.com/portfolio/incline-village-golf-courses-nv/
+- Lake Tahoe Golf Course | South Lake Tahoe | Par 71 | 6741 yards | Slope 129 | Designer: William Bell Jr. | Rating: 4.2/5 | Price: $$ | URL: https://golfthehighsierra.com/portfolio/lake-tahoe-golf-course/
+- Lakeridge Golf Course | Reno, NV | Par 72 | 6717 yards | Slope 130 | Designer: Robert Trent Jones Jr. | Rating: 4.8/5 | Price: $219–$429 | URL: https://golfthehighsierra.com/portfolio/lakeridge-golf-course/
+- Nakoma Dragon Golf Course | Graeagle, CA | Par 72 | 7031 yards | Slope 136 | Designer: Robin Nelson & Neil Haworth | Rating: 4.8/5 | Price: $199–$449 | URL: https://golfthehighsierra.com/portfolio/nakoma-dragon-golf-course/
+- Northstar Golf Course | Truckee, CA | Par 72 | 6897 yards | Slope 135 | Designer: Robert Muir Graves | Rating: 4.5/5 | Price: $299–$499 | URL: https://golfthehighsierra.com/portfolio/northstar-golf-course/
+- Old Greenwood Golf Course | Truckee, CA | Par 72 | 7518 yards | Slope 141 | Designer: Jack Nicklaus | Rating: 4.8/5 | Price: $179–$399 | URL: https://golfthehighsierra.com/portfolio/old-greenwood-golf-course/
+- Plumas Pines Golf Resort | Graeagle, CA | Par 72 | 6504 yards | Slope 131 | Designer: Homer Flint | Rating: 4.8/5 | Price: $199–$499 | URL: https://golfthehighsierra.com/portfolio/plumas-pines-golf-resort/
+- Poppy Hills Golf Course | Northern California | Par 71 | 7002 yards | Slope 135 | Designer: Robert Trent Jones Jr. | Rating: 4.5/5 | Price: $$$ | URL: https://golfthehighsierra.com/portfolio/poppy-hills-golf-course/
+- Red Hawk Golf Resort | Reno, NV | Par 72 | 7090 yards | Slope 139 | Designer: Robert Trent Jones Jr. | Rating: 4.8/5 | Price: $219–$429 | URL: https://golfthehighsierra.com/portfolio/red-hawk-golf-resort/
+- Somersett Golf & Country Club | Reno, NV | Par 72 | 6870 yards | Slope 135 | Designer: Tom Kite | Rating: 4.8/5 | Price: $179–$399 | URL: https://golfthehighsierra.com/portfolio/somersett-golf-country-club/
+- Tahoe Donner Golf Course | Lake Tahoe | Par 72 | 6927 yards | Slope 139 | Designer: Roy Williams | Rating: 4.8/5 | Price: $139–$329 | URL: https://golfthehighsierra.com/portfolio/tahoe-donner-golf-course-truckee-ca/
+- Toiyabe Golf Club | Reno, NV | Par 72 | 7116 yards | Slope 137 | Designer: Robert Muir Graves | Rating: 4.8/5 | Price: $199–$499 | URL: https://golfthehighsierra.com/portfolio/toiyabe-golf-club/
+- Washoe County Golf Course | Reno, NV | Par 72 | 6695 yards | Slope 121 | Designer: Original layout c. 1917, redesigned multiple times | Rating: 4.8/5 | Price: $179–$399 | URL: https://golfthehighsierra.com/portfolio/washoe-county-golf-course/
+- Whitehawk Ranch Golf Course | Graeagle, CA | Par 72 | 6926 yards | Slope 133 | Designer: Dick Bailey | Rating: 4.6/5 | Price: $249–$449 | URL: https://golfthehighsierra.com/portfolio/whitehawk-ranch-golf-course/
+- Winchester Country Club | Meadow Vista, CA | Par 72 | 7144 yards | Slope 143 | Designer: Robert Trent Jones Sr. & Robert Trent Jones Jr. | Rating: 4.7/5 | Price: $200–$350 | URL: https://golfthehighsierra.com/portfolio/winchester-golf-country-club/
+- Wolf Run Golf Club | Reno, NV | Par 72 | 7100 yards | Slope 131 | Designer: John Fleming | Rating: 4.8/5 | Price: $199–$399 | URL: https://golfthehighsierra.com/portfolio/wolf-run-golf-club/
+
+## Hotels & Accommodations (23)
+- Atlantis Casino Resort Spa | Reno | 4-star | Price: $129–$499 | Rating: 4.5/5 | URL: https://golfthehighsierra.com/portfolio/atlantis-casino-resort-spa-reno/
+- Carson Valley Inn & Casino | Carson Valley | N/A-star | Price: $85–$249 | Rating: 4.1/5 | URL: https://golfthehighsierra.com/portfolio/carson-valley-inn-casino/
+- Gravity Haus Truckee-Tahoe | Truckee | N/A-star | Price: $184–$543 | Rating: 4.5/5 | URL: https://golfthehighsierra.com/portfolio/cedar-house-sport-hotel/
+- Chalet View Lodge | Graeagle | N/A-star | Price:  | Rating: 4.0/5 | URL: https://golfthehighsierra.com/portfolio/chalet-view-lodge-graeagle-ca/
+- Circus Circus Reno Hotel & Casino | Reno | N/A-star | Price: $89–$249 | Rating: 3.8/5 | URL: https://golfthehighsierra.com/portfolio/circus-circus-reno/
+- Eldorado Resort Casino – AT THE ROW | Reno | N/A-star | Price: $89–$399 | Rating: 4.1/5 | URL: https://golfthehighsierra.com/portfolio/eldorado-resorts-reno-eldorado-at-the-row/
+- Golden Nugget Lake Tahoe | Lake Tahoe | N/A-star | Price: $149–$600 | Rating: 4.1/5 | URL: https://golfthehighsierra.com/portfolio/golden-nugget-lake-tahoe/
+- Grand Sierra Resort & Casino | Reno | 4-star | Price: $109–$599 | Rating: 4.3/5 | URL: https://golfthehighsierra.com/portfolio/grand-sierra-resort-reno/
+- Hampton Inn & Suites Truckee | Truckee | N/A-star | Price: $159–$349 | Rating: 4.4/5 | URL: https://golfthehighsierra.com/portfolio/hampton-inn-truckee-ca/
+- Harrah's Lake Tahoe | Lake Tahoe | N/A-star | Price: $129–$499 | Rating: 4.1/5 | URL: https://golfthehighsierra.com/portfolio/harrahs-lake-tahoe/
+- Harvey's Lake Tahoe | Lake Tahoe | N/A-star | Price: $149–$549 | Rating: 4.2/5 | URL: https://golfthehighsierra.com/portfolio/harveys-lake-tahoe/
+- Hyatt Regency Lake Tahoe | Lake Tahoe | 4-star | Price: $199–$799 | Rating: 4.4/5 | URL: https://golfthehighsierra.com/portfolio/hyatt-lake-tahoe/
+- J Resort | Reno | N/A-star | Price: $79–$299 | Rating: 3.9/5 | URL: https://golfthehighsierra.com/portfolio/j-resort-reno/
+- Lake Tahoe Resort Hotel | Lake Tahoe | N/A-star | Price: $149–$399 | Rating: 4.0/5 | URL: https://golfthehighsierra.com/portfolio/lake-tahoe-resort-hotel/
+- Margaritaville Resort Lake Tahoe | Lake Tahoe | N/A-star | Price: $179–$599 | Rating: 4.3/5 | URL: https://golfthehighsierra.com/portfolio/margaritaville-lake-tahoe/
+- The Inn at Nakoma | Graeagle | N/A-star | Price:  | Rating: 4.2/5 | URL: https://golfthehighsierra.com/portfolio/nakoma-resort-graeagle-ca/
+- Nugget Casino Resort | Reno / Sparks | N/A-star | Price: $79–$349 | Rating: 4.2/5 | URL: https://golfthehighsierra.com/portfolio/nugget-casino-resort-reno/
+- Old Greenwood Lodging | Truckee | N/A-star | Price: $249–$999 | Rating: 4.6/5 | URL: https://golfthehighsierra.com/portfolio/old-greenwood-lodging-truckee-ca/
+- Peppermill Resort Spa Casino | Reno | 4-star | Price: $149–$799 | Rating: 4.5/5 | URL: https://golfthehighsierra.com/portfolio/peppermill-resort-spa-casino/
+- The Townhomes at Plumas Pines | Graeagle | N/A-star | Price:  | Rating: 4.5/5 | URL: https://golfthehighsierra.com/portfolio/plumas-pines-private-residency-graeagle/
+- Portola Hotel & Spa | Northern California | 4-star | Price: $249–$699 | Rating: 4.4/5 | URL: https://golfthehighsierra.com/portfolio/portola-hotel-spa-monterey/
+- River Pines Resort | Graeagle | N/A-star | Price:  | Rating: 4.3/5 | URL: https://golfthehighsierra.com/portfolio/river-pines-resort-graeagle-ca/
+- Silver Legacy Resort Casino | Reno | N/A-star | Price: $99–$449 | Rating: 4.2/5 | URL: https://golfthehighsierra.com/portfolio/silver-legacy-resort-casino/
+
+## Dining, Entertainment & Experiences (65)
+
+### Amenity (1)
+- Carson Valley Inn Amenities | Carson Valley | $–$$ | URL: https://golfthehighsierra.com/portfolio/carson-valley-inn-amenities/
+
+### Bar (21)
+- Atlantis Cocktail Lounge | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/atlantis-cocktail-lounge/
+- Atlantis Sports Bar & Lounge | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/atlantis-sports-bar-lounge/
+- Atlantis Steakhouse Lounge | Reno | $$$ | URL: https://golfthehighsierra.com/portfolio/atlantis-steakhouse/
+- Blender Bar | Reno | $–$$ | URL: https://golfthehighsierra.com/portfolio/blender-bar-silver-legacy/
+- Chapel Tavern | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/chapel-tavern-reno/
+- Comedy Bar | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/comedy-bar-silver-legacy/
+- Death & Taxes | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/death-and-taxes-reno/
+- Drinx | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/drinx-silver-legacy/
+- Bar Centro | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/eldorado-bar-centro/
+- Cin Cin Bar & Lounge | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/eldorado-cin-cin/
+- Lead Dog Brewing | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/lead-dog-brewing-reno/
+- Peppermill Sports Bar | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/peppermill-sports-bar/
+- Pignic Pub & Patio | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/pignic-pub-and-patio-reno/
+- Ringside Bar | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/ringside-bar-eldorado/
+- Rum Bullions Island Bar | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/rum-bullions-island-bar/
+- Rum Sugar Lime | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/rum-sugar-lime-reno/
+- Silver Legacy Sports Bar | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/silver-legacy-sports-bar/
+- Stadium Bar | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/stadium-bar-eldorado/
+- The Eddy | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/the-eddy-reno/
+- The Emerson | Reno | $$–$$$ | URL: https://golfthehighsierra.com/portfolio/the-emerson-reno/
+- The Highlander Bar | South Lake Tahoe | $$ | URL: https://golfthehighsierra.com/portfolio/the-highlander-bar/
+
+### Fitness (1)
+- Harvey's Fitness Center | South Lake Tahoe | $ | URL: https://golfthehighsierra.com/portfolio/harveys-fitness-center/
+
+### Lounge (3)
+- Cabaret Lounge | Carson Valley | $–$$ | URL: https://golfthehighsierra.com/portfolio/cabaret-lounge-carson-valley-inn/
+- Cliché Lounge | South Lake Tahoe | $$ | URL: https://golfthehighsierra.com/portfolio/cliche-lounge-harrahs-tahoe/
+- Silver Baron Lounge | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/silver-baron-lounge/
+
+### Museum (2)
+- National Automobile Museum | Reno | $ | URL: https://golfthehighsierra.com/portfolio/national-automobile-museum-reno/
+- Nevada Museum of Art | Reno | $ | URL: https://golfthehighsierra.com/portfolio/nevada-museum-of-art-reno/
+
+### Pool (1)
+- Harvey's Heated Pool | South Lake Tahoe | $$ | URL: https://golfthehighsierra.com/portfolio/harveys-heated-pool/
+
+### Restaurant (9)
+- The Brew Brothers | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/eldorado-brew-brothers/
+- The Eldorado Coffee Company | Reno | $ | URL: https://golfthehighsierra.com/portfolio/eldorado-coffee-company/
+- Hidden Pizza | Reno | $ | URL: https://golfthehighsierra.com/portfolio/eldorado-hidden-pizza/
+- Ichiban Japanese Steak House | Reno | $$$ | URL: https://golfthehighsierra.com/portfolio/eldorado-ichiban/
+- La Strada | Reno | $$$ | URL: https://golfthehighsierra.com/portfolio/eldorado-la-strada/
+- Millies | Reno | $ | URL: https://golfthehighsierra.com/portfolio/eldorado-millies/
+- Roxy | Reno | $$$ | URL: https://golfthehighsierra.com/portfolio/eldorado-roxy/
+- Starbucks Coffee | Reno | $ | URL: https://golfthehighsierra.com/portfolio/eldorado-starbucks/
+- Sushi Sake | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/eldorado-sushi-sake/
+
+### Room (23)
+- Atrium Paradise Suite | Reno | $$$$ | URL: https://golfthehighsierra.com/portfolio/atlantis-atrium-paradise-suite/
+- Bar Suite | Reno | $$$$ | URL: https://golfthehighsierra.com/portfolio/atlantis-bar-suite/
+- Concierge Tower Room | Reno | $$$ | URL: https://golfthehighsierra.com/portfolio/atlantis-concierge-tower-room/
+- Executive Spa Suite | Reno | $$$$ | URL: https://golfthehighsierra.com/portfolio/atlantis-executive-spa-suite/
+- Luxury Tower Room | Reno | $$$ | URL: https://golfthehighsierra.com/portfolio/atlantis-luxury-tower-room/
+- Spa Suite | Reno | $$$$ | URL: https://golfthehighsierra.com/portfolio/atlantis-spa-suite/
+- Atlantis Tower Room | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/atlantis-tower-room/
+- Corner Spa Suite | 1 King | Reno | $$$$ | URL: https://golfthehighsierra.com/portfolio/eldorado-corner-spa-suite/
+- Sierra Executive Suite | 1 King | Reno | $$$$ | URL: https://golfthehighsierra.com/portfolio/eldorado-sierra-executive-suite/
+- Sierra Luxury Room | 1 King | Reno | $$$ | URL: https://golfthehighsierra.com/portfolio/eldorado-sierra-luxury-1-king/
+- Sierra Luxury Room | 2 Queen | Reno | $$$ | URL: https://golfthehighsierra.com/portfolio/eldorado-sierra-luxury-2-queen/
+- Sierra Studio Suite | 1 King | Reno | $$$ | URL: https://golfthehighsierra.com/portfolio/eldorado-sierra-studio-suite/
+- Skyline Deluxe Room | 1 King | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/eldorado-skyline-deluxe-1-king/
+- Skyline Player Spa Suite | Large | Reno | $$$$ | URL: https://golfthehighsierra.com/portfolio/eldorado-skyline-player-spa-large/
+- Skyline Player Spa Suite | Small | Reno | $$$ | URL: https://golfthehighsierra.com/portfolio/eldorado-skyline-player-spa-small/
+- Skyline Superior Room | 1 King | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/eldorado-skyline-superior-1-king/
+- Skyline Superior Room | 2 Queens | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/eldorado-skyline-superior-2-queens/
+- Skyline VIP Hospitality Suite | Reno | $$$$ | URL: https://golfthehighsierra.com/portfolio/eldorado-skyline-vip-hospitality/
+- Spa One Bedroom Suite | Reno | $$$$ | URL: https://golfthehighsierra.com/portfolio/eldorado-spa-one-bedroom-suite/
+- Virginia Deluxe Room | 2 Queens | Reno | $$ | URL: https://golfthehighsierra.com/portfolio/eldorado-virginia-deluxe-2-queens/
+- Virginia Petite Room | 1 Queen | Reno | $ | URL: https://golfthehighsierra.com/portfolio/eldorado-virginia-petite-1-queen/
+- Virginia Twenty One Suite | Reno | $$$ | URL: https://golfthehighsierra.com/portfolio/eldorado-virginia-twenty-one-suite/
+- Players Corner Spa Suite | Reno | $$$ | URL: https://golfthehighsierra.com/portfolio/players-corner-spa-suite/
+
+### Shopping (2)
+- Outlets at Legends | Reno / Sparks | $$ | URL: https://golfthehighsierra.com/portfolio/outlets-at-legends-sparks/
+- SCHEELS | Reno / Sparks | $$–$$$ | URL: https://golfthehighsierra.com/portfolio/scheels-sparks/
+
+### Spa (2)
+- Reflections the Spa | Reno / Sparks | $$$ | URL: https://golfthehighsierra.com/portfolio/reflections-the-spa-nugget/
+- The Spa at Silver Legacy | Reno | $$$ | URL: https://golfthehighsierra.com/portfolio/spa-at-silver-legacy/
+
+## Key Landing Pages
+- All Golf Courses: https://golfthehighsierra.com/best-golf-courses-reno/
+- Lake Tahoe Courses: https://golfthehighsierra.com/best-golf-courses-lake-tahoe/
+- Accommodations: https://golfthehighsierra.com/accommodations-in-reno-tahoe/
+- Experiences: https://golfthehighsierra.com/experiences-things-to-do-in-reno-nv/
+- Restaurants: https://golfthehighsierra.com/best-restaurants-reno-nv/
+- Reno Golf Packages: https://golfthehighsierra.com/reno-golf-packages/
+- Lake Tahoe Packages: https://golfthehighsierra.com/lake-tahoe-golf-packages/
+- Group Golf: https://golfthehighsierra.com/group-golf-reno-tahoe/
+- Corporate Events: https://golfthehighsierra.com/corporate-golf-events/
+- About Us: https://golfthehighsierra.com/about-group-golf-packages/
+- Contact / Get a Quote: https://golfthehighsierra.com/contact-custom-golf-package/
+- FAQ: https://golfthehighsierra.com/faq/
+- Blog: https://golfthehighsierra.com/blog-explore-the-high-sierra/
+- TripsCaddie App: https://golfthehighsierra.com/trips-caddie-app/
+- Locations Map: https://golfthehighsierra.com/locations-map/
+
+## Regions Served
+- Reno, NV (10 courses, 8 hotels, 40+ venues)
+- North Lake Tahoe & Truckee, CA (4 courses, 3 hotels)
+- South Lake Tahoe / Stateline, NV (3 courses, 6 hotels)
+- Carson Valley, NV (2 courses, 1 hotel)
+- Graeagle / Plumas County, CA (3 courses, 2 lodges)
+
+## Contact
+Golf the High Sierra
+Reno, NV
+Phone: 1-888-584-8232
+Email: info@golfthehighsierra.com
+Website: https://golfthehighsierra.com

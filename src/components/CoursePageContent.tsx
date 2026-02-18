@@ -188,7 +188,7 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
           <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em" }}>
             {course.featuredHole?.title ? <>The <em style={{ fontStyle: "italic" }}>{course.featuredHole.title.replace(/^The\s*/i, "")}</em></> : <>Where Mountains Meet <em style={{ fontStyle: "italic" }}>Mastery</em></>}
           </h2></R>
-          <R delay={0.16}><p style={{ fontSize: 13, lineHeight: 1.9, color: "var(--stone)", fontWeight: 300, maxWidth: 440, marginTop: 16 }}>{para1}</p></R>
+          <R delay={0.16}><p className="course-intro" style={{ fontSize: 13, lineHeight: 1.9, color: "var(--stone)", fontWeight: 300, maxWidth: 440, marginTop: 16 }}>{para1}</p></R>
           <R delay={0.2}><div style={{ width: 40, height: 1, background: "var(--bone)", margin: "20px 0" }} /></R>
           <R delay={0.22}><h3 style={{ fontFamily: "var(--serif)", fontWeight: 600, fontSize: "clamp(16px,1.8vw,20px)", lineHeight: 1.3, color: "var(--charcoal)", marginBottom: 8 }}>Group Golf Packages &amp; Tee Times</h3></R>
           <R delay={0.24}><p style={{ fontSize: 13, lineHeight: 1.9, color: "var(--stone)", fontWeight: 300, maxWidth: 440 }}>From 8 to 100 players — consecutive tee times, rooming lists, comps for organizers. Buddy trip, corporate outing, or charity tournament. 20+ years of expert group planning.</p></R>
@@ -279,7 +279,7 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
         </div>
 
         {/* Right: FAQ */}
-        <div style={{ padding: "clamp(48px,8vh,80px) clamp(32px,5vw,80px)", background: "var(--white)" }}>
+        <div className="course-faq" style={{ padding: "clamp(48px,8vh,80px) clamp(32px,5vw,80px)", background: "var(--white)" }}>
           <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>FAQ</div></R>
           <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, marginBottom: 20 }}>Common <em style={{ fontStyle: "italic" }}>Questions</em></h2></R>
           {course.faqs.slice(0, 5).map((f, i) => (
