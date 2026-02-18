@@ -7,14 +7,7 @@ const nextConfig = {
       { source: '/best-golf-courses-reno/', destination: '/reno-golf-packages/', permanent: true },
       { source: '/lake-tahoe-golf-packages/', destination: '/best-golf-courses-lake-tahoe/', permanent: true },
       { source: '/group-golf-lodging-packages/', destination: '/best-golf-courses-carson-valley/', permanent: true },
-      // ── Original WP slug redirects (already existed) ──
-      { source: '/portfolio/atlantis-tower-rooms/', destination: '/portfolio/atlantis-tower-room/', permanent: true },
-      { source: '/portfolio/atlantis-luxury-tower-rooms/', destination: '/portfolio/atlantis-luxury-tower-room/', permanent: true },
-      { source: '/portfolio/atlantis-concierge-tower-rooms/', destination: '/portfolio/atlantis-concierge-tower-room/', permanent: true },
-      { source: '/portfolio/atlantis-spa-suites/', destination: '/portfolio/atlantis-spa-suite/', permanent: true },
-      { source: '/portfolio/atlantis-executive-spa-suites/', destination: '/portfolio/atlantis-executive-spa-suite/', permanent: true },
-      { source: '/portfolio/atlantis-bar-suites/', destination: '/portfolio/atlantis-bar-suite/', permanent: true },
-      { source: '/portfolio/atlantis-steakhouse-reno/', destination: '/portfolio/atlantis-steakhouse/', permanent: true },
+      // ── Atlantis sub-page redirects removed — pages now live at these slugs ──
       { source: '/portfolio/poppy-hills-golf-course-pebble-beach-ca/', destination: '/portfolio/poppy-hills-golf-course/', permanent: true },
       { source: '/portfolio/bayonet-black-horse-group-golf-seaside/', destination: '/portfolio/bayonet-black-horse-golf-course/', permanent: true },
 
