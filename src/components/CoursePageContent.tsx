@@ -116,6 +116,8 @@ function Lightbox({ images, startIndex, onClose, name }: { images: string[]; sta
    ═══════════════════════════════════════ */
 export default function CoursePageContent({ course, relatedCourses = [], blurs = {} }: { course: CourseProps; relatedCourses?: RelatedCourse[]; blurs?: Record<string, string> }) {
   const [lbIndex, setLbIndex] = useState<number | null>(null);
+  const [isEmbed, setIsEmbed] = useState(false);
+  useEffect(() => { try { setIsEmbed(window.self !== window.top); } catch { setIsEmbed(true); } }, []);
   const bp = (src: string) => blurs[src] ? { placeholder: "blur" as const, blurDataURL: blurs[src] } : {};
 
   const gallery = course.images.filter(u => !isScorecard(u) && !isLogo(u));
@@ -209,7 +211,7 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
           {displayGallery.slice(0, 3).map((img, i) => {
             const altDescs = [`${course.name} fairway and green view`, `${course.name} signature hole scenery`, `${course.name} course panoramic landscape`];
             return (
-            <div key={i} style={{ overflow: "hidden", position: "relative", cursor: "pointer", ...(i === 2 ? { gridColumn: "span 2" } : {}) }} onClick={() => setLbIndex(i)}>
+            <div key={i} style={{ overflow: "hidden", position: "relative", cursor: isEmbed ? "default" : "pointer", ...(i === 2 ? { gridColumn: "span 2" } : {}) }} onClick={() => !isEmbed && setLbIndex(i)}>
               <Image src={img} alt={altDescs[i] || `${course.name} golf course photo`} fill {...bp(img)} className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.06] transition-all duration-700" sizes="(max-width:900px) 100vw, 50vw" />
             </div>
             );
@@ -383,7 +385,7 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
       </section>
 
       {/* Lightbox */}
-      {lbIndex !== null && <Lightbox images={displayGallery.length > 0 ? displayGallery : gallery} startIndex={lbIndex} onClose={() => setLbIndex(null)} name={course.name} />}
+      {lbIndex !== null && !isEmbed && <Lightbox images={displayGallery.length > 0 ? displayGallery : gallery} startIndex={lbIndex} onClose={() => setLbIndex(null)} name={course.name} />}
 
       {/* Keyframes */}
       <style jsx global>{`
