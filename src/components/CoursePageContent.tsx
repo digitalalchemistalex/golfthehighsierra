@@ -201,11 +201,11 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
       {/* ═══ 2. CONTENT — text + gallery ═══ */}
       <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 600 }} className="max-md:!grid-cols-1">
         <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-          <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>The Course</div></R>
+          <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>{course.designer || "The Course"}</div></R>
           <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em" }}>
-            {course.featuredHole?.title ? <>The <em style={{ fontStyle: "italic" }}>{course.featuredHole.title.replace(/^The\s*/i, "")}</em></> : <>Where Mountains Meet <em style={{ fontStyle: "italic" }}>Mastery</em></>}
+            {nameParts.slice(0, -1).join(" ")} <em style={{ fontStyle: "italic" }}>{nameParts[nameParts.length - 1]}</em>
           </h2></R>
-          <R delay={0.16}><p className="course-intro" style={{ fontSize: 13, lineHeight: 1.9, color: "var(--stone)", fontWeight: 300, maxWidth: 440, marginTop: 16 }}>{para1}</p></R>
+          <R delay={0.16}><p className="course-intro" style={{ fontSize: 14, lineHeight: 2, color: "var(--stone)", fontWeight: 300, maxWidth: 480, marginTop: 16 }}>{para1}</p></R>
           <R delay={0.2}><div style={{ width: 40, height: 1, background: "var(--bone)", margin: "20px 0" }} /></R>
           <R delay={0.22}><h3 style={{ fontFamily: "var(--serif)", fontWeight: 600, fontSize: "clamp(16px,1.8vw,20px)", lineHeight: 1.3, color: "var(--charcoal)", marginBottom: 8 }}>Group Golf Packages &amp; Tee Times</h3></R>
           <R delay={0.24}><p style={{ fontSize: 13, lineHeight: 1.9, color: "var(--stone)", fontWeight: 300, maxWidth: 440 }}>From 8 to 100 players — consecutive tee times, rooming lists, comps for organizers. Buddy trip, corporate outing, or charity tournament. 20+ years of expert group planning.</p></R>
@@ -232,7 +232,7 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
             {course.featuredHole ? "Signature Hole" : "The Experience"}
           </div></R>
           <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em", color: "#fff" }}>
-            {course.featuredHole?.title ? <>{course.featuredHole.title.split(" ").slice(0, -1).join(" ")} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.7)" }}>{course.featuredHole.title.split(" ").slice(-1)}</em></> : <>Championship <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.7)" }}>Golf</em></>}
+            {course.featuredHole ? <>Hole {course.featuredHole.number} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.7)" }}>Par {course.featuredHole.par}</em></> : <>{firstName} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.7)" }}>Experience</em></>}
           </h2></R>
           {course.featuredHole && <R delay={0.12}><h3 style={{ fontFamily: "var(--sans)", fontWeight: 500, fontSize: 14, color: "rgba(255,255,255,.45)", letterSpacing: 1, marginTop: 8 }}>Hole {course.featuredHole.number} · Par {course.featuredHole.par} · {course.featuredHole.yardage} Yards</h3></R>}
           <R delay={0.16}>
@@ -342,12 +342,12 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
                         <td style={{ padding: "9px 10px" }}>
                           <div style={{ display: "flex", alignItems: "center", gap: 7 }}>
                             <span style={{ width: 10, height: 10, borderRadius: 2, background: tee.color, border: tee.color === "#FFFFFF" ? "1px solid rgba(255,255,255,.3)" : "none", flexShrink: 0 }} />
-                            <span style={{ fontWeight: isGold ? 600 : 400, color: isGold ? "var(--gold)" : "#fff", fontSize: 11 }}>{tee.name}</span>
+                            <span style={{ fontWeight: isGold ? 600 : 400, color: isGold ? "var(--gold)" : "rgba(255,255,255,.85)", fontSize: 12 }}>{tee.name}</span>
                           </div>
                         </td>
-                        {tee.holes.slice(0,9).map((y,j) => <td key={j} style={{ textAlign: "center", padding: "9px 4px", color: isGold ? "rgba(255,255,255,.9)" : "rgba(255,255,255,.6)", fontSize: 11 }}>{y}</td>)}
+                        {tee.holes.slice(0,9).map((y,j) => <td key={j} style={{ textAlign: "center", padding: "9px 5px", color: isGold ? "rgba(255,255,255,.95)" : "rgba(255,255,255,.7)", fontSize: 12 }}>{y}</td>)}
                         <td style={{ textAlign: "center", padding: "9px 4px", color: isGold ? "var(--gold)" : "rgba(255,255,255,.4)", fontWeight: 600, fontSize: 11 }}>{front}</td>
-                        {tee.holes.slice(9).map((y,j) => <td key={j} style={{ textAlign: "center", padding: "9px 4px", color: isGold ? "rgba(255,255,255,.9)" : "rgba(255,255,255,.6)", fontSize: 11 }}>{y}</td>)}
+                        {tee.holes.slice(9).map((y,j) => <td key={j} style={{ textAlign: "center", padding: "9px 5px", color: isGold ? "rgba(255,255,255,.95)" : "rgba(255,255,255,.7)", fontSize: 12 }}>{y}</td>)}
                         <td style={{ textAlign: "center", padding: "9px 4px", color: isGold ? "var(--gold)" : "rgba(255,255,255,.4)", fontWeight: 600, fontSize: 11 }}>{back}</td>
                         <td style={{ textAlign: "center", padding: "9px 4px", color: isGold ? "var(--gold)" : "rgba(255,255,255,.5)", fontWeight: 700, fontSize: 11 }}>{tee.total.toLocaleString()}</td>
                         <td style={{ textAlign: "center", padding: "9px 6px", color: "rgba(255,255,255,.4)", fontSize: 10 }}>{tee.rating}</td>

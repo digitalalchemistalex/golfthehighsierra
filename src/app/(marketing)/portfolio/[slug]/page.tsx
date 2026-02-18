@@ -102,7 +102,11 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
   /* ── Course ── */
   if (type === "course") {
     const course = getCourseBySlug(params.slug)!;
-    const related = getCoursesByRegion(course.region).filter((c) => c.slug !== course.slug).slice(0, 3);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const courseAny = course as any;
+    const related = courseAny.relatedCourseSlugs
+      ? (courseAny.relatedCourseSlugs as string[]).map((s: string) => getCourseBySlug(s)).filter((c): c is NonNullable<typeof c> => c != null).slice(0, 3)
+      : getCoursesByRegion(course.region).filter((c) => c.slug !== course.slug).slice(0, 3);
     const geo = course.geo as { latitude?: number; longitude?: number };
     const BASE = "https://golfthehighsierra.com";
     const pageUrl = `${BASE}/portfolio/${course.slug}/`;

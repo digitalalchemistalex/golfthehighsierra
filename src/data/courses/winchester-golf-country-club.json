@@ -488,5 +488,10 @@
   },
   "courseMapImage": "/images/courses/winchester-golf-country-club/course-map.jpg",
   "designerQuote": "\"Winchester Country Club represents the last collaboration between Robert Trent Jones, Sr. and Robert Trent Jones, Jr., who co-designed this elegant layout that unfolds across 223 forested acres in the Sierra Nevada foothills above Sacramento.\" \u2014 Robert Trent Jones Group",
-  "fax": "530-878-9515"
+  "fax": "530-878-9515",
+  "relatedCourseSlugs": [
+    "toiyabe-golf-club",
+    "wolf-run-golf-club",
+    "arrowcreek-golf-club"
+  ]
 }
