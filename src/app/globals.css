@@ -53,3 +53,15 @@
     50% { box-shadow: 0 0 24px rgba(201, 162, 77, 0.6), 0 0 10px rgba(201, 162, 77, 0.35); }
   }
 }
+/* ═══ Embed mode overrides ═══ */
+.gths-embed section:first-child {
+  min-height: 500px !important;
+  max-height: 600px !important;
+}
+.gths-embed .h-\[70vh\] {
+  height: 400px !important;
+}
+.gths-embed .lg\:h-screen {
+  height: auto !important;
+  max-height: 600px !important;
+}

@@ -9,7 +9,7 @@ function MarketingLayoutInner({ children }: { children: React.ReactNode }) {
   const params = useSearchParams();
   const embed = params.get('embed') === 'true';
 
-  if (embed) return <main>{children}</main>;
+  if (embed) return <main className="gths-embed">{children}</main>;
 
   return (
     <>
