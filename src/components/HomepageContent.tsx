@@ -6,14 +6,13 @@ import Link from 'next/link';
 import '@/styles/homepage.css';
 
 /* ─── Data ─── */
-const SLIDES = [
-  { badge: 'Reno, Nevada', h1: 'Championship Golf Meets Casino Nightlife', p: '7 courses, 8 casino-resorts, and one company that handles everything. Group golf packages built by locals since 2004.', cta1: { text: 'Plan Your Reno Trip', href: '/group-golf-reno-tahoe/' }, cta2: { text: 'View Reno Courses', href: '/best-golf-courses-reno/' }, img: '/images/homepage/homepage-01.jpg', alt: 'Reno Nevada skyline and Sierra Nevada mountains' },
-  { badge: 'Lake Tahoe', h1: 'Alpine Golf at 6,200 Feet Elevation', p: 'Edgewood, Incline Village, and Old Greenwood — lakefront and mountain courses your group will talk about for years.', cta1: { text: 'Explore Tahoe Packages', href: '/best-golf-courses-lake-tahoe/' }, cta2: { text: 'View Tahoe Courses', href: '/best-golf-courses-lake-tahoe/' }, img: '/images/homepage/homepage-02.jpg', alt: 'Edgewood Tahoe 18th hole Lake Tahoe' },
-  { badge: 'Truckee / North Tahoe', h1: 'Mountain Courses Through Towering Pines', p: "Old Greenwood, Coyote Moon, Gray's Crossing, Tahoe Donner — stay in Truckee villas, play championship courses.", cta1: { text: 'Truckee Packages', href: '/group-golf-reno-tahoe/' }, cta2: { text: 'View Courses', href: '/best-golf-courses-reno/' }, img: '/images/homepage/homepage-03.jpg', alt: 'Old Greenwood Golf Course Truckee California' },
-  { badge: 'Carson Valley', h1: 'Sierra Panoramas at Half the Price', p: 'Genoa Lakes, Dayton Valley, Toiyabe — uncrowded courses with mountain backdrops and the best value in the region.', cta1: { text: 'Carson Valley Trips', href: '/group-golf-reno-tahoe/' }, cta2: { text: 'View Courses', href: '/best-golf-courses-reno/' }, img: '/images/homepage/homepage-04.jpg', alt: 'Genoa Lakes Golf Club Carson Valley Nevada' },
-  { badge: '10,000+ Trips Planned', h1: 'One Call. One Contract. Zero Hassle.', p: '20+ years arranging group golf across Reno, Tahoe, and Carson Valley. Courses, hotels, dining, transport — we book it all.', cta1: { text: 'Request a Free Quote', href: '/contact-custom-golf-package/' }, cta2: { text: 'Call 888-584-8232', href: 'tel:+18885848232' }, img: '/images/homepage/homepage-05.jpg', alt: 'Red Hawk Golf Resort group golf outing' },
+const HERO_REGIONS = [
+  { name: 'Reno', img: '/images/regions/reno.jpg', alt: 'Reno Nevada championship golf', pitch: '<strong>7 championship courses</strong> and casino-resort lodging — booked with one call. Your group registers online through TripsCaddie. You never chase a dollar.', tabCourses: '7 courses', tabDetail: 'Casino resorts · Year-round · 300 days sun', tabPrice: 'From $189/golfer' },
+  { name: 'South Lake', img: '/images/regions/tahoe.jpg', alt: 'Edgewood Tahoe lakefront golf', pitch: '<strong>Edgewood Tahoe</strong> — home of the Celebrity Championship. Lakefront finishing holes your group will talk about for years. We handle lodging, dining, everything.', tabCourses: '3 courses', tabDetail: 'Edgewood · Celebrity Championship · Lakefront', tabPrice: 'From $299/golfer' },
+  { name: 'Truckee', img: '/images/regions/truckee.jpg', alt: 'Old Greenwood Golf Course Truckee', pitch: '<strong>PGA TOUR venue Old Greenwood</strong>, hidden gem Coyote Moon, mountain villas in the pines. One contract covers courses, lodging, transport — you show up and play.', tabCourses: '4 courses', tabDetail: 'Old Greenwood PGA · Coyote Moon · Villas', tabPrice: 'From $249/golfer' },
+  { name: 'Graeagle', img: '/images/regions/graeagle.jpg', alt: 'Graeagle Lost Sierra golf', pitch: '<strong>Five uncrowded courses</strong> in pristine mountain forest. Grizzly Ranch, Nakoma Dragon, Whitehawk. The ultimate golf escape — and we plan every detail.', tabCourses: '5 courses', tabDetail: 'Lost Sierra · Grizzly Ranch · Nakoma Dragon', tabPrice: 'From $149/golfer' },
+  { name: 'Carson Valley', img: '/images/regions/carson.jpg', alt: 'Genoa Lakes Golf Carson Valley', pitch: '<strong>Championship golf from $149/golfer.</strong> Genoa Lakes, Dayton Valley, Eagle Valley — same full-service planning, same portal, half the price.', tabCourses: '4 courses', tabDetail: 'Best value · Genoa Lakes · Mountain panoramas', tabPrice: 'From $149/golfer' },
 ];
-const TAB_LABELS = ['\u{1F4CD} Reno', '\u{1F4CD} Lake Tahoe', '\u{1F4CD} Truckee', '\u{1F4CD} Carson Valley', '\u{1F4CD} Overview'];
 
 const TRUST = [
   { icon: '\u{1F3C6}', num: 20, suffix: '+', label: 'Years', sub: 'Serving Groups Since 2004' },
@@ -114,55 +113,106 @@ export default function HomepageContent() {
   const goTo = useCallback((n: number) => { setSlide(n); setProgress(0); }, []);
 
   useEffect(() => {
-    const DURATION = 6000;
+    const DURATION = 7000;
     const startTime = Date.now();
     clearInterval(progressRef.current);
     progressRef.current = setInterval(() => { setProgress(Math.min((Date.now() - startTime) / DURATION, 1)); }, 50);
     clearInterval(timerRef.current);
-    timerRef.current = setInterval(() => { setSlide(prev => (prev + 1) % SLIDES.length); setProgress(0); }, DURATION);
+    timerRef.current = setInterval(() => { setSlide(prev => (prev + 1) % HERO_REGIONS.length); setProgress(0); }, DURATION);
     return () => { clearInterval(timerRef.current); clearInterval(progressRef.current); };
   }, [slide]);
 
   const handleNav = (n: number) => { clearInterval(timerRef.current); clearInterval(progressRef.current); goTo(n); };
 
-  useEffect(() => {
-    let ticking = false;
-    function onScroll() {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          const y = window.scrollY;
-          if (y < 800) {
-            const active = document.querySelector('.hero-slide.active img') as HTMLElement;
-            if (active) active.style.transform = `scale(${1 + y * 0.0001}) translateY(${y * 0.15}px)`;
-          }
-          ticking = false;
-        });
-        ticking = true;
-      }
-    }
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  // Touch swipe for hero
+  const touchRef = useRef(0);
 
   return (
     <div className="homepage">
-      <section className="hero">
-        {SLIDES.map((s, i) => (
-          <div key={i} className={`hero-slide${i === slide ? ' active' : ''}`} data-i={i}>
-            <img src={s.img} alt={s.alt} />
-            <div className="hero-ov" />
-            <div className="hero-inner">
-              <div className="hero-badge"><div className="badge-dot" /> {s.badge}</div>
-              <h1>{s.h1}</h1>
-              <p>{s.p}</p>
-              <div className="hero-btns"><Link href={s.cta1.href} className="btn-w">{s.cta1.text}</Link><Link href={s.cta2.href} className="btn-ow">{s.cta2.text}</Link></div>
-            </div>
+      {/* ═══ THE CLOSER HERO ═══ */}
+      <section className="hero"
+        onMouseEnter={() => { clearInterval(timerRef.current); clearInterval(progressRef.current); }}
+        onMouseLeave={() => { goTo(slide); }}
+        onTouchStart={(e) => { touchRef.current = e.touches[0].clientX; }}
+        onTouchEnd={(e) => {
+          const diff = touchRef.current - e.changedTouches[0].clientX;
+          if (Math.abs(diff) > 60) handleNav(diff > 0 ? (slide + 1) % HERO_REGIONS.length : (slide - 1 + HERO_REGIONS.length) % HERO_REGIONS.length);
+        }}
+      >
+        {/* BG Images */}
+        {HERO_REGIONS.map((r, i) => (
+          <div key={i} className={`hero-bg-img${i === slide ? ' active' : ''}`}>
+            <img src={r.img} alt={r.alt} />
           </div>
         ))}
+        <div className="hero-overlay" />
+        <div className="hero-overlay-side" />
+
+        {/* Main Content */}
+        <div className="hero-content">
+          {/* Social Proof Badge */}
+          <div className="hero-proof-badge">
+            <span className="hero-stars">★★★★★</span>
+            <span className="hero-proof-text"><strong>4.8/5</strong> from 672 reviews · <strong>10,000+</strong> trips since 2004</span>
+          </div>
+
+          {/* Headline */}
+          <h1 className="hero-h1">
+            One Call Plans Your<br />Entire <em key={slide} className="hero-region-word">{HERO_REGIONS[slide].name}</em> Golf Trip
+          </h1>
+
+          {/* Pitch - changes per region */}
+          <p className="hero-pitch" key={`pitch-${slide}`} dangerouslySetInnerHTML={{ __html: HERO_REGIONS[slide].pitch }} />
+
+          {/* CTAs */}
+          <div className="hero-cta-row">
+            <Link href="/contact-custom-golf-package/" className="hero-btn-gold">
+              Get a Free Quote <span className="hero-btn-arrow">→</span>
+            </Link>
+            <a href="tel:+18885848232" className="hero-btn-phone">📞 888-584-8232</a>
+            <Link href="/trips-caddie-app/" className="hero-btn-caddie">🗺 Browse Real Trips</Link>
+          </div>
+
+          {/* Trust Items */}
+          <div className="hero-trust-strip">
+            <div className="hero-trust-item"><span className="ht-icon">📋</span> One contract for everything</div>
+            <div className="hero-trust-item"><span className="ht-icon">💸</span> Everyone pays online — no chasing</div>
+            <div className="hero-trust-item"><span className="ht-icon">👥</span> Groups of 4 to 400</div>
+            <div className="hero-trust-item"><span className="ht-icon">🏌️</span> 20+ courses, 5 regions</div>
+          </div>
+        </div>
+
+        {/* Region Tabs */}
+        <div className="hero-region-bar">
+          <div className="hero-region-tabs">
+            {HERO_REGIONS.map((r, i) => (
+              <button key={i} className={`hero-rtab${i === slide ? ' active' : ''}`} onClick={() => handleNav(i)}>
+                <div className="rtab-top"><span className="rtab-name">{r.name}</span><span className="rtab-courses">{r.tabCourses}</span></div>
+                <div className="rtab-detail">{r.tabDetail}</div>
+                <div className="rtab-price">{r.tabPrice} →</div>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Progress bar */}
         <div className="hero-progress"><div className="hero-progress-bar" style={{ width: `${progress * 100}%`, transition: 'width 50ms linear' }} /></div>
-        <div className="hero-nav">{SLIDES.map((_, i) => <button key={i} className={i === slide ? 'active' : ''} onClick={() => handleNav(i)}>&nbsp;</button>)}</div>
-        <div className="hero-tabs">{TAB_LABELS.map((label, i) => <button key={i} className={`hero-tab${i === slide ? ' active' : ''}`} onClick={() => handleNav(i)}>{label}</button>)}</div>
       </section>
+
+      {/* Value Strip */}
+      <div className="hero-value-strip">
+        <div className="hero-value-inner">
+          <span className="hv-item"><span className="hv-check">✓</span> One contract, one deposit</span>
+          <span className="hv-div" />
+          <span className="hv-item"><span className="hv-check">✓</span> Free registration portal</span>
+          <span className="hv-div" />
+          <span className="hv-item"><span className="hv-check">✓</span> Exclusive group rates</span>
+          <span className="hv-div" />
+          <span className="hv-item"><span className="hv-check">✓</span> A real person plans everything</span>
+          <span className="hv-div" />
+          <span className="hv-item"><span className="hv-check">✓</span> Since 2004</span>
+        </div>
+      </div>
 
       <div className="trust" ref={trustInView.ref}>
         {TRUST.map((t, i) => (
