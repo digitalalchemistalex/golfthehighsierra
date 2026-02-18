@@ -14,6 +14,8 @@ interface CourseFAQ { question: string; answer: string; }
 interface CourseTestimonial { stars: number; quote: string; author: string; source: string; meta: string; }
 interface FeaturedHole { title?: string; description?: string; number?: number; par?: number; yardage?: number; }
 interface CourseTip { title?: string; content?: string; }
+interface ScorecardTee { name: string; color: string; rating: number; slope: number; holes: number[]; total: number; }
+interface Scorecard { tees: ScorecardTee[]; par: number[]; handicap?: { gentlemens?: number[]; ladies?: number[] }; }
 
 export interface CourseProps {
   slug: string; name: string; region?: string; regionLabel: string;
@@ -27,6 +29,7 @@ export interface CourseProps {
   tips?: CourseTip[]; pointOfView?: string; hack?: string;
   contentParagraphs?: string[]; featuredHole?: FeaturedHole;
   teeTimeInfo?: string; teeTips?: string[];
+  scorecard?: Scorecard;
 }
 
 interface RelatedCourse {
@@ -301,6 +304,63 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
           ))}
         </div>
       </section>
+
+      {/* ═══ SCORECARD ═══ */}
+      {course.scorecard && (
+        <section style={{ background: "var(--ink)", padding: "clamp(48px,7vh,80px) clamp(24px,5vw,80px)", overflowX: "auto" }}>
+          <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 8 }}>Scorecard</div></R>
+          <R delay={0.06}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(24px,3vw,40px)", lineHeight: 1.1, color: "#fff", marginBottom: 24 }}>All <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.6)" }}>Tee Options</em></h2></R>
+          <R delay={0.1}>
+            <div style={{ overflowX: "auto", WebkitOverflowScrolling: "touch" }}>
+              <table style={{ width: "100%", minWidth: 700, borderCollapse: "collapse", fontSize: 11, color: "#fff" }}>
+                <thead>
+                  <tr>
+                    <th style={{ textAlign: "left", padding: "8px 10px", color: "rgba(255,255,255,.4)", fontWeight: 400, letterSpacing: 1, fontSize: 9, textTransform: "uppercase", width: 80 }}>Tee</th>
+                    {[1,2,3,4,5,6,7,8,9,"OUT",10,11,12,13,14,15,16,17,18,"IN","TOT"].map(h => (
+                      <th key={h} style={{ textAlign: "center", padding: "8px 4px", color: "rgba(255,255,255,.4)", fontWeight: 400, fontSize: 9, letterSpacing: 1, minWidth: h === "OUT" || h === "IN" || h === "TOT" ? 38 : 28 }}>{h}</th>
+                    ))}
+                    <th style={{ textAlign: "center", padding: "8px 6px", color: "rgba(255,255,255,.4)", fontWeight: 400, fontSize: 9, letterSpacing: 1 }}>RTG</th>
+                    <th style={{ textAlign: "center", padding: "8px 6px", color: "rgba(255,255,255,.4)", fontWeight: 400, fontSize: 9, letterSpacing: 1 }}>SLP</th>
+                  </tr>
+                  <tr style={{ borderBottom: "1px solid rgba(255,255,255,.06)" }}>
+                    <td style={{ padding: "6px 10px", color: "rgba(255,255,255,.25)", fontSize: 9, textTransform: "uppercase", letterSpacing: 1 }}>Par</td>
+                    {course.scorecard.par.slice(0,9).map((p: number, i: number) => <td key={i} style={{ textAlign: "center", padding: "6px 4px", color: "rgba(255,255,255,.25)", fontSize: 10 }}>{p}</td>)}
+                    <td style={{ textAlign: "center", padding: "6px 4px", color: "rgba(255,255,255,.25)", fontSize: 10 }}>{course.scorecard.par.slice(0,9).reduce((a:number,b:number)=>a+b,0)}</td>
+                    {course.scorecard.par.slice(9).map((p: number, i: number) => <td key={i} style={{ textAlign: "center", padding: "6px 4px", color: "rgba(255,255,255,.25)", fontSize: 10 }}>{p}</td>)}
+                    <td style={{ textAlign: "center", padding: "6px 4px", color: "rgba(255,255,255,.25)", fontSize: 10 }}>{course.scorecard.par.slice(9).reduce((a:number,b:number)=>a+b,0)}</td>
+                    <td style={{ textAlign: "center", padding: "6px 4px", color: "rgba(255,255,255,.25)", fontSize: 10, fontWeight: 600 }}>{course.scorecard.par.reduce((a:number,b:number)=>a+b,0)}</td>
+                    <td /><td />
+                  </tr>
+                </thead>
+                <tbody>
+                  {course.scorecard.tees.map((tee: {name:string;color:string;rating:number;slope:number;holes:number[];total:number}, i: number) => {
+                    const front = tee.holes.slice(0,9).reduce((a,b)=>a+b,0);
+                    const back = tee.holes.slice(9).reduce((a,b)=>a+b,0);
+                    const isGold = tee.name === "Gold";
+                    return (
+                      <tr key={i} style={{ borderBottom: "1px solid rgba(255,255,255,.04)", background: isGold ? "rgba(201,162,77,.07)" : "transparent" }}>
+                        <td style={{ padding: "9px 10px" }}>
+                          <div style={{ display: "flex", alignItems: "center", gap: 7 }}>
+                            <span style={{ width: 10, height: 10, borderRadius: 2, background: tee.color, border: tee.color === "#FFFFFF" ? "1px solid rgba(255,255,255,.3)" : "none", flexShrink: 0 }} />
+                            <span style={{ fontWeight: isGold ? 600 : 400, color: isGold ? "var(--gold)" : "#fff", fontSize: 11 }}>{tee.name}</span>
+                          </div>
+                        </td>
+                        {tee.holes.slice(0,9).map((y,j) => <td key={j} style={{ textAlign: "center", padding: "9px 4px", color: isGold ? "rgba(255,255,255,.9)" : "rgba(255,255,255,.6)", fontSize: 11 }}>{y}</td>)}
+                        <td style={{ textAlign: "center", padding: "9px 4px", color: isGold ? "var(--gold)" : "rgba(255,255,255,.4)", fontWeight: 600, fontSize: 11 }}>{front}</td>
+                        {tee.holes.slice(9).map((y,j) => <td key={j} style={{ textAlign: "center", padding: "9px 4px", color: isGold ? "rgba(255,255,255,.9)" : "rgba(255,255,255,.6)", fontSize: 11 }}>{y}</td>)}
+                        <td style={{ textAlign: "center", padding: "9px 4px", color: isGold ? "var(--gold)" : "rgba(255,255,255,.4)", fontWeight: 600, fontSize: 11 }}>{back}</td>
+                        <td style={{ textAlign: "center", padding: "9px 4px", color: isGold ? "var(--gold)" : "rgba(255,255,255,.5)", fontWeight: 700, fontSize: 11 }}>{tee.total.toLocaleString()}</td>
+                        <td style={{ textAlign: "center", padding: "9px 6px", color: "rgba(255,255,255,.4)", fontSize: 10 }}>{tee.rating}</td>
+                        <td style={{ textAlign: "center", padding: "9px 6px", color: "rgba(255,255,255,.4)", fontSize: 10 }}>{tee.slope}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </R>
+        </section>
+      )}
 
       {/* ═══ RELATED ═══ */}
       {relatedCourses.length > 0 && (
