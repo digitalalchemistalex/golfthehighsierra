@@ -88,6 +88,8 @@ function Lightbox({ images, startIndex, onClose, name }: { images: string[]; sta
     window.addEventListener("keydown", h);
     return () => { document.body.style.overflow = ""; window.removeEventListener("keydown", h); };
   }, [images.length, onClose]);
+  // Use absolute URL so images work inside iframes on other domains
+  const absSrc = images[idx]?.startsWith("/") ? `https://golfthehighsierra.vercel.app${images[idx]}` : images[idx];
   return (
     <div style={{ position: "fixed", inset: 0, zIndex: 9999, background: "rgba(0,0,0,0.95)", display: "flex", alignItems: "center", justifyContent: "center" }} onClick={onClose}>
       <button onClick={onClose} style={{ position: "absolute", top: 16, right: 16, color: "rgba(255,255,255,0.6)", zIndex: 10, padding: 8, background: "none", border: "none", cursor: "pointer" }}><X className="w-8 h-8" /></button>
@@ -97,7 +99,7 @@ function Lightbox({ images, startIndex, onClose, name }: { images: string[]; sta
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           key={idx}
-          src={images[idx]}
+          src={absSrc}
           alt={`${name} ${idx + 1}`}
           onLoad={() => setLoaded(true)}
           style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain", display: loaded ? "block" : "none" }}
