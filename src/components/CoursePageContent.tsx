@@ -12,7 +12,7 @@ interface CourseGeo { latitude?: number; longitude?: number; }
 interface CourseRating { value: number; count: number; }
 interface CourseFAQ { question: string; answer: string; }
 interface CourseTestimonial { stars: number; quote: string; author: string; source: string; meta: string; }
-interface FeaturedHole { title?: string; description?: string; }
+interface FeaturedHole { title?: string; description?: string; number?: number; par?: number; yardage?: number; }
 interface CourseTip { title?: string; content?: string; }
 
 export interface CourseProps {
@@ -136,7 +136,7 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
         {/* ── FULL-WIDTH: Course Image ── */}
         <div className="relative w-full h-[70vh] lg:h-full">
           <div style={{ position: "absolute", inset: 0 }}>
-            {course.heroImage && <Image src={course.heroImage} alt={course.name} fill priority {...bp(course.heroImage)} className="object-cover" sizes="100vw" style={{ opacity: .55, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
+            {course.heroImage && <Image src={course.heroImage} alt={`${course.name} golf course in ${course.regionLabel} — aerial view`} fill priority {...bp(course.heroImage)} className="object-cover" sizes="100vw" style={{ opacity: .55, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
           </div>
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(0,0,0,.25) 0%,transparent 35%,transparent 55%,rgba(0,0,0,.65) 100%)" }} />
 
@@ -190,21 +190,25 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
           </h2></R>
           <R delay={0.16}><p style={{ fontSize: 13, lineHeight: 1.9, color: "var(--stone)", fontWeight: 300, maxWidth: 440, marginTop: 16 }}>{para1}</p></R>
           <R delay={0.2}><div style={{ width: 40, height: 1, background: "var(--bone)", margin: "20px 0" }} /></R>
+          <R delay={0.22}><h3 style={{ fontFamily: "var(--serif)", fontWeight: 600, fontSize: "clamp(16px,1.8vw,20px)", lineHeight: 1.3, color: "var(--charcoal)", marginBottom: 8 }}>Group Golf Packages &amp; Tee Times</h3></R>
           <R delay={0.24}><p style={{ fontSize: 13, lineHeight: 1.9, color: "var(--stone)", fontWeight: 300, maxWidth: 440 }}>From 8 to 100 players — consecutive tee times, rooming lists, comps for organizers. Buddy trip, corporate outing, or charity tournament. 20+ years of expert group planning.</p></R>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: 4 }} className="max-md:!min-h-[400px]">
-          {displayGallery.slice(0, 3).map((img, i) => (
+          {displayGallery.slice(0, 3).map((img, i) => {
+            const altDescs = [`${course.name} fairway and green view`, `${course.name} signature hole scenery`, `${course.name} course panoramic landscape`];
+            return (
             <div key={i} style={{ overflow: "hidden", position: "relative", cursor: "pointer", ...(i === 2 ? { gridColumn: "span 2" } : {}) }} onClick={() => setLbIndex(i)}>
-              <Image src={img} alt={`${course.name} ${i + 1}`} fill {...bp(img)} className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.06] transition-all duration-700" sizes="(max-width:900px) 100vw, 50vw" />
+              <Image src={img} alt={altDescs[i] || `${course.name} golf course photo`} fill {...bp(img)} className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.06] transition-all duration-700" sizes="(max-width:900px) 100vw, 50vw" />
             </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
       {/* ═══ 3. DARK FEATURE ═══ */}
       <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", background: "var(--ink)" }} className="max-md:!grid-cols-1">
         <div style={{ position: "relative", overflow: "hidden", minHeight: 400 }} className="max-md:!min-h-[300px]">
-          {displayGallery[1] && <Image src={displayGallery[1]} alt="Feature" fill {...bp(displayGallery[1])} className="object-cover opacity-60 hover:opacity-75 hover:scale-[1.04] transition-all duration-[8s]" sizes="(max-width:900px) 100vw, 50vw" />}
+          {displayGallery[1] && <Image src={displayGallery[1]} alt={`${course.name} ${course.featuredHole ? `hole ${course.featuredHole.number} par ${course.featuredHole.par}` : "championship layout"}`} fill {...bp(displayGallery[1])} className="object-cover opacity-60 hover:opacity-75 hover:scale-[1.04] transition-all duration-[8s]" sizes="(max-width:900px) 100vw, 50vw" />}
         </div>
         <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14 }}>
@@ -213,6 +217,7 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
           <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, letterSpacing: "-.02em", color: "#fff" }}>
             {course.featuredHole?.title ? <>{course.featuredHole.title.split(" ").slice(0, -1).join(" ")} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.7)" }}>{course.featuredHole.title.split(" ").slice(-1)}</em></> : <>Championship <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.7)" }}>Golf</em></>}
           </h2></R>
+          {course.featuredHole && <R delay={0.12}><h3 style={{ fontFamily: "var(--sans)", fontWeight: 500, fontSize: 14, color: "rgba(255,255,255,.45)", letterSpacing: 1, marginTop: 8 }}>Hole {course.featuredHole.number} · Par {course.featuredHole.par} · {course.featuredHole.yardage} Yards</h3></R>}
           <R delay={0.16}>
             <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(20px,2.5vw,30px)", fontWeight: 300, fontStyle: "italic", lineHeight: 1.5, color: "rgba(255,255,255,.6)", marginTop: 16, maxWidth: 440, position: "relative", paddingTop: 28 }}>
               <span style={{ fontFamily: "var(--serif)", fontSize: 60, color: "rgba(201,162,77,.2)", lineHeight: ".5", position: "absolute", top: 0, left: 0 }}>&ldquo;</span>
@@ -229,6 +234,9 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
         <div style={{ padding: "clamp(48px,8vh,80px) clamp(32px,5vw,80px)", background: "var(--cream)" }}>
           <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>At a Glance</div></R>
           <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1 }}><em style={{ fontStyle: "italic" }}>{firstName}</em> Details</h2></R>
+          {(course.slope || course.courseRating) && <R delay={0.12}><h3 style={{ fontFamily: "var(--sans)", fontWeight: 400, fontSize: 13, color: "var(--stone)", marginTop: 8 }}>
+            {[course.slope && `Slope ${course.slope}`, course.courseRating && `Course Rating ${course.courseRating}`].filter(Boolean).join(" · ")}
+          </h3></R>}
 
           {/* Mini stats */}
           <R delay={0.16}>
