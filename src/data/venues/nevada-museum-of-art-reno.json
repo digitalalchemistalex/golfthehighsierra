@@ -30,7 +30,9 @@
   ],
   "hours": "Wed\u2013Sun 10AM\u20136PM, Thu 10AM\u20138PM",
   "heroImage": "/images/venues/nevada-museum-of-art-reno/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/nevada-museum-of-art-reno/hero.jpg"
+  ],
   "faqs": [
     {
       "question": "What type of art does the museum feature?",

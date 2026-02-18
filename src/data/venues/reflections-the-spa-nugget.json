@@ -30,7 +30,12 @@
   ],
   "hours": "Daily 8AM\u20138PM",
   "heroImage": "/images/venues/reflections-the-spa-nugget/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/reflections-the-spa-nugget/hero.jpg",
+    "/images/hotels/harrahs-lake-tahoe/casino.jpg",
+    "/images/hotels/harrahs-lake-tahoe/exterior-kayak.jpg",
+    "/images/hotels/harrahs-lake-tahoe/exterior.webp"
+  ],
   "faqs": [
     {
       "question": "How big is Reflections the Spa?",

@@ -30,7 +30,12 @@
   ],
   "hours": "Dinner nightly \u2014 reservations recommended",
   "heroImage": "/images/venues/atlantis-steakhouse/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/atlantis-steakhouse/hero.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/exterior.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/hero.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/lobby.jpg"
+  ],
   "faqs": [
     {
       "question": "Does the Atlantis Steakhouse take group reservations?",

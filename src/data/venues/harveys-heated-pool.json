@@ -30,7 +30,12 @@
   ],
   "hours": "Seasonal: Daily 8AM\u20138PM (Summer), Weekends (Spring/Fall)",
   "heroImage": "/images/venues/harveys-heated-pool/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/harveys-heated-pool/hero.jpg",
+    "/images/hotels/harveys-lake-tahoe/casino.jpg",
+    "/images/hotels/harveys-lake-tahoe/dining.jpg",
+    "/images/hotels/harveys-lake-tahoe/hero.jpg"
+  ],
   "faqs": [
     {
       "question": "Is the pool heated?",

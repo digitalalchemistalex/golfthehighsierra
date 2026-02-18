@@ -28,7 +28,12 @@
   ],
   "hours": "Show nights vary, typically Thu\u2013Sat 8PM & 10PM",
   "heroImage": "/images/venues/comedy-bar-silver-legacy/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/comedy-bar-silver-legacy/hero.jpg",
+    "/images/hotels/silver-legacy-resort-casino/hero.jpg",
+    "/images/hotels/silver-legacy-resort-casino/img-1.jpg",
+    "/images/hotels/silver-legacy-resort-casino/img-2.jpg"
+  ],
   "faqs": [
     {
       "question": "What kind of comedy shows are there?",

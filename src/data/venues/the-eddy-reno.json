@@ -30,7 +30,9 @@
   ],
   "hours": "Tue\u2013Sun 11AM\u201310PM",
   "heroImage": "/images/venues/the-eddy-reno/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/the-eddy-reno/hero.jpg"
+  ],
   "faqs": [
     {
       "question": "Does The Eddy have food?",

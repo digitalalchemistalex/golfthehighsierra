@@ -30,7 +30,12 @@
   ],
   "hours": "Thu\u2013Sun 8PM\u20132AM",
   "heroImage": "/images/venues/cliche-lounge-harrahs-tahoe/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/cliche-lounge-harrahs-tahoe/hero.jpg",
+    "/images/hotels/harrahs-lake-tahoe/casino.jpg",
+    "/images/hotels/harrahs-lake-tahoe/exterior-kayak.jpg",
+    "/images/hotels/harrahs-lake-tahoe/exterior.webp"
+  ],
   "faqs": [
     {
       "question": "Where is Clich\u00e9 Lounge?",

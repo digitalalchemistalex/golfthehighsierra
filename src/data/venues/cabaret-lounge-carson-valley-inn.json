@@ -30,7 +30,12 @@
   ],
   "hours": "Nightly (except during football season)",
   "heroImage": "/images/venues/cabaret-lounge-carson-valley-inn/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/cabaret-lounge-carson-valley-inn/hero.jpg",
+    "/images/hotels/carson-valley-inn-casino/golf.jpg",
+    "/images/hotels/carson-valley-inn-casino/hero.jpg",
+    "/images/hotels/carson-valley-inn-casino/pool.jpg"
+  ],
   "faqs": [
     {
       "question": "What entertainment does the Cabaret Lounge offer?",

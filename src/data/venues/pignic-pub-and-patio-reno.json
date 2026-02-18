@@ -30,7 +30,9 @@
   ],
   "hours": "Mon\u2013Sun 11AM\u20139PM",
   "heroImage": "/images/venues/pignic-pub-and-patio-reno/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/pignic-pub-and-patio-reno/hero.jpg"
+  ],
   "faqs": [
     {
       "question": "What food does Pignic serve?",

@@ -30,7 +30,12 @@
   ],
   "hours": "Open 24 hours",
   "heroImage": "/images/venues/atlantis-sports-bar-lounge/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/atlantis-sports-bar-lounge/hero.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/exterior.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/hero.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/lobby.jpg"
+  ],
   "faqs": [
     {
       "question": "Is the Sports Bar open during early morning tee times?",

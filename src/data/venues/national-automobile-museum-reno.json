@@ -30,7 +30,9 @@
   ],
   "hours": "Mon\u2013Sat 9:30AM\u20135:30PM, Sun 10AM\u20134PM",
   "heroImage": "/images/venues/national-automobile-museum-reno/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/national-automobile-museum-reno/hero.jpg"
+  ],
   "faqs": [
     {
       "question": "What is the National Automobile Museum?",

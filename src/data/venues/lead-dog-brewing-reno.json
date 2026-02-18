@@ -30,7 +30,9 @@
   ],
   "hours": "Mon\u2013Thu 12PM\u20139PM, Fri\u2013Sat 12PM\u201310PM, Sun 12PM\u20138PM",
   "heroImage": "/images/venues/lead-dog-brewing-reno/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/lead-dog-brewing-reno/hero.jpg"
+  ],
   "faqs": [
     {
       "question": "What types of beer does Lead Dog brew?",

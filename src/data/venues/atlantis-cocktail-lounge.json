@@ -1,0 +1,69 @@
+{
+  "slug": "atlantis-cocktail-lounge",
+  "name": "Atlantis Cocktail Lounge",
+  "type": "bar",
+  "priceRange": "$$",
+  "description": "The Atlantis Cocktail Lounge offers a classic casino bar experience with expertly crafted cocktails, a wide selection of spirits, and a vibrant atmosphere on the casino floor. A popular gathering spot for guests between rounds of golf or a night on the town in downtown Reno.",
+  "shortDescription": "Classic casino cocktail lounge with expertly crafted drinks at the Atlantis.",
+  "highlights": [
+    "Casino Floor",
+    "Craft Cocktails",
+    "Wide Spirit Selection",
+    "Vibrant Atmosphere",
+    "Central Location",
+    "Late Night"
+  ],
+  "hours": "Daily",
+  "heroImage": "/images/venues/atlantis-cocktail-lounge/hero.jpg",
+  "faqs": [
+    {
+      "question": "Where is the Cocktail Lounge?",
+      "answer": "On the casino floor of the Atlantis, centrally located and easy to find."
+    },
+    {
+      "question": "What's the atmosphere like?",
+      "answer": "Vibrant and lively with expertly crafted cocktails in a classic casino setting."
+    }
+  ],
+  "meta": {
+    "title": "Atlantis Cocktail Lounge \u2013 Casino Bar Reno | Golf The High Sierra",
+    "description": "Enjoy expertly crafted cocktails at the Atlantis Cocktail Lounge on the casino floor in Reno."
+  },
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "images": [
+    "/images/venues/atlantis-cocktail-lounge/hero.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/exterior.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/hero.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/lobby.jpg"
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Post-round drinks at Atlantis Cocktail Lounge are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
+      "author": "Carlos L.",
+      "source": "Google",
+      "meta": "Google \u00b7 date night during golf trip"
+    },
+    {
+      "stars": 5,
+      "quote": "Atlantis Cocktail Lounge has become our go-to after-golf hangout. Cold beers, good energy, and it's right inside atlantis-casino-resort-spa-reno. GTHS knows all the best spots.",
+      "author": "Paul G.",
+      "source": "Yelp",
+      "meta": "Yelp \u00b7 group dinner (36)"
+    }
+  ]
+}

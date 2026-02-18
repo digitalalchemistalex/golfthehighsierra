@@ -28,9 +28,11 @@
     "Dog Friendly",
     "Midtown Location"
   ],
-  "hours": "Tue–Sun 5PM–12AM",
+  "hours": "Tue\u2013Sun 5PM\u201312AM",
   "heroImage": "/images/venues/chapel-tavern-reno/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/chapel-tavern-reno/hero.jpg"
+  ],
   "faqs": [
     {
       "question": "Where is Chapel Tavern located?",
@@ -46,8 +48,8 @@
     }
   ],
   "meta": {
-    "title": "Chapel Tavern – Craft Cocktails in Reno's Midtown | Golf The High Sierra",
-    "description": "Experience craft cocktails in a beautifully restored 1930s chapel in Reno's Midtown. Perfect après-golf destination for groups visiting the High Sierra."
+    "title": "Chapel Tavern \u2013 Craft Cocktails in Reno's Midtown | Golf The High Sierra",
+    "description": "Experience craft cocktails in a beautifully restored 1930s chapel in Reno's Midtown. Perfect apr\u00e8s-golf destination for groups visiting the High Sierra."
   },
   "testimonials": [
     {
@@ -55,14 +57,14 @@
       "quote": "We ended every day of our golf trip at Chapel Tavern. Great selection, friendly bartenders, and the kind of place where your group can be loud and happy after a great round.",
       "author": "Paul N.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · golf trip group"
+      "meta": "TripAdvisor \u00b7 golf trip group"
     },
     {
       "stars": 5,
       "quote": "Post-round drinks at Chapel Tavern are a must. Our whole group gathered here after 18 holes and the vibe was perfect. Good cocktails, sports on the TVs, and the staff handled our large tab easily.",
       "author": "Brian K.",
       "source": "Yelp",
-      "meta": "Yelp · golf trip group"
+      "meta": "Yelp \u00b7 golf trip group"
     }
   ]
 }

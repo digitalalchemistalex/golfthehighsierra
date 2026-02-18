@@ -30,7 +30,12 @@
   ],
   "hours": "Pool: Daily 6AM-11PM",
   "heroImage": "/images/venues/carson-valley-inn-amenities/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/carson-valley-inn-amenities/hero.jpg",
+    "/images/hotels/carson-valley-inn-casino/golf.jpg",
+    "/images/hotels/carson-valley-inn-casino/hero.jpg",
+    "/images/hotels/carson-valley-inn-casino/pool.jpg"
+  ],
   "faqs": [
     {
       "question": "What amenities does Carson Valley Inn offer?",

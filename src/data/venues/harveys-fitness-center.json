@@ -30,7 +30,12 @@
   ],
   "hours": "Daily 6AM\u20138PM",
   "heroImage": "/images/venues/harveys-fitness-center/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/harveys-fitness-center/hero.jpg",
+    "/images/hotels/harveys-lake-tahoe/casino.jpg",
+    "/images/hotels/harveys-lake-tahoe/dining.jpg",
+    "/images/hotels/harveys-lake-tahoe/hero.jpg"
+  ],
   "faqs": [
     {
       "question": "Is the fitness center free for hotel guests?",

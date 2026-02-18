@@ -30,7 +30,9 @@
   ],
   "hours": "Mon\u2013Sat 4PM\u201312AM",
   "heroImage": "/images/venues/the-emerson-reno/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/the-emerson-reno/hero.jpg"
+  ],
   "faqs": [
     {
       "question": "What is The Emerson known for?",

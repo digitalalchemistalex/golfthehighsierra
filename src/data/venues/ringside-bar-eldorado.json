@@ -30,7 +30,12 @@
   ],
   "hours": "Daily 24 Hours",
   "heroImage": "/images/venues/ringside-bar-eldorado/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/ringside-bar-eldorado/hero.jpg",
+    "/images/hotels/eldorado-resorts-reno-eldorado-at-the-row/hero.jpg",
+    "/images/hotels/eldorado-resorts-reno-eldorado-at-the-row/img-1.jpg",
+    "/images/hotels/eldorado-resorts-reno-eldorado-at-the-row/img-2.jpg"
+  ],
   "faqs": [
     {
       "question": "Is Ringside Bar open 24 hours?",

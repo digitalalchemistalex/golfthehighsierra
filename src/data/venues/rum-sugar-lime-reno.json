@@ -30,7 +30,9 @@
   ],
   "hours": "Wed\u2013Sun 5PM\u201312AM",
   "heroImage": "/images/venues/rum-sugar-lime-reno/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/rum-sugar-lime-reno/hero.jpg"
+  ],
   "faqs": [
     {
       "question": "What makes Rum Sugar Lime special?",

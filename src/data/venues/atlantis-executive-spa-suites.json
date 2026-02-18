@@ -30,7 +30,12 @@
   ],
   "hours": "Check-in 4:00 PM | Check-out 11:00 AM",
   "heroImage": "/images/venues/atlantis-executive-spa-suite/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/atlantis-executive-spa-suite/hero.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/exterior.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/hero.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/lobby.jpg"
+  ],
   "faqs": [
     {
       "question": "Can the Executive Spa Suite connect to other rooms?",

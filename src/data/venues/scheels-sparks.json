@@ -30,7 +30,9 @@
   ],
   "hours": "Mon\u2013Sat 9AM\u20139PM, Sun 10AM\u20136PM",
   "heroImage": "/images/venues/scheels-sparks/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/scheels-sparks/hero.jpg"
+  ],
   "faqs": [
     {
       "question": "What makes SCHEELS special?",

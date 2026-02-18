@@ -30,7 +30,12 @@
   ],
   "hours": "Daily 9AM\u20131AM",
   "heroImage": "/images/venues/peppermill-sports-bar/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/peppermill-sports-bar/hero.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/exterior.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/lobby.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/pool.jpg"
+  ],
   "faqs": [
     {
       "question": "What makes the Peppermill Sports Bar special?",

@@ -34,7 +34,12 @@
   },
   "phone": "(775) 786-5700",
   "website": "https://www.eldoradoreno.com",
-  "images": [],
+  "images": [
+    "/images/venues/eldorado-skyline-superior-1-king/hero.jpg",
+    "/images/hotels/eldorado-resorts-reno-eldorado-at-the-row/hero.jpg",
+    "/images/hotels/eldorado-resorts-reno-eldorado-at-the-row/img-1.jpg",
+    "/images/hotels/eldorado-resorts-reno-eldorado-at-the-row/img-2.jpg"
+  ],
   "faqs": [],
   "testimonials": [
     {

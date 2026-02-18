@@ -30,7 +30,12 @@
   ],
   "hours": "Daily 4PM\u201312AM",
   "heroImage": "/images/venues/silver-baron-lounge/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/silver-baron-lounge/hero.jpg",
+    "/images/hotels/silver-legacy-resort-casino/hero.jpg",
+    "/images/hotels/silver-legacy-resort-casino/img-1.jpg",
+    "/images/hotels/silver-legacy-resort-casino/img-2.jpg"
+  ],
   "faqs": [
     {
       "question": "What's the atmosphere like?",

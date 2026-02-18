@@ -30,7 +30,12 @@
   ],
   "hours": "Daily 10AM\u20132AM",
   "heroImage": "/images/venues/silver-legacy-sports-bar/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/silver-legacy-sports-bar/hero.jpg",
+    "/images/hotels/silver-legacy-resort-casino/hero.jpg",
+    "/images/hotels/silver-legacy-resort-casino/img-1.jpg",
+    "/images/hotels/silver-legacy-resort-casino/img-2.jpg"
+  ],
   "faqs": [
     {
       "question": "Where is the Silver Legacy Sports Bar?",

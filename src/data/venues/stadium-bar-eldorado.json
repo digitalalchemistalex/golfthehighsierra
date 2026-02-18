@@ -30,7 +30,12 @@
   ],
   "hours": "Daily 9AM\u20131AM",
   "heroImage": "/images/venues/stadium-bar-eldorado/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/stadium-bar-eldorado/hero.jpg",
+    "/images/hotels/eldorado-resorts-reno-eldorado-at-the-row/hero.jpg",
+    "/images/hotels/eldorado-resorts-reno-eldorado-at-the-row/img-1.jpg",
+    "/images/hotels/eldorado-resorts-reno-eldorado-at-the-row/img-2.jpg"
+  ],
   "faqs": [
     {
       "question": "What makes Stadium Bar different from a regular sports bar?",

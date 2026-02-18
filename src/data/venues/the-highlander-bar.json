@@ -30,7 +30,12 @@
   ],
   "hours": "Daily 11AM\u20131AM",
   "heroImage": "/images/venues/the-highlander-bar/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/the-highlander-bar/hero.jpg",
+    "/images/hotels/harveys-lake-tahoe/casino.jpg",
+    "/images/hotels/harveys-lake-tahoe/dining.jpg",
+    "/images/hotels/harveys-lake-tahoe/hero.jpg"
+  ],
   "faqs": [
     {
       "question": "Is The Highlander a sports bar?",

@@ -30,7 +30,9 @@
   ],
   "hours": "Thu\u2013Sat 7PM\u20132AM",
   "heroImage": "/images/venues/death-and-taxes-reno/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/death-and-taxes-reno/hero.jpg"
+  ],
   "faqs": [
     {
       "question": "What kind of bar is Death & Taxes?",

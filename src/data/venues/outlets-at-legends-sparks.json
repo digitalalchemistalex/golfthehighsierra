@@ -30,7 +30,9 @@
   ],
   "hours": "Mon\u2013Sat 10AM\u20138PM, Sun 11AM\u20136PM",
   "heroImage": "/images/venues/outlets-at-legends-sparks/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/outlets-at-legends-sparks/hero.jpg"
+  ],
   "faqs": [
     {
       "question": "What stores are at the Outlets at Legends?",

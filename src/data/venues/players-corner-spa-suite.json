@@ -30,7 +30,12 @@
   ],
   "hours": "Hotel room - 24/7",
   "heroImage": "/images/venues/players-corner-spa-suite/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/players-corner-spa-suite/hero.jpg",
+    "/images/hotels/silver-legacy-resort-casino/hero.jpg",
+    "/images/hotels/silver-legacy-resort-casino/img-1.jpg",
+    "/images/hotels/silver-legacy-resort-casino/img-2.jpg"
+  ],
   "faqs": [
     {
       "question": "How do I access the Players Corner Spa Suite?",

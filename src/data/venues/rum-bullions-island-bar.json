@@ -30,7 +30,12 @@
   ],
   "hours": "Wed-Sun 6PM-2AM (Closed Mon-Tue)",
   "heroImage": "/images/venues/rum-bullions-island-bar/hero.jpg",
-  "images": [],
+  "images": [
+    "/images/venues/rum-bullions-island-bar/hero.jpg",
+    "/images/hotels/silver-legacy-resort-casino/hero.jpg",
+    "/images/hotels/silver-legacy-resort-casino/img-1.jpg",
+    "/images/hotels/silver-legacy-resort-casino/img-2.jpg"
+  ],
   "faqs": [
     {
       "question": "Where is Rum Bullions?",
