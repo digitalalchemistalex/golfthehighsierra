@@ -91,7 +91,7 @@ function Lightbox({ images, startIndex, onClose, name }: { images: string[]; sta
       <button onClick={onClose} className="absolute top-4 right-4 text-white/60 hover:text-white z-10 p-2"><X className="w-8 h-8" /></button>
       <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i - 1 + images.length) % images.length); }} className="absolute left-4 text-white/60 hover:text-white z-10 p-2"><ChevronLeft className="w-10 h-10" /></button>
       <div className="relative w-[90vw] h-[80vh]" onClick={e => e.stopPropagation()}>
-        <Image src={images[idx]} alt={`${name} ${idx + 1}`} fill className={`object-contain ${isLogo(images[idx]) ? "p-12" : ""}`} sizes="90vw" />
+        <Image src={images[idx]} alt={`${name} ${idx + 1}`} fill priority loading="eager" className={`object-contain ${isLogo(images[idx]) ? "p-12" : ""}`} sizes="90vw" />
       </div>
       <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i + 1) % images.length); }} className="absolute right-4 text-white/60 hover:text-white z-10 p-2"><ChevronRight className="w-10 h-10" /></button>
       <div className="absolute bottom-4 text-white/40 text-xs tracking-widest">{idx + 1} / {images.length}</div>
