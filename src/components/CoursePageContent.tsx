@@ -131,16 +131,14 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
     <div style={{ ...cssVars, fontFamily: "var(--sans)", background: "var(--white)", color: "var(--ink)", overflowX: "hidden" }}>
 
       {/* ═══ 1. HERO — Split: Image Left + Caddie Slider Right ═══ */}
-      <section style={{ position: "relative", minHeight: 650, overflow: "hidden", background: "#0a0a08" }} className="flex flex-col lg:flex-row lg:h-screen">
+      <section style={{ position: "relative", minHeight: 650, overflow: "hidden", background: "#0a0a08" }} className="flex flex-col lg:h-screen">
 
-        {/* ── LEFT: Course Image ── */}
-        <div className="relative w-full lg:w-1/2 h-[70vh] lg:h-full shrink-0">
+        {/* ── FULL-WIDTH: Course Image ── */}
+        <div className="relative w-full h-[70vh] lg:h-full">
           <div style={{ position: "absolute", inset: 0 }}>
-            {course.heroImage && <Image src={course.heroImage} alt={course.name} fill priority {...bp(course.heroImage)} className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" style={{ opacity: .55, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
+            {course.heroImage && <Image src={course.heroImage} alt={course.name} fill priority {...bp(course.heroImage)} className="object-cover" sizes="100vw" style={{ opacity: .55, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
           </div>
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(0,0,0,.25) 0%,transparent 35%,transparent 55%,rgba(0,0,0,.65) 100%)" }} />
-
-
 
           {/* Hero content — course name + stats */}
           <div style={{ position: "absolute", inset: 0, zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 clamp(32px,5vw,80px) clamp(48px,8vh,80px)" }}>
@@ -174,16 +172,9 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
               </div>
             </R>
           </div>
-        </div>
 
-        {/* ── RIGHT: Trips Caddie Slider or fallback image ── */}
-        <div className="hidden lg:block w-full lg:w-1/2 relative border-l-0 lg:border-l border-white/[0.04] overflow-hidden">
-          {/* Fallback image — always rendered, sits behind trip slider */}
-          <div className="absolute inset-0 z-[1]">
-            {course.images?.[1] ? <Image src={course.images[1]} alt={`${course.name} gallery`} fill loading="eager" {...bp(course.images[1])} className="object-cover brightness-[.45]" sizes="50vw" /> : course.heroImage && <Image src={course.heroImage} alt={course.name} fill loading="eager" {...bp(course.heroImage)} className="object-cover brightness-[.35] scale-x-[-1]" sizes="50vw" />}
-          </div>
-          {/* Trip slider overlays on top when trips exist */}
-          <div className="relative z-[2]">
+          {/* ── Trips Caddie Slider — overlays right half when trips exist ── */}
+          <div className="hidden lg:block absolute top-0 right-0 w-1/2 h-full z-[3]">
             <HeroTripSlider slug={course.slug} type="course" />
           </div>
         </div>
