@@ -739,9 +739,9 @@ export default function CoursePageContent({ course, relatedCourses = [], related
               <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 12 }} className="max-md:!grid-cols-2 max-sm:!grid-cols-1">
                 {experiences.map((item, i) => (
                   <R key={i} delay={0.14 + i * 0.07}>
-                    <div style={{ borderRadius: 14, overflow: "hidden", position: "relative", minHeight: 320 }} className="group cursor-pointer">
+                    <div style={{ borderRadius: 14, overflow: "hidden", position: "relative", height: 360 }} className="group cursor-pointer">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={item.img} alt={item.label} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "brightness(.5)", transition: "transform .9s cubic-bezier(.16,1,.3,1)", display: "block" }} className="group-hover:scale-105 group-hover:!brightness-[.65] transition-all duration-[900ms]" />
+                      <img src={item.img} alt={item.label} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", filter: "brightness(.5)", transition: "transform .9s cubic-bezier(.16,1,.3,1)" }} className="group-hover:scale-105 group-hover:!brightness-[.65] transition-all duration-[900ms]" />
                       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,transparent 35%,rgba(0,0,0,.9) 100%)" }} />
                       <div style={{ position: "absolute", top: 14, left: 14, width: 34, height: 34, borderRadius: "50%", background: "rgba(255,255,255,.07)", backdropFilter: "blur(8px)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 15 }}>{item.icon}</div>
                       <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "18px 16px" }}>
