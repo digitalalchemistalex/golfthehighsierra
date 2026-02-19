@@ -31,7 +31,7 @@ const TAXONOMIES: Record<
         type: v.type,
         region: v.regionLabel || v.region,
       })),
-    basePath: "/portfolio/v/",
+    basePath: "/portfolio/",
   },
   food: {
     title: "All Food & Dining",
@@ -48,7 +48,7 @@ const TAXONOMIES: Record<
         type: v.type,
         region: v.regionLabel || v.region,
       })),
-    basePath: "/portfolio/v/",
+    basePath: "/portfolio/",
   },
   "all-atlantis": {
     title: "All Atlantis",
@@ -65,7 +65,7 @@ const TAXONOMIES: Record<
         type: v.type,
         region: v.regionLabel || v.region,
       })),
-    basePath: "/portfolio/v/",
+    basePath: "/portfolio/",
   },
   "all-eldorado": {
     title: "All Eldorado",
@@ -83,7 +83,7 @@ const TAXONOMIES: Record<
         type: v.type,
         region: v.regionLabel || v.region,
       })),
-    basePath: "/portfolio/v/",
+    basePath: "/portfolio/",
   },
   "all-carson-valley-inn": {
     title: "All Carson Valley Inn",
@@ -100,7 +100,7 @@ const TAXONOMIES: Record<
         type: v.type,
         region: v.regionLabel || v.region,
       })),
-    basePath: "/portfolio/v/",
+    basePath: "/portfolio/",
   },
   "all-cedar-house": {
     title: "All Cedar House",
@@ -117,7 +117,7 @@ const TAXONOMIES: Record<
         type: v.type,
         region: v.regionLabel || v.region,
       })),
-    basePath: "/portfolio/v/",
+    basePath: "/portfolio/",
   },
   "all-lake-tahoe-resort": {
     title: "All Lake Tahoe Resort",
@@ -135,7 +135,7 @@ const TAXONOMIES: Record<
         type: v.type,
         region: v.regionLabel || v.region,
       })),
-    basePath: "/portfolio/v/",
+    basePath: "/portfolio/",
   },
   "old-greenwood": {
     title: "Old Greenwood",

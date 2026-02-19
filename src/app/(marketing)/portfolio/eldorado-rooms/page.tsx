@@ -47,7 +47,7 @@ export default function EldoradoRoomsPage() {
           {rooms.map((room: any) => (
             <Link
               key={room.slug}
-              href={`/portfolio/v/${room.slug}/`}
+              href={`/portfolio/${room.slug}/`}
               className="group rounded-2xl overflow-hidden bg-[#FAFAF8] border border-[#E8E4DE] hover:shadow-lg transition-all duration-300"
             >
               <div className="relative h-48 overflow-hidden">
