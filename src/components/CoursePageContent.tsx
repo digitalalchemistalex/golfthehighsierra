@@ -148,23 +148,21 @@ export default function CoursePageContent({ course, relatedCourses = [], related
   const nameParts = course.name.split(" ");
   const firstName = nameParts[0];
 
-  // TEXT HIERARCHY — each source used exactly once, no overlaps
-  // quoteText: pointOfView only (it's a curated editorial voice, distinct from description)
-  // para1: contentParagraphs[0] if exists, else description (never both)
-  const hasPointOfView = !!course.pointOfView;
-  const hasContentParagraphs = !!(course.contentParagraphs?.length);
-  const quoteText = hasPointOfView
-    ? course.pointOfView!
-    : course.featuredHole?.description || "";
-  // para1: use contentParagraphs[0] if available, else description
-  // but if pointOfView is ABSENT and we used description for quote, skip description in story
-  const para1 = hasContentParagraphs
-    ? course.contentParagraphs![0]
-    : (!hasPointOfView ? "" : course.description.substring(0, 350));
-  // para2: second paragraph if available, else description when pointOfView covered the quote slot
-  const para2 = hasContentParagraphs && course.contentParagraphs!.length > 1
-    ? course.contentParagraphs![1]
-    : (hasContentParagraphs ? course.description.substring(0, 280) : "");
+  // ── TEXT HIERARCHY — strict, no field used more than once ──
+  // Slot 1 — Quote section (left col): pointOfView ONLY. Never falls back to anything else.
+  const quoteText = course.pointOfView || "";
+
+  // Slot 2 — Story section para1: contentParagraphs[0], else description
+  const para1 = course.contentParagraphs?.[0] || course.description || "";
+
+  // Slot 3 — Story section para2: contentParagraphs[1] only (no fallback to description)
+  const para2 = course.contentParagraphs?.[1] || "";
+
+  // Slot 4 — Featured hole pull quote: featuredHole.description ONLY.
+  // Never pointOfView, never contentParagraphs already used above.
+  // Falls back to contentParagraphs[2] which is distinct from para1/para2.
+  // If nothing available, render nothing.
+  const holeQuote = course.featuredHole?.description || course.contentParagraphs?.[2] || "";
   const teeData = course.teeData || [];
   const maxYardage = teeData.length ? Math.max(...teeData.map(t => t.yardage)) : 0;
 
@@ -444,12 +442,14 @@ export default function CoursePageContent({ course, relatedCourses = [], related
               </div>
             </R>
           )}
+          {holeQuote && (
           <R delay={0.18}>
             <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(17px,2vw,26px)", fontWeight: 300, fontStyle: "italic", lineHeight: 1.58, color: "rgba(255,255,255,.55)", marginTop: 22, maxWidth: 440, position: "relative", paddingTop: 28 }}>
               <span style={{ fontFamily: "var(--serif)", fontSize: 64, color: "rgba(201,162,77,.16)", lineHeight: ".4", position: "absolute", top: 0, left: 0 }}>&ldquo;</span>
-              {quoteText}
+              {holeQuote}
             </div>
           </R>
+          )}
           <R delay={0.24}><div style={{ fontSize: 9, color: "rgba(255,255,255,.65)", letterSpacing: 2.5, textTransform: "uppercase", marginTop: 18 }}>— Golf the High Sierra</div></R>
         </div>
       </section>
