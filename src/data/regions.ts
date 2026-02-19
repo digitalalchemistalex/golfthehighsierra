@@ -19,7 +19,7 @@ export interface RegionData {
 
 export const REGIONS: RegionData[] = [
   {
-    slug: "reno-golf-packages",
+    slug: "best-golf-courses-reno",
     name: "Reno",
     tagline: "Casino Golf Capital",
     description:
@@ -215,7 +215,9 @@ export const REGIONS: RegionData[] = [
 ];
 
 export function getRegionBySlug(slug: string) {
-  return REGIONS.find((r) => r.slug === slug);
+  // Support alias: reno-golf-packages → best-golf-courses-reno
+  const normalised = slug === "reno-golf-packages" ? "best-golf-courses-reno" : slug;
+  return REGIONS.find((r) => r.slug === normalised);
 }
 
 export function getAllRegionSlugs(): string[] {

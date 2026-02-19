@@ -1,300 +1,230 @@
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Phone,
-  MapPin,
-  Star,
-  ArrowRight,
-  DollarSign,
-  CheckCircle2,
-  Calendar,
-  Hotel,
-  Mountain,
-} from "lucide-react";
+import { notFound } from "next/navigation";
+import { Phone, ArrowRight, CheckCircle2, Star, MapPin } from "lucide-react";
 import { getAllRegionSlugs, getRegionBySlug } from "@/data/regions";
 import { getCoursesByRegion } from "@/data/courses";
+import { getHotelBySlug } from "@/data/hotels";
+
+/* ─── Reveal (CSS-only for server component) ─── */
+function R({ children, delay = 0, style }: { children: React.ReactNode; delay?: number; style?: React.CSSProperties }) {
+  return <div style={{ ...style, animationDelay: `${delay}s` }} className="region-reveal">{children}</div>;
+}
 
 export async function generateStaticParams() {
   return getAllRegionSlugs().map((regionSlug) => ({ regionSlug }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { regionSlug: string };
-}): Promise<Metadata> {
-  const region = getRegionBySlug(params.regionSlug);
-  if (!region) return {};
-  return {
-    title: region.meta.title,
-    description: region.meta.description,
-    openGraph: {
-      title: region.meta.title,
-      description: region.meta.description,
-      images: [{ url: region.heroImage }],
-    },
-  };
-}
-
-export default function RegionPage({
-  params,
-}: {
-  params: { regionSlug: string };
-}) {
+export default function RegionPage({ params }: { params: { regionSlug: string } }) {
   const region = getRegionBySlug(params.regionSlug);
   if (!region) notFound();
 
-  // Gather courses from all matching region keys
   const courses = region.courseRegions.flatMap((r) => getCoursesByRegion(r));
+  const hotels = region.hotels
+    .map((h) => ({ ...h, data: h.slug ? getHotelBySlug(h.slug) : null }));
+
+  const packageItems = [
+    "Tee times at your chosen courses — group rates guaranteed",
+    "Hotel nights with golf package pricing, not rack rate",
+    "Transport between courses and hotel if needed",
+    "Dining reservations at top resort restaurants",
+    "Custom itinerary — 2 rounds to 5 rounds, any configuration",
+  ];
 
   return (
-    <main className="min-h-screen">
-      {/* ─── Hero ─── */}
-      <section className="relative h-[55vh] min-h-[420px] overflow-hidden">
-        <Image
-          src={region.heroImage}
-          alt={`${region.name} golf courses`}
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-pine-900/80 via-pine-900/50 to-pine-900/90" />
-        <div className="relative z-10 flex h-full flex-col justify-end px-6 pb-12 md:px-12 lg:px-20">
-          <span className="mb-3 inline-block w-fit rounded-full bg-gold-500/20 px-4 py-1 text-sm font-semibold uppercase tracking-wider text-gold-400">
-            {region.tagline}
-          </span>
-          <h1 className="font-heading text-4xl font-bold text-white md:text-5xl lg:text-6xl">
-            {region.name} Golf Packages
-          </h1>
-          <p className="mt-3 max-w-2xl text-lg text-cream-300/80">
-            {courses.length} championship courses · Custom stay &amp; play packages · {region.priceRange}
-          </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href="https://golfthehighsierra.com/contact-custom-golf-package/"
-              className="inline-flex items-center gap-2 rounded-lg bg-gold-500 px-6 py-3 text-sm font-bold text-pine-900 transition hover:bg-gold-400 hover:shadow-lg"
-            >
-              Get a Free Quote <ArrowRight className="h-4 w-4" />
-            </a>
-            <a
-              href="tel:+18885848232"
-              className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
-            >
-              <Phone className="h-4 w-4" /> 888-584-8232
-            </a>
-          </div>
+    <main style={{ minHeight: "100vh", background: "var(--cream)" }}>
+
+      {/* ═══ HERO ═══ */}
+      <section style={{ position: "relative", height: "62vh", minHeight: 480, overflow: "hidden" }}>
+        {region.heroImage && (
+          <Image src={region.heroImage} alt={`${region.name} golf courses`} fill className="object-cover" priority />
+        )}
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(10,25,15,0.55) 0%, rgba(10,25,15,0.35) 40%, rgba(10,25,15,0.85) 100%)" }} />
+        <div style={{ position: "relative", zIndex: 10, height: "100%", display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "clamp(32px,6vw,80px)", paddingBottom: "clamp(40px,7vh,80px)" }}>
+          <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 600, marginBottom: 14 }}>{region.tagline}</div></R>
+          <R delay={0.06}><h1 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(36px,5vw,68px)", color: "#fff", lineHeight: 1.05, marginBottom: 16 }}>{region.name} <em style={{ fontStyle: "italic" }}>Golf Packages</em></h1></R>
+          <R delay={0.12}><p style={{ fontSize: 16, color: "rgba(255,255,255,0.75)", maxWidth: 560, marginBottom: 28, lineHeight: 1.6 }}>{courses.length} championship courses · Custom stay &amp; play packages · {region.priceRange}</p></R>
+          <R delay={0.18}>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
+              <a href="/contact-custom-golf-package/" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--gold)", color: "#fff", padding: "14px 28px", borderRadius: 100, fontSize: 13, fontWeight: 700, letterSpacing: 0.5, textDecoration: "none" }}>
+                Get a Free Quote <ArrowRight size={14} />
+              </a>
+              <a href="tel:+18885848232" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,0.12)", border: "1px solid rgba(255,255,255,0.25)", color: "#fff", padding: "14px 24px", borderRadius: 100, fontSize: 13, fontWeight: 600, textDecoration: "none", backdropFilter: "blur(8px)" }}>
+                <Phone size={14} /> 888-584-8232
+              </a>
+            </div>
+          </R>
         </div>
       </section>
 
-      {/* ─── Quick Stats ─── */}
-      <section className="border-b border-pine-700 bg-pine-800">
-        <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-8 px-6 py-5 text-sm text-cream-300">
-          <span className="flex items-center gap-2">
-            <Mountain className="h-4 w-4 text-gold-400" /> {courses.length} Courses
-          </span>
-          <span className="flex items-center gap-2">
-            <Hotel className="h-4 w-4 text-gold-400" /> {region.hotels.length} Partner Hotels
-          </span>
-          <span className="flex items-center gap-2">
-            <DollarSign className="h-4 w-4 text-gold-400" /> {region.priceRange}
-          </span>
-          <span className="flex items-center gap-2">
-            <Calendar className="h-4 w-4 text-gold-400" /> {region.season}
-          </span>
+      {/* ═══ STATS BAR ═══ */}
+      <section style={{ background: "var(--forest)", padding: "16px clamp(32px,7vw,120px)" }}>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "0 40px", justifyContent: "center", rowGap: 8 }}>
+          {[`${courses.length} Championship Courses`, `${hotels.length} Partner Hotels`, region.priceRange || "", region.season].filter(Boolean).map((item, i) => (
+            <span key={i} style={{ fontSize: 11, color: "rgba(255,255,255,0.7)", letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 500 }}>{item}</span>
+          ))}
         </div>
       </section>
 
-      {/* ─── Main Content ─── */}
-      <section className="bg-cream-200">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:px-12">
-          {/* About Region */}
-          <div className="mb-16 max-w-3xl">
-            <h2 className="font-heading text-3xl font-bold text-pine-800">
-              Why Golf {region.name}?
-            </h2>
-            <div className="mt-2 h-1 w-16 rounded bg-gold-500" />
-            <p className="mt-6 text-lg leading-relaxed text-charcoal-lighter">
-              {region.whyPlay}
-            </p>
-          </div>
-
-          {/* Highlights Grid */}
-          <div className="mb-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {region.highlights.map((h, i) => (
-              <div
-                key={i}
-                className="flex items-start gap-3 rounded-xl bg-white p-5 shadow-sm"
-              >
-                <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-pine-400" />
-                <span className="text-sm text-charcoal">{h}</span>
+      {/* ═══ WHY + HIGHLIGHTS ═══ */}
+      <section style={{ padding: "clamp(48px,8vh,96px) clamp(32px,7vw,120px)", background: "var(--white)" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 64, alignItems: "start" }} className="max-md:!grid-cols-1">
+          <div>
+            <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>Why Golf Here</div></R>
+            <R delay={0.06}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(26px,3vw,42px)", lineHeight: 1.1, marginBottom: 20 }}>Golf {region.name} <em style={{ fontStyle: "italic" }}>Your Way</em></h2></R>
+            <R delay={0.1}><p style={{ color: "var(--stone)", fontSize: 15, lineHeight: 1.8, marginBottom: 24 }}>{region.whyPlay}</p></R>
+            <R delay={0.14}>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+                {region.bestFor.map((b, i) => (
+                  <span key={i} style={{ background: "var(--cream)", border: "1px solid var(--bone)", color: "var(--forest)", padding: "6px 14px", borderRadius: 100, fontSize: 11, fontWeight: 600, letterSpacing: 0.5 }}>{b}</span>
+                ))}
               </div>
-            ))}
+            </R>
           </div>
-
-          {/* Best For */}
-          <div className="mb-16 rounded-2xl bg-pine-800 p-8 md:p-10">
-            <h3 className="font-heading text-2xl font-bold text-white">
-              Best For
-            </h3>
-            <div className="mt-4 flex flex-wrap gap-3">
-              {region.bestFor.map((b, i) => (
-                <span
-                  key={i}
-                  className="rounded-full border border-gold-500/30 bg-gold-500/10 px-4 py-2 text-sm font-medium text-gold-400"
-                >
-                  {b}
-                </span>
+          <div>
+            <R delay={0.08}><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>Region Highlights</div></R>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {region.highlights.map((h, i) => (
+                <R key={i} delay={0.1 + i * 0.04}>
+                  <div style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
+                    <CheckCircle2 size={16} style={{ color: "var(--gold)", flexShrink: 0, marginTop: 2 }} />
+                    <span style={{ fontSize: 14, color: "var(--charcoal)", lineHeight: 1.5 }}>{h}</span>
+                  </div>
+                </R>
               ))}
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* ─── Course Grid ─── */}
-          <h2 className="font-heading text-3xl font-bold text-pine-800">
-            {region.name} Golf Courses
-          </h2>
-          <div className="mt-2 h-1 w-16 rounded bg-gold-500" />
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {courses.map((course) => (
-              <Link
-                key={course.slug}
-                href={`/portfolio/${course.slug}`}
-                className="group overflow-hidden rounded-2xl border border-stone-400/30 bg-white shadow-sm transition-all hover:-translate-y-1 hover:border-gold-500/40 hover:shadow-lg"
-              >
-                {/* Card Image */}
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  {course.heroImage ? (
-                    <Image
-                      src={course.heroImage}
-                      alt={course.name}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  ) : (
-                    <div className="flex h-full items-center justify-center bg-pine-800/10 text-pine-400">
-                      <Mountain className="h-12 w-12" />
-                    </div>
-                  )}
-                  {course.priceRange && (
-                    <span className="absolute right-3 top-3 rounded-md bg-pine-800/90 px-2.5 py-1 text-xs font-bold text-white backdrop-blur-sm">
-                      {course.priceRange}
-                    </span>
-                  )}
-                </div>
-                {/* Card Body */}
-                <div className="p-5">
-                  <h3 className="font-heading text-xl font-bold text-pine-800 transition-colors group-hover:text-pine-400">
-                    {course.name}
-                  </h3>
-                  {course.address?.addressLocality && (
-                    <p className="mt-1 flex items-center gap-1 text-xs text-charcoal-lighter">
-                      <MapPin className="h-3 w-3" />
-                      {course.address.addressLocality},{" "}
-                      {course.address.addressRegion}
-                    </p>
-                  )}
-                  {course.rating && (
-                    <div className="mt-3 flex items-center gap-2">
-                      <div className="flex items-center gap-1 rounded-md bg-gold-500/10 px-2 py-0.5">
-                        <Star className="h-3.5 w-3.5 fill-gold-500 text-gold-500" />
-                        <span className="text-xs font-bold text-pine-800">
-                          {course.rating.value}
-                        </span>
+      {/* ═══ COURSES ═══ */}
+      <section style={{ padding: "clamp(48px,8vh,96px) clamp(32px,7vw,120px)", background: "var(--cream)" }}>
+        <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>The Courses</div></R>
+        <R delay={0.06}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3vw,44px)", lineHeight: 1.1, marginBottom: 32 }}>{region.name} <em style={{ fontStyle: "italic" }}>Golf Courses</em></h2></R>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }} className="max-md:!grid-cols-1 max-lg:!grid-cols-2">
+          {courses.map((course, i) => (
+            <R key={course.slug} delay={0.08 + i * 0.04}>
+              <Link href={`/portfolio/${course.slug}/`} style={{ textDecoration: "none", color: "inherit" }}>
+                <div style={{ borderRadius: 12, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--white)", transition: "all .4s" }} className="hover:!shadow-[0_16px_48px_rgba(0,0,0,.08)] hover:-translate-y-1">
+                  <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
+                    {course.heroImage
+                      ? <Image src={course.heroImage} alt={course.name} fill className="object-cover transition-transform duration-500 hover:scale-105" sizes="(max-width:768px) 100vw, 33vw" />
+                      : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
+                    {course.priceRange && <span style={{ position: "absolute", top: 10, right: 10, background: "rgba(10,25,15,0.85)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 10, fontWeight: 600 }}>{course.priceRange}</span>}
+                  </div>
+                  <div style={{ padding: 18 }}>
+                    <div style={{ fontFamily: "var(--serif)", fontSize: 19, fontWeight: 400, color: "var(--ink)", marginBottom: 4 }}>{course.name}</div>
+                    {course.address?.addressLocality && (
+                      <div style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 11, color: "var(--stone)", marginBottom: 10 }}>
+                        <MapPin size={10} />{course.address.addressLocality}, {course.address.addressRegion}
                       </div>
-                      <span className="text-xs text-charcoal-lighter">
-                        ({course.rating.count} reviews)
-                      </span>
-                    </div>
-                  )}
-                  <p className="mt-3 line-clamp-2 text-sm text-charcoal-lighter">
-                    {course.description}
-                  </p>
-                  <div className="mt-4 flex items-center gap-1 text-sm font-semibold text-pine-500 transition-colors group-hover:text-gold-500">
-                    View Course <ArrowRight className="h-4 w-4" />
+                    )}
+                    {course.rating && (
+                      <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 10 }}>
+                        <Star size={12} style={{ fill: "var(--gold)", color: "var(--gold)" }} />
+                        <span style={{ fontSize: 12, fontWeight: 600, color: "var(--ink)" }}>{course.rating.value}</span>
+                        <span style={{ fontSize: 11, color: "var(--stone)" }}>({course.rating.count})</span>
+                      </div>
+                    )}
+                    <p style={{ fontSize: 13, color: "var(--stone)", lineHeight: 1.5, marginBottom: 14, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" } as React.CSSProperties}>{course.description}</p>
+                    <div style={{ fontSize: 11, color: "var(--gold)", fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>View Course →</div>
                   </div>
                 </div>
               </Link>
+            </R>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══ HOW IT WORKS ═══ */}
+      <section style={{ padding: "clamp(48px,8vh,96px) clamp(32px,7vw,120px)", background: "var(--forest)" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 64, alignItems: "center" }} className="max-md:!grid-cols-1">
+          <div>
+            <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14 }}>How It Works</div></R>
+            <R delay={0.06}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3vw,44px)", lineHeight: 1.1, color: "#fff", marginBottom: 16 }}>One Call.<br /><em style={{ fontStyle: "italic" }}>Complete Trip.</em></h2></R>
+            <R delay={0.1}><p style={{ color: "rgba(255,255,255,0.65)", fontSize: 15, lineHeight: 1.8, marginBottom: 28 }}>Most golf groups spend weeks coordinating tee times, hotel blocks, and transport. We do it in one conversation — tell us your dates, group size, and budget, and we build the rest.</p></R>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {packageItems.map((item, i) => (
+                <R key={i} delay={0.12 + i * 0.04}>
+                  <div style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
+                    <div style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--gold)", flexShrink: 0, marginTop: 7 }} />
+                    <span style={{ fontSize: 14, color: "rgba(255,255,255,0.75)", lineHeight: 1.6 }}>{item}</span>
+                  </div>
+                </R>
+              ))}
+            </div>
+          </div>
+          <R delay={0.12}>
+            <div style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: 20, padding: 40 }}>
+              <div style={{ fontFamily: "var(--serif)", fontSize: 22, color: "#fff", marginBottom: 8 }}>Plan Your {region.name} Trip</div>
+              <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 13, marginBottom: 28, lineHeight: 1.6 }}>Free consultation · No obligation · Group rates guaranteed</p>
+              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                <a href="/contact-custom-golf-package/" style={{ display: "block", textAlign: "center", background: "var(--gold)", color: "#fff", padding: "16px 24px", borderRadius: 100, fontSize: 13, fontWeight: 700, letterSpacing: 0.5, textDecoration: "none" }}>
+                  Get a Free Quote →
+                </a>
+                <a href="tel:+18885848232" style={{ display: "block", textAlign: "center", background: "transparent", border: "1px solid rgba(255,255,255,0.2)", color: "#fff", padding: "15px 24px", borderRadius: 100, fontSize: 13, fontWeight: 600, textDecoration: "none" }}>
+                  📞 Call 1-888-584-8232
+                </a>
+              </div>
+              <p style={{ fontSize: 11, color: "rgba(255,255,255,0.3)", textAlign: "center", marginTop: 16 }}>Trusted by 10,000+ golf groups since 2004</p>
+            </div>
+          </R>
+        </div>
+      </section>
+
+      {/* ═══ PARTNER HOTELS ═══ */}
+      {hotels.length > 0 && (
+        <section style={{ padding: "clamp(48px,8vh,96px) clamp(32px,7vw,120px)", background: "var(--white)" }}>
+          <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>Where to Stay</div></R>
+          <R delay={0.06}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3vw,44px)", lineHeight: 1.1, marginBottom: 8 }}>Partner <em style={{ fontStyle: "italic" }}>Hotels</em></h2></R>
+          <R delay={0.1}><p style={{ color: "var(--stone)", fontSize: 14, marginBottom: 32, maxWidth: 520 }}>All hotels are bookable as part of your golf package. We negotiate group rates, handle room blocks, and coordinate check-in around your tee times.</p></R>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }} className="max-md:!grid-cols-1 max-lg:!grid-cols-2">
+            {hotels.map(({ name, slug, data }, i) => (
+              <R key={slug || name} delay={0.08 + i * 0.04}>
+                {slug ? (
+                  <Link href={`/portfolio/${slug}/`} style={{ textDecoration: "none", color: "inherit" }}>
+                    <div style={{ borderRadius: 12, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--cream)", transition: "all .4s" }} className="hover:!shadow-[0_16px_48px_rgba(0,0,0,.08)] hover:-translate-y-1">
+                      <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
+                        {data?.heroImage
+                          ? <Image src={data.heroImage} alt={name} fill className="object-cover transition-transform duration-500 hover:scale-105" sizes="(max-width:768px) 100vw, 33vw" />
+                          : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
+                      </div>
+                      <div style={{ padding: 16 }}>
+                        <div style={{ fontFamily: "var(--serif)", fontSize: 17, color: "var(--ink)", marginBottom: 8 }}>{name}</div>
+                        <div style={{ fontSize: 11, color: "var(--gold)", fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>View Hotel →</div>
+                      </div>
+                    </div>
+                  </Link>
+                ) : (
+                  <div style={{ borderRadius: 12, border: "1px solid var(--bone)", background: "var(--cream)", padding: 20 }}>
+                    <div style={{ fontFamily: "var(--serif)", fontSize: 17, color: "var(--ink)" }}>{name}</div>
+                  </div>
+                )}
+              </R>
             ))}
           </div>
+        </section>
+      )}
 
-          {/* ─── Partner Hotels ─── */}
-          {region.hotels.length > 0 && (
-            <div className="mt-20">
-              <h2 className="font-heading text-3xl font-bold text-pine-800">
-                Partner Hotels &amp; Lodging
-              </h2>
-              <div className="mt-2 h-1 w-16 rounded bg-gold-500" />
-              <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                {region.hotels.map((hotel, i) => (
-                  <div
-                    key={i}
-                    className="flex items-center gap-3 rounded-xl border border-stone-400/30 bg-white p-4 shadow-sm transition hover:border-gold-500/30 hover:shadow-md"
-                  >
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-pine-800/10">
-                      <Hotel className="h-5 w-5 text-pine-500" />
-                    </div>
-                    <span className="text-sm font-medium text-charcoal">
-                      {hotel.name}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-      </section>
+      {/* ═══ REAL TRIPS ═══ */}
+      {/* <RelatedTrips slug={region.slug} type="course" /> */}
 
-      {/* ─── Bottom CTA ─── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-pine-900 via-pine-800 to-pine-900 py-20">
-        <div className="absolute left-1/4 top-1/3 h-64 w-64 rounded-full bg-gold-500/5 blur-3xl" />
-        <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
-          <h2 className="font-heading text-3xl font-bold text-white md:text-4xl">
-            Ready to Play {region.name}?
-          </h2>
-          <p className="mt-4 text-lg text-cream-300/70">
-            Tell us your dates, group size, and budget. We&apos;ll build a custom
-            {" "}{region.name} package — no obligation, no hidden fees.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <a
-              href="https://golfthehighsierra.com/contact-custom-golf-package/"
-              className="inline-flex items-center gap-2 rounded-lg bg-gold-500 px-8 py-3.5 text-sm font-bold text-pine-900 transition hover:bg-gold-400 hover:shadow-lg"
-            >
-              Get a Free Quote <ArrowRight className="h-4 w-4" />
+      {/* ═══ BOTTOM CTA ═══ */}
+      <section style={{ background: "var(--cream)", borderTop: "1px solid var(--bone)", padding: "clamp(48px,8vh,80px) clamp(32px,7vw,120px)", textAlign: "center" }}>
+        <R><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, marginBottom: 12 }}>Ready to Play <em style={{ fontStyle: "italic" }}>{region.name}?</em></h2></R>
+        <R delay={0.08}><p style={{ color: "var(--stone)", fontSize: 15, maxWidth: 520, margin: "0 auto 32px", lineHeight: 1.7 }}>Tell us your dates, group size, and budget. We&apos;ll build a custom {region.name} package — no obligation, no hidden fees.</p></R>
+        <R delay={0.14}>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center" }}>
+            <a href="/contact-custom-golf-package/" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--forest)", color: "#fff", padding: "16px 32px", borderRadius: 100, fontSize: 13, fontWeight: 700, letterSpacing: 0.5, textDecoration: "none" }}>
+              Get a Free Quote <ArrowRight size={14} />
             </a>
-            <a
-              href="tel:+18885848232"
-              className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/10 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
-            >
-              <Phone className="h-4 w-4" /> Call 888-584-8232
+            <a href="tel:+18885848232" style={{ display: "inline-flex", alignItems: "center", gap: 8, border: "1px solid var(--bone)", background: "var(--white)", color: "var(--ink)", padding: "16px 28px", borderRadius: 100, fontSize: 13, fontWeight: 600, textDecoration: "none" }}>
+              <Phone size={14} /> 888-584-8232
             </a>
           </div>
-          <p className="mt-6 text-xs text-cream-300/40">
-            Trusted by 10,000+ golf groups since 2004
-          </p>
-        </div>
+        </R>
       </section>
 
-      {/* ─── Schema.org ─── */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "TouristDestination",
-            name: `${region.name} Golf`,
-            description: region.description,
-            image: region.heroImage,
-            touristType: ["Golf Tourism", "Group Travel"],
-            includesAttraction: courses.map((c) => ({
-              "@type": "GolfCourse",
-              name: c.name,
-              url: `https://golfthehighsierra.com/portfolio/${c.slug}/`,
-            })),
-          }),
-        }}
-      />
     </main>
   );
 }
