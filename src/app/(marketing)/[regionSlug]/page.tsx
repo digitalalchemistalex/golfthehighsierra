@@ -33,7 +33,19 @@ export default function RegionPage({ params }: { params: { regionSlug: string } 
   ];
 
   return (
-    <main style={{ minHeight: "100vh", background: "var(--cream)" }}>
+    <main style={{
+      minHeight: "100vh", background: "#FAFAF5",
+      // CSS variable definitions (not in global scope for this page)
+      ["--forest" as string]: "#1E3A2F",
+      ["--gold" as string]: "#C9A24D",
+      ["--cream" as string]: "#FAFAF5",
+      ["--white" as string]: "#FFFFFF",
+      ["--ink" as string]: "#111111",
+      ["--stone" as string]: "#8B8577",
+      ["--bone" as string]: "#E8E2D9",
+      ["--charcoal" as string]: "#2A2A2A",
+      ["--serif" as string]: "var(--font-cormorant, 'Cormorant Garamond', Georgia, serif)",
+    }}>
 
       {/* ═══ HERO ═══ */}
       <section style={{ position: "relative", height: "62vh", minHeight: 480, overflow: "hidden" }}>
