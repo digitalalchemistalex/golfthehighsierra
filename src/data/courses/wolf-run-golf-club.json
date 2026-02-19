@@ -78,7 +78,11 @@
   ],
   "pointOfView": "No other Reno area golf course offers such a challenge, with rewarding beauty and serenity no matter how you score. You'll get lost in the views of the surrounding mountain tops and eastward across the Washoe Valley. Meandering streams and elevation changes make for some nervous shot-making, but forced carries are few from forward tee boxes if distance is not a strength of your game. There is always a ready beverage cart and a full-service bar and restaurant to help elevate your joy as well.",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "14 minutes from Reno Downtown (7 miles)",
+    "16 minutes from Peppermill Resort (9 miles)",
+    "18 minutes from Reno-Tahoe Airport (10 miles)"
+  ],
   "contentParagraphs": [
     "Wolf Run\u2019s par-72 layout features elevation changes, water hazards, and signature finishing holes.",
     "Play Wolf Run in Reno with golf groups, tee times, and stay and play packages. Trusted trip planning for buddies, corporate, and leisure groups.",
@@ -87,7 +91,9 @@
   ],
   "featuredHole": {
     "title": "Hole #16 \u2014 Par 3",
-    "description": "A dramatic downhill par 3 with Thomas Creek running along the left side. Club selection is everything here \u2014 the green sits below you with bunkers guarding the front. Take one extra club and trust it."
+    "description": "Wolf Run's stunning lakeside finishing hole wraps around a large natural pond demanding careful strategy on every shot. The approach to the green plays directly alongside the water with a bunker complex protecting the flag \u2014 a risk-reward closer that rewards bold play.",
+    "par": 5,
+    "yardage": 558
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -134,5 +140,47 @@
     "atlantis-casino-resort-spa-reno": 18,
     "peppermill-resort-spa-casino": 18,
     "grand-sierra-resort-reno": 14
-  }
+  },
+  "teeData": [
+    {
+      "name": "Black",
+      "yardage": 7059,
+      "par": 71,
+      "rating": 73.6,
+      "slope": 133,
+      "gender": "M"
+    },
+    {
+      "name": "Blue",
+      "yardage": 6609,
+      "par": 71,
+      "rating": 71.4,
+      "slope": 128,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6124,
+      "par": 71,
+      "rating": 69.2,
+      "slope": 122,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5604,
+      "par": 71,
+      "rating": 66.8,
+      "slope": 114,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 4972,
+      "par": 71,
+      "rating": 68.5,
+      "slope": 117,
+      "gender": "F"
+    }
+  ]
 }

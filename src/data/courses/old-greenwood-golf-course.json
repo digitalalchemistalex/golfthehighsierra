@@ -72,7 +72,11 @@
   ],
   "pointOfView": "There are few courses that leave a marked memory like Old Greenwood does! Jack Nicklaus outdid himself with this design. Cut through massive Ponderosa Pines over rolling terrain, the layout could not be more challenging, but equally satisfying. The course is big and beautiful and demands the absolute best of your game in all phases to score low. The greens are fair sized, but multiple tiers, speedy conditions, and subtle breaks will have you relieved with a two-putt par. Entry points to most greens are narrow, and steep-faced bunkers do their job in penalizing a mis-clubbed approach. Nonetheless, regardless of score, you will be genuinely satisfied, if not giddy, by the beauty, impeccably manicured grounds, and all-around majesty of this jewel! Once will not be enough as you'll surely add Old Greenwood to your annual golf adventure in the Sierras, especially when paired with its sister course, Gray's Crossing. There are no better 36 holes in Northern California!",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "6 minutes from Truckee (3 miles)",
+    "40 minutes from Reno (33 miles)",
+    "52 minutes from South Lake Tahoe (42 miles)"
+  ],
   "contentParagraphs": [
     "Play Old Greenwood in Truckee with golf groups, tee times, and stay and play packages. Expert planning for buddies, corporate, and leisure trips.",
     "Here is your chance to play where the pros play, the home of the PGA Tour\u2019s Barracuda Championship! Situated just outside the historic town of Truckee, Old Greenwood rivals that of other Nicklaus masterpieces. Magnificent views of the surrounding mountain peaks add an element of majesty found only in the Sierra.",
@@ -82,7 +86,9 @@
   ],
   "featuredHole": {
     "title": "Hole #18 \u2014 Par 5",
-    "description": "Jack Nicklaus designed this dramatic finishing par 5 with the Martis Valley stretching out before you. A creek winds through the fairway, and the green is tucked behind bunkers. A fitting end to one of Tahoe's finest layouts."
+    "description": "Jack Nicklaus signature design at its best \u2014 a long par 4 through the Sierra Nevada forest with a rock-lined creek demanding a precise tee shot placement. The approach plays slightly uphill to a large Nicklaus-style green with subtle but demanding breaks.",
+    "par": 4,
+    "yardage": 468
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -129,5 +135,47 @@
     "old-greenwood-lodging-truckee-ca": 2,
     "cedar-house-sport-hotel": 5,
     "hampton-inn-truckee-ca": 8
-  }
+  },
+  "teeData": [
+    {
+      "name": "Black (Bear)",
+      "yardage": 7518,
+      "par": 72,
+      "rating": 76.5,
+      "slope": 145,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 7068,
+      "par": 72,
+      "rating": 74.4,
+      "slope": 140,
+      "gender": "M"
+    },
+    {
+      "name": "Blue",
+      "yardage": 6602,
+      "par": 72,
+      "rating": 72.1,
+      "slope": 135,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6138,
+      "par": 72,
+      "rating": 69.8,
+      "slope": 127,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5413,
+      "par": 72,
+      "rating": 71.4,
+      "slope": 130,
+      "gender": "F"
+    }
+  ]
 }

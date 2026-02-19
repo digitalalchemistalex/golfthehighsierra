@@ -67,14 +67,20 @@
   ],
   "pointOfView": "Whitehawk Ranch is an absolute gem built within the farmlands and rolling hills of the Mohawk Valley. A combination of meadows, gentle topographic relief, and massive pine trees set the perfect stage for Dick Bailey's design talents. Bailey accentuated the natural beauty of the landscape by designing 12 holes within the meadows and 6 within the adjacent forested hillsides. Numerous lakes and Sulphur Creek, as well as immense plots of native flowers and grasses, play a big part in your experience, and your scoring. With some narrow fairways that penalize errant tee shots tightening your grip, straighter players will find birdie chances in numbers on their well conditioned, receptive and true-to-roll greens. Boasting four reachable par 5s and a drivable par 4, risk can breed reward; execute properly however, as mishits are penalized greatly when hit into the deep grasses lining the fairways and forest floors. The beauty of Whitehawk Ranch is beyond compare! The towering Lakes Basin mountain tops to the west and blocky peaks to the north and east make you feel in a world unto your own. The snack bar is well known for its delicious quickly prepped grinders, and a full bar and an ample beer selection satisfies the toughest thirsts. Pair Whitehawk Ranch with Grizzly Ranch and a stay at Plumas Pines Golf Resort and you're in for a memorable group outing!",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "8 minutes from Graeagle Village (4 miles)",
+    "80 minutes from Reno (70 miles)",
+    "60 minutes from Truckee (50 miles)"
+  ],
   "contentParagraphs": [
     "White Hawk Ranch Golf Club is a championship experience set in the scenic and natural splendor of the High Sierra\u2019s Mohawk Valley, just a short drive from Reno and Lake Tahoe. Sounds of wildlife and babbling brooks complement the audible peace and majestic surroundings of pine, cedar, and quaking aspen tree-lined fairways and accessible greens.",
     "Whitehawk Ranch boasts a all-grass practice facility, with putting and chipping greens, sand bunkers, and a well-known snack bar taking care of all your food and beverage needs. As one of four great golf courses in the Graeagle area, few areas are suited as well for a pristine mountain golf experience that should absolutely include Whitehawk Ranch."
   ],
   "featuredHole": {
     "title": "Hole #11 \u2014 Par 5",
-    "description": "A sweeping downhill par 5 through the pines with views of the Mohawk Valley. Long hitters can reach the green in two, but the approach must clear a natural creek crossing."
+    "description": "Golf Digest Top 10 California course signature hole \u2014 a downhill par 3 from an elevated tee through a natural bowl of towering pines. The green is set below surrounded by native bunkers and meadow grasses, with the Sierra ridgeline visible in every direction.",
+    "par": 3,
+    "yardage": 178
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -121,5 +127,47 @@
     "nakoma-resort-graeagle-ca": 15,
     "chalet-view-lodge-graeagle-ca": 12,
     "river-pines-resort-graeagle-ca": 12
-  }
+  },
+  "teeData": [
+    {
+      "name": "Black",
+      "yardage": 6925,
+      "par": 71,
+      "rating": 73.4,
+      "slope": 137,
+      "gender": "M"
+    },
+    {
+      "name": "Blue",
+      "yardage": 6483,
+      "par": 71,
+      "rating": 71.2,
+      "slope": 132,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6031,
+      "par": 71,
+      "rating": 69.0,
+      "slope": 124,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5562,
+      "par": 71,
+      "rating": 66.7,
+      "slope": 116,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 4988,
+      "par": 71,
+      "rating": 68.5,
+      "slope": 120,
+      "gender": "F"
+    }
+  ]
 }

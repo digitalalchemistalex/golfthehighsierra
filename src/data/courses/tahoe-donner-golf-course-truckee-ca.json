@@ -53,7 +53,11 @@
     "Yes. Golf the High Sierra creates packages that include lodging, tee times at Tahoe Donner, and even multi-course combos with nearby\nCoyote Moon Golf Course\n.\nRequest your package here \u00bb",
     "Summer tee times fill up quickly due to the strong membership base. We recommend booking early through Golf the High Sierra to secure preferred times.\nCheck availability \u00bb"
   ],
-  "distances": [],
+  "distances": [
+    "7 minutes from Truckee (3 miles)",
+    "43 minutes from Reno (35 miles)",
+    "52 minutes from South Lake Tahoe (43 miles)"
+  ],
   "facilities": [
     "Driving Range : A dedicated area to practice and perfect your swing before hitting the course.",
     "Short Game Practice Facility : Designed to help golfers improve their chipping and putting skills.",
@@ -93,7 +97,9 @@
   ],
   "featuredHole": {
     "title": "Hole #14 \u2014 Par 4",
-    "description": "A narrow, tree-lined par 4 that demands a well-placed tee shot. The green is elevated and sloped \u2014 approaches that miss long are gone. One of Tahoe Donner's most demanding holes."
+    "description": "Acclaimed as one of the finest par 4s in the Sierra Nevada. Massive elevation change off the tee gives way to an approach framed by granite boulders and mature Jeffrey pines, with the consistently excellent bentgrass green regarded as best-in-class at altitude.",
+    "par": 4,
+    "yardage": 415
   },
   "teeTimeInfo": "",
   "teeTips": [
@@ -142,5 +148,47 @@
     "cedar-house-sport-hotel": 10,
     "hampton-inn-truckee-ca": 10,
     "old-greenwood-lodging-truckee-ca": 12
-  }
+  },
+  "teeData": [
+    {
+      "name": "Black",
+      "yardage": 7002,
+      "par": 72,
+      "rating": 73.4,
+      "slope": 138,
+      "gender": "M"
+    },
+    {
+      "name": "Blue",
+      "yardage": 6572,
+      "par": 72,
+      "rating": 71.3,
+      "slope": 133,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6082,
+      "par": 72,
+      "rating": 69.0,
+      "slope": 126,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5582,
+      "par": 72,
+      "rating": 66.7,
+      "slope": 118,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 4972,
+      "par": 72,
+      "rating": 68.4,
+      "slope": 120,
+      "gender": "F"
+    }
+  ]
 }

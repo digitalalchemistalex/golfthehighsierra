@@ -19,7 +19,7 @@
     "value": 4.5,
     "count": 324
   },
-  "description": "Nestled within Pebble Beach's Del Monte Forest, Poppy Hills is the NCGA's flagship course — a Robert Trent Jones Jr. masterpiece where towering Monterey Pines frame firm-and-fast fairways with no rough, just sandy naturalized areas and pine straw. Co-host of the AT&T Pebble Beach Pro-Am for 19 years and a Golf Digest Top 100 You Can Play.",
+  "description": "Nestled within Pebble Beach's Del Monte Forest, Poppy Hills is the NCGA's flagship course \u2014 a Robert Trent Jones Jr. masterpiece where towering Monterey Pines frame firm-and-fast fairways with no rough, just sandy naturalized areas and pine straw. Co-host of the AT&T Pebble Beach Pro-Am for 19 years and a Golf Digest Top 100 You Can Play.",
   "holes": 18,
   "par": 71,
   "designer": "Robert Trent Jones Jr.",
@@ -40,7 +40,7 @@
     },
     {
       "question": "What makes Poppy Hills unique?",
-      "answer": "It's the only course in America owned by an amateur golf association. The 2014 renovation removed all rough, replacing it with sandy waste areas and pine straw — creating firm, fast, links-style conditions in a forest setting."
+      "answer": "It's the only course in America owned by an amateur golf association. The 2014 renovation removed all rough, replacing it with sandy waste areas and pine straw \u2014 creating firm, fast, links-style conditions in a forest setting."
     },
     {
       "question": "How does Poppy Hills connect to GTHS trips?",
@@ -48,8 +48,8 @@
     }
   ],
   "meta": {
-    "title": "Poppy Hills Golf Course – Pebble Beach | Golf The High Sierra",
-    "description": "Play the NCGA's flagship course in Pebble Beach — a RTJ Jr. masterpiece through the Del Monte Forest. Golf Digest Top 100, former AT&T Pro-Am host. Book through GTHS."
+    "title": "Poppy Hills Golf Course \u2013 Pebble Beach | Golf The High Sierra",
+    "description": "Play the NCGA's flagship course in Pebble Beach \u2014 a RTJ Jr. masterpiece through the Del Monte Forest. Golf Digest Top 100, former AT&T Pro-Am host. Book through GTHS."
   },
   "bodyText": [
     "Poppy Hills rides the rolling elevation of the Del Monte Forest, bringing together breathtaking design and golf's greatest landscape. Originally opened in 1986, the course underwent an extensive $10 million renovation in 2013-2014 that transformed it into what Colin Montgomerie compared to 'a little bit of Pinehurst and a little bit of Pine Valley.' The renovation removed 60 acres of irrigated turf, eliminated all rough in favor of sandy waste areas and pine straw, and opened surprising ocean views of Monterey Bay through the towering pines."
@@ -57,15 +57,15 @@
   "tips": [
     {
       "title": "",
-      "content": "Play the sandy waste areas as you would links-style — bump and run works beautifully"
+      "content": "Play the sandy waste areas as you would links-style \u2014 bump and run works beautifully"
     },
     {
       "title": "",
-      "content": "The bentgrass greens are among the purest on the peninsula — trust your reads"
+      "content": "The bentgrass greens are among the purest on the peninsula \u2014 trust your reads"
     },
     {
       "title": "",
-      "content": "Wind picks up in the afternoon — morning tee times play calmer"
+      "content": "Wind picks up in the afternoon \u2014 morning tee times play calmer"
     }
   ],
   "facilities": [
@@ -76,15 +76,19 @@
     "Bar",
     "Clubhouse"
   ],
-  "pointOfView": "The closest you can get to playing golf in a National Park — Robert Trent Jones Jr.'s own words describe Poppy Hills perfectly. For GTHS groups adding a Monterey Peninsula extension, this is the most accessible championship course in Pebble Beach at a fraction of the cost of its famous neighbors.",
+  "pointOfView": "The closest you can get to playing golf in a National Park \u2014 Robert Trent Jones Jr.'s own words describe Poppy Hills perfectly. For GTHS groups adding a Monterey Peninsula extension, this is the most accessible championship course in Pebble Beach at a fraction of the cost of its famous neighbors.",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "15 minutes from Monterey Airport (8 miles)",
+    "7 minutes from Pebble Beach Lodge (3 miles)",
+    "90 minutes from San Jose (80 miles)"
+  ],
   "contentParagraphs": [],
   "featuredHole": {
     "number": 15,
-    "par": 3,
-    "yardage": 183,
-    "description": "A brilliant Redan-style par 3 that demands precise club selection. The green angles away from the tee, with a deep bunker guarding the front. The prevailing wind adds another dimension to this strategic gem."
+    "par": 5,
+    "yardage": 539,
+    "description": "Classic NCGA members' course hole through the Del Monte Forest pines. A challenging dogleg left requires a controlled drive to open up the second shot to a green guarded by deep bunkers and natural rough typical of Pebble Beach golf."
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -99,22 +103,56 @@
       "quote": "We drove up from the Bay Area specifically to play Poppy Hills Golf Course. Absolutely worth it. The Northern California mountain backdrop on every hole is something special. GTHS arranged preferred tee times that worked perfectly for our group.",
       "author": "Mark T.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · bachelor party golf (12)"
+      "meta": "TripAdvisor \u00b7 bachelor party golf (12)"
     },
     {
       "stars": 5,
       "quote": "We've done golf trips all over the West, and Poppy Hills Golf Course is now a permanent stop. The condition was pristine, greens rolled true, and the mountain views are unmatched. GTHS set up our tee times perfectly.",
       "author": "Ashley D.",
       "source": "Yelp",
-      "meta": "Yelp · bachelor party golf (16)"
+      "meta": "Yelp \u00b7 bachelor party golf (16)"
     },
     {
       "stars": 4,
       "quote": "If you're planning a golf trip to Northern California, you have to play Poppy Hills Golf Course. We had 16 guys and GTHS handled all the logistics. Course was in fantastic shape and the practice facility was top-notch.",
       "author": "Michelle D.",
       "source": "Google",
-      "meta": "Google · charity tournament (24 players)"
+      "meta": "Google \u00b7 charity tournament (24 players)"
     }
   ],
-  "priceRange": ""
+  "priceRange": "",
+  "teeData": [
+    {
+      "name": "Blue",
+      "yardage": 6865,
+      "par": 72,
+      "rating": 73.9,
+      "slope": 139,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6346,
+      "par": 72,
+      "rating": 71.3,
+      "slope": 132,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5893,
+      "par": 72,
+      "rating": 68.7,
+      "slope": 124,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5341,
+      "par": 72,
+      "rating": 71.5,
+      "slope": 130,
+      "gender": "F"
+    }
+  ]
 }

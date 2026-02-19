@@ -110,7 +110,9 @@
   ],
   "featuredHole": {
     "title": "Hole #8 \u2014 Par 3",
-    "description": "A stunning downhill par 3 with Lake Tahoe glimmering through the pines behind the green. The elevation change makes club selection tricky \u2014 play one less than the yardage calls for."
+    "description": "Breathtaking par 4 on the Championship Course with Lake Tahoe shimmering in the background through the pines. A demanding uphill tee shot is followed by a long approach to an elevated green with the Sierra Nevada as a backdrop.",
+    "par": 4,
+    "yardage": 440
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -157,5 +159,47 @@
     "hyatt-lake-tahoe": 5,
     "harrahs-lake-tahoe": 45,
     "golden-nugget-lake-tahoe": 45
-  }
+  },
+  "teeData": [
+    {
+      "name": "Championship (Blue)",
+      "yardage": 6910,
+      "par": 72,
+      "rating": 72.7,
+      "slope": 130,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6474,
+      "par": 72,
+      "rating": 70.6,
+      "slope": 126,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 6014,
+      "par": 72,
+      "rating": 68.4,
+      "slope": 120,
+      "gender": "M"
+    },
+    {
+      "name": "Mountain (Par 58)",
+      "yardage": 3513,
+      "par": 58,
+      "rating": 57.8,
+      "slope": 94,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5532,
+      "par": 72,
+      "rating": 71.4,
+      "slope": 128,
+      "gender": "F"
+    }
+  ]
 }

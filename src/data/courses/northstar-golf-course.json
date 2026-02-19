@@ -84,7 +84,11 @@
   ],
   "pointOfView": "THE LINKS WITH A LANDSCAPE \u2013 18 holes, 6,781 yards, 4 tee locations, and a 72.4 NCGA rating \u2013 all up at 6,000 feet, allowing you to hit the ball 10-15 yards farther than normal (not bad, right?). Get ready to grip it and rip it on the open, links-style front Meadow Nine, and then dial things in on the tree-lined fairways and small greens of the famous back Mountain Nine.",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "12 minutes from Truckee (7 miles)",
+    "48 minutes from Reno (40 miles)",
+    "60 minutes from South Lake Tahoe (50 miles)"
+  ],
   "contentParagraphs": [
     "Play Northstar in Truckee with golf groups, tee times, and stay and play packages. Expert planning for buddies, corporate, and leisure trips.",
     "Get ready to grip it and rip it on the open, links-style front \u201cMeadow Nine,\u201d and then dial things in on the tree-lined fairways and small greens of the famous back \u201cMountain Nine.\u201d",
@@ -94,7 +98,9 @@
   ],
   "featuredHole": {
     "title": "Hole #10 \u2014 Par 3",
-    "description": "A beautiful mountain par 3 playing slightly downhill to a well-bunkered green with Northstar's ski runs visible in the background. The thin mountain air makes it play shorter than the card."
+    "description": "Classic mountain finishing hole set among the granite boulders and lodgepole pines of the Northstar resort. The approach features a dramatic uphill shot to a well-bunkered green with the ski mountain as a backdrop.",
+    "par": 4,
+    "yardage": 410
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -141,5 +147,47 @@
     "hampton-inn-truckee-ca": 8,
     "cedar-house-sport-hotel": 10,
     "old-greenwood-lodging-truckee-ca": 12
-  }
+  },
+  "teeData": [
+    {
+      "name": "Black",
+      "yardage": 6897,
+      "par": 72,
+      "rating": 72.8,
+      "slope": 132,
+      "gender": "M"
+    },
+    {
+      "name": "Blue",
+      "yardage": 6490,
+      "par": 72,
+      "rating": 71.0,
+      "slope": 128,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6099,
+      "par": 72,
+      "rating": 69.4,
+      "slope": 124,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5663,
+      "par": 72,
+      "rating": 67.2,
+      "slope": 116,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5071,
+      "par": 72,
+      "rating": 69.1,
+      "slope": 118,
+      "gender": "F"
+    }
+  ]
 }

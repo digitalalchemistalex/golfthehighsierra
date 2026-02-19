@@ -79,7 +79,11 @@
   ],
   "pointOfView": "",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "30 minutes from South Lake Tahoe (25 miles)",
+    "18 minutes from Carson City (12 miles)",
+    "65 minutes from Reno (55 miles)"
+  ],
   "contentParagraphs": [
     "Play Genoa Lakes in Carson Valley with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
     "Built for power and distance, the Ranch Course cuts into the rugged Sierra Nevada foothills, just two miles from the Lakes Course.",
@@ -89,7 +93,9 @@
   ],
   "featuredHole": {
     "title": "Hole #5 \u2014 Par 3",
-    "description": "A beautiful par 3 with the Sierra Nevada range framing the background. Water guards the front and right of the green. Club selection is critical at this elevation."
+    "description": "Dramatic finishing hole on the Lakes Course with the Sierra Nevada rising behind the green. A long forced carry over wetlands off the tee requires commitment, while the approach demands precision to avoid greenside water.",
+    "par": 4,
+    "yardage": 458
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -136,5 +142,63 @@
     "carson-valley-inn-casino": 10,
     "atlantis-casino-resort-spa-reno": 45,
     "peppermill-resort-spa-casino": 45
-  }
+  },
+  "teeData": [
+    {
+      "name": "Black (Lakes)",
+      "yardage": 7263,
+      "par": 72,
+      "rating": 74.9,
+      "slope": 137,
+      "gender": "M"
+    },
+    {
+      "name": "Blue (Lakes)",
+      "yardage": 6725,
+      "par": 72,
+      "rating": 72.2,
+      "slope": 131,
+      "gender": "M"
+    },
+    {
+      "name": "White (Lakes)",
+      "yardage": 6295,
+      "par": 72,
+      "rating": 70.0,
+      "slope": 123,
+      "gender": "M"
+    },
+    {
+      "name": "Gold (Lakes)",
+      "yardage": 5743,
+      "par": 72,
+      "rating": 67.5,
+      "slope": 116,
+      "gender": "M"
+    },
+    {
+      "name": "Black (Ranch)",
+      "yardage": 7049,
+      "par": 72,
+      "rating": 73.4,
+      "slope": 135,
+      "gender": "M"
+    },
+    {
+      "name": "Blue (Ranch)",
+      "yardage": 6516,
+      "par": 72,
+      "rating": 71.0,
+      "slope": 128,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5202,
+      "par": 72,
+      "rating": 70.3,
+      "slope": 125,
+      "gender": "F"
+    }
+  ]
 }

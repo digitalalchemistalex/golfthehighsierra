@@ -68,7 +68,11 @@
   ],
   "pointOfView": "This private club is typically inaccessible to public play, but Golf the High Sierra is able to book groups of all sizes due to its relationship with the club, typically after 10am any day of the week. And you should take advantage of it! Somersett is a true championship golf course, with the level of difficulty being left up to you. Five sets of tee boxes and two combo tee layouts offer you the challenge you're after. Large, multi-tiered greens will create two-putt aspirations, but green trueness is always reliable with their exquisite course maintenance standards. The new clubhouse is the perfect venue for a post-round libation or group lunch or dinner.",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "18 minutes from Reno Downtown (10 miles)",
+    "25 minutes from Reno-Tahoe Airport (16 miles)",
+    "20 minutes from Peppermill Resort (12 miles)"
+  ],
   "contentParagraphs": [
     "Play Somersett in Reno with golf groups, tee times, and stay and play packages. Expert trip planning for buddies, corporate, and leisure groups.",
     "Somersett Golf and Country Club is nestled against Peavine Mountain opposite the eastern slopes of the Sierra Nevada in Northwest Reno. Elevated well above the valley floor, breathtaking vistas abound as you navigate 62 white sand bunkers, seven lakes, and dramatic elevation changes while playing this gorgeously-designed private golf course.",
@@ -76,7 +80,9 @@
   ],
   "featuredHole": {
     "title": "Hole #8 \u2014 Par 4",
-    "description": "A risk-reward par 4 with a dramatic elevated tee and views of the Truckee Meadows. Big hitters can cut the corner over the ravine, but a miss left is gone. Smart play is a long iron off the tee to the wide part of the fairway."
+    "description": "A risk-reward par 4 with a dramatic elevated tee and views of the Truckee Meadows. Big hitters can cut the corner over the ravine, but a miss left is gone. Smart play is a long iron off the tee to the wide part of the fairway.",
+    "par": 4,
+    "yardage": 435
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -123,5 +129,47 @@
     "peppermill-resort-spa-casino": 14,
     "atlantis-casino-resort-spa-reno": 16,
     "grand-sierra-resort-reno": 12
-  }
+  },
+  "teeData": [
+    {
+      "name": "Black",
+      "yardage": 7101,
+      "par": 71,
+      "rating": 74.0,
+      "slope": 137,
+      "gender": "M"
+    },
+    {
+      "name": "Blue",
+      "yardage": 6673,
+      "par": 71,
+      "rating": 71.8,
+      "slope": 132,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6233,
+      "par": 71,
+      "rating": 69.6,
+      "slope": 126,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5748,
+      "par": 71,
+      "rating": 67.1,
+      "slope": 118,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5160,
+      "par": 71,
+      "rating": 70.0,
+      "slope": 125,
+      "gender": "F"
+    }
+  ]
 }

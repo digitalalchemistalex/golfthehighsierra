@@ -95,7 +95,9 @@
   ],
   "featuredHole": {
     "title": "17th Hole",
-    "description": "This unforgettable gem on the immediate shore of Lake Tahoe is iconic! It not as easy as it might look! Take more club than you think to avoid the front bunker."
+    "description": "Host of the American Century Championship celebrity pro-am finale. This lakefront par 5 plays directly along the shores of Lake Tahoe, with the lake visible on every shot and mountain views in every direction.",
+    "par": 5,
+    "yardage": 567
   },
   "teeTimeInfo": "",
   "teeTips": [
@@ -145,5 +147,47 @@
     "harveys-lake-tahoe": 5,
     "harrahs-lake-tahoe": 5,
     "golden-nugget-lake-tahoe": 6
-  }
+  },
+  "teeData": [
+    {
+      "name": "Tournament (Black)",
+      "yardage": 7566,
+      "par": 72,
+      "rating": 76.4,
+      "slope": 145,
+      "gender": "M"
+    },
+    {
+      "name": "Blue",
+      "yardage": 7013,
+      "par": 72,
+      "rating": 73.8,
+      "slope": 140,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6474,
+      "par": 72,
+      "rating": 71.1,
+      "slope": 133,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5922,
+      "par": 72,
+      "rating": 68.2,
+      "slope": 125,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5222,
+      "par": 72,
+      "rating": 71.0,
+      "slope": 131,
+      "gender": "F"
+    }
+  ]
 }

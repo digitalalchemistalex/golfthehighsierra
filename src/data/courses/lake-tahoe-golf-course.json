@@ -79,12 +79,16 @@
   ],
   "pointOfView": "The quintessential South Shore golf experience and a staple of every GTHS Lake Tahoe package. Minutes from Heavenly, Harrah's, and Harvey's \u2014 this is where your group plays the day they explore the South Shore. The meadow setting with river views offers a completely different vibe from the mountain courses up in Truckee.",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "10 minutes from South Lake Tahoe (5 miles)",
+    "10 minutes from Stateline Casinos (5 miles)",
+    "70 minutes from Reno (60 miles)"
+  ],
   "contentParagraphs": [],
   "featuredHole": {
     "number": 17,
-    "par": 4,
-    "yardage": 405,
+    "par": 5,
+    "yardage": 545,
     "description": "A scenic par 4 where the Upper Truckee River guards the right side and mature pines frame the left. The approach to an elevated green with mountain views behind is one of the most photographed shots in Tahoe golf."
   },
   "teeTimeInfo": "",
@@ -131,5 +135,39 @@
     "harveys-lake-tahoe": 8,
     "harrahs-lake-tahoe": 8,
     "margaritaville-lake-tahoe": 5
-  }
+  },
+  "teeData": [
+    {
+      "name": "Blue",
+      "yardage": 6741,
+      "par": 71,
+      "rating": 71.2,
+      "slope": 127,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6369,
+      "par": 71,
+      "rating": 69.4,
+      "slope": 123,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5817,
+      "par": 71,
+      "rating": 67.0,
+      "slope": 115,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5220,
+      "par": 71,
+      "rating": 69.8,
+      "slope": 120,
+      "gender": "F"
+    }
+  ]
 }

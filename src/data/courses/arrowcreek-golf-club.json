@@ -107,7 +107,9 @@
   ],
   "featuredHole": {
     "title": "Legend Course \u2014 Hole #17",
-    "description": "Arnold Palmer designed this dramatic par 3 with a 200-foot elevation drop from tee to green. The Sierra Nevada panorama behind the pin is one of the best views in Reno golf. Play one less club than you think \u2014 the ball flies far at elevation."
+    "description": "Arnold Palmer designed this dramatic par 3 with a 200-foot elevation drop from tee to green. The Sierra Nevada panorama behind the pin is one of the best views in Reno golf. Play one less club than you think \u2014 the ball flies far at elevation.",
+    "par": 4,
+    "yardage": 432
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -154,5 +156,47 @@
     "atlantis-casino-resort-spa-reno": 22,
     "peppermill-resort-spa-casino": 22,
     "grand-sierra-resort-reno": 20
-  }
+  },
+  "teeData": [
+    {
+      "name": "Challenge (Black)",
+      "yardage": 7433,
+      "par": 72,
+      "rating": 74.0,
+      "slope": 140,
+      "gender": "M"
+    },
+    {
+      "name": "Legend (Blue)",
+      "yardage": 7115,
+      "par": 72,
+      "rating": 75.0,
+      "slope": 137,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6600,
+      "par": 72,
+      "rating": 71.5,
+      "slope": 129,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 6100,
+      "par": 72,
+      "rating": 68.8,
+      "slope": 120,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5200,
+      "par": 72,
+      "rating": 70.2,
+      "slope": 124,
+      "gender": "F"
+    }
+  ]
 }

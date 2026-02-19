@@ -80,7 +80,11 @@
   ],
   "pointOfView": "",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "90 minutes from Reno (80 miles)",
+    "15 minutes from Graeagle Village (8 miles)",
+    "70 minutes from Truckee (60 miles)"
+  ],
   "contentParagraphs": [
     "Plan The Dragon at Nakoma near Graeagle with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
     "Nakoma\u2019s Pro Shop is located in the only golf clubhouse designed by Frank Lloyd Wright. From clubs, shoes, shirts and more, the Golf Shop features an extensive array of popular brands and accessories. You\u2019ll find everything that suits your style, size and interests.",
@@ -90,7 +94,9 @@
   ],
   "featuredHole": {
     "title": "Hole #14 \u2014 Par 4",
-    "description": "Known as 'Dragon's Breath,' this signature par 4 plays along a dramatic ridge with canyon views on both sides. The clubhouse \u2014 designed by Frank Lloyd Wright \u2014 is visible from the tee."
+    "description": "The signature hole at Nakoma's Dragon Course plays across a dramatic canyon perched above the Feather River valley. An elevated tee offers panoramic views of the Lost Sierra, with the downhill approach requiring a precise iron to a well-guarded green.",
+    "par": 4,
+    "yardage": 430
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -137,5 +143,47 @@
     "nakoma-resort-graeagle-ca": 1,
     "chalet-view-lodge-graeagle-ca": 8,
     "river-pines-resort-graeagle-ca": 10
-  }
+  },
+  "teeData": [
+    {
+      "name": "Dragon (Black)",
+      "yardage": 6881,
+      "par": 72,
+      "rating": 73.1,
+      "slope": 142,
+      "gender": "M"
+    },
+    {
+      "name": "Blue",
+      "yardage": 6401,
+      "par": 72,
+      "rating": 70.7,
+      "slope": 136,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 5934,
+      "par": 72,
+      "rating": 68.3,
+      "slope": 127,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5388,
+      "par": 72,
+      "rating": 65.8,
+      "slope": 118,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 4784,
+      "par": 72,
+      "rating": 67.6,
+      "slope": 120,
+      "gender": "F"
+    }
+  ]
 }

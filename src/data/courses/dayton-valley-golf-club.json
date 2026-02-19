@@ -70,7 +70,11 @@
   ],
   "pointOfView": "T here is a good reason why Dayton Valley has played host to the first stage of qualifying for the PGA Tour since 1995. Its links style offers plenty of challenge that even the pros struggle to negotiate. Water is a primary feature and an unwelcomed hazard on nearly half the holes of this Arnold Palmer-designed, high desert masterpiece. The undulations on the course's big greens make successful execution of the flat stick a primary task of the day. The wind can be a friend or foe on many days as it can shorten the lengthy, downwind par 5s, yet wreak havoc on the short par 3s across or into the wind. Although Dayton is a bit of a drive from the Reno hotels and casinos, it's worth the effort to get there. It's very well manicured and the surrounding views will surely impress.",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "25 minutes from Carson City (20 miles)",
+    "50 minutes from Reno (45 miles)",
+    "45 minutes from South Lake Tahoe (35 miles)"
+  ],
   "contentParagraphs": [
     "Book Dayton Valley in Carson Valley with golf groups, tee times, and stay & play packages. Expert planning for buddies, corporate, and tournaments.",
     "The well-conditioned greens and friendly, professional staff are two of the many reason why Dayton Valley has hosted PGA Tour Qualifying for over a decade.",
@@ -78,7 +82,9 @@
   ],
   "featuredHole": {
     "title": "Hole #3 \u2014 Par 5",
-    "description": "Arnold Palmer's signature hole at Dayton Valley. A reachable par 5 for long hitters, but the green is protected by a dramatic wash that crosses in front. Laying up to your favorite wedge distance is the smart play."
+    "description": "Arnold Palmer's signature hole at Dayton Valley. A reachable par 5 for long hitters, but the green is protected by a dramatic wash that crosses in front. Laying up to your favorite wedge distance is the smart play.",
+    "par": 3,
+    "yardage": 210
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -125,5 +131,47 @@
     "carson-valley-inn-casino": 20,
     "atlantis-casino-resort-spa-reno": 38,
     "peppermill-resort-spa-casino": 38
-  }
+  },
+  "teeData": [
+    {
+      "name": "Black",
+      "yardage": 7218,
+      "par": 72,
+      "rating": 73.8,
+      "slope": 131,
+      "gender": "M"
+    },
+    {
+      "name": "Blue",
+      "yardage": 6802,
+      "par": 72,
+      "rating": 72.1,
+      "slope": 128,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6247,
+      "par": 72,
+      "rating": 69.5,
+      "slope": 120,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5782,
+      "par": 72,
+      "rating": 67.2,
+      "slope": 116,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5176,
+      "par": 72,
+      "rating": 69.8,
+      "slope": 118,
+      "gender": "F"
+    }
+  ]
 }

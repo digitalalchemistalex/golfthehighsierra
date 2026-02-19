@@ -72,7 +72,11 @@
   ],
   "pointOfView": "This course is an absolute blast! Not as well known as some of the others in the Graeagle area, this course offers wider fairways, and a ton of personality. Trees and streams come into play throughout and it's our opinion that you'll leave thinking wow, why have I not played this before. This course offers a great price value for mountain golf and couldn't be more central to a full 3 or 4 day outing in Graeagle. Located right in the middle of town, it's easy to get to and only about an hour from Reno.",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "75 minutes from Reno (65 miles)",
+    "55 minutes from Truckee (45 miles)",
+    "165 minutes from Sacramento (155 miles)"
+  ],
   "contentParagraphs": [
     "Plan Graeagle Meadows with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
     "Built along the banks of the Feather River, one of the eight nationally designated \u201cWild and Scenic Rivers\u2019\u201d the design deftly blends lofty pines, water, and elevated tees with the breathtaking natural beauty of the setting.",
@@ -80,7 +84,9 @@
   ],
   "featuredHole": {
     "title": "Hole #3 \u2014 Par 4",
-    "description": "A beautiful meadow par 4 with Graeagle Creek crossing the fairway. The layout winds naturally through the valley with mountain vistas in every direction. Pure mountain golf."
+    "description": "Classic mountain par 4 along the Middle Fork of the Feather River. The river comes into play on the right, demanding a controlled tee shot while the approach requires precision to a green backed by the pines.",
+    "par": 4,
+    "yardage": 408
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -127,5 +133,39 @@
     "river-pines-resort-graeagle-ca": 5,
     "nakoma-resort-graeagle-ca": 8,
     "chalet-view-lodge-graeagle-ca": 6
-  }
+  },
+  "teeData": [
+    {
+      "name": "Blue",
+      "yardage": 6724,
+      "par": 72,
+      "rating": 71.5,
+      "slope": 125,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6384,
+      "par": 72,
+      "rating": 69.9,
+      "slope": 121,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5904,
+      "par": 72,
+      "rating": 67.5,
+      "slope": 114,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5304,
+      "par": 72,
+      "rating": 70.3,
+      "slope": 119,
+      "gender": "F"
+    }
+  ]
 }

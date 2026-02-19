@@ -99,7 +99,7 @@
   "featuredHole": {
     "number": 18,
     "par": 4,
-    "yardage": 445,
+    "yardage": 428,
     "description": "A dramatic uphill approach with massive boulders guarding the fairway, finishing below the stunning 35,000 sq ft European hunting lodge clubhouse. Golf Digest panelists call it 'a stunner with great land movement.' The perfect finale to an unforgettable round."
   },
   "teeTimeInfo": "Private club \u2014 group access arranged through Golf the High Sierra. Call 888-584-8232.",
@@ -509,5 +509,47 @@
     "atlantis-casino-resort-spa-reno": 25,
     "peppermill-resort-spa-casino": 25,
     "grand-sierra-resort-reno": 22
-  }
+  },
+  "teeData": [
+    {
+      "name": "Black",
+      "yardage": 7013,
+      "par": 72,
+      "rating": 73.1,
+      "slope": 132,
+      "gender": "M"
+    },
+    {
+      "name": "Blue",
+      "yardage": 6590,
+      "par": 72,
+      "rating": 71.0,
+      "slope": 127,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6152,
+      "par": 72,
+      "rating": 68.9,
+      "slope": 121,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5706,
+      "par": 72,
+      "rating": 66.6,
+      "slope": 114,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5196,
+      "par": 72,
+      "rating": 69.8,
+      "slope": 118,
+      "gender": "F"
+    }
+  ]
 }

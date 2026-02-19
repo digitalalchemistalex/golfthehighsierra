@@ -71,13 +71,19 @@
   ],
   "pointOfView": "Great on the budget, and located a short 30 minutes from Reno, this facility has plenty to offer in two very distinct courses. This facility is one of the few in the area with 36 holes on the same property, and for this reason is a great choice to get in two rounds on the same day. We suggest starting with the East Course with its more traditional layout and fewer challenges. The West Course flashes a lot of personality with several holes up in the foothills, dog legs, canyons to carry and can be a good challenge for most golfers. Wedge this course into the middle of 3 or 4 days of golf and the price will help get your budget where you need it to be.",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "7 minutes from Carson City (3 miles)",
+    "38 minutes from Reno (32 miles)",
+    "35 minutes from South Lake Tahoe (28 miles)"
+  ],
   "contentParagraphs": [
     "Book Eagle Valley in Carson City with golf groups, tee times, and stay & play packages. Expert planning for buddies, corporate, and tournaments."
   ],
   "featuredHole": {
     "title": "West Course \u2014 Hole #14",
-    "description": "A challenging par 4 with the Carson Range providing a dramatic mountain backdrop. The elevated green demands a precise approach \u2014 come up short and you're chipping uphill."
+    "description": "Strong closing par 4 on the East Course with the Sierra Nevada serving as a dramatic backdrop. Elevated tee gives way to a generous fairway, but the approach demands precision to a well-guarded green.",
+    "par": 4,
+    "yardage": 418
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -124,5 +130,55 @@
     "carson-valley-inn-casino": 15,
     "atlantis-casino-resort-spa-reno": 40,
     "peppermill-resort-spa-casino": 40
-  }
+  },
+  "teeData": [
+    {
+      "name": "Blue (East)",
+      "yardage": 6638,
+      "par": 72,
+      "rating": 71.2,
+      "slope": 128,
+      "gender": "M"
+    },
+    {
+      "name": "White (East)",
+      "yardage": 6238,
+      "par": 72,
+      "rating": 69.4,
+      "slope": 122,
+      "gender": "M"
+    },
+    {
+      "name": "Gold (East)",
+      "yardage": 5721,
+      "par": 72,
+      "rating": 67.0,
+      "slope": 115,
+      "gender": "M"
+    },
+    {
+      "name": "Blue (West)",
+      "yardage": 6885,
+      "par": 72,
+      "rating": 72.3,
+      "slope": 126,
+      "gender": "M"
+    },
+    {
+      "name": "White (West)",
+      "yardage": 6388,
+      "par": 72,
+      "rating": 70.0,
+      "slope": 119,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5500,
+      "par": 72,
+      "rating": 70.1,
+      "slope": 118,
+      "gender": "F"
+    }
+  ]
 }

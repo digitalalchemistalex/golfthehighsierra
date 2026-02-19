@@ -84,7 +84,11 @@
   ],
   "pointOfView": "Lakeridge is a favorite and an absolute must play as part of your Reno golf getaway. It's playable for all skill levels, has a great restaurant and overall great service, and its maturity and views are unique to other area golf courses. It's minutes from all downtown and outlying Reno hotels and casinos. The 15 th hole is quite possibly one of the most awe-inspiring golf holes that you'll ever play!",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "12 minutes from Reno Downtown (5 miles)",
+    "15 minutes from Reno-Tahoe Airport (8 miles)",
+    "12 minutes from Peppermill Resort (6 miles)"
+  ],
   "contentParagraphs": [
     "Home to the famous 15th Island Hole overlooking Lake Stanley, plus a full 18-hole championship layout.",
     "Lakeridge Golf Course is built for groups \u2014 from 8 to 100 players. We arrange consecutive tee times, rooming lists, and comps for organizers. Whether it\u2019s a buddies trip, corporate outing, or charity tournament, our team handles the details so you can focus on the game.",
@@ -94,7 +98,9 @@
   ],
   "featuredHole": {
     "title": "Hole #15 \u2014 Par 3 (Island Green)",
-    "description": "Reno's most iconic hole. A floating island green surrounded by water on all sides. Pick your club, commit to your line, and swing. There's no bail-out \u2014 it's all carry. The most photographed hole in Northern Nevada."
+    "description": "The signature par 3 at Lakeridge plays across a natural lake to a peninsula green. One of the most photographed holes in Nevada, requiring a precise carry over the water with the Reno skyline visible in the distance.",
+    "par": 3,
+    "yardage": 190
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -141,5 +147,39 @@
     "atlantis-casino-resort-spa-reno": 15,
     "peppermill-resort-spa-casino": 15,
     "silver-legacy-resort-casino": 12
-  }
+  },
+  "teeData": [
+    {
+      "name": "Blue",
+      "yardage": 6723,
+      "par": 71,
+      "rating": 72.1,
+      "slope": 133,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6317,
+      "par": 71,
+      "rating": 70.2,
+      "slope": 129,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5824,
+      "par": 71,
+      "rating": 67.9,
+      "slope": 122,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5256,
+      "par": 71,
+      "rating": 70.4,
+      "slope": 124,
+      "gender": "F"
+    }
+  ]
 }

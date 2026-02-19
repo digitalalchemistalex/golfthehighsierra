@@ -66,7 +66,11 @@
   ],
   "pointOfView": "Pure. Wilderness. Golf. Simply enough, there really is no better way to express just what a round at Coyote Moon offers. But nature isn't the only enticement; the course layout is, with a few exceptions, absolutely outstanding. Numerous up- and downhill dog legs and constant elevation changes have made the most of the varying topography available to the designer, Brad Bell. Club selection, while taking the 6,300 feet above sea level elevation into account, is paramount if you want to avoid the steep banks, bunkers, and native areas that surround most green complexes. A range finder with an elevation adjustment is your best friend at Coyote Moon when you're after a low score. It will come in really handy as you decide what club to hit on the par 3 13th, which features a 200 foot drop over Trout Creek to the green below the tee box. If you're more interested in enjoying the surrounding aesthetic, you will find no better course to appreciate. The afternoon's long shadows and ever-present wildlife will create one of the most zen-like, tranquil golf experiences you'll find on earth, and that is no overstatement. The peace of the forest comes through soft and lightly as you manage each challenging shot. Take your time for this one! There is no reason to rush this kind of quiet.",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "8 minutes from Truckee (4 miles)",
+    "45 minutes from Reno (35 miles)",
+    "55 minutes from South Lake Tahoe (45 miles)"
+  ],
   "contentParagraphs": [
     "Plan Coyote Moon in Truckee with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
     "The 13th hole is a spectacular 227-yard par 3 where the tee shot falls more than 200 feet down to an oblong green fronted by Trout Creek and rugged native terrain. The hole plays two-to-three clubs less than normal, but pay attention to the pin location and adjust club selection accordingly. Take a deep breath, clear your mind and concentrate on the shot on this breathtaking and dangerous par 3.",
@@ -74,7 +78,9 @@
   ],
   "featuredHole": {
     "title": "Signature Hole",
-    "description": "The 13th hole is a spectacular 227-yard par 3 where the tee shot falls more than 200 feet down to an oblong green fronted by Trout Creek and rugged native terrain. The hole plays two-to-three clubs less than normal, but pay attention to the pin location and adjust club selection accordingly. Take a deep breath, clear your mind and concentrate on the shot on this breathtaking and dangerous par 3."
+    "description": "The 13th hole is a spectacular 227-yard par 3 where the tee shot falls more than 200 feet down to an oblong green fronted by Trout Creek and rugged native terrain. The hole plays two-to-three clubs less than normal, but pay attention to the pin location and adjust club selection accordingly. Take a deep breath, clear your mind and concentrate on the shot on this breathtaking and dangerous par 3.",
+    "par": 3,
+    "yardage": 211
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -121,5 +127,47 @@
     "cedar-house-sport-hotel": 8,
     "hampton-inn-truckee-ca": 10,
     "old-greenwood-lodging-truckee-ca": 14
-  }
+  },
+  "teeData": [
+    {
+      "name": "Black",
+      "yardage": 7177,
+      "par": 72,
+      "rating": 74.6,
+      "slope": 145,
+      "gender": "M"
+    },
+    {
+      "name": "Blue",
+      "yardage": 6804,
+      "par": 72,
+      "rating": 72.7,
+      "slope": 142,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6392,
+      "par": 72,
+      "rating": 70.8,
+      "slope": 136,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5980,
+      "par": 72,
+      "rating": 68.7,
+      "slope": 128,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5223,
+      "par": 72,
+      "rating": 70.8,
+      "slope": 131,
+      "gender": "F"
+    }
+  ]
 }

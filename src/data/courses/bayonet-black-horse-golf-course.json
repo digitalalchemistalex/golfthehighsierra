@@ -77,12 +77,16 @@
   ],
   "pointOfView": "The Monterey Peninsula's best-kept secret for GTHS groups adding a coastal extension. While everyone fights for Pebble Beach tee times at $600+, savvy golfers play 36 holes of championship-caliber golf here for the same price \u2014 with views that rival anything on 17-Mile Drive.",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "15 minutes from Monterey Airport (8 miles)",
+    "12 minutes from Pebble Beach (6 miles)",
+    "90 minutes from San Jose (80 miles)"
+  ],
   "contentParagraphs": [],
   "featuredHole": {
     "number": 12,
     "par": 4,
-    "yardage": 462,
+    "yardage": 470,
     "description": "The heart of Combat Corner on Bayonet \u2014 a brutal dogleg left par 4 that plays uphill through a narrow corridor of mature cypress. The approach to a multi-tiered green is one of the most demanding shots in Monterey County."
   },
   "teeTimeInfo": "",
@@ -122,5 +126,47 @@
   "relatedCourses": [],
   "driveTimes": {
     "portola-hotel-spa-monterey": 10
-  }
+  },
+  "teeData": [
+    {
+      "name": "Black (Bayonet)",
+      "yardage": 7101,
+      "par": 72,
+      "rating": 74.9,
+      "slope": 141,
+      "gender": "M"
+    },
+    {
+      "name": "Blue",
+      "yardage": 6633,
+      "par": 72,
+      "rating": 72.4,
+      "slope": 136,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6148,
+      "par": 72,
+      "rating": 70.3,
+      "slope": 129,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5623,
+      "par": 72,
+      "rating": 67.4,
+      "slope": 120,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5103,
+      "par": 72,
+      "rating": 70.3,
+      "slope": 126,
+      "gender": "F"
+    }
+  ]
 }

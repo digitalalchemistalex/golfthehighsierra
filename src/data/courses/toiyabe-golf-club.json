@@ -77,14 +77,20 @@
   ],
   "pointOfView": "This Robert Muir Graves design is old school good. Set at the base of the mountains, directly below Lake Tahoe, you'll get diversity on every hole. The entire course is surrounded by some of the most beautiful homes in the region, it's picturesque from every angle. The front 9 has plenty of water and distance to challenge every golfer, and the back nine incorporates some challenging elevation change and has several holes up in the pines. Originally built as a private country club, the facility spared no expense in providing comfort, and the restaurant is renown across the region as having a great menu. The course is located half way between Reno and Carson City, and with the new Freeway exchange, you can make it there in 20 minutes from South Reno.",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "10 minutes from Carson City (5 miles)",
+    "38 minutes from South Lake Tahoe (30 miles)",
+    "42 minutes from Reno (35 miles)"
+  ],
   "contentParagraphs": [
     "Play Toiyabe Golf Club near Reno with group golf trips, tee times, and stay and play packages. Expert planning for buddies, corporate, and leisure golf getaways.",
     "Serving breakfast and lunch in an amazing setting overlooking the 18th hole at Toiyabe Golf Club and views of Slide Mountian. We offer a full bar and an traditional menu."
   ],
   "featuredHole": {
     "title": "Hole #13 \u2014 Par 4",
-    "description": "A stunning uphill par 4 carved through the pines on the back nine. The approach plays a full club longer than the yardage suggests. The view of Slide Mountain from the green makes the climb worth it."
+    "description": "One of Carson City's most demanding holes \u2014 a long par 4 with a heavily bunkered landing zone requiring a laser-straight drive. The approach demands a long iron or hybrid to a two-tier green that rewards accuracy over power.",
+    "par": 4,
+    "yardage": 448
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -131,5 +137,39 @@
     "atlantis-casino-resort-spa-reno": 28,
     "peppermill-resort-spa-casino": 28,
     "grand-sierra-resort-reno": 25
-  }
+  },
+  "teeData": [
+    {
+      "name": "Blue",
+      "yardage": 6811,
+      "par": 72,
+      "rating": 72.5,
+      "slope": 130,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6414,
+      "par": 72,
+      "rating": 70.5,
+      "slope": 126,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5934,
+      "par": 72,
+      "rating": 68.2,
+      "slope": 119,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5328,
+      "par": 72,
+      "rating": 70.5,
+      "slope": 123,
+      "gender": "F"
+    }
+  ]
 }

@@ -67,7 +67,11 @@
   ],
   "pointOfView": "An air of over-confidence has turned to intrepidation for many teeing off the 1st hole at Gray's Crossing. At first glance, it appears to be straight-forward, with wide fairways and large greens begging for hefty swings and fearlessly lashed at approach shots. You'll quickly understand why caution will win the day, however. Yes, the greens are big and generous access points reward accuracy, but you'll find that there are secrets to be known to make for a low round. Many greens are spined with unforgiving fall-aways over the back, and sloped landing zones off the tee can turn an apparent beauty into a sagebrush-laden nightmare of a recovery shot. Many tee shots are smartly played with less than driver, as landing zone runouts will find native areas unseen from tee boxes. Without doubt though, there are numerous opportunities for sub-par scores if played with caution. A reachable Par 4 on each side offers solace to the other beautiful, longer holes throughout the course. All Par 5s are reachable and are birdie opportunities, less hole 18, which takes two monster shots to clear the native beranka. In any case of success or struggle, you'll enjoy every minute of your round at Gray's Crossing, especially as you reflect on it while sipping a frosty draft on the deck at PJs, Gray's Crossing's lovely bar restaurant that overlooks the 18th hole and Mt. Rose beyond.",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "6 minutes from Truckee (3 miles)",
+    "42 minutes from Reno (34 miles)",
+    "52 minutes from South Lake Tahoe (42 miles)"
+  ],
   "contentParagraphs": [
     "Book Gray\u2019s Crossing in Truckee with golf groups, tee times, and stay and play packages. Custom trips for buddies, corporate, and leisure groups.",
     "Designed around soaring pines and undisturbed wetlands, the course has tight yet forgiving fairways, 83 bunkers, water on three holes and subtle elevation changes. Its natural, native beauty and expansive views of Mt. Rose and the Sierra Nevada Mountain ranges set the backdrop for an idyllic, walkable round.",
@@ -75,7 +79,9 @@
   ],
   "featuredHole": {
     "title": "Hole #13 \u2014 Par 4",
-    "description": "A beautiful par 4 with the Truckee River running along the left side. The approach demands precision with water lurking. The mountain views from this hole are quintessential Truckee."
+    "description": "Stunning downhill par 3 with sweeping views of the Sierra Nevada. The green is set below the tee box with rock outcroppings and native vegetation framing the shot, demanding precise club selection in the mountain air.",
+    "par": 3,
+    "yardage": 195
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -122,5 +128,47 @@
     "cedar-house-sport-hotel": 6,
     "hampton-inn-truckee-ca": 5,
     "old-greenwood-lodging-truckee-ca": 8
-  }
+  },
+  "teeData": [
+    {
+      "name": "Black",
+      "yardage": 7330,
+      "par": 72,
+      "rating": 75.0,
+      "slope": 145,
+      "gender": "M"
+    },
+    {
+      "name": "Blue",
+      "yardage": 6862,
+      "par": 72,
+      "rating": 72.7,
+      "slope": 140,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6356,
+      "par": 72,
+      "rating": 70.1,
+      "slope": 132,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5848,
+      "par": 72,
+      "rating": 67.5,
+      "slope": 124,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5170,
+      "par": 72,
+      "rating": 70.0,
+      "slope": 128,
+      "gender": "F"
+    }
+  ]
 }

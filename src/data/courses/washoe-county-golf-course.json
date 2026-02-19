@@ -66,7 +66,11 @@
   ],
   "pointOfView": "The Shoe has an absolutely throwback, old school quality to it that is hard to find in golf courses built after the 1970s. The course shows it age, but in the best way! Most of the course is flat, wide open and offers the opportunity to hit drivers on most holes, and take big cuts at them. But small greens, most distinctly remnants from it early designs, make approach shot accuracy and proper club selection paramount for scoring low. The ancient age and giant sizes of the course's elm, cottonwood, oak, and evergreen trees are impressive and in play continuously throughout your round.",
   "hack": "",
-  "distances": [],
+  "distances": [
+    "10 minutes from Reno Downtown (4 miles)",
+    "14 minutes from Reno-Tahoe Airport (7 miles)",
+    "11 minutes from Peppermill Resort (5 miles)"
+  ],
   "contentParagraphs": [
     "Book Washoe County Golf Course in Reno with golf groups, tee times, and stay & play packages. Expert planning for buddies, corporate, and tournaments.",
     "Founded in 1917, Washoe County Golf Course, affectionately known locally as \u201cThe Shoe\u201d, has a historical and storied past as colorful as Reno itself. Originally opened as a members-only club, Washoe became public shortly after the depression.",
@@ -74,7 +78,9 @@
   ],
   "featuredHole": {
     "title": "Hole #9 \u2014 Par 4",
-    "description": "A classic dogleg right that's been challenging Reno golfers for over 100 years. The small, crowned green rejects anything that's not pin-high. 'The Shoe' rewards accuracy over power on this historic layout."
+    "description": "A classic municipal par 4 finishing hole with the Truckee River providing a scenic backdrop. The approach plays downhill to a green flanked by mature cottonwoods, making this one of Reno's most beloved closing holes for everyday players.",
+    "par": 4,
+    "yardage": 408
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -121,5 +127,39 @@
     "grand-sierra-resort-reno": 8,
     "atlantis-casino-resort-spa-reno": 10,
     "peppermill-resort-spa-casino": 10
-  }
+  },
+  "teeData": [
+    {
+      "name": "Blue",
+      "yardage": 6695,
+      "par": 72,
+      "rating": 71.1,
+      "slope": 121,
+      "gender": "M"
+    },
+    {
+      "name": "White",
+      "yardage": 6384,
+      "par": 72,
+      "rating": 69.6,
+      "slope": 118,
+      "gender": "M"
+    },
+    {
+      "name": "Gold",
+      "yardage": 5857,
+      "par": 72,
+      "rating": 67.0,
+      "slope": 111,
+      "gender": "M"
+    },
+    {
+      "name": "Red (Ladies)",
+      "yardage": 5358,
+      "par": 72,
+      "rating": 70.2,
+      "slope": 116,
+      "gender": "F"
+    }
+  ]
 }
