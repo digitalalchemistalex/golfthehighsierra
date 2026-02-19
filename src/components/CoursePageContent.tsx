@@ -231,9 +231,9 @@ export default function CoursePageContent({ course, relatedCourses = [], related
         const slope = course.slope || (course.teeData?.length ? Math.max(...course.teeData.map(t => t.slope)) : 0);
         const diffTier = slope >= 140 ? { label: "Extremely Difficult", color: "#c0392b" } : slope >= 130 ? { label: "Challenging", color: "#e67e22" } : slope >= 120 ? { label: "Moderate–Difficult", color: "#C9A24D" } : { label: "Moderate", color: "#2d6a4f" };
         const badges = [
-          course.rating ? { main: `${course.rating.value} / 5.0`, sub: `${course.rating.count.toLocaleString()} Golfer Reviews` } : null,
           isFamous ? { main: course.designer!, sub: "Signature Design" } : { main: "Championship Layout", sub: `${course.regionLabel} Region` },
           slope ? { main: `Slope ${slope}`, sub: diffTier.label } : null,
+          course.holes ? { main: `${course.holes} Holes`, sub: course.par ? `Par ${course.par}` : "Championship" } : null,
           course.yearBuilt ? { main: `Est. ${course.yearBuilt}`, sub: "Years of Excellence" } : null,
           { main: "Group Packages", sub: "8–100+ Golfers" },
           { main: "High Sierra Setting", sub: "Mountain Golf" },
@@ -246,7 +246,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                   {i > 0 && <div style={{ width: 1, height: 28, background: "var(--bone)", flexShrink: 0 }} />}
                   <div>
                     <div style={{ fontSize: 12, fontWeight: 700, color: "var(--charcoal)", whiteSpace: "nowrap", letterSpacing: "-.01em" }}>{item.main}</div>
-                    <div style={{ fontSize: 9, color: i === 2 && slope ? diffTier.color : "var(--stone)", letterSpacing: 1.5, textTransform: "uppercase", whiteSpace: "nowrap", fontWeight: i === 2 && slope ? 600 : 400 }}>{item.sub}</div>
+                    <div style={{ fontSize: 9, color: i === 1 && slope ? diffTier.color : "var(--stone)", letterSpacing: 1.5, textTransform: "uppercase", whiteSpace: "nowrap", fontWeight: i === 1 && slope ? 600 : 400 }}>{item.sub}</div>
                   </div>
                 </div>
               ))}
