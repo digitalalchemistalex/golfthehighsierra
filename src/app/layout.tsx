@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { siteConfig } from "@/lib/config";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const jakarta = localFont({
   src: [
@@ -104,7 +106,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className="font-body antialiased">{children}</body>
+      <body className="font-body antialiased">{children}<Analytics /><SpeedInsights /></body>
     </html>
   );
 }
