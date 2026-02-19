@@ -1,8 +1,20 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Phone, ArrowRight, CheckCircle2, Star, MapPin } from "lucide-react";
 import { getAllRegionSlugs, getRegionBySlug } from "@/data/regions";
+
+export async function generateMetadata({ params }: { params: { regionSlug: string } }): Promise<Metadata> {
+  const region = getRegionBySlug(params.regionSlug);
+  if (!region) return {};
+  return {
+    title: region.meta.title,
+    description: region.meta.description,
+    alternates: { canonical: `https://golfthehighsierra.com/${region.slug}/` },
+    openGraph: { title: region.meta.title, description: region.meta.description, images: [{ url: region.heroImage }] },
+  };
+}
 import { getCoursesByRegion } from "@/data/courses";
 import { getHotelBySlug } from "@/data/hotels";
 
