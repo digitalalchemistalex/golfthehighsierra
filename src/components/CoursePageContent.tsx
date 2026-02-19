@@ -278,7 +278,8 @@ export default function CoursePageContent({ course, relatedCourses = [], related
         ].filter(Boolean) as { main: string; sub: string }[];
         return (
           <div style={{ background: "var(--cream)", borderBottom: "1px solid var(--bone)", padding: "0 clamp(24px,5vw,80px)" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "clamp(20px,3.5vw,48px)", overflowX: "auto", padding: "16px 0", flexWrap: "nowrap", msOverflowStyle: "none", scrollbarWidth: "none" }}>
+            {/* Desktop: single row scroll | Mobile: 2-col grid */}
+            <div className="hidden sm:flex" style={{ display: "flex", alignItems: "center", gap: "clamp(20px,3.5vw,48px)", overflowX: "auto", padding: "16px 0", flexWrap: "nowrap", msOverflowStyle: "none", scrollbarWidth: "none" }}>
               {badges.map((item, i) => (
                 <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
                   {i > 0 && <div style={{ width: 1, height: 28, background: "var(--bone)", flexShrink: 0 }} />}
@@ -286,6 +287,15 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                     <div style={{ fontSize: 12, fontWeight: 700, color: "var(--charcoal)", whiteSpace: "nowrap", letterSpacing: "-.01em" }}>{item.main}</div>
                     <div style={{ fontSize: 11, color: i === 1 && slope ? diffTier.color : "var(--stone)", letterSpacing: 1.5, textTransform: "uppercase", whiteSpace: "nowrap", fontWeight: i === 1 && slope ? 600 : 400 }}>{item.sub}</div>
                   </div>
+                </div>
+              ))}
+            </div>
+            {/* Mobile grid */}
+            <div className="sm:hidden" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px 12px", padding: "16px 0" }}>
+              {badges.map((item, i) => (
+                <div key={i} style={{ borderLeft: i % 2 === 1 ? "1px solid var(--bone)" : "none", paddingLeft: i % 2 === 1 ? 12 : 0 }}>
+                  <div style={{ fontSize: 12, fontWeight: 700, color: "var(--charcoal)", letterSpacing: "-.01em", lineHeight: 1.3 }}>{item.main}</div>
+                  <div style={{ fontSize: 10, color: i === 1 && slope ? diffTier.color : "var(--stone)", letterSpacing: 1.5, textTransform: "uppercase", marginTop: 3, fontWeight: i === 1 && slope ? 600 : 400 }}>{item.sub}</div>
                 </div>
               ))}
             </div>
