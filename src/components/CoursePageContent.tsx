@@ -262,22 +262,58 @@ export default function CoursePageContent({ course, relatedCourses = [], related
         </div>
       )}
 
-      {/* ═══ 3. EDITORIAL PULL QUOTE — SENSORY DESIRE ═══
-          Psychology: Luxury editorial voice. Oversized quote mark = magazine authority.
-          "Someone who golfs like me was here and fell in love with it."
-          The brain cannot distinguish between imagined and real memory — this is future pacing. */}
-      <section style={{ background: "var(--white)", padding: "clamp(60px,9vh,110px) clamp(24px,5vw,80px)" }}>
-        <div style={{ maxWidth: 800, margin: "0 auto", position: "relative" }}>
+      {/* ═══ 3. TWO-COLUMN MAGAZINE — QUOTE + FACTS ═══
+          Psychology: Quote creates desire. Facts give the brain permission to act.
+          Left = emotion. Right = rational confirmation. Both in one glance. */}
+      <section style={{ background: "var(--white)", display: "grid", gridTemplateColumns: "1fr 1fr", borderTop: "1px solid var(--bone)", borderBottom: "1px solid var(--bone)" }} className="max-md:!grid-cols-1">
+        {/* LEFT — Insider perspective quote */}
+        <div style={{ padding: "clamp(44px,7vh,80px) clamp(32px,5vw,72px)", background: "var(--cream)", borderRight: "1px solid var(--bone)", position: "relative", overflow: "hidden" }} className="max-md:!border-r-0 max-md:!border-b max-md:!border-bone">
+          <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(80px,10vw,130px)", fontWeight: 300, color: "rgba(201,162,77,.07)", lineHeight: ".5", position: "absolute", top: 28, left: 24, userSelect: "none", pointerEvents: "none" }}>&ldquo;</div>
           <R>
-            <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(80px,14vw,180px)", fontWeight: 300, color: "rgba(201,162,77,.07)", lineHeight: ".55", position: "absolute", top: -10, left: -20, userSelect: "none", pointerEvents: "none", zIndex: 0 }}>&ldquo;</div>
-            <div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 600, marginBottom: 22, position: "relative", zIndex: 1 }}>
-              {course.regionLabel} &nbsp;·&nbsp; Course Perspective
-            </div>
-            <p style={{ fontFamily: "var(--serif)", fontSize: "clamp(20px,2.6vw,36px)", fontWeight: 300, fontStyle: "italic", lineHeight: 1.48, color: "var(--charcoal)", position: "relative", zIndex: 1, letterSpacing: "-.01em" }}>
+            <div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 600, marginBottom: 18 }}>Course Perspective</div>
+            <p style={{ fontFamily: "var(--serif)", fontSize: "clamp(15px,1.4vw,19px)", fontWeight: 300, fontStyle: "italic", lineHeight: 1.78, color: "var(--charcoal)", letterSpacing: "-.01em" }}>
               &ldquo;{quoteText}&rdquo;
             </p>
-            <div style={{ marginTop: 26, width: 40, height: 1, background: "var(--gold)" }} />
-            <div style={{ marginTop: 12, fontSize: 10, color: "var(--stone)", letterSpacing: 2.5, textTransform: "uppercase" }}>— Golf the High Sierra &nbsp;·&nbsp; {course.regionLabel}</div>
+            <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 20 }}>
+              <div style={{ width: 28, height: 1, background: "var(--gold)" }} />
+              <div style={{ fontSize: 10, color: "var(--stone)", letterSpacing: 2, textTransform: "uppercase" }}>Golf the High Sierra &nbsp;·&nbsp; {course.regionLabel}</div>
+            </div>
+          </R>
+        </div>
+        {/* RIGHT — Course quick-facts */}
+        <div style={{ padding: "clamp(44px,7vh,80px) clamp(32px,5vw,72px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+          <R>
+            <div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 600, marginBottom: 20 }}>At a Glance</div>
+          </R>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            {[
+              course.designer ? { label: "Designer", val: course.designer } : null,
+              course.holes ? { label: "Format", val: `${course.holes} Holes${course.par ? ` · Par ${course.par}` : ""}` } : null,
+              course.yardage ? { label: "Yardage", val: `${course.yardage.toLocaleString()} yards` } : null,
+              course.slope ? { label: "Slope", val: `${course.slope}${course.slope >= 140 ? " — Extremely Difficult" : course.slope >= 130 ? " — Challenging" : course.slope >= 120 ? " — Moderate–Difficult" : " — Moderate"}` } : null,
+              course.yearBuilt ? { label: "Established", val: course.yearBuilt.toString() } : null,
+              course.priceRange ? { label: "Packages From", val: course.priceRange.split("–")[0] + "/golfer" } : null,
+            ].filter(Boolean).map((fact, i) => (
+              <R key={i} delay={0.06 + i * 0.05}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", padding: "13px 0", borderBottom: "1px solid var(--bone)", ...(i === 0 ? { borderTop: "1px solid var(--bone)" } : {}) }}>
+                  <span style={{ fontSize: 11, color: "var(--stone)", fontWeight: 300 }}>{(fact as { label: string }).label}</span>
+                  <span style={{ fontSize: 12, color: "var(--charcoal)", fontWeight: 600, textAlign: "right", maxWidth: "58%" }}>{(fact as { val: string }).val}</span>
+                </div>
+              </R>
+            ))}
+          </div>
+          <R delay={0.4}>
+            <div style={{ marginTop: 24 }}>
+              {isEmbed ? (
+                <a href="https://golfthehighsierra.com/contact-custom-golf-package/" target="_top" style={{ display: "inline-block", padding: "12px 28px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 10, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase", textDecoration: "none" }}>
+                  Check Tee Times
+                </a>
+              ) : (
+                <Link href="/contact-custom-golf-package/" style={{ display: "inline-block", padding: "12px 28px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 10, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase" }} className="hover:bg-[#D4B76A] transition-colors">
+                  Check Tee Times
+                </Link>
+              )}
+            </div>
           </R>
         </div>
       </section>
