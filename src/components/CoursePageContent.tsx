@@ -397,11 +397,11 @@ export default function CoursePageContent({ course, relatedCourses = [], related
             </R>
           )}
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: 4 }} className="max-md:!min-h-[400px]">
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 4, minHeight: 500 }} className="max-md:!min-h-[400px]">
           {displayGallery.slice(0, 3).map((img, i) => {
             const alts = [`${course.name} fairway`, `${course.name} signature hole`, `${course.name} course panoramic`];
             return (
-              <div key={i} style={{ overflow: "hidden", position: "relative", cursor: isEmbed ? "default" : "pointer", ...(i === 2 ? { gridColumn: "span 2" } : {}) }} onClick={() => !isEmbed && setLbIndex(i)}>
+              <div key={i} style={{ overflow: "hidden", position: "relative", minHeight: i === 2 ? 240 : 240, cursor: isEmbed ? "default" : "pointer", ...(i === 2 ? { gridColumn: "span 2" } : {}) }} onClick={() => !isEmbed && setLbIndex(i)}>
                 <Image src={img} alt={alts[i] || `${course.name} golf`} fill {...bp(img)} className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.07] transition-all duration-[800ms]" sizes="(max-width:900px) 100vw, 50vw" />
               </div>
             );
