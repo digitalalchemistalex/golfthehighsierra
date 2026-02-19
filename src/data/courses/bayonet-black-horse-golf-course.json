@@ -19,7 +19,7 @@
     "value": 4.3,
     "count": 486
   },
-  "description": "Built on the former Fort Ord military base, Bayonet & Black Horse is a 36-hole complex steeped in military history with panoramic Monterey Bay views. Bayonet — designed by a left-handed Army general to fit his chronic fade — is legendary for 'Combat Corner,' the toughest stretch of holes on the peninsula. Black Horse offers a gentler ride with equally stunning ocean vistas.",
+  "description": "Built on the former Fort Ord military base, Bayonet & Black Horse is a 36-hole complex steeped in military history with panoramic Monterey Bay views. Bayonet \u2014 designed by a left-handed Army general to fit his chronic fade \u2014 is legendary for 'Combat Corner,' the toughest stretch of holes on the peninsula. Black Horse offers a gentler ride with equally stunning ocean vistas.",
   "holes": 36,
   "par": 72,
   "designer": "General Robert McClure / Gene Bates (renovation)",
@@ -38,29 +38,29 @@
       "answer": "Yes. Both Bayonet and Black Horse are fully public courses managed by Troon Golf, with green fees significantly lower than other Monterey Peninsula courses."
     },
     {
-      "question": "Which course should I play — Bayonet or Black Horse?",
+      "question": "Which course should I play \u2014 Bayonet or Black Horse?",
       "answer": "Bayonet is the more famous and demanding layout, ranked among the toughest in California (slope 141). Black Horse is slightly more forgiving with better ocean views. Most GTHS groups play both over two days."
     },
     {
       "question": "What is Combat Corner?",
-      "answer": "Holes 11-15 on Bayonet — a series of sharp doglegs designed by the left-handed General McClure to match his slice. Jack Nicklaus called Bayonet the hardest course on the Monterey Peninsula."
+      "answer": "Holes 11-15 on Bayonet \u2014 a series of sharp doglegs designed by the left-handed General McClure to match his slice. Jack Nicklaus called Bayonet the hardest course on the Monterey Peninsula."
     }
   ],
   "meta": {
-    "title": "Bayonet & Black Horse Golf Course – Seaside | Golf The High Sierra",
+    "title": "Bayonet & Black Horse Golf Course \u2013 Seaside | Golf The High Sierra",
     "description": "36 holes of championship golf on the former Fort Ord with Monterey Bay panoramas. Bayonet: slope 141, one of California's toughest. Black Horse: ocean views galore. Book through GTHS."
   },
   "bodyText": [
-    "Where the military once trained, golfers now test their mettle against two of the Monterey Peninsula's best public courses. Bayonet was built in 1954 by General Robert McClure, a lefty with a severe slice who designed every hole to match his game — creating the infamous 'Combat Corner' doglegs that still terrify players today. Black Horse arrived in 1964 and got a $13 million Gene Bates renovation that elevated it into a true championship layout. Both courses weave through mature cypress and oak trees with stunning panoramas of Monterey Bay."
+    "Where the military once trained, golfers now test their mettle against two of the Monterey Peninsula's best public courses. Bayonet was built in 1954 by General Robert McClure, a lefty with a severe slice who designed every hole to match his game \u2014 creating the infamous 'Combat Corner' doglegs that still terrify players today. Black Horse arrived in 1964 and got a $13 million Gene Bates renovation that elevated it into a true championship layout. Both courses weave through mature cypress and oak trees with stunning panoramas of Monterey Bay."
   ],
   "tips": [
     {
       "title": "",
-      "content": "On Bayonet, survival through Combat Corner (11-15) is the round — play conservatively"
+      "content": "On Bayonet, survival through Combat Corner (11-15) is the round \u2014 play conservatively"
     },
     {
       "title": "",
-      "content": "Black Horse back nine has the best ocean views — bring your camera"
+      "content": "Black Horse back nine has the best ocean views \u2014 bring your camera"
     },
     {
       "title": "",
@@ -75,7 +75,7 @@
     "Clubhouse",
     "Event Space"
   ],
-  "pointOfView": "The Monterey Peninsula's best-kept secret for GTHS groups adding a coastal extension. While everyone fights for Pebble Beach tee times at $600+, savvy golfers play 36 holes of championship-caliber golf here for the same price — with views that rival anything on 17-Mile Drive.",
+  "pointOfView": "The Monterey Peninsula's best-kept secret for GTHS groups adding a coastal extension. While everyone fights for Pebble Beach tee times at $600+, savvy golfers play 36 holes of championship-caliber golf here for the same price \u2014 with views that rival anything on 17-Mile Drive.",
   "hack": "",
   "distances": [],
   "contentParagraphs": [],
@@ -83,7 +83,7 @@
     "number": 12,
     "par": 4,
     "yardage": 462,
-    "description": "The heart of Combat Corner on Bayonet — a brutal dogleg left par 4 that plays uphill through a narrow corridor of mature cypress. The approach to a multi-tiered green is one of the most demanding shots in Monterey County."
+    "description": "The heart of Combat Corner on Bayonet \u2014 a brutal dogleg left par 4 that plays uphill through a narrow corridor of mature cypress. The approach to a multi-tiered green is one of the most demanding shots in Monterey County."
   },
   "teeTimeInfo": "",
   "teeTips": [],
@@ -98,22 +98,29 @@
       "quote": "We've done golf trips all over the West, and Bayonet & Black Horse Golf Course is now a permanent stop. The condition was pristine, greens rolled true, and the mountain views are unmatched. GTHS set up our tee times perfectly.",
       "author": "Jennifer S.",
       "source": "Google",
-      "meta": "Google · annual golf weekend (12)"
+      "meta": "Google \u00b7 annual golf weekend (12)"
     },
     {
       "stars": 5,
       "quote": "If you're planning a golf trip to Northern California, you have to play Bayonet & Black Horse Golf Course. We had 16 guys and GTHS handled all the logistics. Course was in fantastic shape and the practice facility was top-notch.",
       "author": "Jessica H.",
       "source": "Yelp",
-      "meta": "Yelp · college reunion group (32)"
+      "meta": "Yelp \u00b7 college reunion group (32)"
     },
     {
       "stars": 5,
       "quote": "Our corporate outing at Bayonet & Black Horse Golf Course was flawless. Golf the High Sierra coordinated tee times, box lunches, and awards dinner. The course challenged our scratch golfers and was still fun for the high-handicappers.",
       "author": "Chris W.",
       "source": "Google",
-      "meta": "Google · bachelor party golf (12)"
+      "meta": "Google \u00b7 bachelor party golf (12)"
     }
   ],
-  "priceRange": ""
+  "priceRange": "",
+  "relatedHotels": [
+    "portola-hotel-spa-monterey"
+  ],
+  "relatedCourses": [],
+  "driveTimes": {
+    "portola-hotel-spa-monterey": 10
+  }
 }

@@ -494,5 +494,20 @@
     "toiyabe-golf-club",
     "wolf-run-golf-club",
     "arrowcreek-golf-club"
-  ]
+  ],
+  "relatedHotels": [
+    "atlantis-casino-resort-spa-reno",
+    "peppermill-resort-spa-casino",
+    "grand-sierra-resort-reno"
+  ],
+  "relatedCourses": [
+    "arrowcreek-golf-club",
+    "lakeridge-golf-course",
+    "somersett-golf-country-club"
+  ],
+  "driveTimes": {
+    "atlantis-casino-resort-spa-reno": 25,
+    "peppermill-resort-spa-casino": 25,
+    "grand-sierra-resort-reno": 22
+  }
 }

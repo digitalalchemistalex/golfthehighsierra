@@ -29,16 +29,16 @@
   "videoUrl": "",
   "faqs": [
     {
-      "question": "What’s included in Coyote Moon golf group packages?",
+      "question": "What\u2019s included in Coyote Moon golf group packages?",
       "answer": "Lodging, guaranteed tee times at Coyote Moon, carts, and concierge planning. Optional transportation, dining, and multi-course itineraries."
     },
     {
       "question": "How much do Coyote Moon packages cost?",
-      "answer": "Typical range is $199–$499 per golfer depending on season, lodging selection, and group size."
+      "answer": "Typical range is $199\u2013$499 per golfer depending on season, lodging selection, and group size."
     },
     {
       "question": "Do you handle corporate or tournament groups?",
-      "answer": "Yes—room blocks, tee-time blocks, tournament setup, and logistics for corporate and leisure groups."
+      "answer": "Yes\u2014room blocks, tee-time blocks, tournament setup, and logistics for corporate and leisure groups."
     }
   ],
   "meta": {
@@ -46,7 +46,7 @@
     "description": "Plan Coyote Moon in Truckee with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips. Rated 4.8/5 (347)."
   },
   "bodyText": [
-    "At 6,300 feet above sea level, Coyote Moon is one of the finest mountain golf courses in the country.  The course is a mountain masterpiece, carved out of 250 secluded acres of rolling hills, towering Ponderosa pines, wildflowers, and roaming wildlife, all without a single home or homesite to spoil the view.  Coyote Moon combines a great design, meticulous maintenance standards, and attentive guest services to create a premier mountain golf experience.",
+    "At 6,300 feet above sea level, Coyote Moon is one of the finest mountain golf courses in the country.\u00a0 The course is a mountain masterpiece, carved out of 250 secluded acres of rolling hills, towering Ponderosa pines, wildflowers, and roaming wildlife, all without a single home or homesite to spoil the view.\u00a0 Coyote Moon combines a great design, meticulous maintenance standards, and attentive guest services to create a premier mountain golf experience.",
     "Plan Coyote Moon in Truckee with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
     "Truckee, CA\n10685 Northwoods Blvd.\nTruckee, CA 96161\n8 Minutes from Truckee, CA\n37 Minutes from Downtown Reno\n43 Minutes from Peppermill and Atlantis\n57 Minutes from Graeagle, CA\n67 Minutes from Stateline, NV\n68 Minutes from Carson City, NV\n79 Minutes from Minden, NV"
   ],
@@ -70,7 +70,7 @@
   "contentParagraphs": [
     "Plan Coyote Moon in Truckee with golf groups, tee times, and stay-and-play packages. Expert planning for buddies, corporate, and leisure trips.",
     "The 13th hole is a spectacular 227-yard par 3 where the tee shot falls more than 200 feet down to an oblong green fronted by Trout Creek and rugged native terrain. The hole plays two-to-three clubs less than normal, but pay attention to the pin location and adjust club selection accordingly. Take a deep breath, clear your mind and concentrate on the shot on this breathtaking and dangerous par 3.",
-    "At The Moon, you’re sure to experience wildlife up close like you never have while playing golf. You’ll want to take a moment to watch the herd of resident Mule deer bucks laze their way across a fairway, or the coyote pups as they frolic outside their den in the giant boulders behind the 12 green. A round at Coyote Moon offers more than pristine golf; it’s more an experience with nature."
+    "At The Moon, you\u2019re sure to experience wildlife up close like you never have while playing golf. You\u2019ll want to take a moment to watch the herd of resident Mule deer bucks laze their way across a fairway, or the coyote pups as they frolic outside their den in the giant boulders behind the 12 green. A round at Coyote Moon offers more than pristine golf; it\u2019s more an experience with nature."
   ],
   "featuredHole": {
     "title": "Signature Hole",
@@ -89,22 +89,37 @@
       "quote": "We've done golf trips all over the West, and Coyote Moon Golf Course is now a permanent stop. The condition was pristine, greens rolled true, and the mountain views are unmatched. GTHS set up our tee times perfectly.",
       "author": "Stephanie A.",
       "source": "Google",
-      "meta": "Google · father-son trip (12)"
+      "meta": "Google \u00b7 father-son trip (12)"
     },
     {
       "stars": 5,
       "quote": "First time playing Coyote Moon Golf Course and it exceeded every expectation. The scenery alone is worth the trip, but the course layout is genuinely challenging and fair. Our whole group wants to come back.",
       "author": "Gary S.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · corporate group of 36"
+      "meta": "TripAdvisor \u00b7 corporate group of 36"
     },
     {
       "stars": 5,
       "quote": "Coyote Moon Golf Course delivers every time. This was our third trip and the course keeps getting better. Par 3s are memorable, greens are quick and true. Best value for championship golf in the Truckee, CA area.",
       "author": "Brandon T.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · buddies trip of 16"
+      "meta": "TripAdvisor \u00b7 buddies trip of 16"
     }
   ],
-  "priceRange": ""
+  "priceRange": "",
+  "relatedHotels": [
+    "cedar-house-sport-hotel",
+    "hampton-inn-truckee-ca",
+    "old-greenwood-lodging-truckee-ca"
+  ],
+  "relatedCourses": [
+    "old-greenwood-golf-course",
+    "grays-crossing-golf-course",
+    "tahoe-donner-golf-course-truckee-ca"
+  ],
+  "driveTimes": {
+    "cedar-house-sport-hotel": 8,
+    "hampton-inn-truckee-ca": 10,
+    "old-greenwood-lodging-truckee-ca": 14
+  }
 }

@@ -19,7 +19,7 @@
     "value": 4.8,
     "count": 347
   },
-  "description": "Arnold Palmer’s spectacular course at Dayton Valley Golf Club blends the natural beauty of the high desert terrain with exciting and challenging features from the architect’s palette. With five tee markers, the immaculate layout stretches from 5,161 to more than 7,200 yards, accommodating all skill levels.",
+  "description": "Arnold Palmer\u2019s spectacular course at Dayton Valley Golf Club blends the natural beauty of the high desert terrain with exciting and challenging features from the architect\u2019s palette. With five tee markers, the immaculate layout stretches from 5,161 to more than 7,200 yards, accommodating all skill levels.",
   "holes": 18,
   "par": 72,
   "designer": "Arnold Palmer",
@@ -33,16 +33,16 @@
   "videoUrl": "",
   "faqs": [
     {
-      "question": "What’s included in Dayton Valley golf group packages?",
+      "question": "What\u2019s included in Dayton Valley golf group packages?",
       "answer": "Lodging, guaranteed tee times at Dayton Valley, carts, and concierge planning. Add transportation, dining, and multi-course options."
     },
     {
       "question": "How much do Dayton Valley group packages cost?",
-      "answer": "Typical range is $199–$499 per golfer depending on season, lodging, and group size."
+      "answer": "Typical range is $199\u2013$499 per golfer depending on season, lodging, and group size."
     },
     {
       "question": "Do you handle corporate or tournament groups?",
-      "answer": "Yes—room blocks, tee-time blocks, tournament setup, and transportation for corporate and leisure groups."
+      "answer": "Yes\u2014room blocks, tee-time blocks, tournament setup, and transportation for corporate and leisure groups."
     }
   ],
   "meta": {
@@ -51,7 +51,7 @@
   },
   "bodyText": [
     "Book Dayton Valley in Carson Valley with golf groups, tee times, and stay & play packages. Expert planning for buddies, corporate, and tournaments.",
-    "Arnold Palmer’s spectacular course at Dayton Valley Golf Club blends the natural beauty of the high desert terrain with exciting and challenging features from the architect’s palette.  With five tee markers, the immaculate layout stretches from 5,161 to more than 7,200 yards, accommodating all skill levels.",
+    "Arnold Palmer\u2019s spectacular course at Dayton Valley Golf Club blends the natural beauty of the high desert terrain with exciting and challenging features from the architect\u2019s palette.\u00a0 With five tee markers, the immaculate layout stretches from 5,161 to more than 7,200 yards, accommodating all skill levels.",
     "Dayton, NV\n101 Palmer Drive\nDayton, NV 89403\n23 Minutes from Carson City, NV\n39 Minutes from Minden, NV\n47 Minutes from Peppermill and Atlantis\n50 Minutes from Stateline, NV\n52 Minutes from Downtown Reno\n79 Minutes from Truckee, CA\n103 Minutes from Graeagle, CA"
   ],
   "tips": [
@@ -74,10 +74,10 @@
   "contentParagraphs": [
     "Book Dayton Valley in Carson Valley with golf groups, tee times, and stay & play packages. Expert planning for buddies, corporate, and tournaments.",
     "The well-conditioned greens and friendly, professional staff are two of the many reason why Dayton Valley has hosted PGA Tour Qualifying for over a decade.",
-    "The total experience at Dayton Valley is unique – country club ambiance that’s affordable and enjoyable. The full-service golf shop, restaurant and bar, targeted grass driving range, and short game area help prime you up for a memorable round of golf."
+    "The total experience at Dayton Valley is unique \u2013 country club ambiance that\u2019s affordable and enjoyable. The full-service golf shop, restaurant and bar, targeted grass driving range, and short game area help prime you up for a memorable round of golf."
   ],
   "featuredHole": {
-    "title": "Hole #3 — Par 5",
+    "title": "Hole #3 \u2014 Par 5",
     "description": "Arnold Palmer's signature hole at Dayton Valley. A reachable par 5 for long hitters, but the green is protected by a dramatic wash that crosses in front. Laying up to your favorite wedge distance is the smart play."
   },
   "teeTimeInfo": "",
@@ -93,22 +93,37 @@
       "quote": "Dayton Valley Golf Club delivers every time. This was our third trip and the course keeps getting better. Par 3s are memorable, greens are quick and true. Best value for championship golf in the Carson Valley, NV area.",
       "author": "Lynn B.",
       "source": "Yelp",
-      "meta": "Yelp · charity tournament (12 players)"
+      "meta": "Yelp \u00b7 charity tournament (12 players)"
     },
     {
       "stars": 5,
       "quote": "First time playing Dayton Valley Golf Club and it exceeded every expectation. The scenery alone is worth the trip, but the course layout is genuinely challenging and fair. Our whole group wants to come back.",
       "author": "Tony O.",
       "source": "Yelp",
-      "meta": "Yelp · corporate group of 20"
+      "meta": "Yelp \u00b7 corporate group of 20"
     },
     {
       "stars": 4,
       "quote": "Our corporate outing at Dayton Valley Golf Club was flawless. Golf the High Sierra coordinated tee times, box lunches, and awards dinner. The course challenged our scratch golfers and was still fun for the high-handicappers.",
       "author": "Rachel L.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · charity tournament (16 players)"
+      "meta": "TripAdvisor \u00b7 charity tournament (16 players)"
     }
   ],
-  "priceRange": ""
+  "priceRange": "",
+  "relatedHotels": [
+    "carson-valley-inn-casino",
+    "atlantis-casino-resort-spa-reno",
+    "peppermill-resort-spa-casino"
+  ],
+  "relatedCourses": [
+    "genoa-lakes-golf-club",
+    "eagle-valley-golf-course",
+    "arrowcreek-golf-club"
+  ],
+  "driveTimes": {
+    "carson-valley-inn-casino": 20,
+    "atlantis-casino-resort-spa-reno": 38,
+    "peppermill-resort-spa-casino": 38
+  }
 }

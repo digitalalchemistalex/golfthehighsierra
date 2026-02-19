@@ -19,7 +19,7 @@
     "value": 4.8,
     "count": 347
   },
-  "description": "Toiyabe Golf Club is a semi-private golf club nestled in the foothills of the Toiyabe National Forest and the Sierra Nevada Mountains in Washoe Valley, Nevada. The club’s signature 18-hole Robert Muir Graves-designed course is a natural blend of links-style and Alpine golf that will challenge low handicap players, as well as golfers of all abilities. Toiyabe Golf Club is open year-round and features a restaurant with indoor and outdoor dining, wedding and corporate meeting space, and special events throughout the year.",
+  "description": "Toiyabe Golf Club is a semi-private golf club nestled in the foothills of the Toiyabe National Forest and the Sierra Nevada Mountains in Washoe Valley, Nevada. The club\u2019s signature 18-hole Robert Muir Graves-designed course is a natural blend of links-style and Alpine golf that will challenge low handicap players, as well as golfers of all abilities. Toiyabe Golf Club is open year-round and features a restaurant with indoor and outdoor dining, wedding and corporate meeting space, and special events throughout the year.",
   "holes": 18,
   "par": 72,
   "designer": "Robert Muir Graves",
@@ -35,16 +35,16 @@
   "videoUrl": "",
   "faqs": [
     {
-      "question": "What’s included in Toiyabe golf group packages?",
+      "question": "What\u2019s included in Toiyabe golf group packages?",
       "answer": "Lodging, pre-booked tee times at Toiyabe, carts, and concierge planning. Transportation and dining add-ons available."
     },
     {
       "question": "How much do Toiyabe packages cost?",
-      "answer": "Typical range is $199–$499 per golfer depending on season, lodging, and group size."
+      "answer": "Typical range is $199\u2013$499 per golfer depending on season, lodging, and group size."
     },
     {
       "question": "Do you handle corporate or tournament groups?",
-      "answer": "Yes—tee time blocks, room blocks, tournament setup, and full concierge planning for buddies and corporate groups."
+      "answer": "Yes\u2014tee time blocks, room blocks, tournament setup, and full concierge planning for buddies and corporate groups."
     }
   ],
   "meta": {
@@ -53,13 +53,13 @@
   },
   "bodyText": [
     "Play Toiyabe Golf Club near Reno with group golf trips, tee times, and stay and play packages. Expert planning for buddies, corporate, and leisure golf getaways.",
-    "Toiyabe Golf Club is a semi-private golf club nestled in the foothills of the Toiyabe National Forest and the Sierra Nevada Mountains in Washoe Valley, Nevada. The club’s signature 18-hole Robert Muir Graves-designed course is a natural blend of links-style and Alpine golf that will challenge low handicap players, as well as golfers of all abilities. Toiyabe Golf Club is open year-round and features a restaurant with indoor and outdoor dining, wedding and corporate meeting space, and special events throughout the year.",
+    "Toiyabe Golf Club is a semi-private golf club nestled in the foothills of the Toiyabe National Forest and the Sierra Nevada Mountains in Washoe Valley, Nevada. The club\u2019s signature 18-hole Robert Muir Graves-designed course is a natural blend of links-style and Alpine golf that will challenge low handicap players, as well as golfers of all abilities. Toiyabe Golf Club is open year-round and features a restaurant with indoor and outdoor dining, wedding and corporate meeting space, and special events throughout the year.",
     "Truckee, CA\n10685 Northwoods Blvd.\nTruckee, CA 96161\n15 Minutes from Carson City, NV\n25 Minutes from Peppermill and Atlantis\n29 Minutes from Downtown Reno\n30 Minutes from Minden, NV\n42 Minutes from Stateline, NV\n57 Minutes from Truckee, CA\n107 Minutes from Graeagle, CA"
   ],
   "tips": [
     {
       "title": "A classic design nestled halfway between Reno and Carson City.",
-      "content": "Toiyabe Golf Club is a semi-private golf club nestled in the foothills of the Toiyabe National Forest and the Sierra Nevada Mountains in Washoe Valley, Nevada. The club’s signature 18-hole Robert Muir Graves-designed course is a natural blend of links-style and Alpine golf that will challenge low handicap players, as well as golfers of all abilities. Toiyabe Golf Club is open year-round and features a restaurant with indoor and outdoor dining, wedding and corporate meeting space, and special events throughout the year.\nSee More"
+      "content": "Toiyabe Golf Club is a semi-private golf club nestled in the foothills of the Toiyabe National Forest and the Sierra Nevada Mountains in Washoe Valley, Nevada. The club\u2019s signature 18-hole Robert Muir Graves-designed course is a natural blend of links-style and Alpine golf that will challenge low handicap players, as well as golfers of all abilities. Toiyabe Golf Club is open year-round and features a restaurant with indoor and outdoor dining, wedding and corporate meeting space, and special events throughout the year.\nSee More"
     },
     {
       "title": "Golf The High Sierra",
@@ -83,7 +83,7 @@
     "Serving breakfast and lunch in an amazing setting overlooking the 18th hole at Toiyabe Golf Club and views of Slide Mountian. We offer a full bar and an traditional menu."
   ],
   "featuredHole": {
-    "title": "Hole #13 — Par 4",
+    "title": "Hole #13 \u2014 Par 4",
     "description": "A stunning uphill par 4 carved through the pines on the back nine. The approach plays a full club longer than the yardage suggests. The view of Slide Mountain from the green makes the climb worth it."
   },
   "teeTimeInfo": "",
@@ -99,22 +99,37 @@
       "quote": "First time playing Toiyabe Golf Club and it exceeded every expectation. The scenery alone is worth the trip, but the course layout is genuinely challenging and fair. Our whole group wants to come back.",
       "author": "Tina K.",
       "source": "Google",
-      "meta": "Google · bachelor party golf (40)"
+      "meta": "Google \u00b7 bachelor party golf (40)"
     },
     {
       "stars": 5,
       "quote": "Played Toiyabe Golf Club with our group and it was incredible. The Robert Muir Graves design keeps you thinking on every shot. Easily one of the best courses in Reno, NV.",
       "author": "Scott A.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · corporate group of 36"
+      "meta": "TripAdvisor \u00b7 corporate group of 36"
     },
     {
       "stars": 5,
-      "quote": "Our annual group plays Toiyabe Golf Club every year through GTHS. The course never disappoints — it's always in tournament condition. The Reno, NV scenery makes it feel like a bucket-list round every time.",
+      "quote": "Our annual group plays Toiyabe Golf Club every year through GTHS. The course never disappoints \u2014 it's always in tournament condition. The Reno, NV scenery makes it feel like a bucket-list round every time.",
       "author": "Bill H.",
       "source": "TripAdvisor",
-      "meta": "TripAdvisor · college reunion group (16)"
+      "meta": "TripAdvisor \u00b7 college reunion group (16)"
     }
   ],
-  "priceRange": ""
+  "priceRange": "",
+  "relatedHotels": [
+    "atlantis-casino-resort-spa-reno",
+    "peppermill-resort-spa-casino",
+    "grand-sierra-resort-reno"
+  ],
+  "relatedCourses": [
+    "arrowcreek-golf-club",
+    "lakeridge-golf-course",
+    "wolf-run-golf-club"
+  ],
+  "driveTimes": {
+    "atlantis-casino-resort-spa-reno": 28,
+    "peppermill-resort-spa-casino": 28,
+    "grand-sierra-resort-reno": 25
+  }
 }

@@ -108,5 +108,20 @@
       "meta": "Google \u00b7 corporate group of 16"
     }
   ],
-  "priceRange": ""
+  "priceRange": "",
+  "relatedHotels": [
+    "peppermill-resort-spa-casino",
+    "atlantis-casino-resort-spa-reno",
+    "grand-sierra-resort-reno"
+  ],
+  "relatedCourses": [
+    "arrowcreek-golf-club",
+    "wolf-run-golf-club",
+    "lakeridge-golf-course"
+  ],
+  "driveTimes": {
+    "peppermill-resort-spa-casino": 14,
+    "atlantis-casino-resort-spa-reno": 16,
+    "grand-sierra-resort-reno": 12
+  }
 }

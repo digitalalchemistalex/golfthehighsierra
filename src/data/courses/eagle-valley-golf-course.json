@@ -109,5 +109,20 @@
       "meta": "Google \u00b7 father-son trip (48)"
     }
   ],
-  "priceRange": ""
+  "priceRange": "",
+  "relatedHotels": [
+    "carson-valley-inn-casino",
+    "atlantis-casino-resort-spa-reno",
+    "peppermill-resort-spa-casino"
+  ],
+  "relatedCourses": [
+    "genoa-lakes-golf-club",
+    "dayton-valley-golf-club",
+    "arrowcreek-golf-club"
+  ],
+  "driveTimes": {
+    "carson-valley-inn-casino": 15,
+    "atlantis-casino-resort-spa-reno": 40,
+    "peppermill-resort-spa-casino": 40
+  }
 }
