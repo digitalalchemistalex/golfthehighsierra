@@ -923,16 +923,16 @@ export default function CoursePageContent({ course, relatedCourses = [], related
         <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14, position: "relative", zIndex: 1 }}>Book {firstName}</div></R>
         <R delay={0.08}>
           <h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,52px)", lineHeight: 1.08, color: "#fff", marginBottom: 12, position: "relative", zIndex: 1 }}>
-            Play {firstName} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.58)" }}>With Your Group</em>
+            Play {firstName} <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.8)" }}>With Your Group</em>
           </h2>
         </R>
         <R delay={0.14}>
-          <p style={{ fontSize: 13, color: "rgba(255,255,255,.52)", fontWeight: 400, maxWidth: 400, margin: "0 auto 32px", lineHeight: 1.85, position: "relative", zIndex: 1 }}>
+          <p style={{ fontSize: 15, color: "rgba(255,255,255,.75)", fontWeight: 400, maxWidth: 400, margin: "0 auto 32px", lineHeight: 1.85, position: "relative", zIndex: 1 }}>
             {course.priceRange ? `Stay-and-play from ${course.priceRange.split("–")[0]}/golfer. ` : ""}Tee times, lodging, dining — one call does it all.
           </p>
         </R>
         <R delay={0.18}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: 10, padding: "10px 20px", borderRadius: 100, border: "1px solid rgba(201,162,77,.12)", fontSize: 11, color: "rgba(255,255,255,.45)", marginBottom: 28, position: "relative", zIndex: 1 }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: 10, padding: "10px 20px", borderRadius: 100, border: "1px solid rgba(201,162,77,.4)", fontSize: 12, color: "rgba(255,255,255,.75)", marginBottom: 28, position: "relative", zIndex: 1 }}>
             <span style={{ width: 5, height: 5, borderRadius: "50%", background: "#e74c3c", animation: "euroP 1.8s infinite", flexShrink: 0 }} />
             Peak season slots fill 30+ days out
           </div>
@@ -940,15 +940,15 @@ export default function CoursePageContent({ course, relatedCourses = [], related
         <R delay={0.24}>
           <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap", position: "relative", zIndex: 1 }}>
             {isEmbed ? (
-              <a href="https://golfthehighsierra.com/contact-custom-golf-package/" target="_top" style={{ display: "inline-block", padding: "16px 40px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 10, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase", textDecoration: "none" }} className="hover:!bg-[#D4B76A] hover:-translate-y-0.5 hover:shadow-[0_14px_44px_rgba(201,162,77,.22)]">
+              <a href="https://golfthehighsierra.com/contact-custom-golf-package/" target="_top" style={{ display: "inline-block", padding: "16px 40px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", textDecoration: "none" }} className="hover:!bg-[#D4B76A] hover:-translate-y-0.5 hover:shadow-[0_14px_44px_rgba(201,162,77,.4)]">
                 Plan My Trip
               </a>
             ) : (
-              <Link href="/contact-custom-golf-package/" style={{ display: "inline-block", padding: "16px 40px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 10, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase" }} className="hover:!bg-[#D4B76A] hover:-translate-y-0.5 hover:shadow-[0_14px_44px_rgba(201,162,77,.22)]">
+              <Link href="/contact-custom-golf-package/" style={{ display: "inline-block", padding: "16px 40px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase" }} className="hover:!bg-[#D4B76A] hover:-translate-y-0.5 hover:shadow-[0_14px_44px_rgba(201,162,77,.4)]">
                 Plan My Trip
               </Link>
             )}
-            <a href="tel:+18885848232" style={{ display: "inline-block", padding: "16px 40px", border: "1px solid rgba(255,255,255,.1)", color: "rgba(255,255,255,.58)", borderRadius: 100, fontSize: 10, fontWeight: 400, letterSpacing: 2, textTransform: "uppercase" }} className="hover:!border-white/35 hover:!text-white">
+            <a href="tel:+18885848232" style={{ display: "inline-block", padding: "16px 40px", border: "2px solid rgba(255,255,255,.55)", color: "#fff", borderRadius: 100, fontSize: 11, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase" }} className="hover:!border-white hover:!bg-white/10">
               Call 888-584-8232
             </a>
           </div>
