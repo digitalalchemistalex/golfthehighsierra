@@ -203,13 +203,6 @@ export default function CoursePageContent({ course, relatedCourses = [], related
               </div>
             </R>
           </div>
-          {/* FOMO pulse — scarcity nudge embedded in desire moment */}
-          <R delay={0.35}>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "9px 18px", borderRadius: 100, border: "1px solid rgba(201,162,77,.18)", background: "rgba(0,0,0,.35)", backdropFilter: "blur(12px)", marginTop: 22, fontSize: 11, color: "rgba(255,255,255,.65)", fontWeight: 300 }}>
-              <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#e74c3c", flexShrink: 0, animation: "euroP 1.8s infinite" }} />
-              Peak-season tee times book 30+ days out — weekend slots go fast
-            </div>
-          </R>
           <div className="hidden lg:block absolute top-0 right-0 w-1/2 h-full z-[3]">
             <HeroTripSlider slug={course.slug} type="course" />
           </div>
@@ -217,43 +210,36 @@ export default function CoursePageContent({ course, relatedCourses = [], related
       </section>
 
       {/* ═══ 2. AUTHORITY STRIP — TRUST ═══
-          Real credentials create instant authority.
-          Psychology: "This course earns its reputation. These are people who know golf." */}
-      {(() => {
-        const d = course.designer?.toLowerCase() || "";
-        const isNicklaus = d.includes("nicklaus");
-        const isPalmer = d.includes("palmer");
-        const isJones = d.includes("jones");
-        const isFazio = d.includes("fazio");
-        const isCrenshaw = d.includes("crenshaw");
-        const isNelson = d.includes("nelson");
-        const isFamous = isNicklaus || isPalmer || isJones || isFazio || isCrenshaw || isNelson;
-        const slope = course.slope || (course.teeData?.length ? Math.max(...course.teeData.map(t => t.slope)) : 0);
-        const diffTier = slope >= 140 ? { label: "Extremely Difficult", color: "#c0392b" } : slope >= 130 ? { label: "Challenging", color: "#e67e22" } : slope >= 120 ? { label: "Moderate–Difficult", color: "#C9A24D" } : { label: "Moderate", color: "#2d6a4f" };
-        const badges = [
-          course.rating ? { main: `${course.rating.value} / 5.0`, sub: `${course.rating.count.toLocaleString()} Golfer Reviews` } : null,
-          isFamous ? { main: course.designer!, sub: "Signature Design" } : { main: "Championship Layout", sub: `${course.regionLabel} Region` },
-          slope ? { main: `Slope ${slope}`, sub: diffTier.label } : null,
-          course.yearBuilt ? { main: `Est. ${course.yearBuilt}`, sub: "Years of Excellence" } : null,
-          { main: "Group Packages", sub: "8–100+ Golfers" },
-          { main: "High Sierra Setting", sub: "Mountain Golf" },
-        ].filter(Boolean) as { main: string; sub: string }[];
-        return (
-          <div style={{ background: "var(--cream)", borderBottom: "1px solid var(--bone)", padding: "0 clamp(24px,5vw,80px)" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "clamp(20px,3.5vw,48px)", overflowX: "auto", padding: "16px 0", flexWrap: "nowrap", msOverflowStyle: "none", scrollbarWidth: "none" }}>
-              {badges.map((item, i) => (
-                <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
-                  {i > 0 && <div style={{ width: 1, height: 28, background: "var(--bone)", flexShrink: 0 }} />}
-                  <div>
-                    <div style={{ fontSize: 12, fontWeight: 700, color: "var(--charcoal)", whiteSpace: "nowrap", letterSpacing: "-.01em" }}>{item.main}</div>
-                    <div style={{ fontSize: 9, color: i === 2 && slope ? diffTier.color : "var(--stone)", letterSpacing: 1.5, textTransform: "uppercase", whiteSpace: "nowrap", fontWeight: i === 2 && slope ? 600 : 400 }}>{item.sub}</div>
-                  </div>
-                </div>
-              ))}
+          Awards and credentials validate immediately.
+          Psychology: "This is where people like me go." */}
+      <div style={{ background: "var(--cream)", borderBottom: "1px solid var(--bone)", padding: "0 clamp(24px,5vw,80px)" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "clamp(24px,4vw,56px)", overflowX: "auto", padding: "18px 0", flexWrap: "nowrap", msOverflowStyle: "none", scrollbarWidth: "none" }}>
+          {course.rating && (
+            <div style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
+              <span style={{ color: "#C9A24D", fontSize: 13, letterSpacing: 2 }}>{"★".repeat(Math.round(course.rating.value))}</span>
+              <div>
+                <div style={{ fontSize: 12, fontWeight: 600, color: "var(--charcoal)" }}>{course.rating.value} / 5.0</div>
+                <div style={{ fontSize: 9, color: "var(--stone)", letterSpacing: 1.5, textTransform: "uppercase" }}>{course.rating.count.toLocaleString()} Reviews</div>
+              </div>
             </div>
-          </div>
-        );
-      })()}
+          )}
+          {[
+            { icon: "🏆", title: "Championship Layout", sub: `${course.regionLabel} Region` },
+            { icon: "🏔️", title: "High Sierra Setting", sub: "Mountain Golf at Its Finest" },
+            { icon: "🤝", title: "Group Packages", sub: "8–100+ Golfers" },
+            course.yearBuilt ? { icon: "📅", title: `Est. ${course.yearBuilt}`, sub: "Years of Excellence" } : null,
+          ].filter(Boolean).map((item, i) => (
+            <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
+              <div style={{ width: 1, height: 32, background: "var(--bone)" }} />
+              <span style={{ fontSize: 18 }}>{(item as { icon: string }).icon}</span>
+              <div>
+                <div style={{ fontSize: 12, fontWeight: 600, color: "var(--charcoal)", whiteSpace: "nowrap" }}>{(item as { title: string }).title}</div>
+                <div style={{ fontSize: 9, color: "var(--stone)", letterSpacing: 1.5, textTransform: "uppercase", whiteSpace: "nowrap" }}>{(item as { sub: string }).sub}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* hack banner */}
       {course.hack && (
@@ -262,27 +248,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
         </div>
       )}
 
-      {/* ═══ 3. EDITORIAL PULL QUOTE — SENSORY DESIRE ═══
-          Psychology: Luxury editorial voice. Oversized quote mark = magazine authority.
-          "Someone who golfs like me was here and fell in love with it."
-          The brain cannot distinguish between imagined and real memory — this is future pacing. */}
-      <section style={{ background: "var(--white)", padding: "clamp(60px,9vh,110px) clamp(24px,5vw,80px)" }}>
-        <div style={{ maxWidth: 800, margin: "0 auto", position: "relative" }}>
-          <R>
-            <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(80px,14vw,180px)", fontWeight: 300, color: "rgba(201,162,77,.07)", lineHeight: ".55", position: "absolute", top: -10, left: -20, userSelect: "none", pointerEvents: "none", zIndex: 0 }}>&ldquo;</div>
-            <div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 600, marginBottom: 22, position: "relative", zIndex: 1 }}>
-              {course.regionLabel} &nbsp;·&nbsp; Course Perspective
-            </div>
-            <p style={{ fontFamily: "var(--serif)", fontSize: "clamp(20px,2.6vw,36px)", fontWeight: 300, fontStyle: "italic", lineHeight: 1.48, color: "var(--charcoal)", position: "relative", zIndex: 1, letterSpacing: "-.01em" }}>
-              &ldquo;{quoteText}&rdquo;
-            </p>
-            <div style={{ marginTop: 26, width: 40, height: 1, background: "var(--gold)" }} />
-            <div style={{ marginTop: 12, fontSize: 10, color: "var(--stone)", letterSpacing: 2.5, textTransform: "uppercase" }}>— Golf the High Sierra &nbsp;·&nbsp; {course.regionLabel}</div>
-          </R>
-        </div>
-      </section>
-
-      {/* ═══ 4. STORY — EMOTION ═══
+      {/* ═══ 3. STORY — EMOTION ═══
           Text + gallery creates the narrative.
           Psychology: "I can picture myself there." */}
       <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 580 }} className="max-md:!grid-cols-1">
@@ -295,42 +261,13 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           </R>
           <R delay={0.14}><p style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 300, maxWidth: 480, marginTop: 18 }}>{para1}</p></R>
           <R delay={0.2}><div style={{ width: 40, height: 1, background: "var(--bone)", margin: "22px 0" }} /></R>
-          {/* Famous designer authority callout */}
-          {(() => {
-            const d = course.designer?.toLowerCase() || "";
-            const isNicklaus = d.includes("nicklaus");
-            const isPalmer = d.includes("palmer");
-            const isJones = d.includes("jones");
-            const isFazio = d.includes("fazio");
-            const isCrenshaw = d.includes("crenshaw");
-            if (isNicklaus || isPalmer || isJones || isFazio || isCrenshaw) {
-              const designerQuotes: Record<string, string> = {
-                nicklaus: "Jack Nicklaus designs reward strategic play — every hole demands thought before power.",
-                palmer: "Arnold Palmer's signature style: bold risk-reward holes that feel natural in the Sierra landscape.",
-                jones: "A Robert Trent Jones design means dramatic bunkering, elevated greens, and shotmaking challenges at every turn.",
-                fazio: "Tom Fazio courses are known for their visual drama and masterful use of natural terrain.",
-                crenshaw: "A Ben Crenshaw design celebrates the golden age of golf — classic lines, subtle breaks, and pure challenge.",
-              };
-              const key = isNicklaus ? "nicklaus" : isPalmer ? "palmer" : isJones ? "jones" : isFazio ? "fazio" : "crenshaw";
-              return (
-                <R delay={0.22}>
-                  <div style={{ padding: "16px 20px", background: "var(--cream)", borderRadius: 10, borderLeft: "3px solid var(--gold)", marginBottom: 20 }}>
-                    <div style={{ fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: "var(--gold)", fontWeight: 600, marginBottom: 6 }}>Signature Design</div>
-                    <p style={{ fontSize: 12, lineHeight: 1.8, color: "var(--stone)", fontWeight: 300, margin: 0, fontStyle: "italic" }}>{designerQuotes[key]}</p>
-                    <div style={{ fontSize: 10, fontWeight: 600, color: "var(--charcoal)", marginTop: 8 }}>{course.designer}</div>
-                  </div>
-                </R>
-              );
-            }
-            return null;
-          })()}
           {course.facilities && course.facilities.length > 0 ? (
             <div style={{ display: "flex", flexDirection: "column" }}>
               {course.facilities.slice(0, 3).map((f, i) => (
                 <R key={i} delay={0.24 + i * 0.06}>
-                  <div style={{ display: "flex", alignItems: "flex-start", gap: 18, padding: "18px 0", borderBottom: "1px solid var(--bone)", ...(i === 0 ? { borderTop: "1px solid var(--bone)" } : {}) }}>
-                    <span style={{ fontFamily: "var(--serif)", fontSize: "clamp(32px,3.5vw,48px)", fontWeight: 300, color: "rgba(201,162,77,.18)", minWidth: 44, lineHeight: .85, marginTop: 3, letterSpacing: "-.03em" }}>0{i + 1}</span>
-                    <p style={{ fontSize: 13, color: "var(--charcoal)", lineHeight: 1.75, fontWeight: 400, margin: 0 }}>{f.replace(/^[^–—-]+[–—-]\s*/, "")}</p>
+                  <div style={{ display: "flex", alignItems: "flex-start", gap: 16, padding: "14px 0", borderBottom: "1px solid var(--bone)", ...(i === 0 ? { borderTop: "1px solid var(--bone)" } : {}) }}>
+                    <span style={{ fontFamily: "var(--serif)", fontSize: 26, fontWeight: 300, color: "var(--sand)", minWidth: 28, lineHeight: .9, marginTop: 2 }}>0{i + 1}</span>
+                    <p style={{ fontSize: 12, color: "var(--charcoal)", lineHeight: 1.65, fontWeight: 400, margin: 0 }}>{f.replace(/^[^–—-]+[–—-]\s*/u, "")}</p>
                   </div>
                 </R>
               ))}
@@ -500,32 +437,20 @@ export default function CoursePageContent({ course, relatedCourses = [], related
         </section>
       )}
 
-      {/* ═══ 8. FOMO BLOCK — FULL URGENCY MOMENT ═══
-          Psychology: A decisive moment, not a thin strip. Gut punch, not a nudge.
-          "I have been thinking about this long enough. Act now." */}
-      <section style={{ background: "linear-gradient(135deg,#1a1208 0%,#0f0f0e 100%)", padding: "clamp(36px,5vh,64px) clamp(24px,5vw,80px)", borderTop: "1px solid rgba(201,162,77,.06)" }}>
-        <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 24, flexWrap: "wrap" }}>
-          <R>
-            <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-              <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#e74c3c", animation: "euroP 1.8s infinite", flexShrink: 0 }} />
-              <div>
-                <div style={{ fontSize: "clamp(14px,1.8vw,20px)", color: "#fff", fontWeight: 600, fontFamily: "var(--serif)", letterSpacing: "-.01em" }}>Peak season tee times fill fast</div>
-                <div style={{ fontSize: 12, color: "rgba(255,255,255,.35)", fontWeight: 300, marginTop: 3 }}>Weekend and summer slots book 30+ days in advance — secure your dates now</div>
-              </div>
-            </div>
-          </R>
-          <R delay={0.1}>
-            <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-              {isEmbed ? (
-                <a href="https://golfthehighsierra.com/contact-custom-golf-package/" target="_top" style={{ display: "inline-block", padding: "13px 32px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 10, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase", textDecoration: "none" }}>Check Availability</a>
-              ) : (
-                <Link href="/contact-custom-golf-package/" style={{ display: "inline-block", padding: "13px 32px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 10, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase" }} className="hover:bg-[#D4B76A] transition-colors">Check Availability</Link>
-              )}
-              <a href="tel:+18885848232" style={{ display: "inline-block", padding: "13px 24px", border: "1px solid rgba(255,255,255,.1)", color: "rgba(255,255,255,.5)", borderRadius: 100, fontSize: 10, fontWeight: 400, letterSpacing: 2, textTransform: "uppercase" }}>888-584-8232</a>
-            </div>
-          </R>
+      {/* ═══ 6. FOMO BANNER — URGENCY ═══
+          Psychology: Before the rational info strip, a scarcity trigger.
+          "I've been considering long enough." */}
+      <div style={{ background: "var(--cream)", borderTop: "1px solid var(--bone)", borderBottom: "1px solid var(--bone)", padding: "14px clamp(24px,5vw,80px)", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#e74c3c", animation: "euroP 1.8s infinite", flexShrink: 0 }} />
+          <span style={{ fontSize: 12, color: "var(--charcoal)", fontWeight: 500 }}>Peak season tee times fill fast — weekend slots often booked 30+ days out</span>
         </div>
-      </section>
+        {isEmbed ? (
+          <a href="https://golfthehighsierra.com/contact-custom-golf-package/" target="_top" style={{ fontSize: 10, letterSpacing: 2, textTransform: "uppercase", fontWeight: 600, color: "var(--gold)", textDecoration: "none", padding: "8px 20px", border: "1px solid var(--gold)", borderRadius: 100 }}>Check Availability →</a>
+        ) : (
+          <Link href="/contact-custom-golf-package/" style={{ fontSize: 10, letterSpacing: 2, textTransform: "uppercase", fontWeight: 600, color: "var(--gold)", textDecoration: "none", padding: "8px 20px", border: "1px solid var(--gold)", borderRadius: 100 }}>Check Availability →</Link>
+        )}
+      </div>
 
       {/* ═══ 7. DETAILS — RATIONAL CONFIRMATION ═══
           Stats + distances + FAQ.
@@ -623,79 +548,6 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           )}
         </div>
       </section>
-
-      {/* ═══ 10. LIFESTYLE MOSAIC — "AFTER YOUR ROUND" ═══
-          Psychology: Expands identity from "golf trip" to "full luxury experience."
-          Experiences + dining woven in = visitor buys a lifestyle, not just tee times.
-          This is what justifies the spend to skeptical spouses and CFOs. */}
-      {(() => {
-        type RegionExp = { icon: string; label: string; desc: string; img: string };
-        const regionExperiences: Record<string, RegionExp[]> = {
-          reno: [
-            { icon: "🎰", label: "Casino Entertainment", desc: "Atlantis, Peppermill, and Grand Sierra — world-class gaming and live shows", img: "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=600&q=80" },
-            { icon: "🍽️", label: "Award-Winning Dining", desc: "Atlantis Steakhouse, Beaujolais Bistro, The Kitchen — Reno's finest tables", img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" },
-            { icon: "🧖", label: "Spa & Wellness", desc: "Spa Atlantis Forbes Four-Star, Willow Springs Spa — post-round recovery", img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80" },
-            { icon: "🏔️", label: "Sierra Adventure", desc: "Lake Tahoe 45 min away — beaches, hiking, and mountain scenery", img: "https://images.unsplash.com/photo-1454942901704-3c44c11b2ad1?w=600&q=80" },
-          ],
-          "south-lake-tahoe": [
-            { icon: "⛵", label: "Lake Tahoe", desc: "The clearest lake in North America — boating, kayaking, and beaches", img: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80" },
-            { icon: "🍽️", label: "South Shore Dining", desc: "Edgewood Restaurant, Nepheles, and lakefront tables with Sierra views", img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" },
-            { icon: "🎰", label: "Stateline Casinos", desc: "Harrah's, MontBleu, and Harvey's — entertainment steps from the lake", img: "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=600&q=80" },
-            { icon: "🧖", label: "Spa & Recovery", desc: "Award-winning resort spas to recharge between rounds", img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80" },
-          ],
-          "north-lake-tahoe": [
-            { icon: "⛷️", label: "Year-Round Adventure", desc: "Northstar, Palisades, and Sugar Bowl — skiing, biking, and hiking trails", img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" },
-            { icon: "🍽️", label: "Truckee Dining", desc: "Moody's Bistro, Pianeta, and farm-to-table restaurants in historic Truckee", img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" },
-            { icon: "⛵", label: "Tahoe Waterfront", desc: "Sand Harbor, Kings Beach, and Crystal Bay — the lake at its most beautiful", img: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80" },
-            { icon: "🏔️", label: "Sierra Peaks", desc: "Summit hikes, mountain biking, and panoramic Sierra Nevada views", img: "https://images.unsplash.com/photo-1454942901704-3c44c11b2ad1?w=600&q=80" },
-          ],
-          graeagle: [
-            { icon: "🌲", label: "Plumas County Forests", desc: "Gold Lake Basin, Bucks Lake, and miles of untouched Sierra wilderness", img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80" },
-            { icon: "🎣", label: "Fly Fishing", desc: "The Feather River — world-class trout fishing between rounds", img: "https://images.unsplash.com/photo-1518399681705-1c1a55e5e883?w=600&q=80" },
-            { icon: "🍽️", label: "Mountain Dining", desc: "Graeagle Meadows Restaurant and local ranch-style fare", img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" },
-            { icon: "🏔️", label: "Feather River Canyon", desc: "Dramatic canyon scenery, historic towns, and pure Sierra air", img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" },
-          ],
-          "carson-valley": [
-            { icon: "🐎", label: "Nevada Ranch Life", desc: "Genoa — Nevada's oldest town, working ranches and western heritage", img: "https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=600&q=80" },
-            { icon: "🏔️", label: "Sierra Foothills", desc: "Dramatic views of the Carson Range with easy access to Lake Tahoe", img: "https://images.unsplash.com/photo-1454942901704-3c44c11b2ad1?w=600&q=80" },
-            { icon: "🍽️", label: "Local Dining", desc: "The Overland Restaurant and Carson Valley's farm-to-table scene", img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" },
-            { icon: "🎰", label: "Carson City", desc: "Nevada's capital — casinos, the State Museum, and historic district", img: "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=600&q=80" },
-          ],
-        };
-        const regionKey = course.region?.toLowerCase().replace(/\s+/g, "-") || "reno";
-        const experiences = regionExperiences[regionKey] || regionExperiences.reno;
-        return (
-          <section style={{ background: "var(--ink)", padding: "clamp(64px,10vh,120px) clamp(24px,5vw,80px)" }}>
-            <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-              <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 16 }}>Beyond the Fairway</div></R>
-              <R delay={0.06}>
-                <h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(26px,3.5vw,50px)", lineHeight: 1.05, color: "#fff", marginBottom: 12 }}>
-                  After Your Round on <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.4)" }}>{firstName}</em>
-                </h2>
-              </R>
-              <R delay={0.1}><p style={{ fontSize: 14, color: "rgba(255,255,255,.35)", maxWidth: 540, lineHeight: 1.85, fontWeight: 300, marginBottom: 36 }}>
-                The {course.regionLabel} delivers more than championship golf. World-class dining, adventure, and Sierra Nevada luxury fill every hour between tee times.
-              </p></R>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 12 }} className="max-md:!grid-cols-2 max-sm:!grid-cols-1">
-                {experiences.map((item, i) => (
-                  <R key={i} delay={0.14 + i * 0.07}>
-                    <div style={{ borderRadius: 14, overflow: "hidden", position: "relative", aspectRatio: "3/4" }} className="group cursor-pointer">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={item.img} alt={item.label} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "brightness(.5)", transition: "transform .9s cubic-bezier(.16,1,.3,1)", display: "block" }} className="group-hover:scale-105 group-hover:!brightness-[.65] transition-all duration-[900ms]" />
-                      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,transparent 35%,rgba(0,0,0,.9) 100%)" }} />
-                      <div style={{ position: "absolute", top: 14, left: 14, width: 34, height: 34, borderRadius: "50%", background: "rgba(255,255,255,.07)", backdropFilter: "blur(8px)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 15 }}>{item.icon}</div>
-                      <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "18px 16px" }}>
-                        <div style={{ fontSize: 14, fontFamily: "var(--serif)", fontWeight: 400, color: "#fff", marginBottom: 4 }}>{item.label}</div>
-                        <div style={{ fontSize: 10, color: "rgba(255,255,255,.38)", lineHeight: 1.5, fontWeight: 300 }}>{item.desc}</div>
-                      </div>
-                    </div>
-                  </R>
-                ))}
-              </div>
-            </div>
-          </section>
-        );
-      })()}
 
       {/* WHERE TO STAY */}
       {relatedHotels.length > 0 && (
@@ -796,30 +648,27 @@ export default function CoursePageContent({ course, relatedCourses = [], related
         </section>
       )}
 
-      {/* ═══ 11. CINEMATIC TESTIMONIALS — SOCIAL PROOF ═══
-          Dark moody setting creates emotional weight.
-          Psychology: "People exactly like me went, loved it, came back. I need to go." */}
+      {/* ═══ 8. SOCIAL PROOF — CONFIRMATION ═══
+          Real reviews remove the final hesitation.
+          Psychology: "Will it be as good as they say?" → Yes, others confirm. */}
       {course.testimonials && course.testimonials.length > 0 && (
-        <section style={{ background: "#080808", padding: "clamp(64px,10vh,120px) clamp(24px,5vw,80px)", position: "relative", overflow: "hidden" }}>
-          <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 25% 50%,rgba(201,162,77,.03),transparent 55%)" }} />
-          <div style={{ maxWidth: 1100, margin: "0 auto", position: "relative", zIndex: 1 }}>
-            <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14 }}>Golfer Reviews</div></R>
-            <R delay={0.06}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(24px,3vw,42px)", lineHeight: 1.08, color: "#fff", marginBottom: 36 }}>
-              What Golfers Say About <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.4)" }}>{firstName}</em>
-            </h2></R>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: 14 }}>
+        <section style={{ background: "var(--cream)", padding: "clamp(56px,8vh,96px) clamp(24px,5vw,80px)" }}>
+          <div style={{ maxWidth: 900, margin: "0 auto" }}>
+            <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14, textAlign: "center" }}>Golfer Reviews</div></R>
+            <R delay={0.06}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(24px,3vw,40px)", lineHeight: 1.15, color: "var(--ink)", textAlign: "center", marginBottom: 40 }}>What Golfers Say About <em style={{ fontStyle: "italic" }}>{firstName}</em></h2></R>
+            <div style={{ display: "grid", gap: 14 }}>
               {course.testimonials.map((t, i) => (
-                <R key={i} delay={0.1 + i * 0.07}>
-                  <div style={{ background: "rgba(255,255,255,.025)", border: "1px solid rgba(255,255,255,.055)", borderRadius: 16, padding: "26px 24px 20px" }}>
-                    <div style={{ color: "#C9A24D", fontSize: 12, marginBottom: 14, letterSpacing: 3 }}>{"★".repeat(t.stars)}{"☆".repeat(Math.max(0, 5 - t.stars))}</div>
-                    <p style={{ fontSize: 14, lineHeight: 1.82, color: "rgba(255,255,255,.58)", margin: "0 0 18px", fontStyle: "italic", fontFamily: "var(--serif)", fontWeight: 300 }}>&ldquo;{t.quote}&rdquo;</p>
-                    <div style={{ display: "flex", alignItems: "center", gap: 12, paddingTop: 16, borderTop: "1px solid rgba(255,255,255,.04)" }}>
-                      <div style={{ width: 34, height: 34, borderRadius: "50%", background: "rgba(201,162,77,.1)", border: "1px solid rgba(201,162,77,.12)", color: "var(--gold)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 600, flexShrink: 0 }}>{t.author[0]}</div>
+                <R key={i} delay={0.08 + i * 0.06}>
+                  <div style={{ background: "var(--white)", borderRadius: 14, padding: "26px 28px 22px", boxShadow: "0 2px 16px rgba(0,0,0,.04)", border: "1px solid var(--bone)" }}>
+                    <div style={{ color: "#C9A24D", fontSize: 14, marginBottom: 10, letterSpacing: 2 }}>{"★".repeat(t.stars)}{"☆".repeat(5 - t.stars)}</div>
+                    <p style={{ fontSize: 14, lineHeight: 1.75, color: "var(--charcoal)", margin: "0 0 14px", fontStyle: "italic" }}>&ldquo;{t.quote}&rdquo;</p>
+                    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                      <div style={{ width: 34, height: 34, borderRadius: "50%", background: "var(--ink)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 600, flexShrink: 0 }}>{t.author[0]}</div>
                       <div>
-                        <div style={{ fontSize: 13, fontWeight: 600, color: "rgba(255,255,255,.72)" }}>{t.author}</div>
-                        <div style={{ fontSize: 10, color: "rgba(255,255,255,.22)", marginTop: 2 }}>{t.meta}</div>
+                        <div style={{ fontSize: 13, fontWeight: 600, color: "var(--ink)" }}>{t.author}</div>
+                        <div style={{ fontSize: 10, color: "var(--stone)", marginTop: 1 }}>{t.meta}</div>
                       </div>
-                      <span style={{ marginLeft: "auto", fontSize: 9, letterSpacing: 1.5, textTransform: "uppercase", color: "rgba(255,255,255,.18)", fontWeight: 500 }}>{t.source}</span>
+                      <span style={{ marginLeft: "auto", fontSize: 9, letterSpacing: 1.5, textTransform: "uppercase", color: "var(--sand)", fontWeight: 500 }}>{t.source}</span>
                     </div>
                   </div>
                 </R>
