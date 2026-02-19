@@ -140,6 +140,31 @@ export default function CoursePageContent({ course, relatedCourses = [], related
   const [lbIndex, setLbIndex] = useState<number | null>(null);
   const [isEmbed, setIsEmbed] = useState(false);
   useEffect(() => { try { setIsEmbed(window.self !== window.top); } catch { setIsEmbed(true); } }, []);
+
+  // Auto-resize iframe on parent when in embed mode
+  useEffect(() => {
+    if (!isEmbed) return;
+    const sendHeight = () => {
+      const h = document.documentElement.scrollHeight;
+      // postMessage for parents listening
+      window.parent.postMessage({ type: "gths-resize", height: h }, "*");
+      // Also try direct iframe resize via referencing self in parent
+      try {
+        const frames = window.parent.document.querySelectorAll("iframe");
+        frames.forEach((f: HTMLIFrameElement) => {
+          if (f.contentWindow === window) f.style.height = h + "px";
+        });
+      } catch { /* cross-origin, postMessage only */ }
+    };
+    // Fire multiple times as images/animations load
+    sendHeight();
+    setTimeout(sendHeight, 500);
+    setTimeout(sendHeight, 1500);
+    setTimeout(sendHeight, 3000);
+    const ro = new ResizeObserver(sendHeight);
+    ro.observe(document.body);
+    return () => ro.disconnect();
+  }, [isEmbed]);
   const bp = (src: string) => blurs[src] ? { placeholder: "blur" as const, blurDataURL: blurs[src] } : {};
 
   const gallery = course.images.filter(u => !isScorecard(u) && !isLogo(u));
