@@ -923,7 +923,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                 <R key={i} delay={0.1 + i * 0.07}>
                   <div style={{ background: "rgba(255,255,255,.025)", border: "1px solid rgba(255,255,255,.055)", borderRadius: 16, padding: "26px 24px 20px" }}>
                     <div style={{ color: "#C9A24D", fontSize: 12, marginBottom: 14, letterSpacing: 3 }}>{"★".repeat(t.stars)}{"☆".repeat(Math.max(0, 5 - t.stars))}</div>
-                    <p style={{ fontSize: 14, lineHeight: 1.82, color: "rgba(255,255,255,.58)", margin: "0 0 18px", fontStyle: "italic", fontFamily: "var(--serif)", fontWeight: 400 }}>&ldquo;{t.quote}&rdquo;</p>
+                    <p style={{ fontSize: 14, lineHeight: 1.82, color: "rgba(255,255,255,.8)", margin: "0 0 18px", fontStyle: "italic", fontFamily: "var(--serif)", fontWeight: 400 }}>&ldquo;{t.quote}&rdquo;</p>
                     <div style={{ display: "flex", alignItems: "center", gap: 12, paddingTop: 16, borderTop: "1px solid rgba(255,255,255,.04)" }}>
                       <div style={{ width: 34, height: 34, borderRadius: "50%", background: "rgba(201,162,77,.1)", border: "1px solid rgba(201,162,77,.12)", color: "var(--gold)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 600, flexShrink: 0 }}>{t.author[0]}</div>
                       <div>
