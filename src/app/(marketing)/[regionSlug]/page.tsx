@@ -18,6 +18,8 @@ export async function generateMetadata({ params }: { params: { regionSlug: strin
 import { getCoursesByRegion } from "@/data/courses";
 import { getHotelBySlug } from "@/data/hotels";
 
+export const dynamicParams = false;
+
 /* ─── Reveal (server component — no JS animation) ─── */
 function R({ children, delay = 0, style }: { children: React.ReactNode; delay?: number; style?: React.CSSProperties }) {
   void delay;

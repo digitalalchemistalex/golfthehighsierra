@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import { ALL_VENUES } from "@/data/venues";
 import { ALL_COURSES } from "@/data/courses";
 
+export const dynamicParams = false;
+
 // Taxonomy configuration
 const TAXONOMIES: Record<
   string,

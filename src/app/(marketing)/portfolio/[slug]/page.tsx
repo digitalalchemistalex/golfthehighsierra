@@ -9,6 +9,8 @@ import VenuePageContent from "@/components/VenuePageContent";
 import RelatedTrips from "@/components/RelatedTrips";
 import { getBlurs } from "@/lib/blur";
 
+export const dynamicParams = false;
+
 /* ─── Type detection ─── */
 function getItemType(slug: string): "course" | "hotel" | "venue" | null {
   if (getCourseBySlug(slug)) return "course";
