@@ -1,6 +1,12 @@
 /** @type {import("next").NextConfig} */
 const nextConfig = {
   trailingSlash: true,
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "golfthehighsierra.vercel.app" },
+      { protocol: "https", hostname: "golfthehighsierra.com" },
+    ],
+  },
   async redirects() {
     return [
       // ── Region page slug fixes ──

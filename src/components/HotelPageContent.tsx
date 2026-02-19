@@ -57,6 +57,11 @@ function R({ children, className = "", delay = 0, style }: { children: React.Rea
   );
 }
 
+/* ─── Helpers ─── */
+// In embed/iframe context, relative /_next/image paths resolve against the parent WordPress domain.
+// Force absolute Vercel URLs so images load correctly when embedded on golfthehighsierra.com.
+const abs = (src: string) => src?.startsWith("/") ? `https://golfthehighsierra.vercel.app${src}` : (src || "");
+
 /* ─── FAQ ─── */
 function FAQ({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
@@ -87,7 +92,7 @@ function Lightbox({ images, startIndex, onClose, name }: { images: string[]; sta
       <button onClick={onClose} className="absolute top-4 right-4 text-white/60 hover:text-white z-10 p-2"><X className="w-8 h-8" /></button>
       <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i - 1 + images.length) % images.length); }} className="absolute left-4 text-white/60 hover:text-white z-10 p-2"><ChevronLeft className="w-10 h-10" /></button>
       <div className="relative w-[90vw] h-[80vh]" onClick={e => e.stopPropagation()}>
-        <Image src={images[idx]} alt={`${name} ${idx + 1}`} fill className="object-contain" sizes="90vw" />
+        <Image src={abs(images[idx])} alt={`${name} ${idx + 1}`} fill className="object-contain" sizes="90vw" />
       </div>
       <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i + 1) % images.length); }} className="absolute right-4 text-white/60 hover:text-white z-10 p-2"><ChevronRight className="w-10 h-10" /></button>
       <div className="absolute bottom-4 text-white/40 text-xs tracking-widest">{idx + 1} / {images.length}</div>
@@ -128,7 +133,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [], relatedCou
         {/* ── LEFT: Hotel Info ── */}
         <div className="w-full lg:w-1/2 relative" style={{ minHeight: 500 }}>
           <div style={{ position: "absolute", inset: 0 }}>
-            {hotel.heroImage && <Image src={hotel.heroImage} alt={hotel.name} fill priority {...bp(hotel.heroImage)} className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" style={{ opacity: .5, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
+            {hotel.heroImage && <Image src={abs(hotel.heroImage)} alt={hotel.name} fill priority {...bp(hotel.heroImage)} className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" style={{ opacity: .5, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
           </div>
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(0,0,0,.25) 0%,transparent 35%,transparent 55%,rgba(0,0,0,.65) 100%)" }} />
 
@@ -198,7 +203,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [], relatedCou
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: 4 }} className="max-md:!min-h-[400px]">
           {(gallery.length > 0 ? gallery : [hotel.heroImage]).slice(0, 3).map((img, i) => (
             <div key={i} style={{ overflow: "hidden", position: "relative", cursor: gallery.length > 0 ? "pointer" : "default", ...(i === 2 ? { gridColumn: "span 2" } : {}) }} onClick={() => gallery.length > 0 && setLbIndex(i)}>
-              <Image src={img} alt={`${hotel.name} ${i + 1}`} fill {...bp(img)} className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.06] transition-all duration-700" sizes="(max-width:900px) 100vw, 50vw" />
+              <Image src={abs(img)} alt={`${hotel.name} ${i + 1}`} fill {...bp(abs(img))} className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.06] transition-all duration-700" sizes="(max-width:900px) 100vw, 50vw" />
             </div>
           ))}
         </div>
@@ -207,7 +212,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [], relatedCou
       {/* ═══ 3. DARK FEATURE — dining + amenities ═══ */}
       <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", background: "var(--ink)" }} className="max-md:!grid-cols-1">
         <div style={{ position: "relative", overflow: "hidden", minHeight: 400 }} className="max-md:!min-h-[300px]">
-          {(gallery[1] || hotel.heroImage) && <Image src={gallery[1] || hotel.heroImage} alt="Feature" fill {...bp(gallery[1] || hotel.heroImage)} className="object-cover opacity-60 hover:opacity-75 hover:scale-[1.04] transition-all duration-[8s]" sizes="(max-width:900px) 100vw, 50vw" />}
+          {(gallery[1] || hotel.heroImage) && <Image src={abs(gallery[1] || hotel.heroImage)} alt="Feature" fill {...bp(gallery[1] || hotel.heroImage)} className="object-cover opacity-60 hover:opacity-75 hover:scale-[1.04] transition-all duration-[8s]" sizes="(max-width:900px) 100vw, 50vw" />}
         </div>
         <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14 }}>
@@ -330,7 +335,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [], relatedCou
                 <Link href={`/portfolio/${rc.slug}/`} style={{ textDecoration: "none", color: "inherit" }}>
                   <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--cream)", transition: "all .5s" }} className="hover:!border-transparent hover:!shadow-[0_16px_48px_rgba(0,0,0,.06)] hover:-translate-y-1">
                     <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
-                      {rc.heroImage ? <Image src={rc.heroImage} alt={rc.name} fill {...bp(rc.heroImage)} className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
+                      {rc.heroImage ? <Image src={abs(rc.heroImage)} alt={rc.name} fill {...bp(rc.heroImage)} className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
                       {rc.driveMinutes && <span style={{ position: "absolute", top: 10, left: 10, background: "var(--forest)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 10, fontWeight: 600 }}>{rc.driveMinutes} min away</span>}
                       {rc.priceRange && <span style={{ position: "absolute", top: 10, right: 10, background: "var(--ink)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 10, fontWeight: 600 }}>{rc.priceRange}</span>}
                     </div>
@@ -361,7 +366,7 @@ export default function HotelPageContent({ hotel, relatedHotels = [], relatedCou
                 <Link href={`/portfolio/${rh.slug}/`}>
                   <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--white)", transition: "all .5s" }} className="hover:!border-transparent hover:!shadow-[0_16px_48px_rgba(0,0,0,.06)] hover:-translate-y-1">
                     <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
-                      {rh.heroImage ? <Image src={rh.heroImage} alt={rh.name} fill {...bp(rh.heroImage)} className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
+                      {rh.heroImage ? <Image src={abs(rh.heroImage)} alt={rh.name} fill {...bp(rh.heroImage)} className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
                       {rh.priceFrom && <span style={{ position: "absolute", top: 10, right: 10, background: "var(--ink)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 10, fontWeight: 600 }}>{rh.priceFrom}</span>}
                     </div>
                     <div style={{ padding: 16 }}>
