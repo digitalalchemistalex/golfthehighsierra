@@ -34,7 +34,7 @@ const nextConfig = {
       { source: '/portfolio/eldorado-cin-cin-bar/', destination: '/portfolio/eldorado-cin-cin/', permanent: true },
       { source: '/portfolio/players-corner-spa-suite-silver-legacy/', destination: '/portfolio/players-corner-spa-suite/', permanent: true },
       // ── Missing region/taxonomy pages → best equivalent ──
-      { source: '/reno/', destination: '/best-golf-courses-reno/', permanent: true },
+
       { source: '/project-type/northern-california-hotels/', destination: '/accommodations-in-reno-tahoe/', permanent: true },
       // ── GSC-derived redirects: old WP portfolio slugs → new pages ──
       { source: '/portfolio/atlantis-toucan-charlies-buffet-grille/', destination: '/portfolio/atlantis-casino-resort-spa-reno/', permanent: true },
