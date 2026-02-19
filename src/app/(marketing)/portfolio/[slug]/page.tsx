@@ -216,6 +216,21 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
   const sameRegion = getVenuesByRegion(venue.region).filter((v) => v.slug !== venue.slug && !sameType.find((s) => s.slug === v.slug));
   const relatedVenues = [...sameType, ...sameRegion].slice(0, 3);
 
+  // Look up parent hotel and its nearby courses
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const venueAny = venue as any;
+  const parentHotelSlug: string | null = venueAny.parentHotel || null;
+  const parentHotel = parentHotelSlug ? getHotelBySlug(parentHotelSlug) : null;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const parentHotelAny = parentHotel as any;
+  const nearbyCourseSlugs: string[] = parentHotelAny?.relatedCourses || [];
+  const nearbyGolfCourses = nearbyCourseSlugs
+    .map((s: string) => getCourseBySlug(s))
+    .filter((c): c is NonNullable<typeof c> => c != null)
+    .slice(0, 3)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    .map((c) => ({ slug: c.slug, name: c.name, heroImage: (c as any).heroImage || "", regionLabel: c.regionLabel, priceRange: (c as any).priceRange, rating: c.rating }));
+
   const venueSchemaType = (() => {
     switch (venue.type) {
       case "bar": case "lounge": return "BarOrPub";
@@ -253,7 +268,7 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(venueSchema) }} />
-      <VenuePageContent venue={slimVenue(venue)} relatedVenues={relatedVenues.map(slimRelatedVenue)} blurs={getBlurs([venue.heroImage || "", ...(venue.images || []), ...relatedVenues.map(v => v.heroImage || "")])} />
+      <VenuePageContent venue={slimVenue(venue)} relatedVenues={relatedVenues.map(slimRelatedVenue)} nearbyGolfCourses={nearbyGolfCourses} parentHotelName={parentHotel?.name} blurs={getBlurs([venue.heroImage || "", ...(venue.images || []), ...relatedVenues.map(v => v.heroImage || "")])} />
     </>
   );
 }
