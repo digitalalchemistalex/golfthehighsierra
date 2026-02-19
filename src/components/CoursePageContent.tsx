@@ -596,7 +596,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
               <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#e74c3c", animation: "euroP 1.8s infinite", flexShrink: 0 }} />
               <div>
                 <div style={{ fontSize: "clamp(14px,1.8vw,20px)", color: "#fff", fontWeight: 600, fontFamily: "var(--serif)", letterSpacing: "-.01em" }}>Peak season tee times fill fast</div>
-                <div style={{ fontSize: 12, color: "rgba(255,255,255,.35)", fontWeight: 300, marginTop: 3 }}>Weekend and summer slots book 30+ days in advance — secure your dates now</div>
+                <div style={{ fontSize: 12, color: "rgba(255,255,255,.7)", fontWeight: 400, marginTop: 3 }}>Weekend and summer slots book 30+ days in advance — secure your dates now</div>
               </div>
             </div>
           </R>
@@ -607,7 +607,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
               ) : (
                 <Link href="/contact-custom-golf-package/" style={{ display: "inline-block", padding: "13px 32px", background: "var(--gold)", color: "#fff", borderRadius: 100, fontSize: 10, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase" }} className="hover:bg-[#D4B76A] transition-colors">Check Availability</Link>
               )}
-              <a href="tel:+18885848232" style={{ display: "inline-block", padding: "13px 24px", border: "1px solid rgba(255,255,255,.1)", color: "rgba(255,255,255,.5)", borderRadius: 100, fontSize: 10, fontWeight: 400, letterSpacing: 2, textTransform: "uppercase" }}>888-584-8232</a>
+              <a href="tel:+18885848232" style={{ display: "inline-block", padding: "13px 24px", border: "1px solid rgba(255,255,255,.55)", color: "#fff", borderRadius: 100, fontSize: 10, fontWeight: 500, letterSpacing: 2, textTransform: "uppercase" }}>888-584-8232</a>
             </div>
           </R>
         </div>
