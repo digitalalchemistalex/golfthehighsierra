@@ -476,7 +476,6 @@
       ]
     }
   },
-  "courseMapImage": "/images/courses/winchester-golf-country-club/course-map.png",
   "managedBy": "Duncan Golf Management",
   "managementGroup": {
     "name": "Duncan Golf Management",
@@ -512,44 +511,74 @@
   },
   "teeData": [
     {
-      "name": "Black",
-      "yardage": 7013,
+      "name": "Gold",
+      "yardage": 7144,
       "par": 72,
-      "rating": 73.1,
-      "slope": 132,
+      "rating": 75.1,
+      "slope": 145,
+      "gender": "M"
+    },
+    {
+      "name": "Black",
+      "yardage": 6819,
+      "par": 72,
+      "rating": 73.8,
+      "slope": 142,
+      "gender": "M"
+    },
+    {
+      "name": "Tournament",
+      "yardage": 6554,
+      "par": 72,
+      "rating": 72.1,
+      "slope": 141,
       "gender": "M"
     },
     {
       "name": "Blue",
-      "yardage": 6590,
+      "yardage": 6363,
       "par": 72,
-      "rating": 71.0,
-      "slope": 127,
+      "rating": 71.3,
+      "slope": 139,
+      "gender": "M"
+    },
+    {
+      "name": "Member",
+      "yardage": 6063,
+      "par": 72,
+      "rating": 69.9,
+      "slope": 135,
       "gender": "M"
     },
     {
       "name": "White",
-      "yardage": 6152,
+      "yardage": 5856,
       "par": 72,
-      "rating": 68.9,
-      "slope": 121,
-      "gender": "M"
+      "rating": 69.2,
+      "slope": 131,
+      "gender": "M",
+      "ratingF": 75.2,
+      "slopeF": 143
     },
     {
-      "name": "Gold",
-      "yardage": 5706,
+      "name": "WCC",
+      "yardage": 5528,
       "par": 72,
-      "rating": 66.6,
-      "slope": 114,
-      "gender": "M"
+      "rating": 67.4,
+      "slope": 123,
+      "gender": "M",
+      "ratingF": 72.8,
+      "slopeF": 133
     },
     {
-      "name": "Red (Ladies)",
-      "yardage": 5196,
+      "name": "Green",
+      "yardage": 5289,
       "par": 72,
-      "rating": 69.8,
+      "rating": 66.3,
       "slope": 118,
-      "gender": "F"
+      "gender": "M",
+      "ratingF": 71.7,
+      "slopeF": 129
     }
   ]
 }

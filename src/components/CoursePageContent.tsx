@@ -16,7 +16,7 @@ interface FeaturedHole { title?: string; description?: string; number?: number; 
 interface CourseTip { title?: string; content?: string; }
 interface ScorecardTee { name: string; color: string; rating: number; slope: number; holes: number[]; total: number; }
 interface Scorecard { tees: ScorecardTee[]; par: number[]; handicap?: { gentlemens?: number[]; ladies?: number[] }; }
-interface TeeData { name: string; yardage: number; par: number; rating: number; slope: number; gender: string; }
+interface TeeData { name: string; yardage: number; par: number; rating: number; slope: number; gender: string; ratingF?: number; slopeF?: number; }
 
 export interface CourseProps {
   slug: string; name: string; region?: string; regionLabel: string;
@@ -498,8 +498,14 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                         </td>
                         <td style={{ textAlign: "center", fontSize: 14, fontWeight: 700, color: "var(--ink)", padding: "16px" }}>{tee.yardage.toLocaleString()}</td>
                         <td style={{ textAlign: "center", fontSize: 13, fontWeight: 500, color: "var(--charcoal)", padding: "16px" }}>{tee.par}</td>
-                        <td style={{ textAlign: "center", fontSize: 13, fontWeight: 500, color: "var(--charcoal)", padding: "16px" }}>{tee.rating}</td>
-                        <td style={{ textAlign: "center", fontSize: 13, fontWeight: 700, color: "var(--ink)", padding: "16px" }}>{tee.slope}</td>
+                        <td style={{ textAlign: "center", padding: "16px" }}>
+                          <div style={{ fontSize: 13, fontWeight: 500, color: "var(--charcoal)" }}>{tee.rating}</div>
+                          {tee.ratingF && <div style={{ fontSize: 10, color: "#c0392b", fontWeight: 400, marginTop: 2 }}>L: {tee.ratingF}</div>}
+                        </td>
+                        <td style={{ textAlign: "center", padding: "16px" }}>
+                          <div style={{ fontSize: 13, fontWeight: 700, color: "var(--ink)" }}>{tee.slope}</div>
+                          {tee.slopeF && <div style={{ fontSize: 10, color: "#c0392b", fontWeight: 400, marginTop: 2 }}>L: {tee.slopeF}</div>}
+                        </td>
                         <td style={{ padding: "16px 20px 16px 12px", minWidth: 120 }}>
                           <div style={{ fontSize: 9, fontWeight: 600, letterSpacing: 1, textTransform: "uppercase", color: slopeColor, marginBottom: 5 }}>{slopeLabel}</div>
                           <div style={{ background: "var(--bone)", borderRadius: 100, height: 4 }}>
