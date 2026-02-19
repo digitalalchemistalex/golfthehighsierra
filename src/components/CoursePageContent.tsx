@@ -246,8 +246,6 @@ export default function CoursePageContent({ course, relatedCourses = [], related
         const diffTier = slope >= 140 ? { label: "Extremely Difficult", color: "#c0392b" } : slope >= 130 ? { label: "Challenging", color: "#e67e22" } : slope >= 120 ? { label: "Moderate–Difficult", color: "#C9A24D" } : { label: "Moderate", color: "#2d6a4f" };
         const badges = [
           isFamous ? { main: course.designer!, sub: "Signature Design" } : { main: "Championship Layout", sub: `${course.regionLabel} Region` },
-          slope ? { main: `Slope ${slope}`, sub: diffTier.label } : null,
-          course.holes ? { main: `${course.holes} Holes`, sub: course.par ? `Par ${course.par}` : "Championship" } : null,
           course.yearBuilt ? { main: `Est. ${course.yearBuilt}`, sub: "Years of Excellence" } : null,
           { main: "Group Packages", sub: "8–100+ Golfers" },
           { main: "High Sierra Setting", sub: "Mountain Golf" },
@@ -304,11 +302,10 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           <div style={{ display: "flex", flexDirection: "column" }}>
             {[
               course.designer ? { label: "Designer", val: course.designer } : null,
-              course.holes ? { label: "Format", val: `${course.holes} Holes${course.par ? ` · Par ${course.par}` : ""}` } : null,
-              course.yardage ? { label: "Yardage", val: `${course.yardage.toLocaleString()} yards` } : null,
-              course.slope ? { label: "Slope", val: `${course.slope}${course.slope >= 140 ? " — Extremely Difficult" : course.slope >= 130 ? " — Challenging" : course.slope >= 120 ? " — Moderate–Difficult" : " — Moderate"}` } : null,
               course.yearBuilt ? { label: "Established", val: course.yearBuilt.toString() } : null,
               course.priceRange ? { label: "Packages From", val: course.priceRange.split("–")[0] + "/golfer" } : null,
+              { label: "Group Size", val: "8–100+ Golfers" },
+              course.address?.addressLocality ? { label: "Location", val: `${course.address.addressLocality}, ${course.address.addressRegion}` } : null,
             ].filter(Boolean).map((fact, i) => (
               <R key={i} delay={0.06 + i * 0.05}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", padding: "13px 0", borderBottom: "1px solid var(--bone)", ...(i === 0 ? { borderTop: "1px solid var(--bone)" } : {}) }}>
