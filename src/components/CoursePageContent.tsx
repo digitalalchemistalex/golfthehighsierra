@@ -37,6 +37,12 @@ interface RelatedCourse {
   heroImage?: string; priceRange?: string; rating?: CourseRating;
 }
 
+interface RelatedHotel {
+  slug: string; name: string; regionLabel: string;
+  heroImage?: string; priceFrom?: string | number; rating?: CourseRating;
+  driveMinutes?: number;
+}
+
 /* ─── Helpers ─── */
 function isScorecard(url: string) { return url.toLowerCase().includes("scorecard"); }
 function isLogo(url: string) { const l = url.toLowerCase(); return (l.includes("logo") || l.includes("golfball")) && (l.endsWith(".png") || l.endsWith(".webp") || l.endsWith(".svg")); }
@@ -117,7 +123,7 @@ function Lightbox({ images, startIndex, onClose, name }: { images: string[]; sta
 /* ═══════════════════════════════════════
    MAIN COMPONENT
    ═══════════════════════════════════════ */
-export default function CoursePageContent({ course, relatedCourses = [], blurs = {} }: { course: CourseProps; relatedCourses?: RelatedCourse[]; blurs?: Record<string, string> }) {
+export default function CoursePageContent({ course, relatedCourses = [], relatedHotels = [], blurs = {} }: { course: CourseProps; relatedCourses?: RelatedCourse[]; relatedHotels?: RelatedHotel[]; blurs?: Record<string, string> }) {
   const [lbIndex, setLbIndex] = useState<number | null>(null);
   const [isEmbed, setIsEmbed] = useState(false);
   useEffect(() => { try { setIsEmbed(window.self !== window.top); } catch { setIsEmbed(true); } }, []);
@@ -368,6 +374,56 @@ export default function CoursePageContent({ course, relatedCourses = [], blurs =
               </table>
             </div>
           </R>
+        </section>
+      )}
+
+      {/* ═══ WHERE TO STAY ═══ */}
+      {relatedHotels.length > 0 && (
+        <section style={{ padding: "clamp(48px,7vh,80px) clamp(32px,7vw,120px)", background: "var(--white)", borderTop: "1px solid var(--bone)" }}>
+          <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>Stay &amp; Play</div></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(26px,3vw,42px)", lineHeight: 1.1, marginBottom: 8 }}>Where to Stay Near <em style={{ fontStyle: "italic" }}>{course.name}</em></h2></R>
+          <R delay={0.1}><p style={{ color: "var(--stone)", fontSize: 14, marginBottom: 28, maxWidth: 560 }}>Most groups who play {course.name} stay at one of these properties. All include golf package rates when booked through Golf the High Sierra.</p></R>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16 }} className="max-md:!grid-cols-1">
+            {relatedHotels.map((rh, i) => (
+              <R key={rh.slug} delay={0.12 + i * 0.06}>
+                {isEmbed ? (
+                <a href={`https://golfthehighsierra.com/portfolio/${rh.slug}/`} target="_top" style={{ textDecoration: "none", color: "inherit" }}>
+                  <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--cream)", transition: "all .5s" }} className="hover:!border-transparent hover:!shadow-[0_16px_48px_rgba(0,0,0,.06)] hover:-translate-y-1">
+                    <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
+                      {rh.heroImage ? <Image src={rh.heroImage} alt={rh.name} fill className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
+                      {rh.driveMinutes && <span style={{ position: "absolute", top: 10, left: 10, background: "var(--forest)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 10, fontWeight: 600 }}>{rh.driveMinutes} min away</span>}
+                    </div>
+                    <div style={{ padding: 16 }}>
+                      <div style={{ fontFamily: "var(--serif)", fontSize: 18, fontWeight: 400, color: "var(--ink)" }}>{rh.name}</div>
+                      <div style={{ fontSize: 10, textTransform: "uppercase", letterSpacing: 2, color: "var(--stone)", margin: "4px 0 12px" }}>{rh.regionLabel}</div>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: 10, borderTop: "1px solid var(--bone)" }}>
+                        {rh.rating && <span style={{ fontSize: 10, color: "var(--stone)" }}>★ {rh.rating.value}</span>}
+                        <span style={{ fontSize: 10, color: "var(--gold)", fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>View Hotel →</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                ) : (
+                <Link href={`/portfolio/${rh.slug}/`} style={{ textDecoration: "none", color: "inherit" }}>
+                  <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--cream)", transition: "all .5s" }} className="hover:!border-transparent hover:!shadow-[0_16px_48px_rgba(0,0,0,.06)] hover:-translate-y-1">
+                    <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
+                      {rh.heroImage ? <Image src={rh.heroImage} alt={rh.name} fill className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
+                      {rh.driveMinutes && <span style={{ position: "absolute", top: 10, left: 10, background: "var(--forest)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 10, fontWeight: 600 }}>{rh.driveMinutes} min away</span>}
+                    </div>
+                    <div style={{ padding: 16 }}>
+                      <div style={{ fontFamily: "var(--serif)", fontSize: 18, fontWeight: 400, color: "var(--ink)" }}>{rh.name}</div>
+                      <div style={{ fontSize: 10, textTransform: "uppercase", letterSpacing: 2, color: "var(--stone)", margin: "4px 0 12px" }}>{rh.regionLabel}</div>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: 10, borderTop: "1px solid var(--bone)" }}>
+                        {rh.rating && <span style={{ fontSize: 10, color: "var(--stone)" }}>★ {rh.rating.value}</span>}
+                        <span style={{ fontSize: 10, color: "var(--gold)", fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>View Hotel →</span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+                )}
+              </R>
+            ))}
+          </div>
         </section>
       )}
 

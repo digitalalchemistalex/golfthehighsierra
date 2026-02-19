@@ -107,6 +107,14 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
     const related = courseAny.relatedCourseSlugs
       ? (courseAny.relatedCourseSlugs as string[]).map((s: string) => getCourseBySlug(s)).filter((c): c is NonNullable<typeof c> => c != null).slice(0, 3)
       : getCoursesByRegion(course.region).filter((c) => c.slug !== course.slug).slice(0, 3);
+    const relatedHotelSlugs: string[] = courseAny.relatedHotels || [];
+    const driveTimes: Record<string, number> = courseAny.driveTimes || {};
+    const relatedHotels = relatedHotelSlugs
+      .map((s: string) => getHotelBySlug(s))
+      .filter((h): h is NonNullable<typeof h> => h != null)
+      .slice(0, 3)
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      .map((h) => ({ slug: h.slug, name: h.name, heroImage: (h as any).heroImage || "", regionLabel: h.regionLabel, priceFrom: h.priceFrom, rating: h.rating, driveMinutes: driveTimes[h.slug] }));
     const geo = course.geo as { latitude?: number; longitude?: number };
     const BASE = "https://golfthehighsierra.com";
     const pageUrl = `${BASE}/portfolio/${course.slug}/`;
@@ -148,7 +156,7 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
     return (
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-        <CoursePageContent course={slimCourse(course)} relatedCourses={related.map(slimRelatedCourse)} blurs={getBlurs([course.heroImage || "", ...(course.images || []), ...related.map(c => c.heroImage || "")])} />
+        <CoursePageContent course={slimCourse(course)} relatedCourses={related.map(slimRelatedCourse)} relatedHotels={relatedHotels} blurs={getBlurs([course.heroImage || "", ...(course.images || []), ...related.map(c => c.heroImage || "")])} />
         <RelatedTrips slug={course.slug} type="course" />
       </>
     );
@@ -158,6 +166,16 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
   if (type === "hotel") {
     const hotel = getHotelBySlug(params.slug)!;
     const relatedHotels = getHotelsByRegion(hotel.region).filter((h) => h.slug !== hotel.slug).slice(0, 3);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const hotelAny = hotel as any;
+    const relatedCourseSlugs: string[] = hotelAny.relatedCourses || [];
+    const courseDistances: Record<string, number> = hotelAny.courseDistances || {};
+    const relatedCourses = relatedCourseSlugs
+      .map((s: string) => getCourseBySlug(s))
+      .filter((c): c is NonNullable<typeof c> => c != null)
+      .slice(0, 3)
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      .map((c) => ({ slug: c.slug, name: c.name, heroImage: (c as any).heroImage || "", regionLabel: c.regionLabel, priceRange: (c as any).priceRange, rating: c.rating, driveMinutes: courseDistances[c.slug] }));
     const hotelSchema = {
       "@context": "https://schema.org",
       "@graph": [
@@ -186,7 +204,7 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
     return (
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(hotelSchema) }} />
-        <HotelPageContent hotel={slimHotel(hotel)} relatedHotels={relatedHotels.map(slimRelatedHotel)} blurs={getBlurs([hotel.heroImage, ...(hotel.images || []), ...relatedHotels.map(h => h.heroImage || "")])} />
+        <HotelPageContent hotel={slimHotel(hotel)} relatedHotels={relatedHotels.map(slimRelatedHotel)} relatedCourses={relatedCourses} blurs={getBlurs([hotel.heroImage, ...(hotel.images || []), ...relatedHotels.map(h => h.heroImage || "")])} />
         <RelatedTrips slug={hotel.slug} type="hotel" />
       </>
     );

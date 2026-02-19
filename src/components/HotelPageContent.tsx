@@ -32,7 +32,12 @@ interface RelatedHotel {
   heroImage?: string; priceFrom?: string; rating?: HotelRating;
 }
 
-interface HotelPageContentProps { hotel: HotelProps; relatedHotels: RelatedHotel[]; blurs?: Record<string, string>; }
+interface RelatedCourse {
+  slug: string; name: string; regionLabel: string;
+  heroImage?: string; priceRange?: string; rating?: { value: number; count: number; [key: string]: unknown }; driveMinutes?: number;
+}
+
+interface HotelPageContentProps { hotel: HotelProps; relatedHotels: RelatedHotel[]; relatedCourses?: RelatedCourse[]; blurs?: Record<string, string>; }
 
 /* ─── Reveal ─── */
 function R({ children, className = "", delay = 0, style }: { children: React.ReactNode; className?: string; delay?: number; style?: React.CSSProperties }) {
@@ -93,7 +98,7 @@ function Lightbox({ images, startIndex, onClose, name }: { images: string[]; sta
 /* ═══════════════════════════════════════
    MAIN COMPONENT
    ═══════════════════════════════════════ */
-export default function HotelPageContent({ hotel, relatedHotels = [], blurs = {} }: HotelPageContentProps) {
+export default function HotelPageContent({ hotel, relatedHotels = [], relatedCourses = [], blurs = {} }: HotelPageContentProps) {
   const [lbIndex, setLbIndex] = useState<number | null>(null);
   const bp = (src: string) => blurs[src] ? { placeholder: "blur" as const, blurDataURL: blurs[src] } : {};
 
@@ -312,6 +317,38 @@ export default function HotelPageContent({ hotel, relatedHotels = [], blurs = {}
           ))}
         </div>
       </section>
+
+      {/* ═══ GOLF NEARBY ═══ */}
+      {relatedCourses.length > 0 && (
+        <section style={{ padding: "clamp(48px,7vh,80px) clamp(32px,7vw,120px)", background: "var(--white)", borderTop: "1px solid var(--bone)" }}>
+          <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>Stay &amp; Play</div></R>
+          <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(26px,3vw,42px)", lineHeight: 1.1, marginBottom: 8 }}>Golf Within Reach of <em style={{ fontStyle: "italic" }}>{hotel.name}</em></h2></R>
+          <R delay={0.1}><p style={{ color: "var(--stone)", fontSize: 14, marginBottom: 28, maxWidth: 560 }}>All courses below are bookable as part of a stay &amp; play package. Golf the High Sierra handles tee times, group rates, and hotel — one call does it all.</p></R>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16 }} className="max-md:!grid-cols-1">
+            {relatedCourses.map((rc, i) => (
+              <R key={rc.slug} delay={0.12 + i * 0.06}>
+                <Link href={`/portfolio/${rc.slug}/`} style={{ textDecoration: "none", color: "inherit" }}>
+                  <div style={{ borderRadius: 10, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--cream)", transition: "all .5s" }} className="hover:!border-transparent hover:!shadow-[0_16px_48px_rgba(0,0,0,.06)] hover:-translate-y-1">
+                    <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
+                      {rc.heroImage ? <Image src={rc.heroImage} alt={rc.name} fill {...bp(rc.heroImage)} className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-600" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
+                      {rc.driveMinutes && <span style={{ position: "absolute", top: 10, left: 10, background: "var(--forest)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 10, fontWeight: 600 }}>{rc.driveMinutes} min away</span>}
+                      {rc.priceRange && <span style={{ position: "absolute", top: 10, right: 10, background: "var(--ink)", color: "#fff", padding: "3px 10px", borderRadius: 100, fontSize: 10, fontWeight: 600 }}>{rc.priceRange}</span>}
+                    </div>
+                    <div style={{ padding: 16 }}>
+                      <div style={{ fontFamily: "var(--serif)", fontSize: 18, fontWeight: 400, color: "var(--ink)" }}>{rc.name}</div>
+                      <div style={{ fontSize: 10, textTransform: "uppercase", letterSpacing: 2, color: "var(--stone)", margin: "4px 0 12px" }}>{rc.regionLabel}</div>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: 10, borderTop: "1px solid var(--bone)" }}>
+                        {rc.rating && <span style={{ fontSize: 10, color: "var(--stone)" }}>★ {rc.rating.value}</span>}
+                        <span style={{ fontSize: 10, color: "var(--gold)", fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>View Course →</span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </R>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* ═══ RELATED ═══ */}
       {relatedHotels.length > 0 && (
