@@ -32,6 +32,7 @@ export interface CourseProps {
   teeTimeInfo?: string; teeTips?: string[];
   scorecard?: Scorecard;
   teeData?: TeeData[];
+  courseMapImage?: string;
 }
 
 interface RelatedCourse { slug: string; name: string; regionLabel: string; heroImage?: string; priceRange?: string; rating?: CourseRating; }
@@ -194,7 +195,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
               </h1>
             </R>
             <R delay={0.1}>
-              <div style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 14, fontSize: 11, color: "rgba(255,255,255,.52)", fontWeight: 300 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 14, fontSize: 12, color: "rgba(255,255,255,.8)", fontWeight: 400 }}>
                 {course.designer && <><span>{course.designer}</span><span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.5)" }} /></>}
                 {course.yearBuilt && <><span>Est. {course.yearBuilt}</span><span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.5)" }} /></>}
                 {course.holes && <span>{course.holes} Holes</span>}
@@ -557,6 +558,25 @@ export default function CoursePageContent({ course, relatedCourses = [], related
               </tbody>
             </table>
           </div></R>
+        </section>
+      )}
+
+      {/* ═══ COURSE MAP ═══ */}
+      {course.courseMapImage && (
+        <section style={{ background: "var(--white)", padding: "clamp(48px,7vh,80px) clamp(24px,5vw,80px)", borderTop: "1px solid var(--bone)", borderBottom: "1px solid var(--bone)" }}>
+          <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 8 }}>Course Layout</div></R>
+          <R delay={0.06}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(24px,3vw,42px)", lineHeight: 1.1, color: "var(--ink)", marginBottom: 24 }}>The <em style={{ fontStyle: "italic", color: "var(--stone)" }}>Course Map</em></h2></R>
+          <R delay={0.1}>
+            <div style={{ borderRadius: 16, overflow: "hidden", border: "1px solid var(--bone)", boxShadow: "0 4px 24px rgba(0,0,0,.06)" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={course.courseMapImage}
+                alt={`${course.name} course map layout`}
+                style={{ width: "100%", height: "auto", display: "block" }}
+                loading="lazy"
+              />
+            </div>
+          </R>
         </section>
       )}
 
