@@ -127,12 +127,14 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
         {
           "@type": "GolfCourse", name: course.name, description: course.description,
           url: pageUrl, image: absImage,
+          sport: "Golf",
+          isAccessibleForFree: false,
           ...(course.address?.streetAddress && {
             address: { "@type": "PostalAddress", streetAddress: course.address.streetAddress, addressLocality: course.address.addressLocality, addressRegion: course.address.addressRegion, postalCode: course.address.postalCode, addressCountry: "US" },
           }),
           ...(geo?.latitude && { geo: { "@type": "GeoCoordinates", latitude: geo.latitude, longitude: geo.longitude } }),
           telephone: course.phone || "+1-888-584-8232",
-          priceRange: course.priceRange,
+          ...(course.website && { sameAs: [course.website] }),
           ...(course.par && { numberOfHoles: course.holes || 18 }),
           ...(course.designer && { founder: course.designer }),
           ...(course.yearBuilt && { foundingDate: String(course.yearBuilt) }),
@@ -143,9 +145,14 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
           amenityFeature: [
             { "@type": "LocationFeatureSpecification", name: "Group Golf Packages", value: true },
             { "@type": "LocationFeatureSpecification", name: "Corporate Events", value: true },
+            { "@type": "LocationFeatureSpecification", name: "Practice Facility", value: true },
+            { "@type": "LocationFeatureSpecification", name: "Clubhouse", value: true },
+            { "@type": "LocationFeatureSpecification", name: "Pro Shop", value: true },
+            { "@type": "LocationFeatureSpecification", name: "Golf Carts", value: true },
           ],
         },
-        { "@type": "Service", name: `${course.name} Golf Groups & Stay and Play Packages`, serviceType: "Golf travel package", provider: { "@type": "Organization", name: "Golf the High Sierra", url: BASE, telephone: "+1-888-584-8232", sameAs: ["https://www.facebook.com/golfthehighsierra", "https://www.instagram.com/golfthehighsierra"] } },
+        { "@type": "Service", name: `${course.name} Golf Groups & Stay and Play Packages`, serviceType: "Golf travel package", provider: { "@type": "Organization", name: "Golf the High Sierra", url: BASE, telephone: "+1-888-584-8232", sameAs: ["https://www.facebook.com/golfthehighsierra", "https://www.instagram.com/golfthehighsierra"] }, areaServed: { "@type": "State", name: "Nevada, California" }, description: `Custom golf group packages at ${course.name} — tee times, lodging, dining, and transportation coordinated by Golf the High Sierra.` },
+        { "@type": "SportsActivityLocation", name: course.name, sport: "Golf", url: pageUrl, description: course.description, telephone: course.phone || "+1-888-584-8232", ...(geo?.latitude && { geo: { "@type": "GeoCoordinates", latitude: geo.latitude, longitude: geo.longitude } }) },
         ...(course.faqs.length > 0 ? [{ "@type": "FAQPage", mainEntity: course.faqs.map((faq: { question: string; answer: string }) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) }] : []),
         { "@type": "BreadcrumbList", itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: BASE },
