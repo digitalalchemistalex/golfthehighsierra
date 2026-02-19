@@ -11,6 +11,7 @@ const nextConfig = {
     return [
       // ── Region page slug fixes ──
       { source: '/reno-golf-packages/', destination: '/best-golf-courses-reno/', permanent: true },
+      { source: '/golf-trip-faqs/', destination: '/faq/', permanent: true },
       { source: '/lake-tahoe-golf-packages/', destination: '/best-golf-courses-lake-tahoe/', permanent: true },
       { source: '/group-golf-lodging-packages/', destination: '/best-golf-courses-carson-valley/', permanent: true },
       // ── Atlantis sub-page redirects removed — pages now live at these slugs ──

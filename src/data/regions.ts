@@ -214,12 +214,19 @@ export const REGIONS: RegionData[] = [
   },
 ];
 
+const SLUG_ALIASES: Record<string, string> = {
+  "reno-golf-packages": "best-golf-courses-reno",
+  "golf-graeagle-california": "best-golf-courses-graeagle",
+  "golf-carson-valley-nevada": "best-golf-courses-carson-valley",
+  "north-lake-tahoe-golf": "best-golf-courses-truckee",
+  "golf-packages-reno-nevada": "best-golf-courses-reno",
+};
+
 export function getRegionBySlug(slug: string) {
-  // Support alias: reno-golf-packages → best-golf-courses-reno
-  const normalised = slug === "reno-golf-packages" ? "best-golf-courses-reno" : slug;
+  const normalised = SLUG_ALIASES[slug] ?? slug;
   return REGIONS.find((r) => r.slug === normalised);
 }
 
 export function getAllRegionSlugs(): string[] {
-  return REGIONS.map((r) => r.slug);
+  return [...REGIONS.map((r) => r.slug), ...Object.keys(SLUG_ALIASES)];
 }
