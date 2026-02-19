@@ -6,9 +6,10 @@ import { getAllRegionSlugs, getRegionBySlug } from "@/data/regions";
 import { getCoursesByRegion } from "@/data/courses";
 import { getHotelBySlug } from "@/data/hotels";
 
-/* ─── Reveal (CSS-only for server component) ─── */
+/* ─── Reveal (server component — no JS animation) ─── */
 function R({ children, delay = 0, style }: { children: React.ReactNode; delay?: number; style?: React.CSSProperties }) {
-  return <div style={{ ...style, animationDelay: `${delay}s` }} className="region-reveal">{children}</div>;
+  void delay;
+  return <div style={style}>{children}</div>;
 }
 
 export async function generateStaticParams() {
