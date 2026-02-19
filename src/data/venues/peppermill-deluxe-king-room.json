@@ -1,0 +1,67 @@
+{
+  "slug": "peppermill-deluxe-king-room",
+  "name": "Peppermill Deluxe King Room",
+  "type": "room",
+  "priceRange": "$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "peppermill-resort-spa-casino",
+  "address": {
+    "streetAddress": "2707 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.5019,
+    "longitude": -119.7837
+  },
+  "phone": "(775) 826-2121",
+  "website": "https://www.peppermillreno.com",
+  "description": "Peppermill's spacious Deluxe King Rooms set the standard for lodging in Northern Nevada and are consistently voted one of the best Reno hotel rooms, ranking Peppermill's guest rooms in the top tier of Nevada hotels. Plush double pillow-top mattresses, luxurious triple sheeting, and a full suite of modern amenities.",
+  "shortDescription": "Award-winning Peppermill Deluxe King Rooms \u2014 voted top-tier Nevada hotel rooms year after year.",
+  "highlights": [
+    "Plush Pillow-Top King Bed",
+    "Triple Sheeting & Luxury Linens",
+    "42\" LCD HDTV",
+    "Keurig Coffee Maker",
+    "In-Room Safe",
+    "24-Hour Room Service"
+  ],
+  "hours": "Check-in 3 PM \u00b7 Check-out 11 AM",
+  "heroImage": "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+  "images": [
+    "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "What's included in the Peppermill Deluxe King Room?",
+      "answer": "Plush pillow-top king bed, triple sheeting, 42\" HDTV, Keurig, in-room safe, and 24-hour room service."
+    },
+    {
+      "question": "Are group rates available?",
+      "answer": "Yes \u2014 Golf the High Sierra negotiates block rates for golf groups at Peppermill including Deluxe King Rooms."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Best standard hotel room I've stayed in Reno. The Peppermill Deluxe King is seriously comfortable \u2014 the mattress alone is worth it.",
+      "author": "Greg H.",
+      "source": "Google",
+      "meta": "Google \u00b7 golf group (8)"
+    },
+    {
+      "stars": 5,
+      "quote": "Voted best for a reason. Clean, comfortable, and the GTHS group rate made it incredible value for our golf trip.",
+      "author": "Eric B.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 golf buddies (6)"
+    }
+  ],
+  "meta": {
+    "title": "Peppermill Deluxe King Room Reno \u2013 Award-Winning Comfort | Golf The High Sierra",
+    "description": "Book Peppermill Deluxe King Rooms in Reno \u2014 consistently voted top-tier Nevada hotel rooms. Golf group rates available."
+  }
+}

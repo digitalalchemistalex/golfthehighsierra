@@ -1,0 +1,67 @@
+{
+  "slug": "peppermill-deluxe-remodeled-double-queen-room",
+  "name": "Peppermill Deluxe Remodeled Double Queen Room",
+  "type": "room",
+  "priceRange": "$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "peppermill-resort-spa-casino",
+  "address": {
+    "streetAddress": "2707 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.5019,
+    "longitude": -119.7837
+  },
+  "phone": "(775) 826-2121",
+  "website": "https://www.peppermillreno.com",
+  "description": "The Deluxe Remodeled Double Queen Room, Peppermill Tower's newest room type, features innovative amenities paired with a posh contemporary design. Airy quartz countertops set against luxe dark birch furnishings create a bold foundation with stylish artwork. Ideal for golf groups sharing rooms.",
+  "shortDescription": "Peppermill's newest Double Queen room \u2014 contemporary design, perfect for golf groups sharing.",
+  "highlights": [
+    "Two Queen Beds",
+    "Newly Remodeled",
+    "Quartz Countertops",
+    "Dark Birch Furnishings",
+    "Designer Carpeting",
+    "Contemporary Artwork"
+  ],
+  "hours": "Check-in 3 PM \u00b7 Check-out 11 AM",
+  "heroImage": "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+  "images": [
+    "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "Is the Double Queen good for golf groups?",
+      "answer": "Yes \u2014 two queen beds make it ideal for groups sharing rooms, and the contemporary design is a step above standard."
+    },
+    {
+      "question": "What's the difference from a standard double queen?",
+      "answer": "It's fully remodeled with quartz countertops, dark birch furnishings, and designer carpeting in Peppermill Tower."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Four guys sharing two rooms \u2014 got the remodeled double queens and they were excellent. Modern, clean, great beds. Great value with GTHS rates.",
+      "author": "Scott L.",
+      "source": "Google",
+      "meta": "Google \u00b7 golf buddies (4)"
+    },
+    {
+      "stars": 4,
+      "quote": "Nice upgrade from a standard room. The remodel shows \u2014 very contemporary feel and the beds were comfortable after a long day of golf.",
+      "author": "Aaron M.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 golf group"
+    }
+  ],
+  "meta": {
+    "title": "Peppermill Deluxe Remodeled Double Queen Room Reno | Golf The High Sierra",
+    "description": "Book Peppermill's Deluxe Remodeled Double Queen Rooms in Reno \u2014 contemporary design for golf groups. Package rates available."
+  }
+}

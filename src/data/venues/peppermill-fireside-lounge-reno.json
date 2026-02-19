@@ -1,0 +1,67 @@
+{
+  "slug": "peppermill-fireside-lounge-reno",
+  "name": "Peppermill Fireside Lounge",
+  "type": "bar",
+  "priceRange": "$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "peppermill-resort-spa-casino",
+  "address": {
+    "streetAddress": "2707 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.5019,
+    "longitude": -119.7837
+  },
+  "phone": "(775) 826-2121",
+  "website": "https://www.peppermillreno.com",
+  "description": "Opened more than four decades ago as part of the original Peppermill Inn, the Fireside Lounge is continually voted Reno's best bar year after year. This storied institution is adored for its vintage vibe \u2014 plush booths, iconic fire pit, state-of-the-art sound system, and high-resolution plasma screens streaming music videos all night. Signature cocktail: The Scorpion \u2014 a 64oz mix of rum, vodka, cherry brandy, sweet and sour, vanilla ice cream, and grenadine.",
+  "shortDescription": "Reno's most iconic bar \u2014 the Peppermill Fireside Lounge with its legendary fire pit and The Scorpion cocktail.",
+  "highlights": [
+    "Voted Reno's Best Bar",
+    "Iconic Fire Pit",
+    "Plush Vintage Booths",
+    "The Scorpion (64oz Signature Cocktail)",
+    "Live Music Videos",
+    "Complimentary Appetizers"
+  ],
+  "hours": "Daily \u00b7 Late Night",
+  "heroImage": "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+  "images": [
+    "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "What is the Scorpion at Fireside Lounge?",
+      "answer": "A 64oz signature cocktail combining Myers Dark Rum, vodka, cherry brandy, sweet and sour, vanilla ice cream, and grenadine \u2014 a Reno institution."
+    },
+    {
+      "question": "Why is the Fireside Lounge famous?",
+      "answer": "Over 40 years old and voted Reno's best bar repeatedly \u2014 the fire pit, vintage booths, and legendary cocktails make it iconic."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Fireside Lounge is a Reno must. Had The Scorpion with our golf group and it was an event in itself. Fire pit, great vibes, legendary bar.",
+      "author": "Brad C.",
+      "source": "Google",
+      "meta": "Google \u00b7 golf buddies (8)"
+    },
+    {
+      "stars": 5,
+      "quote": "Voted best bar for a reason. The Scorpion cocktail is massive and delicious. Perfect end to a golf weekend at Peppermill.",
+      "author": "Dave R.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 golf group (6)"
+    }
+  ],
+  "meta": {
+    "title": "Peppermill Fireside Lounge Reno \u2013 Reno's Most Iconic Bar | Golf The High Sierra",
+    "description": "Voted Reno's best bar. Peppermill Fireside Lounge \u2014 iconic fire pit, vintage booths, and The Scorpion 64oz cocktail."
+  }
+}

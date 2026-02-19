@@ -1,0 +1,67 @@
+{
+  "slug": "players-premium-room-legacy-2-queen-silver-legacy",
+  "name": "Silver Legacy Players Premium Room \u2013 2 Queen",
+  "type": "room",
+  "priceRange": "$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "silver-legacy-resort-casino",
+  "address": {
+    "streetAddress": "407 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8138
+  },
+  "phone": "(775) 329-4777",
+  "website": "https://www.silverlegacy.com",
+  "description": "The Silver Legacy Players Premium Room with 2 Queen beds offers extra space, modern amenities, and cozy comfort in the heart of downtown Reno. Ideal for golf groups sharing rooms, with easy access to the casino floor, Silver Legacy's Sports Bar, and Spa at Silver Legacy.",
+  "shortDescription": "Silver Legacy Players Premium Room with 2 Queens \u2014 extra space for golf groups sharing in downtown Reno.",
+  "highlights": [
+    "Two Queen Beds",
+    "Extra Spacious Layout",
+    "Modern Amenities",
+    "Casino Floor Access",
+    "Downtown Reno Location",
+    "Golf Package Eligible"
+  ],
+  "hours": "Check-in 3 PM \u00b7 Check-out 11 AM",
+  "heroImage": "/images/hotels/silver-legacy-resort-casino/hero.jpg",
+  "images": [
+    "/images/hotels/silver-legacy-resort-casino/hero.jpg",
+    "/images/hotels/silver-legacy-resort-casino/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "What's the Players Premium Room?",
+      "answer": "A spacious two-queen room with modern amenities \u2014 ideal for golf groups sharing rooms at Silver Legacy."
+    },
+    {
+      "question": "Is this room part of a player rewards program?",
+      "answer": "Silver Legacy offers player rewards \u2014 GTHS can advise on maximizing points during your golf stay."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Players Premium Room was spacious and comfortable. Two queens, plenty of space for two golfers and all our gear.",
+      "author": "Rob H.",
+      "source": "Google",
+      "meta": "Google \u00b7 golf buddies (2)"
+    },
+    {
+      "stars": 4,
+      "quote": "Good room for sharing on a golf trip. Extra space makes a difference when you have bags and equipment. GTHS handled everything.",
+      "author": "Gary W.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 golf group (6)"
+    }
+  ],
+  "meta": {
+    "title": "Silver Legacy Players Premium Room 2 Queen Reno | Golf The High Sierra",
+    "description": "Book Silver Legacy Players Premium Rooms with 2 Queens in downtown Reno. Golf group rates through Golf the High Sierra."
+  }
+}

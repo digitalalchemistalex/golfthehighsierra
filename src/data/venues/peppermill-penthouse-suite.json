@@ -1,0 +1,67 @@
+{
+  "slug": "peppermill-penthouse-suite",
+  "name": "Peppermill Penthouse Suite",
+  "type": "room",
+  "priceRange": "$$$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "peppermill-resort-spa-casino",
+  "address": {
+    "streetAddress": "2707 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.5019,
+    "longitude": -119.7837
+  },
+  "phone": "(775) 826-2121",
+  "website": "https://www.peppermillreno.com",
+  "description": "Crafted for an exquisite guest experience, the 1,205 sq. ft. Peppermill Penthouse Suite features an in-room jetted hot tub, steam shower (select rooms), wet bar, refrigerator, luxurious bathrobes, comfortable sofa, dining room table, separate bedroom, 1.5 bathrooms, and four televisions. The pinnacle of Peppermill accommodation.",
+  "shortDescription": "1,205 sq. ft. Peppermill Penthouse \u2014 jetted hot tub, steam shower, wet bar, and four TVs.",
+  "highlights": [
+    "1,205 Sq. Ft.",
+    "In-Room Jetted Hot Tub",
+    "Steam Shower (Select Rooms)",
+    "Wet Bar & Refrigerator",
+    "Separate Bedroom",
+    "Four Televisions"
+  ],
+  "hours": "Check-in 3 PM \u00b7 Check-out 11 AM",
+  "heroImage": "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+  "images": [
+    "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "What's in the Peppermill Penthouse Suite?",
+      "answer": "1,205 sq. ft. with a jetted hot tub, steam shower, wet bar, dining table, separate bedroom, 1.5 baths, and four TVs."
+    },
+    {
+      "question": "Is the Penthouse the best room at Peppermill?",
+      "answer": "Yes \u2014 it's the flagship suite at 1,205 sq. ft., combining every luxury amenity Peppermill offers."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "The Penthouse at Peppermill is next level. Jetted tub, steam shower, wet bar, four TVs \u2014 we celebrated our tournament win in style.",
+      "author": "Michael J.",
+      "source": "Google",
+      "meta": "Google \u00b7 tournament group (20)"
+    },
+    {
+      "stars": 5,
+      "quote": "1,200 square feet of pure Peppermill luxury. Steam shower after 18 holes was life-changing. GTHS got us an amazing rate.",
+      "author": "Tyler N.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 golf buddies (4)"
+    }
+  ],
+  "meta": {
+    "title": "Peppermill Penthouse Suite Reno \u2013 1,205 Sq Ft Top Floor | Golf The High Sierra",
+    "description": "Book Peppermill Penthouse Suites in Reno \u2014 1,205 sq. ft. with jetted tub and steam shower. Golf package rates available."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "silver-legacy-junior-suite-2-queen",
+  "name": "Silver Legacy Junior Suite \u2013 2 Queen",
+  "type": "room",
+  "priceRange": "$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "silver-legacy-resort-casino",
+  "address": {
+    "streetAddress": "407 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8138
+  },
+  "phone": "(775) 329-4777",
+  "website": "https://www.silverlegacy.com",
+  "description": "The Silver Legacy Junior Suite with 2 Queen beds offers spacious comfort in the heart of downtown Reno. Enjoy modern amenities, a comfortable sitting area, and stylish d\u00e9cor with panoramic city and mountain views from the towering Silver Legacy \u2014 perfect for golf groups sharing rooms.",
+  "shortDescription": "Spacious Silver Legacy Junior Suite with 2 Queen beds and downtown Reno skyline views.",
+  "highlights": [
+    "Two Queen Beds",
+    "Separate Sitting Area",
+    "City & Mountain Views",
+    "Modern Amenities",
+    "Downtown Reno Location",
+    "Casino Access"
+  ],
+  "hours": "Check-in 3 PM \u00b7 Check-out 11 AM",
+  "heroImage": "/images/hotels/silver-legacy-resort-casino/hero.jpg",
+  "images": [
+    "/images/hotels/silver-legacy-resort-casino/hero.jpg",
+    "/images/hotels/silver-legacy-resort-casino/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "Is the Junior Suite good for golf groups?",
+      "answer": "Yes \u2014 two queen beds and a sitting area make it ideal for golf groups sharing rooms in downtown Reno."
+    },
+    {
+      "question": "What views does the Junior Suite have?",
+      "answer": "Panoramic city and mountain views from Silver Legacy's towering position above downtown Reno."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Junior Suite at Silver Legacy was great for two guys. Two queens, sitting area, great views. GTHS got us a solid golf package rate.",
+      "author": "Mike D.",
+      "source": "Google",
+      "meta": "Google \u00b7 golf buddies (2)"
+    },
+    {
+      "stars": 4,
+      "quote": "Good value for a suite in downtown Reno. Views from the tower are impressive and the beds are comfortable after a long day of golf.",
+      "author": "Kevin T.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 golf weekend"
+    }
+  ],
+  "meta": {
+    "title": "Silver Legacy Junior Suite 2 Queen Reno | Golf The High Sierra",
+    "description": "Book Silver Legacy Junior Suites with 2 Queen beds in downtown Reno. Golf group rates through Golf the High Sierra."
+  }
+}

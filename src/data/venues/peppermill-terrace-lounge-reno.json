@@ -1,0 +1,67 @@
+{
+  "slug": "peppermill-terrace-lounge-reno",
+  "name": "Peppermill Terrace Lounge",
+  "type": "bar",
+  "priceRange": "$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "peppermill-resort-spa-casino",
+  "address": {
+    "streetAddress": "2707 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.5019,
+    "longitude": -119.7837
+  },
+  "phone": "(775) 826-2121",
+  "website": "https://www.peppermillreno.com",
+  "description": "With craft cocktails and gorgeous views of the pools and gardens, Terrace Lounge is the place for an upscale, intimate experience set in a rotunda with a grand chandelier. Award-winning wines, seasonal drinks made with locally-sourced ingredients, and exclusive whiskies rarely available to the public \u2014 paired with small plates from Biscotti's. The perfect escape for a sophisticated night on the town.",
+  "shortDescription": "Upscale rotunda bar at Peppermill with pool views, award-winning wines, and rare whiskies.",
+  "highlights": [
+    "Pool & Garden Views",
+    "Rotunda Setting",
+    "Award-Winning Wine List",
+    "Seasonal Craft Cocktails",
+    "Exclusive & Rare Whiskies",
+    "Small Plates from Biscotti's"
+  ],
+  "hours": "Daily \u00b7 Hours vary",
+  "heroImage": "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+  "images": [
+    "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "What makes Terrace Lounge unique?",
+      "answer": "Set in a rotunda with stunning pool and garden views, it features rare whiskies, award-winning wines, and locally-sourced cocktails."
+    },
+    {
+      "question": "Is Terrace Lounge good for golf groups?",
+      "answer": "Perfect for a sophisticated pre-dinner gathering or post-round drinks \u2014 intimate atmosphere with excellent wine and spirits."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "The Terrace Lounge is Peppermill's hidden gem. Views of the pools, rare whiskies, and craft cocktails. Our group had an incredible time.",
+      "author": "Robert A.",
+      "source": "Google",
+      "meta": "Google \u00b7 corporate golf group"
+    },
+    {
+      "stars": 5,
+      "quote": "Best bar at Peppermill \u2014 the rotunda setting with pool views is stunning. Had a rare Scotch and small plates. GTHS always recommends the right spots.",
+      "author": "Peter M.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 golf group (10)"
+    }
+  ],
+  "meta": {
+    "title": "Peppermill Terrace Lounge Reno \u2013 Upscale Rotunda Bar | Golf The High Sierra",
+    "description": "Upscale rotunda bar at Peppermill with pool views, award-winning wines, and rare whiskies. Perfect for golf groups in Reno."
+  }
+}

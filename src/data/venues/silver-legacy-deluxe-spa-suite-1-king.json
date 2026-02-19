@@ -1,0 +1,67 @@
+{
+  "slug": "silver-legacy-deluxe-spa-suite-1-king",
+  "name": "Silver Legacy Deluxe Spa Suite \u2013 1 King",
+  "type": "room",
+  "priceRange": "$$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "silver-legacy-resort-casino",
+  "address": {
+    "streetAddress": "407 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8138
+  },
+  "phone": "(775) 329-4777",
+  "website": "https://www.silverlegacy.com",
+  "description": "Indulge in the Silver Legacy Deluxe Spa Suite with 1 King bed \u2014 a private spa room offering modern amenities, spacious comfort, and breathtaking views of downtown Reno and the Sierra Nevada. The jetted spa tub and luxury finishes make it the perfect room for a golfer's retreat.",
+  "shortDescription": "Silver Legacy Deluxe Spa Suite with King bed, jetted tub, and downtown Reno views.",
+  "highlights": [
+    "King Bed",
+    "In-Room Jetted Spa Tub",
+    "Downtown & Mountain Views",
+    "Spacious Layout",
+    "Luxury Finishes",
+    "Silver Legacy Tower"
+  ],
+  "hours": "Check-in 3 PM \u00b7 Check-out 11 AM",
+  "heroImage": "/images/hotels/silver-legacy-resort-casino/hero.jpg",
+  "images": [
+    "/images/hotels/silver-legacy-resort-casino/hero.jpg",
+    "/images/hotels/silver-legacy-resort-casino/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "Does the Deluxe Spa Suite have a jetted tub?",
+      "answer": "Yes \u2014 an in-room jetted spa tub plus a king bed and panoramic downtown Reno views."
+    },
+    {
+      "question": "Can Golf the High Sierra book spa suites for groups?",
+      "answer": "Yes \u2014 we can block multiple Deluxe Spa Suites at group rates as part of a complete golf package."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Treated myself to the Deluxe Spa Suite at Silver Legacy. Jetted tub, king bed, incredible views. Perfect golf trip splurge.",
+      "author": "Tom R.",
+      "source": "Google",
+      "meta": "Google \u00b7 solo golf trip"
+    },
+    {
+      "stars": 5,
+      "quote": "GTHS booked the spa suite for our group leaders \u2014 they loved it. Great upgrade from a standard room at a very reasonable rate.",
+      "author": "Paul S.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 corporate golf (30)"
+    }
+  ],
+  "meta": {
+    "title": "Silver Legacy Deluxe Spa Suite 1 King Reno | Golf The High Sierra",
+    "description": "Book Silver Legacy Deluxe Spa Suites with jetted tub in downtown Reno. Golf group rates through Golf the High Sierra."
+  }
+}

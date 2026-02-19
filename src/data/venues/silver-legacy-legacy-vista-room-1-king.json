@@ -1,0 +1,67 @@
+{
+  "slug": "silver-legacy-legacy-vista-room-1-king",
+  "name": "Silver Legacy Vista Room \u2013 1 King",
+  "type": "room",
+  "priceRange": "$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "silver-legacy-resort-casino",
+  "address": {
+    "streetAddress": "407 N Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89501"
+  },
+  "geo": {
+    "latitude": 39.5296,
+    "longitude": -119.8138
+  },
+  "phone": "(775) 329-4777",
+  "website": "https://www.silverlegacy.com",
+  "description": "The Silver Legacy Vista Room with 1 King bed offers modern amenities, spacious comfort, and breathtaking views from Silver Legacy's tower above downtown Reno. Enjoy stylish contemporary d\u00e9cor and easy access to the casino, dining, and entertainment \u2014 all just minutes from Reno's top golf courses.",
+  "shortDescription": "Silver Legacy Vista Room with King bed and panoramic views of downtown Reno and the Sierra Nevada.",
+  "highlights": [
+    "King Bed",
+    "Panoramic City Views",
+    "Modern Contemporary D\u00e9cor",
+    "Casino & Dining Access",
+    "Downtown Location",
+    "Minutes from Golf"
+  ],
+  "hours": "Check-in 3 PM \u00b7 Check-out 11 AM",
+  "heroImage": "/images/hotels/silver-legacy-resort-casino/hero.jpg",
+  "images": [
+    "/images/hotels/silver-legacy-resort-casino/hero.jpg",
+    "/images/hotels/silver-legacy-resort-casino/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "What views does the Vista Room have?",
+      "answer": "Panoramic views of downtown Reno and the Sierra Nevada from Silver Legacy's tower position."
+    },
+    {
+      "question": "How far is Silver Legacy from golf courses?",
+      "answer": "Lakeridge, Wolf Run, and ArrowCreek are all within 15\u201325 minutes. GTHS handles all transport."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Vista Room at Silver Legacy had incredible views. Woke up to the Sierra Nevada framed in the window before heading to the course.",
+      "author": "Chris M.",
+      "source": "Google",
+      "meta": "Google \u00b7 golf group (4)"
+    },
+    {
+      "stars": 4,
+      "quote": "Good standard room with exceptional views. Modern d\u00e9cor, comfortable king bed, and perfect downtown location.",
+      "author": "Frank L.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 golf weekend"
+    }
+  ],
+  "meta": {
+    "title": "Silver Legacy Vista Room 1 King Reno \u2013 Downtown Views | Golf The High Sierra",
+    "description": "Book Silver Legacy Vista Rooms with King bed and panoramic Reno views. Golf package rates through Golf the High Sierra."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "atlantis-salon-reno",
+  "name": "Salon at Atlantis",
+  "type": "spa",
+  "priceRange": "$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com/spa",
+  "description": "Salon at Atlantis is designed around everything your hands, feet, and hair may desire. Expert stylists deliver cuts, styles, and makeovers while signature manicures and pedicures round out the menu. Whether you're in Reno for a classic manicure or a wedding updo, Salon at Atlantis provides a highly tailored experience. Reservations recommended; walk-ins welcome.",
+  "shortDescription": "Full-service hair, nail, and beauty salon inside the Atlantis Casino Resort Spa Reno.",
+  "highlights": [
+    "Hair Cuts & Styling",
+    "Makeovers & Color",
+    "Signature Manicures",
+    "Signature Pedicures",
+    "Nail Art",
+    "Walk-Ins Welcome"
+  ],
+  "hours": "Daily \u00b7 Reservations Recommended",
+  "heroImage": "/images/hotels/atlantis-casino-resort-spa-reno/hero.jpg",
+  "images": [
+    "/images/hotels/atlantis-casino-resort-spa-reno/hero.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "Do I need a reservation at Salon at Atlantis?",
+      "answer": "Reservations are recommended for the best experience, though walk-ins are welcome."
+    },
+    {
+      "question": "What services does the salon offer?",
+      "answer": "Hair cuts, styling, color, makeovers, manicures, and pedicures \u2014 a full-service beauty experience."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Got a blowout before our final dinner and it was perfect. The stylists at Salon at Atlantis really know what they're doing.",
+      "author": "Rachel S.",
+      "source": "Google",
+      "meta": "Google \u00b7 girls golf trip"
+    },
+    {
+      "stars": 5,
+      "quote": "Added a manicure to our golf package through GTHS. Easy to book and the salon was excellent \u2014 fresh nails for the course!",
+      "author": "Amy C.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 girls weekend"
+    }
+  ],
+  "meta": {
+    "title": "Salon at Atlantis Reno \u2013 Hair, Nails & Beauty | Golf The High Sierra",
+    "description": "Full-service hair, nail, and beauty salon inside Atlantis Casino Resort Reno. Book as part of your golf package with Golf the High Sierra."
+  }
+}

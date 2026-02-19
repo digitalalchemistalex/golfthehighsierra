@@ -1,0 +1,67 @@
+{
+  "slug": "peppermill-spa-toscana-reno",
+  "name": "Spa Toscana at Peppermill",
+  "type": "spa",
+  "priceRange": "$$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "peppermill-resort-spa-casino",
+  "address": {
+    "streetAddress": "2707 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.5019,
+    "longitude": -119.7837
+  },
+  "phone": "(775) 826-2121",
+  "website": "https://www.peppermillreno.com/spa",
+  "description": "Rated 3rd best hotel spa in the nation by USA TODAY 10Best, Spa Toscana is a 33,000 sq. ft. sanctuary of luxury featuring 24 treatment rooms, Gentlemen and Ladies Ritual rooms with hot and cold plunge pools, cascading deluge showers, eucalyptus steam and cedar wood saunas, and Northern Nevada's only Caldarium with indoor pool. High-definition plasma TVs with SoSound acoustic resonance therapy complete the sensory experience.",
+  "shortDescription": "USA TODAY's 3rd best hotel spa in the nation \u2014 33,000 sq. ft. at Peppermill Resort Reno.",
+  "highlights": [
+    "USA TODAY Top 3 Hotel Spa Nationally",
+    "33,000 Sq. Ft.",
+    "24 Treatment Rooms",
+    "Caldarium with Indoor Pool",
+    "Hot & Cold Plunge Pools",
+    "Eucalyptus Steam & Cedar Saunas"
+  ],
+  "hours": "Daily \u00b7 Hours vary by service",
+  "heroImage": "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+  "images": [
+    "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "How big is Spa Toscana?",
+      "answer": "33,000 sq. ft. with 24 treatment rooms, Caldarium, hot and cold plunge pools, steam rooms, and cedar saunas."
+    },
+    {
+      "question": "Can Golf the High Sierra include Spa Toscana in a golf package?",
+      "answer": "Yes \u2014 we can build spa-and-golf packages combining tee times, Peppermill lodging, and Spa Toscana treatments."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Spa Toscana is legitimately one of the best spas I've ever visited. The Caldarium alone is worth the trip. GTHS included it in our golf package perfectly.",
+      "author": "Jennifer K.",
+      "source": "Google",
+      "meta": "Google \u00b7 couples golf trip"
+    },
+    {
+      "stars": 5,
+      "quote": "USA TODAY doesn't lie \u2014 top 3 in the nation. The ritual rooms with plunge pools are incredible. Perfect recovery after 18 holes.",
+      "author": "Lisa H.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 girls golf weekend"
+    }
+  ],
+  "meta": {
+    "title": "Spa Toscana Peppermill Reno \u2013 USA TODAY Top 3 Hotel Spa | Golf The High Sierra",
+    "description": "USA TODAY's 3rd best hotel spa. 33,000 sq. ft. sanctuary at Peppermill Reno. Book golf and spa packages through Golf the High Sierra."
+  }
+}

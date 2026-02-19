@@ -1,0 +1,67 @@
+{
+  "slug": "peppermill-royal-suite",
+  "name": "Peppermill Royal Suite",
+  "type": "room",
+  "priceRange": "$$$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "peppermill-resort-spa-casino",
+  "address": {
+    "streetAddress": "2707 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.5019,
+    "longitude": -119.7837
+  },
+  "phone": "(775) 826-2121",
+  "website": "https://www.peppermillreno.com",
+  "description": "Enjoy elegance, spaciousness, and privacy in the 1,090 sq. ft. Peppermill Royal Suite. Features a dining area, bar, sitting area with comfortable sofa, separate bedroom, 1.5 bathrooms, and three televisions. Custom-made plush double pillow-top mattresses, luxurious triple sheeting, and 24-hour room service complete the experience.",
+  "shortDescription": "1,090 sq. ft. Peppermill Royal Suite \u2014 separate bedroom, bar, dining area, and 1.5 bathrooms.",
+  "highlights": [
+    "1,090 Sq. Ft.",
+    "Separate Bedroom",
+    "1.5 Bathrooms",
+    "Bar & Dining Area",
+    "Three Televisions",
+    "24-Hour Room Service"
+  ],
+  "hours": "Check-in 3 PM \u00b7 Check-out 11 AM",
+  "heroImage": "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+  "images": [
+    "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "How big is the Peppermill Royal Suite?",
+      "answer": "1,090 sq. ft. with a separate bedroom, 1.5 bathrooms, bar, dining area, and three televisions."
+    },
+    {
+      "question": "Does the Royal Suite have room service?",
+      "answer": "Yes \u2014 24-hour room service is included along with all AAA Four Diamond amenities."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "The Royal Suite at Peppermill is the real deal. Separate bedroom, full bar, dining room \u2014 it felt like a private apartment. Our best golf trip accommodation ever.",
+      "author": "Chris P.",
+      "source": "Google",
+      "meta": "Google \u00b7 golf group (6)"
+    },
+    {
+      "stars": 5,
+      "quote": "Over 1,000 sq ft of Peppermill luxury. Three TVs, a bar, and a separate bedroom. GTHS booked it as part of our package and the value was incredible.",
+      "author": "Dan F.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 corporate golf (12)"
+    }
+  ],
+  "meta": {
+    "title": "Peppermill Royal Suite Reno \u2013 1,090 Sq Ft Luxury | Golf The High Sierra",
+    "description": "Book Peppermill Royal Suites in Reno \u2014 1,090 sq. ft. with separate bedroom, bar, and dining. Golf package rates through Golf the High Sierra."
+  }
+}

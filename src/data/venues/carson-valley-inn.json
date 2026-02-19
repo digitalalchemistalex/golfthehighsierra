@@ -1,0 +1,67 @@
+{
+  "slug": "carson-valley-inn",
+  "name": "Carson Valley Inn",
+  "type": "hotel",
+  "priceRange": "$$",
+  "region": "carson-valley",
+  "regionLabel": "Carson Valley, NV",
+  "parentHotel": null,
+  "address": {
+    "streetAddress": "1627 US-395",
+    "addressLocality": "Minden",
+    "addressRegion": "NV",
+    "postalCode": "89423"
+  },
+  "geo": {
+    "latitude": 38.9555,
+    "longitude": -119.7729
+  },
+  "phone": "(775) 782-9711",
+  "website": "https://www.cvinn.com",
+  "description": "Carson Valley Inn is the premier hotel and casino destination in the Carson Valley, NV \u2014 the gateway to some of Northern Nevada's finest golf courses including Genoa Lakes and Eagle Valley. Offering comfortable accommodations, casino gaming, multiple dining options, and the Cabaret Lounge for entertainment, CVI is the ideal base for Carson Valley golf packages.",
+  "shortDescription": "Premier hotel and casino in Carson Valley NV \u2014 gateway to Genoa Lakes and Eagle Valley golf.",
+  "highlights": [
+    "Casino Gaming",
+    "Multiple Dining Options",
+    "Cabaret Lounge",
+    "Golf Package Friendly",
+    "Easy Golf Course Access",
+    "Group Rates Available"
+  ],
+  "hours": "24 Hours",
+  "heroImage": "/images/hotels/carson-valley-inn/hero.jpg",
+  "images": [
+    "/images/hotels/carson-valley-inn/hero.jpg",
+    "/images/hotels/carson-valley-inn/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "What golf courses are near Carson Valley Inn?",
+      "answer": "Genoa Lakes Golf Club (2 championship courses) and Eagle Valley Golf Course are the top picks \u2014 both within 20 minutes."
+    },
+    {
+      "question": "Does Golf the High Sierra offer packages at Carson Valley Inn?",
+      "answer": "Yes \u2014 CVI is a preferred partner for Carson Valley golf packages including Genoa Lakes stay and play."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Carson Valley Inn was perfect for our Genoa Lakes trip. Great rates, casino entertainment in the evening, and GTHS made the whole booking seamless.",
+      "author": "Jim B.",
+      "source": "Google",
+      "meta": "Google \u00b7 golf group (8)"
+    },
+    {
+      "stars": 4,
+      "quote": "Good value for Carson Valley. Solid rooms, good food, and the Cabaret Lounge was fun after rounds at Eagle Valley.",
+      "author": "Dave K.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 golf buddies (4)"
+    }
+  ],
+  "meta": {
+    "title": "Carson Valley Inn Minden NV \u2013 Golf Packages | Golf The High Sierra",
+    "description": "Premier hotel in Carson Valley NV. Gateway to Genoa Lakes and Eagle Valley golf. Book packages through Golf the High Sierra."
+  }
+}

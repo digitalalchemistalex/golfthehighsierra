@@ -1,0 +1,67 @@
+{
+  "slug": "peppermill-grand-suites",
+  "name": "Peppermill Grand Suite",
+  "type": "room",
+  "priceRange": "$$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "peppermill-resort-spa-casino",
+  "address": {
+    "streetAddress": "2707 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.5019,
+    "longitude": -119.7837
+  },
+  "phone": "(775) 826-2121",
+  "website": "https://www.peppermillreno.com",
+  "description": "At 495 sq. ft., Peppermill's Grand Suites are even more spacious than the Tower Spa Suites. These luxury hotel suites feature a relaxing in-room jetted hot tub, sitting area, and high-definition television \u2014 perfect for golfers looking to unwind after a full day on the courses.",
+  "shortDescription": "495 sq. ft. luxury suite with in-room jetted hot tub at Peppermill Resort Reno.",
+  "highlights": [
+    "495 Sq. Ft.",
+    "In-Room Jetted Hot Tub",
+    "Sitting Area",
+    "High-Def Television",
+    "AAA Four Diamond",
+    "Luxury Linens"
+  ],
+  "hours": "Check-in 3 PM \u00b7 Check-out 11 AM",
+  "heroImage": "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+  "images": [
+    "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "How big is the Peppermill Grand Suite?",
+      "answer": "495 sq. ft. \u2014 larger than the Tower Spa Suites, with an in-room jetted hot tub and sitting area."
+    },
+    {
+      "question": "Can Golf the High Sierra book Peppermill Grand Suites for my group?",
+      "answer": "Yes \u2014 we negotiate group rates and room blocks for all Peppermill room types as part of your golf package."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "The Grand Suite at Peppermill was worth every penny. Huge room, jetted tub, and we had a great rate through GTHS.",
+      "author": "Mark H.",
+      "source": "Google",
+      "meta": "Google \u00b7 golf group (6)"
+    },
+    {
+      "stars": 5,
+      "quote": "Upgraded to a Grand Suite for our golf weekend. Spacious, luxurious, and the jetted tub was perfect after 36 holes.",
+      "author": "Brian W.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 golf buddies (4)"
+    }
+  ],
+  "meta": {
+    "title": "Peppermill Grand Suite Reno \u2013 Luxury Room with Hot Tub | Golf The High Sierra",
+    "description": "Book Peppermill Grand Suites in Reno \u2014 495 sq. ft. luxury rooms with in-room jetted hot tub. Golf package rates available."
+  }
+}

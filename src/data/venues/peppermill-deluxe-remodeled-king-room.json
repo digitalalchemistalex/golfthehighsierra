@@ -1,0 +1,67 @@
+{
+  "slug": "peppermill-deluxe-remodeled-king-room",
+  "name": "Peppermill Deluxe Remodeled King Room",
+  "type": "room",
+  "priceRange": "$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "peppermill-resort-spa-casino",
+  "address": {
+    "streetAddress": "2707 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.5019,
+    "longitude": -119.7837
+  },
+  "phone": "(775) 826-2121",
+  "website": "https://www.peppermillreno.com",
+  "description": "Peppermill Tower's newest room type, the Deluxe Remodeled King features innovative amenities paired with a posh contemporary design. Airy quartz countertops set against luxe dark birch furnishings create a bold foundation with stylish artwork and designer carpeting. A modern upgrade on the Peppermill standard.",
+  "shortDescription": "Peppermill's newest room \u2014 contemporary design with quartz countertops and dark birch furnishings.",
+  "highlights": [
+    "Newly Remodeled",
+    "Quartz Countertops",
+    "Dark Birch Furnishings",
+    "Designer Carpeting",
+    "Contemporary Artwork",
+    "Modern King Bed"
+  ],
+  "hours": "Check-in 3 PM \u00b7 Check-out 11 AM",
+  "heroImage": "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+  "images": [
+    "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "What's new about the Remodeled King Room?",
+      "answer": "Quartz countertops, dark birch furnishings, designer carpeting, and contemporary artwork \u2014 Peppermill's most modern room design."
+    },
+    {
+      "question": "How does it compare to the standard Deluxe King?",
+      "answer": "The Remodeled King is the newest room type in the Peppermill Tower with a contemporary aesthetic upgrade."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "The remodeled rooms at Peppermill are sharp. Modern design, great bed, and it felt brand new. Perfect for our golf trip.",
+      "author": "Jason K.",
+      "source": "Google",
+      "meta": "Google \u00b7 golf group (4)"
+    },
+    {
+      "stars": 5,
+      "quote": "Stayed in the remodeled king and it was really impressive \u2014 very contemporary and clean. GTHS recommended it and they were right.",
+      "author": "Nathan S.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 golf weekend"
+    }
+  ],
+  "meta": {
+    "title": "Peppermill Deluxe Remodeled King Room Reno | Golf The High Sierra",
+    "description": "Book Peppermill's newest Deluxe Remodeled King Rooms in Reno \u2014 contemporary design with quartz and birch. Golf package rates available."
+  }
+}

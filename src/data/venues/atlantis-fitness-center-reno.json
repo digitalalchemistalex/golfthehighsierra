@@ -1,0 +1,67 @@
+{
+  "slug": "atlantis-fitness-center-reno",
+  "name": "Atlantis Fitness Center",
+  "type": "experience",
+  "priceRange": "$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com",
+  "description": "The Atlantis Fitness Center offers a full complement of Precor Techno Gym equipment with Active Wellness TVs \u2014 the same equipment used by Olympic athletes in the 2000, 2004, and 2008 games. Cardio theater access is included for all hotel guests, and complimentary infused water created by the in-house master mixologist enhances your workout recovery.",
+  "shortDescription": "Olympic-grade Precor Techno Gym equipment included free for all Atlantis hotel guests.",
+  "highlights": [
+    "Precor Techno Gym Equipment",
+    "Active Wellness TVs",
+    "Cardio Theater",
+    "Free for Hotel Guests",
+    "iPod Compatible",
+    "Complimentary Infused Water"
+  ],
+  "hours": "Daily \u00b7 24 Hours",
+  "heroImage": "/images/hotels/atlantis-casino-resort-spa-reno/hero.jpg",
+  "images": [
+    "/images/hotels/atlantis-casino-resort-spa-reno/hero.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "Is the fitness center free for Atlantis guests?",
+      "answer": "Yes \u2014 cardio theater and fitness center access is complimentary for all hotel guests and with any spa service or day pass."
+    },
+    {
+      "question": "What equipment is available?",
+      "answer": "Full Precor Techno Gym equipment with Active Wellness TVs \u2014 the same used by Olympic athletes at the 2000, 2004, and 2008 games."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Best hotel gym I've used. The Precor equipment is top-tier and being free for guests is a huge bonus on a golf trip.",
+      "author": "Tom B.",
+      "source": "Google",
+      "meta": "Google \u00b7 golf group (4)"
+    },
+    {
+      "stars": 4,
+      "quote": "Great way to warm up before a round or recover after 18 holes. Clean, well-maintained, and never too crowded.",
+      "author": "Lisa P.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 golf weekend"
+    }
+  ],
+  "meta": {
+    "title": "Atlantis Fitness Center Reno \u2013 Olympic-Grade Gym | Golf The High Sierra",
+    "description": "Free Olympic-grade Precor Techno Gym fitness center at Atlantis Casino Resort Reno. Included for all hotel guests."
+  }
+}

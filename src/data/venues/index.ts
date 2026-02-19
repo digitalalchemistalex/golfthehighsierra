@@ -61,6 +61,32 @@ import eldoPlayerSpaSmallData from "./eldorado-skyline-player-spa-small.json";
 import eldoPlayerSpaLargeData from "./eldorado-skyline-player-spa-large.json";
 import eldoVipHospitalityData from "./eldorado-skyline-vip-hospitality.json";
 import eldoVirginia21Data from "./eldorado-virginia-twenty-one-suite.json";
+// Atlantis Additional Venues
+import atlBistroNapaData from "./atlantis-bistro-napa-lounge.json";
+import atlCocktailLoungeData from "./atlantis-cocktail-lounge.json";
+import atlSpaData from "./spa-atlantis-reno.json";
+import atlFitnessData from "./atlantis-fitness-center-reno.json";
+import atlSalonData from "./atlantis-salon-reno.json";
+// Peppermill Rooms
+import pmGrandSuiteData from "./peppermill-grand-suites.json";
+import pmSpaSuiteData from "./peppermill-spa-suites.json";
+import pmLuxurySuiteData from "./peppermill-luxury-suite.json";
+import pmRoyalSuiteData from "./peppermill-royal-suite.json";
+import pmPenthouseSuiteData from "./peppermill-penthouse-suite.json";
+import pmDeluxeKingData from "./peppermill-deluxe-king-room.json";
+import pmDeluxeRemoKingData from "./peppermill-deluxe-remodeled-king-room.json";
+import pmDeluxeRemoDQData from "./peppermill-deluxe-remodeled-double-queen-room.json";
+// Peppermill Spa & Bars
+import pmSpaToscanaData from "./peppermill-spa-toscana-reno.json";
+import pmFiresideLoungeData from "./peppermill-fireside-lounge-reno.json";
+import pmTerraceLoungeData from "./peppermill-terrace-lounge-reno.json";
+// Silver Legacy Rooms
+import slJuniorSuite2QData from "./silver-legacy-junior-suite-2-queen.json";
+import slDeluxeSpaSuite1KData from "./silver-legacy-deluxe-spa-suite-1-king.json";
+import slVistaRoom1KData from "./silver-legacy-legacy-vista-room-1-king.json";
+import slPlayersPremium2QData from "./players-premium-room-legacy-2-queen-silver-legacy.json";
+// Carson Valley Inn
+import carsonValleyInnData from "./carson-valley-inn.json";
 // Atlantis Sub-Pages
 import atlTowerRoomData from "./atlantis-tower-rooms.json";
 import atlLuxuryTowerData from "./atlantis-luxury-tower-rooms.json";
@@ -143,6 +169,32 @@ export const ALL_VENUES = [
   atlSteakhouseData,
   atlSportsBarData,
   atlBarCentroData,
+  // Atlantis Additional
+  atlBistroNapaData,
+  atlCocktailLoungeData,
+  atlSpaData,
+  atlFitnessData,
+  atlSalonData,
+  // Peppermill Rooms
+  pmGrandSuiteData,
+  pmSpaSuiteData,
+  pmLuxurySuiteData,
+  pmRoyalSuiteData,
+  pmPenthouseSuiteData,
+  pmDeluxeKingData,
+  pmDeluxeRemoKingData,
+  pmDeluxeRemoDQData,
+  // Peppermill Spa & Bars
+  pmSpaToscanaData,
+  pmFiresideLoungeData,
+  pmTerraceLoungeData,
+  // Silver Legacy Rooms
+  slJuniorSuite2QData,
+  slDeluxeSpaSuite1KData,
+  slVistaRoom1KData,
+  slPlayersPremium2QData,
+  // Carson Valley Inn
+  carsonValleyInnData,
 ] as const;
 
 export type VenueData = (typeof ALL_VENUES)[number];

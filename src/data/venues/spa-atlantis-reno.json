@@ -1,0 +1,67 @@
+{
+  "slug": "spa-atlantis-reno",
+  "name": "Spa Atlantis",
+  "type": "spa",
+  "priceRange": "$$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "atlantis-casino-resort-spa-reno",
+  "address": {
+    "streetAddress": "3800 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.4883,
+    "longitude": -119.7876
+  },
+  "phone": "(775) 825-4700",
+  "website": "https://www.atlantiscasino.com/spa",
+  "description": "Spa Atlantis is Reno's only Forbes Travel Guide Four-Star Spa \u2014 a destination unlike any other in the city. A refuge from the everyday world, professionally trained aestheticians and massage therapists provide world-class treatments surrounded by calm healing colors, natural stone, and the gentle flow of water. Six consecutive Forbes Four-Star awards make it the pinnacle of spa excellence in Northern Nevada.",
+  "shortDescription": "Reno's only Forbes Travel Guide Four-Star Spa \u2014 6 consecutive years of excellence at the Atlantis.",
+  "highlights": [
+    "Forbes Four-Star Spa (6 Consecutive Years)",
+    "Massage & Body Treatments",
+    "Skincare & Facials",
+    "Full-Service Salon",
+    "Caldarium & Relaxation Areas",
+    "Couples Treatment Rooms"
+  ],
+  "hours": "Daily \u00b7 Hours vary by service",
+  "heroImage": "/images/hotels/atlantis-casino-resort-spa-reno/hero.jpg",
+  "images": [
+    "/images/hotels/atlantis-casino-resort-spa-reno/hero.jpg",
+    "/images/hotels/atlantis-casino-resort-spa-reno/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "What makes Spa Atlantis special?",
+      "answer": "It's Reno's only Forbes Travel Guide Four-Star Spa, with 6 consecutive award years \u2014 the highest spa rating in Northern Nevada."
+    },
+    {
+      "question": "Can Golf the High Sierra include spa treatments in a package?",
+      "answer": "Yes \u2014 we can build packages combining tee times, lodging, and Spa Atlantis treatments for groups and couples."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "Spa Atlantis is world-class. We added spa treatments to our golf package through GTHS and it was the highlight of the trip for half our group.",
+      "author": "Sandra K.",
+      "source": "Google",
+      "meta": "Google \u00b7 couples golf trip"
+    },
+    {
+      "stars": 5,
+      "quote": "Six Forbes Four-Star awards says it all. The massage therapists are exceptional and the atmosphere is genuinely peaceful.",
+      "author": "David M.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 golf group (8)"
+    }
+  ],
+  "meta": {
+    "title": "Spa Atlantis Reno \u2013 Forbes Four-Star Spa | Golf The High Sierra",
+    "description": "Reno's only Forbes Travel Guide Four-Star Spa inside Atlantis Casino Resort. Book spa and golf packages through Golf the High Sierra."
+  }
+}

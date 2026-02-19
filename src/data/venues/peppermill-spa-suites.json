@@ -1,0 +1,67 @@
+{
+  "slug": "peppermill-spa-suites",
+  "name": "Peppermill Spa Suite",
+  "type": "room",
+  "priceRange": "$$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "peppermill-resort-spa-casino",
+  "address": {
+    "streetAddress": "2707 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.5019,
+    "longitude": -119.7837
+  },
+  "phone": "(775) 826-2121",
+  "website": "https://www.peppermillreno.com",
+  "description": "Peppermill Reno's Spa Suites are beautifully appointed 390 sq. ft. rooms featuring a relaxing jetted bathtub and a sitting area for two. An unforgettable stay in a luxurious hotel suite \u2014 ideal for couples or golfers who want to recover in style after a full round.",
+  "shortDescription": "390 sq. ft. Peppermill Spa Suites with jetted bathtub and sitting area for two.",
+  "highlights": [
+    "390 Sq. Ft.",
+    "In-Room Jetted Bathtub",
+    "Sitting Area for Two",
+    "Plush Pillow-Top Mattress",
+    "Triple Sheeting & Luxury Linens",
+    "AAA Four Diamond"
+  ],
+  "hours": "Check-in 3 PM \u00b7 Check-out 11 AM",
+  "heroImage": "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+  "images": [
+    "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "What's included in the Peppermill Spa Suite?",
+      "answer": "A jetted bathtub, sitting area for two, plush pillow-top mattress, and all AAA Four Diamond amenities at 390 sq. ft."
+    },
+    {
+      "question": "Are golf package rates available for Spa Suites?",
+      "answer": "Yes \u2014 Golf the High Sierra negotiates preferred group rates for Peppermill Spa Suites as part of complete golf packages."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "The Peppermill Spa Suite was a perfect end to a great golf trip. Soaked in the jetted tub after 18 holes \u2014 exactly what we needed.",
+      "author": "Karen L.",
+      "source": "Google",
+      "meta": "Google \u00b7 couples golf trip"
+    },
+    {
+      "stars": 5,
+      "quote": "Great value for a spa suite. GTHS got us a solid rate and the room was beautiful \u2014 jetted tub, great views, luxury feel.",
+      "author": "Steve M.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 golf weekend"
+    }
+  ],
+  "meta": {
+    "title": "Peppermill Spa Suite Reno \u2013 Jetted Tub Room | Golf The High Sierra",
+    "description": "Book Peppermill Spa Suites in Reno \u2014 390 sq. ft. luxury rooms with jetted bathtub. Golf package rates through Golf the High Sierra."
+  }
+}

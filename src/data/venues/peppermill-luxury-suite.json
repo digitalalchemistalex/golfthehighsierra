@@ -1,0 +1,67 @@
+{
+  "slug": "peppermill-luxury-suite",
+  "name": "Peppermill Luxury Suite",
+  "type": "room",
+  "priceRange": "$$$$",
+  "region": "reno",
+  "regionLabel": "Reno",
+  "parentHotel": "peppermill-resort-spa-casino",
+  "address": {
+    "streetAddress": "2707 S Virginia St",
+    "addressLocality": "Reno",
+    "addressRegion": "NV",
+    "postalCode": "89502"
+  },
+  "geo": {
+    "latitude": 39.5019,
+    "longitude": -119.7837
+  },
+  "phone": "(775) 826-2121",
+  "website": "https://www.peppermillreno.com",
+  "description": "Richly appointed at 785 sq. ft., the Peppermill Luxury Suite offers a relaxing in-room jetted hot tub, bar and dining area with seating for four, sitting area with comfortable sofa, and two high-definition televisions. The perfect choice for golf groups wanting to entertain in style.",
+  "shortDescription": "785 sq. ft. Peppermill suite with jetted hot tub, full bar, and dining area for four.",
+  "highlights": [
+    "785 Sq. Ft.",
+    "In-Room Jetted Hot Tub",
+    "Bar & Dining Area (Seats 4)",
+    "Two High-Def TVs",
+    "Sitting Area with Sofa",
+    "In-Room Spa"
+  ],
+  "hours": "Check-in 3 PM \u00b7 Check-out 11 AM",
+  "heroImage": "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+  "images": [
+    "/images/hotels/peppermill-resort-spa-casino/hero.jpg",
+    "/images/hotels/peppermill-resort-spa-casino/exterior.jpg"
+  ],
+  "faqs": [
+    {
+      "question": "How large is the Peppermill Luxury Suite?",
+      "answer": "785 sq. ft. with an in-room jetted hot tub, bar and dining area for four, and two high-def TVs."
+    },
+    {
+      "question": "Is the Luxury Suite good for golf groups?",
+      "answer": "Ideal \u2014 the bar and dining area seats four, perfect for pre-round gatherings or post-round entertaining."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 5,
+      "quote": "The Luxury Suite at Peppermill was incredible. Our foursome used the dining area every morning for breakfast before heading to the course. Worth it.",
+      "author": "Phil R.",
+      "source": "Google",
+      "meta": "Google \u00b7 golf group (4)"
+    },
+    {
+      "stars": 5,
+      "quote": "785 square feet of pure luxury. Hot tub, bar, two TVs \u2014 we didn't want to leave the room. GTHS got us a great deal on it.",
+      "author": "Rob T.",
+      "source": "TripAdvisor",
+      "meta": "TripAdvisor \u00b7 golf buddies (4)"
+    }
+  ],
+  "meta": {
+    "title": "Peppermill Luxury Suite Reno \u2013 785 Sq Ft with Hot Tub & Bar | Golf The High Sierra",
+    "description": "Peppermill Luxury Suite Reno \u2014 785 sq. ft. with in-room jetted hot tub and bar. Perfect for golf groups. Book with Golf the High Sierra."
+  }
+}
