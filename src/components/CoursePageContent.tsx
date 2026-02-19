@@ -99,7 +99,7 @@ function FAQ({ q, a }: { q: string; a: string }) {
         <span style={{ width: 24, height: 24, borderRadius: "50%", border: "1px solid var(--bone)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14, flexShrink: 0, transition: "all .35s", ...(open ? { background: "var(--gold)", color: "#fff", borderColor: "var(--gold)", transform: "rotate(45deg)" } : { color: "var(--stone)" }) }}>+</span>
       </button>
       <div style={{ maxHeight: open ? 300 : 0, overflow: "hidden", transition: "max-height .5s ease" }}>
-        <p style={{ paddingBottom: 18, fontSize: 12, color: "var(--stone)", lineHeight: 1.85, fontWeight: 300 }}>{a}</p>
+        <p style={{ paddingBottom: 18, fontSize: 12, color: "var(--stone)", lineHeight: 1.85, fontWeight: 400 }}>{a}</p>
       </div>
     </div>
   );
@@ -121,12 +121,12 @@ function Lightbox({ images, startIndex, onClose, name }: { images: string[]; sta
       <button onClick={onClose} style={{ position: "fixed", top: 16, right: 16, color: "rgba(255,255,255,.6)", zIndex: 10000, padding: 8, background: "none", border: "none", cursor: "pointer" }}><X className="w-8 h-8" /></button>
       <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i - 1 + images.length) % images.length); }} style={{ position: "fixed", left: 16, top: "50%", transform: "translateY(-50%)", color: "rgba(255,255,255,.6)", zIndex: 10000, padding: 8, background: "none", border: "none", cursor: "pointer" }}><ChevronLeft className="w-10 h-10" /></button>
       <div onClick={e => e.stopPropagation()} style={{ width: "85vw", height: "75vh", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
-        {!loaded && <div style={{ color: "rgba(255,255,255,.3)", fontSize: 14, position: "absolute" }}>Loading…</div>}
+        {!loaded && <div style={{ color: "rgba(255,255,255,.7)", fontSize: 14, position: "absolute" }}>Loading…</div>}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img key={idx} src={absSrc} alt={`${name} ${idx + 1}`} onLoad={() => setLoaded(true)} onError={() => setLoaded(true)} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain", display: loaded ? "block" : "none" }} />
       </div>
       <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i + 1) % images.length); }} style={{ position: "fixed", right: 16, top: "50%", transform: "translateY(-50%)", color: "rgba(255,255,255,.6)", zIndex: 10000, padding: 8, background: "none", border: "none", cursor: "pointer" }}><ChevronRight className="w-10 h-10" /></button>
-      <div style={{ position: "fixed", bottom: 16, left: "50%", transform: "translateX(-50%)", color: "rgba(255,255,255,.4)", fontSize: 12, letterSpacing: 4 }}>{idx + 1} / {images.length}</div>
+      <div style={{ position: "fixed", bottom: 16, left: "50%", transform: "translateX(-50%)", color: "rgba(255,255,255,.75)", fontSize: 12, letterSpacing: 4 }}>{idx + 1} / {images.length}</div>
     </div>
   );
 }
@@ -196,8 +196,8 @@ export default function CoursePageContent({ course, relatedCourses = [], related
             </R>
             <R delay={0.1}>
               <div style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 14, fontSize: 12, color: "rgba(255,255,255,.8)", fontWeight: 400 }}>
-                {course.designer && <><span>{course.designer}</span><span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.5)" }} /></>}
-                {course.yearBuilt && <><span>Est. {course.yearBuilt}</span><span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.5)" }} /></>}
+                {course.designer && <><span>{course.designer}</span><span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.8)" }} /></>}
+                {course.yearBuilt && <><span>Est. {course.yearBuilt}</span><span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,.8)" }} /></>}
                 {course.holes && <span>{course.holes} Holes</span>}
               </div>
             </R>
@@ -211,8 +211,8 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                   course.rating && { v: `${course.rating.value}★`, l: `${course.rating.count} Reviews` },
                 ].filter(Boolean).map((s, i) => (
                   <div key={i}>
-                    <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(22px,2.8vw,40px)", fontWeight: 300, color: "#fff", lineHeight: 1 }}>{(s as { v: string | number }).v}</div>
-                    <div style={{ fontSize: 9, color: "rgba(255,255,255,.55)", letterSpacing: 2.5, textTransform: "uppercase", marginTop: 5 }}>{(s as { l: string }).l}</div>
+                    <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(22px,2.8vw,40px)", fontWeight: 400, color: "#fff", lineHeight: 1 }}>{(s as { v: string | number }).v}</div>
+                    <div style={{ fontSize: 11, color: "rgba(255,255,255,.55)", letterSpacing: 2.5, textTransform: "uppercase", marginTop: 5 }}>{(s as { l: string }).l}</div>
                   </div>
                 ))}
               </div>
@@ -220,7 +220,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           </div>
           {/* FOMO pulse — scarcity nudge embedded in desire moment */}
           <R delay={0.35}>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "9px 18px", borderRadius: 100, border: "1px solid rgba(201,162,77,.18)", background: "rgba(0,0,0,.35)", backdropFilter: "blur(12px)", marginTop: 22, fontSize: 11, color: "rgba(255,255,255,.65)", fontWeight: 300 }}>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "9px 18px", borderRadius: 100, border: "1px solid rgba(201,162,77,.18)", background: "rgba(0,0,0,.35)", backdropFilter: "blur(12px)", marginTop: 22, fontSize: 11, color: "rgba(255,255,255,.65)", fontWeight: 400 }}>
               <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#e74c3c", flexShrink: 0, animation: "euroP 1.8s infinite" }} />
               Peak-season tee times book 30+ days out — weekend slots go fast
             </div>
@@ -259,7 +259,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                   {i > 0 && <div style={{ width: 1, height: 28, background: "var(--bone)", flexShrink: 0 }} />}
                   <div>
                     <div style={{ fontSize: 12, fontWeight: 700, color: "var(--charcoal)", whiteSpace: "nowrap", letterSpacing: "-.01em" }}>{item.main}</div>
-                    <div style={{ fontSize: 9, color: i === 1 && slope ? diffTier.color : "var(--stone)", letterSpacing: 1.5, textTransform: "uppercase", whiteSpace: "nowrap", fontWeight: i === 1 && slope ? 600 : 400 }}>{item.sub}</div>
+                    <div style={{ fontSize: 11, color: i === 1 && slope ? diffTier.color : "var(--stone)", letterSpacing: 1.5, textTransform: "uppercase", whiteSpace: "nowrap", fontWeight: i === 1 && slope ? 600 : 400 }}>{item.sub}</div>
                   </div>
                 </div>
               ))}
@@ -283,10 +283,10 @@ export default function CoursePageContent({ course, relatedCourses = [], related
       <section style={{ background: "var(--white)", display: "grid", gridTemplateColumns: "1fr 1fr", borderTop: "1px solid var(--bone)", borderBottom: "1px solid var(--bone)" }} className="max-md:!grid-cols-1">
         {/* LEFT — Insider perspective quote */}
         <div style={{ padding: "clamp(44px,7vh,80px) clamp(32px,5vw,72px)", background: "var(--cream)", borderRight: "1px solid var(--bone)", position: "relative", overflow: "hidden" }} className="max-md:!border-r-0 max-md:!border-b max-md:!border-bone">
-          <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(80px,10vw,130px)", fontWeight: 300, color: "rgba(201,162,77,.07)", lineHeight: ".5", position: "absolute", top: 28, left: 24, userSelect: "none", pointerEvents: "none" }}>&ldquo;</div>
+          <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(80px,10vw,130px)", fontWeight: 400, color: "rgba(201,162,77,.07)", lineHeight: ".5", position: "absolute", top: 28, left: 24, userSelect: "none", pointerEvents: "none" }}>&ldquo;</div>
           <R>
             <div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 600, marginBottom: 18 }}>Course Perspective</div>
-            <p style={{ fontFamily: "var(--serif)", fontSize: "clamp(15px,1.4vw,19px)", fontWeight: 300, fontStyle: "italic", lineHeight: 1.78, color: "var(--charcoal)", letterSpacing: "-.01em" }}>
+            <p style={{ fontFamily: "var(--serif)", fontSize: "clamp(15px,1.4vw,19px)", fontWeight: 400, fontStyle: "italic", lineHeight: 1.78, color: "var(--charcoal)", letterSpacing: "-.01em" }}>
               &ldquo;{quoteText}&rdquo;
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 20 }}>
@@ -310,7 +310,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
             ].filter(Boolean).map((fact, i) => (
               <R key={i} delay={0.06 + i * 0.05}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", padding: "13px 0", borderBottom: "1px solid var(--bone)", ...(i === 0 ? { borderTop: "1px solid var(--bone)" } : {}) }}>
-                  <span style={{ fontSize: 11, color: "var(--stone)", fontWeight: 300 }}>{(fact as { label: string }).label}</span>
+                  <span style={{ fontSize: 11, color: "var(--stone)", fontWeight: 400 }}>{(fact as { label: string }).label}</span>
                   <span style={{ fontSize: 12, color: "var(--charcoal)", fontWeight: 600, textAlign: "right", maxWidth: "58%" }}>{(fact as { val: string }).val}</span>
                 </div>
               </R>
@@ -344,9 +344,9 @@ export default function CoursePageContent({ course, relatedCourses = [], related
               {nameParts.slice(0, -1).join(" ")} <em style={{ fontStyle: "italic" }}>{nameParts[nameParts.length - 1]}</em>
             </h2>
           </R>
-          {para1 && <R delay={0.14}><p style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 300, maxWidth: 480, marginTop: 18 }}>{para1}</p></R>}
-          {para2 && <R delay={0.18}><p style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 300, maxWidth: 480, marginTop: 12 }}>{para2}</p></R>}
-          {!para1 && !para2 && <R delay={0.14}><p style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 300, maxWidth: 480, marginTop: 18 }}>{course.description.substring(0, 350)}</p></R>}
+          {para1 && <R delay={0.14}><p style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 400, maxWidth: 480, marginTop: 18 }}>{para1}</p></R>}
+          {para2 && <R delay={0.18}><p style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 400, maxWidth: 480, marginTop: 12 }}>{para2}</p></R>}
+          {!para1 && !para2 && <R delay={0.14}><p style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 400, maxWidth: 480, marginTop: 18 }}>{course.description.substring(0, 350)}</p></R>}
           <R delay={0.2}><div style={{ width: 40, height: 1, background: "var(--bone)", margin: "22px 0" }} /></R>
           {/* Famous designer authority callout */}
           {(() => {
@@ -368,8 +368,8 @@ export default function CoursePageContent({ course, relatedCourses = [], related
               return (
                 <R delay={0.22}>
                   <div style={{ padding: "16px 20px", background: "var(--cream)", borderRadius: 10, borderLeft: "3px solid var(--gold)", marginBottom: 20 }}>
-                    <div style={{ fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: "var(--gold)", fontWeight: 600, marginBottom: 6 }}>Signature Design</div>
-                    <p style={{ fontSize: 12, lineHeight: 1.8, color: "var(--stone)", fontWeight: 300, margin: 0, fontStyle: "italic" }}>{designerQuotes[key]}</p>
+                    <div style={{ fontSize: 11, letterSpacing: 2, textTransform: "uppercase", color: "var(--gold)", fontWeight: 600, marginBottom: 6 }}>Signature Design</div>
+                    <p style={{ fontSize: 12, lineHeight: 1.8, color: "var(--stone)", fontWeight: 400, margin: 0, fontStyle: "italic" }}>{designerQuotes[key]}</p>
                     <div style={{ fontSize: 10, fontWeight: 600, color: "var(--charcoal)", marginTop: 8 }}>{course.designer}</div>
                   </div>
                 </R>
@@ -382,7 +382,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
               {course.facilities.slice(0, 3).map((f, i) => (
                 <R key={i} delay={0.24 + i * 0.06}>
                   <div style={{ display: "flex", alignItems: "flex-start", gap: 18, padding: "18px 0", borderBottom: "1px solid var(--bone)", ...(i === 0 ? { borderTop: "1px solid var(--bone)" } : {}) }}>
-                    <span style={{ fontFamily: "var(--serif)", fontSize: "clamp(32px,3.5vw,48px)", fontWeight: 300, color: "rgba(201,162,77,.18)", minWidth: 44, lineHeight: .85, marginTop: 3, letterSpacing: "-.03em" }}>0{i + 1}</span>
+                    <span style={{ fontFamily: "var(--serif)", fontSize: "clamp(32px,3.5vw,48px)", fontWeight: 400, color: "rgba(201,162,77,.18)", minWidth: 44, lineHeight: .85, marginTop: 3, letterSpacing: "-.03em" }}>0{i + 1}</span>
                     <p style={{ fontSize: 13, color: "var(--charcoal)", lineHeight: 1.75, fontWeight: 400, margin: 0 }}>{f.replace(/^[^–—-]+[–—-]\s*/, "")}</p>
                   </div>
                 </R>
@@ -392,7 +392,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
             <R delay={0.24}>
               <div>
                 <h3 style={{ fontFamily: "var(--serif)", fontWeight: 600, fontSize: "clamp(16px,1.8vw,20px)", color: "var(--charcoal)", marginBottom: 8 }}>Group Golf Packages &amp; Tee Times</h3>
-                <p style={{ fontSize: 13, lineHeight: 1.9, color: "var(--stone)", fontWeight: 300, maxWidth: 440 }}>From 8 to 100 players — consecutive tee times, rooming lists, comps for organizers. 20+ years of expert group planning.</p>
+                <p style={{ fontSize: 13, lineHeight: 1.9, color: "var(--stone)", fontWeight: 400, maxWidth: 440 }}>From 8 to 100 players — consecutive tee times, rooming lists, comps for organizers. 20+ years of expert group planning.</p>
               </div>
             </R>
           )}
@@ -433,8 +433,8 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                   { v: `Par ${course.featuredHole.par}`, l: "Difficulty" },
                 ].map((s, i) => (
                   <div key={i} style={{ textAlign: "center", padding: "10px 18px", border: "1px solid rgba(255,255,255,.08)", borderRadius: 8 }}>
-                    <div style={{ fontFamily: "var(--serif)", fontSize: 22, color: "#fff", fontWeight: 300 }}>{s.v}</div>
-                    <div style={{ fontSize: 9, color: "rgba(255,255,255,.4)", letterSpacing: 2, textTransform: "uppercase", marginTop: 3 }}>{s.l}</div>
+                    <div style={{ fontFamily: "var(--serif)", fontSize: 22, color: "#fff", fontWeight: 400 }}>{s.v}</div>
+                    <div style={{ fontSize: 11, color: "rgba(255,255,255,.75)", letterSpacing: 2, textTransform: "uppercase", marginTop: 3 }}>{s.l}</div>
                   </div>
                 ))}
               </div>
@@ -442,13 +442,13 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           )}
           {holeQuote && (
           <R delay={0.18}>
-            <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(17px,2vw,26px)", fontWeight: 300, fontStyle: "italic", lineHeight: 1.58, color: "rgba(255,255,255,.55)", marginTop: 22, maxWidth: 440, position: "relative", paddingTop: 28 }}>
+            <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(17px,2vw,26px)", fontWeight: 400, fontStyle: "italic", lineHeight: 1.58, color: "rgba(255,255,255,.55)", marginTop: 22, maxWidth: 440, position: "relative", paddingTop: 28 }}>
               <span style={{ fontFamily: "var(--serif)", fontSize: 64, color: "rgba(201,162,77,.16)", lineHeight: ".4", position: "absolute", top: 0, left: 0 }}>&ldquo;</span>
               {holeQuote}
             </div>
           </R>
           )}
-          <R delay={0.24}><div style={{ fontSize: 9, color: "rgba(255,255,255,.65)", letterSpacing: 2.5, textTransform: "uppercase", marginTop: 18 }}>— Golf the High Sierra</div></R>
+          <R delay={0.24}><div style={{ fontSize: 11, color: "rgba(255,255,255,.65)", letterSpacing: 2.5, textTransform: "uppercase", marginTop: 18 }}>— Golf the High Sierra</div></R>
         </div>
       </section>
 
@@ -475,7 +475,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                 <thead>
                   <tr style={{ background: "var(--ink)" }}>
                     {["Tee Box", "Yards", "Par", "Rating", "Slope", "Difficulty"].map((h, i) => (
-                      <th key={i} style={{ textAlign: i === 0 ? "left" : "center", padding: "12px " + (i === 0 ? "20px 12px" : "16px"), fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: "rgba(255,255,255,.5)", fontWeight: 500 }}>{h}</th>
+                      <th key={i} style={{ textAlign: i === 0 ? "left" : "center", padding: "12px " + (i === 0 ? "20px 12px" : "16px"), fontSize: 11, letterSpacing: 2, textTransform: "uppercase", color: "rgba(255,255,255,.8)", fontWeight: 500 }}>{h}</th>
                     ))}
                   </tr>
                 </thead>
@@ -507,7 +507,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                           {tee.slopeF && <div style={{ fontSize: 10, color: "#c0392b", fontWeight: 400, marginTop: 2 }}>L: {tee.slopeF}</div>}
                         </td>
                         <td style={{ padding: "16px 20px 16px 12px", minWidth: 120 }}>
-                          <div style={{ fontSize: 9, fontWeight: 600, letterSpacing: 1, textTransform: "uppercase", color: slopeColor, marginBottom: 5 }}>{slopeLabel}</div>
+                          <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: 1, textTransform: "uppercase", color: slopeColor, marginBottom: 5 }}>{slopeLabel}</div>
                           <div style={{ background: "var(--bone)", borderRadius: 100, height: 4 }}>
                             <div style={{ width: `${pct}%`, height: "100%", background: `linear-gradient(90deg,${color === "#e8e8e8" ? "#aaa" : color},${color === "#e8e8e8" ? "#ccc" : color}99)`, borderRadius: 100 }} />
                           </div>
@@ -520,7 +520,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
             </div>
           </R>
           <R delay={0.2}>
-            <p style={{ fontSize: 11, color: "var(--stone)", marginTop: 14, fontWeight: 300 }}>* All ratings certified by the USGA. Slope 113 = standard difficulty. Higher slope = greater challenge for higher-handicap players.</p>
+            <p style={{ fontSize: 11, color: "var(--stone)", marginTop: 14, fontWeight: 400 }}>* All ratings certified by the USGA. Slope 113 = standard difficulty. Higher slope = greater challenge for higher-handicap players.</p>
           </R>
         </section>
       )}
@@ -533,12 +533,12 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           <R delay={0.1}><div style={{ overflowX: "auto" }}>
             <table style={{ width: "100%", minWidth: 700, borderCollapse: "collapse", fontSize: 11, background: "#fff", borderRadius: 12, overflow: "hidden", boxShadow: "0 1px 4px rgba(0,0,0,.06)" }}>
               <thead>
-                <tr style={{ background: "var(--ink)" }}><th style={{ textAlign: "left", padding: "10px 16px", color: "rgba(255,255,255,.5)", fontWeight: 400, letterSpacing: 1, fontSize: 9, textTransform: "uppercase", width: 80 }}>Tee</th>
-                {[1,2,3,4,5,6,7,8,9,"OUT",10,11,12,13,14,15,16,17,18,"IN","TOT"].map(h => <th key={h} style={{ textAlign: "center", padding: "10px 4px", color: "rgba(255,255,255,.5)", fontWeight: 400, fontSize: 9, minWidth: h==="OUT"||h==="IN"||h==="TOT"?38:28 }}>{h}</th>)}
-                <th style={{ textAlign: "center", padding: "10px 6px", color: "rgba(255,255,255,.5)", fontWeight: 400, fontSize: 9 }}>RTG</th>
-                <th style={{ textAlign: "center", padding: "10px 6px", color: "rgba(255,255,255,.5)", fontWeight: 400, fontSize: 9 }}>SLP</th></tr>
+                <tr style={{ background: "var(--ink)" }}><th style={{ textAlign: "left", padding: "10px 16px", color: "rgba(255,255,255,.8)", fontWeight: 400, letterSpacing: 1, fontSize: 11, textTransform: "uppercase", width: 80 }}>Tee</th>
+                {[1,2,3,4,5,6,7,8,9,"OUT",10,11,12,13,14,15,16,17,18,"IN","TOT"].map(h => <th key={h} style={{ textAlign: "center", padding: "10px 4px", color: "rgba(255,255,255,.8)", fontWeight: 400, fontSize: 11, minWidth: h==="OUT"||h==="IN"||h==="TOT"?38:28 }}>{h}</th>)}
+                <th style={{ textAlign: "center", padding: "10px 6px", color: "rgba(255,255,255,.8)", fontWeight: 400, fontSize: 9 }}>RTG</th>
+                <th style={{ textAlign: "center", padding: "10px 6px", color: "rgba(255,255,255,.8)", fontWeight: 400, fontSize: 9 }}>SLP</th></tr>
                 <tr style={{ borderBottom: "1px solid var(--bone)", background: "var(--cream)" }}>
-                  <td style={{ padding: "8px 16px", color: "var(--stone)", fontSize: 9, textTransform: "uppercase", fontWeight: 600 }}>Par</td>
+                  <td style={{ padding: "8px 16px", color: "var(--stone)", fontSize: 11, textTransform: "uppercase", fontWeight: 600 }}>Par</td>
                   {course.scorecard.par.slice(0,9).map((p:number,i:number)=><td key={i} style={{ textAlign:"center", padding:"8px 4px", color:"var(--stone)", fontSize:11, fontWeight:500 }}>{p}</td>)}
                   <td style={{ textAlign:"center", padding:"8px 4px", color:"var(--charcoal)", fontSize:11, fontWeight:700 }}>{course.scorecard.par.slice(0,9).reduce((a:number,b:number)=>a+b,0)}</td>
                   {course.scorecard.par.slice(9).map((p:number,i:number)=><td key={i} style={{ textAlign:"center", padding:"8px 4px", color:"var(--stone)", fontSize:11, fontWeight:500 }}>{p}</td>)}
@@ -630,7 +630,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                 course.yardage && { v: course.yardage, l: "Yards" },
               ].filter(Boolean).map((s, i) => (
                 <div key={i} style={{ textAlign: "center", padding: "16px 8px", border: "1px solid var(--bone)", borderRadius: 10, background: "var(--white)" }}>
-                  <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(22px,2.5vw,32px)", fontWeight: 300, color: "var(--charcoal)" }}>
+                  <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(22px,2.5vw,32px)", fontWeight: 400, color: "var(--charcoal)" }}>
                     <Counter to={(s as { v: number }).v} />
                   </div>
                   <div style={{ fontSize: 10, letterSpacing: 2.5, textTransform: "uppercase", color: "var(--stone)", marginTop: 4, fontWeight: 500 }}>{(s as { l: string }).l}</div>
@@ -676,7 +676,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                 const mins = d.match(/^(\d+)\s*[Mm]in/)?.[1];
                 const place = d.replace(/^\d+\s*(minutes?|mins?)\s*(from\s*)?[-–—]?\s*/i, "").replace(/\s*[-–—]\s*\(.*?\)/, "").trim();
                 return (
-                  <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 0", borderBottom: "1px solid var(--bone)", fontSize: 12, fontWeight: 300 }}>
+                  <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 0", borderBottom: "1px solid var(--bone)", fontSize: 12, fontWeight: 400 }}>
                     <span style={{ color: "var(--charcoal)" }}>{place || d}</span>
                     {mins && <span style={{ color: "var(--gold)", fontWeight: 600, fontSize: 11 }}>{mins} min</span>}
                   </div>
@@ -686,7 +686,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           )}
 
           {addr?.streetAddress && (
-            <R delay={0.32}><p style={{ fontSize: 11, color: "var(--stone)", marginTop: 20, fontWeight: 300, lineHeight: 1.6 }}>
+            <R delay={0.32}><p style={{ fontSize: 11, color: "var(--stone)", marginTop: 20, fontWeight: 400, lineHeight: 1.6 }}>
               {addr.streetAddress}, {addr.addressLocality}, {addr.addressRegion} {addr.postalCode}
               {course.phone && <><br /><a href={`tel:${course.phone}`} style={{ color: "var(--gold)" }}>{course.phone}</a></>}
             </p></R>
@@ -702,8 +702,8 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           {course.teeTips && course.teeTips.length > 0 && (
             <R delay={0.4}>
               <div style={{ marginTop: 28, padding: "18px 20px", background: "var(--cream)", borderRadius: 10, borderLeft: "3px solid var(--gold)" }}>
-                <div style={{ fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: "var(--gold)", fontWeight: 600, marginBottom: 8 }}>Insider Tip</div>
-                <p style={{ fontSize: 12, lineHeight: 1.8, color: "var(--stone)", fontWeight: 300, margin: 0 }}>{course.teeTips[0]}</p>
+                <div style={{ fontSize: 11, letterSpacing: 2, textTransform: "uppercase", color: "var(--gold)", fontWeight: 600, marginBottom: 8 }}>Insider Tip</div>
+                <p style={{ fontSize: 12, lineHeight: 1.8, color: "var(--stone)", fontWeight: 400, margin: 0 }}>{course.teeTips[0]}</p>
               </div>
             </R>
           )}
@@ -756,10 +756,10 @@ export default function CoursePageContent({ course, relatedCourses = [], related
               <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 16 }}>Beyond the Fairway</div></R>
               <R delay={0.06}>
                 <h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(26px,3.5vw,50px)", lineHeight: 1.05, color: "#fff", marginBottom: 12 }}>
-                  After Your Round on <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.4)" }}>{firstName}</em>
+                  After Your Round on <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.75)" }}>{firstName}</em>
                 </h2>
               </R>
-              <R delay={0.1}><p style={{ fontSize: 14, color: "rgba(255,255,255,.35)", maxWidth: 540, lineHeight: 1.85, fontWeight: 300, marginBottom: 36 }}>
+              <R delay={0.1}><p style={{ fontSize: 14, color: "rgba(255,255,255,.7)", maxWidth: 540, lineHeight: 1.85, fontWeight: 400, marginBottom: 36 }}>
                 The {course.regionLabel} delivers more than championship golf. World-class dining, adventure, and Sierra Nevada luxury fill every hour between tee times.
               </p></R>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 12 }} className="max-md:!grid-cols-2 max-sm:!grid-cols-1">
@@ -772,7 +772,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                       <div style={{ position: "absolute", top: 14, left: 14, width: 34, height: 34, borderRadius: "50%", background: "rgba(255,255,255,.07)", backdropFilter: "blur(8px)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 15 }}>{item.icon}</div>
                       <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "18px 16px" }}>
                         <div style={{ fontSize: 14, fontFamily: "var(--serif)", fontWeight: 400, color: "#fff", marginBottom: 4 }}>{item.label}</div>
-                        <div style={{ fontSize: 10, color: "rgba(255,255,255,.38)", lineHeight: 1.5, fontWeight: 300 }}>{item.desc}</div>
+                        <div style={{ fontSize: 10, color: "rgba(255,255,255,.65)", lineHeight: 1.5, fontWeight: 400 }}>{item.desc}</div>
                       </div>
                     </div>
                   </R>
@@ -797,7 +797,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                     <div style={{ borderRadius: 12, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--cream)", transition: "all .45s" }} className="hover:!border-transparent hover:!shadow-[0_16px_48px_rgba(0,0,0,.07)] hover:-translate-y-1">
                       <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
                         {rh.heroImage ? <Image src={rh.heroImage} alt={rh.name} fill className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-700" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
-                        {rh.driveMinutes && <span style={{ position: "absolute", top: 10, left: 10, background: "rgba(0,0,0,.7)", backdropFilter: "blur(8px)", color: "#fff", padding: "4px 12px", borderRadius: 100, fontSize: 9, fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>{rh.driveMinutes} min away</span>}
+                        {rh.driveMinutes && <span style={{ position: "absolute", top: 10, left: 10, background: "rgba(0,0,0,.7)", backdropFilter: "blur(8px)", color: "#fff", padding: "4px 12px", borderRadius: 100, fontSize: 11, fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>{rh.driveMinutes} min away</span>}
                       </div>
                       <div style={{ padding: 16 }}>
                         <div style={{ fontFamily: "var(--serif)", fontSize: 18, fontWeight: 400, color: "var(--ink)" }}>{rh.name}</div>
@@ -814,7 +814,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                     <div style={{ borderRadius: 12, overflow: "hidden", border: "1px solid var(--bone)", background: "var(--cream)", transition: "all .45s" }} className="hover:!border-transparent hover:!shadow-[0_16px_48px_rgba(0,0,0,.07)] hover:-translate-y-1">
                       <div style={{ aspectRatio: "16/9", overflow: "hidden", position: "relative" }}>
                         {rh.heroImage ? <Image src={rh.heroImage} alt={rh.name} fill {...bp(rh.heroImage)} className="object-cover brightness-[.9] hover:brightness-100 hover:scale-[1.05] transition-all duration-700" sizes="(max-width:768px) 100vw, 33vw" /> : <div style={{ width: "100%", height: "100%", background: "var(--bone)" }} />}
-                        {rh.driveMinutes && <span style={{ position: "absolute", top: 10, left: 10, background: "rgba(0,0,0,.7)", backdropFilter: "blur(8px)", color: "#fff", padding: "4px 12px", borderRadius: 100, fontSize: 9, fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>{rh.driveMinutes} min away</span>}
+                        {rh.driveMinutes && <span style={{ position: "absolute", top: 10, left: 10, background: "rgba(0,0,0,.7)", backdropFilter: "blur(8px)", color: "#fff", padding: "4px 12px", borderRadius: 100, fontSize: 11, fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>{rh.driveMinutes} min away</span>}
                       </div>
                       <div style={{ padding: 16 }}>
                         <div style={{ fontFamily: "var(--serif)", fontSize: 18, fontWeight: 400, color: "var(--ink)" }}>{rh.name}</div>
@@ -891,21 +891,21 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           <div style={{ maxWidth: 1100, margin: "0 auto", position: "relative", zIndex: 1 }}>
             <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14 }}>Golfer Reviews</div></R>
             <R delay={0.06}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(24px,3vw,42px)", lineHeight: 1.08, color: "#fff", marginBottom: 36 }}>
-              What Golfers Say About <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.4)" }}>{firstName}</em>
+              What Golfers Say About <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.75)" }}>{firstName}</em>
             </h2></R>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: 14 }}>
               {course.testimonials.map((t, i) => (
                 <R key={i} delay={0.1 + i * 0.07}>
                   <div style={{ background: "rgba(255,255,255,.025)", border: "1px solid rgba(255,255,255,.055)", borderRadius: 16, padding: "26px 24px 20px" }}>
                     <div style={{ color: "#C9A24D", fontSize: 12, marginBottom: 14, letterSpacing: 3 }}>{"★".repeat(t.stars)}{"☆".repeat(Math.max(0, 5 - t.stars))}</div>
-                    <p style={{ fontSize: 14, lineHeight: 1.82, color: "rgba(255,255,255,.58)", margin: "0 0 18px", fontStyle: "italic", fontFamily: "var(--serif)", fontWeight: 300 }}>&ldquo;{t.quote}&rdquo;</p>
+                    <p style={{ fontSize: 14, lineHeight: 1.82, color: "rgba(255,255,255,.58)", margin: "0 0 18px", fontStyle: "italic", fontFamily: "var(--serif)", fontWeight: 400 }}>&ldquo;{t.quote}&rdquo;</p>
                     <div style={{ display: "flex", alignItems: "center", gap: 12, paddingTop: 16, borderTop: "1px solid rgba(255,255,255,.04)" }}>
                       <div style={{ width: 34, height: 34, borderRadius: "50%", background: "rgba(201,162,77,.1)", border: "1px solid rgba(201,162,77,.12)", color: "var(--gold)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 600, flexShrink: 0 }}>{t.author[0]}</div>
                       <div>
                         <div style={{ fontSize: 13, fontWeight: 600, color: "rgba(255,255,255,.72)" }}>{t.author}</div>
-                        <div style={{ fontSize: 10, color: "rgba(255,255,255,.22)", marginTop: 2 }}>{t.meta}</div>
+                        <div style={{ fontSize: 10, color: "rgba(255,255,255,.6)", marginTop: 2 }}>{t.meta}</div>
                       </div>
-                      <span style={{ marginLeft: "auto", fontSize: 9, letterSpacing: 1.5, textTransform: "uppercase", color: "rgba(255,255,255,.18)", fontWeight: 500 }}>{t.source}</span>
+                      <span style={{ marginLeft: "auto", fontSize: 11, letterSpacing: 1.5, textTransform: "uppercase", color: "rgba(255,255,255,.6)", fontWeight: 500 }}>{t.source}</span>
                     </div>
                   </div>
                 </R>
@@ -927,7 +927,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           </h2>
         </R>
         <R delay={0.14}>
-          <p style={{ fontSize: 13, color: "rgba(255,255,255,.52)", fontWeight: 300, maxWidth: 400, margin: "0 auto 32px", lineHeight: 1.85, position: "relative", zIndex: 1 }}>
+          <p style={{ fontSize: 13, color: "rgba(255,255,255,.52)", fontWeight: 400, maxWidth: 400, margin: "0 auto 32px", lineHeight: 1.85, position: "relative", zIndex: 1 }}>
             {course.priceRange ? `Stay-and-play from ${course.priceRange.split("–")[0]}/golfer. ` : ""}Tee times, lodging, dining — one call does it all.
           </p>
         </R>
