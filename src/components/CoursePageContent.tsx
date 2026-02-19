@@ -455,14 +455,14 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           Real USGA data respects serious golfers.
           Psychology: "They know their stuff. I can trust them." */}
       {teeData.length > 0 && (
-        <section style={{ background: "#0f0f0e", padding: "clamp(48px,7vh,80px) clamp(24px,5vw,80px)" }}>
+        <section style={{ background: "var(--cream)", padding: "clamp(48px,7vh,80px) clamp(24px,5vw,80px)", borderTop: "1px solid var(--bone)", borderBottom: "1px solid var(--bone)" }}>
           <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 16, marginBottom: 28, flexWrap: "wrap" }}>
             <div>
-              <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 8 }}>Scorecard</div></R>
-              <R delay={0.06}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(24px,3vw,42px)", lineHeight: 1.1, color: "#fff" }}>All <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.52)" }}>Tee Options</em></h2></R>
+              <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 8 }}>USGA Scorecard</div></R>
+              <R delay={0.06}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(24px,3vw,42px)", lineHeight: 1.1, color: "var(--ink)" }}>All <em style={{ fontStyle: "italic", color: "var(--stone)" }}>Tee Options</em></h2></R>
             </div>
             <R delay={0.1}>
-              <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "8px 16px", borderRadius: 100, border: "1px solid rgba(201,162,77,.15)", fontSize: 10, color: "rgba(201,162,77,.8)", fontWeight: 500, marginTop: 4 }}>
+              <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "8px 16px", borderRadius: 100, border: "1px solid rgba(201,162,77,.3)", background: "rgba(201,162,77,.06)", fontSize: 10, color: "var(--gold)", fontWeight: 600, marginTop: 4 }}>
                 <span style={{ width: 5, height: 5, borderRadius: "50%", background: "var(--gold)", animation: "euroP 2s infinite" }} />
                 USGA Rated
               </div>
@@ -470,11 +470,11 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           </div>
           <R delay={0.12}>
             <div style={{ overflowX: "auto", WebkitOverflowScrolling: "touch" }}>
-              <table style={{ width: "100%", minWidth: 520, borderCollapse: "collapse" }}>
+              <table style={{ width: "100%", minWidth: 520, borderCollapse: "collapse", background: "#fff", borderRadius: 12, overflow: "hidden", boxShadow: "0 1px 4px rgba(0,0,0,.06)" }}>
                 <thead>
-                  <tr style={{ borderBottom: "1px solid rgba(255,255,255,.06)" }}>
+                  <tr style={{ background: "var(--ink)" }}>
                     {["Tee Box", "Yards", "Par", "Rating", "Slope", "Difficulty"].map((h, i) => (
-                      <th key={i} style={{ textAlign: i === 0 ? "left" : "center", padding: "8px " + (i === 0 ? "14px 8px 0" : "14px"), fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: "rgba(255,255,255,.28)", fontWeight: 400 }}>{h}</th>
+                      <th key={i} style={{ textAlign: i === 0 ? "left" : "center", padding: "12px " + (i === 0 ? "20px 12px" : "16px"), fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: "rgba(255,255,255,.5)", fontWeight: 500 }}>{h}</th>
                     ))}
                   </tr>
                 </thead>
@@ -483,23 +483,26 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                     const isBack = tee.yardage === maxYardage;
                     const color = teeColor(tee.name);
                     const pct = maxYardage ? (tee.yardage / maxYardage) * 100 : 50;
+                    const slopeLabel = tee.slope >= 140 ? "Extremely Difficult" : tee.slope >= 130 ? "Challenging" : tee.slope >= 120 ? "Moderate–Difficult" : "Moderate";
+                    const slopeColor = tee.slope >= 140 ? "#c0392b" : tee.slope >= 130 ? "#e67e22" : tee.slope >= 120 ? "#C9A24D" : "#2d6a4f";
                     return (
-                      <tr key={i} style={{ borderBottom: "1px solid rgba(255,255,255,.035)", background: isBack ? "rgba(201,162,77,.04)" : "transparent" }}>
-                        <td style={{ padding: "14px 14px 14px 0" }}>
+                      <tr key={i} style={{ borderBottom: "1px solid var(--bone)", background: isBack ? "rgba(201,162,77,.04)" : i % 2 === 0 ? "#fff" : "var(--cream)" }}>
+                        <td style={{ padding: "16px 20px" }}>
                           <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
-                            <span style={{ width: 12, height: 12, borderRadius: 3, background: color, border: color === "#e8e8e8" ? "1px solid rgba(255,255,255,.2)" : "none", flexShrink: 0 }} />
-                            <span style={{ fontSize: 13, fontWeight: isBack ? 600 : 400, color: isBack ? "var(--gold)" : "rgba(255,255,255,.82)" }}>{tee.name}</span>
-                            {isBack && <span style={{ fontSize: 8, letterSpacing: 1.5, textTransform: "uppercase", padding: "2px 8px", borderRadius: 100, background: "rgba(201,162,77,.1)", color: "var(--gold)", fontWeight: 600 }}>Back</span>}
-                            {tee.gender === "F" && <span style={{ fontSize: 8, letterSpacing: 1.5, textTransform: "uppercase", padding: "2px 8px", borderRadius: 100, background: "rgba(192,57,43,.1)", color: "#e74c3c", fontWeight: 600 }}>Ladies</span>}
+                            <span style={{ width: 14, height: 14, borderRadius: 3, background: color, border: color === "#e8e8e8" ? "1px solid #ccc" : "none", flexShrink: 0, boxShadow: "0 1px 3px rgba(0,0,0,.15)" }} />
+                            <span style={{ fontSize: 13, fontWeight: isBack ? 700 : 500, color: "var(--ink)" }}>{tee.name}</span>
+                            {isBack && <span style={{ fontSize: 8, letterSpacing: 1.5, textTransform: "uppercase", padding: "2px 8px", borderRadius: 100, background: "rgba(201,162,77,.12)", color: "var(--gold)", fontWeight: 700 }}>Championship</span>}
+                            {tee.gender === "F" && <span style={{ fontSize: 8, letterSpacing: 1.5, textTransform: "uppercase", padding: "2px 8px", borderRadius: 100, background: "rgba(192,57,43,.08)", color: "#c0392b", fontWeight: 600 }}>Ladies</span>}
                           </div>
                         </td>
-                        <td style={{ textAlign: "center", fontSize: 14, fontWeight: 500, color: "#fff", padding: "14px" }}>{tee.yardage.toLocaleString()}</td>
-                        <td style={{ textAlign: "center", fontSize: 13, color: "rgba(255,255,255,.58)", padding: "14px" }}>{tee.par}</td>
-                        <td style={{ textAlign: "center", fontSize: 13, color: "rgba(255,255,255,.58)", padding: "14px" }}>{tee.rating}</td>
-                        <td style={{ textAlign: "center", fontSize: 13, color: "rgba(255,255,255,.58)", padding: "14px" }}>{tee.slope}</td>
-                        <td style={{ padding: "14px 0 14px 14px", minWidth: 90 }}>
-                          <div style={{ background: "rgba(255,255,255,.06)", borderRadius: 100, height: 4 }}>
-                            <div style={{ width: `${pct}%`, height: "100%", background: `linear-gradient(90deg,${color},${color}99)`, borderRadius: 100 }} />
+                        <td style={{ textAlign: "center", fontSize: 14, fontWeight: 700, color: "var(--ink)", padding: "16px" }}>{tee.yardage.toLocaleString()}</td>
+                        <td style={{ textAlign: "center", fontSize: 13, fontWeight: 500, color: "var(--charcoal)", padding: "16px" }}>{tee.par}</td>
+                        <td style={{ textAlign: "center", fontSize: 13, fontWeight: 500, color: "var(--charcoal)", padding: "16px" }}>{tee.rating}</td>
+                        <td style={{ textAlign: "center", fontSize: 13, fontWeight: 700, color: "var(--ink)", padding: "16px" }}>{tee.slope}</td>
+                        <td style={{ padding: "16px 20px 16px 12px", minWidth: 120 }}>
+                          <div style={{ fontSize: 9, fontWeight: 600, letterSpacing: 1, textTransform: "uppercase", color: slopeColor, marginBottom: 5 }}>{slopeLabel}</div>
+                          <div style={{ background: "var(--bone)", borderRadius: 100, height: 4 }}>
+                            <div style={{ width: `${pct}%`, height: "100%", background: `linear-gradient(90deg,${color === "#e8e8e8" ? "#aaa" : color},${color === "#e8e8e8" ? "#ccc" : color}99)`, borderRadius: 100 }} />
                           </div>
                         </td>
                       </tr>
@@ -509,43 +512,46 @@ export default function CoursePageContent({ course, relatedCourses = [], related
               </table>
             </div>
           </R>
+          <R delay={0.2}>
+            <p style={{ fontSize: 11, color: "var(--stone)", marginTop: 14, fontWeight: 300 }}>* All ratings certified by the USGA. Slope 113 = standard difficulty. Higher slope = greater challenge for higher-handicap players.</p>
+          </R>
         </section>
       )}
 
       {/* Legacy hole-by-hole scorecard — only shown if no teeData */}
       {!teeData.length && course.scorecard && (
-        <section style={{ background: "var(--ink)", padding: "clamp(48px,7vh,80px) clamp(24px,5vw,80px)", overflowX: "auto" }}>
+        <section style={{ background: "var(--cream)", padding: "clamp(48px,7vh,80px) clamp(24px,5vw,80px)", borderTop: "1px solid var(--bone)", borderBottom: "1px solid var(--bone)", overflowX: "auto" }}>
           <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 8 }}>Scorecard</div></R>
-          <R delay={0.06}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(24px,3vw,40px)", lineHeight: 1.1, color: "#fff", marginBottom: 24 }}>All <em style={{ fontStyle: "italic", color: "rgba(255,255,255,.6)" }}>Tee Options</em></h2></R>
+          <R delay={0.06}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(24px,3vw,40px)", lineHeight: 1.1, color: "var(--ink)", marginBottom: 24 }}>All <em style={{ fontStyle: "italic", color: "var(--stone)" }}>Tee Options</em></h2></R>
           <R delay={0.1}><div style={{ overflowX: "auto" }}>
-            <table style={{ width: "100%", minWidth: 700, borderCollapse: "collapse", fontSize: 11, color: "#fff" }}>
+            <table style={{ width: "100%", minWidth: 700, borderCollapse: "collapse", fontSize: 11, background: "#fff", borderRadius: 12, overflow: "hidden", boxShadow: "0 1px 4px rgba(0,0,0,.06)" }}>
               <thead>
-                <tr><th style={{ textAlign: "left", padding: "8px 10px", color: "rgba(255,255,255,.4)", fontWeight: 400, letterSpacing: 1, fontSize: 9, textTransform: "uppercase", width: 80 }}>Tee</th>
-                {[1,2,3,4,5,6,7,8,9,"OUT",10,11,12,13,14,15,16,17,18,"IN","TOT"].map(h => <th key={h} style={{ textAlign: "center", padding: "8px 4px", color: "rgba(255,255,255,.4)", fontWeight: 400, fontSize: 9, minWidth: h==="OUT"||h==="IN"||h==="TOT"?38:28 }}>{h}</th>)}
-                <th style={{ textAlign: "center", padding: "8px 6px", color: "rgba(255,255,255,.4)", fontWeight: 400, fontSize: 9 }}>RTG</th>
-                <th style={{ textAlign: "center", padding: "8px 6px", color: "rgba(255,255,255,.4)", fontWeight: 400, fontSize: 9 }}>SLP</th></tr>
-                <tr style={{ borderBottom: "1px solid rgba(255,255,255,.06)" }}>
-                  <td style={{ padding: "6px 10px", color: "rgba(255,255,255,.25)", fontSize: 9, textTransform: "uppercase" }}>Par</td>
-                  {course.scorecard.par.slice(0,9).map((p:number,i:number)=><td key={i} style={{ textAlign:"center", padding:"6px 4px", color:"rgba(255,255,255,.25)", fontSize:10 }}>{p}</td>)}
-                  <td style={{ textAlign:"center", padding:"6px 4px", color:"rgba(255,255,255,.25)", fontSize:10 }}>{course.scorecard.par.slice(0,9).reduce((a:number,b:number)=>a+b,0)}</td>
-                  {course.scorecard.par.slice(9).map((p:number,i:number)=><td key={i} style={{ textAlign:"center", padding:"6px 4px", color:"rgba(255,255,255,.25)", fontSize:10 }}>{p}</td>)}
-                  <td style={{ textAlign:"center", padding:"6px 4px", color:"rgba(255,255,255,.25)", fontSize:10 }}>{course.scorecard.par.slice(9).reduce((a:number,b:number)=>a+b,0)}</td>
-                  <td style={{ textAlign:"center", padding:"6px 4px", color:"rgba(255,255,255,.25)", fontSize:10, fontWeight:600 }}>{course.scorecard.par.reduce((a:number,b:number)=>a+b,0)}</td>
+                <tr style={{ background: "var(--ink)" }}><th style={{ textAlign: "left", padding: "10px 16px", color: "rgba(255,255,255,.5)", fontWeight: 400, letterSpacing: 1, fontSize: 9, textTransform: "uppercase", width: 80 }}>Tee</th>
+                {[1,2,3,4,5,6,7,8,9,"OUT",10,11,12,13,14,15,16,17,18,"IN","TOT"].map(h => <th key={h} style={{ textAlign: "center", padding: "10px 4px", color: "rgba(255,255,255,.5)", fontWeight: 400, fontSize: 9, minWidth: h==="OUT"||h==="IN"||h==="TOT"?38:28 }}>{h}</th>)}
+                <th style={{ textAlign: "center", padding: "10px 6px", color: "rgba(255,255,255,.5)", fontWeight: 400, fontSize: 9 }}>RTG</th>
+                <th style={{ textAlign: "center", padding: "10px 6px", color: "rgba(255,255,255,.5)", fontWeight: 400, fontSize: 9 }}>SLP</th></tr>
+                <tr style={{ borderBottom: "1px solid var(--bone)", background: "var(--cream)" }}>
+                  <td style={{ padding: "8px 16px", color: "var(--stone)", fontSize: 9, textTransform: "uppercase", fontWeight: 600 }}>Par</td>
+                  {course.scorecard.par.slice(0,9).map((p:number,i:number)=><td key={i} style={{ textAlign:"center", padding:"8px 4px", color:"var(--stone)", fontSize:11, fontWeight:500 }}>{p}</td>)}
+                  <td style={{ textAlign:"center", padding:"8px 4px", color:"var(--charcoal)", fontSize:11, fontWeight:700 }}>{course.scorecard.par.slice(0,9).reduce((a:number,b:number)=>a+b,0)}</td>
+                  {course.scorecard.par.slice(9).map((p:number,i:number)=><td key={i} style={{ textAlign:"center", padding:"8px 4px", color:"var(--stone)", fontSize:11, fontWeight:500 }}>{p}</td>)}
+                  <td style={{ textAlign:"center", padding:"8px 4px", color:"var(--charcoal)", fontSize:11, fontWeight:700 }}>{course.scorecard.par.slice(9).reduce((a:number,b:number)=>a+b,0)}</td>
+                  <td style={{ textAlign:"center", padding:"8px 4px", color:"var(--charcoal)", fontSize:11, fontWeight:700 }}>{course.scorecard.par.reduce((a:number,b:number)=>a+b,0)}</td>
                   <td/><td/>
                 </tr>
               </thead>
               <tbody>
                 {course.scorecard.tees.map((tee:{name:string;color:string;rating:number;slope:number;holes:number[];total:number},i:number)=>{
                   const front=tee.holes.slice(0,9).reduce((a,b)=>a+b,0); const back=tee.holes.slice(9).reduce((a,b)=>a+b,0); const isGold=tee.name==="Gold";
-                  return(<tr key={i} style={{ borderBottom:"1px solid rgba(255,255,255,.04)", background:isGold?"rgba(201,162,77,.07)":"transparent" }}>
-                    <td style={{ padding:"9px 10px" }}><div style={{ display:"flex", alignItems:"center", gap:7 }}><span style={{ width:10,height:10,borderRadius:2,background:tee.color,border:tee.color==="#FFFFFF"?"1px solid rgba(255,255,255,.3)":"none",flexShrink:0 }}/><span style={{ fontWeight:isGold?600:400, color:isGold?"var(--gold)":"rgba(255,255,255,.85)", fontSize:12 }}>{tee.name}</span></div></td>
-                    {tee.holes.slice(0,9).map((y,j)=><td key={j} style={{ textAlign:"center",padding:"9px 5px",color:isGold?"rgba(255,255,255,.95)":"rgba(255,255,255,.7)",fontSize:12 }}>{y}</td>)}
-                    <td style={{ textAlign:"center",padding:"9px 4px",color:isGold?"var(--gold)":"rgba(255,255,255,.4)",fontWeight:600,fontSize:11 }}>{front}</td>
-                    {tee.holes.slice(9).map((y,j)=><td key={j} style={{ textAlign:"center",padding:"9px 5px",color:isGold?"rgba(255,255,255,.95)":"rgba(255,255,255,.7)",fontSize:12 }}>{y}</td>)}
-                    <td style={{ textAlign:"center",padding:"9px 4px",color:isGold?"var(--gold)":"rgba(255,255,255,.4)",fontWeight:600,fontSize:11 }}>{back}</td>
-                    <td style={{ textAlign:"center",padding:"9px 4px",color:isGold?"var(--gold)":"rgba(255,255,255,.5)",fontWeight:700,fontSize:11 }}>{tee.total.toLocaleString()}</td>
-                    <td style={{ textAlign:"center",padding:"9px 6px",color:"rgba(255,255,255,.4)",fontSize:10 }}>{tee.rating}</td>
-                    <td style={{ textAlign:"center",padding:"9px 6px",color:"rgba(255,255,255,.4)",fontSize:10 }}>{tee.slope}</td>
+                  return(<tr key={i} style={{ borderBottom:"1px solid var(--bone)", background: isGold ? "rgba(201,162,77,.04)" : i % 2 === 0 ? "#fff" : "var(--cream)" }}>
+                    <td style={{ padding:"11px 16px" }}><div style={{ display:"flex", alignItems:"center", gap:7 }}><span style={{ width:12,height:12,borderRadius:2,background:tee.color,border:tee.color==="#FFFFFF"?"1px solid #ccc":"none",flexShrink:0,boxShadow:"0 1px 2px rgba(0,0,0,.1)" }}/><span style={{ fontWeight:isGold?700:500, color:isGold?"var(--gold)":"var(--ink)", fontSize:12 }}>{tee.name}</span></div></td>
+                    {tee.holes.slice(0,9).map((y,j)=><td key={j} style={{ textAlign:"center",padding:"11px 5px",color:"var(--charcoal)",fontSize:12 }}>{y}</td>)}
+                    <td style={{ textAlign:"center",padding:"11px 4px",color:isGold?"var(--gold)":"var(--charcoal)",fontWeight:700,fontSize:11 }}>{front}</td>
+                    {tee.holes.slice(9).map((y,j)=><td key={j} style={{ textAlign:"center",padding:"11px 5px",color:"var(--charcoal)",fontSize:12 }}>{y}</td>)}
+                    <td style={{ textAlign:"center",padding:"11px 4px",color:isGold?"var(--gold)":"var(--charcoal)",fontWeight:700,fontSize:11 }}>{back}</td>
+                    <td style={{ textAlign:"center",padding:"11px 4px",color:isGold?"var(--gold)":"var(--ink)",fontWeight:700,fontSize:12 }}>{tee.total.toLocaleString()}</td>
+                    <td style={{ textAlign:"center",padding:"11px 6px",color:"var(--stone)",fontSize:11 }}>{tee.rating}</td>
+                    <td style={{ textAlign:"center",padding:"11px 6px",color:"var(--stone)",fontSize:11 }}>{tee.slope}</td>
                   </tr>);
                 })}
               </tbody>
@@ -733,7 +739,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
               <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 12 }} className="max-md:!grid-cols-2 max-sm:!grid-cols-1">
                 {experiences.map((item, i) => (
                   <R key={i} delay={0.14 + i * 0.07}>
-                    <div style={{ borderRadius: 14, overflow: "hidden", position: "relative", aspectRatio: "3/4" }} className="group cursor-pointer">
+                    <div style={{ borderRadius: 14, overflow: "hidden", position: "relative", minHeight: 320 }} className="group cursor-pointer">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={item.img} alt={item.label} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "brightness(.5)", transition: "transform .9s cubic-bezier(.16,1,.3,1)", display: "block" }} className="group-hover:scale-105 group-hover:!brightness-[.65] transition-all duration-[900ms]" />
                       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,transparent 35%,rgba(0,0,0,.9) 100%)" }} />
