@@ -147,8 +147,24 @@ export default function CoursePageContent({ course, relatedCourses = [], related
   const addr = course.address;
   const nameParts = course.name.split(" ");
   const firstName = nameParts[0];
-  const para1 = course.contentParagraphs?.[0] || course.description.substring(0, 350);
-  const quoteText = course.pointOfView || course.featuredHole?.description || course.description.substring(0, 200);
+
+  // TEXT HIERARCHY — each source used exactly once, no overlaps
+  // quoteText: pointOfView only (it's a curated editorial voice, distinct from description)
+  // para1: contentParagraphs[0] if exists, else description (never both)
+  const hasPointOfView = !!course.pointOfView;
+  const hasContentParagraphs = !!(course.contentParagraphs?.length);
+  const quoteText = hasPointOfView
+    ? course.pointOfView!
+    : course.featuredHole?.description || "";
+  // para1: use contentParagraphs[0] if available, else description
+  // but if pointOfView is ABSENT and we used description for quote, skip description in story
+  const para1 = hasContentParagraphs
+    ? course.contentParagraphs![0]
+    : (!hasPointOfView ? "" : course.description.substring(0, 350));
+  // para2: second paragraph if available, else description when pointOfView covered the quote slot
+  const para2 = hasContentParagraphs && course.contentParagraphs!.length > 1
+    ? course.contentParagraphs![1]
+    : (hasContentParagraphs ? course.description.substring(0, 280) : "");
   const teeData = course.teeData || [];
   const maxYardage = teeData.length ? Math.max(...teeData.map(t => t.yardage)) : 0;
 
@@ -264,7 +280,9 @@ export default function CoursePageContent({ course, relatedCourses = [], related
 
       {/* ═══ 3. TWO-COLUMN MAGAZINE — QUOTE + FACTS ═══
           Psychology: Quote creates desire. Facts give the brain permission to act.
-          Left = emotion. Right = rational confirmation. Both in one glance. */}
+          Left = emotion. Right = rational confirmation. Both in one glance.
+          Only shown when we have a distinct pointOfView or featuredHole description. */}
+      {quoteText && (
       <section style={{ background: "var(--white)", display: "grid", gridTemplateColumns: "1fr 1fr", borderTop: "1px solid var(--bone)", borderBottom: "1px solid var(--bone)" }} className="max-md:!grid-cols-1">
         {/* LEFT — Insider perspective quote */}
         <div style={{ padding: "clamp(44px,7vh,80px) clamp(32px,5vw,72px)", background: "var(--cream)", borderRight: "1px solid var(--bone)", position: "relative", overflow: "hidden" }} className="max-md:!border-r-0 max-md:!border-b max-md:!border-bone">
@@ -317,6 +335,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           </R>
         </div>
       </section>
+      )}
 
       {/* ═══ 4. STORY — EMOTION ═══
           Text + gallery creates the narrative.
@@ -329,7 +348,9 @@ export default function CoursePageContent({ course, relatedCourses = [], related
               {nameParts.slice(0, -1).join(" ")} <em style={{ fontStyle: "italic" }}>{nameParts[nameParts.length - 1]}</em>
             </h2>
           </R>
-          <R delay={0.14}><p style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 300, maxWidth: 480, marginTop: 18 }}>{para1}</p></R>
+          {para1 && <R delay={0.14}><p style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 300, maxWidth: 480, marginTop: 18 }}>{para1}</p></R>}
+          {para2 && <R delay={0.18}><p style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 300, maxWidth: 480, marginTop: 12 }}>{para2}</p></R>}
+          {!para1 && !para2 && <R delay={0.14}><p style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 300, maxWidth: 480, marginTop: 18 }}>{course.description.substring(0, 350)}</p></R>}
           <R delay={0.2}><div style={{ width: 40, height: 1, background: "var(--bone)", margin: "22px 0" }} /></R>
           {/* Famous designer authority callout */}
           {(() => {
