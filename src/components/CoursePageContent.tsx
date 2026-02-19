@@ -633,7 +633,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                   <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(22px,2.5vw,32px)", fontWeight: 300, color: "var(--charcoal)" }}>
                     <Counter to={(s as { v: number }).v} />
                   </div>
-                  <div style={{ fontSize: 9, letterSpacing: 2.5, textTransform: "uppercase", color: "var(--stone)", marginTop: 4 }}>{(s as { l: string }).l}</div>
+                  <div style={{ fontSize: 10, letterSpacing: 2.5, textTransform: "uppercase", color: "var(--stone)", marginTop: 4, fontWeight: 500 }}>{(s as { l: string }).l}</div>
                 </div>
               ))}
             </div>
@@ -651,7 +651,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                     <div style={{ background: "var(--bone)", borderRadius: 100, height: 5 }}>
                       <div style={{ width: `${Math.min(((course.slope - 55) / 100) * 100, 100)}%`, height: "100%", background: "linear-gradient(90deg,#C9A24D,#e8c470)", borderRadius: 100 }} />
                     </div>
-                    <div style={{ display: "flex", justifyContent: "space-between", marginTop: 3, fontSize: 9, color: "var(--sand)" }}><span>55 Easy</span><span>155 Hard</span></div>
+                    <div style={{ display: "flex", justifyContent: "space-between", marginTop: 3, fontSize: 11, color: "var(--stone)", fontWeight: 500 }}><span>55 Easy</span><span>155 Hard</span></div>
                   </div>
                 )}
                 {course.courseRating && (
