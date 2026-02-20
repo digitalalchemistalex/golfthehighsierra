@@ -621,6 +621,48 @@ export default function CoursePageContent({ course, relatedCourses = [], related
         </section>
       )}
 
+      {/* ═══ PHOTO GALLERY — VISUAL IMMERSION ═══
+          Psychology: "I can see myself there." Full gallery lets the course sell itself. */}
+      {gallery.length > 3 && (
+        <section style={{ background: "var(--ink)", padding: "clamp(48px,7vh,80px) clamp(24px,5vw,80px)", borderTop: "1px solid rgba(201,162,77,.08)" }}>
+          <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+            <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 500, marginBottom: 14, textAlign: "center" }}>Gallery</div></R>
+            <R delay={0.06}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, color: "#fff", textAlign: "center", marginBottom: "clamp(32px,5vh,56px)" }}><em style={{ fontStyle: "italic" }}>{firstName}</em> in Pictures</h2></R>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 6 }} className="max-md:!grid-cols-2">
+              {gallery.slice(0, 9).map((img, i) => (
+                <R key={i} delay={0.04 * i}>
+                  <div
+                    style={{
+                      position: "relative",
+                      overflow: "hidden",
+                      cursor: isEmbed ? "default" : "pointer",
+                      aspectRatio: i === 0 || i === 5 ? "16/10" : "4/3",
+                      ...(i === 0 ? { gridColumn: "span 2", gridRow: "span 1" } : {}),
+                      ...(i === 5 ? { gridColumn: "span 2", gridRow: "span 1" } : {}),
+                    }}
+                    onClick={() => !isEmbed && setLbIndex(i)}
+                  >
+                    <Image
+                      src={img}
+                      alt={`${course.name} - photo ${i + 1}`}
+                      fill
+                      {...bp(img)}
+                      className="object-cover brightness-[.82] hover:brightness-100 hover:scale-[1.06] transition-all duration-[900ms]"
+                      sizes="(max-width:768px) 50vw, 33vw"
+                    />
+                    {i === gallery.length - 1 || i === 8 ? (
+                      <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", background: "rgba(0,0,0,.35)", opacity: 0, transition: "opacity .4s" }} className="hover:!opacity-100">
+                        <span style={{ color: "#fff", fontSize: 11, letterSpacing: 3, textTransform: "uppercase", fontWeight: 500 }}>View All {gallery.length} Photos</span>
+                      </div>
+                    ) : null}
+                  </div>
+                </R>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* ═══ 8. FOMO BLOCK — FULL URGENCY MOMENT ═══
           Psychology: A decisive moment, not a thin strip. Gut punch, not a nudge.
           "I have been thinking about this long enough. Act now." */}
