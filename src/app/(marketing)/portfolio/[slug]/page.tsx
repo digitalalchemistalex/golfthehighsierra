@@ -126,7 +126,16 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
       "@graph": [
         {
           "@type": "GolfCourse", name: course.name, description: course.description,
-          url: pageUrl, image: absImage,
+          url: pageUrl,
+          image: absImage,
+          photo: [
+            ...(absImage ? [{ "@type": "ImageObject", contentUrl: absImage, name: course.heroImageAlt || `${course.name} golf course`, description: course.heroImageAlt || `${course.name} — ${course.regionLabel}`, width: 1920, height: 1080 }] : []),
+            ...(course.images || []).slice(0, 8).map((img: string, i: number) => {
+              const absUrl = img.startsWith("/") ? `${BASE}${img}` : img;
+              const alt = course.imageAlts?.[i] || `${course.name} — photo ${i + 1}`;
+              return { "@type": "ImageObject", contentUrl: absUrl, name: alt, description: alt, representativeOfPage: i === 0 };
+            }),
+          ],
           sport: "Golf",
           isAccessibleForFree: false,
           ...(course.address?.streetAddress && {
@@ -159,7 +168,8 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
           { "@type": "ListItem", position: 2, name: "Golf Courses", item: `${BASE}/best-golf-courses-reno/` },
           { "@type": "ListItem", position: 3, name: course.name, item: pageUrl },
         ]},
-        { "@type": "WebPage", "@id": pageUrl, name: course.meta.title, description: course.meta.description, speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", ".course-intro", ".course-faq"] }, isPartOf: { "@type": "WebSite", name: "Golf the High Sierra", url: BASE } },
+        { "@type": "WebPage", "@id": pageUrl, name: course.meta.title, description: course.meta.description, speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", ".course-intro", ".course-faq", "[data-speakable]"] }, isPartOf: { "@type": "WebSite", name: "Golf the High Sierra", url: BASE }, primaryImageOfPage: absImage ? { "@type": "ImageObject", contentUrl: absImage, description: course.heroImageAlt || course.meta.title } : undefined },
+        ...(course.images?.length > 3 ? [{ "@type": "ImageGallery", name: `${course.name} Photo Gallery`, description: `${course.images.length} photos of ${course.name} — ${course.regionLabel}. Course views, signature holes, and facilities.`, url: pageUrl, image: (course.images || []).slice(0, 8).map((img: string, i: number) => ({ "@type": "ImageObject", contentUrl: img.startsWith("/") ? `${BASE}${img}` : img, name: course.imageAlts?.[i] || `${course.name} photo ${i + 1}`, description: course.imageAlts?.[i] || `${course.name} — ${course.regionLabel}` })) }] : []),
       ],
     };
     return (

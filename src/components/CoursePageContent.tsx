@@ -24,7 +24,7 @@ export interface CourseProps {
   priceRange?: string; rating?: CourseRating; description: string;
   holes?: number; par?: number | null; designer?: string;
   yardage?: number; slope?: number; courseRating?: number; yearBuilt?: number;
-  heroImage?: string; images: string[]; videoUrl?: string;
+  heroImage?: string; heroImageAlt?: string; images: string[]; imageAlts?: string[]; videoUrl?: string;
   faqs: CourseFAQ[]; testimonials?: CourseTestimonial[]; meta?: { title: string; description: string };
   bodyText?: string[]; distances?: string[]; facilities?: string[];
   tips?: CourseTip[]; pointOfView?: string; hack?: string;
@@ -106,7 +106,7 @@ function FAQ({ q, a }: { q: string; a: string }) {
 }
 
 /* ─── Lightbox ─── */
-function Lightbox({ images, startIndex, onClose, name }: { images: string[]; startIndex: number; onClose: () => void; name: string }) {
+function Lightbox({ images, startIndex, onClose, name, imageAlts }: { images: string[]; startIndex: number; onClose: () => void; name: string; imageAlts?: string[] }) {
   const [idx, setIdx] = useState(startIndex);
   const [loaded, setLoaded] = useState(false);
   useEffect(() => { setLoaded(false); }, [idx]);
@@ -123,7 +123,7 @@ function Lightbox({ images, startIndex, onClose, name }: { images: string[]; sta
       <div onClick={e => e.stopPropagation()} style={{ width: "85vw", height: "75vh", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
         {!loaded && <div style={{ color: "rgba(255,255,255,.7)", fontSize: 14, position: "absolute" }}>Loading…</div>}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img key={idx} src={absSrc} alt={`${name} ${idx + 1}`} onLoad={() => setLoaded(true)} onError={() => setLoaded(true)} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain", display: loaded ? "block" : "none" }} />
+        <img key={idx} src={absSrc} alt={imageAlts?.[idx] || `${name} — photo ${idx + 1} of ${images.length}`} onLoad={() => setLoaded(true)} onError={() => setLoaded(true)} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain", display: loaded ? "block" : "none" }} />
       </div>
       <button onClick={(e) => { e.stopPropagation(); setIdx(i => (i + 1) % images.length); }} style={{ position: "fixed", right: 16, top: "50%", transform: "translateY(-50%)", color: "rgba(255,255,255,.6)", zIndex: 10000, padding: 8, background: "none", border: "none", cursor: "pointer" }}><ChevronRight className="w-10 h-10" /></button>
       <div style={{ position: "fixed", bottom: 16, left: "50%", transform: "translateX(-50%)", color: "rgba(255,255,255,.75)", fontSize: 12, letterSpacing: 4 }}>{idx + 1} / {images.length}</div>
@@ -169,6 +169,12 @@ export default function CoursePageContent({ course, relatedCourses = [], related
 
   const gallery = course.images.filter(u => !isScorecard(u) && !isLogo(u));
   const displayGallery = gallery.length >= 3 ? gallery : [...(course.heroImage ? [course.heroImage] : []), ...gallery].filter((v, i, a) => a.indexOf(v) === i).slice(0, 3);
+  const getAlt = (img: string, fallback?: string) => {
+    const idx = course.images.indexOf(img);
+    if (idx >= 0 && course.imageAlts?.[idx]) return course.imageAlts[idx];
+    if (img === course.heroImage && course.heroImageAlt) return course.heroImageAlt;
+    return fallback || `${course.name} golf course`;
+  };
   const distances = course.distances?.length ? course.distances : parseDistances(course.bodyText || []);
   const addr = course.address;
   const nameParts = course.name.split(" ");
@@ -208,7 +214,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
       <section style={{ position: "relative", minHeight: 650, overflow: "hidden", background: "#0a0a08" }} className="flex flex-col lg:h-screen">
         <div className="relative w-full h-[70vh] lg:h-full">
           <div style={{ position: "absolute", inset: 0 }}>
-            {course.heroImage && <Image src={course.heroImage} alt={`${course.name} golf course — ${course.regionLabel}`} fill priority {...bp(course.heroImage)} className="object-cover" sizes="100vw" style={{ opacity: .55, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
+            {course.heroImage && <Image src={course.heroImage} alt={course.heroImageAlt || `${course.name} golf course — ${course.regionLabel}`} fill priority {...bp(course.heroImage)} className="object-cover" sizes="100vw" style={{ opacity: .55, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
           </div>
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(0,0,0,.28) 0%,transparent 38%,transparent 52%,rgba(0,0,0,.72) 100%)" }} />
           <div style={{ position: "absolute", inset: 0, zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 clamp(24px,5vw,80px) clamp(28px,6vh,80px)" }}>
@@ -321,7 +327,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           <div style={{ fontFamily: "var(--serif)", fontSize: "clamp(80px,10vw,130px)", fontWeight: 400, color: "rgba(201,162,77,.07)", lineHeight: ".5", position: "absolute", top: 28, left: 24, userSelect: "none", pointerEvents: "none" }}>&ldquo;</div>
           <R>
             <div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--gold)", fontWeight: 600, marginBottom: 18 }}>Course Perspective</div>
-            <p style={{ fontFamily: "var(--serif)", fontSize: "clamp(15px,1.4vw,19px)", fontWeight: 400, fontStyle: "italic", lineHeight: 1.78, color: "var(--charcoal)", letterSpacing: "-.01em" }}>
+            <p data-speakable="true" style={{ fontFamily: "var(--serif)", fontSize: "clamp(15px,1.4vw,19px)", fontWeight: 400, fontStyle: "italic", lineHeight: 1.78, color: "var(--charcoal)", letterSpacing: "-.01em" }}>
               &ldquo;{quoteText}&rdquo;
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 20 }}>
@@ -379,9 +385,9 @@ export default function CoursePageContent({ course, relatedCourses = [], related
               {nameParts.slice(0, -1).join(" ")} <em style={{ fontStyle: "italic" }}>{nameParts[nameParts.length - 1]}</em>
             </h2>
           </R>
-          {para1 && <R delay={0.14}><p style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 400, maxWidth: 480, marginTop: 18 }}>{para1}</p></R>}
-          {para2 && <R delay={0.18}><p style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 400, maxWidth: 480, marginTop: 12 }}>{para2}</p></R>}
-          {!para1 && !para2 && <R delay={0.14}><p style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 400, maxWidth: 480, marginTop: 18 }}>{course.description.substring(0, 350)}</p></R>}
+          {para1 && <R delay={0.14}><p data-speakable="true" className="course-intro" style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 400, maxWidth: 480, marginTop: 18 }}>{para1}</p></R>}
+          {para2 && <R delay={0.18}><p data-speakable="true" style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 400, maxWidth: 480, marginTop: 12 }}>{para2}</p></R>}
+          {!para1 && !para2 && <R delay={0.14}><p data-speakable="true" className="course-intro" style={{ fontSize: 14, lineHeight: 2.0, color: "var(--stone)", fontWeight: 400, maxWidth: 480, marginTop: 18 }}>{course.description.substring(0, 350)}</p></R>}
           <R delay={0.2}><div style={{ width: 40, height: 1, background: "var(--bone)", margin: "22px 0" }} /></R>
           {/* Famous designer authority callout */}
           {(() => {
@@ -434,10 +440,9 @@ export default function CoursePageContent({ course, relatedCourses = [], related
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 4, minHeight: 500 }} className="max-md:!min-h-[400px]">
           {displayGallery.slice(0, 3).map((img, i) => {
-            const alts = [`${course.name} fairway`, `${course.name} signature hole`, `${course.name} course panoramic`];
             return (
               <div key={i} style={{ overflow: "hidden", position: "relative", minHeight: i === 2 ? 240 : 240, cursor: isEmbed ? "default" : "pointer", ...(i === 2 ? { gridColumn: "span 2" } : {}) }} onClick={() => !isEmbed && setLbIndex(i)}>
-                <Image src={img} alt={alts[i] || `${course.name} golf`} fill {...bp(img)} className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.07] transition-all duration-[800ms]" sizes="(max-width:900px) 100vw, 50vw" />
+                <Image src={img} alt={getAlt(img, `${course.name} ${["fairway view", "signature hole", "course panoramic"][i]}`)} fill {...bp(img)} className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.07] transition-all duration-[800ms]" sizes="(max-width:900px) 100vw, 50vw" />
               </div>
             );
           })}
@@ -448,7 +453,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           Specific desire: "I can already see myself on this hole." */}
       <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", background: "var(--ink)" }} className="max-md:!grid-cols-1">
         <div style={{ position: "relative", overflow: "hidden", minHeight: 440 }} className="max-md:!min-h-[300px]">
-          {displayGallery[1] && <Image src={displayGallery[1]} alt={`${course.name} ${course.featuredHole ? `hole ${course.featuredHole.number}` : "layout"}`} fill {...bp(displayGallery[1])} className="object-cover opacity-55 hover:opacity-70 hover:scale-[1.04] transition-all duration-[10s]" sizes="(max-width:900px) 100vw, 50vw" />}
+          {displayGallery[1] && <Image src={displayGallery[1]} alt={getAlt(displayGallery[1], `${course.name} ${course.featuredHole ? `hole ${course.featuredHole.number} — par ${course.featuredHole.par}, ${course.featuredHole.yardage} yards` : "signature hole"}`)} fill {...bp(displayGallery[1])} className="object-cover opacity-55 hover:opacity-70 hover:scale-[1.04] transition-all duration-[10s]" sizes="(max-width:900px) 100vw, 50vw" />}
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, transparent 55%, rgba(17,17,17,.65) 100%)" }} />
         </div>
         <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
@@ -644,7 +649,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                   >
                     <Image
                       src={img}
-                      alt={`${course.name} - photo ${i + 1}`}
+                      alt={getAlt(img, `${course.name} — photo ${i + 1} of ${gallery.length}`)}
                       fill
                       {...bp(img)}
                       className="object-cover brightness-[.82] hover:brightness-100 hover:scale-[1.06] transition-all duration-[900ms]"
@@ -770,7 +775,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           )}
         </div>
 
-        <div style={{ padding: "clamp(48px,8vh,80px) clamp(32px,5vw,80px)", background: "var(--white)" }}>
+        <div data-speakable="true" className="course-faq" style={{ padding: "clamp(48px,8vh,80px) clamp(32px,5vw,80px)", background: "var(--white)" }}>
           <R><div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: "var(--stone)", fontWeight: 500, marginBottom: 14 }}>FAQ</div></R>
           <R delay={0.08}><h2 style={{ fontFamily: "var(--serif)", fontWeight: 700, fontSize: "clamp(28px,3.5vw,48px)", lineHeight: 1.1, marginBottom: 24 }}>Common <em style={{ fontStyle: "italic" }}>Questions</em></h2></R>
           {course.faqs.slice(0, 6).map((f, i) => (
@@ -1032,7 +1037,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
         </R>
       </section>
 
-      {lbIndex !== null && !isEmbed && <Lightbox images={displayGallery.length > 0 ? displayGallery : gallery} startIndex={lbIndex} onClose={() => setLbIndex(null)} name={course.name} />}
+      {lbIndex !== null && !isEmbed && <Lightbox images={displayGallery.length > 0 ? displayGallery : gallery} startIndex={lbIndex} onClose={() => setLbIndex(null)} name={course.name} imageAlts={displayGallery.map(img => getAlt(img))} />}
 
       <style jsx global>{`
         @keyframes heroZoom { to { transform: scale(1); } }

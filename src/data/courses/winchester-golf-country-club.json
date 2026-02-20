@@ -24,6 +24,7 @@
   "par": 72,
   "designer": "Robert Trent Jones Sr. & Robert Trent Jones Jr.",
   "heroImage": "/images/courses/winchester-golf-country-club/hole-18-panoramic-elevated.jpg",
+  "heroImageAlt": "Panoramic elevated view of Winchester Country Club hole 18 — RTJ Sr. & Jr. co-design in Sierra Nevada foothills with granite outcroppings and pine forests",
   "images": [
     "/images/courses/winchester-golf-country-club/pin-flag-fairway.jpg",
     "/images/courses/winchester-golf-country-club/island-green-water.jpg",
@@ -37,6 +38,20 @@
     "/images/courses/winchester-golf-country-club/golfpass-course.jpg",
     "/images/courses/winchester-golf-country-club/hole-18.jpg",
     "/images/courses/winchester-golf-country-club/hole-15.jpg"
+  ],
+  "imageAlts": [
+    "Winchester Country Club pin flag with eagle logo on green with rolling fairway and towering Sierra pines",
+    "Island green surrounded by water hazard at Winchester Country Club with pine-covered hillside and mountain homes",
+    "Tee box at sunrise on Winchester Country Club hole with morning sun flare, bunkers, and cart path winding through foothills",
+    "Wide fairway lined with ponderosa pines at Winchester Country Club in Meadow Vista, California foothills",
+    "Hole 18 approach at Winchester Country Club — uphill finish framed by granite boulders leading to European hunting lodge clubhouse",
+    "Deer crossing the fairway at Winchester Country Club surrounded by natural Sierra Nevada landscape",
+    "Winchester Country Club 35,000 sq ft European hunting lodge-style clubhouse — Golf Inc. Clubhouse of the Year",
+    "Aerial view of Winchester Country Club course layout through three distinct Sierra foothill landscapes",
+    "Rolling prairie section fairway at Winchester Country Club with mature oak and pine trees",
+    "Winchester Country Club course view showcasing dramatic elevation changes and natural granite rock formations",
+    "Hole 18 green approach at Winchester Country Club with dramatic uphill finish and boulder-lined fairway",
+    "Hole 15 at Winchester Country Club — one of three signature par 3s stretching over 200 yards"
   ],
   "videoUrl": "",
   "faqs": [
