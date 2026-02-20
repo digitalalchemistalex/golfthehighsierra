@@ -129,11 +129,11 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
           url: pageUrl,
           image: absImage,
           photo: [
-            ...(absImage ? [{ "@type": "ImageObject", contentUrl: absImage, name: course.heroImageAlt || `${course.name} golf course`, description: course.heroImageAlt || `${course.name} — ${course.regionLabel}`, width: 1920, height: 1080 }] : []),
+            ...(absImage ? [{ "@type": "ImageObject", contentUrl: absImage, name: courseAny.heroImageAlt || `${course.name} golf course`, description: courseAny.heroImageAlt || `${course.name} — ${course.regionLabel}`, caption: courseAny.heroImageAlt || `${course.name} — ${course.regionLabel}`, width: 1920, height: 1080, creditText: "Golf the High Sierra", copyrightHolder: { "@type": "Organization", name: "Golf the High Sierra" }, representativeOfPage: true }] : []),
             ...(course.images || []).slice(0, 8).map((img: string, i: number) => {
               const absUrl = img.startsWith("/") ? `${BASE}${img}` : img;
-              const alt = course.imageAlts?.[i] || `${course.name} — photo ${i + 1}`;
-              return { "@type": "ImageObject", contentUrl: absUrl, name: alt, description: alt, representativeOfPage: i === 0 };
+              const alt = courseAny.imageAlts?.[i] || `${course.name} — photo ${i + 1}`;
+              return { "@type": "ImageObject", contentUrl: absUrl, name: alt, description: alt, caption: alt, creditText: "Golf the High Sierra", representativeOfPage: i === 0 };
             }),
           ],
           sport: "Golf",
@@ -158,7 +158,23 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
             { "@type": "LocationFeatureSpecification", name: "Clubhouse", value: true },
             { "@type": "LocationFeatureSpecification", name: "Pro Shop", value: true },
             { "@type": "LocationFeatureSpecification", name: "Golf Carts", value: true },
+            ...(courseAny.facilities || []).map((f: string) => ({ "@type": "LocationFeatureSpecification", name: f, value: true })),
           ],
+          additionalProperty: [
+            ...(course.par ? [{ "@type": "PropertyValue", name: "Par", value: course.par }] : []),
+            ...(courseAny.teeData?.[0]?.yardage ? [{ "@type": "PropertyValue", name: "Championship Yardage", value: courseAny.teeData[0].yardage, unitText: "yards" }] : []),
+            ...(courseAny.teeData?.[0]?.slope ? [{ "@type": "PropertyValue", name: "Slope Rating", value: courseAny.teeData[0].slope }] : []),
+            ...(courseAny.teeData?.[0]?.rating ? [{ "@type": "PropertyValue", name: "Course Rating", value: courseAny.teeData[0].rating }] : []),
+            ...(courseAny.elevation ? [{ "@type": "PropertyValue", name: "Elevation", value: courseAny.elevation }] : []),
+            ...(courseAny.acreage ? [{ "@type": "PropertyValue", name: "Acreage", value: courseAny.acreage, unitText: "acres" }] : []),
+            ...(courseAny.greenType ? [{ "@type": "PropertyValue", name: "Green Type", value: courseAny.greenType }] : []),
+            ...(courseAny.season ? [{ "@type": "PropertyValue", name: "Playing Season", value: courseAny.season }] : []),
+            ...(courseAny.walkable !== undefined ? [{ "@type": "PropertyValue", name: "Walkable", value: courseAny.walkable ? "Yes" : "Cart required" }] : []),
+            ...(courseAny.dressCode ? [{ "@type": "PropertyValue", name: "Dress Code", value: courseAny.dressCode }] : []),
+            ...(courseAny.practiceRange ? [{ "@type": "PropertyValue", name: "Practice Facility", value: courseAny.practiceRange }] : []),
+            ...(course.holes ? [{ "@type": "PropertyValue", name: "Number of Holes", value: course.holes }] : []),
+          ].filter(Boolean),
+          ...(courseAny.courseHighlights?.length > 0 && { knowsAbout: courseAny.courseHighlights }),
         },
         { "@type": "Service", name: `${course.name} Golf Groups & Stay and Play Packages`, serviceType: "Golf travel package", provider: { "@type": "Organization", name: "Golf the High Sierra", url: BASE, telephone: "+1-888-584-8232", sameAs: ["https://www.facebook.com/golfthehighsierra", "https://www.instagram.com/golfthehighsierra"] }, areaServed: { "@type": "State", name: "Nevada, California" }, description: `Custom golf group packages at ${course.name} — tee times, lodging, dining, and transportation coordinated by Golf the High Sierra.` },
         { "@type": "SportsActivityLocation", name: course.name, sport: "Golf", url: pageUrl, description: course.description, telephone: course.phone || "+1-888-584-8232", ...(geo?.latitude && { geo: { "@type": "GeoCoordinates", latitude: geo.latitude, longitude: geo.longitude } }) },
@@ -168,8 +184,17 @@ export default function PortfolioPage({ params }: { params: { slug: string } }) 
           { "@type": "ListItem", position: 2, name: "Golf Courses", item: `${BASE}/best-golf-courses-reno/` },
           { "@type": "ListItem", position: 3, name: course.name, item: pageUrl },
         ]},
-        { "@type": "WebPage", "@id": pageUrl, name: course.meta.title, description: course.meta.description, speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", ".course-intro", ".course-faq", "[data-speakable]"] }, isPartOf: { "@type": "WebSite", name: "Golf the High Sierra", url: BASE }, primaryImageOfPage: absImage ? { "@type": "ImageObject", contentUrl: absImage, description: course.heroImageAlt || course.meta.title } : undefined },
-        ...(course.images?.length > 3 ? [{ "@type": "ImageGallery", name: `${course.name} Photo Gallery`, description: `${course.images.length} photos of ${course.name} — ${course.regionLabel}. Course views, signature holes, and facilities.`, url: pageUrl, image: (course.images || []).slice(0, 8).map((img: string, i: number) => ({ "@type": "ImageObject", contentUrl: img.startsWith("/") ? `${BASE}${img}` : img, name: course.imageAlts?.[i] || `${course.name} photo ${i + 1}`, description: course.imageAlts?.[i] || `${course.name} — ${course.regionLabel}` })) }] : []),
+        { "@type": "WebPage", "@id": pageUrl, name: course.meta.title, description: course.meta.description, speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", ".course-intro", ".course-faq", "[data-speakable]"] }, isPartOf: { "@type": "WebSite", name: "Golf the High Sierra", url: BASE }, primaryImageOfPage: absImage ? { "@type": "ImageObject", contentUrl: absImage, description: courseAny.heroImageAlt || course.meta.title, caption: courseAny.heroImageAlt || course.meta.title } : undefined },
+        ...(course.images?.length > 3 ? [{ "@type": "ImageGallery", name: `${course.name} Photo Gallery`, description: `${course.images.length} photos of ${course.name} — ${course.regionLabel}. Course views, signature holes, and facilities.`, url: pageUrl, image: (course.images || []).slice(0, 8).map((img: string, i: number) => ({ "@type": "ImageObject", contentUrl: img.startsWith("/") ? `${BASE}${img}` : img, name: courseAny.imageAlts?.[i] || `${course.name} photo ${i + 1}`, description: courseAny.imageAlts?.[i] || `${course.name} — ${course.regionLabel}`, caption: courseAny.imageAlts?.[i] || `${course.name} — ${course.regionLabel}`, creditText: "Golf the High Sierra" })) }] : []),
+        ...(courseAny.signatureHoles?.length > 0 ? courseAny.signatureHoles.map((h: { number: number; par: number; yardage: number; description: string }) => ({
+          "@type": "Place", "@id": `${pageUrl}#hole-${h.number}`, name: `${course.name} Hole ${h.number}`, description: h.description,
+          additionalProperty: [
+            { "@type": "PropertyValue", name: "Hole Number", value: h.number },
+            { "@type": "PropertyValue", name: "Par", value: h.par },
+            { "@type": "PropertyValue", name: "Yardage", value: h.yardage, unitText: "yards" },
+          ],
+          containedInPlace: { "@type": "GolfCourse", name: course.name, url: pageUrl },
+        })) : []),
       ],
     };
     return (

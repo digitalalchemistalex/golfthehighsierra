@@ -24,7 +24,7 @@
   "par": 72,
   "designer": "Robert Trent Jones Sr. & Robert Trent Jones Jr.",
   "heroImage": "/images/courses/winchester-golf-country-club/hole-18-panoramic-elevated.jpg",
-  "heroImageAlt": "Panoramic elevated view of Winchester Country Club hole 18 — RTJ Sr. & Jr. co-design in Sierra Nevada foothills with granite outcroppings and pine forests",
+  "heroImageAlt": "Panoramic elevated view of Winchester Country Club hole 18 \u2014 RTJ Sr. & Jr. co-design in Sierra Nevada foothills with granite outcroppings and pine forests",
   "images": [
     "/images/courses/winchester-golf-country-club/pin-flag-fairway.jpg",
     "/images/courses/winchester-golf-country-club/island-green-water.jpg",
@@ -44,14 +44,14 @@
     "Island green surrounded by water hazard at Winchester Country Club with pine-covered hillside and mountain homes",
     "Tee box at sunrise on Winchester Country Club hole with morning sun flare, bunkers, and cart path winding through foothills",
     "Wide fairway lined with ponderosa pines at Winchester Country Club in Meadow Vista, California foothills",
-    "Hole 18 approach at Winchester Country Club — uphill finish framed by granite boulders leading to European hunting lodge clubhouse",
+    "Hole 18 approach at Winchester Country Club \u2014 uphill finish framed by granite boulders leading to European hunting lodge clubhouse",
     "Deer crossing the fairway at Winchester Country Club surrounded by natural Sierra Nevada landscape",
-    "Winchester Country Club 35,000 sq ft European hunting lodge-style clubhouse — Golf Inc. Clubhouse of the Year",
+    "Winchester Country Club 35,000 sq ft European hunting lodge-style clubhouse \u2014 Golf Inc. Clubhouse of the Year",
     "Aerial view of Winchester Country Club course layout through three distinct Sierra foothill landscapes",
     "Rolling prairie section fairway at Winchester Country Club with mature oak and pine trees",
     "Winchester Country Club course view showcasing dramatic elevation changes and natural granite rock formations",
     "Hole 18 green approach at Winchester Country Club with dramatic uphill finish and boulder-lined fairway",
-    "Hole 15 at Winchester Country Club — one of three signature par 3s stretching over 200 yards"
+    "Hole 15 at Winchester Country Club \u2014 one of three signature par 3s stretching over 200 yards"
   ],
   "videoUrl": "",
   "faqs": [
@@ -129,7 +129,7 @@
     "description": "A dramatic uphill approach with massive boulders guarding the fairway, finishing below the stunning 35,000 sq ft European hunting lodge clubhouse. Golf Digest panelists call it 'a stunner with great land movement.' The perfect finale to an unforgettable round."
   },
   "teeTimeInfo": "Private club \u2014 group access arranged through Golf the High Sierra. Call 888-584-8232.",
-  "teeTips": [],
+  "teeTips": "Private club \u2014 group access arranged through Golf the High Sierra. Book 30+ days ahead for Saturday tee times. Spring and fall offer the best conditions with fewer crowds.",
   "yardage": 7144,
   "slope": 145,
   "courseRating": 75.0,
@@ -607,5 +607,47 @@
       "slopeF": 129
     }
   ],
-  "courseMapImage": "/images/courses/winchester-golf-country-club/course-map.png"
+  "courseMapImage": "/images/courses/winchester-golf-country-club/course-map.png",
+  "signatureHoles": [
+    {
+      "number": 3,
+      "par": 3,
+      "yardage": 225,
+      "description": "The first of three par 3s stretching over 200 yards. Plays downhill to a well-guarded green framed by granite boulders and pines \u2014 one of the Sierra foothills' most scenic tee shots."
+    },
+    {
+      "number": 10,
+      "par": 4,
+      "yardage": 410,
+      "description": "A strategic dogleg right through towering ponderosa pines. The tee shot must carry a ravine, and the approach plays over a meandering stream to an elevated green. Classic RTJ Sr. risk-reward design."
+    },
+    {
+      "number": 18,
+      "par": 4,
+      "yardage": 428,
+      "description": "A dramatic uphill approach with massive boulders guarding the fairway, finishing below the stunning 35,000 sq ft European hunting lodge clubhouse. Golf Digest panelists call it 'a stunner with great land movement.' The perfect finale to an unforgettable round."
+    }
+  ],
+  "courseHighlights": [
+    "One of only 7 courses co-designed by Robert Trent Jones Sr. & Jr.",
+    "223 forested acres across three distinct topographies",
+    "Perched at 1,800 ft \u2014 below the snow, above the fog",
+    "Ranked #1 in Sacramento Valley by Golf Digest",
+    "35,000 sq ft European hunting lodge clubhouse \u2014 Clubhouse of the Year 2005",
+    "Eight tee options from 5,289 to 7,144 yards",
+    "Three par 3s over 200 yards from the championship tees",
+    "Ideal I-80 corridor stop between Sacramento and Reno-Tahoe"
+  ],
+  "season": "Year-round (peak: April\u2013October)",
+  "greenType": "Bentgrass",
+  "walkable": false,
+  "dressCode": "Collared shirt required, no denim on course",
+  "practiceRange": "25-tee driving range, short game area, practice bunker, putting green",
+  "cartIncluded": true,
+  "openedYear": 2000,
+  "grassType": {
+    "fairways": "Bluegrass",
+    "greens": "Bentgrass",
+    "tees": "Bluegrass"
+  }
 }

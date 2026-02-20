@@ -214,7 +214,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
       <section style={{ position: "relative", minHeight: 650, overflow: "hidden", background: "#0a0a08" }} className="flex flex-col lg:h-screen">
         <div className="relative w-full h-[70vh] lg:h-full">
           <div style={{ position: "absolute", inset: 0 }}>
-            {course.heroImage && <Image src={course.heroImage} alt={course.heroImageAlt || `${course.name} golf course — ${course.regionLabel}`} fill priority {...bp(course.heroImage)} className="object-cover" sizes="100vw" style={{ opacity: .55, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
+            {course.heroImage && <Image src={course.heroImage} alt={course.heroImageAlt || `${course.name} golf course — ${course.regionLabel}`} title={course.heroImageAlt || `${course.name} golf course`} fill priority {...bp(course.heroImage)} className="object-cover" sizes="100vw" style={{ opacity: .55, transform: "scale(1.08)", animation: "heroZoom 20s ease forwards" }} />}
           </div>
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(0,0,0,.28) 0%,transparent 38%,transparent 52%,rgba(0,0,0,.72) 100%)" }} />
           <div style={{ position: "absolute", inset: 0, zIndex: 2, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 clamp(24px,5vw,80px) clamp(28px,6vh,80px)" }}>
@@ -442,7 +442,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           {displayGallery.slice(0, 3).map((img, i) => {
             return (
               <div key={i} style={{ overflow: "hidden", position: "relative", minHeight: i === 2 ? 240 : 240, cursor: isEmbed ? "default" : "pointer", ...(i === 2 ? { gridColumn: "span 2" } : {}) }} onClick={() => !isEmbed && setLbIndex(i)}>
-                <Image src={img} alt={getAlt(img, `${course.name} ${["fairway view", "signature hole", "course panoramic"][i]}`)} fill {...bp(img)} className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.07] transition-all duration-[800ms]" sizes="(max-width:900px) 100vw, 50vw" />
+                <Image src={img} alt={getAlt(img, `${course.name} ${["fairway view", "signature hole", "course panoramic"][i]}`)} title={getAlt(img, `${course.name} ${["fairway view", "signature hole", "course panoramic"][i]}`)} fill {...bp(img)} className="object-cover brightness-[.88] hover:brightness-100 hover:scale-[1.07] transition-all duration-[800ms]" sizes="(max-width:900px) 100vw, 50vw" />
               </div>
             );
           })}
@@ -453,7 +453,7 @@ export default function CoursePageContent({ course, relatedCourses = [], related
           Specific desire: "I can already see myself on this hole." */}
       <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", background: "var(--ink)" }} className="max-md:!grid-cols-1">
         <div style={{ position: "relative", overflow: "hidden", minHeight: 440 }} className="max-md:!min-h-[300px]">
-          {displayGallery[1] && <Image src={displayGallery[1]} alt={getAlt(displayGallery[1], `${course.name} ${course.featuredHole ? `hole ${course.featuredHole.number} — par ${course.featuredHole.par}, ${course.featuredHole.yardage} yards` : "signature hole"}`)} fill {...bp(displayGallery[1])} className="object-cover opacity-55 hover:opacity-70 hover:scale-[1.04] transition-all duration-[10s]" sizes="(max-width:900px) 100vw, 50vw" />}
+          {displayGallery[1] && <Image src={displayGallery[1]} alt={getAlt(displayGallery[1], `${course.name} ${course.featuredHole ? `hole ${course.featuredHole.number} — par ${course.featuredHole.par}, ${course.featuredHole.yardage} yards` : "signature hole"}`)} title={getAlt(displayGallery[1], `${course.name} signature hole`)} fill {...bp(displayGallery[1])} className="object-cover opacity-55 hover:opacity-70 hover:scale-[1.04] transition-all duration-[10s]" sizes="(max-width:900px) 100vw, 50vw" />}
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, transparent 55%, rgba(17,17,17,.65) 100%)" }} />
         </div>
         <div style={{ padding: "clamp(48px,8vh,100px) clamp(32px,5vw,80px)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
@@ -650,8 +650,10 @@ export default function CoursePageContent({ course, relatedCourses = [], related
                     <Image
                       src={img}
                       alt={getAlt(img, `${course.name} — photo ${i + 1} of ${gallery.length}`)}
+                      title={getAlt(img, `${course.name} — photo ${i + 1} of ${gallery.length}`)}
                       fill
                       {...bp(img)}
+                      loading={i < 3 ? "eager" : "lazy"}
                       className="object-cover brightness-[.82] hover:brightness-100 hover:scale-[1.06] transition-all duration-[900ms]"
                       sizes="(max-width:768px) 50vw, 33vw"
                     />
